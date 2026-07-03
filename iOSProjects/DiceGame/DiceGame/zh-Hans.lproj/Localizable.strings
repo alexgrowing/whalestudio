@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  DiceGame
+
+  Created by apple on 2016/11/17.
+  Copyright © 2016年 WhaleStudio. All rights reserved.
+*/
+"Suggestion_Wall" = "意见簿";
+"Return" = "返回";
+"Me" = "我";
+"OK" = "好的";
+"Send" = "发送";
+"My_Suggestion" = "我的建议";
+"Thank_You_For_Your_Support" = "感谢您的支持";
+"Yes" = "是的";
+"Lost_Connection" = "连接断开";
+"Lost_Connection_Of_Server" = "与服务器断开连接";
+"Quit" = "退出";
+"A_Round_A_Day" = "每天来一局";
+"Invite_Friend_2_Private_Room_A_Day" = "每天邀请朋友私密房间来一局";
+"Invite_Friend_2_This_Room" = "邀请好友来这个房间";
+"Challenge" = "挑战书";
+"Who_Can_Beat_Me" = "谁敢与我一战";
+"Finding_Arena" = "正在寻找擂台";
+"New_Challenge" = "迎接新挑战";
+"New_Arena" = "攻打其他擂台";
+"Waiting_4_New_Challenger" = "等待挑战者攻擂";
+
+"My_Information" = "我的信息";
+"My_Figure" = "我的头像";
+"Figure" = "头像";
+"Nick_Name" = "昵称";
+"Lucky_Card" = "手气卡";
+"Gold" = "金币";
+"Crown" = "皇冠";
+
+"Quick_Start" = "快速开始";
+"Arena" = "擂台赛";
+"Create_Private_Room" = "创建私密房间";
+"Go_2_Private_Room" = "进入私密房间";
+"Rank" = "排行榜";
+"Information" = "信息";
+
+"Login_Failed" = "登录失败";
+"Retry" = "重新尝试";
+
+"New_Version_Found" = "发现新版本";
+"Continue_Game_After_Update" = "更新后才能继续游戏";
+"Update" = "更新";
+
+"Specified_Room" = "指定房间";
+"Room_Number" = "房间号";
+"Cancel" = "取消";
+
+"Logining" = "正在登录";
+"Encourage" = "鼓励";
+"Recommend_2_Wechat_Friend" = "推荐给微信好友";
+"Support" = "支持一下";
+"I_Recommend_A_Dice_Game" = "推荐休闲小游戏[酒吧骰子]";
+"Download_Address" = "下载地址";
+
+"Mission" = "任务";
+"All_Missions_Are_Completed" = "任务均已完成";
+"Mission_With_Reward" = "有奖励的任务";
+
+"Choose_From_Album" = "从相册选一张";
+"Take_A_Photo" = "拍一张照片";
+
+"Go_To_Settings" = "跳转到设置";
+"Photo_Authorization_Is_Needed" = "需要照片访问授权";
+"Camera_Authorization_Is_Needed" = "需要相机访问授权";

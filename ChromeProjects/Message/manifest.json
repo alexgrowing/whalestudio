@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "m3u8嗅探",
+    "version": "1.0.0",
+    "description": "检测m3u8链接",
+    "icons":
+    {
+        "16": "img/icon.png",
+        "40": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "homepage_url": "https://www.baidu.com",
+    "background": {
+       "page": "background.html"
+    },
+    "permissions": [ "webRequest", "*://*/*", "<all_urls>"]
+}

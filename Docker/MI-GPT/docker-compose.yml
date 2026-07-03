@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  mi-gpt:
+    image: idootop/mi-gpt:latest
+    container_name: mi-gpt-container
+    env_file:
+      - /volume1/homes/alexgrowing/Tools/MI-GPT/env
+    volumes:
+      - /volume1/homes/alexgrowing/Tools/MI-GPT/migpt.js:/app/migpt.js

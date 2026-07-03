@@ -1,0 +1,68 @@
+2020-02-07T02:35:46.176Z - normal: Load ~/.CocosCreator/settings.json
+2020-02-07T02:35:46.256Z - normal: Initializing Asset Database
+2020-02-07T02:35:46.259Z - normal: checking language setting...
+2020-02-07T02:35:46.260Z - normal: Language: zh
+2020-02-07T02:35:46.978Z - success: preview server running at http://localhost:7457
+2020-02-07T02:35:46.991Z - success: protocol editor-framework registered
+2020-02-07T02:35:46.992Z - success: protocol app registered
+2020-02-07T02:35:46.992Z - success: protocol theme registered
+2020-02-07T02:35:46.992Z - success: protocol packages registered
+2020-02-07T02:35:46.992Z - success: protocol uuid registerred
+2020-02-07T02:35:46.992Z - success: protocol db registerred
+2020-02-07T02:35:46.992Z - success: protocol thumbnail registerred
+2020-02-07T02:35:46.992Z - success: protocol unpack registerred
+2020-02-07T02:35:46.992Z - success: protocol disable-commonjs registerred
+2020-02-07T02:35:47.138Z - normal: connected!
+2020-02-07T02:35:47.140Z - normal: Check project /Users/apple/CODE/Git4Whale/CocosProjects/StartProject
+2020-02-07T02:35:47.141Z - normal: Initializing project /Users/apple/CODE/Git4Whale/CocosProjects/StartProject
+2020-02-07T02:35:47.475Z - normal: Initializing Cocos2d
+2020-02-07T02:35:48.136Z - normal: Initializing engine extends
+2020-02-07T02:35:48.186Z - success: asset-db-debugger loaded
+2020-02-07T02:35:48.188Z - success: baidu-adapter loaded
+2020-02-07T02:35:48.189Z - success: color-picker loaded
+2020-02-07T02:35:48.266Z - success: fb-audience-network loaded
+2020-02-07T02:35:48.304Z - success: fb-live-stream loaded
+2020-02-07T02:35:48.307Z - success: google-play-instant loaded
+2020-02-07T02:35:48.311Z - success: huawei-runtime loaded
+2020-02-07T02:35:48.542Z - success: cpk-publish loaded
+2020-02-07T02:35:48.543Z - success: jsb-adapter loaded
+2020-02-07T02:35:48.547Z - success: oppo-runtime loaded
+2020-02-07T02:35:48.551Z - success: package-manager loaded
+2020-02-07T02:35:48.664Z - success: qqplay-adapter loaded
+2020-02-07T02:35:48.666Z - success: runtime-dev-tools loaded
+2020-02-07T02:35:48.670Z - success: sdkbox loaded
+2020-02-07T02:35:48.674Z - success: tester loaded
+2020-02-07T02:35:48.678Z - success: ui-grid loaded
+2020-02-07T02:35:48.682Z - success: ui-kit-preview-extra loaded
+2020-02-07T02:35:48.685Z - success: ui-kit-preview loaded
+2020-02-07T02:35:48.688Z - success: ui-kit loaded
+2020-02-07T02:35:48.691Z - success: ui-tree loaded
+2020-02-07T02:35:48.695Z - success: vivo-runtime loaded
+2020-02-07T02:35:48.696Z - success: weapp-adapter loaded
+2020-02-07T02:35:48.696Z - success: xiaomi-adapter loaded
+2020-02-07T02:35:48.737Z - success: assets loaded
+2020-02-07T02:35:48.740Z - success: builder loaded
+2020-02-07T02:35:48.951Z - success: cocos-services loaded
+2020-02-07T02:35:48.956Z - success: console loaded
+2020-02-07T02:35:48.986Z - success: fb-instant-games loaded
+2020-02-07T02:35:48.989Z - success: game-window loaded
+2020-02-07T02:35:48.991Z - success: google-instant-games loaded
+2020-02-07T02:35:48.995Z - success: hierarchy loaded
+2020-02-07T02:35:48.999Z - success: inspector loaded
+2020-02-07T02:35:49.000Z - success: keystore loaded
+2020-02-07T02:35:49.005Z - success: node-library loaded
+2020-02-07T02:35:49.006Z - success: package-asset loaded
+2020-02-07T02:35:49.007Z - success: preferences loaded
+2020-02-07T02:35:49.009Z - success: project-exporter loaded
+2020-02-07T02:35:49.014Z - success: project-importer loaded
+2020-02-07T02:35:49.017Z - success: project-settings loaded
+2020-02-07T02:35:49.023Z - success: scene loaded
+2020-02-07T02:35:49.030Z - success: simulator-debugger loaded
+2020-02-07T02:35:49.030Z - success: sprite-editor loaded
+2020-02-07T02:35:49.034Z - success: store loaded
+2020-02-07T02:35:49.043Z - success: timeline loaded
+2020-02-07T02:35:49.049Z - success: xiaomi-runtime loaded
+2020-02-07T02:35:50.515Z - info: Cocos Services load base data!
+2020-02-07T02:35:54.222Z - normal: Loading packages
+2020-02-07T02:35:54.227Z - normal: Watching packages
+2020-02-07T02:35:54.328Z - normal: Run Application

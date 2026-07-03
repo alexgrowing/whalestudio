@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script>
+        function doRequest(url) {
+            $.ajax({
+                url:url,
+                timeout:5 * 1000,
+                cache:false,
+                complete:function (res, status) {
+                    window.location.reload()
+                }
+            })
+        }
+    </script>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            background-color: #fff;
+        }
+        @media screen and (min-width:1024px) {
+            .rich_media {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .rich_media_content {
+            padding: 20px 16px 12px;
+        }
+        .project_content {
+            padding: 10px
+        }
+    </style>
+    <title>项目监控</title>
+</head>
+<body>
+
+<div class="rich_media">
+    <div class="rich_media_content">
+    {{ range $k, $v := . }}
+        {{ template "project" $v}}
+    {{ end }}
+    </div>
+</div>
+
+</body>
+</html>

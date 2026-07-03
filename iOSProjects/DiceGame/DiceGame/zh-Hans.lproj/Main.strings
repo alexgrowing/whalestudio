@@ -1,0 +1,93 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "39r-h2-lqo"; */
+"39r-h2-lqo.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "赞助"; ObjectID = "5bV-ZK-QjY"; */
+"5bV-ZK-QjY.normalTitle" = "赞助";
+
+/* Class = "UILabel"; text = "Round"; ObjectID = "67z-Fx-nXf"; */
+"67z-Fx-nXf.text" = "Round";
+
+/* Class = "UILabel"; text = "状态栏"; ObjectID = "6GT-Vy-ZCS"; */
+"6GT-Vy-ZCS.text" = "状态栏";
+
+/* Class = "UILabel"; text = "点击屏幕摇骰子"; ObjectID = "6Js-WL-Owz"; */
+"6Js-WL-Owz.text" = "点击屏幕摇骰子";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "6vK-D7-GTJ"; */
+"6vK-D7-GTJ.text" = "10";
+
+/* Class = "UITextView"; text = "1.两个人先摇盅掷好骰子 \n\n2.双方轮流吹牛,猜两个人共同拥有的点数（比如4个6）\n\n3.第一个猜的个数必须大于1，也就是不能猜1个Y，至少猜2个Y\n\n4.后猜的必须大于前一个，从小到大为，2个1 < 2个2 < ... < 2个6 < 3个1 < 3个2 < ... < 10个6\n\n5.当你不相信对方猜的点数的时候就可以一起开盅, 如果大家实际手上的牌点数大于等于叫出的个数, 那么不信的人就输了;反之,不信的人就赢了（比如当对方猜4个6时我不信，那么如果两个人盅里的6的个数大于等于4，那么我就输了）\n\n6.点数1在上述过程中都没有人猜过,那么在结算时就可以代表任何数，但是1如果被猜过了,那么就只代表1,不可以代表任何别的数字了（比如开盅后有3个6，2个1，如果猜点过程没有人猜过X个1，那么就结算为5个6，否则就结算为3个6）"; ObjectID = "7Qh-6T-bqT"; */
+"7Qh-6T-bqT.text" = "1.两个人先摇盅掷好骰子 \n\n2.双方轮流吹牛,猜两个人共同拥有的点数（比如4个6）\n\n3.第一个猜的个数必须大于1，也就是不能猜1个Y，至少猜2个Y\n\n4.后猜的必须大于前一个，从小到大为，2个1 < 2个2 < ... < 2个6 < 3个1 < 3个2 < ... < 10个6\n\n5.当你不相信对方猜的点数的时候就可以一起开盅, 如果大家实际手上的牌点数大于等于叫出的个数, 那么不信的人就输了;反之,不信的人就赢了（比如当对方猜4个6时我不信，那么如果两个人盅里的6的个数大于等于4，那么我就输了）\n\n6.点数1在上述过程中都没有人猜过,那么在结算时就可以代表任何数，但是1如果被猜过了,那么就只代表1,不可以代表任何别的数字了（比如开盅后有3个6，2个1，如果猜点过程没有人猜过X个1，那么就结算为5个6，否则就结算为3个6）";
+
+/* Class = "UILabel"; text = "个"; ObjectID = "Bpd-ao-Fdo"; */
+"Bpd-ao-Fdo.text" = "个";
+
+/* Class = "UIButton"; normalTitle = "推荐给朋友"; ObjectID = "FBh-nQ-nfF"; */
+"FBh-nQ-nfF.normalTitle" = "推荐给朋友";
+
+/* Class = "UILabel"; text = "Player2"; ObjectID = "GQE-hY-A2G"; */
+"GQE-hY-A2G.text" = "Player2";
+
+/* Class = "UILabel"; text = "Player1"; ObjectID = "Jdj-mg-G43"; */
+"Jdj-mg-G43.text" = "Player1";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "N0p-Mg-Q8k"; */
+"N0p-Mg-Q8k.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "确定更新"; ObjectID = "O9i-og-hbB"; */
+"O9i-og-hbB.normalTitle" = "确定更新";
+
+/* Class = "UIButton"; normalTitle = "游戏规则"; ObjectID = "QFK-2F-0yV"; */
+"QFK-2F-0yV.normalTitle" = "游戏规则";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "R3v-A6-2HG"; */
+"R3v-A6-2HG.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "好的，我知道了"; ObjectID = "SR4-Rf-bmX"; */
+"SR4-Rf-bmX.normalTitle" = "好的，我知道了";
+
+/* Class = "UIButton"; normalTitle = "邀请微信好友到这个房间"; ObjectID = "WZe-DP-z0X"; */
+"WZe-DP-z0X.normalTitle" = "邀请微信好友到这个房间";
+
+/* Class = "UIButton"; normalTitle = "好的，知道了"; ObjectID = "Wrv-dh-SYv"; */
+"Wrv-dh-SYv.normalTitle" = "好的，知道了";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZBd-vt-ziW"; */
+"ZBd-vt-ziW.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "进入私密房间"; ObjectID = "ftJ-pQ-CpF"; */
+"ftJ-pQ-CpF.normalTitle" = "进入私密房间";
+
+/* Class = "UIButton"; normalTitle = "下载单机版"; ObjectID = "hBG-2n-bBl"; */
+"hBG-2n-bBl.normalTitle" = "下载单机版";
+
+/* Class = "UILabel"; text = "发现新版本"; ObjectID = "kpa-Xs-LJ0"; */
+"kpa-Xs-LJ0.text" = "发现新版本";
+
+/* Class = "UIButton"; normalTitle = "我的信息"; ObjectID = "mEC-3z-gOb"; */
+"mEC-3z-gOb.normalTitle" = "我的信息";
+
+/* Class = "UIButton"; normalTitle = "快速开始"; ObjectID = "oDo-cY-D4a"; */
+"oDo-cY-D4a.normalTitle" = "快速开始";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sYE-ut-bAO"; */
+"sYE-ut-bAO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "更新后才能继续游戏"; ObjectID = "txF-qH-Qep"; */
+"txF-qH-Qep.text" = "更新后才能继续游戏";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vJF-OX-dly"; */
+"vJF-OX-dly.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "whS-Av-Cnc"; */
+"whS-Av-Cnc.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "创建私密房间"; ObjectID = "x52-4J-rGP"; */
+"x52-4J-rGP.normalTitle" = "创建私密房间";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xKP-4b-3sj"; */
+"xKP-4b-3sj.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yNP-sr-yne"; */
+"yNP-sr-yne.normalTitle" = "Button";

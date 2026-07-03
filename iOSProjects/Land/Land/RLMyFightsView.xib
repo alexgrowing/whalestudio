@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RLMyFightsView" customModule="Land" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEo-fd-MyO" userLabel="Center View">
+                    <rect key="frame" x="37.5" y="83.5" width="300" height="500"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kya-k7-NCW">
+                            <rect key="frame" x="30" y="30" width="240" height="29"/>
+                            <segments>
+                                <segment title="我的进攻"/>
+                                <segment title="我的防守"/>
+                            </segments>
+                            <connections>
+                                <action selector="changeTypeOfFightsInfo" destination="iN0-l3-epB" eventType="valueChanged" id="8by-zV-eWL"/>
+                            </connections>
+                        </segmentedControl>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k9K-Kh-xCI">
+                            <rect key="frame" x="30" y="88" width="240" height="322"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYZ-ap-Y5i">
+                            <rect key="frame" x="127" y="440" width="46" height="30"/>
+                            <state key="normal" title="知道啦"/>
+                            <connections>
+                                <action selector="iKnow" destination="iN0-l3-epB" eventType="touchUpInside" id="uRS-QI-7Cd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="kya-k7-NCW" firstAttribute="top" secondItem="oEo-fd-MyO" secondAttribute="top" constant="30" id="2PR-lJ-77M"/>
+                        <constraint firstItem="k9K-Kh-xCI" firstAttribute="leading" secondItem="oEo-fd-MyO" secondAttribute="leading" constant="30" id="47W-46-bpp"/>
+                        <constraint firstItem="k9K-Kh-xCI" firstAttribute="top" secondItem="kya-k7-NCW" secondAttribute="bottom" constant="30" id="9HY-Ge-uMY"/>
+                        <constraint firstItem="GYZ-ap-Y5i" firstAttribute="top" secondItem="k9K-Kh-xCI" secondAttribute="bottom" constant="30" id="CC7-78-thW"/>
+                        <constraint firstItem="GYZ-ap-Y5i" firstAttribute="centerX" secondItem="oEo-fd-MyO" secondAttribute="centerX" id="DuN-q2-hbx"/>
+                        <constraint firstAttribute="width" constant="300" id="Hx7-ZU-ITg"/>
+                        <constraint firstItem="kya-k7-NCW" firstAttribute="leading" secondItem="oEo-fd-MyO" secondAttribute="leading" constant="30" id="T57-pP-X7R"/>
+                        <constraint firstAttribute="height" constant="500" id="laF-au-4Uy"/>
+                        <constraint firstAttribute="trailing" secondItem="k9K-Kh-xCI" secondAttribute="trailing" constant="30" id="nQE-Yk-suz"/>
+                        <constraint firstAttribute="bottom" secondItem="GYZ-ap-Y5i" secondAttribute="bottom" constant="30" id="qeD-4J-hSf"/>
+                        <constraint firstAttribute="trailing" secondItem="kya-k7-NCW" secondAttribute="trailing" constant="30" id="uLJ-Gf-U0A"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.25" green="0.25" blue="0.25" alpha="0.2486539274" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oEo-fd-MyO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="23v-o1-7AN"/>
+                <constraint firstItem="oEo-fd-MyO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="s2U-b9-Q8T"/>
+            </constraints>
+            <connections>
+                <outlet property="fightsInfoTableView" destination="k9K-Kh-xCI" id="QAf-yv-1c9"/>
+                <outlet property="typeOfFightsInfoControl" destination="kya-k7-NCW" id="PVe-oy-6fm"/>
+            </connections>
+        </view>
+    </objects>
+</document>

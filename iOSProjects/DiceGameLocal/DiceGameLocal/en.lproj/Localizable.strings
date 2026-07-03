@@ -1,0 +1,12 @@
+/* 
+  i18n.strings
+  DiceGameLocal
+
+  Created by apple on 2016/11/15.
+  Copyright © 2016年 WhaleStudio. All rights reserved.
+*/
+"Fight_AI" = "Fight AI";
+"Rule" = "Rule";
+"Download_Network_Version" = "Online Version";
+
+"Name_Of_Robot" = "Egg";

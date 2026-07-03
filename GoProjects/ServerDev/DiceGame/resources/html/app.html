@@ -1,0 +1,30 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='apple-itunes-app' content='app-id=493902223'>
+<title>挑战书</title>
+<body style="background-color:#FFAD01"></body>
+<div style="width:100%;height:100%;background:url(../img/challenge.jpg) no-repeat top center;background-size:contain"></div>
+
+<!-- a标签的链接，设置为对应的下载链接；点击打开的动作，在click事件中注册 -->
+<a href="https://itunes.apple.com/us/app/jiu-ba-tou-zi/id493902223" id="openApp" style="display:none">酒吧骰子</a>
+<script type="text/javascript">
+    document.getElementById('openApp').onclick = function(e){
+        // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+        // 否则打开a标签的href链接
+		var roomID = ""
+		var param = location.search
+		if (param.indexOf("?") != -1) { // param="?23453&singlemessage=true&isappinstalled=false"
+			var parray = param.substr(1).split("&")
+			roomID = parray[0]
+		}
+        var ifr = document.createElement('iframe');
+        ifr.src = 'cy.i10l.dicegame://go2room/' + roomID;
+        ifr.style.display = 'none';
+        document.body.appendChild(ifr);
+        window.setTimeout(function(){
+            document.body.removeChild(ifr);
+        },3000)
+    };
+	document.getElementById('openApp').click();
+</script>
+</html>

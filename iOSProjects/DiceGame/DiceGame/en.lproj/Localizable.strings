@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  DiceGame
+
+  Created by apple on 2016/11/17.
+  Copyright © 2016年 WhaleStudio. All rights reserved.
+*/
+"Suggestion_Wall" = "Suggestion Wall";
+"Return" = "Return";
+"Me" = "Me";
+"OK" = "OK";
+"Send" = "Send";
+"My_Suggestion" = "My Suggestion";
+"Thank_You_For_Your_Support" = "Thank You For Your Support";
+"Yes" = "Yes";
+"Lost_Connection" = "Lost Connection";
+"Lost_Connection_Of_Server" = "Lost Connection Of Server";
+"Quit" = "Quit";
+"A_Round_A_Day" = "A Round A Day";
+"Invite_Friend_2_Private_Room_A_Day" = "Invite Friend to Private Room A Day";
+"Invite_Friend_2_This_Room" = "Invite Friend to This Room";
+"Challenge" = "Challenge";
+"Who_Can_Beat_Me" = "Who Can Beat Me";
+"Finding_Arena" = "Finding Arena";
+"New_Challenge" = "New Challenge";
+"New_Arena" = "New Arena";
+"Waiting_4_New_Challenger" = "Waiting For New Challenge";
+
+"My_Information" = "My Information";
+"My_Figure" = "My Figure";
+"Figure" = "Figure";
+"Nick_Name" = "Nick Name";
+"Lucky_Card" = "Lucky Card";
+"Gold" = "Gold";
+"Crown" = "Crown";
+
+"Quick_Start" = "Quick Start";
+"Arena" = "Arena";
+"Create_Private_Room" = "Create Room";
+"Go_2_Private_Room" = "Go to Room";
+"Rank" = "Rank";
+"Information" = "Information";
+
+"Login_Failed" = "Login Failed";
+"Retry" = "Retry";
+
+"New_Version_Found" = "New Version Found";
+"Continue_Game_After_Update" = "Continue Game After Update";
+"Update" = "Update";
+
+"Specified_Room" = "Specified Room";
+"Room_Number" = "Room Nubmer";
+"Cancel" = "Cancel";
+
+"Logining" = "Logining";
+"Encourage" = "Encourage";
+"Recommend_2_Wechat_Friend" = "Recommend to Wechat Friend";
+"Support" = "Support";
+"I_Recommend_A_Dice_Game" = "I Recommend A Dice Game";
+"Download_Address" = "Download Address";
+
+"Mission" = "Mission";
+"All_Missions_Are_Completed" = "All Missions Are Completed";
+"Mission_With_Reward" = "Mission With Reward";
+
+"Choose_From_Album" = "Choose From Album";
+"Take_A_Photo" = "Take A Photo";
+
+"Go_To_Settings" = "Go To Settings";
+"Photo_Authorization_Is_Needed" = "Photo Authorization Is Needed";

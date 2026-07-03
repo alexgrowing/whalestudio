@@ -1,0 +1,21 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs": "a6b117fb4c7cb102",
+ "log":
+ [{"message":
+   ".> MACOSX_DEPLOYMENT_TARGET=99.0 /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.30.0/bin/clang -o /Users/littlesail/whale/LeanProjects/Startup/.lake/build/bin/myproject @/Users/littlesail/whale/LeanProjects/Startup/.lake/build/bin/myproject.rsp",
+   "level": "trace"}],
+ "inputs":
+ [["linkObjs",
+   [["/Users/littlesail/whale/LeanProjects/Startup/.lake/build/ir/Main.c.o.export",
+     "1d5380c379ea1ebd"],
+    ["/Users/littlesail/whale/LeanProjects/Startup/.lake/build/ir/MyProject/Basic.c.o.export",
+     "9628c350ccb62022"],
+    ["/Users/littlesail/whale/LeanProjects/Startup/.lake/build/ir/MyProject/Theorems.c.o.export",
+     "05fa51a0019701a4"]]],
+  ["linkLibs", "00000000000006bb"],
+  ["Lean 4.30.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622",
+   "2f4703bb19086252"],
+  ["traceArgs: #[]", "00000000000006bb"],
+  ["arm64-apple-darwin24.6.0", "77c16133d139df5a"]],
+ "depHash": "c893a33b03ae42cf"}

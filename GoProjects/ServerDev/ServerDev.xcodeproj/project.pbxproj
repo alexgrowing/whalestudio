@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		18AEE5F51C7F2CB600251F87 /* connect.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = connect.sh; sourceTree = "<group>"; };
+		18AEE5F61C7F2CB600251F87 /* main.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.go; sourceTree = "<group>"; };
+		18AEE5FB1C7F2CB600251F87 /* util.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = util.a; sourceTree = "<group>"; };
+		18AEE5FF1C7F2CB600251F87 /* app.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = app.html; sourceTree = "<group>"; };
+		18AEE6001C7F2CB600251F87 /* longpoll.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = longpoll.html; sourceTree = "<group>"; };
+		18AEE6011C7F2CB600251F87 /* uploadtest.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = uploadtest.html; sourceTree = "<group>"; };
+		18AEE6031C7F2CB600251F87 /* challenge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = challenge.jpg; sourceTree = "<group>"; };
+		18AEE6071C7F2CB600251F87 /* const.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = const.go; sourceTree = "<group>"; };
+		18AEE6091C7F2CB600251F87 /* bean.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = bean.go; sourceTree = "<group>"; };
+		18AEE60A1C7F2CB600251F87 /* card.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = card.go; sourceTree = "<group>"; };
+		18AEE60B1C7F2CB600251F87 /* player.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = player.go; sourceTree = "<group>"; };
+		18AEE60C1C7F2CB600251F87 /* robot.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = robot.go; sourceTree = "<group>"; };
+		18AEE60D1C7F2CB600251F87 /* roundsummary.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = roundsummary.go; sourceTree = "<group>"; };
+		18AEE60E1C7F2CB600251F87 /* summary.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = summary.go; sourceTree = "<group>"; };
+		18AEE6101C7F2CB600251F87 /* gameserver.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = gameserver.go; sourceTree = "<group>"; };
+		18AEE6111C7F2CB600251F87 /* gameserver.info.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = gameserver.info.go; sourceTree = "<group>"; };
+		18AEE6121C7F2CB600251F87 /* mission.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = mission.go; sourceTree = "<group>"; };
+		18AEE6131C7F2CB600251F87 /* robot.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = robot.go; sourceTree = "<group>"; };
+		18AEE6141C7F2CB600251F87 /* room.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = room.go; sourceTree = "<group>"; };
+		18AEE6151C7F2CB600251F87 /* rules.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = rules.go; sourceTree = "<group>"; };
+		18AEE6161C7F2CB600251F87 /* user.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = user.go; sourceTree = "<group>"; };
+		18AEE6181C7F2CB600251F87 /* test.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.go; sourceTree = "<group>"; };
+		18AEE6191C7F2CB600251F87 /* upload.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = upload.sh; sourceTree = "<group>"; };
+		FA8F98421B21636300AFC274 /* 数据库表结构 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "数据库表结构"; sourceTree = "<group>"; };
+		FA8F985F1B21636300AFC274 /* installMySQL */ = {isa = PBXFileReference; lastKnownFileType = text; path = installMySQL; sourceTree = "<group>"; };
+		FA8F98621B21A7AC00AFC274 /* 邀请好友一起玩的逻辑 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "邀请好友一起玩的逻辑"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18AEE5F41C7F2CB600251F87 /* DiceGame */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE5F51C7F2CB600251F87 /* connect.sh */,
+				18AEE5F61C7F2CB600251F87 /* main.go */,
+				18AEE5F71C7F2CB600251F87 /* pkg */,
+				18AEE5FC1C7F2CB600251F87 /* resources */,
+				18AEE6051C7F2CB600251F87 /* src */,
+				18AEE6191C7F2CB600251F87 /* upload.sh */,
+			);
+			path = DiceGame;
+			sourceTree = "<group>";
+		};
+		18AEE5F71C7F2CB600251F87 /* pkg */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE5F81C7F2CB600251F87 /* darwin_amd64 */,
+			);
+			path = pkg;
+			sourceTree = "<group>";
+		};
+		18AEE5F81C7F2CB600251F87 /* darwin_amd64 */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE5FB1C7F2CB600251F87 /* util.a */,
+			);
+			path = darwin_amd64;
+			sourceTree = "<group>";
+		};
+		18AEE5FC1C7F2CB600251F87 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE5FD1C7F2CB600251F87 /* css */,
+				18AEE5FE1C7F2CB600251F87 /* html */,
+				18AEE6021C7F2CB600251F87 /* img */,
+				18AEE6041C7F2CB600251F87 /* js */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		18AEE5FD1C7F2CB600251F87 /* css */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		18AEE5FE1C7F2CB600251F87 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE5FF1C7F2CB600251F87 /* app.html */,
+				18AEE6001C7F2CB600251F87 /* longpoll.html */,
+				18AEE6011C7F2CB600251F87 /* uploadtest.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		18AEE6021C7F2CB600251F87 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE6031C7F2CB600251F87 /* challenge.jpg */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		18AEE6041C7F2CB600251F87 /* js */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		18AEE6051C7F2CB600251F87 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE6061C7F2CB600251F87 /* base */,
+				18AEE6081C7F2CB600251F87 /* db */,
+				18AEE60F1C7F2CB600251F87 /* game */,
+				18AEE6171C7F2CB600251F87 /* test */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		18AEE6061C7F2CB600251F87 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE6071C7F2CB600251F87 /* const.go */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		18AEE6081C7F2CB600251F87 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE6091C7F2CB600251F87 /* bean.go */,
+				18AEE60A1C7F2CB600251F87 /* card.go */,
+				18AEE60B1C7F2CB600251F87 /* player.go */,
+				18AEE60C1C7F2CB600251F87 /* robot.go */,
+				18AEE60D1C7F2CB600251F87 /* roundsummary.go */,
+				18AEE60E1C7F2CB600251F87 /* summary.go */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		18AEE60F1C7F2CB600251F87 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE6101C7F2CB600251F87 /* gameserver.go */,
+				18AEE6111C7F2CB600251F87 /* gameserver.info.go */,
+				18AEE6121C7F2CB600251F87 /* mission.go */,
+				18AEE6131C7F2CB600251F87 /* robot.go */,
+				18AEE6141C7F2CB600251F87 /* room.go */,
+				18AEE6151C7F2CB600251F87 /* rules.go */,
+				18AEE6161C7F2CB600251F87 /* user.go */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		18AEE6171C7F2CB600251F87 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				18AEE6181C7F2CB600251F87 /* test.go */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		FAB7E4CB1B1EF47300FF3765 = {
+			isa = PBXGroup;
+			children = (
+				FA8F98621B21A7AC00AFC274 /* 邀请好友一起玩的逻辑 */,
+				FA8F98421B21636300AFC274 /* 数据库表结构 */,
+				18AEE5F41C7F2CB600251F87 /* DiceGame */,
+				FA8F985F1B21636300AFC274 /* installMySQL */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		FAB7E4CC1B1EF47300FF3765 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+			};
+			buildConfigurationList = FAB7E4CF1B1EF47300FF3765 /* Build configuration list for PBXProject "ServerDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAB7E4CB1B1EF47300FF3765;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		FAB7E4D01B1EF47300FF3765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		FAB7E4D11B1EF47300FF3765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB7E4CF1B1EF47300FF3765 /* Build configuration list for PBXProject "ServerDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB7E4D01B1EF47300FF3765 /* Debug */,
+				FAB7E4D11B1EF47300FF3765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB7E4CC1B1EF47300FF3765 /* Project object */;
+}

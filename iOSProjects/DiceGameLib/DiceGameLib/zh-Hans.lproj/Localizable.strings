@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  DiceGameLib
+
+  Created by apple on 2016/11/15.
+  Copyright © 2016年 WhaleStudio. All rights reserved.
+*/
+"Lucky_Card" = "手气卡";
+"Unknown_Card" = "无法识别的卡片";
+"End_Game" = "结束游戏";
+"New_Round" = "新回合";
+"Touch_Screen_2_Shake_Dice" = "点击屏幕摇骰子";
+"Matching_Player" = "正在匹配玩家";
+"Cancel" = "取消";
+"Use_Lucky_Card" = "使用手气卡";
+"One_More" = "再来一回";
+"Match_New_Player" = "寻找新玩家";
+"Are_You_Sure_2_Quit" = "确定退出游戏?";
+"Yes" = "是的";
+"1_Can_Be_Any_Point" = "1可以代表任何点数";
+"1_Has_Not_Been_Guessed" = "当前回合还没有人猜过1点";
+"1_Can_Only_Be_1" = "1只能代表1点";
+"1_Can_Only_Be_1_After_Been_Guessed_Once" = "当前回合有人猜过1点后，1只能代表1点";
+"Me" = "我";
+"Gold" = "金币";
+"Unavailable" = "不可用";
+"Specified_Room" = "指定的房间";
+"Not_Accessable" = "无法进入";
+"Used_Card_But_I_Am_Not_The_Target" = "使用了卡片,我不是目标";
+"Wrong_Order" = "次序错误";
+"Not_My_Ture_2_Guess" = "还没轮到我蛊惑";
+"You_Can_Not_Point_Out_Liar_Now" = "此时不能表达质疑";
+"Illegal_Guess" = "不合法的蛊惑";
+"Server_Crashed" = "服务器挂了";
+"Ask_2_Quit" = "要求退出游戏";
+"Lost_Connection" = "失去连接";
+"I_Do_Not_Believe" = "我不信";
+"Return" = "返回";
+"Player" = "玩家";
+
+"Guess" = "我猜";
+"Doubt" = "我不信";
+
+"First_Guess_Should_Be_Larger_Than_Count_Of_Players" = "第一次猜点的个数必须大于玩家个数";
+"The_Count_Guessed_Is_Smaller_Than_Last_Guess" = "所猜个数比上一次小";
+"The_Point_Guessed_Is_Smaller_Than_Last_Guess" = "所猜点数比上一次小";
+

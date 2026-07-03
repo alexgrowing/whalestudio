@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh root@120.24.94.232

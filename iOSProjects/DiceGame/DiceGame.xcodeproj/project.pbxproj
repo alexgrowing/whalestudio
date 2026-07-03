@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180F24561B55C98500712507 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE47A3F1AE8DB0D00F2AF39 /* LaunchScreen.xib */; };
+		182B0B561BB234CB002F1298 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B0B551BB234CB002F1298 /* GameKit.framework */; };
+		1868F5331B474719000A5169 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868F5321B474719000A5169 /* Security.framework */; };
+		1868F5371B47473D000A5169 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868F5361B47473D000A5169 /* CoreGraphics.framework */; };
+		1868F53B1B47475C000A5169 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868F53A1B47475C000A5169 /* CoreTelephony.framework */; };
+		1868F54C1B48414B000A5169 /* QQ.png in Resources */ = {isa = PBXBuildFile; fileRef = 1868F54B1B48414B000A5169 /* QQ.png */; };
+		187459DF1B7638880055CFAC /* DGRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187459DE1B7638880055CFAC /* DGRing.swift */; };
+		187700181B776B1B00D971FB /* DGRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187700171B776B1B00D971FB /* DGRound.swift */; };
+		1889BD9A1B732C1700AD2F30 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 1889BD991B732C1700AD2F30 /* download.png */; };
+		1889BD9D1B7338F600AD2F30 /* mission.png in Resources */ = {isa = PBXBuildFile; fileRef = 1889BD9C1B7338F600AD2F30 /* mission.png */; };
+		1889BD9F1B7359E400AD2F30 /* DGMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889BD9E1B7359E400AD2F30 /* DGMissions.swift */; };
+		188B44321B453A1C006950FA /* flag2nd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188B442D1B453A1C006950FA /* flag2nd.jpg */; };
+		188B44331B453A1C006950FA /* flag1st.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188B442E1B453A1C006950FA /* flag1st.jpg */; };
+		188B44341B453A1C006950FA /* flag3rd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188B442F1B453A1C006950FA /* flag3rd.jpg */; };
+		188B44351B453A1C006950FA /* flagother.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188B44301B453A1C006950FA /* flagother.jpg */; };
+		188D6B1A1B6EFA9C005E6003 /* background_1920_1080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188D6B181B6EFA9C005E6003 /* background_1920_1080.jpg */; };
+		188D6B1B1B6EFA9C005E6003 /* LaunchScreenDice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188D6B191B6EFA9C005E6003 /* LaunchScreenDice.jpg */; };
+		1899D7791BD622FD004082C1 /* DGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899D7781BD622FD004082C1 /* DGSettings.swift */; };
+		189D45C41B53B146000C0977 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D45C31B53B146000C0977 /* share.png */; };
+		18BA9DA31DD755C800430B63 /* DiceGameLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA9DA21DD755C800430B63 /* DiceGameLib.framework */; };
+		18BA9DA41DD755C800430B63 /* DiceGameLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA9DA21DD755C800430B63 /* DiceGameLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18BA9DD11DD8849A00430B63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18BA9DD31DD8849A00430B63 /* InfoPlist.strings */; };
+		18BC17841C801FA6001A10AE /* DGClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC17831C801FA6001A10AE /* DGClient.swift */; };
+		18BC17A91C804B64001A10AE /* DGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC17A81C804B64001A10AE /* DGUser.swift */; };
+		18CD3D9A1B46C92900C0ADFC /* recommend.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CD3D971B46C92900C0ADFC /* recommend.png */; };
+		18CD3DA01B46CCDE00C0ADFC /* feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CD3D9E1B46CCDE00C0ADFC /* feedback.png */; };
+		18E3C89A1DDD73E500285B85 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E3C89C1DDD73E500285B85 /* Localizable.strings */; };
+		18E6C8421D05774B007103FE /* DGPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C8411D05774B007103FE /* DGPrivate.swift */; };
+		18F167F51C810FE50044D23F /* DGStartup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F167F41C810FE50044D23F /* DGStartup.swift */; };
+		FA089FAB1B00FD8E00D60129 /* DGInternetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA089FAA1B00FD8E00D60129 /* DGInternetClient.swift */; };
+		FA09B51C1F344ABA002FADF3 /* DGLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF2171DE92E9200242CEA /* DGLib.bundle */; };
+		FA0D69FB1B4036EF00BDA570 /* DGRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D69FA1B4036EF00BDA570 /* DGRankViewController.swift */; };
+		FA10E0492216A24D00C7508B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA10E0482216A24D00C7508B /* Podfile */; };
+		FA10E0532216A50800C7508B /* libPods-DiceGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10E0522216A2C300C7508B /* libPods-DiceGame.a */; };
+		FA10E0552216A72E00C7508B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10E0542216A72E00C7508B /* GoogleMobileAds.framework */; };
+		FA1AE8022134EFAF00A5CDA9 /* send_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1AE8012134EFAF00A5CDA9 /* send_1024.png */; };
+		FA1AE8042134F27B00A5CDA9 /* return_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1AE8032134F27B00A5CDA9 /* return_1024.png */; };
+		FA1CE35A211D2188007CDEDE /* WhaleLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BC17A01C802810001A10AE /* WhaleLib.framework */; };
+		FA1CE35B211D2188007CDEDE /* WhaleLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18BC17A01C802810001A10AE /* WhaleLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA1CE35F211D2188007CDEDE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1CE35E211D2188007CDEDE /* SnapKit.framework */; };
+		FA1CE360211D2188007CDEDE /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1CE35E211D2188007CDEDE /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA1CE365211D22DC007CDEDE /* DGLib.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = FA2BF2171DE92E9200242CEA /* DGLib.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA7817B11B1615A200029C2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7817B01B1615A200029C2A /* SystemConfiguration.framework */; };
+		FA7817C41B1626DF00029C2A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7817C01B1626DF00029C2A /* libWeChatSDK.a */; };
+		FA7817C71B16E0DB00029C2A /* DGFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7817C61B16E0DB00029C2A /* DGFeedback.swift */; };
+		FA8060B71B25A0C200B1D973 /* todo in Resources */ = {isa = PBXBuildFile; fileRef = FA8060B61B25A0C200B1D973 /* todo */; };
+		FA8694681B1C2690009AA010 /* DGInternetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8694671B1C2690009AA010 /* DGInternetGame.swift */; };
+		FA8694F71B1D4E40009AA010 /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8694F01B1D4E40009AA010 /* 28.png */; };
+		FA8695121B1D4E53009AA010 /* dice.m4r in Resources */ = {isa = PBXBuildFile; fileRef = FA8695001B1D4E53009AA010 /* dice.m4r */; };
+		FA8695161B1D4E53009AA010 /* knock.m4r in Resources */ = {isa = PBXBuildFile; fileRef = FA8695041B1D4E53009AA010 /* knock.m4r */; };
+		FA8695181B1D4E53009AA010 /* readygo.m4r in Resources */ = {isa = PBXBuildFile; fileRef = FA8695061B1D4E53009AA010 /* readygo.m4r */; };
+		FAE47A371AE8DB0D00F2AF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE47A361AE8DB0D00F2AF39 /* AppDelegate.swift */; };
+		FAE47A3E1AE8DB0D00F2AF39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE47A3D1AE8DB0D00F2AF39 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18BC179F1C802810001A10AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BC179B1C802810001A10AE /* WhaleLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 188E83051C7AD98400EAE901;
+			remoteInfo = WhaleLib;
+		};
+		FA10E0512216A2C300C7508B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA10E04C2216A2C300C7508B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC35FB89430557354E2C8A286666FEEB;
+			remoteInfo = "Pods-DiceGame";
+		};
+		FA1CE35C211D2188007CDEDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BC179B1C802810001A10AE /* WhaleLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 188E83041C7AD98400EAE901;
+			remoteInfo = WhaleLib;
+		};
+		FA1CE366211D22DC007CDEDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 188D23771DDBE52F00679A6A;
+			remoteInfo = DGLib;
+		};
+		FA2BF2141DE92E9200242CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA8EA8FC1B193C3000848EAD;
+			remoteInfo = DiceGameLib;
+		};
+		FA2BF2161DE92E9200242CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 188D23781DDBE52F00679A6A;
+			remoteInfo = DGLib;
+		};
+		FA2BF2181DE92EA200242CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8EA8FB1B193C3000848EAD;
+			remoteInfo = DiceGameLib;
+		};
+		FA2BF21A1DE92EA200242CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 188D23771DDBE52F00679A6A;
+			remoteInfo = DGLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18D3F2D81C9B943A00B7B584 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA1CE360211D2188007CDEDE /* SnapKit.framework in Embed Frameworks */,
+				FA1CE35B211D2188007CDEDE /* WhaleLib.framework in Embed Frameworks */,
+				18BA9DA41DD755C800430B63 /* DiceGameLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1CE368211D22DD007CDEDE /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA1CE365211D22DC007CDEDE /* DGLib.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		182B0B551BB234CB002F1298 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		1868F5321B474719000A5169 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1868F5361B47473D000A5169 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1868F53A1B47475C000A5169 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1868F54B1B48414B000A5169 /* QQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QQ.png; sourceTree = "<group>"; };
+		187459DE1B7638880055CFAC /* DGRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRing.swift; sourceTree = "<group>"; };
+		187700171B776B1B00D971FB /* DGRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRound.swift; sourceTree = "<group>"; };
+		1889BD991B732C1700AD2F30 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		1889BD9C1B7338F600AD2F30 /* mission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mission.png; sourceTree = "<group>"; };
+		1889BD9E1B7359E400AD2F30 /* DGMissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGMissions.swift; sourceTree = "<group>"; };
+		188B442D1B453A1C006950FA /* flag2nd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2nd.jpg; sourceTree = "<group>"; };
+		188B442E1B453A1C006950FA /* flag1st.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1st.jpg; sourceTree = "<group>"; };
+		188B442F1B453A1C006950FA /* flag3rd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag3rd.jpg; sourceTree = "<group>"; };
+		188B44301B453A1C006950FA /* flagother.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flagother.jpg; sourceTree = "<group>"; };
+		188D6B181B6EFA9C005E6003 /* background_1920_1080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_1920_1080.jpg; sourceTree = "<group>"; };
+		188D6B191B6EFA9C005E6003 /* LaunchScreenDice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreenDice.jpg; sourceTree = "<group>"; };
+		1899D7781BD622FD004082C1 /* DGSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSettings.swift; sourceTree = "<group>"; };
+		189D45C31B53B146000C0977 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		18BA9DA21DD755C800430B63 /* DiceGameLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiceGameLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BA9DD01DD8842700430B63 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		18BA9DD21DD8849A00430B63 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		18BC17831C801FA6001A10AE /* DGClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGClient.swift; sourceTree = "<group>"; };
+		18BC179B1C802810001A10AE /* WhaleLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WhaleLib.xcodeproj; path = ../WhaleLib/WhaleLib.xcodeproj; sourceTree = "<group>"; };
+		18BC17A81C804B64001A10AE /* DGUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGUser.swift; sourceTree = "<group>"; };
+		18CD3D971B46C92900C0ADFC /* recommend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend.png; sourceTree = "<group>"; };
+		18CD3D9E1B46CCDE00C0ADFC /* feedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedback.png; sourceTree = "<group>"; };
+		18E3C8971DDD73AA00285B85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E3C89B1DDD73E500285B85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18E3C89D1DDD73E600285B85 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		18E6C8411D05774B007103FE /* DGPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGPrivate.swift; sourceTree = "<group>"; };
+		18F167F41C810FE50044D23F /* DGStartup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGStartup.swift; sourceTree = "<group>"; };
+		27299FF7E959D1D5742CFC2C /* Pods-DiceGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceGame.release.xcconfig"; path = "Target Support Files/Pods-DiceGame/Pods-DiceGame.release.xcconfig"; sourceTree = "<group>"; };
+		B4CA4F83AA1C61EFF50DE840 /* libPods-DiceGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiceGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA089FAA1B00FD8E00D60129 /* DGInternetClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGInternetClient.swift; sourceTree = "<group>"; };
+		FA0D69FA1B4036EF00BDA570 /* DGRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRankViewController.swift; sourceTree = "<group>"; };
+		FA10E0482216A24D00C7508B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FA10E04C2216A2C300C7508B /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		FA10E0542216A72E00C7508B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		FA1AE8012134EFAF00A5CDA9 /* send_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_1024.png; sourceTree = "<group>"; };
+		FA1AE8032134F27B00A5CDA9 /* return_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return_1024.png; sourceTree = "<group>"; };
+		FA1CE35E211D2188007CDEDE /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DiceGameLib.xcodeproj; path = /Users/apple/CODE/Workspace4Whale/../Git4Whale/iOSProjects/DiceGameLib/DiceGameLib.xcodeproj; sourceTree = "<absolute>"; };
+		FA7817B01B1615A200029C2A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA7817B61B1619AB00029C2A /* WXApi_TencentOpenAPI_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi_TencentOpenAPI_Bridge_Header.h; sourceTree = "<group>"; };
+		FA7817C01B1626DF00029C2A /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Lib/libWeChatSDK.a; sourceTree = "<group>"; };
+		FA7817C21B1626DF00029C2A /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = Lib/WXApi.h; sourceTree = "<group>"; };
+		FA7817C31B1626DF00029C2A /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = Lib/WXApiObject.h; sourceTree = "<group>"; };
+		FA7817C61B16E0DB00029C2A /* DGFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGFeedback.swift; sourceTree = "<group>"; };
+		FA8060B61B25A0C200B1D973 /* todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo; sourceTree = "<group>"; };
+		FA8694671B1C2690009AA010 /* DGInternetGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGInternetGame.swift; sourceTree = "<group>"; };
+		FA8694F01B1D4E40009AA010 /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = SOURCE_ROOT; };
+		FA8695001B1D4E53009AA010 /* dice.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = dice.m4r; sourceTree = SOURCE_ROOT; };
+		FA8695041B1D4E53009AA010 /* knock.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = knock.m4r; sourceTree = SOURCE_ROOT; };
+		FA8695061B1D4E53009AA010 /* readygo.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = readygo.m4r; sourceTree = SOURCE_ROOT; };
+		FAE47A311AE8DB0D00F2AF39 /* DiceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE47A351AE8DB0D00F2AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE47A361AE8DB0D00F2AF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAE47A3D1AE8DB0D00F2AF39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAE47A401AE8DB0D00F2AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAE47A4B1AE8DB0D00F2AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE47A4C1AE8DB0D00F2AF39 /* DiceGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceGameTests.swift; sourceTree = "<group>"; };
+		FB5D871E74318D5E73437307 /* Pods-DiceGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceGame.debug.xcconfig"; path = "Target Support Files/Pods-DiceGame/Pods-DiceGame.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE47A2E1AE8DB0D00F2AF39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA10E0552216A72E00C7508B /* GoogleMobileAds.framework in Frameworks */,
+				FA10E0532216A50800C7508B /* libPods-DiceGame.a in Frameworks */,
+				18BA9DA31DD755C800430B63 /* DiceGameLib.framework in Frameworks */,
+				182B0B561BB234CB002F1298 /* GameKit.framework in Frameworks */,
+				1868F53B1B47475C000A5169 /* CoreTelephony.framework in Frameworks */,
+				1868F5371B47473D000A5169 /* CoreGraphics.framework in Frameworks */,
+				1868F5331B474719000A5169 /* Security.framework in Frameworks */,
+				FA7817C41B1626DF00029C2A /* libWeChatSDK.a in Frameworks */,
+				FA1CE35A211D2188007CDEDE /* WhaleLib.framework in Frameworks */,
+				FA7817B11B1615A200029C2A /* SystemConfiguration.framework in Frameworks */,
+				FA1CE35F211D2188007CDEDE /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		076CD1F201DE8611F5D2D6CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D871E74318D5E73437307 /* Pods-DiceGame.debug.xcconfig */,
+				27299FF7E959D1D5742CFC2C /* Pods-DiceGame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		18BC179C1C802810001A10AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BC17A01C802810001A10AE /* WhaleLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BC17A71C8030B6001A10AE /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				FA0D69FA1B4036EF00BDA570 /* DGRankViewController.swift */,
+			);
+			name = deprecated;
+			sourceTree = "<group>";
+		};
+		18F167F31C810FD00044D23F /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				18F167F41C810FE50044D23F /* DGStartup.swift */,
+				FA7817C61B16E0DB00029C2A /* DGFeedback.swift */,
+				1899D7781BD622FD004082C1 /* DGSettings.swift */,
+				FA8694671B1C2690009AA010 /* DGInternetGame.swift */,
+				187459DE1B7638880055CFAC /* DGRing.swift */,
+				187700171B776B1B00D971FB /* DGRound.swift */,
+				18E6C8411D05774B007103FE /* DGPrivate.swift */,
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		89C602F9AD6047E2FDEF5B93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA10E0542216A72E00C7508B /* GoogleMobileAds.framework */,
+				B4CA4F83AA1C61EFF50DE840 /* libPods-DiceGame.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA10E04D2216A2C300C7508B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA10E0522216A2C300C7508B /* libPods-DiceGame.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2BF2101DE92E9200242CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BF2151DE92E9200242CEA /* DiceGameLib.framework */,
+				FA2BF2171DE92E9200242CEA /* DGLib.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4F381E1B1550B2004FB4DD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */,
+				18BC179B1C802810001A10AE /* WhaleLib.xcodeproj */,
+				1868F53A1B47475C000A5169 /* CoreTelephony.framework */,
+				1868F5361B47473D000A5169 /* CoreGraphics.framework */,
+				1868F5321B474719000A5169 /* Security.framework */,
+				182B0B551BB234CB002F1298 /* GameKit.framework */,
+				FA7817B01B1615A200029C2A /* SystemConfiguration.framework */,
+				FA4F382D1B15510E004FB4DD /* WeChat */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FA4F382D1B15510E004FB4DD /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				FA7817C01B1626DF00029C2A /* libWeChatSDK.a */,
+				FA7817C21B1626DF00029C2A /* WXApi.h */,
+				FA7817C31B1626DF00029C2A /* WXApiObject.h */,
+			);
+			name = WeChat;
+			sourceTree = "<group>";
+		};
+		FAE47A281AE8DB0D00F2AF39 = {
+			isa = PBXGroup;
+			children = (
+				FA10E0482216A24D00C7508B /* Podfile */,
+				FA10E04C2216A2C300C7508B /* Pods.xcodeproj */,
+				FA1CE35E211D2188007CDEDE /* SnapKit.framework */,
+				18BA9DA21DD755C800430B63 /* DiceGameLib.framework */,
+				FA8060B61B25A0C200B1D973 /* todo */,
+				FAE47A331AE8DB0D00F2AF39 /* DiceGame */,
+				FAE47A491AE8DB0D00F2AF39 /* DiceGameTests */,
+				FAE47A561AE8DBBD00F2AF39 /* Resources */,
+				FAE47A321AE8DB0D00F2AF39 /* Products */,
+				FA4F381E1B1550B2004FB4DD /* Library */,
+				076CD1F201DE8611F5D2D6CE /* Pods */,
+				89C602F9AD6047E2FDEF5B93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE47A321AE8DB0D00F2AF39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE47A311AE8DB0D00F2AF39 /* DiceGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE47A331AE8DB0D00F2AF39 /* DiceGame */ = {
+			isa = PBXGroup;
+			children = (
+				18F167F31C810FD00044D23F /* vc */,
+				18BC17831C801FA6001A10AE /* DGClient.swift */,
+				18BC17A81C804B64001A10AE /* DGUser.swift */,
+				1889BD9E1B7359E400AD2F30 /* DGMissions.swift */,
+				FA089FAA1B00FD8E00D60129 /* DGInternetClient.swift */,
+				18BC17A71C8030B6001A10AE /* deprecated */,
+				FAE47A341AE8DB0D00F2AF39 /* Supporting Files */,
+			);
+			path = DiceGame;
+			sourceTree = "<group>";
+		};
+		FAE47A341AE8DB0D00F2AF39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA7817B61B1619AB00029C2A /* WXApi_TencentOpenAPI_Bridge_Header.h */,
+				FAE47A3D1AE8DB0D00F2AF39 /* Images.xcassets */,
+				FAE47A3F1AE8DB0D00F2AF39 /* LaunchScreen.xib */,
+				FAE47A361AE8DB0D00F2AF39 /* AppDelegate.swift */,
+				FAE47A351AE8DB0D00F2AF39 /* Info.plist */,
+				18BA9DD31DD8849A00430B63 /* InfoPlist.strings */,
+				18E3C89C1DDD73E500285B85 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE47A491AE8DB0D00F2AF39 /* DiceGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE47A4C1AE8DB0D00F2AF39 /* DiceGameTests.swift */,
+				FAE47A4A1AE8DB0D00F2AF39 /* Supporting Files */,
+			);
+			path = DiceGameTests;
+			sourceTree = "<group>";
+		};
+		FAE47A4A1AE8DB0D00F2AF39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE47A4B1AE8DB0D00F2AF39 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE47A561AE8DBBD00F2AF39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA1AE8012134EFAF00A5CDA9 /* send_1024.png */,
+				FA1AE8032134F27B00A5CDA9 /* return_1024.png */,
+				188D6B181B6EFA9C005E6003 /* background_1920_1080.jpg */,
+				188D6B191B6EFA9C005E6003 /* LaunchScreenDice.jpg */,
+				1868F54B1B48414B000A5169 /* QQ.png */,
+				18CD3D9E1B46CCDE00C0ADFC /* feedback.png */,
+				1889BD991B732C1700AD2F30 /* download.png */,
+				18CD3D971B46C92900C0ADFC /* recommend.png */,
+				1889BD9C1B7338F600AD2F30 /* mission.png */,
+				189D45C31B53B146000C0977 /* share.png */,
+				188B442D1B453A1C006950FA /* flag2nd.jpg */,
+				188B442E1B453A1C006950FA /* flag1st.jpg */,
+				188B442F1B453A1C006950FA /* flag3rd.jpg */,
+				188B44301B453A1C006950FA /* flagother.jpg */,
+				FA8694F01B1D4E40009AA010 /* 28.png */,
+				FA8695001B1D4E53009AA010 /* dice.m4r */,
+				FA8695041B1D4E53009AA010 /* knock.m4r */,
+				FA8695061B1D4E53009AA010 /* readygo.m4r */,
+			);
+			name = Resources;
+			path = DiceGame.xcodeproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE47A301AE8DB0D00F2AF39 /* DiceGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE47A501AE8DB0D00F2AF39 /* Build configuration list for PBXNativeTarget "DiceGame" */;
+			buildPhases = (
+				2D6D71950784F28A79D46411 /* [CP] Check Pods Manifest.lock */,
+				FAE47A2D1AE8DB0D00F2AF39 /* Sources */,
+				FAE47A2E1AE8DB0D00F2AF39 /* Frameworks */,
+				FAE47A2F1AE8DB0D00F2AF39 /* Resources */,
+				18D3F2D81C9B943A00B7B584 /* Embed Frameworks */,
+				FA1CE368211D22DD007CDEDE /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA2BF2191DE92EA200242CEA /* PBXTargetDependency */,
+				FA2BF21B1DE92EA200242CEA /* PBXTargetDependency */,
+				FA1CE35D211D2188007CDEDE /* PBXTargetDependency */,
+				FA1CE367211D22DC007CDEDE /* PBXTargetDependency */,
+			);
+			name = DiceGame;
+			productName = DiceGame;
+			productReference = FAE47A311AE8DB0D00F2AF39 /* DiceGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE47A291AE8DB0D00F2AF39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = WhaleStudio;
+				TargetAttributes = {
+					FAE47A301AE8DB0D00F2AF39 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 2R8D7M8Z97;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FAE47A2C1AE8DB0D00F2AF39 /* Build configuration list for PBXProject "DiceGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = FAE47A281AE8DB0D00F2AF39;
+			productRefGroup = FAE47A321AE8DB0D00F2AF39 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA2BF2101DE92E9200242CEA /* Products */;
+					ProjectRef = FA2BF20F1DE92E9200242CEA /* DiceGameLib.xcodeproj */;
+				},
+				{
+					ProductGroup = FA10E04D2216A2C300C7508B /* Products */;
+					ProjectRef = FA10E04C2216A2C300C7508B /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = 18BC179C1C802810001A10AE /* Products */;
+					ProjectRef = 18BC179B1C802810001A10AE /* WhaleLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FAE47A301AE8DB0D00F2AF39 /* DiceGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18BC17A01C802810001A10AE /* WhaleLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WhaleLib.framework;
+			remoteRef = 18BC179F1C802810001A10AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA10E0522216A2C300C7508B /* libPods-DiceGame.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-DiceGame.a";
+			remoteRef = FA10E0512216A2C300C7508B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2BF2151DE92E9200242CEA /* DiceGameLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DiceGameLib.framework;
+			remoteRef = FA2BF2141DE92E9200242CEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2BF2171DE92E9200242CEA /* DGLib.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DGLib.bundle;
+			remoteRef = FA2BF2161DE92E9200242CEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE47A2F1AE8DB0D00F2AF39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA09B51C1F344ABA002FADF3 /* DGLib.bundle in Resources */,
+				180F24561B55C98500712507 /* LaunchScreen.xib in Resources */,
+				188D6B1A1B6EFA9C005E6003 /* background_1920_1080.jpg in Resources */,
+				18E3C89A1DDD73E500285B85 /* Localizable.strings in Resources */,
+				188B44341B453A1C006950FA /* flag3rd.jpg in Resources */,
+				FA8694F71B1D4E40009AA010 /* 28.png in Resources */,
+				1889BD9A1B732C1700AD2F30 /* download.png in Resources */,
+				1868F54C1B48414B000A5169 /* QQ.png in Resources */,
+				FA1AE8042134F27B00A5CDA9 /* return_1024.png in Resources */,
+				18CD3D9A1B46C92900C0ADFC /* recommend.png in Resources */,
+				FA10E0492216A24D00C7508B /* Podfile in Resources */,
+				FA8695161B1D4E53009AA010 /* knock.m4r in Resources */,
+				18BA9DD11DD8849A00430B63 /* InfoPlist.strings in Resources */,
+				FA8695121B1D4E53009AA010 /* dice.m4r in Resources */,
+				188B44351B453A1C006950FA /* flagother.jpg in Resources */,
+				188B44321B453A1C006950FA /* flag2nd.jpg in Resources */,
+				188D6B1B1B6EFA9C005E6003 /* LaunchScreenDice.jpg in Resources */,
+				18CD3DA01B46CCDE00C0ADFC /* feedback.png in Resources */,
+				FA8060B71B25A0C200B1D973 /* todo in Resources */,
+				FA8695181B1D4E53009AA010 /* readygo.m4r in Resources */,
+				188B44331B453A1C006950FA /* flag1st.jpg in Resources */,
+				FAE47A3E1AE8DB0D00F2AF39 /* Images.xcassets in Resources */,
+				1889BD9D1B7338F600AD2F30 /* mission.png in Resources */,
+				189D45C41B53B146000C0977 /* share.png in Resources */,
+				FA1AE8022134EFAF00A5CDA9 /* send_1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D6D71950784F28A79D46411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiceGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE47A2D1AE8DB0D00F2AF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8694681B1C2690009AA010 /* DGInternetGame.swift in Sources */,
+				18BC17A91C804B64001A10AE /* DGUser.swift in Sources */,
+				1899D7791BD622FD004082C1 /* DGSettings.swift in Sources */,
+				187700181B776B1B00D971FB /* DGRound.swift in Sources */,
+				FA7817C71B16E0DB00029C2A /* DGFeedback.swift in Sources */,
+				18E6C8421D05774B007103FE /* DGPrivate.swift in Sources */,
+				18F167F51C810FE50044D23F /* DGStartup.swift in Sources */,
+				187459DF1B7638880055CFAC /* DGRing.swift in Sources */,
+				1889BD9F1B7359E400AD2F30 /* DGMissions.swift in Sources */,
+				18BC17841C801FA6001A10AE /* DGClient.swift in Sources */,
+				FA0D69FB1B4036EF00BDA570 /* DGRankViewController.swift in Sources */,
+				FA089FAB1B00FD8E00D60129 /* DGInternetClient.swift in Sources */,
+				FAE47A371AE8DB0D00F2AF39 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA1CE35D211D2188007CDEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhaleLib;
+			targetProxy = FA1CE35C211D2188007CDEDE /* PBXContainerItemProxy */;
+		};
+		FA1CE367211D22DC007CDEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DGLib;
+			targetProxy = FA1CE366211D22DC007CDEDE /* PBXContainerItemProxy */;
+		};
+		FA2BF2191DE92EA200242CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DiceGameLib;
+			targetProxy = FA2BF2181DE92EA200242CEA /* PBXContainerItemProxy */;
+		};
+		FA2BF21B1DE92EA200242CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DGLib;
+			targetProxy = FA2BF21A1DE92EA200242CEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18BA9DD31DD8849A00430B63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BA9DD21DD8849A00430B63 /* zh-Hans */,
+				18E3C8971DDD73AA00285B85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18E3C89C1DDD73E500285B85 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E3C89B1DDD73E500285B85 /* en */,
+				18E3C89D1DDD73E600285B85 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FAE47A3F1AE8DB0D00F2AF39 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE47A401AE8DB0D00F2AF39 /* Base */,
+				18BA9DD01DD8842700430B63 /* zh-Hans */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAE47A4E1AE8DB0D00F2AF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-fobjc-arc";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAE47A4F1AE8DB0D00F2AF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-fobjc-arc";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAE47A511AE8DB0D00F2AF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5D871E74318D5E73437307 /* Pods-DiceGame.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2R8D7M8Z97;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = DiceGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "cy.i10l.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/apple/CODE/Git4Whale/iOSProjects/DiceGame/DiceGame/WXApi_TencentOpenAPI_Bridge_Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAE47A521AE8DB0D00F2AF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27299FF7E959D1D5742CFC2C /* Pods-DiceGame.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2R8D7M8Z97;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = DiceGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "cy.i10l.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/apple/CODE/Git4Whale/iOSProjects/DiceGame/DiceGame/WXApi_TencentOpenAPI_Bridge_Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE47A2C1AE8DB0D00F2AF39 /* Build configuration list for PBXProject "DiceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE47A4E1AE8DB0D00F2AF39 /* Debug */,
+				FAE47A4F1AE8DB0D00F2AF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE47A501AE8DB0D00F2AF39 /* Build configuration list for PBXNativeTarget "DiceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE47A511AE8DB0D00F2AF39 /* Debug */,
+				FAE47A521AE8DB0D00F2AF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAE47A291AE8DB0D00F2AF39 /* Project object */;
+}

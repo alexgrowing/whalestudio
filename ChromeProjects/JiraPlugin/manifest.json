@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Shortcut4Jira",
+    "version": "1.0.1",
+    "description": "使用Jira时的一些快捷键",
+    "icons":
+    {
+        "16": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "content_scripts": 
+    [
+        {
+            "matches": ["https://work.fineres.com/*"],
+            "js": ["js/content-script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "homepage_url": "https://www.baidu.com"
+}

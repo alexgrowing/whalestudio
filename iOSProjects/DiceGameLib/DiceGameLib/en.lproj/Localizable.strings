@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  DiceGameLib
+
+  Created by apple on 2016/11/15.
+  Copyright © 2016年 WhaleStudio. All rights reserved.
+*/
+"Lucky_Card" = "Lucky";
+"Unknown_Card" = "Unknown Card";
+"End_Game" = "End Game";
+"New_Round" = "New Round";
+"Touch_Screen_2_Shake_Dice" = "Touch Screen to Shake";
+"Matching_Player" = "Matching Player";
+"Cancel" = "Cancel";
+"Use_Lucky_Card" = "Use Lucky";
+"One_More" = "One More";
+"Match_New_Player" = "Match New Player";
+"Are_You_Sure_2_Quit" = "Are You Sure to Quit?";
+"Yes" = "Yes";
+"1_Can_Be_Any_Point" = "1 Can Be Any Point";
+"1_Has_Not_Been_Guessed" = "1 Has Not Been Guessed";
+"1_Can_Only_Be_1" = "1 Can Only Be 1";
+"1_Can_Only_Be_1_After_Been_Guessed_Once" = "1 Can Only Be 1 After Been Guessed Once";
+"Me" = "Me";
+"Gold" = "Gold";
+"Unavailable" = "Unavailable";
+"Specified_Room" = "Specified Room";
+"Not_Accessable" = "Not Accessable";
+"Used_Card_But_I_Am_Not_The_Target" = "Used Card, But I Am Not The Target";
+"Wrong_Order" = "Wrong Order";
+"Not_My_Ture_2_Guess" = "Not My Ture to Guess";
+"You_Can_Not_Point_Out_Liar_Now" = "You Can Not Point Out Liar Now";
+"Illegal_Guess" = "Illegal Guess";
+"Server_Crashed" = "Server Crashed";
+"Ask_2_Quit" = "Ask to Quit";
+"Lost_Connection" = "Lost Connection";
+"I_Do_Not_Believe" = "I Don't Believe";
+"Return" = "Return";
+"Player" = "Player";
+
+"Guess" = "Guess";
+"Doubt" = "Doubt";
+
+"First_Guess_Should_Be_Larger_Than_Count_Of_Players" = "First Guess Should Be Larger Than Count Of Players";
+"The_Count_Guessed_Is_Smaller_Than_Last_Guess" = "The Count Guessed Is Smaller Than Last Guess";
+"The_Point_Guessed_Is_Smaller_Than_Last_Guess" = "The Point Guessed Is Smaller Than Last Guess";

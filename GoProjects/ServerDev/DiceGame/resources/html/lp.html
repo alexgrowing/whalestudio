@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>long-polling</title> 
+<style type="text/css"> 
+.msg {padding: 10px;margin-bottom: 10px;border: 1px solid #ccc;border-radius: 8px;} 
+</style> 
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript">
+    var userid;
+
+    function getuserid() {
+        $.ajax({
+            url:"../session/create",
+            success:function(res, status) {
+                $("#useridlabel").text(res)
+                userid = res
+            }
+        })
+    }
+
+    function loop() {
+        $.ajax({
+            url:"../session/poll?sid=" + userid,
+            success:function(res, status) {
+                console.log(res)
+                var json = $.parseJSON(res)
+                if (json["LOOP"] == false) {
+                    return
+                }
+
+                loop()
+            }
+        })
+    }
+
+    function sendMessage() {
+        $.ajax({
+            url:"../session/test?sid=" + userid,
+            success:function(res, status) {
+                console.log("test done")
+            }
+        })
+    }
+</script> </head>
+<body>
+<button id="getuseridbutton" onclick="getuserid();">Get User ID</button>
+<div id="useridlabel"></div>
+
+
+<button id="loopbutton" onclick="loop();">Loop</button>
+<button id="testsendmessagebutton" onclick="sendMessage();">Send Message</button>
+
+</body>
+</html>

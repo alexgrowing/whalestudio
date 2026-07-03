@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name='apple-itunes-app' content='app-id=1069771057'>
+    <style>
+        div, body, p, img {
+            margin:0;
+            padding:0;
+            border:0;
+            font:inherit;
+            font-size:100%;
+            vertical-align:baseline;
+            display:block;
+        }
+
+        .rich_content {
+            max-width:550px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .achivement_title {
+            text-align:center;
+            font-size:30px;
+            padding-top:30px;
+        }
+
+        .achivement_category {
+            padding-top:20px;
+            padding-left:20px;
+        }
+        .achivement_category span {
+            color: #4095D5;
+            font-weight: bold;
+            font-size:25px;
+        }
+        .achivement_detail {
+            padding-left:40px;
+        }
+        .achivement_detail_number {
+            color: #4095D5;
+            font-weight: bold;
+            font-size:18px;
+        }
+        .achivement_detail_country {
+            font-weight: bold;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+<title>{{.Name}}的成就</title>
+<body style="background-color:white">
+<div class="rich_content">
+    <p class="achivement_title">{{.Name}}的成就</p>
+    <p class="achivement_category">我足迹踏遍<span>{{.Footprints.Size | printf "%.2f"}}平方公里</span>，相当于</p>
+    <p class="achivement_detail"><span class="achivement_detail_number">{{.Footprints.PartOfMatchedCountry | printf "%.2f"}}</span>个<span class="achivement_detail_country">{{.Footprints.NameOfMatchedCountry}}</span></p>
+    <p class="achivement_detail">纵跨{{.Footprints.CountOfLatitude}}个纬度</p>
+    <p class="achivement_detail">横跨{{.Footprints.CountOfLongitude}}个经度</p>
+    <p class="achivement_detail">北至{{.Footprints.MaxLatitude | printf "%.2f"}}</p>
+    <p class="achivement_detail">南至{{.Footprints.MinLatitude | printf "%.2f"}}</p>
+    <p class="achivement_detail">东至{{.Footprints.MaxLongitude | printf "%.2f"}}</p>
+    <p class="achivement_detail">西至{{.Footprints.MinLongitude | printf "%.2f"}}</p>
+
+    <p class="achivement_category">我的地盘有<span>{{.Territories.Size | printf "%.2f"}}平方公里</span>，相当于</p>
+    <p class="achivement_detail"><span class="achivement_detail_number">{{.Territories.PartOfMatchedCountry | printf "%.2f"}}</span>个<span class="achivement_detail_country">{{.Territories.NameOfMatchedCountry}}</span></p>
+    <p class="achivement_detail">纵跨{{.Territories.CountOfLatitude}}个纬度</p>
+    <p class="achivement_detail">横跨{{.Territories.CountOfLongitude}}个经度</p>
+    <p class="achivement_detail">北至{{.Territories.MaxLatitude | printf "%.2f"}}</p>
+    <p class="achivement_detail">南至{{.Territories.MinLatitude | printf "%.2f"}}</p>
+    <p class="achivement_detail">东至{{.Territories.MaxLongitude | printf "%.2f"}}</p>
+    <p class="achivement_detail">西至{{.Territories.MinLongitude | printf "%.2f"}}</p>
+
+    <a href="https://itunes.apple.com/us/app/qiang-pan-qiang-zhen-shi-shi/id1069771057"><img src="/img/greenearth.png" style="position:absolute;bottom:10px;right:10px;width:100px;height:100px"></img></a>
+</div>
+</body>
+</html>

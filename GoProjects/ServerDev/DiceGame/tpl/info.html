@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script>
+        function doRequest(url) {
+            $.ajax({
+                url:url,
+                timeout:5 * 1000,
+                cache:false,
+                complete:function (res, status) {
+                    window.location.reload()
+                }
+            })
+        }
+    </script>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            background-color: #fff;
+        }
+        @media screen and (min-width:1024px) {
+            .rich_media {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .rich_media_content {
+            padding: 20px 16px 12px;
+        }
+        .project_content {
+            padding: 10px
+        }
+    </style>
+    <title>游戏监控</title>
+</head>
+<body>
+
+<div class="rich_media">
+    <p class="rich_media_content">
+        <p>服务器启动时间:{{.流量.starttime}}</p>
+        <p>流量使用:{{.流量.output}}</p>
+        <hr>
+        <p>历史累计计算时间:{{.历史累计.calculate_time}}</p>
+        <p>总回合数:{{.历史累计.总回合数}}</p>
+        <p>真人对战总回合数:{{.历史累计.真人玩家总回合数}}</p>
+        <hr>
+        <p>活跃用户数计算时间:{{.玩家.calculate_time}}</p>
+        <p>48小时新增玩家数:{{.玩家.N48小时内新增玩家数}}</p>
+        <p>48小时活跃玩家数:{{.玩家.N48小时内玩家数}}</p>
+        <hr>
+        <p>回合数计算时间:{{.回合.calculate_time}}</p>
+        <table border=1 cellspacing=0>
+            <thead><td>When</td><td>总回合数</td><td>四人场</td><td>擂台赛</td><td>私密场</td></thead>
+            <tbody>
+            <tr>
+                <td>今天</td><td>{{.回合.今天.总回合数}}</td><td>{{.回合.今天.四人场}}</td><td>{{.回合.今天.擂台赛}}</td><td>{{.回合.今天.私密场}}</td>
+            </tr>
+            <tr>
+                <td>48小时内</td><td>{{.回合.N48小时.总回合数}}</td><td>{{.回合.N48小时.四人场}}</td><td>{{.回合.N48小时.擂台赛}}</td><td>{{.回合.N48小时.私密场}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>48小时内私密进入次数:{{.回合.N48小时私密进入}}</p>
+        <hr>
+        <p>最近10回合计算时间:{{.最近10回合.calculate_time}}</p>
+        <table border=1 cellspacing=0>
+            <thead><td>时间</td><td>RoomID</td><td>类型</td><td>真人数</td><td>机器人数</td></thead>
+    {{range $k, $v := .最近10回合.回合}}
+        <tr><td>{{$v.时间}}</td><td>{{$v.RoomID}}</td><td>{{$v.类型}}</td><td>{{$v.真人}}</td><td>{{$v.机器}}</td></tr>
+    {{end}}
+        </table>
+        <hr>
+        <p>最近一次新增Room计算时间:{{.最近一次新增Room.calculate_time}}</p>
+        <p>时间:{{.最近一次新增Room.时间}}</p>
+        <p>此时public房间数:{{.最近一次新增Room.此时public房间数}}</p>
+        <p>此时private房间数:{{.最近一次新增Room.此时private房间数}}</p>
+        <p>此时ring房间数:{{.最近一次新增Room.此时ring房间数}}</p>
+        <p>当前真人玩家数:{{.最近一次新增Room.当前真人玩家数}}</p>
+        <hr>
+        <p>卡片使用计算时间:{{.卡片.calculate_time}}</p>
+        <p>48小时内卡片使用总次数:{{.卡片.N48小时内卡片使用总次数}}</p>
+        <p>卡片使用总次数:{{.卡片.卡片使用总次数}}</p>
+    </div>
+</div>
+
+</body>
+</html>

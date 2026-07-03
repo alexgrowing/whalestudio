@@ -1,0 +1,7 @@
+1.在iOS客户端自己已经进入一个房间，但还没有开始游戏的前提下，界面上有一个按钮，通过微信邀请好友
+2.好友收到一个URL链接[http://localhost:4001/html/app.html?aaaa]
+3.在这个页面要提示用户点击【在safari中显示】，因为这个页面要执行一些js，但是微信自带的浏览器好像把js屏蔽了
+4.在app.html里面，有一个anchor，会自动点击，首先生成一个iframe其src为【cy.i10l.dicegame://go2room/roomID】这个roomID就是第二条?后面的那个字符串
+5.如果用户本机有DiceGame就能顺利解析cy.i10l.dicegame这个schema，打开DiceGame
+    在DiceGame的AppDelegate中的application on openUrl，会解析【cy.i10l.dicegame://go2room/roomID】，执行让用户直接进行roomID的操作
+6.如果用户本机没有DiceGame，就会触发anchor的href，去下载DiceGame

@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA4441FF20A563BF00347E0A /* addimage.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4441FC20A563BF00347E0A /* addimage.png */; };
+		FA44420020A563BF00347E0A /* addtext.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4441FD20A563BF00347E0A /* addtext.png */; };
+		FA44420120A563BF00347E0A /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4441FE20A563BF00347E0A /* edit.png */; };
+		FA44420320A564BE00347E0A /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FA44420220A564BD00347E0A /* delete.png */; };
+		FA47789720F841FA007407EA /* KCThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47789620F841FA007407EA /* KCThumbnail.swift */; };
+		FA47789920FB0208007407EA /* large_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FA47789820FB0208007407EA /* large_1024.png */; };
+		FA6179B020C61E79006FE7AB /* KCMyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6179AF20C61E79006FE7AB /* KCMyView.swift */; };
+		FA6179B220C666FB006FE7AB /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6179B120C666FB006FE7AB /* WebServices.swift */; };
+		FA6179B420C66E56006FE7AB /* man_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6179B320C66E56006FE7AB /* man_1024.png */; };
+		FA6179B620C66F80006FE7AB /* search_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6179B520C66F80006FE7AB /* search_1024.png */; };
+		FA6179B820C66FF9006FE7AB /* close_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6179B720C66FF9006FE7AB /* close_1024.png */; };
+		FA7862FA209445CB00A459E7 /* KCStartup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7862F9209445CB00A459E7 /* KCStartup.swift */; };
+		FA7862FD2099A80200A459E7 /* WhaleLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7862FC2099A80200A459E7 /* WhaleLib.framework */; };
+		FA9A0F4620BF9217006304C4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9A0F4420BF920B006304C4 /* SnapKit.framework */; };
+		FA9A0F4720BF9217006304C4 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9A0F4420BF920B006304C4 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAA0919C20809021009C8B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0919B20809021009C8B56 /* AppDelegate.swift */; };
+		FAA091A120809021009C8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA0919F20809021009C8B56 /* Main.storyboard */; };
+		FAA091A320809021009C8B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA091A220809021009C8B56 /* Assets.xcassets */; };
+		FAA091A620809021009C8B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA091A420809021009C8B56 /* LaunchScreen.storyboard */; };
+		FAA1A2BA20E35A010077948F /* KCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1A2B920E35A010077948F /* KCTools.swift */; };
+		FAA1A2BE20E4818B0077948F /* loading_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1A2BD20E4818B0077948F /* loading_1024.png */; };
+		FAA1A2C820E4CE4E0077948F /* sync_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1A2C520E4CE4E0077948F /* sync_1024.png */; };
+		FAA1A2CB20E4D0700077948F /* upload_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1A2C920E4D0700077948F /* upload_1024.png */; };
+		FAA1A2CC20E4D0700077948F /* download_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1A2CA20E4D0700077948F /* download_1024.png */; };
+		FAA1A2CE20EB2E5F0077948F /* lost_connect_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1A2CD20EB2E5F0077948F /* lost_connect_1024.png */; };
+		FAA1A2DC20F48E7A0077948F /* cards_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1A2DB20F48E7A0077948F /* cards_1024.png */; };
+		FAA1A2DE20F734900077948F /* KCShuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1A2DD20F734900077948F /* KCShuffle.swift */; };
+		FAC2275F21B1178500FDDAF7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2275E21B1178500FDDAF7 /* GameKit.framework */; };
+		FAC7F9C32089CA1C00ABE340 /* Beans.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F9C22089CA1C00ABE340 /* Beans.swift */; };
+		FAC7F9CE208B334300ABE340 /* KnowledgeCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F9CD208B334300ABE340 /* KnowledgeCardTests.swift */; };
+		FACA95B3209AAA1E003C81D1 /* WhaleLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA7862FC2099A80200A459E7 /* WhaleLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FACA95B6209AADE3003C81D1 /* todo in Resources */ = {isa = PBXBuildFile; fileRef = FACA95B5209AADE3003C81D1 /* todo */; };
+		FACA95B8209ADF3C003C81D1 /* KCEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA95B7209ADF3C003C81D1 /* KCEdit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC7F9D0208B334300ABE340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA0919020809021009C8B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA0919720809021009C8B56;
+			remoteInfo = KnowledgeCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FACA95B4209AAA1E003C81D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FACA95B3209AAA1E003C81D1 /* WhaleLib.framework in Embed Frameworks */,
+				FA9A0F4720BF9217006304C4 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA4441FC20A563BF00347E0A /* addimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addimage.png; sourceTree = "<group>"; };
+		FA4441FD20A563BF00347E0A /* addtext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addtext.png; sourceTree = "<group>"; };
+		FA4441FE20A563BF00347E0A /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		FA44420220A564BD00347E0A /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		FA47789620F841FA007407EA /* KCThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCThumbnail.swift; sourceTree = "<group>"; };
+		FA47789820FB0208007407EA /* large_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_1024.png; sourceTree = "<group>"; };
+		FA6179AF20C61E79006FE7AB /* KCMyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCMyView.swift; sourceTree = "<group>"; };
+		FA6179B120C666FB006FE7AB /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		FA6179B320C66E56006FE7AB /* man_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_1024.png; sourceTree = "<group>"; };
+		FA6179B520C66F80006FE7AB /* search_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_1024.png; sourceTree = "<group>"; };
+		FA6179B720C66FF9006FE7AB /* close_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_1024.png; sourceTree = "<group>"; };
+		FA7862F9209445CB00A459E7 /* KCStartup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCStartup.swift; sourceTree = "<group>"; };
+		FA7862FC2099A80200A459E7 /* WhaleLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WhaleLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9A0F4420BF920B006304C4 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA0919820809021009C8B56 /* KnowledgeCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowledgeCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA0919B20809021009C8B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA091A020809021009C8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA091A220809021009C8B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA091A520809021009C8B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA091A720809021009C8B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA1A2B920E35A010077948F /* KCTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTools.swift; sourceTree = "<group>"; };
+		FAA1A2BD20E4818B0077948F /* loading_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_1024.png; sourceTree = "<group>"; };
+		FAA1A2C520E4CE4E0077948F /* sync_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync_1024.png; sourceTree = "<group>"; };
+		FAA1A2C920E4D0700077948F /* upload_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload_1024.png; sourceTree = "<group>"; };
+		FAA1A2CA20E4D0700077948F /* download_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download_1024.png; sourceTree = "<group>"; };
+		FAA1A2CD20EB2E5F0077948F /* lost_connect_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lost_connect_1024.png; sourceTree = "<group>"; };
+		FAA1A2DB20F48E7A0077948F /* cards_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cards_1024.png; sourceTree = "<group>"; };
+		FAA1A2DD20F734900077948F /* KCShuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCShuffle.swift; sourceTree = "<group>"; };
+		FAC2275E21B1178500FDDAF7 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		FAC7F9C22089CA1C00ABE340 /* Beans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beans.swift; sourceTree = "<group>"; };
+		FAC7F9CB208B334300ABE340 /* KnowledgeCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowledgeCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC7F9CD208B334300ABE340 /* KnowledgeCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeCardTests.swift; sourceTree = "<group>"; };
+		FAC7F9CF208B334300ABE340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACA95B5209AADE3003C81D1 /* todo */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo; sourceTree = "<group>"; };
+		FACA95B7209ADF3C003C81D1 /* KCEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCEdit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA0919520809021009C8B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC2275F21B1178500FDDAF7 /* GameKit.framework in Frameworks */,
+				FA9A0F4620BF9217006304C4 /* SnapKit.framework in Frameworks */,
+				FA7862FD2099A80200A459E7 /* WhaleLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC7F9C8208B334300ABE340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA7862FB2099A80200A459E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2275E21B1178500FDDAF7 /* GameKit.framework */,
+				FA9A0F4420BF920B006304C4 /* SnapKit.framework */,
+				FA7862FC2099A80200A459E7 /* WhaleLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA0918F20809021009C8B56 = {
+			isa = PBXGroup;
+			children = (
+				FAA0919A20809021009C8B56 /* KnowledgeCard */,
+				FAC7F9CC208B334300ABE340 /* KnowledgeCardTests */,
+				FAA0919920809021009C8B56 /* Products */,
+				FA7862FB2099A80200A459E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA0919920809021009C8B56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0919820809021009C8B56 /* KnowledgeCard.app */,
+				FAC7F9CB208B334300ABE340 /* KnowledgeCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA0919A20809021009C8B56 /* KnowledgeCard */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2276021B505B300FDDAF7 /* deprecated */,
+				FAA0919B20809021009C8B56 /* AppDelegate.swift */,
+				FAA0919F20809021009C8B56 /* Main.storyboard */,
+				FAA091A220809021009C8B56 /* Assets.xcassets */,
+				FAA091A420809021009C8B56 /* LaunchScreen.storyboard */,
+				FAA091A720809021009C8B56 /* Info.plist */,
+				FAC7F9C22089CA1C00ABE340 /* Beans.swift */,
+				FAA1A2B920E35A010077948F /* KCTools.swift */,
+				FA7862F9209445CB00A459E7 /* KCStartup.swift */,
+				FAA1A2DD20F734900077948F /* KCShuffle.swift */,
+				FACA95B7209ADF3C003C81D1 /* KCEdit.swift */,
+				FA47789620F841FA007407EA /* KCThumbnail.swift */,
+				FA6179B120C666FB006FE7AB /* WebServices.swift */,
+				FACA95B5209AADE3003C81D1 /* todo */,
+				FAA1A2C520E4CE4E0077948F /* sync_1024.png */,
+				FAA1A2CA20E4D0700077948F /* download_1024.png */,
+				FA47789820FB0208007407EA /* large_1024.png */,
+				FAA1A2DB20F48E7A0077948F /* cards_1024.png */,
+				FAA1A2C920E4D0700077948F /* upload_1024.png */,
+				FAA1A2CD20EB2E5F0077948F /* lost_connect_1024.png */,
+				FA6179B320C66E56006FE7AB /* man_1024.png */,
+				FA6179B520C66F80006FE7AB /* search_1024.png */,
+				FA6179B720C66FF9006FE7AB /* close_1024.png */,
+				FAA1A2BD20E4818B0077948F /* loading_1024.png */,
+				FA4441FC20A563BF00347E0A /* addimage.png */,
+				FA4441FD20A563BF00347E0A /* addtext.png */,
+				FA4441FE20A563BF00347E0A /* edit.png */,
+				FA44420220A564BD00347E0A /* delete.png */,
+			);
+			path = KnowledgeCard;
+			sourceTree = "<group>";
+		};
+		FAC2276021B505B300FDDAF7 /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				FA6179AF20C61E79006FE7AB /* KCMyView.swift */,
+			);
+			path = deprecated;
+			sourceTree = "<group>";
+		};
+		FAC7F9CC208B334300ABE340 /* KnowledgeCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7F9CD208B334300ABE340 /* KnowledgeCardTests.swift */,
+				FAC7F9CF208B334300ABE340 /* Info.plist */,
+			);
+			path = KnowledgeCardTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA0919720809021009C8B56 /* KnowledgeCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA091AA20809021009C8B56 /* Build configuration list for PBXNativeTarget "KnowledgeCard" */;
+			buildPhases = (
+				FAA0919420809021009C8B56 /* Sources */,
+				FAA0919520809021009C8B56 /* Frameworks */,
+				FAA0919620809021009C8B56 /* Resources */,
+				FACA95B4209AAA1E003C81D1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnowledgeCard;
+			productName = KnowledgeCard;
+			productReference = FAA0919820809021009C8B56 /* KnowledgeCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC7F9CA208B334300ABE340 /* KnowledgeCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC7F9D2208B334300ABE340 /* Build configuration list for PBXNativeTarget "KnowledgeCardTests" */;
+			buildPhases = (
+				FAC7F9C7208B334300ABE340 /* Sources */,
+				FAC7F9C8208B334300ABE340 /* Frameworks */,
+				FAC7F9C9208B334300ABE340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC7F9D1208B334300ABE340 /* PBXTargetDependency */,
+			);
+			name = KnowledgeCardTests;
+			productName = KnowledgeCardTests;
+			productReference = FAC7F9CB208B334300ABE340 /* KnowledgeCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA0919020809021009C8B56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = WhaleStudio;
+				TargetAttributes = {
+					FAA0919720809021009C8B56 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FAC7F9CA208B334300ABE340 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAA0919720809021009C8B56;
+					};
+				};
+			};
+			buildConfigurationList = FAA0919320809021009C8B56 /* Build configuration list for PBXProject "KnowledgeCard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA0918F20809021009C8B56;
+			productRefGroup = FAA0919920809021009C8B56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA0919720809021009C8B56 /* KnowledgeCard */,
+				FAC7F9CA208B334300ABE340 /* KnowledgeCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA0919620809021009C8B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA091A620809021009C8B56 /* LaunchScreen.storyboard in Resources */,
+				FAA1A2BE20E4818B0077948F /* loading_1024.png in Resources */,
+				FAA1A2DC20F48E7A0077948F /* cards_1024.png in Resources */,
+				FAA1A2CC20E4D0700077948F /* download_1024.png in Resources */,
+				FA6179B820C66FF9006FE7AB /* close_1024.png in Resources */,
+				FAA1A2C820E4CE4E0077948F /* sync_1024.png in Resources */,
+				FA47789920FB0208007407EA /* large_1024.png in Resources */,
+				FA44420120A563BF00347E0A /* edit.png in Resources */,
+				FA6179B620C66F80006FE7AB /* search_1024.png in Resources */,
+				FAA1A2CE20EB2E5F0077948F /* lost_connect_1024.png in Resources */,
+				FACA95B6209AADE3003C81D1 /* todo in Resources */,
+				FA44420320A564BE00347E0A /* delete.png in Resources */,
+				FA44420020A563BF00347E0A /* addtext.png in Resources */,
+				FAA1A2CB20E4D0700077948F /* upload_1024.png in Resources */,
+				FA6179B420C66E56006FE7AB /* man_1024.png in Resources */,
+				FAA091A320809021009C8B56 /* Assets.xcassets in Resources */,
+				FA4441FF20A563BF00347E0A /* addimage.png in Resources */,
+				FAA091A120809021009C8B56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC7F9C9208B334300ABE340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA0919420809021009C8B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC7F9C32089CA1C00ABE340 /* Beans.swift in Sources */,
+				FAA0919C20809021009C8B56 /* AppDelegate.swift in Sources */,
+				FA6179B220C666FB006FE7AB /* WebServices.swift in Sources */,
+				FA6179B020C61E79006FE7AB /* KCMyView.swift in Sources */,
+				FA7862FA209445CB00A459E7 /* KCStartup.swift in Sources */,
+				FAA1A2DE20F734900077948F /* KCShuffle.swift in Sources */,
+				FAA1A2BA20E35A010077948F /* KCTools.swift in Sources */,
+				FACA95B8209ADF3C003C81D1 /* KCEdit.swift in Sources */,
+				FA47789720F841FA007407EA /* KCThumbnail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC7F9C7208B334300ABE340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC7F9CE208B334300ABE340 /* KnowledgeCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC7F9D1208B334300ABE340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA0919720809021009C8B56 /* KnowledgeCard */;
+			targetProxy = FAC7F9D0208B334300ABE340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA0919F20809021009C8B56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA091A020809021009C8B56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA091A420809021009C8B56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA091A520809021009C8B56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA091A820809021009C8B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA091A920809021009C8B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA091AB20809021009C8B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R8D7M8Z97;
+				INFOPLIST_FILE = KnowledgeCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.kc.KnowledgeCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAA091AC20809021009C8B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R8D7M8Z97;
+				INFOPLIST_FILE = KnowledgeCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.kc.KnowledgeCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FAC7F9D3208B334300ABE340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R8D7M8Z97;
+				INFOPLIST_FILE = KnowledgeCardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.kc.KnowledgeCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowledgeCard.app/KnowledgeCard";
+			};
+			name = Debug;
+		};
+		FAC7F9D4208B334300ABE340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R8D7M8Z97;
+				INFOPLIST_FILE = KnowledgeCardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.kc.KnowledgeCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowledgeCard.app/KnowledgeCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA0919320809021009C8B56 /* Build configuration list for PBXProject "KnowledgeCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA091A820809021009C8B56 /* Debug */,
+				FAA091A920809021009C8B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA091AA20809021009C8B56 /* Build configuration list for PBXNativeTarget "KnowledgeCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA091AB20809021009C8B56 /* Debug */,
+				FAA091AC20809021009C8B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC7F9D2208B334300ABE340 /* Build configuration list for PBXNativeTarget "KnowledgeCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC7F9D3208B334300ABE340 /* Debug */,
+				FAC7F9D4208B334300ABE340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA0919020809021009C8B56 /* Project object */;
+}

@@ -1,0 +1,11 @@
+{"plugins": [],
+ "package": "myProject",
+ "options": {},
+ "name": "Main",
+ "isModule": false,
+ "importArts":
+ {"MyProject.Theorems":
+  ["/Users/littlesail/whale/LeanProjects/Startup/.lake/build/lib/lean/MyProject/Theorems.olean"],
+  "MyProject.Basic":
+  ["/Users/littlesail/whale/LeanProjects/Startup/.lake/build/lib/lean/MyProject/Basic.olean"]},
+ "dynlibs": []}

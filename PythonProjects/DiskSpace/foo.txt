@@ -1,0 +1,1000 @@
+/Users/apple/Library/Android/sdk/system-images/android-27/google_apis_playstore/x86/system.img - 2.50G
+/Users/apple/Library/Caches/com.apple.dt.Xcode/Downloads/com.apple.pkg.iPhoneSimulatorSDK12_0-12.0.1.1537588161.dmg - 2.22G
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/userdata-qemu.img - 2.00G
+/Users/apple/Library/Android/sdk/system-images/android-19/google_apis/x86/userdata.img - 2.00G
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/Backup/78fbfb00d3096286e4133ee99eee932f/BD1E85B2-53C5-4508-877E-45D9E29AA641/BAK_1_MEDIA - 2.00G
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/Backup/78fbfb00d3096286e4133ee99eee932f/BD1E85B2-53C5-4508-877E-45D9E29AA641/BAK_2_MEDIA - 2.00G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s018.vmdk - 2.00G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s019.vmdk - 2.00G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s001.vmdk - 2.00G
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/Backup/78fbfb00d3096286e4133ee99eee932f/BD1E85B2-53C5-4508-877E-45D9E29AA641/BAK_0_MEDIA - 1.99G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s016.vmdk - 1.99G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s005.vmdk - 1.99G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s006.vmdk - 1.98G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s015.vmdk - 1.98G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s004.vmdk - 1.90G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s017.vmdk - 1.86G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s013.vmdk - 1.82G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s003.vmdk - 1.82G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s014.vmdk - 1.80G
+/Users/apple/Downloads/PJE2BTH623.mp4 - 1.79G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s011.vmdk - 1.78G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s012.vmdk - 1.68G
+/private/var/log/install.log - 1.52G
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s002.vmdk - 1.43G
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/Backup/78fbfb00d3096286e4133ee99eee932f/BD1E85B2-53C5-4508-877E-45D9E29AA641/BAK_3_MEDIA - 1.42G
+/Users/apple/Library/Nemu/vms/myandrovm_vbox86/myandrovm_vbox86-disk2.vmdk - 1.41G
+/private/var/db/dyld/dyld_shared_cache_x86_64h - 1.35G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.20G
+/Users/apple/Downloads/36.dtt018/dtt018.mp4 - 1.20G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64 - 1.19G
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/snapshots/default_boot/ram.bin - 1.04G
+/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.LaunchServices-221-v2.csstore - 1.04G
+/private/var/vm/sleepimage - 1024.00M
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s020.vmdk - 867.56M
+/Users/apple/.Genymobile/Genymotion/deployed/Google Pixel - 7.1.0 - API 25 - 1080x1920/android_system_disk.vmdk - 759.50M
+/System/Library/Speech/Voices/Yu-Shu.SpeechVoice/Contents/Resources/PCMWave - 667.39M
+/Users/apple/Library/Nemu/vms/myandrovm_vbox86/myandrovm_vbox86-disk1.vmdk - 616.19M
+/Users/apple/VM/Windows XP Professional IE7/Windows XP Professional-s007.vmdk - 561.94M
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/userdata.img - 550.00M
+/Users/apple/Library/Android/sdk/system-images/android-19/google_apis/x86/system.img - 550.00M
+/Users/apple/Library/Android/sdk/system-images/android-27/google_apis_playstore/x86/userdata.img - 550.00M
+/Users/apple/VM/Windows XP Professional IE7/564dcadf-770f-97fa-37e9-203771a80496.vmem - 512.00M
+/private/var/db/dyld/dyld_shared_cache_i386 - 509.74M
+/Users/apple/Library/Caches/com.apple.helpd/SDMHelpData/Other/zh_CN/lsm_map - 499.26M
+/Users/apple/Software/CocosCreator_v2.1.2-p.1_20190720_mac.dmg - 480.98M
+/Users/apple/.Genymobile/Genymotion/deployed/Google Pixel - 7.1.0 - API 25 - 1080x1920/Snapshots/{2a3f1c72-af90-4601-a78d-c4e1df34ce18}.vmdk - 448.31M
+/Users/apple/.cocoapods/repos/master/.git/objects/pack/pack-a71e090cde6890e05533a1ceb9596f95ec02b5b3.pack - 399.80M
+/Users/apple/VirtualBox VMs/droid4x/droid4x-disk2.vmdk - 374.50M
+/Users/apple/Library/Developer/CoreSimulator/Devices/FCDB573D-CD2C-4A9B-977D-8E78A445AAD9/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/4DD4C15D-44D9-4C77-9325-EAAD8A0EE9CE/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/30C54D05-E1C1-409E-A73F-A3114A9CCD68/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/9E7888F7-E1BE-4627-BA94-17832D154390/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/85B09D33-4C14-4334-B92F-B29D1F232C47/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/4B3FE57C-23E4-44DE-8FB1-A2D2E0825D0B/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/D4FB9A09-E289-4B51-995F-C84C8FB8D918/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/DFE8BAE1-5C77-4D72-95D0-05B4B639BD65/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/adat - 356.74M
+/Users/apple/Library/Developer/CoreSimulator/Devices/3E89DC49-9648-46C3-9241-3BE1E147BC1C/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/93dc7f8d005b0d79a9e9260aa18befb24b7ace07.asset/AssetData/adat - 356.29M
+/Users/apple/Library/Developer/CoreSimulator/Devices/3DB9386A-1AD7-4701-9DEB-A2A735C37375/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/93dc7f8d005b0d79a9e9260aa18befb24b7ace07.asset/AssetData/adat - 356.29M
+/Users/apple/.Genymobile/Genymotion/ova/genymotion_vbox86p_7.1_170929_114700.ova - 348.68M
+/System/Library/Speech/Voices/AlexCompact.SpeechVoice/Contents/Resources/PCMWave - 305.72M
+/System/Library/Speech/Voices/Li-MuSiri.SpeechVoice/Contents/Resources/adat - 296.16M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/Backup/78fbfb00d3096286e4133ee99eee932f/BD1E85B2-53C5-4508-877E-45D9E29AA641/BAK_0_TEXT - 281.83M
+/Users/apple/VirtualBox VMs/droid4x/droid4x-disk3.vmdk - 265.19M
+/Users/apple/CODE/Git/tensorflow/.git/objects/pack/pack-d2be5ece549f3ee9b5680eeac2d3166d70535db8.pack - 263.73M
+/Applications/Aperture.app/Contents/Resources/PointOfInterest.db - 241.67M
+/Users/apple/Documents/DXInst/Droid4X.pkg - 236.86M
+/Users/apple/Library/Ethereum/geth/chaindata/2553105.ldb - 233.13M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/libmono-llvm.0.dylib.dSYM/Contents/Resources/DWARF/libmono-llvm.0.dylib - 218.75M
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/userdata-qemu.img.qcow2 - 211.19M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SetupAssistantUI.framework/Assets.car - 209.61M
+/Users/apple/Library/Group Containers/3L68KQB4HG.group.com.readdle.smartemail/databases/cache.sqlite - 208.11M
+/Users/apple/Library/Developer/CoreSimulator/Devices/C2A88943-DFBA-4570-9BE7-6ED79B42EDBA/data/Library/Caches/com.apple.coresymbolicationd/data - 206.94M
+/Users/apple/Library/Caches/com.apple.helpd/SDMHelpData/AppleExtra/zh_CN/lsm_map - 205.16M
+/Users/apple/Library/Ethereum/geth/chaindata/LOG.old - 203.74M
+/Library/Application Support/GarageBand/Learn to Play/Basic Lessons/Guitar Lesson 1.mwand/Media/GuitarLesson1_All2.mov - 196.15M
+/Applications/Adobe/AdobePatchFiles/{94A81F8B-CB2A-5124-906C-53D4FE05DB3B}.zip - 188.39M
+/Users/apple/.cocoapods/repos/master/.git/objects/pack/pack-b3b3dab48017f26fc561819d56441fba83105971.pack - 184.53M
+/Users/apple/Library/Caches/GoLand2017.3/caches/content.dat.storageData - 184.24M
+/Library/Application Support/Logic/EXS Factory Samples/01 Acoustic Pianos/Steinway Piano_consolidated.caf - 175.44M
+/Users/apple/Software/wechat_devtools_1.02.1907160.dmg - 168.47M
+/Applications/CocosCreator.app/Contents/Resources/app.asar - 168.32M
+/Applications/Aperture.app/Contents/Resources/VectorMaps.db - 167.66M
+/Users/apple/Software/LayaAirIDE.zip - 161.61M
+/Applications/wechatwebdevtools.app/Contents/Versions/74.0.3729.169/nwjs Framework.framework/Versions/A/nwjs Framework - 156.63M
+/System/Library/Fonts/Apple Color Emoji.ttc - 152.56M
+/Library/Application Support/GarageBand/Learn to Play/Basic Lessons/Piano Lesson 1.mwand/Media/Piano_Lesson_1_All.mov - 149.57M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/lib/libmysqld-debug.a - 146.33M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/lib/libmysqld.a - 144.53M
+/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/75.0.3770.100/Google Chrome Framework - 136.29M
+/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/75.0.3770.80/Google Chrome Framework - 136.29M
+/Users/apple/Library/Group Containers/group.com.readdle.smartemail/databases/cache.sqlite - 135.48M
+/Library/Application Support/Logic/EXS Factory Samples/Drum Kit Designer Consolidated/Drum Kit Designer/Stereo/SoCal Kit HiHat_consolidated.caf - 135.46M
+/Applications/IntelliJ IDEA CE.app/Contents/lib/idea.jar - 130.59M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SetupAssistantUI.framework/Assets.car - 129.56M
+/Library/Desktop Pictures/Mojave.heic - 128.52M
+/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.LaunchServices-231-v2.csstore - 119.48M
+/Users/apple/Library/Caches/com.apple.helpd/SDMHelpData/AppleMain/zh_CN/lsm_map - 118.42M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Frameworks/CIT/Plug-ins/FaceRecognition/FaceRecognitionCognitec.bundle/Contents/Resources/etc/cmp/trans-b7.dat - 116.29M
+/Users/apple/CODE/Git/go-ethereum/.git/modules/tests/objects/pack/pack-7ee1be4a8b065e720d382b12471107af5429891c.pack - 112.59M
+/usr/bin/emacs - 111.74M
+/Users/apple/.Genymobile/Genymotion/deployed/Google Pixel - 7.1.0 - API 25 - 1080x1920/Snapshots/{555ec5e9-0b9b-41d4-904d-2eb339ca073b}.vmdk - 111.06M
+/Users/apple/Downloads/geth-alltools-darwin-amd64-1.7.2-1db4ecdc.tar - 108.54M
+/System/Library/Assets/com_apple_MobileAsset_Font5/b2d7b382c0fbaa5777103242eb048983c40fb807.asset/AssetData/Kaiti.ttc - 101.60M
+/usr/local/var/mongodb/journal/WiredTigerPreplog.0000000001 - 100.00M
+/usr/local/var/mongodb/journal/WiredTigerLog.0000000244 - 100.00M
+/usr/local/var/mongodb/journal/WiredTigerPreplog.0000000002 - 100.00M
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/sdcard.img - 100.00M
+/Applications/Visual Studio Code.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework - 98.09M
+/Applications/Motrix.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework - 98.01M
+/Users/apple/Library/Android/sdk/system-images/android-27/google_apis_playstore/x86/vendor.img - 98.00M
+/Applications/VMware Fusion.app/Contents/Library/isoimages/windows.iso - 95.78M
+/Applications/Aperture.app/Contents/Frameworks/ProKit.framework/Versions/A/Resources/ProThemeBits.car - 95.58M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-13/DiceGameLocal 2019-5-13 下午1.36.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftCore.dylib - 93.76M
+/Users/apple/Library/Developer/Xcode/Archives/2018-12-07/KnowledgeCard 2018-12-7 上午9.49 2.xcarchive/Products/Applications/KnowledgeCard.app/Frameworks/libswiftCore.dylib - 93.76M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-16/KnowledgeCard 2018-11-16 下午2.29.xcarchive/Products/Applications/KnowledgeCard.app/Frameworks/libswiftCore.dylib - 93.76M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-23/DiceGame 2019-5-23 下午2.58.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-24/DiceGame 2019-5-24 下午3.56.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-14/DiceGame 2019-5-14 下午2.40.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-13/DiceGameLocal 2019-5-13 下午1.36.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Developer/Xcode/Archives/2018-12-07/KnowledgeCard 2018-12-7 上午9.49 2.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-20/Land 2018-11-20 下午12.32.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-16/KnowledgeCard 2018-11-16 下午2.29.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 93.70M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Cache/Video/2019-07/video.MP4 - 91.84M
+/Applications/wechatwebdevtools.app/Contents/Resources/package.nw/node_modules.wxvpkg - 91.76M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGameLocal 2019-6-27, 10.26 AM.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftCore.dylib - 91.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGameLocal 2019-6-20, 2.26 PM.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftCore.dylib - 91.07M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCore.dylib - 91.02M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGameLocal 2019-6-27, 10.26 AM.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 91.02M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGame 2019-6-27, 10.17 AM.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 91.02M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGameLocal 2019-6-20, 2.26 PM.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 91.02M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGame 2019-6-20, 2.14 PM.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 91.02M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-11/DiceGame 2019-6-11, 3.36 PM.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 91.02M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-12/DiceGame 2019-6-12, 12.36 PM.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 91.02M
+/Applications/PyCharm CE.app/Contents/lib/pycharm.jar - 89.91M
+/System/Library/Speech/Voices/Li-MuSiri.SpeechVoice/Contents/Resources/indx - 88.55M
+/Applications/石墨文档.app/Contents/Resources/app.asar - 88.02M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift - 87.49M
+/Users/apple/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1-all.zip - 85.90M
+/Users/apple/CODE/Git/go-ethereum/.git/objects/pack/pack-0be7cab848576305569257d3f72989741a1ed9ea.pack - 85.79M
+/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB - 85.58M
+/Applications/Xcode.app/Contents/Frameworks/libclang.dylib - 85.54M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib - 85.54M
+/System/Library/Assets/com_apple_MobileAsset_Font5/4cecce0dd640f147de4d0e4155a97d3cdf47971e.asset/AssetData/Xingkai.ttc - 84.65M
+/Applications/VMware Fusion.app/Contents/Resources/naos-1.0.vmwarevm/naos.vmdk - 84.50M
+/private/var/folders/yc/y18wlzsx25d2hdn3y99gbw700000gn/C/com.apple.FontRegistry/annex_aux - 84.06M
+/Applications/GoLand.app/Contents/lib/goland.jar - 83.82M
+/Library/Application Support/Adobe/Adobe Desktop Common/CEF/Chromium Embedded Framework.framework/Chromium Embedded Framework - 83.76M
+/Applications/VMware Fusion.app/Contents/Library/isoimages/winPreVista.iso - 83.69M
+/private/var/db/receipts/com.apple.pkg.Xcode.bom - 82.45M
+/System/Library/Assets/com_apple_MobileAsset_Font5/6bb29eea6a5b99f3100a5e3f862e6457103557de.asset/AssetData/Hannotate.ttc - 81.44M
+/Applications/Adobe/AdobePatchFiles/{24B187F6-7743-4EEC-8820-1B7374B6A4A2}.zip - 80.00M
+/Applications/Xcode.app/Contents/_CodeSignature/CodeResources - 79.76M
+/Users/apple/Library/Developer/CoreSimulator/Devices/FCDB573D-CD2C-4A9B-977D-8E78A445AAD9/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/4DD4C15D-44D9-4C77-9325-EAAD8A0EE9CE/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/30C54D05-E1C1-409E-A73F-A3114A9CCD68/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/9E7888F7-E1BE-4627-BA94-17832D154390/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/85B09D33-4C14-4334-B92F-B29D1F232C47/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/4B3FE57C-23E4-44DE-8FB1-A2D2E0825D0B/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/D4FB9A09-E289-4B51-995F-C84C8FB8D918/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/DFE8BAE1-5C77-4D72-95D0-05B4B639BD65/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/5f7505d3f5377fe563a703f221cc5b8596968c73.asset/AssetData/indx - 79.61M
+/Users/apple/Library/Developer/CoreSimulator/Devices/3E89DC49-9648-46C3-9241-3BE1E147BC1C/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/93dc7f8d005b0d79a9e9260aa18befb24b7ace07.asset/AssetData/indx - 79.49M
+/Users/apple/Library/Developer/CoreSimulator/Devices/3DB9386A-1AD7-4701-9DEB-A2A735C37375/data/Library/Assets/com_apple_MobileAsset_VoiceServices_GryphonVoice/93dc7f8d005b0d79a9e9260aa18befb24b7ace07.asset/AssetData/indx - 79.49M
+/System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore - 78.45M
+/Library/Application Support/Logic/EXS Factory Samples/Drum Kit Designer Consolidated/Drum Kit Designer/Stereo/SoCal Kit Ride_consolidated.caf - 78.36M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang - 77.88M
+/Library/Desktop Pictures/Solar Gradients.heic - 77.10M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/_CodeSignature/CodeResources - 76.81M
+/Users/apple/Software/googlechrome.dmg - 76.63M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/LanguageSupport/PingFang.ttc - 76.30M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/LanguageSupport/PingFang.ttc - 76.30M
+/System/Library/Fonts/PingFang.ttc - 76.30M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/LanguageSupport/PingFang.ttc - 76.30M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/LanguageSupportWatch/PingFangWatch.ttc - 76.17M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/data/ibdata1 - 76.00M
+/System/Library/Assets/com_apple_MobileAsset_Font5/5e1b464ce3451847af214d857f01a4a4ca6dfbdb.asset/AssetData/Yuanti.ttc - 75.57M
+/Users/apple/Software/VSCode-darwin-stable.zip - 73.30M
+/Applications/Outline Manager.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework - 73.03M
+/Library/Application Support/Adobe/AdobeGCClient/AdobeGCClient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework - 72.86M
+/Applications/石墨文档.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework - 72.85M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin/metal - 72.72M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/metal/macos/bin/metal - 71.49M
+/Users/apple/.Genymobile/Genymotion/cache/opengapps/open_gapps-x86-7.1-pico-20170829.zip - 70.87M
+/Applications/CocosCreator.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework - 69.39M
+/Users/apple/CODE/Git4Whale/iOSProjects/DiceGame/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/GoogleMobileAds - 69.19M
+/System/Library/Assets/com_apple_MobileAsset_Font5/79a8bad3d2172ee374c2d335a250d2f6175fd5e7.asset/AssetData/Hanzipen.ttc - 68.58M
+/usr/share/tokenizer/ja/matrix.bin - 68.46M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/ios/libs/libjs_static.a - 68.44M
+/Users/apple/CODE/Resources4Coder/swift/.git/objects/pack/pack-eb48951be5287b2af3460bb378be60f63d4cbb40.pack - 68.19M
+/Applications/Adobe After Effects CC 2017/Essential Graphics/[AE] News Package/News Transition.mogrt - 66.88M
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/cache.img - 66.00M
+/Users/apple/.gradle/wrapper/dists/gradle-2.14.1-all/8bnwg5hd3w55iofp58khbp6yv/gradle-2.14.1-all.zip - 65.83M
+/Applications/EasyConnect.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework - 65.67M
+/Users/apple/CODE/Git4Whale/iOSProjects/DiceGame/Pods/Google-Mobile-Ads-SDK/Libraries/libGoogleMobileAds.a - 64.85M
+/data/db/REVIEW.0 - 64.00M
+/data/db/local.0 - 64.00M
+/Users/apple/Library/Developer/Xcode/DerivedData/DiceGame-adhosfqmnltyuaghggkewooxsngj/Index/UniDB/DiceGame.xcindex/v11/saved/data.mdb - 64.00M
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar - 63.85M
+/Library/Fonts/Songti.ttc - 63.83M
+/Applications/proxyee-down-2.41/jre1.8.0_162/Contents/Home/lib/rt.jar - 63.82M
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/libjfxwebkit.dylib - 63.74M
+/Applications/XMind.app/Contents/Eclipse/jre/lib/rt.jar - 63.52M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/rt.jar - 63.51M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Frameworks/Chromium Embedded Framework.framework/Versions/A/libcef.dylib - 63.21M
+/Applications/GoLand.app/Contents/jdk/Contents/Home/jre/lib/rt.jar - 62.68M
+/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/itms/java/lib/rt.jar - 62.40M
+/Applications/IntelliJ IDEA CE.app/Contents/jre/jdk/Contents/Home/jre/lib/rt.jar - 62.27M
+/Applications/PyCharm CE.app/Contents/jre/jdk/Contents/Home/jre/lib/rt.jar - 62.20M
+/Users/apple/VirtualBox VMs/droid4x/droid4x-disk1.vmdk - 61.62M
+/Users/apple/Software/Motrix-1.1.3.dmg - 61.51M
+/Users/apple/Library/Ethereum/geth/chaindata/2553090.log - 61.07M
+/Users/apple/Library/Python/3.7/lib/python/site-packages/scipy/.dylibs/libopenblasp-r0.3.7.dev.dylib - 60.64M
+/Users/apple/Library/Python/3.7/lib/python/site-packages/numpy/.dylibs/libopenblasp-r0.3.7.dev.dylib - 60.64M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/_CodeSignature/CodeResources - 59.25M
+/Users/apple/Software/EasyConnect.dmg - 59.11M
+/Applications/企业微信.app/Contents/MacOS/企业微信 - 58.85M
+/Applications/proxyee-down-2.41/jre1.8.0_162/Contents/Home/lib/libjfxwebkit.dylib - 58.67M
+/Applications/Navicat for MySQL.app/Contents/MacOS/Navicat for MySQL - 58.20M
+/Applications/Xcode.app/Contents/SharedFrameworks/DNTDocumentationSupport.framework/Versions/A/Resources/external/map.db - 57.56M
+/Users/apple/Library/Application Support/Outline Manager/__update__/Outline-Manager.zip - 57.54M
+/Library/Application Support/Logic/EXS Factory Samples/Drum Kit Designer Consolidated/Drum Kit Designer/Stereo/SoCal Kit Toms_consolidated.caf - 57.17M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/QtWebKit.framework/Versions/5/QtWebKit - 57.04M
+/Users/apple/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ/18101584/Msg3.0.db - 56.64M
+/Applications/VMware Fusion.app/Contents/Library/isoimages/linux.iso - 55.69M
+/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app/Contents/MacOS/Adobe Photoshop CS6 - 55.40M
+/Users/apple/CODE/Git/go-ethereum/.git/modules/tests/objects/pack/pack-9b2bfabfc565254931df9f796c4ce179f0ca95b1.pack - 54.55M
+/Library/Application Support/Adobe/Plug-Ins/CC/File Formats/Camera Raw.plugin/Contents/MacOS/Camera Raw - 54.43M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_5.db - 54.28M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Data/message.db - 54.20M
+/System/Library/Receipts/com.apple.pkg.Core.bom - 53.99M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Backup/1565581685/Data/message.db - 53.81M
+/System/Library/Extensions/AMDRadeonX4000GLDriver.bundle/Contents/MacOS/ATIRadeonX4000SCLib.dylib - 53.64M
+/System/Library/Extensions/AMDRadeonX5000GLDriver.bundle/Contents/MacOS/ATIRadeonX5000SCLib.dylib - 53.64M
+/System/Library/Fonts/STHeiti Light.ttc - 53.20M
+/System/Library/Fonts/STHeiti Medium.ttc - 53.17M
+/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app/Contents/Frameworks/CIT/Plug-ins/FaceDetection/FaceDetection.bundle/Contents/Resources/Detector4.bin - 53.12M
+/private/var/db/uuidtext/dsc/899EA29C9B213728AB482CEB18990CEF - 53.09M
+/private/var/db/uuidtext/dsc/47C712BF4A283F129B5BA981F8D52DC4 - 53.04M
+/private/var/db/uuidtext/dsc/4B2683948E0939A5AFD7675A09662A0E - 53.04M
+/private/var/db/uuidtext/dsc/C0D7F2AFD7303B2A81BD02DB8316A88C - 53.04M
+/Applications/VMware Fusion.app/Contents/Library/isoimages/linuxPreGlibc25.iso - 52.39M
+/Library/Application Support/Adobe/Adobe/AdobePatchFiles/{7062C6F6-0AC0-4B55-9A62-215710AE2308}.zip - 51.78M
+/Users/apple/CODE/Git/go-ethereum/tests/testdata/BlockchainTests/bcExploitTest/SuicideIssue.json - 51.33M
+/System/Library/Extensions/AppleIntelKBLGraphicsVADriver.bundle/Contents/MacOS/AppleIntelKBLGraphicsVADriver - 51.32M
+/System/Library/Extensions/AppleIntelSKLGraphicsVADriver.bundle/Contents/MacOS/AppleIntelSKLGraphicsVADriver - 51.20M
+/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/Resources/lldb-server - 51.13M
+/System/Library/PrivateFrameworks/GeoKit.framework/Versions/A/Resources/world.geokit - 50.39M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/sourcekitd.framework/Versions/A/XPCServices/SourceKitService.xpc/Contents/MacOS/SourceKitService - 50.32M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Frameworks/CameraRaw.lrtoolkit/Versions/A/CameraRaw - 49.81M
+/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/lm/Japanese.lm/lm.dat - 49.64M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Cache/File/2019-08/战略规划——blm.pptx - 49.21M
+/Library/Application Support/Logic/EXS Factory Samples/07 Guitars/02 Acoustic Guitars/Acoustic Guitar_consolidated.caf - 49.03M
+/Library/Application Support/Logic/EXS Factory Samples/07 Guitars/01 Electric Guitars/Vintage Strat_consolidated.caf - 48.77M
+/Applications/TeamViewer.app/Contents/MacOS/TeamViewer - 48.46M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/data/ib_logfile0 - 48.00M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/data/ib_logfile1 - 48.00M
+/Users/apple/Library/Developer/Xcode/DocumentationCache/v129/10.2.1/DeveloperDocumentation.index/0.indexArrays - 47.87M
+/Users/apple/.cocoapods/repos/master/.git/index - 47.19M
+/Users/apple/Documents/DXInst/VirtualBox64.pkg - 47.15M
+/Users/apple/CODE/Git/homebrew/.git/objects/pack/pack-e37b97790dc0864e51687ddb8dc258d71470ff3a.pack - 46.93M
+/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/Chinese.lm/lm.dat - 46.84M
+/Users/apple/CODE/Git/goagent/.git/objects/pack/pack-594a2744188dd09e47c55e0d9a373a4366db6a8d.pack - 46.50M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/wpsmain.framework/Versions/A/wpsmain - 45.81M
+/Applications/Microsoft Office 2011/Office/Media/模板/发布布局视图/名片/闪光名片.dotx - 45.78M
+/Library/Application Support/Adobe/Plug-Ins/CS6/File Formats/Camera Raw.plugin/Contents/MacOS/Camera Raw - 45.66M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/iWorkImport.framework/iWorkImport - 45.51M
+/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/objects/pack/pack-888f5c0889a167a7aa980abac8d42a4e031e8057.pack - 45.45M
+/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/Chinese.lm/lm.dat - 45.43M
+/Applications/Spark.app/Contents/MacOS/Spark - 45.43M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/libswiftCore.dylib - 45.12M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/metal/macos/lib/metalfe/libmetal.dylib - 44.78M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/iWorkImport.framework/iWorkImport - 44.65M
+/Applications/Adobe Photoshop CS6/Presets/Materials/Default.p3m - 44.41M
+/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app/Contents/Required/Default Materials.p3m - 44.41M
+/Users/apple/Documents/MuMu共享文件夹/201902141926149002542791.apk - 44.28M
+/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit - 43.53M
+/usr/share/tokenizer/ja/sys.dic - 43.25M
+/Users/apple/CODE/Git/BrowserQuest/.git/objects/pack/pack-4049214d1230989c1e443753e615fe34ec0aee16.pack - 43.08M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/Backup/78fbfb00d3096286e4133ee99eee932f/BD1E85B2-53C5-4508-877E-45D9E29AA641/Backup.db - 42.94M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 42.78M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleColorEmoji@2x.ttc - 42.63M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleColorEmoji@2x.ttc - 42.63M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleColorEmoji@2x.ttc - 42.63M
+/Users/apple/CODE/Git/tensorflow/.git/objects/pack/pack-b8da0654c54eedf8bb0b50c245f773c185083569.pack - 42.49M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/巴菲特如何选择超级明星股.pdf - 42.36M
+/System/Library/PrivateFrameworks/CoreFP.framework/Versions/A/CoreFP - 42.24M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/kso.framework/Versions/A/kso - 42.14M
+/Users/apple/CODE/Resources4Coder/db4o-8.0-java.zip - 41.87M
+/Users/apple/Library/Application Support/Google/Chrome/Default/History - 41.78M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/PlugIns/tether-canon-plugin.lrplugin/Contents/PlugIns/tether-canon.app/Contents/Frameworks/EDSDK.framework/Versions/A/DppCore.bundle/Contents/PlugIns/DppCoreSub.bundle/Contents/PlugIns/DppMath.bundle/Contents/MacOS/DppMath - 41.55M
+/Library/Application Support/Kingsoft/office6/kso.framework/Versions/A/kso - 41.39M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 41.26M
+/System/Library/Assets/com_apple_MobileAsset_Font5/1183acef85eb1efe456a14378a2eb985c09768c9.asset/AssetData/Lantinghei.ttc - 41.21M
+/Users/apple/Pictures/DSC00244.ARW - 41.16M
+/Users/apple/Pictures/DSC00245.ARW - 41.16M
+/Users/apple/Pictures/DSC00234.ARW - 41.16M
+/Users/apple/CODE/Git/bootstrap/.git/objects/pack/pack-44dad2b948418f63099a1f133c81211b9efcac77.pack - 41.11M
+/Users/apple/Library/Developer/Xcode/Archives/2016-06-20/DiceGameLocal 16-6-20 下午3.39.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftCore.dylib - 41.10M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGameLocal 2019-6-27, 10.26 AM.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftFoundation.dylib - 41.10M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGameLocal 2019-6-20, 2.26 PM.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftFoundation.dylib - 41.10M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftFoundation.dylib - 41.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGameLocal 2019-6-27, 10.26 AM.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 41.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGame 2019-6-27, 10.17 AM.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 41.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGameLocal 2019-6-20, 2.26 PM.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 41.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGame 2019-6-20, 2.14 PM.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 41.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-11/DiceGame 2019-6-11, 3.36 PM.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 41.07M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-12/DiceGame 2019-6-12, 12.36 PM.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 41.07M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 40.84M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/libmonosgen-2.0.a - 40.78M
+/Users/apple/Library/Developer/Xcode/Archives/2016-06-20/DiceGameLocal 16-6-20 下午3.39.xcarchive/SwiftSupport/iphoneos/libswiftCore.dylib - 40.77M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/3139.pdf - 40.64M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/3078.pdf - 40.64M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-13/DiceGameLocal 2019-5-13 下午1.36.xcarchive/Products/Applications/DiceGameLocal.app/Frameworks/libswiftFoundation.dylib - 40.54M
+/Users/apple/Library/Developer/Xcode/Archives/2018-12-07/KnowledgeCard 2018-12-7 上午9.49 2.xcarchive/Products/Applications/KnowledgeCard.app/Frameworks/libswiftFoundation.dylib - 40.54M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-16/KnowledgeCard 2018-11-16 下午2.29.xcarchive/Products/Applications/KnowledgeCard.app/Frameworks/libswiftFoundation.dylib - 40.54M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-23/DiceGame 2019-5-23 下午2.58.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-24/DiceGame 2019-5-24 下午3.56.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-14/DiceGame 2019-5-14 下午2.40.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-13/DiceGameLocal 2019-5-13 下午1.36.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Users/apple/Library/Developer/Xcode/Archives/2018-12-07/KnowledgeCard 2018-12-7 上午9.49 2.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-20/Land 2018-11-20 下午12.32.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-16/KnowledgeCard 2018-11-16 下午2.29.xcarchive/SwiftSupport/iphoneos/libswiftFoundation.dylib - 40.50M
+/Applications/wechatwebdevtools.app/Contents/Versions/74.0.3729.169/wechatwebdevtools Helper.app/Contents/MacOS/node - 40.42M
+/Applications/GoLand.app/Contents/plugins/DatabaseTools/lib/database-impl.jar - 40.31M
+/System/Library/Assets/com_apple_MobileAsset_Font5/7b214e51ff667b71c709e78e670c0c4e0a32ca5b.asset/AssetData/Baoli.ttc - 40.30M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/_CodeSignature/CodeResources - 40.25M
+/Users/apple/CODE/Git/go-ethereum/tests/testdata/TransactionTests/ttHomestead/String10MbData.json - 40.00M
+/Users/apple/CODE/Git/go-ethereum/tests/testdata/TransactionTests/ttFrontier/String10MbData.json - 40.00M
+/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/ReadOnlyDB/annex_aux - 39.91M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 39.74M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleColorEmoji@2x.ttc - 39.69M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/4.5/Microsoft.CodeAnalysis.CSharp.dll.dylib - 39.68M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_tr.bundle/AssetData/Unigrams-tr.dat - 39.68M
+/System/Library/LinguisticData/RequiredAssets_tr.bundle/AssetData/Unigrams-tr.dat - 39.68M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_tr.bundle/AssetData/Unigrams-tr.dat - 39.68M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 39.59M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/landmarks_v2.bin - 39.54M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/landmarks_v2.bin - 39.54M
+/System/Library/Frameworks/Vision.framework/Versions/A/Resources/landmarks_v2.bin - 39.54M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/landmarks_v2.bin - 39.54M
+/Applications/Xcode.app/Contents/Frameworks/libLTO.dylib - 39.53M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib - 39.53M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_7.db - 39.51M
+/private/var/folders/gx/w_x32lf15fd3nw88dctk7pr40000gn/C/com.apple.FontRegistry/annex_aux - 39.47M
+/Library/Application Support/Logic/EXS Factory Samples/Drum Kit Designer Consolidated/Drum Kit Designer/Stereo/SoCal Kit Crash_consolidated.caf - 38.86M
+/Users/apple/Library/Ethereum/geth/chaindata/LOG - 38.84M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3902/Libraries/libLLVM.dylib - 38.60M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Log/httpdns.log - 38.44M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/A/Libraries/openclc - 38.07M
+/Users/apple/CODE/Git/tensorflow/.git/objects/pack/pack-8de6b5710404f6910da77b2c8e0f76bc0f59f452.pack - 38.05M
+/Users/apple/CODE/frameworks/mongodb-osx-x86_64-3.2.0/bin/mongod - 37.88M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/A/Libraries/libLLVMContainer.dylib - 37.76M
+/Users/apple/CODE/frameworks/mongodb-osx-x86_64-3.2.0/bin/mongosniff - 37.61M
+/Users/apple/CODE/frameworks/mongodb-osx-x86_64-3.2.0/bin/mongoperf - 37.58M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.53M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.53M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.52M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.52M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.52M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.51M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 37.51M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scenenet_sceneprint_r9_opt_int8.espresso.hwx - 37.45M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scenenet_sceneprint_r9_opt_int8.espresso.hwx - 37.45M
+/Applications/Microsoft Messenger.app/Contents/MacOS/Microsoft Messenger - 37.37M
+/System/Library/PrivateFrameworks/VideoProcessing.framework/Versions/A/Resources/patchlm_model.dat - 37.29M
+/Applications/Adobe After Effects CC 2017/Plug-ins/MAXON CINEWARE AE/(CINEWARE Support)/lite/modules/dwg.dylib - 36.96M
+/Applications/IntelliJ IDEA CE.app/Contents/jre/jdk/Contents/Home/jre/lib/libjfxwebkit.dylib - 36.95M
+/System/iOSSupport/System/Library/PrivateFrameworks/WebCore.framework/Versions/A/WebCore - 36.94M
+/Users/apple/.cocoapods/repos/master/.git/objects/pack/pack-ff310fcb4d98f49e7720b7147715d0a93b8d6fa1.pack - 36.94M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/usr/bin/metal - 36.75M
+/Users/apple/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-aarch64 - 36.62M
+/Users/apple/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel - 36.42M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/libjfxwebkit.dylib - 36.40M
+/Applications/XMind.app/Contents/Eclipse/jre/lib/libjfxwebkit.dylib - 36.39M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin/metal-opt - 36.37M
+/usr/local/Cellar/mongodb/3.2.0/bin/mongod - 36.21M
+/Library/Application Support/Kingsoft/office6/applogic.framework/Versions/A/applogic - 36.10M
+/System/Library/Extensions/AppleIntelSKLGraphicsGLDriver.bundle/Contents/MacOS/AppleIntelSKLGraphicsGLDriver - 36.00M
+/Users/apple/Library/Developer/CoreSimulator/Devices/9E7888F7-E1BE-4627-BA94-17832D154390/data/Library/SpringBoard/LockBackground.cpbitmap - 36.00M
+/System/Library/Extensions/AppleIntelKBLGraphicsGLDriver.bundle/Contents/MacOS/AppleIntelKBLGraphicsGLDriver - 36.00M
+/usr/local/Cellar/mongodb/3.2.0/bin/mongosniff - 35.93M
+/usr/local/Cellar/mongodb/3.2.0/bin/mongoperf - 35.91M
+/Users/apple/.cocoapods/repos/master/.git/objects/pack/tmp_pack_xgnP8a - 35.67M
+/Users/apple/Library/Application Support/com.baidu.BaiduNetdisk-mac/5cea92501dd2673d34cee379070091ba/file.db - 35.57M
+/Users/apple/Parallels/{1d71125c-9006-41ee-9076-b939f75d86cf}/IE8.Win7.For.Mac.Parallels.zip.prlupd-part - 35.56M
+/Users/apple/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-x86_64 - 35.53M
+/Users/apple/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-i386 - 35.49M
+/Users/apple/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-mips64el - 35.45M
+/Users/apple/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-mipsel - 35.29M
+/Library/Application Support/iWork '09/Frameworks/SFCompatibility.framework/Versions/A/SFCompatibility - 35.15M
+/Users/apple/Library/Developer/Xcode/DocumentationCache/v129/10.2.1/DeveloperDocumentation.index/0.indexPostings - 35.10M
+/Library/Application Support/Adobe/APE/3.3/adbeapecore.framework/Versions/A/Libraries/adbeapeengine.bundle/Contents/MacOS/adbeapeengine - 34.91M
+/Users/apple/Library/Ethereum/geth/ethash/cache-R23-849af93d08892c79 - 34.75M
+/Users/apple/Library/Ethereum/geth/ethash/cache-R23-cfa3e37c459ebd9b - 34.62M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 34.62M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/applogic.framework/Versions/A/applogic - 34.60M
+/Users/apple/Library/Ethereum/geth/ethash/cache-R23-d4f2e1526e077510 - 34.50M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 34.46M
+/System/Library/Assets/com_apple_MobileAsset_Font5/940db29a0ab220999d9a1dbe3eb0819a718057b5.asset/AssetData/Libian.ttc - 34.45M
+/System/Library/Extensions/AMDRadeonX5000HWServices.kext/Contents/PlugIns/AMDRadeonX5000HWLibs.kext/Contents/MacOS/AMDRadeonX5000HWLibs - 34.41M
+/System/Library/Extensions/AMDRadeonX5000HWServices.kext/Contents/PlugIns/AMDRadeonX5700HWLibs.kext/Contents/MacOS/AMDRadeonX5700HWLibs - 34.41M
+/System/Library/Extensions/AMDRadeonX5000HWServices.kext/Contents/PlugIns/AMDRadeonX5400HWLibs.kext/Contents/MacOS/AMDRadeonX5400HWLibs - 34.41M
+/Users/apple/.cocoapods/repos/master/.git/objects/pack/pack-a71e090cde6890e05533a1ceb9596f95ec02b5b3.idx - 34.25M
+/Library/Application Support/Logic/EXS Factory Samples/Drum Kit Designer Consolidated/Drum Kit Designer/Stereo/SoCal Kit Snare_consolidated.caf - 34.25M
+/System/Library/Extensions/GeForceGLDriver.bundle/Contents/MacOS/GeForceGLDriver - 33.82M
+/Applications/Navicat for MySQL.app/Contents/Frameworks/libxl.dylib - 33.72M
+/Applications/Microsoft Office 2011/Office/Media/模板/演示文稿/PowerPoint 2011 简介.potx - 33.61M
+/Library/Documentation/User Guides And Information.localized/Welcome to Snow Leopard.app/Contents/Resources/English.lproj/Welcome to Snow Leopard.pdf - 33.48M
+/Users/apple/.gradle/caches/jars-3/9955734f77abc673a38c7cd4c0214af5/android.jar - 33.14M
+/Users/apple/.cocoapods/repos/master/.git/objects/pack/pack-b3b3dab48017f26fc561819d56441fba83105971.idx - 33.05M
+/Applications/Microsoft Office 2011/Microsoft Word.app/Contents/MacOS/Microsoft Word - 33.03M
+/Applications/iTunes.app/Contents/MacOS/iTunes - 32.79M
+/Users/apple/Library/Application Support/Thunder/Package/thunder_3.2.0.3450.dmg - 32.78M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3802/Libraries/libLLVM.dylib - 32.73M
+/Users/apple/Library/Android/sdk/platforms/android-24/android.jar - 32.68M
+/Users/apple/CODE/frameworks/go_appengine_sdk_darwin_amd64-1.9.30.zip - 32.50M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 32.46M
+/Library/Fonts/Microsoft/MingLiU_HKSCS-ExtB.ttf - 32.23M
+/Library/Fonts/Microsoft/PMingLiU-ExtB.ttf - 32.20M
+/Library/Fonts/Microsoft/MingLiU-ExtB.ttf - 32.20M
+/Users/apple/CODE/Git/Hilo/.git/objects/pack/pack-5163ce1d544c6afed75fbf1ad93eb7b9a75b8b23.pack - 32.20M
+/Applications/Spark.app/Contents/Frameworks/EmbeddedFramework.framework/Versions/A/EmbeddedFramework - 32.18M
+/Users/apple/Library/Caches/PyCharm50/caches/content.dat.storageData - 32.17M
+/Library/QuickLook/iWork.qlgenerator/Contents/MacOS/iWork - 31.93M
+/System/Library/PrivateFrameworks/VideoProcessing.framework/Versions/A/Resources/regressiontree_landmark.dat - 31.81M
+/Applications/VMware Fusion.app/Contents/Library/VMware OVF Tool/lib/libvim-types.dylib - 31.80M
+/Users/apple/CODE/爱游戏/讯飞语音测试APK/kt-debug.apk - 31.79M
+/Users/apple/Movies/iMovie Events.localized/新建事件/half.mov - 31.78M
+/Applications/Adobe After Effects CC 2017/Plug-ins/MAXON CINEWARE AE/(CINEWARE Support)/bin/resource/libs/osx/mesa/libosmesa.dylib - 31.52M
+/Users/apple/CODE/爱游戏/XIriHelper_测试全程.apk - 31.38M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scenenet_sc2.4_sa1.4_ae1.4_r9_opt_int8.espresso.weights - 31.33M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scenenet_sc2.4_sa1.4_ae1.4_r9_opt_int8.espresso.weights - 31.33M
+/System/Library/Frameworks/Vision.framework/Versions/A/Resources/scenenet_sc2.4_sa1.4_ae1.4_r9_opt_int8.espresso.weights - 31.33M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scenenet_sc2.4_sa1.4_ae1.4_r9_opt_int8.espresso.weights - 31.33M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 31.22M
+/Users/apple/CODE/Git/tensorflow/.git/objects/pack/pack-bb69b5b66aedb0067b1d0ffc8a6e9a3df2366400.pack - 31.05M
+/Users/apple/Library/Group Containers/group.com.readdle.smartemail/databases/search_fts5.sqlite - 31.03M
+/Users/apple/CODE/Git4Whale/.git/objects/27/480c471b5f50721e496a17ba3a1e9f40a94eed - 30.96M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_1.db - 30.94M
+/Users/apple/Software/MacBooster_7.2.3.29000__TNT_.dmg - 30.85M
+/Users/apple/CODE/Git4Whale/.git/objects/e4/5d1d3ef82f473d2a3ff30b2f797c3e7b3259e0 - 30.79M
+/Users/apple/CODE/Git/melonJS/.git/objects/pack/pack-362e1580fd0e181593799b39080d087ba13d380e.pack - 30.66M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/_CodeSignature/CodeResources - 30.60M
+/Users/apple/CODE/workspace4cloverETL 2/WebSiteExamples/data-in/transactions.csv - 30.52M
+/Users/apple/Library/Developer/CoreSimulator/Devices/4DD4C15D-44D9-4C77-9325-EAAD8A0EE9CE/data/Library/SpringBoard/LockBackground.cpbitmap - 30.47M
+/Users/apple/Library/Developer/CoreSimulator/Devices/30C54D05-E1C1-409E-A73F-A3114A9CCD68/data/Library/SpringBoard/LockBackground.cpbitmap - 30.47M
+/Users/apple/Library/Developer/CoreSimulator/Devices/70FA7020-EA4B-4370-A6E0-294694FED83F/data/Library/SpringBoard/LockBackground.cpbitmap - 30.47M
+/Users/apple/Library/Developer/CoreSimulator/Devices/A39A5C87-CF40-488F-B78C-B3D13A6A9C5A/data/Library/SpringBoard/LockBackground.cpbitmap - 30.47M
+/Users/apple/Library/Developer/CoreSimulator/Devices/3DB9386A-1AD7-4701-9DEB-A2A735C37375/data/Library/SpringBoard/LockBackground.cpbitmap - 30.47M
+/Users/apple/Library/Developer/CoreSimulator/Devices/D4FB9A09-E289-4B51-995F-C84C8FB8D918/data/Library/SpringBoard/LockBackground.cpbitmap - 30.47M
+/Users/apple/CODE/workspace4iOS/DiceGameNetwork/Lib/GoogleMobileAdsSdkiOS/GoogleMobileAds.framework/Versions/A/GoogleMobileAds - 30.27M
+/Users/apple/Library/Application Support/LayaAirIDE/CachedData/19222cdc84ce72202478ba1cec5cb557b71163de/28f4b35d6e429e65fe1432012b0b9b67-workbench.main.code - 30.18M
+/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app/Contents/Frameworks/Cg.framework/Cg - 30.16M
+/Users/apple/Library/Group Containers/group.com.readdle.smartemail/databases/messages.sqlite - 30.16M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/MacOS/Simulator - 30.10M
+/Library/Application Support/Adobe/Linguistics/6.0/Providers/Plugins2/AdobeHunspellPlugin.bundle/Contents/MacOS/AdobeHunspellPlugin - 29.95M
+/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/GeoServices - 29.93M
+/System/Library/CoreServices/Photo Library Migration Utility.app/Contents/Resources/Themes.db - 29.77M
+/Library/Application Support/Adobe/Common/dynamiclinkmediaserver/1.0/dynamiclinkmediaserver.app/Contents/Frameworks/AuthPlayLib.bundle/Contents/MacOS/AuthPlayLib - 29.70M
+/usr/local/bin/node - 29.56M
+/Applications/Microsoft Office 2011/Office/Media/文档元素/封面.dotx - 29.52M
+/Users/apple/CODE/IdeaProjects/egame/target/egame.issue-0.1.war - 29.47M
+/System/Library/Extensions/AppleIntelGraphicsShared.bundle/Contents/MacOS/libigc.dylib - 29.45M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.43M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.43M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.43M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.43M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.43M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.40M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.39M
+/Users/apple/Library/Android/sdk/build-tools/26.0.2/lib64/libLLVM.dylib - 29.32M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/android/arm64-v8a/libv8_base.a - 29.26M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore - 29.12M
+/Users/apple/Library/Application Support/Google/Chrome/Default/Extension Activity - 29.06M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil - 29.01M
+/Users/apple/CODE/Git/tensorflow/.git/objects/pack/pack-4148e8db353df2862c998cd6d3515b94d94fb46f.pack - 29.00M
+/Users/apple/CODE/Git4Whale/iOSProjects/Land/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Versions/A/GoogleMobileAds - 28.96M
+/Users/apple/.android/avd/Nexus_5X_API_27.avd/snapshots/default_boot/textures.bin - 28.90M
+/Applications/VMware Fusion.app/Contents/Library/VMware OVF Tool/lib/libicudata.44.1.dylib - 28.87M
+/Applications/liteidex27.2.1.macosx-qt5/LiteIDE.app/Contents/Frameworks/QtWebKit.framework/Versions/5/QtWebKit - 28.84M
+/Users/apple/Library/Preferences/Microsoft/Office 2011/Office Font Cache - 28.82M
+/Applications/WeChat.app/Contents/MacOS/WeChat - 28.75M
+/Applications/Adobe After Effects CC 2017/Plug-ins/MAXON CINEWARE AE/(CINEWARE Support)/lite/library/browser/Lite.lib4d - 28.67M
+/Users/apple/Library/Android/sdk/build-tools/25.0.2/lib64/libLLVM.dylib - 28.65M
+/Users/apple/Library/Android/sdk/build-tools/24.0.3/lib64/libLLVM.dylib - 28.65M
+/System/Library/PrivateFrameworks/VideoProcessing.framework/Versions/A/Resources/cnn_pets_depthwise.espresso.weights - 28.64M
+/Applications/Microsoft Office 2011/Office/Media/模板/导向方法/五种规则.potx - 28.62M
+/private/var/db/uuidtext/dsc/599E5F21EC5539A5904519067D179101 - 28.59M
+/private/var/db/uuidtext/dsc/EC4174D556D83C22AAE3FA1F6A136354 - 28.57M
+/private/var/db/uuidtext/dsc/855842A11D383E088FF28B153E230DC0 - 28.57M
+/Users/apple/CODE/workspace4iOS/Land/GoogleMobileAdsSdkiOS/GoogleMobileAds.framework/Versions/A/GoogleMobileAds - 28.53M
+/Applications/QQ.app/Contents/MacOS/QQ - 28.50M
+/Applications/Adobe After Effects CC 2017/Essential Graphics/[AE] News Package/News Intro.mogrt - 28.49M
+/Applications/Adobe After Effects CC 2017/Essential Graphics/[AE] News Package/News Background Loop.mogrt - 28.46M
+/Applications/Outline Manager.app/Contents/Resources/app.asar - 28.37M
+/Users/apple/Library/Android/sdk/emulator/emulator64-x86 - 28.31M
+/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/objects/pack/tmp_pack_PDjTcc - 28.26M
+/Library/Application Support/Kingsoft/office6/QtWebKit.framework/Versions/5/QtWebKit - 28.23M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/02554ba01b6ab68d0e863e9ba7ad3de5/OpenData/签证澳大利亚 2.zip - 28.23M
+/Users/apple/Library/Android/sdk/emulator/emulator64-arm - 28.22M
+/Users/apple/Library/Android/sdk/platforms/android-27/android.jar - 28.16M
+/Users/apple/Library/Android/sdk/emulator/emulator64-mips - 28.13M
+/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app/Contents/Frameworks/libtfkernel.dylib - 28.11M
+/Users/apple/Books/Django教程自强学堂.pdf - 28.10M
+/Library/Frameworks/Adlm.framework/Versions/11a/Libraries/libQtWebKitAdlm.4.dylib - 28.02M
+/Applications/SuuntoDM5.app/Contents/Resources/KompostiWrapper.dylib - 27.82M
+/Users/apple/Library/Application Support/Thunder/Package/thunder_3.2.4.3658.dmg - 27.79M
+/Applications/GoLand.app/Contents/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar - 27.58M
+/Applications/Microsoft Office 2011/Office/Media/模板/演示文稿/多媒体设计.potx - 27.47M
+/Applications/GoLand.app/Contents/jdk/Contents/Home/jre/lib/libjfxwebkit.dylib - 27.44M
+/Applications/VMware Fusion.app/Contents/Library/vmware-vmx-debug - 27.42M
+/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/Support/J_Basic.dict/Contents/Resources/dictionary_2 - 27.39M
+/Users/apple/CODE/workspace4eclipse/.metadata/.plugins/org.eclipse.jdt.core/3131291862.index - 27.34M
+/System/Library/LinguisticData/zh/Hans/zhtok_ner.dat - 27.28M
+/usr/local/Cellar/qt/4.8.7_2/lib/QtWebKit.framework/Versions/4/QtWebKit - 27.22M
+/System/Library/Fonts/AppleSDGothicNeo.ttc - 27.11M
+/Applications/proxyee-down-2.41/main/proxyee-down-core.jar - 27.00M
+/Applications/Xcode.app/Contents/Developer/usr/bin/usdz_converter.dylib - 26.99M
+/System/iOSSupport/System/Library/PrivateFrameworks/UIKitCore.framework/Versions/A/UIKitCore - 26.98M
+/System/Library/PrivateFrameworks/TuriCore.framework/Versions/A/TuriCore - 26.86M
+/usr/lib/libobjc.A.dylib - 26.81M
+/Users/apple/Software/python-3.7.4-macosx10.9.pkg - 26.78M
+/Applications/CocosCreator.app/Contents/Resources/builtin/fb-live-stream/libs/ios/framework/FBSDKCoreKit.framework/FBSDKCoreKit - 26.74M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/Chinese.lm/lm.dat - 26.71M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/Chinese.lm/lm.dat - 26.71M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/Chinese.lm/lm.dat - 26.71M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/Chinese.lm/lm.dat - 26.71M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/bin/mysqld-debug - 26.53M
+/Users/apple/Library/Caches/pip/http/8/8/d/b/9/88db97e859ea6ccba52f1b9e4197f29e74bc0be4b2280075af0bc505 - 26.42M
+/usr/local/Cellar/boost/1.59.0/lib/libboost_wave-mt.a - 26.40M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_6.db - 26.23M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ko.bundle/AssetData/Unigrams-ko.dat - 26.20M
+/System/Library/LinguisticData/RequiredAssets_ko.bundle/AssetData/Unigrams-ko.dat - 26.20M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ko.bundle/AssetData/Unigrams-ko.dat - 26.20M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/usr/share/icu/icudt62l.dat - 26.19M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/share/icu/icudt62l.dat - 26.19M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/usr/share/icu/icudt62l.dat - 26.19M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/usr/share/icu/icudt62l.dat - 26.18M
+/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore - 26.17M
+/Users/apple/Library/Developer/Xcode/watchOS DeviceSupport/Watch1,2 4.3.1 (15T567)/Symbols/System/Library/PrivateFrameworks/WebCore.framework/WebCore - 26.16M
+/usr/local/Cellar/mongodb/3.0.6/bin/mongod - 26.13M
+/Library/Fonts/Microsoft/mingliu_hkscs.ttf - 26.12M
+/Library/Fonts/Microsoft/PMingLiU.ttf - 26.09M
+/Library/Fonts/Microsoft/MingLiU.ttf - 26.09M
+/Applications/Adobe After Effects CC 2017/Plug-ins/MAXON CINEWARE AE/(CINEWARE Support)/bin/modules/c4dplugin.xlib - 26.05M
+/Applications/iTunes.app/Contents/Resources/Assets.car - 26.04M
+/Users/apple/Library/Application Support/Google/Chrome/PepperFlash/32.0.0.223/PepperFlashPlayer.plugin/Contents/MacOS/PepperFlashPlayer - 26.01M
+/usr/local/Cellar/mongodb/3.0.6/bin/mongosniff - 25.90M
+/usr/share/icu/icudt62l.dat - 25.90M
+/Applications/Xcode.app/Contents/Developer/usr/share/xcs/CouchDB/lib/libicudata.60.2.dylib - 25.87M
+/usr/local/Cellar/mongodb/3.0.6/bin/mongoperf - 25.85M
+/Applications/VMware Fusion.app/Contents/Library/vmware-vmx-stats - 25.78M
+/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage - 25.75M
+/Applications/wechatwebdevtools.app/Contents/Versions/74.0.3729.169/nwjs Framework.framework/libnode.dylib - 25.71M
+/Users/apple/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/36884960f350cb29f1c2c93107f4fa27f4e7444e/builder-3.0.0.jar - 25.70M
+/Users/apple/Library/Developer/CoreSimulator/Devices/3E89DC49-9648-46C3-9241-3BE1E147BC1C/data/Library/SpringBoard/LockBackground.cpbitmap - 25.63M
+/Users/apple/Library/Developer/CoreSimulator/Devices/85A95491-9573-48AB-B6AE-BE8ACF0A1A45/data/Library/SpringBoard/LockBackground.cpbitmap - 25.63M
+/Users/apple/Library/Developer/CoreSimulator/Devices/85B09D33-4C14-4334-B92F-B29D1F232C47/data/Library/SpringBoard/LockBackground.cpbitmap - 25.63M
+/Users/apple/Library/Developer/CoreSimulator/Devices/F3A52327-9081-42FF-9D07-CD300109E679/data/Library/SpringBoard/LockBackground.cpbitmap - 25.63M
+/Users/apple/Library/Developer/CoreSimulator/Devices/44A7C7D8-A384-4E24-BE54-51894E0CC3A4/data/Library/SpringBoard/LockBackground.cpbitmap - 25.63M
+/Applications/Keynote.app/Contents/MacOS/Keynote - 25.58M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/libmono-llvm.0.dylib - 25.45M
+/Library/Desktop Pictures/Zebras.jpg - 25.36M
+/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/sys.dic - 25.25M
+/Users/apple/Library/Android/sdk/platforms/android-24/data/layoutlib.jar - 25.24M
+/Users/apple/Library/Android/sdk/platforms/android-26/android.jar - 25.24M
+/Users/apple/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/kotlin-compiler-embeddable-1.1.3-2.jar - 25.24M
+/Applications/Microsoft Office 2011/Microsoft Excel.app/Contents/MacOS/Microsoft Excel - 25.10M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/Chinese.lm/lm.dat - 25.09M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/Chinese.lm/lm.dat - 25.09M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/Chinese.lm/lm.dat - 25.09M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/Chinese.lm/lm.dat - 25.09M
+/Library/Input Methods/SogouInput.app/Contents/Resources/sgim_core.bin - 25.08M
+/System/Library/PrelinkedKernels/immutablekernel - 24.99M
+/System/Library/Assets/com_apple_MobileAsset_Font5/0fdcbc6eefcf05e858451df711bc250f10a8f40c.asset/AssetData/YuMincho.ttc - 24.83M
+/Users/apple/.Genymobile/Genymotion/deployed/Google Pixel - 7.1.0 - API 25 - 1080x1920/android_data_disk.vmdk - 24.81M
+/Users/apple/Library/Application Support/Thunder/Package/thunder_3.1.2.3078.dmg - 24.76M
+/Users/apple/CODE/Git/goagent/.git/objects/pack/pack-95ebfe212dfb0efbf2b22b71f5408cef29928764.pack - 24.75M
+/System/Library/Fonts/Hiragino Sans GB.ttc - 24.68M
+/Library/Updates/PreflightContainers/D7AD91CF-E0C6-4E8D-B772-EF29E13D70E6.preflightContainer/personalized/RestoreRamDisk_048-56146-005.img4 - 24.57M
+/usr/standalone/firmware/iBridge1_1Customer.bundle/Contents/Resources/048-56146-005.dmg - 24.56M
+/usr/share/langid/langid.inv - 24.53M
+/Applications/XMind.app/Contents/Eclipse/plugins/org.xmind.ui.aspose_3.7.2.201705011955.jar - 24.47M
+/System/Library/CoreServices/Photo Library Migration Utility.app/Contents/Resources/Themes_upgrade.db - 24.45M
+/Users/apple/Library/Developer/XCPGDevices/FED60BC5-B449-489A-9ED3-A865AE8E6E23/data/Library/SpringBoard/LockBackground.cpbitmap - 24.34M
+/Users/apple/Library/Android/sdk/platforms/android-23/data/layoutlib.jar - 24.26M
+/Applications/Navicat for MySQL.app/Contents/Frameworks/libicudata.56.1.dylib - 24.20M
+/Users/apple/Library/Android/sdk/build-tools/23.0.3/lib/libLLVM.dylib - 24.10M
+/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/Support/J_Basic.dict/Contents/Resources/dictionary_1 - 24.09M
+/Library/Application Support/Adobe/Common/dynamiclinkmediaserver/1.0/dynamiclinkmediaserver.app/Contents/Frameworks/Backend.framework/Versions/A/Backend - 24.01M
+/Users/apple/CODE/Git/go-ethereum/tests/testdata/BlockchainTests/bcExploitTest/ShanghaiLove.json - 23.95M
+/Applications/爱奇艺.app/Contents/SharedSupport/libbigplayersdk.dylib - 23.90M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.88M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/PlugIns/tether-canon-plugin.lrplugin/Contents/PlugIns/tether-canon.app/Contents/Frameworks/DPP.framework/Versions/A/DPP - 23.82M
+/Users/apple/CODE/Git/tensorflow/.git/objects/pack/pack-f94a2cef6b852bf4727289de9305bff3f881ed30.pack - 23.73M
+/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/3425AMD/libLLVMContainer.dylib - 23.70M
+/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics - 23.70M
+/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libLLVMContainer.dylib - 23.70M
+/Users/apple/Library/Ethereum/geth/chaindata/MANIFEST-2352310 - 23.53M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/sys.dic - 23.49M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/sys.dic - 23.49M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/sys.dic - 23.49M
+/Applications/Motrix.app/Contents/Resources/app.asar - 23.45M
+/Users/apple/Software/EVCapture_Mac1.1.0.dmg - 23.45M
+/Library/Application Support/Adobe/Adobe/AdobePatchFiles/{B306E604-6439-49B9-B5D1-07503AF3E553}.zip - 23.39M
+/Applications/VMware Fusion.app/Contents/Library/vmware-vmx - 23.29M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/TelSpeakerDemo 4.zip - 23.27M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/System/Library/PrivateFrameworks/ProVideo.framework/ProVideo - 23.20M
+/Applications/IntelliJ IDEA CE.app/Contents/plugins/android/lib/android.jar - 23.14M
+/System/Library/Assets/com_apple_MobileAsset_Font5/5eba4d0c358a66b2e0952c302be3010a3c86b008.asset/AssetData/LingWaiTC-Medium.otf - 23.07M
+/System/Library/Assets/com_apple_MobileAsset_Font5/4ef5453a52488ff8102ad7146ad7549a49021088.asset/AssetData/WeibeiSC-Bold.otf - 22.95M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/4.5/mscorlib.dll.dylib - 22.92M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3902/Libraries/libGPUCompilerImplLazy.dylib - 22.86M
+/Users/apple/Library/Android/sdk/platforms/android-23/android.jar - 22.84M
+/System/Library/Assets/com_apple_MobileAsset_Font5/04b62f062e5c35542967273c430b8329370b3898.asset/AssetData/LingWaiSC-Medium.otf - 22.83M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/android/armeabi-v7a/libv8_base.a - 22.81M
+/Users/apple/Library/Application Support/com.baidu.BaiduNetdisk-mac/5cea92501dd2673d34cee379070091ba/transmission.db - 22.79M
+/System/Library/PrivateFrameworks/CoreLSKD.framework/Versions/A/CoreLSKD - 22.79M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Helpers/DynamicLinkMediaServer/application/dynamiclinkmediaserver.app/Contents/Frameworks/Backend.framework/Versions/A/Backend - 22.70M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Helpers/DynamicLinkMediaServer/application/dynamiclinkmediaserver.app/Contents/amecommand.app/Contents/Frameworks/Backend.framework/Versions/A/Backend - 22.70M
+/Users/apple/CODE/IOSProjects/WeChat_SDK_sample_iOS_en/SDKSample_en/CoreData.pdf - 22.62M
+/Users/apple/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/office6/data/fonts/extend_font/HYZhongDengXianKWV2.ttf - 22.60M
+/Users/apple/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/office6/data/fonts/online_ext_font_cache/HYZhongDengXianKWV2.ttf - 22.60M
+/System/Library/Assets/com_apple_MobileAsset_ContextKit/869c9ef83af0b8b8934f72ea76b1a6921e620a97.asset/AssetData/lucene.tagged.53.idx/_0_AAPL50_0.doc - 22.51M
+/Applications/Adobe After Effects CC 2017/Plug-ins/Effects/mochaAE/mocha shape converter for AE.plugin/Contents/MacOS/mochashapeconverter4ae - 22.23M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-27/DiceGame 2019-6-27, 10.17 AM.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.22M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-20/DiceGame 2019-6-20, 2.14 PM.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.22M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-11/DiceGame 2019-6-11, 3.36 PM.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.22M
+/Users/apple/Library/Developer/Xcode/Archives/2019-06-12/DiceGame 2019-6-12, 12.36 PM.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.22M
+/private/var/folders/yc/y18wlzsx25d2hdn3y99gbw700000gn/C/com.apple.DeveloperTools/All/Xcode/EmbeddedAppDeltas/fbbe52afb8e7c4912575ec3fe954c561/cf241441a2d79d0e8273f87a311beba051c0059d/DiceGameLocal.app/Frameworks/libswiftCore.dylib - 22.22M
+/private/var/folders/yc/y18wlzsx25d2hdn3y99gbw700000gn/C/com.apple.DeveloperTools/All/Xcode/EmbeddedAppDeltas/a7be72935bd70eef0f10d79d0636f8da/cf241441a2d79d0e8273f87a311beba051c0059d/DiceGame.app/Frameworks/libswiftCore.dylib - 22.22M
+/Library/Fonts/Arial Unicode.ttf - 22.20M
+/Users/apple/Library/Group Containers/3L68KQB4HG.group.com.readdle.smartemail/databases/messages.sqlite - 22.20M
+/Users/apple/CODE/AndroidProjects/step/MyApplication/build/generated/mockable-android-23.jar - 22.20M
+/Applications/Adobe After Effects CC 2017/Plug-ins/Effects/mochaAE/mocha shape for After Effects.plugin/Contents/MacOS/mochashape4ae_adobe - 22.13M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/appletvos/libswiftCore.dylib - 22.09M
+/Users/apple/Documents/MuMu共享文件夹/com.txy.anywhere_13.1.10_330.apk - 22.09M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Cache/Video/2019-03/mac-chrome1.mov - 22.07M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/libmonosgen-2.0.1.dylib.dSYM/Contents/Resources/DWARF/libmonosgen-2.0.1.dylib - 22.07M
+/Users/apple/Library/Developer/Xcode/watchOS DeviceSupport/Watch1,2 4.3.1 (15T567)/Symbols/System/Library/Frameworks/UIKit.framework/UIKit - 22.04M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-23/DiceGame 2019-5-23 下午2.58.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.04M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-24/DiceGame 2019-5-24 下午3.56.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.04M
+/Users/apple/Library/Developer/Xcode/Archives/2019-05-14/DiceGame 2019-5-14 下午2.40.xcarchive/Products/Applications/DiceGame.app/Frameworks/libswiftCore.dylib - 22.04M
+/Users/apple/Library/Developer/Xcode/Archives/2018-11-20/Land 2018-11-20 下午12.32.xcarchive/Products/Applications/Land.app/Frameworks/libswiftCore.dylib - 22.04M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/TelSpeakerDemo 3.zip - 22.01M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/android/x86/libv8_base.a - 21.86M
+/Library/Desktop Pictures/Chroma 2.jpg - 21.80M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/TelSpeakerDemo 2.zip - 21.77M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Cache/Video/2019-03/Mac-Chrome.mov - 21.70M
+/Users/apple/.itmstransporter/1.9.1/bundles-1.7/bundles.20161004101418000/com.apple.jingle.leghorn-1.9.1.jar - 21.69M
+/Applications/VMware Fusion.app/Contents/Library/VMware OVF Tool/lib/libicudata.38.0.dylib - 21.63M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Frameworks/CIT/Plug-ins/FaceRecognition/FaceRecognitionCognitec.bundle/Contents/Resources/libfrsdk-8.6.0.so - 21.56M
+/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework/Versions/A/Reveal - 21.46M
+/Users/apple/CODE/Git4Whale/iOSProjects/DiceGameLocal/Reveal.framework/Versions/A/Reveal - 21.46M
+/Users/apple/CODE/workspace4iOS/DiceGameLocal/Reveal.framework/Versions/A/Reveal - 21.46M
+/Applications/Pages.app/Contents/MacOS/Pages - 21.43M
+/Users/apple/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/f17c41a54b4db8a9ecdb7022577b018e3a8421d9/builder-3.0.0-sources.jar - 21.38M
+/Library/Screen Savers/Default Collections/3 - Flowers/Flowers 05.jpg - 21.35M
+/Library/Desktop Pictures/Flower 10.jpg - 21.35M
+/Users/apple/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/office6/data/fonts/extend_font/HYKaiTiKWV2.ttf - 21.35M
+/Users/apple/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/office6/data/fonts/online_ext_font_cache/HYKaiTiKWV2.ttf - 21.35M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Cache/File/2018-01/2018年会_ampere_最终版.pptx - 21.29M
+/Users/apple/.itmstransporter/1.8.9/bundles-1.7/bundles.20160427101904000/com.apple.jingle.leghorn-1.8.9.jar - 21.26M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleSDGothicNeo.ttc - 21.22M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleSDGothicNeo.ttc - 21.22M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleSDGothicNeo.ttc - 21.22M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleSDGothicNeo.ttc - 21.22M
+/System/Library/PrivateFrameworks/VideoProcessing.framework/Versions/A/Resources/rtree_landmark_tracking.dat - 21.20M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3802/Libraries/libGPUCompilerImplLazy.dylib - 21.15M
+/Users/apple/Documents/Microsoft 用户数据/Office 2011 Identities/Main Identity/Database - 21.05M
+/Applications/Microsoft Office 2011/Office/Open XML for Excel.framework/Versions/14/Open XML for Excel - 21.02M
+/Users/apple/CODE/frameworks/mongodb-osx-x86_64-3.2.0/bin/mongo - 20.95M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/lm/Japanese.lm/lm.dat - 20.91M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/lm/Japanese.lm/lm.dat - 20.91M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ja.bundle/AssetData/lm/Japanese.lm/lm.dat - 20.91M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/usr/lib/libLLVM.dylib - 20.86M
+/Users/apple/Library/Android/sdk/platforms/android-19/android.jar - 20.83M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/02554ba01b6ab68d0e863e9ba7ad3de5/OpenData/签证澳大利亚 1.zip - 20.82M
+/Users/apple/.SynologyDrive/SynologyDrive.app/Contents/Frameworks/libicudata.53.1.dylib - 20.80M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/usr/lib/libLLVM.dylib - 20.79M
+/Applications/GoLand.app/Contents/lib/resources_en.jar - 20.78M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/_CodeSignature/CodeResources - 20.78M
+/Library/Fonts/Microsoft/Microsoft Yahei.ttf - 20.76M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/02554ba01b6ab68d0e863e9ba7ad3de5/OpenData/签证澳大利亚.zip - 20.68M
+/Users/apple/.CloudStationBackup/CloudStation.app/Contents/Frameworks/libicudata.53.1.dylib - 20.53M
+/Users/apple/.CloudStation/CloudStation.app/Contents/Frameworks/libicudata.53.1.dylib - 20.53M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/ModelIO.framework/ModelIO - 20.52M
+/Applications/Microsoft Office 2011/Office/Microsoft Chart Converter.app/Contents/MacOS/Microsoft Chart Converter - 20.49M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ko.bundle/AssetData/ko.lm/lm.dat - 20.42M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ko.bundle/AssetData/ko.lm/lm.dat - 20.42M
+/Applications/GoLand.app/Contents/jdk/Contents/Home/jre/lib/ext/jfxrt.jar - 20.38M
+/Applications/IntelliJ IDEA CE.app/Contents/jre/jdk/Contents/Home/jre/lib/ext/jfxrt.jar - 20.35M
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/libswiftFoundation.dylib - 20.32M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip - 20.26M
+/Applications/Xcode.app/Contents/SharedFrameworks/AppleCV3D.framework/Versions/A/Resources/AppleCV3D-PCA.msgpack - 20.16M
+/Users/apple/CODE/hadoop-1.2.1/src/docs/cn/uming.ttc - 20.08M
+/Users/apple/CODE/Git/go-ethereum/tests/testdata/src/TransactionTestsFiller/ttHomestead/String10MbDataFiller.json - 20.00M
+/Users/apple/CODE/Git/go-ethereum/tests/testdata/src/TransactionTestsFiller/ttFrontier/String10MbDataFiller.json - 20.00M
+/usr/local/Cellar/mongodb/3.2.0/bin/mongo - 19.83M
+/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation - 19.83M
+/Applications/GarageBand.app/Contents/Frameworks/MADSP.framework/Versions/A/MADSP - 19.78M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/mac/libs/libv8_base.a - 19.75M
+/System/Library/Compositions/Fish.mov - 19.69M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/mac/libs/libjs_static.a - 19.69M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_3.db - 19.67M
+/Users/apple/CODE/google-cloud-sdk/platform/google_appengine/lib/grpcio-1.9.1/google/protobuf/pyext/_message.so - 19.62M
+/Applications/Photos.app/Contents/MacOS/Photos - 19.56M
+/Users/apple/.itmstransporter/1.8.8/bundles-1.7/bundles.20151104144038000/com.apple.jingle.leghorn-1.8.8.jar - 19.54M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/971ea190dc06bd6be1cae4d105e70306/OpenData/10.zip - 19.52M
+/Library/Screen Savers/Default Collections/2 - Sierras/Sierras 01.jpg - 19.47M
+/Library/Desktop Pictures/High Sierra.jpg - 19.47M
+/System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/A/Libraries/libsrc2module.dylib - 19.47M
+/Users/apple/.itmstransporter/1.8.7/bundles-1.6/bundles.20150924072417445/com.apple.jingle.leghorn-1.8.7.jar - 19.44M
+/Users/apple/CODE/Git/twister/.git/objects/pack/pack-7579f38d62a546fdf51812439e2caab5c857f831.pack - 19.38M
+/Library/Caches/update.pkg - 19.34M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/HiraginoKakuGothic.ttc - 19.34M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/HiraginoKakuGothic.ttc - 19.34M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/HiraginoKakuGothic.ttc - 19.34M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/HiraginoKakuGothic.ttc - 19.34M
+/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit - 19.18M
+/Applications/NemoDesktop.app/Contents/MacOS/NemoDesktop - 19.12M
+/Users/apple/CODE/Git/goagent/.git/objects/pack/pack-b65af7681a9123a1895fa2340df476d9aeb9bac8.pack - 19.12M
+/Users/apple/CODE/google-cloud-sdk/platform/cloud-datastore-emulator/CloudDatastore.jar - 19.10M
+/Users/apple/Library/Android/sdk/build-tools/26.0.2/lib64/libclang.dylib - 19.08M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_9.db - 18.99M
+/Applications/Xcode.app/Contents/SharedFrameworks/DNTDocumentationSupport.framework/Versions/A/Resources/external/index.docsindex - 18.99M
+/System/Library/Receipts/com.apple.pkg.iPhoneSimulatorSDK12_0.bom - 18.90M
+/usr/local/Cellar/boost/1.59.0/lib/libboost_log_setup-mt.a - 18.84M
+/System/Library/Fonts/ヒラギノ明朝 ProN.ttc - 18.83M
+/Users/apple/CODE/let/V5.1.chm - 18.77M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/ModelIO.framework/ModelIO - 18.74M
+/System/Library/PrivateFrameworks/Espresso.framework/Versions/A/Resources/default.metallib - 18.69M
+/Library/Screen Savers/Default Collections/3 - Flowers/Flowers 01.jpg - 18.68M
+/Library/Desktop Pictures/Flower 5.jpg - 18.68M
+/Library/Application Support/Kingsoft/office6/wppcore.framework/Versions/A/wppcore - 18.66M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 18.66M
+/Applications/Adobe After Effects CC 2017/Plug-ins/Format/ProImport/Pro Import AE.plugin/Contents/Resources/libcom-api.dylib - 18.63M
+/Applications/Adobe After Effects CC 2017/Plug-ins/Format/ProImport/Pro Import AE.plugin/Contents/Resources/Automatic Duck.app/Contents/Resources/libcom-api.dylib - 18.63M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/usr/share/tokenizer/ja/sys.dic - 18.60M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/share/tokenizer/ja/sys.dic - 18.60M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/usr/share/tokenizer/ja/sys.dic - 18.60M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/usr/share/tokenizer/ja/sys.dic - 18.60M
+/Library/Updates/PreflightContainers/D7AD91CF-E0C6-4E8D-B772-EF29E13D70E6.preflightContainer/personalized/OSRamdisk_048-56148-005.img4 - 18.60M
+/usr/standalone/firmware/iBridge1_1Customer.bundle/Contents/Resources/048-56148-005.dmg - 18.60M
+/Users/apple/CODE/google-cloud-sdk/data/cli/gcloud.json - 18.57M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/巴菲特致股东的信1957-2015.zip - 18.49M
+/Users/apple/CODE/workspace4eclipse/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_5.tis - 18.43M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/usr/bin/metal-opt - 18.34M
+/System/Library/Components/AudioCodecs.component/Contents/MacOS/AudioCodecs - 18.31M
+/Applications/IntelliJ IDEA CE.app/Contents/lib/openapi.jar - 18.28M
+/Users/apple/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/office6/data/fonts/extend_font/HYFangSongKWV2.ttf - 18.23M
+/Users/apple/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/office6/data/fonts/online_ext_font_cache/HYFangSongKWV2.ttf - 18.23M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scene-descriptor.bin - 18.23M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scene-descriptor.bin - 18.23M
+/System/Library/Frameworks/Vision.framework/Versions/A/Resources/scene-descriptor.bin - 18.23M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Vision.framework/scene-descriptor.bin - 18.23M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/tools/cocos2d-console/plugins/plugin_generate/proj_modifier/plutil-win32/icudt49.dll - 18.22M
+/Users/apple/Library/Application Support/Code/Cache/e69a544ade75b6e7_0 - 18.17M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/4.5/Microsoft.CodeAnalysis.CSharp.dll.dylib.dSYM/Contents/Resources/DWARF/Microsoft.CodeAnalysis.CSharp.dll.dylib - 18.10M
+/usr/local/bin/ctest - 18.05M
+/Users/apple/.itmstransporter/1.8.5/bundles-1.7/bundles.20150324142110000/com.apple.jingle.leghorn-1.8.5.jar - 17.94M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/TelSpeakerDemo 1.zip - 17.94M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/TelSpeakerDemo.zip - 17.92M
+/Library/Fonts/AppleMyungjo.ttf - 17.89M
+/System/Library/Extensions/AMDRadeonX4000HWServices.kext/Contents/PlugIns/AMDRadeonX4400HWLibs.kext/Contents/MacOS/AMDRadeonX4400HWLibs - 17.83M
+/System/Library/Extensions/AMDRadeonX4000HWServices.kext/Contents/PlugIns/AMDRadeonX4300HWLibs.kext/Contents/MacOS/AMDRadeonX4300HWLibs - 17.83M
+/System/Library/Extensions/AMDRadeonX4000HWServices.kext/Contents/PlugIns/AMDRadeonX4700HWLibs.kext/Contents/MacOS/AMDRadeonX4700HWLibs - 17.83M
+/System/Library/Extensions/AMDRadeonX4000HWServices.kext/Contents/PlugIns/AMDRadeonX4000HWLibs.kext/Contents/MacOS/AMDRadeonX4000HWLibs - 17.83M
+/Applications/GoLand.app/Contents/lib/openapi.jar - 17.80M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 17.77M
+/Users/apple/Library/Developer/Xcode/DocumentationCache/v129/10.2.1/DeveloperDocumentation.index/store.db - 17.77M
+/Users/apple/Library/Developer/Xcode/DocumentationCache/v129/10.2.1/DeveloperDocumentation.index/.store.db - 17.77M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleColorEmoji.ttc - 17.74M
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/ext/jfxrt.jar - 17.74M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/win32/libs/Debug/mozjs-52.dll - 17.73M
+/Applications/proxyee-down-2.41/jre1.8.0_162/Contents/Home/lib/ext/jfxrt.jar - 17.72M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/external/win32/libs/mozjs-52.dll - 17.72M
+/Applications/CocosCreator.app/Contents/Resources/cocos2d-x/tools/cocos2d-console/plugins/plugin_jscompile/bin/mozjs-52.dll - 17.72M
+/Applications/Adobe After Effects CC 2017/Plug-ins/MAXON CINEWARE AE/(CINEWARE Support)/lite/modules/c4dplugin.xlib - 17.70M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/ext/jfxrt.jar - 17.69M
+/Applications/XMind.app/Contents/Eclipse/jre/lib/ext/jfxrt.jar - 17.69M
+/System/iOSSupport/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore - 17.69M
+/Applications/Microsoft Office 2011/Microsoft PowerPoint.app/Contents/MacOS/Microsoft PowerPoint - 17.67M
+/System/Library/Fonts/AquaKana.ttc - 17.64M
+/Users/apple/Library/Android/sdk/build-tools/25.0.2/lib64/libclang.dylib - 17.61M
+/Users/apple/Library/Android/sdk/build-tools/24.0.3/lib64/libclang.dylib - 17.61M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 17.57M
+/Applications/CocosCreator.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libnode.dylib - 17.57M
+/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/Support/J_Basic_mini.dict/Contents/Resources/dictionary_2 - 17.54M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 17.49M
+/Applications/wechatwebdevtools.app/Contents/Versions/74.0.3729.169/nwjs Framework.framework/Versions/A/Resources/app_mode_loader.app/Contents/MacOS/app_mode_loader - 17.44M
+/Applications/Xcode.app/Contents/SharedFrameworks/DNTDocumentationSupport.framework/Versions/A/Resources/external/cache.db - 17.42M
+/Users/apple/Library/Group Containers/3L68KQB4HG.group.com.readdle.smartemail/databases/search_fts5.sqlite - 17.41M
+/Applications/PyCharm CE.app/Contents/jre/jdk/Contents/Home/lib/tools.jar - 17.40M
+/usr/local/Cellar/boost/1.59.0/lib/libboost_log_setup.a - 17.39M
+/Applications/IntelliJ IDEA CE.app/Contents/jre/jdk/Contents/Home/lib/tools.jar - 17.39M
+/Applications/IntelliJ IDEA CE.app/Contents/plugins/Kotlin/lib/kotlin-plugin.jar - 17.38M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/lib/tools.jar - 17.36M
+/Applications/Outline Manager.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libnode.dylib - 17.33M
+/Users/apple/CODE/Resources4Coder/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Versions/A/GoogleMobileAds - 17.31M
+/Applications/石墨文档.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libnode.dylib - 17.30M
+/usr/share/tokenizer/ko/sys.dic - 17.28M
+/Applications/Microsoft Office 2011/Office/OfficeArt.framework/Versions/14/OfficeArt - 17.21M
+/Applications/Utilities/Adobe Application Manager/core/Adobe Application Manager.app/Contents/Frameworks/adbeapecore.framework/Versions/A/Libraries/adbeapeengine.bundle/Contents/MacOS/adbeapeengine - 17.18M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/wppcore.framework/Versions/A/wppcore - 17.14M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_tr.bundle/AssetData/tr.lm/lm.dat - 17.14M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_tr.bundle/AssetData/tr.lm/lm.dat - 17.14M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/OpenData/女性健美训练图解.pdf - 17.12M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/lib/ct.sym - 16.96M
+/Users/apple/Books/Leica/M-Broschure_2014_en.pdf - 16.94M
+/Applications/EasyConnect.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libnode.dylib - 16.92M
+/Applications/Autodesk/SketchBook Pro 2016/SketchBookPro.app/Contents/Resources/Presets/brushes.sqlite3 - 16.89M
+/Users/apple/.gradle/caches/jars-1/llxvym6aahh0v3rhq4bwcidifejnriu/openapi.jar - 16.85M
+/Library/Screen Savers/Default Collections/3 - Flowers/Flowers 06.jpg - 16.83M
+/Library/Desktop Pictures/Flower 9.jpg - 16.83M
+/Users/apple/CODE/Resources4Coder/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Versions/A/GoogleMobileAds - 16.80M
+/Applications/IntelliJ IDEA CE.app/Contents/plugins/Kotlin/kotlinc/lib/kotlin-compiler.jar - 16.80M
+/System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/Resources/com.apple.datadetectorscore.cache.full.asia.system - 16.77M
+/Applications/爱奇艺.app/Contents/SharedSupport/libpumasdk_l.dylib - 16.74M
+/Applications/VMware Fusion.app/Contents/Library/isoimages/freebsd.iso - 16.73M
+/System/Library/Assets/com_apple_MobileAsset_Font5/db09870736c6892b6a56035428f2b1b6d0a954fd.asset/AssetData/WawaTC-Regular.otf - 16.68M
+/Library/Application Support/Autodesk/Adlm/FLEXnet/preparchive_11.12.1.yaa - 16.65M
+/usr/local/share/FNP/preparchive_11.12.1.yaa - 16.65M
+/System/Library/Assets/com_apple_MobileAsset_Font5/fe6d8b2f81ad5996e3344941e8b997a089d5038f.asset/AssetData/WawaSC-Regular.otf - 16.63M
+/Library/Screen Savers/Default Collections/3 - Flowers/Flowers 03.jpg - 16.62M
+/Library/Desktop Pictures/Flower 7.jpg - 16.62M
+/Applications/PyCharm CE.app/Contents/lib/resources_en.jar - 16.56M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/Core/AppleColorEmoji.ttc - 16.55M
+/Applications/IntelliJ IDEA CE.app/Contents/jre/jdk/Contents/Home/lib/ct.sym - 16.55M
+/Applications/PyCharm CE.app/Contents/jre/jdk/Contents/Home/lib/ct.sym - 16.53M
+/Users/apple/.gradle/caches/jars-3/dfd566a90e18a0aa75879c33e0731ab8/fastutil-7.2.0.jar - 16.51M
+/Users/apple/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/5ad3a2bb04143f70aa0765fc29fc29571a7d6b34/fastutil-7.2.0.jar - 16.51M
+/Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Versions/A/IDEKit - 16.46M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Data/file.db - 16.44M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Backup/1565581685/Data/file.db - 16.36M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/AppFonts/HiraginoMincho.ttc - 16.34M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Fonts/AppFonts/HiraginoMincho.ttc - 16.34M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libLLVMContainer.dylib - 16.32M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/4.5/Microsoft.CodeAnalysis.dll.dylib - 16.28M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libLLVMContainer.dylib - 16.22M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libLLVMContainer.dylib - 16.22M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DataDetectorsCore.framework/com.apple.datadetectorscore.cache.full.asia.system - 16.21M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DataDetectorsCore.framework/com.apple.datadetectorscore.cache.full.asia.system - 16.21M
+/System/Library/Assets/com_apple_MobileAsset_Font5/cb20985f96dc672bffc7df15ca13f6a4cdab65c8.asset/AssetData/Hiragino_Sans_CNS.ttc - 16.19M
+/Library/Application Support/Adobe/SavedFonts/current/AdobeKaitiStd-Regular.otf - 16.17M
+/Library/Fonts/AdobeKaitiStd-Regular.otf - 16.17M
+/System/Library/Frameworks/MediaToolbox.framework/Versions/A/MediaToolbox - 16.14M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DataDetectorsCore.framework/com.apple.datadetectorscore.cache.full.asia.system - 16.14M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DataDetectorsCore.framework/com.apple.datadetectorscore.cache.full.asia.system - 16.14M
+/Applications/IntelliJ IDEA CE.app/Contents/lib/resources_en.jar - 16.13M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/bin/mysqld - 16.13M
+/usr/local/bin/cpack - 16.07M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Index/message_index.db - 16.03M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/usr/libexec/locationd - 16.01M
+/Users/apple/Library/Developer/CoreSimulator/Devices/DFE8BAE1-5C77-4D72-95D0-05B4B639BD65/data/Library/SpringBoard/LockBackground.cpbitmap - 16.00M
+/data/db/local.ns - 16.00M
+/data/db/REVIEW.ns - 16.00M
+/Applications/VMware Fusion.app/Contents/Library/isoimages/solaris.iso - 15.97M
+/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/monodoc/sources/netdocs.zip - 15.96M
+/Applications/Xcode.app/Contents/Developer/usr/share/xcs/Node/bin/node - 15.95M
+/Users/apple/CODE/frameworks/mongodb-osx-x86_64-3.2.0/bin/mongos - 15.93M
+/Users/apple/CODE/Git/ace/.git/objects/pack/pack-192d9dfa1b3ff521704aae1b47b9aa3d7d5139c2.pack - 15.92M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_es.bundle/AssetData/es.lm/montreal.dat - 15.90M
+/System/Library/LinguisticData/RequiredAssets_es.bundle/AssetData/es.lm/montreal.dat - 15.90M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_es.bundle/AssetData/es.lm/montreal.dat - 15.90M
+/usr/local/Homebrew/.git/objects/pack/pack-fc52f3d6c6c8ba5e6469ca6ed6102b75eebdff0b.pack - 15.89M
+/Library/Desktop Pictures/Abstract Shapes 2.jpg - 15.88M
+/Users/apple/Library/Android/sdk/build-tools/23.0.3/lib/libclang.dylib - 15.86M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libLLVMContainer.dylib - 15.85M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_4.db - 15.85M
+/Applications/Pages.app/Contents/Frameworks/TSTables.framework/Versions/A/TSTables - 15.82M
+/Applications/Keynote.app/Contents/Frameworks/TSTables.framework/Versions/A/TSTables - 15.82M
+/Applications/Numbers.app/Contents/Frameworks/TSTables.framework/Versions/A/TSTables - 15.82M
+/System/Library/Extensions/AMDRadeonX5000HWServices.kext/Contents/PlugIns/AMDRadeonX5100HWLibs.kext/Contents/MacOS/AMDRadeonX5100HWLibs - 15.79M
+/Library/Application Support/Kingsoft/office6/etapi.framework/Versions/A/etapi - 15.75M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.73M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.73M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.72M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.72M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/Frameworks/ModelIO.framework/ModelIO - 15.71M
+/Library/Desktop Pictures/Chroma 1.jpg - 15.65M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ru.bundle/AssetData/Unigrams-ru.dat - 15.65M
+/System/Library/LinguisticData/RequiredAssets_ru.bundle/AssetData/Unigrams-ru.dat - 15.65M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_ru.bundle/AssetData/Unigrams-ru.dat - 15.65M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.64M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.64M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.64M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 15.64M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.64M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.64M
+/System/Library/PrivateFrameworks/iLifeMediaBrowser.framework/Versions/A/Resources/people-cork2.tiff - 15.62M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.61M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.61M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/bin/mysql_client_test_embedded - 15.59M
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/server/libjvm.dylib - 15.49M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/bin/mysql_embedded - 15.48M
+/System/Library/Assets/com_apple_MobileAsset_Font5/04f12fad3ed5bf72b51875030e7de86ade619616.asset/AssetData/YuppyTC-Regular.otf - 15.47M
+/Applications/proxyee-down-2.41/jre1.8.0_162/Contents/Home/lib/server/libjvm.dylib - 15.47M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/sys.dic - 15.47M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/sys.dic - 15.47M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/sys.dic - 15.47M
+/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/sys.dic - 15.47M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hant.bundle/AssetData/sys.dic - 15.46M
+/Users/apple/CODE/go_appengine/goroot/bin/godoc - 15.43M
+/Users/apple/Library/Containers/com.evernote.Evernote/Data/Library/Application Support/com.evernote.Evernote/accounts/www.evernote.com/45929/typeAhead.index/_2y7.cfs - 15.40M
+/usr/local/mysql-5.6.25-osx10.8-x86_64/bin/mysqltest_embedded - 15.39M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.3.1 (16F203)/Symbols/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices - 15.38M
+/Applications/XMind.app/Contents/Eclipse/jre/lib/server/libjvm.dylib - 15.38M
+/System/Library/Assets/com_apple_MobileAsset_Font5/70da6076841a5b7e68cb76f71848c766250d8440.asset/AssetData/YuppySC-Regular.otf - 15.37M
+/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/server/libjvm.dylib - 15.36M
+/Users/apple/Library/Containers/com.tencent.WeWorkMac/Data/Library/Application Support/WXWork/Data/1688853806280733/Cache/Video/2018-11/6230AC06-33EF-46A3-A64D-A9B8C3395B78.MOV - 15.33M
+/System/Library/Speech/Voices/MartinCompact.SpeechVoice/Contents/Resources/PCMWave - 15.31M
+/Users/apple/Library/Developer/CoreSimulator/Devices/2AC74F74-5963-4235-A800-FD057C2E86B0/data/Library/Caches/MappedImageCache/Wallpaper/home-wallpaperController-(-2:0:0:0.0:0:0.0:0.0)-untinted-legibility.cpbitmap - 15.31M
+/Users/apple/Library/Developer/CoreSimulator/Devices/E6BE2722-5C1A-47F3-95AF-133A1251BBDD/data/Library/Caches/MappedImageCache/Wallpaper/home-wallpaperController-(-2:0:0:0.0:0:0.0:0.0)-untinted-legibility.cpbitmap - 15.31M
+/usr/local/Cellar/mongodb/3.2.0/bin/mongos - 15.29M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/_CodeSignature/CodeResources - 15.29M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore - 15.21M
+/Applications/Xcode.app/Contents/SharedFrameworks/ModelIO.framework/Versions/A/ModelIO - 15.19M
+/System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit - 15.17M
+/System/Library/Assets/com_apple_MobileAsset_Font5/fe548b971e5f16935cdcecfc29727ea44e91cf5c.asset/AssetData/STFANGSO.ttf - 15.15M
+/System/Library/Speech/Voices/HelenaCompact.SpeechVoice/Contents/Resources/PCMWave - 15.14M
+/System/Library/PrelinkedKernels/prelinkedkernel - 15.14M
+/System/Library/Kernels/kernel - 15.13M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/usr/libexec/locationd - 15.10M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/etapi.framework/Versions/A/etapi - 15.08M
+/Applications/PyCharm CE.app/Contents/lib/openapi.jar - 15.05M
+/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuartzComposer.framework/Versions/A/QuartzComposer - 15.04M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.3/DeveloperDiskImage.dmg - 15.01M
+/usr/standalone/i386/Firmware.scap - 15.00M
+/Applications/iDVD.app/Contents/Frameworks/DVDBase.framework/Versions/A/DVDBase - 14.98M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/msg_8.db - 14.95M
+/Library/Application Support/iWork '09/Frameworks/Inventor.framework/Versions/C/Libraries/libCoin.60.0.0.dylib - 14.92M
+/Applications/Adobe Lightroom/Adobe Lightroom.app/Contents/Support/TypeSupport/Fonts/AdobeSongStd-Light.otf - 14.87M
+/Library/Application Support/Adobe/SavedFonts/current/AdobeSongStd-Light.otf - 14.87M
+/Library/Application Support/Adobe/PDFL/10.9/Fonts/AdobeSongStd-Light.otf - 14.87M
+/Library/Fonts/AdobeSongStd-Light.otf - 14.87M
+/private/var/folders/yc/y18wlzsx25d2hdn3y99gbw700000gn/0/com.apple.LaunchServices-221-v2.csstore - 14.85M
+/Users/apple/CODE/Git/sae-python-dev-guide/dev_server/y/google-cloud-sdk/bin/kubectl - 14.80M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/ModelIO.framework/ModelIO - 14.77M
+/Applications/Utilities/Adobe Application Manager/core/Adobe Application Manager.app/Contents/Frameworks/adbeapecore.framework/Versions/A/Libraries/WebKit.dylib - 14.76M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/ModelIO.framework/ModelIO - 14.76M
+/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app/Contents/Frameworks/image_compiler.framework/Versions/A/image_compiler - 14.74M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.1 (16C50)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.3 (16D39)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1 (16B92)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.4 (16D57)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C104)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.1.2 (16C101)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.71M
+/Users/apple/Library/Developer/Xcode/iOS DeviceSupport/12.0.1 (16A404)/Symbols/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore - 14.70M
+/Library/Application Support/Adobe/APE/3.3/adbeapecore.framework/Versions/A/Libraries/WebKit.dylib - 14.70M
+/Library/Fonts/Microsoft/SimSun-ExtB.ttf - 14.69M
+/usr/local/bin/cmake - 14.69M
+/System/Library/PrivateFrameworks/VideoProcessing.framework/Versions/A/Resources/cnn_pets.dat - 14.66M
+/Users/apple/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78fbfb00d3096286e4133ee99eee932f/Message/MessageTemp/8e03e23a37c8f7643995f20e80b109a7/Video/1529035079.mp4 - 14.65M
+/Applications/Xcode.app/Contents/Resources/Assets.car - 14.62M
+/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData - 14.62M
+/Library/Fonts/Microsoft/SimSun.ttf - 14.61M
+/Library/Desktop Pictures/Flower 3.jpg - 14.60M
+/Library/Desktop Pictures/Hawaiian Print.jpg - 14.58M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore - 14.56M
+/Applications/VMware Fusion.app/Contents/Frameworks/libvmwareui.dylib - 14.55M
+/Library/Fonts/AppleGothic.ttf - 14.55M
+/Users/apple/Library/Developer/CoreSimulator/Devices/9A9F5806-127A-4EDD-BA85-0A28A65F3BD0/data/Library/Caches/com.apple.coresymbolicationd/data - 14.55M
+/Applications/Picasa.app/Contents/MacOS/Picasa - 14.53M
+/usr/local/Cellar/boost/1.59.0/lib/libboost_log-mt.a - 14.53M
+/usr/local/bin/ccmake - 14.52M
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/sys.dic - 14.51M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/sys.dic - 14.51M
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/sys.dic - 14.51M
+/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/sys.dic - 14.51M
+/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 12.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/LinguisticData/RequiredAssets_zh-Hans.bundle/AssetData/sys.dic - 14.50M
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/libexec/locationd - 14.49M
+/Applications/wpsoffice.app/Contents/Frameworks/office6/addons/qing/qingbangong.framework/Versions/A/qingbangong - 14.48M
+/Users/apple/CODE/IOSProjects/firebus-master/Firebase.framework/Versions/A/Firebase - 14.46M
+/usr/local/go/bin/godoc - 14.43M
+/usr/local/Cellar/boost/1.59.0/lib/libboost_math_tr1f.a - 14.42M
+/usr/local/Cellar/boost/1.59.0/lib/libboost_math_tr1f-mt.a - 14.42M
+/Applications/Pages.app/Contents/Frameworks/TSCharts.framework/Versions/A/TSCharts - 14.38M
+/Applications/Keynote.app/Contents/Frameworks/TSCharts.framework/Versions/A/TSCharts - 14.38M
+/Applications/Numbers.app/Contents/Frameworks/TSCharts.framework/Versions/A/TSCharts - 14.38M
+/usr/local/Cellar/go/1.7.1/libexec/bin/godoc - 14.38M

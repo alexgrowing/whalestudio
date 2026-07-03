@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RLUpdateVersionView" customModule="Land" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新版本发布" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP2-5J-6Uw">
+                    <rect key="frame" x="87" y="164.5" width="201.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAy-rk-RhF">
+                    <rect key="frame" x="111.5" y="312.5" width="152" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="点击更新产品"/>
+                    <connections>
+                        <action selector="updateVersion" destination="iN0-l3-epB" eventType="touchUpInside" id="fQs-sV-djj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SAy-rk-RhF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FKa-Qj-zOc"/>
+                <constraint firstItem="SAy-rk-RhF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U6b-VA-j3e"/>
+                <constraint firstItem="HP2-5J-6Uw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="elw-6j-JaV"/>
+                <constraint firstItem="SAy-rk-RhF" firstAttribute="top" secondItem="HP2-5J-6Uw" secondAttribute="bottom" constant="100" id="qqk-sE-zw7"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

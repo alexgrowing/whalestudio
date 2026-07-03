@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "remotePath": "",
+      // "port": 10550,
+      // "host": "127.0.0.1",
+      "program": "${workspaceRoot}/main.go", // 指定入口文件
+      "env": {
+        "GOPATH":"${workspaceRoot}" // 设置项目路径, 就不会去取系统环境变量中的GOPATH变量值
+      },
+      "args": [],
+      "showLog": false
+    }
+  ]
+}

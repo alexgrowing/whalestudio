@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  DiceGame
+
+  Created by apple on 2016/11/13.
+  Copyright © 2016年 WhaleStudio. All rights reserved.
+*/
+CFBundleDisplayName = "酒吧骰子";

@@ -1,0 +1,19 @@
+{{ define "project"}}
+        <div class="project_content">
+<div>
+    {{ .name}}.running={{.running}}
+</div>
+            {{if .running}}
+<a href="#" onclick="doRequest('/kill?project={{.name}}')"> 中止项目[{{.name}}]</a>
+            {{ else }}
+<a href="#" onclick="doRequest('/start?project={{.name}}')"> 启动项目[{{.name}}]</a>
+            {{ end }}
+            <br>
+<a href="#" onclick="doRequest('/clean?project={{.name}}')"> 清理项目[{{.name}}]</a>
+
+        {{if .information}}
+                    <br>
+<a href="#" onclick="window.open({{.information}})"> 查看项目[{{.name}}]</a>
+{{ end }}
+        </div>
+{{ end }}

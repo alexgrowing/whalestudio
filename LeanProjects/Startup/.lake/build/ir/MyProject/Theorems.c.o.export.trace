@@ -1,0 +1,18 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs": "05fa51a0019701a4.o",
+ "log":
+ [{"message":
+   ".> /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.30.0/bin/clang -c -o /Users/littlesail/whale/LeanProjects/Startup/.lake/build/ir/MyProject/Theorems.c.o.export /Users/littlesail/whale/LeanProjects/Startup/.lake/build/ir/MyProject/Theorems.c -I /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.30.0/include -fstack-clash-protection -fdata-sections -ffunction-sections -fvisibility=hidden -Wno-unused-command-line-argument --sysroot /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.30.0 -nostdinc -isystem /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.30.0/include/clang -O3 -DNDEBUG -DLEAN_EXPORTING",
+   "level": "trace"}],
+ "inputs":
+ [["MyProject.Theorems:c",
+   [["/Users/littlesail/whale/LeanProjects/Startup/.lake/build/ir/MyProject/Theorems.c",
+     "7b4e880bfc12b276"],
+    ["Lean 4.30.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622",
+     "2f4703bb19086252"]]],
+  ["Lean 4.30.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622",
+   "2f4703bb19086252"],
+  ["traceArgs: #[-O3, -DNDEBUG, -DLEAN_EXPORTING]", "c1efb66122fb2b9a"],
+  ["arm64-apple-darwin24.6.0", "77c16133d139df5a"]],
+ "depHash": "f2919fd1c1535508"}

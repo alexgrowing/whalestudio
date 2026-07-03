@@ -1,0 +1,140 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		18DB88E31C7D97B70084F0B2 /* connect.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = connect.sh; sourceTree = "<group>"; };
+		18DB88E41C7D97B70084F0B2 /* main.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.go; sourceTree = "<group>"; };
+		18DB88E91C7D97B70084F0B2 /* bean.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = bean.go; sourceTree = "<group>"; };
+		18DB88EA1C7D97B70084F0B2 /* db.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = db.go; sourceTree = "<group>"; };
+		18DB88EB1C7D97B70084F0B2 /* db.summary.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = db.summary.go; sourceTree = "<group>"; };
+		18DB88EC1C7D97B70084F0B2 /* game.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = game.go; sourceTree = "<group>"; };
+		18DB88ED1C7D97B70084F0B2 /* globedb.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = globedb.go; sourceTree = "<group>"; };
+		18DB88EE1C7D97B70084F0B2 /* globeserver.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = globeserver.go; sourceTree = "<group>"; };
+		18DB88EF1C7D97B70084F0B2 /* server.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = server.go; sourceTree = "<group>"; };
+		18DB88F11C7D97B70084F0B2 /* util.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = util.go; sourceTree = "<group>"; };
+		18DB88F21C7D97B70084F0B2 /* upload.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = upload.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18DB88DB1C7D97AA0084F0B2 = {
+			isa = PBXGroup;
+			children = (
+				18DB88E21C7D97B70084F0B2 /* Territory */,
+			);
+			sourceTree = "<group>";
+		};
+		18DB88E21C7D97B70084F0B2 /* Territory */ = {
+			isa = PBXGroup;
+			children = (
+				18DB88E31C7D97B70084F0B2 /* connect.sh */,
+				18DB88E41C7D97B70084F0B2 /* main.go */,
+				18DB88E51C7D97B70084F0B2 /* pkg */,
+				18DB88E71C7D97B70084F0B2 /* src */,
+				18DB88F21C7D97B70084F0B2 /* upload.sh */,
+			);
+			path = Territory;
+			sourceTree = "<group>";
+		};
+		18DB88E51C7D97B70084F0B2 /* pkg */ = {
+			isa = PBXGroup;
+			children = (
+				18DB88E61C7D97B70084F0B2 /* darwin_amd64 */,
+			);
+			path = pkg;
+			sourceTree = "<group>";
+		};
+		18DB88E61C7D97B70084F0B2 /* darwin_amd64 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = darwin_amd64;
+			sourceTree = "<group>";
+		};
+		18DB88E71C7D97B70084F0B2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				18DB88E81C7D97B70084F0B2 /* land */,
+				18DB88F01C7D97B70084F0B2 /* tool */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		18DB88E81C7D97B70084F0B2 /* land */ = {
+			isa = PBXGroup;
+			children = (
+				18DB88E91C7D97B70084F0B2 /* bean.go */,
+				18DB88EA1C7D97B70084F0B2 /* db.go */,
+				18DB88EB1C7D97B70084F0B2 /* db.summary.go */,
+				18DB88EC1C7D97B70084F0B2 /* game.go */,
+				18DB88ED1C7D97B70084F0B2 /* globedb.go */,
+				18DB88EE1C7D97B70084F0B2 /* globeserver.go */,
+				18DB88EF1C7D97B70084F0B2 /* server.go */,
+			);
+			path = land;
+			sourceTree = "<group>";
+		};
+		18DB88F01C7D97B70084F0B2 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				18DB88F11C7D97B70084F0B2 /* util.go */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		18DB88DC1C7D97AA0084F0B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 18DB88DF1C7D97AA0084F0B2 /* Build configuration list for PBXProject "LandServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18DB88DB1C7D97AA0084F0B2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		18DB88E01C7D97AA0084F0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		18DB88E11C7D97AA0084F0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DB88DF1C7D97AA0084F0B2 /* Build configuration list for PBXProject "LandServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DB88E01C7D97AA0084F0B2 /* Debug */,
+				18DB88E11C7D97AA0084F0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DB88DC1C7D97AA0084F0B2 /* Project object */;
+}

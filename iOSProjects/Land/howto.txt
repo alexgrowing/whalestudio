@@ -1,0 +1,23 @@
+1.把libWebChatSDK.a, WXApi.h, WXApiObject.h和WXApi_Bridge_Header.h加到工程下
+2.在项目的build settings中,设置Objective-C Bridging Header为WXApi_Bridge_Header.h的完整路径
+3.去open.weixin.qq.com新注册一个App,虽然页面上说要七天审核,但刚才申请后两个小时就通过了,得到一个%AppIDFromWeixin%
+3.使用微信分享,需要在工程 -> Info -> URL Types里面加入Identifier:weixin;URL Schemes:%AppIDFromWeixin%
+4.修改AppDelegate
+------在application:didFinishLaunchingWithOptions中WXApi注册一下
+WXApi.registerApp("%AppIDFromWeixin%")
+------实现OpenURL
+func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+    return WXApi.handleOpenURL(url, delegate: self)
+}
+
+func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+    return WXApi.handleOpenURL(url, delegate: self)
+}
+------AppDelegate实现WXApiDelegate
+func onReq(req: BaseReq!) {
+
+}
+
+func onResp(resp: BaseResp!) {
+
+}
