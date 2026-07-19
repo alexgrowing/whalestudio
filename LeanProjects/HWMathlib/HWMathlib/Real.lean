@@ -41,6 +41,8 @@ example (g : ℝ → ℝ) (h1 : ∀ x, g (x + 1) = g (x) + 3) (h2 : g (0) = 5) :
 def SeqLim (a : ℕ → ℝ) (L : ℝ) :=
   ∀ ε > 0, ∃ N, ∀ n ≥ N, |a n - L| < ε
 
+def SeqConv (a : ℕ → ℝ) : Prop := ∃ L, SeqLim a L
+
 example (a : ℕ → ℝ) (L : ℝ) (a_const : ∀ n, a n = L) : SeqLim a L := by
   intro ε hε
   use 0
@@ -177,3 +179,28 @@ example (a : ℕ → ℝ) (ha : ∀ n, a n = (3 * n + 8) / (2 * n + 5)) : ∃ L,
   have _t : (n:ℝ)>1/(4*ε) := by linarith[rhn, hN]
   field_simp at _t
   linarith[_t, hε]
+
+example (a : ℕ → ℝ) (ha : ∀ n, a n = (-1) ^ n) : ¬ SeqConv a := by
+  rintro ⟨L, hL⟩
+  rcases hL 1 (by norm_num) with ⟨N, hN⟩
+  have h1 := hN N (le_refl N)
+  have h2 := hN (N + 1) (Nat.le_succ N)
+-- 居然可以直接rw[ha]，我还以为一定要 [ha N] 才可以替换 a N 呢
+  rw[ha] at h1 h2
+  rw[abs_lt] at h1 h2
+  rcases Nat.even_or_odd N with heven | hodd
+  · rw[heven.neg_one_pow] at h1
+    rw[heven.add_one.neg_one_pow] at h2
+    linarith
+  · rw[hodd.neg_one_pow] at h1
+    rw[hodd.add_one.neg_one_pow] at h2
+    linarith
+
+example (a : ℕ → ℝ) (ha2n : ∀ n, a (2 * n) = 3 - 1 / n) (ha2np1 : ∀ n, a (2 * n + 1) = 1 + 1 / n) : ¬ SeqConv a := by
+  intro hsc
+  rcases hsc with ⟨L, hL⟩
+  rcases hL 1 (by norm_num) with ⟨N, hN⟩
+  have h1 := hN (2*N) (by linarith)
+  have h2 := hN (2*N + 1) (by linarith)
+  rw[ha2n N] at h1
+  rw[ha2np1 N] at h1
