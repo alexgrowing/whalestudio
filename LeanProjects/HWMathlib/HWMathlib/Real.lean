@@ -2,6 +2,7 @@ import Mathlib
 
 set_option linter.style.emptyLine false
 set_option linter.style.whitespace false
+set_option linter.style.longLine false
 
 section startup
 /-!
@@ -180,6 +181,7 @@ example (a : ℕ → ℝ) (ha : ∀ n, a n = (3 * n + 8) / (2 * n + 5)) : ∃ L,
   field_simp at _t
   linarith[_t, hε]
 
+
 example (a : ℕ → ℝ) (ha : ∀ n, a n = (-1) ^ n) : ¬ SeqConv a := by
   rintro ⟨L, hL⟩
   rcases hL 1 (by norm_num) with ⟨N, hN⟩
@@ -198,9 +200,119 @@ example (a : ℕ → ℝ) (ha : ∀ n, a n = (-1) ^ n) : ¬ SeqConv a := by
 
 example (a : ℕ → ℝ) (ha2n : ∀ n, a (2 * n) = 3 - 1 / n) (ha2np1 : ∀ n, a (2 * n + 1) = 1 + 1 / n) : ¬ SeqConv a := by
   intro hsc
-  rcases hsc with ⟨L, hL⟩
-  rcases hL 1 (by norm_num) with ⟨N, hN⟩
-  have h1 := hN (2*N) (by linarith)
-  have h2 := hN (2*N + 1) (by linarith)
-  rw[ha2n N] at h1
-  rw[ha2np1 N] at h1
+  choose L hL using hsc
+  choose N hN using hL (1/2) (by norm_num)
+  have h2n := hN (2*(N+3)) (by linarith)
+  have h2np1 := hN (2*(N+3) + 1) (by linarith)
+
+  have h_diff1 : |a (2*(N+3)) - a (2*(N+3)+1)| < 1 := by
+    have _h1 : |a (2*(N+3)) - a (2*(N+3)+1)| = |(a (2*(N+3)) - L) + (L - a (2*(N+3)+1))| := by ring_nf
+    have _h2 : |(a (2*(N+3)) - L) - (a (2*(N+3)+1) - L)| ≤  |a (2*(N+3)) - L| + |a (2*(N+3)+1) - L| := by apply abs_sub
+    have _h3 : |(a (2*(N+3)) - L) - (a (2*(N+3)+1) - L)| = |(a (2*(N+3)) - L) + (L - a (2*(N+3)+1))| := by ring_nf
+    linarith[_h1, _h2, _h3, h2n, h2np1]
+
+  have h_diff2 : |a (2*(N+3)) - a (2*(N+3)+1)| ≥ 1 := by
+    have _h1 : a (2*(N+3)) = 3 - 1/(N+3) := by rewrite[ha2n  (N+3)]; push_cast;rfl
+    have _h2 : a (2*(N+3)+1) = 1 + 1/(N+3) := by rewrite[ha2np1 (N+3)]; push_cast;rfl
+    rewrite[_h1, _h2]
+    have _h3 : 3-1/((N:ℝ)+3)-(1+1/((N:ℝ)+3)) ≥ 0 := by field_simp;norm_num;linarith
+    have _h4 : |3-1/((N:ℝ)+3)-(1+1/((N:ℝ)+3))| = 3-1/((N:ℝ)+3)-(1+1/((N:ℝ)+3)) := by apply abs_of_nonneg _h3
+    rewrite[_h4]
+    field_simp
+    have _h5 : 2*(N:ℝ)+4 ≥ (N:ℝ)+4 := by linarith
+    linarith
+
+  linarith
+
+
+example (a b : ℕ → ℝ) (L : ℝ) (h : SeqLim a L) (b_scaled : ∀ n, b n = 2 * a n) : SeqLim b (2 * L) := by
+  intro ε hε
+  rcases h (ε/2) (by linarith) with ⟨N, hN⟩
+  use N
+  intro n hn
+  rewrite[b_scaled]
+  have res : |2 * a n - 2 * L| = 2 * |(a n - L)| := by
+    have _h1 : |2 * a n - 2 * L| = |2 * (a n - L)| := by ring_nf
+    have _h2 : |2 * (a n - L)| = |2| * |a n - L| := by apply abs_mul
+    have _h3 : 0 ≤ (2:ℝ) := by linarith
+    have _h4 : |(2:ℝ)| = 2 := by apply abs_of_nonneg _h3
+    rewrite[_h1, _h2, _h4]
+    rfl
+  rewrite[res]
+  linarith[hN n hn]
+
+
+theorem SumLim (a b c : ℕ → ℝ) (L M : ℝ) (ha : SeqLim a L) (hb : SeqLim b M) (hc : ∀ n, c n = a n + b n) : SeqLim c (L + M) := by
+  intro ε hε
+  choose Na hNa using ha (ε/2) (by linarith[hε])
+  choose Nb hNb using hb (ε/2) (by linarith[hε])
+  use Na + Nb
+  intro n hn
+  rewrite[hc]
+  have _h1 : |a n + b n - (L + M)| = |a n - L + (b n - M)| := by ring_nf
+  have _h2 : |a n - L + (b n - M)| ≤ |a n - L| + |b n - M| := by apply abs_add_le
+  have _h3 : |a n - L| < ε/2 := hNa n (by linarith[hn])
+  have _h4 : |b n - M| < ε/2 := hNb n (by linarith[hn])
+  linarith[_h1, _h2, _h3, _h4]
+
+
+example (a : ℕ → ℝ) (L : ℝ) (ha : SeqLim a L) : ∃ N, ∀ n ≥ N, a n ≥ L - 1 := by
+  rcases ha 1 (by linarith) with ⟨N, hN⟩
+  use N
+  intro n hn
+  have _h1 := hN n hn
+  rewrite[abs_lt] at _h1
+  linarith
+
+example (a b c : ℕ → ℝ) (L : ℝ) (aToL : SeqLim a L) (cToL : SeqLim c L) (aLeb : ∀ n, a n ≤ b n) (bLec : ∀ n, b n ≤ c n) : SeqLim b L := by
+  intro ε hε
+  rcases aToL ε hε with ⟨Na, hNa⟩
+  rcases cToL ε hε with ⟨Nb, hNb⟩
+  use Na + Nb
+  intro n hn
+  specialize aLeb n
+  specialize bLec n
+  specialize hNa n (by linarith[hn])
+  specialize hNb n (by linarith[hn])
+  rewrite[abs_lt] at hNa hNb
+  have _h1 : b n - L <  ε := by linarith
+  have _h2 : b n - L > - ε := by linarith
+  rewrite[abs_lt]
+  exact ⟨_h2, _h1⟩
+
+example (a : ℕ → ℝ) (ha : ∀ N, ∃ n ≥ N, |a n| > 10) : ¬ ∃ L, |L| < 5 ∧ SeqLim a L := by
+  intro h
+  rcases h with ⟨L, ⟨hL, hLim⟩⟩
+  rcases hLim 1 (by linarith) with ⟨N, hN⟩
+  rcases ha N with ⟨n, ⟨hn, han⟩⟩
+  have _hN := hN n hn
+  have hdiff1 : |a n| < 6 := by
+    have _h1 : |a n| = |a n - L + L| := by norm_num
+    have _h2 : |a n - L + L| ≤ |a n - L| + |L| := by apply abs_add_le
+    linarith
+  linarith
+
+
+example (a : ℕ → ℝ) (L M : ℝ) (aToL : SeqLim a L) (aToM : SeqLim a M) : L = M := by
+  by_contra h
+  let ε := |L - M| / 3
+  have _hε : ε = |L - M|/3 := by rfl
+  have hε : ε > 0 := by positivity
+    -- have _h1 : L - M ≠ 0 := by
+    --   by_contra _h11
+    --   have _h12 : L = M := by linarith
+    --   apply h _h12
+    -- have _h2 : |L - M| > 0 := by apply abs_pos.mpr _h1
+    -- linarith
+  rcases aToL ε hε with ⟨NL, hNL⟩
+  rcases aToM ε hε with ⟨NM, hNM⟩
+  have _hNL := hNL (NL+NM) (by linarith)
+  have _hNM := hNM (NL+NM) (by linarith)
+  have hdiff : |L-M|<2*ε := by
+    have _h1 : |L-M| = |L - a (NL+NM) + (a (NL+NM) - M)| := by norm_num
+    have _h2 : |L - a (NL+NM) + (a (NL+NM) - M)| ≤ |L - a (NL+NM)| + |a (NL+NM) - M| := by apply abs_add_le
+    have _h3 : |L - a (NL+NM)| = |-(a (NL+NM) - L)| := by norm_num
+    have _h4 : |-(a (NL+NM) - L)| = |a (NL+NM) - L| := by apply abs_neg
+    linarith
+  rewrite[_hε] at hdiff
+  linarith
