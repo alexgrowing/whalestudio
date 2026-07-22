@@ -319,9 +319,9 @@ example (a : ℕ → ℝ) (L M : ℝ) (aToL : SeqLim a L) (aToM : SeqLim a M) : 
 
 example (a : ℕ → ℝ) (L : ℝ) (aToL : SeqLim a L) (LneZero : L ≠ 0) (b : ℕ → ℝ) (bEqInva : ∀ n, b n = 1 / a n) : SeqLim b (1 / L) := by
   intro ε hε
--- have _hε : ε*(|L|^2) > 0 := by
---   have _h1 : |L| > 0 := by apply abs_pos_of_nonzero LneZero
---   linarith[_h1]
+  have _hε : ε*(|L|^2) > 0 := by
+  have _h1 : |L| > 0 := by apply abs_pos_of_nonzero LneZero
+  linarith[_h1]
   choose N hN using EventuallyGeHalfLimPos a L aToL
   use (N LneZero)
   intro n hn
