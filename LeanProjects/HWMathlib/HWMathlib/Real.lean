@@ -977,3 +977,5 @@ theorem MonotoneSubseq_of_BddPeaks {X : Type*} [NormedField X] [LinearOrder X] [
     have _h2 : j = i + (j - i) := by omega
     rewrite[_h2]
     apply _h
+
+example {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] [FloorSemiring X] {a : ℕ → X} {M : X} (ha : Antitone a) (hM : ∀ n, M ≤ a n) : IsCauchy a := by
