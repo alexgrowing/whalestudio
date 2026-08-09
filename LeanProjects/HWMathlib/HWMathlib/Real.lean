@@ -796,21 +796,22 @@ example (a : ℕ → ℝ) (ha : ∀ n, a n = n) : ¬ ∃ σ, Subseq σ ∧ SeqCo
   bound
 
 theorem subseq_of_succ (σ : ℕ → ℕ) (hσ : ∀ n, σ n < σ (n + 1)) : Subseq σ := by
-  intro i j h
-  have _h1 : ∀ k m : ℕ, σ k < σ (k +(m + 1)) := by
-    intro k m
-    induction m with
-    |zero =>
-      bound
-    |succ m hm =>
-      calc
-        σ (k + (m + 1 + 1)) = σ (k + m + 1 + 1) := by bound
-        _ > σ (k + m + 1) := by bound
-        _ > σ (k) := by bound
--- TODO 又多了一个omega，不知道omega, bound, linarith, norm_num, simp之间的区别
-  have _h2 : j = i + ((j - i - 1) + 1) := by omega
-  rewrite[_h2]
-  apply _h1 i (j - i - 1)
+  apply strictMono_nat_of_lt_succ hσ
+--   intro i j h
+--   have _h1 : ∀ k m : ℕ, σ k < σ (k +(m + 1)) := by
+--     intro k m
+--     induction m with
+--     |zero =>
+--       bound
+--     |succ m hm =>
+--       calc
+--         σ (k + (m + 1 + 1)) = σ (k + m + 1 + 1) := by bound
+--         _ > σ (k + m + 1) := by bound
+--         _ > σ (k) := by bound
+-- -- TODO 又多了一个omega，不知道omega, bound, linarith, norm_num, field_simp, simp之间的区别
+--   have _h2 : j = i + ((j - i - 1) + 1) := by omega
+--   rewrite[_h2]
+--   apply _h1 i (j - i - 1)
 
 theorem succ_iterate (σ : ℕ → ℕ) (k n : ℕ) : σ (σ^[k] n) = σ^[k + 1] n := by
   have h1 : σ^[k+1] n = σ (σ^[k] n) := by
@@ -916,66 +917,325 @@ theorem MonotoneSubseq_of_BddPeaks {X : Type*} [NormedField X] [LinearOrder X] [
 
   choose f hf1 hf2 using hK'
   let σ : ℕ → ℕ := fun n ↦ f^[n] (K + 1)
+  have hσ0 : σ 0 = K + 1 := by bound
+  have hσsucc : ∀ k, σ (k + 1) = f (σ k) := by
+    intro k
+    calc
+      σ (k + 1) = f^[k+1] (K + 1) := by bound
+      _ = f (f^[k] (K + 1)) := by rewrite[Function.iterate_succ_apply'];rfl
+      _ = f (σ k) := by bound
   have hσ : ∀ n, σ n > K := by
     intro n
     induction n with
-    | zero =>
-      calc
-        σ 0 = K + 1 := by bound
-        _ > K := by bound
+    | zero => rewrite[hσ0];bound
     | succ n hn =>
-      calc
-        σ (n + 1) = f^[n+1] (K + 1) := by bound
-        _ = f (f^[n] (K + 1)) := by rewrite[Function.iterate_succ_apply'];rfl
-        _ = f (σ n) := by bound
-        _ > σ n := by bound
-        _ > K := by bound
-
-  have hr : ∀ n, σ n < σ (n + 1) ∧ a (σ n) < a (σ (n + 1)) := by
-    intro n
-    induction n with
-    | zero =>
-      have _h1 : f (K + 1) > K + 1 := by bound
-      have _h2 : a (f (K + 1)) > a (K + 1) := by bound
-      have _h3 : σ 0 = K + 1 := by bound
-      have _h4 : σ 1 = f (K + 1) := by bound
+      rewrite[hσsucc n]
+      have := hf1 (σ n) hn
       bound
-    | succ n hn =>
-      have _h1 : σ (n + 1) < σ (n + 1 + 1) := by
-        calc
-          σ (n + 1 + 1) = f^[n + 1 + 1] (K + 1) := by bound
-          _ = f (f^[n+1] (K + 1)) := by rewrite[Function.iterate_succ_apply'];rfl
-          _ = f (σ (n + 1)) := by rewrite[Function.iterate_succ_apply];rfl
-          _ > σ (n + 1) := by bound
-      have _h2 : a (σ (n + 1)) < a (σ (n + 1 + 1)) := by
-        calc
-          a (σ (n + 1 + 1)) = a (f^[n + 1 + 1] (K + 1)) := by bound
-          _ = a (f (f^[n+1] (K + 1))) := by rewrite[Function.iterate_succ_apply'];rfl
-          _ = a (f (σ (n + 1))):= by rewrite[Function.iterate_succ_apply];rfl
-          _ > a (σ (n + 1)) := by bound
-      exact ⟨_h1, _h2⟩
+
+  have hr1 : ∀ n, σ n < σ (n + 1) := by
+    intro n
+    rewrite[hσsucc n]
+    apply hf1 (σ n) (hσ n)
+
+  have hr2 : ∀ n, a (σ n) < a (σ (n + 1)) := by
+    intro n
+    rewrite[hσsucc n]
+    apply hf2 (σ n) (hσ n)
+
   use σ
   split_ands
   · apply subseq_of_succ
     intro n
-    apply (hr n).left
-  · change ∀ ⦃i j⦄, i ≤ j → (a ∘ σ) i ≤ (a ∘ σ) j
-    have _h : ∀ m k, (a ∘ σ) m ≤ (a ∘ σ) (m + k) := by
-      intro m k
-      induction k with
-      | zero => norm_num;
-      | succ k hk =>
-        have _h : (a ∘ σ) m < (a ∘ σ) (m + (k + 1)) := by
-          calc
-            (a ∘ σ) m ≤ (a ∘ σ) (m + k) := by bound
-            _ = a (σ (m + k)) := by bound
-            _ < a (σ (m + k + 1)) := by apply (hr (m + k)).right
-            _ = (a ∘ σ) (m + (k + 1)) := by bound
-        bound
-    intro i j hij
-    specialize _h i (j - i)
-    have _h2 : j = i + (j - i) := by omega
-    rewrite[_h2]
-    apply _h
+    apply hr1 n
+  · apply monotone_nat_of_le_succ
+    intro k
+    apply le_of_lt (hr2 k)
+    -- change ∀ ⦃i j⦄, i ≤ j → (a ∘ σ) i ≤ (a ∘ σ) j
+    -- have _h : ∀ m k, (a ∘ σ) m ≤ (a ∘ σ) (m + k) := by
+    --   intro m k
+    --   induction k with
+    --   | zero => norm_num;
+    --   | succ k hk =>
+    --     have _h : (a ∘ σ) m < (a ∘ σ) (m + (k + 1)) := by
+    --       calc
+    --         (a ∘ σ) m ≤ (a ∘ σ) (m + k) := by bound
+    --         _ = a (σ (m + k)) := by bound
+    --         _ < a (σ (m + k + 1)) := by apply hr2 (m + k)
+    --         _ = (a ∘ σ) (m + (k + 1)) := by bound
+    --     bound
+    -- intro i j hij
+    -- specialize _h i (j - i)
+    -- have _h2 : j = i + (j - i) := by omega
+    -- rewrite[_h2]
+    -- apply _h
 
-example {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] [FloorSemiring X] {a : ℕ → X} {M : X} (ha : Antitone a) (hM : ∀ n, M ≤ a n) : IsCauchy a := by
+theorem MonotoneNeg_of_Antitone {X} [LinearOrder X] [AddCommGroup X] [IsOrderedAddMonoid X] (a : ℕ → X) (ha : Antitone a) : Monotone (-a) := by
+  unfold Monotone
+  unfold Antitone at ha
+  intro i j hij
+  have := ha hij
+  calc
+    (-a) i = - (a i) := by bound
+    _ ≤  - (a j) := by bound
+    _ = (-a) j := by bound
+
+theorem IsCauchyNeg {X} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] (a : ℕ → X) (ha : IsCauchy a) : IsCauchy (-a) := by
+  unfold IsCauchy
+  intro ε hε
+  unfold IsCauchy at ha
+  rcases ha ε hε with ⟨N, hN⟩
+  use N
+  intro n hn m hm
+  rcases hN n hn m hm with hmn
+  calc
+    |(-a) m - (-a) n| = |- a m + a n| := by bound
+    _ = |-(a m - a n)| := by ring_nf
+    _ = |a m - a n| := by apply abs_neg
+    _ < ε := by bound
+
+
+theorem IsCauchy_of_AntitoneBdd {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] [FloorSemiring X] {a : ℕ → X} {M : X} (ha : Antitone a) (hM : ∀ n, M ≤ a n) : IsCauchy a := by
+  let b : ℕ → X := fun n => - (a n)
+  have hba : -b = a := by
+    funext n
+    change -(-(a n)) = a n
+    bound
+  have hb : Monotone b := MonotoneNeg_of_Antitone a ha
+  have hbM : ∀ n, - M ≥ b n := by
+    intro n
+    bound
+  have hbCauchy := IsCauchy_of_MonotoneBdd hb hbM
+  have r := IsCauchyNeg b hbCauchy
+  rewrite[hba] at r
+  apply r
+
+example (a : ℕ → ℝ) (ha : ∀ n, a n = 1 / n) : IsCauchy a ∧ ¬ Monotone a ∧ ¬ Antitone a := by
+  split_ands
+  · unfold IsCauchy
+    intro ε hε
+    have hε2 : ε/2 > 0 := by bound
+    rcases ArchProp hε2 with ⟨N, hN⟩
+    have hεgt0 : 1/(ε/2) > 0 := by field_simp; bound
+    have hNgt0 : (N:ℝ) > 0 := by linarith
+    field_simp at hN
+    have _h1 : 1/N < ε/2 := by field_simp; bound
+    use (N + 1)
+    intro n hn m hm
+    have _hngeNp1 : (n:ℝ) ≥ (N:ℝ) + 1 := by exact_mod_cast hn
+    have _hngtN : (n:ℝ) > (N:ℝ) := by bound
+    have _hngeM : (m:ℝ) ≥ (n:ℝ) := by exact_mod_cast hm
+    have _hngt0 : (n:ℝ) > 0 := by bound
+    have _hmgt0 : (m:ℝ) > 0 := by bound
+    have _h2 : 1/(n:ℝ) < 1/(N:ℝ) := by field_simp; bound
+    have _h3 : 1/(m:ℝ) < 1/(N:ℝ) := by field_simp; bound
+    calc
+      |a m - a n| ≤ |a m| + |a n| := by apply abs_sub
+      _ = |1/(m:ℝ)| + |1/(n:ℝ)| := by rewrite[ha m, ha n];rfl
+      _ = 1/(m:ℝ) + 1/(n:ℝ) := by bound
+      _ < ε/2 + ε/2 := by bound
+      _ = ε := by bound
+  · intro hmono
+-- 这里对hmono要传入的参数是 (1 ≤ 2)，直接写by bound就可以了，爽
+    have h12 : a 1 ≤ a 2 := hmono (by bound)
+    rw[ha 1, ha 2] at h12
+    bound
+  · intro hanti
+    have h01 : a 1 ≤ a 0 := hanti (by bound)
+    rw [ha 0, ha 1] at h01
+-- 我是没想到 1/1 ≤ 1/0 居然是False
+    bound
+
+theorem AntitoneSubseq_of_UnBddPeaks {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] [FloorSemiring X] (a : ℕ → X) (ha : UnBddPeaks a) : ∃ σ, Subseq σ ∧ Antitone (a ∘ σ) := by
+  unfold UnBddPeaks at ha
+  choose f hf1 hf2 using ha
+/-！
+Nat.rec接收三个参数
+第一个参数：当 k = 0 时
+第二个参数：也是一个fun，接收两个参数（当前的k，上一步归纳的结果即 σ k）
+第三个参数：k对应的自然数
+
+效果与 σ1, σ2, σ3 等价
+--/
+  let σ : ℕ → ℕ := fun n => Nat.rec (f 1) (fun _ σk => f σk) n
+  -- let σ1 : ℕ → ℕ := fun n => n.rec (f 1) (fun _ σk => f σk)
+  -- let σ2 : ℕ → ℕ | 0 => f 1 | k+1 => f (σ2 k) 这里 σ2 只是局部的，所以σ2 k的调用不成立，需要 σ2 用def定义成全局的才行，但这就又要求 f 也是全局的了
+  -- let σ3 : ℕ → ℕ := fun n => f^[n] 1
+-- 之所以选择 Nat.rec 的递归描述，就是为了下面得到 hσ0 和 hσsucc 很简单
+-- 因为这里使用了Lean内置的归约规则
+-- Nat.rec z s 0 = z，也即
+-- σ 0 = Nat.rec (f 1) (fun _ σk => f σk) 0 = f 1
+-- Nat.rec z s (k+1) = s k (Nat.rec z s k)，也即
+-- σ (n + 1) = Nat.rec (f 1) (fun _ σk => f σk) (n + 1) = (fun _ σk => f σk) n (σ n)
+-- 中间过程的理解可以省略，直接认为
+-- σ (n + 1) = (fun _ σk => f σk) n (σ n)
+-- 这其实就是一个函数 (fun _ σk => f σk) ，然后传入两个参数 n 和 (σ n) ，得到函数执行的结果，也就是
+-- f (σ n)
+  have hσ0 : σ 0 = f 1 := rfl
+  have hσsucc : ∀ n, σ (n + 1) = f (σ n) := fun n => rfl
+-- 也可以写成下面两种形式
+  -- have hσsucc : ∀ n, σ (n + 1) = f (σ n) := by intro n;rfl
+  -- have hσsucc n: σ (n + 1) = f (σ n) := rfl
+  have hmono : ∀ n, σ n < σ (n + 1) := by
+    intro n
+    rewrite[hσsucc n]
+    apply hf1
+  have hPeak : ∀ n, IsAPeak a (σ n) := by
+    intro n
+    induction n with
+    | zero =>
+      rewrite[hσ0]
+      apply hf2
+    | succ n _ =>
+      rewrite[hσsucc n]
+      apply hf2
+  have hAnti : ∀ n, a (σ (n + 1)) ≤ a (σ n) := by
+    intro n
+    apply hPeak
+    apply hmono
+
+  use σ
+  split_ands
+  · apply strictMono_nat_of_lt_succ
+    apply hmono
+  · apply antitone_nat_of_succ_le
+    apply hAnti
+
+theorem BolzanoWeierstrass {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] [FloorSemiring X] (a : ℕ → X) (ha : SeqBdd a) : ∃ σ, Subseq σ ∧ IsCauchy (a ∘ σ) := by
+  rcases ha with ⟨M, ⟨hM1, hM2⟩⟩
+  by_cases h : UnBddPeaks a
+  · rcases AntitoneSubseq_of_UnBddPeaks a h with ⟨σ, ⟨hσ1, hσ2⟩⟩
+    use σ
+    split_ands
+    · apply hσ1
+    · have _h : ∀ n, -M ≤ (a ∘ σ) n := by
+        intro n
+        specialize hM2 (σ n)
+        rewrite[abs_le] at hM2
+        apply hM2.left
+      apply IsCauchy_of_AntitoneBdd hσ2 _h
+  · rcases MonotoneSubseq_of_BddPeaks a h with ⟨σ, ⟨hσ1, hσ2⟩⟩
+    use σ
+    split_ands
+    · apply hσ1
+    · have _h : ∀ n, M ≥ (a ∘ σ) n := by
+        intro n
+        specialize hM2 (σ n)
+        rewrite[abs_le] at hM2
+        apply hM2.right
+      apply IsCauchy_of_MonotoneBdd hσ2 _h
+
+/-
+IsCauSeq abs a，根据定义，展开后就是
+∀ε > 0, ∃i, ∀j ≥ i, |a j - a i| < ε
+-/
+theorem IsCauSeq_of_IsCauchy {a : ℕ → ℚ} (ha : IsCauchy a) : IsCauSeq abs a := by
+  intro ε hε
+  obtain ⟨N, hN⟩ := ha ε hε
+  -- use N
+  -- intro j hj
+  -- exact hN N (le_refl N) j hj
+  exact ⟨N, fun j hj => hN N (le_refl N) j hj⟩
+
+def Real_of_CauSeq {a : ℕ → ℚ} (ha : IsCauchy a) : ℝ := Real.mk ⟨a, IsCauSeq_of_IsCauchy ha⟩
+
+theorem SeqLim_of_Real_of_Cau {a : ℕ → ℚ} (ha : IsCauchy a) : SeqLim (fun x => ↑(a x)) (Real_of_CauSeq ha) := by
+  intro ε hε
+  -- 不能直接用 ε/2 ，因为 ha 接收的参数需要是一个有理数，不能是实数
+  rcases exists_rat_btwn (show 0 < ε/2 by bound) with ⟨δ, hδ0, hδε⟩
+  have hδpos : (0:ℚ) < δ := by exact_mod_cast hδ0
+  rcases ha δ hδpos with ⟨N, hN⟩
+  refine ⟨N, fun n hn => ?_⟩
+  have key : |Real_of_CauSeq ha - (a n : ℝ)| ≤ (2 * (δ:ℝ)) := by
+    apply Real.mk_near_of_forall_near
+    refine ⟨N, fun j hj => ?_⟩
+    have h1 : |a j - a N| < δ := hN N (by bound) j hj
+    have h2 : |a n - a N| < δ := hN N (by bound) n hn
+    have h3 : |a j - a n| < 2 * δ := by
+      calc
+        |a j - a n| = |a j - a N - (a n - a N)| := by bound
+        _ ≤ |a j - a N| + |a n - a N| := by apply abs_sub
+        _ < δ + δ := by bound
+        _ = 2 * δ := by bound
+    have hcast : |(a j : ℝ) - (a n : ℝ)| = |a j - a n| := by bound
+    rewrite[hcast]
+    exact_mod_cast h3.le
+  rewrite[abs_sub_comm] at key
+  have h : 2 * (δ : ℝ) < ε := by bound
+  bound
+
+theorem Reals_are_Complete (q : ℕ → ℕ → ℚ) (x : ℕ → ℝ) (hq : ∀ n, IsCauchy (q n)) (hx : ∀ n, x n = Real_of_CauSeq (hq n)) (hxCau : IsCauchy x) : ∃ (y : ℕ → ℚ) (hy : IsCauchy y), SeqLim x (Real_of_CauSeq hy) := by
+  -- 核心思路：要构建数列 y n -> x，两步走
+  ---- 先构建 y n -> x n
+  ---- 再由 x n -> x
+  -- 每个q n都是一个数列，都收敛到x n
+  -- 因为q n 是 ℕ → ℚ，但SeqLim的第一个参数应该是 ℕ → ℝ，所以通过 fun m => ((q n m) : ℝ)做一下转换
+  have hconv : ∀ n, SeqLim (fun m => (q n m : ℝ)) (x n) := by
+    intro n
+    rewrite[hx n]
+    apply SeqLim_of_Real_of_Cau (hq n)
+  have hk : ∀ n, ∃ k, ∀ m ≥ k, |(q n m : ℝ) - (x n)| < 1/(n+1) := by
+    intro n
+    rcases hconv n (1/(n+1)) (by positivity) with ⟨N, hN⟩
+    exact ⟨N, hN⟩
+  choose k hk using hk
+  -- 至此，数列 y 就已经构建好了，下面就是证明 y n -> x
+  -- 根据结论的需要，下面就是证明 y 是 Cauchy 列
+  -- 最后再证明 SeqLim x (Real_of_CauSeq hy)
+  let y : ℕ → ℚ := fun n => q n (k n)
+  have hyCau : IsCauchy y := by
+    intro ε hε
+    have hε3pos : 0 < ((ε/3):ℝ) := by positivity
+    rcases hxCau (ε/3) hε3pos with ⟨N1, hN1⟩
+    rcases exists_nat_one_div_lt hε3pos with ⟨N2, hN2⟩
+    refine ⟨N1 + N2, fun n hn m hm => ?_⟩
+
+    -- 如果直接写1/(N2+1)，field_simp 就不会产生效果，因为自然数不是域，没有field_simp能使用的逆元结构，所以如果要用field_simp必须先强调转成 ℝ
+    -- gcongr 比 field_simp 好用多了
+    have hmε : 1/(m+1) ≤ 1/((N2:ℝ) + 1) := by gcongr;bound
+    have hnε : 1/(n+1) ≤ 1/((N2:ℝ) + 1) := by gcongr;bound
+
+    have h1 : |y m - x m| < ε/3 := by
+      have _h1 : |y m - x m| < 1/(m+1) := hk m (k m) (by bound)
+      bound
+    have h2 : |x n - y n| < ε/3 := by
+      have _h1 : |y n - x n| < 1/(n+1) := hk n (k n) (by bound)
+      rewrite[abs_sub_comm]
+      bound
+    have h3 : |x m - x n| < ε/3 := hN1 n (by bound) m hm
+
+    have r1 : |((y m):ℝ) - ((y n):ℝ)| ≤ |y m - x m| + |x m - y n| := by apply abs_sub_le ((y m):ℝ) (x m) ((y n):ℝ)
+    have r2 : |x m - ((y n):ℝ)| ≤ |x m - x n| + |x n - y n| := by apply abs_sub_le (x m) (x n) ((y n):ℝ)
+    have hε : (|y m - y n| : ℝ) < (ε : ℝ) := by
+      calc
+        (|y m - y n| : ℝ) = |((y m):ℝ) - ((y n):ℝ)| := by bound
+        _ ≤ |y m - x m| + |x m - x n| + |x n - y n| := by bound
+        _ < ε/3 + ε/3 + ε/3 := by bound
+        _ = ε := by bound
+    exact_mod_cast hε
+
+  refine ⟨y, hyCau, ?_⟩
+
+  -- 最后证明 SeqLim x (Real_of_CauSeq hyCau)
+  -- 根据 SeqLim_of_Real_of_Cau ，我们知道 y n 的极限是 (Real_of_CauSeq hyCau)
+  -- 再结合 y n 的极限是 x n
+  -- 那么通过三角不等式就能证明 x n 的极限也是 (Real_of_CauSeq hyCau)
+
+  have hyconv : SeqLim (fun n => y n) (Real_of_CauSeq hyCau) := by
+    apply SeqLim_of_Real_of_Cau hyCau
+  intro ε hε
+  have hε2pos : 0 < ((ε/2):ℝ) := by positivity
+  rcases hyconv (ε/2) hε2pos with ⟨N1, hN1⟩
+  rcases exists_nat_one_div_lt hε2pos with ⟨N2, hN2⟩
+  refine ⟨N1 + N2, fun n hn => ?_⟩
+
+  have h1 : |y n - Real_of_CauSeq hyCau| < ε/2 := hN1 n (by bound)
+  have h2 : |x n - y n| < ε/2 := by
+    rewrite[abs_sub_comm]
+    have _h1 := hk n (k n) (by bound)
+    have _h2 : 1/((n:ℝ)+1) ≤ 1/((N2:ℝ)+1) := by field_simp; gcongr;bound
+    bound
+  calc
+    |x n - Real_of_CauSeq hyCau| ≤ |x n - y n| + |y n - Real_of_CauSeq hyCau| := by apply abs_sub_le (x n) (y n) (Real_of_CauSeq hyCau)
+    _ < ε/2 + ε/2 := by bound
+    _ = ε := by bound
