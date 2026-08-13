@@ -707,7 +707,7 @@ theorem Diverge_of_DiffSubseqLim (a : ℕ → ℝ) (σ τ : ℕ → ℕ) (σsub 
         _ = L/2 + M/2 := by bound
     bound
 
-def IsCauchy{X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] (a : ℕ → X) : Prop := ∀ (ε : X), 0 < ε → ∃ N : ℕ, ∀ n ≥ N, ∀ m ≥ n, |a m - a n| < ε
+def IsCauchy {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] (a : ℕ → X) : Prop := ∀ (ε : X), 0 < ε → ∃ N : ℕ, ∀ n ≥ N, ∀ m ≥ n, |a m - a n| < ε
 
 theorem IsCauchy_of_SeqConv {a : ℕ → ℝ} (ha : SeqConv a) : IsCauchy a := by
   intro ε hε
@@ -720,10 +720,7 @@ theorem IsCauchy_of_SeqConv {a : ℕ → ℝ} (ha : SeqConv a) : IsCauchy a := b
   calc
     |a m - a n| = |(a m - L) + (L - a n)| := by bound
     _ ≤ |a m - L| + |L - a n| := by apply abs_add_le
-    _ = |a m - L| + |a n - L| := by
-      have _h : |L - a n| = |a n - L| := by apply abs_sub_comm
-      rewrite[_h]
-      rfl
+    _ = |a m - L| + |a n - L| := by nth_rewrite 2 [abs_sub_comm];rfl
     _ < ε := by bound
 
 theorem IsCauchy_of_Sum {X : Type*} [NormedField X] [LinearOrder X] [IsStrictOrderedRing X] (a b : ℕ → X) (ha : IsCauchy a) (hb : IsCauchy b) : IsCauchy (a + b) := by
@@ -1036,7 +1033,7 @@ example (a : ℕ → ℝ) (ha : ∀ n, a n = 1 / n) : IsCauchy a ∧ ¬ Monotone
       _ < ε/2 + ε/2 := by bound
       _ = ε := by bound
   · intro hmono
--- 这里对hmono要传入的参数是 (1 ≤ 2)，直接写by bound就可以了，爽
+-- 这里对hmono要传入的参数是 (1 ≤ 2)，直接写 by bound 就可以了，爽
     have h12 : a 1 ≤ a 2 := hmono (by bound)
     rw[ha 1, ha 2] at h12
     bound
@@ -1239,3 +1236,330 @@ theorem Reals_are_Complete (q : ℕ → ℕ → ℚ) (x : ℕ → ℝ) (hq : ∀
     |x n - Real_of_CauSeq hyCau| ≤ |x n - y n| + |y n - Real_of_CauSeq hyCau| := by apply abs_sub_le (x n) (y n) (Real_of_CauSeq hyCau)
     _ < ε/2 + ε/2 := by bound
     _ = ε := by bound
+
+example (a b : ℕ → ℚ) (ha : ∀ n, a n = 1 - 1 / 2 ^ n) (hb : ∀ n, b n = 1) : ∀ ε > 0, ∃ N, ∀ n ≥ N, |a n - b n| < ε := by
+  intro ε hε
+  have _hε : (0:ℝ) < (ε:ℝ) := by exact_mod_cast hε
+  rcases ArchProp _hε with ⟨N, hN⟩
+
+  refine ⟨N + 1, fun n hn => ?_⟩
+
+  have h1ε : 1/ (ε:ℝ) > 0 := by bound
+  have hNpos : N > 0 := by
+    have _hNpos : (N:ℝ) > 0 := by linarith
+    exact_mod_cast _hNpos
+  have hnN : n > N := by bound
+  have hnpos : n > 0 := by bound
+
+  calc
+    |a n - b n| = |(1 - 1/2^n) - 1| := by rewrite[ha n, hb n];rfl
+    _ = |-(1/2^n)| := by ring_nf
+    _ = |1/2^n| := by apply abs_neg
+    _ = 1/2^n := by bound
+    _ < 1/(n:ℚ) := by
+      have _h1 : n < 2^n := by apply IdLeTwoPow
+      field_simp
+      exact_mod_cast _h1
+    _ < 1/(N:ℚ) := by field_simp; exact_mod_cast hnN
+    _ < ε := by
+      field_simp
+      field_simp at hN
+      rewrite[mul_comm]
+      exact_mod_cast hN
+
+
+def Series (a : ℕ → ℝ) : ℕ → ℝ := fun n ↦ ∑ k ∈ range n, a k
+def SeriesConv (a : ℕ → ℝ) : Prop := SeqConv (Series a)
+def SeriesLim (a : ℕ → ℝ) (L : ℝ) : Prop := SeqLim (Series a) L
+
+theorem LimZero_of_SeriesConv (a : ℕ → ℝ) (ha : SeriesConv a) : SeqLim a 0 := by
+  intro ε hε
+  rcases ha with ⟨L, hL⟩
+  rcases hL (ε/2) (by bound) with ⟨N, hN⟩
+  refine ⟨N, fun n hn => ?_⟩
+  have hstep : a n = Series a (n+1) - Series a n := by
+    unfold Series
+    rewrite[sum_range_succ]
+    bound
+  rewrite[hstep, sub_zero]
+
+  have h1 : |Series a (n+1) - L| < ε/2 := hN (n+1) (by bound)
+  have h2 : |Series a n - L| < ε/2 := hN n (by bound)
+  rewrite[abs_sub_comm] at h2
+
+  calc
+    |Series a (n+1) - Series a n| ≤ |Series a (n+1) - L| + |L - Series a n| := by apply abs_sub_le
+    _ < ε/2 + ε/2 := by bound
+    _ = ε := by bound
+  -- unfold SeqLim
+  -- by_contra h
+  -- push Not at h
+  -- rcases h with ⟨ε, hε, hN⟩
+  -- choose σ hσ using hN
+  -- unfold SeriesConv SeqConv Series SeqLim at ha
+  -- rcases ha with ⟨L, hL⟩
+  -- rcases hL (ε/2) (by bound) with ⟨N, hN⟩
+
+  -- have hc := hσ N
+  -- have hcl := hc.left
+  -- have hcr := hc.right
+  -- have _h1 := hN (σ N) (by bound)
+  -- have _h2 := hN (σ N + 1) (by bound)
+  -- rewrite[abs_sub_comm] at _h1
+
+  -- have key : a (σ N) = ∑ k ∈ range (σ N + 1), a k - ∑ k ∈ range (σ N), a k := by
+  --   rewrite[sum_range_succ]
+  --   bound
+
+  -- have hx : |a (σ N)| < ε := by
+  --   calc
+  --     |a (σ N)| = |∑ k ∈ range (σ N + 1), a k - ∑ k ∈ range (σ N), a k| := by rewrite[key];rfl
+  --     _ ≤ |(∑ k ∈ range (σ N + 1), a k) - L| + |L - (∑ k ∈ range (σ N), a k)| := by apply abs_sub_le
+  --     _ < ε/2 + ε/2 := by bound
+  --     _ = ε := by bound
+  -- rewrite[sub_zero] at hcr
+  -- bound
+
+theorem FiniteGeomSeries (x : ℝ) (n : ℕ) : (1 - x) * ∑ k ∈ range n, x ^ k = 1 - x ^ n := by
+  induction n with
+  | zero => bound
+  | succ n hn =>
+    rewrite[sum_range_succ]
+    rewrite[mul_add]
+    rewrite[hn]
+    calc
+      1 - x^n + (1-x)*x^n = 1 - x^n + (x^n - x^(n+1)) := by ring_nf
+      _ = 1 - x^(n+1) := by norm_num
+
+theorem SeriesConstMul (a b : ℕ → ℝ) (c : ℝ) (hb : ∀ n, b n = c * a n) : ∀ n, Series b n = c * Series a n := by
+  intro n
+  unfold Series
+  induction n with
+  | zero => bound
+  | succ n hn =>
+  rewrite[sum_range_succ]
+  rewrite[sum_range_succ]
+  rewrite[hn]
+  ring_nf
+  rewrite[hb n]
+  bound
+
+theorem SeriesAdd (a b c : ℕ → ℝ) (h : ∀ n, c n = a n + b n) : ∀ n, Series c n = Series a n + Series b n := by
+  intro n
+  unfold Series
+  induction n with
+  | zero => bound
+  | succ n hn =>
+  rewrite[sum_range_succ]
+  rewrite[sum_range_succ]
+  rewrite[sum_range_succ]
+  rewrite[hn]
+  rewrite[h n]
+  bound
+
+theorem LeibnizSeriesFinite {a : ℕ → ℝ} (ha : ∀ n, a n = 1 / ((n + 1) * (n + 2))) : ∀ n, ∑ k ∈ range n, a k = 1 - 1 / (n + 1) := by
+  intro n
+  induction n with
+  | zero => bound
+  | succ n hn =>
+  rewrite[sum_range_succ, hn, ha]
+  field_simp
+  ring_nf
+  norm_num
+  bound
+
+theorem LeibnizSeries (a : ℕ → ℝ) (ha : ∀ n, a n = 1 / ((n + 1) * (n + 2))) : SeriesConv a := by
+  use 1
+  intro ε hε
+  rcases ArchProp hε with ⟨N, hN⟩
+  refine ⟨N, fun n hn => ?_⟩
+
+  have h1 : n + 1 > N := by bound
+  have h2 : n + 1 > (N:ℝ) := by exact_mod_cast h1
+  have hNpos : (N:ℝ) > 0 := by
+    have h1εpos : 1/ε > 0 := by field_simp;bound
+    linarith
+  have h3 : 1/(n+1) < 1/(N:ℝ) := by bound
+  have h4 : 1/(N:ℝ) < ε := by
+    field_simp
+    field_simp at hN
+    rewrite[mul_comm]
+    apply hN
+  have h5 : 1/(n+1) < (ε:ℝ) := by bound
+
+  unfold Series
+  rewrite[LeibnizSeriesFinite ha n]
+  calc
+    |1 - 1/((n:ℝ)+1) - 1| = |-(1/((n:ℝ) + 1))| := by ring_nf
+    _ = |1/((n:ℝ) + 1)| := by apply abs_neg
+    _ = 1/((n:ℝ) + 1) := by
+      apply abs_of_nonneg
+      field_simp
+      linarith
+    _ < ε := by bound
+
+theorem SeriesOrderThm {a b : ℕ → ℝ} (hab : ∀ n, a n ≤ b n) : ∀ n, Series a n ≤ Series b n := by
+  intro n
+  induction n with
+  | zero => bound
+  | succ n hn =>
+    unfold Series at hn
+    unfold Series
+    rewrite[sum_range_succ]
+    rewrite[sum_range_succ]
+    specialize hab n
+    linarith
+
+-- TODO 没我想像的那么简单么，后面再梳理一下吧，不借用Mathlib里面的CauchySeq，自己证一遍吧
+theorem SeqConv_of_IsCauchy (a : ℕ → ℝ) (ha : IsCauchy a) : SeqConv a := by
+  have hCS : CauchySeq a := by
+    rw [Metric.cauchySeq_iff]
+    intro ε hε
+    obtain ⟨N, hN⟩ := ha ε hε
+    refine ⟨N, fun m hm n hn => ?_⟩
+    rw [Real.dist_eq]
+    rcases le_total n m with h | h
+    · exact hN n hn m h
+    · rw [abs_sub_comm]; exact hN m hm n h
+  obtain ⟨L, hL⟩ := cauchySeq_tendsto_of_complete hCS
+  refine ⟨L, fun ε hε => ?_⟩
+  obtain ⟨N, hN⟩ := Metric.tendsto_atTop.mp hL ε hε
+  exact ⟨N, fun n hn => by have := hN n hn; rwa [Real.dist_eq] at this⟩
+
+theorem SeqConv_of_MonotoneBdd (a : ℕ → ℝ) (M : ℝ) (hM : ∀ n, a n ≤ M) (ha : Monotone a) : SeqConv a := by
+  exact SeqConv_of_IsCauchy a (IsCauchy_of_MonotoneBdd ha hM)
+
+theorem SeqConv_of_AntitoneBdd (a : ℕ → ℝ) (M : ℝ) (hM : ∀ n, a n ≥ M) (ha : Antitone a) : SeqConv a := by
+  exact SeqConv_of_IsCauchy a (IsCauchy_of_AntitoneBdd ha hM)
+
+example (a : ℕ → ℝ) (ha : ∀ n, a n = 1 / ((n + 2) ^ 2)) : SeriesConv a := by
+  let b : ℕ → ℝ := fun n ↦ 1/((n+1)*(n+2))
+  have hb : ∀ n, b n = 1/((n+1)*(n+2)) := by bound
+  have hab : ∀ n, a n ≤ b n := by
+    intro n
+    rewrite[ha n, hb n]
+    field_simp
+    bound
+
+  have habb : ∀ n, Series a n ≤ 1 := by
+    intro n
+    have _h1 := SeriesOrderThm hab n
+    have _h2 : Series b n ≤ 1 := by
+      unfold Series
+      rewrite[LeibnizSeriesFinite hb n]
+      norm_num
+      bound
+    bound
+  have hmono : Monotone (Series a) := by
+    apply monotone_nat_of_le_succ
+    intro n
+    unfold Series
+    rewrite[sum_range_succ]
+    have hanpos : a n > 0 := by
+      rewrite[ha n]
+      bound
+    bound
+  apply SeqConv_of_MonotoneBdd (Series a) (1) habb hmono
+
+def AbsSeriesConv (a : ℕ → ℝ) := SeriesConv (fun n ↦ |a n|)
+
+theorem DiffOfSeries (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : Series a m - Series a n = ∑ k ∈ Finset.Ico n m, a k := by sorry
+theorem Series_abs_add (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : |∑ k ∈ Finset.Ico n m, a k| ≤ ∑ k ∈ Finset.Ico n m, |a k| := by sorry
+
+theorem Conv_of_AbsSeriesConv {a : ℕ → ℝ} (ha : AbsSeriesConv a) : SeriesConv a := by
+  unfold AbsSeriesConv SeriesConv at ha
+  have h := IsCauchy_of_SeqConv ha
+  have hr : IsCauchy (Series a) := by
+    intro ε hε
+    rcases h ε hε with ⟨N, hN⟩
+    refine ⟨N, fun n hn m hm => ?_⟩
+    rewrite[DiffOfSeries a hm]
+    have habs:= hN n hn m hm
+
+    rewrite[DiffOfSeries (fun n => |a n|) hm] at habs
+
+    have hr1 : |∑ k ∈ Ico n m, a k| ≤ ∑ k ∈ Ico n m, |a k| := by apply Series_abs_add a hm
+    have hr2 : ∑ k ∈ Ico n m, |a k| ≤ |(∑ k ∈ Ico n m, |a k|)| := by bound
+    bound
+  exact SeqConv_of_IsCauchy (Series a) hr
+
+theorem AntitoneLimitBound {a} (ha : Antitone a) {L} (aLim : SeqLim a L) (n : ℕ) : L ≤ a n := by
+  by_contra hc
+  push Not at hc
+  let ε := L - a n
+  rcases aLim ε (by bound) with ⟨N, hN⟩
+  have hdiff1 := hN (n + N) (by bound)
+  rewrite[abs_lt] at hdiff1
+  have hdiff2 := ha (show n ≤ n + N by bound)
+  have hdiff3 : a n = L - ε := by bound
+  bound
+
+theorem CoherenceOfReals {a b} {L M} (ha : SeqLim a L) (hb : SeqLim b M) (hab : SeqLim (fun n => a n - b n) 0) : L = M := by
+  by_contra hc
+  let ε := |L-M|
+  have hε : ε > 0 := by
+    have hpos : |L - M| > 0 := by apply abs_pos.mpr (by bound)
+    bound
+  rcases ha (ε/4) (by bound) with ⟨Na, hNa⟩
+  rcases hb (ε/4) (by bound) with ⟨Nb, hNb⟩
+  rcases hab (ε/4) (by bound) with ⟨Nab, hNab⟩
+
+  let Max := Na + Nb + Nab
+  have vM : Max = Na + Nb + Nab := by bound
+
+  have hamax := hNa Max (by bound)
+  have hbmax := hNb Max (by bound)
+  have hab := hNab Max (by bound)
+  norm_num at hab
+
+  have htri : |L - M| ≤ |L - a Max| + |a Max - b Max| + |b Max - M| := by
+    have : |L - M| ≤ |L - a Max| + |a Max - M| := by apply abs_sub_le
+    have : |a Max - M| ≤ |a Max - b Max| + |b Max - M| := by apply abs_sub_le
+    bound
+
+  rewrite[abs_sub_comm] at hamax
+  have : |L - M| ≤ 3*ε/4 := by bound
+  bound
+
+
+theorem SeqEvenOdd {a} {L} (ha2n : SeqLim (fun n => a (2 * n)) L) (ha2np1 : SeqLim (fun n => a (2 * n + 1)) L) : SeqLim a L := by
+  intro ε hε
+  rcases ha2n ε hε with ⟨Ne, hNe⟩
+  rcases ha2np1 ε hε with ⟨No, hNo⟩
+
+  refine ⟨(2 * Ne) + (2 * No + 1), fun n hn => ?_⟩
+-- TODO 对自然数 n 分奇偶讨论
+  rcases Nat.even_or_odd n with ⟨k, hk⟩ | ⟨k, hk⟩
+  · have hkNe : k ≥ Ne := by bound
+    have hn2k : n = 2*k := by bound
+    rewrite[hn2k]
+    exact hNe k hkNe
+  · have hkNo : k ≥ No := by bound
+    rewrite[hk]
+    exact hNo k hkNo
+
+theorem AntitoneSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) : Antitone fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by sorry
+theorem BddSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k ≤ a 0 := by sorry
+theorem BddSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : 0 ≤ ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by sorry
+theorem DiffGoesToZero {a} (aLim : SeqLim a 0) : SeqLim (fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k - ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k) 0 := by sorry
+theorem MonotoneSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) : Monotone fun n => ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k := by sorry
+
+theorem AlternatingSeriesTest {a : ℕ → ℝ} (ha : Antitone a) (aLim : SeqLim a 0) : SeriesConv (fun n ↦ (-1)^n * a n) := by
+  let oddSeries : ℕ → ℝ := fun n => ∑ k ∈ Finset.range (2*n+1), (-1)^k*a k
+  let evenSeries : ℕ → ℝ := fun n => ∑ k ∈ Finset.range (2*n), (-1)^k*a k
+  have hanpos := AntitoneLimitBound ha aLim
+
+  have hOddAnti := AntitoneSeriesOdd ha hanpos
+  have hOddBdd := BddSeriesOdd ha hanpos
+  have hOddConv := SeqConv_of_AntitoneBdd oddSeries 0 hOddBdd hOddAnti
+  rcases hOddConv with ⟨Lodd, hLodd⟩
+
+  have hEvenMono := MonotoneSeriesEven ha hanpos
+  have hEvenBdd := BddSeriesEven ha hanpos
+  have hEvenConv := SeqConv_of_MonotoneBdd evenSeries (a 0) hEvenBdd hEvenMono
+  rcases hEvenConv with ⟨Leven, hLeven⟩
+
+  have hLSame := CoherenceOfReals hLodd hLeven (DiffGoesToZero aLim)
+  rewrite[hLSame] at hLodd
+
+  exact ⟨Leven, SeqEvenOdd hLeven hLodd⟩
