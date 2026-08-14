@@ -1463,8 +1463,38 @@ example (a : ℕ → ℝ) (ha : ∀ n, a n = 1 / ((n + 2) ^ 2)) : SeriesConv a :
 
 def AbsSeriesConv (a : ℕ → ℝ) := SeriesConv (fun n ↦ |a n|)
 
-theorem DiffOfSeries (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : Series a m - Series a n = ∑ k ∈ Finset.Ico n m, a k := by sorry
-theorem Series_abs_add (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : |∑ k ∈ Finset.Ico n m, a k| ≤ ∑ k ∈ Finset.Ico n m, |a k| := by sorry
+theorem DiffOfSeries (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : Series a m - Series a n = ∑ k ∈ Finset.Ico n m, a k := by
+  have hr : ∀d : ℕ, Series a (n + d) - Series a n = ∑ k ∈ Ico n (n+d), a k := by
+    intro d
+    induction d with
+    | zero =>  bound
+    | succ d hd =>
+    rewrite[← add_assoc]
+    rewrite[sum_Ico_succ (show n ≤ (n + d) by bound) a]
+    rewrite[← hd]
+    unfold Series
+    rewrite[sum_range_succ]
+    bound
+  have h := hr (m - n)
+  ring_nf at h
+  bound
+
+theorem Series_abs_add (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : |∑ k ∈ Finset.Ico n m, a k| ≤ ∑ k ∈ Finset.Ico n m, |a k| := by
+  have hr : ∀d : ℕ,  |∑ k ∈ Ico n (n+d), a k| ≤ ∑ k ∈ Ico n (n+d), |a k| := by
+    intro d
+    induction d with
+    | zero => bound
+    | succ d hd =>
+    rewrite[← add_assoc]
+    rewrite[sum_Ico_succ (show  n ≤ n+d by bound) a]
+    have _h1 : |∑ k ∈ Ico n (n+d), a k + a (n+d)| ≤ |∑ k ∈ Ico n (n+d), a k| + |a (n+d)| := by apply abs_add_le
+    have _h2 : ∑ k ∈ Ico n (n+d), a k + a (n+d)| ≤ ∑ k ∈ Ico  n (n+d), |a k| + |a (n+d)| := by bound
+    have _h3 :  ∑ k ∈ Ico  n (n+d), |a k| + |a (n+d)| = ∑ k ∈ Ico n (n+d+1), |a k| := by bound
+    bound
+
+  have h := hr (m - n)
+  ring_nf at h
+  bound
 
 theorem Conv_of_AbsSeriesConv {a : ℕ → ℝ} (ha : AbsSeriesConv a) : SeriesConv a := by
   unfold AbsSeriesConv SeriesConv at ha
@@ -1538,7 +1568,13 @@ theorem SeqEvenOdd {a} {L} (ha2n : SeqLim (fun n => a (2 * n)) L) (ha2np1 : SeqL
     rewrite[hk]
     exact hNo k hkNo
 
-theorem AntitoneSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) : Antitone fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by sorry
+theorem AntitoneSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) : Antitone fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by
+  intro  i j hij
+  have  hr : ∀d : ℕ, ∑ k ∈ range (2 * i), (-1)^k*a k ≤ ∑ k ∈ range (2*(i+d)), (-1)^k*a k := by
+    intro d
+    induction d with
+    | zero =>  bound
+    | succ d  hd =>
 theorem BddSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k ≤ a 0 := by sorry
 theorem BddSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : 0 ≤ ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by sorry
 theorem DiffGoesToZero {a} (aLim : SeqLim a 0) : SeqLim (fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k - ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k) 0 := by sorry
