@@ -1470,13 +1470,13 @@ theorem DiffOfSeries (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : Series a m - Seri
     | zero =>  bound
     | succ d hd =>
     rewrite[← add_assoc]
-    rewrite[sum_Ico_succ (show n ≤ (n + d) by bound) a]
+    rewrite[sum_Ico_succ_top (show n ≤ (n + d) by bound) a]
     rewrite[← hd]
     unfold Series
     rewrite[sum_range_succ]
     bound
   have h := hr (m - n)
-  ring_nf at h
+  rewrite[show n+(m-n)=m by omega] at h
   bound
 
 theorem Series_abs_add (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : |∑ k ∈ Finset.Ico n m, a k| ≤ ∑ k ∈ Finset.Ico n m, |a k| := by
@@ -1486,14 +1486,14 @@ theorem Series_abs_add (a : ℕ → ℝ) {n m} (hmn : n ≤ m) : |∑ k ∈ Fins
     | zero => bound
     | succ d hd =>
     rewrite[← add_assoc]
-    rewrite[sum_Ico_succ (show  n ≤ n+d by bound) a]
+    rewrite[sum_Ico_succ_top (show  n ≤ n+d by bound) a]
+    rewrite[sum_Ico_succ_top (show  n ≤ n+d by bound) (fun k => |a k|)]
     have _h1 : |∑ k ∈ Ico n (n+d), a k + a (n+d)| ≤ |∑ k ∈ Ico n (n+d), a k| + |a (n+d)| := by apply abs_add_le
-    have _h2 : ∑ k ∈ Ico n (n+d), a k + a (n+d)| ≤ ∑ k ∈ Ico  n (n+d), |a k| + |a (n+d)| := by bound
-    have _h3 :  ∑ k ∈ Ico  n (n+d), |a k| + |a (n+d)| = ∑ k ∈ Ico n (n+d+1), |a k| := by bound
+    have _h2 : |∑ k ∈ Ico n (n+d), a k + a (n+d)| ≤ ∑ k ∈ Ico  n (n+d), |a k| + |a (n+d)| := by bound
     bound
 
   have h := hr (m - n)
-  ring_nf at h
+  rewrite[show n+(m-n)=m by omega] at h
   bound
 
 theorem Conv_of_AbsSeriesConv {a : ℕ → ℝ} (ha : AbsSeriesConv a) : SeriesConv a := by
@@ -1568,17 +1568,78 @@ theorem SeqEvenOdd {a} {L} (ha2n : SeqLim (fun n => a (2 * n)) L) (ha2np1 : SeqL
     rewrite[hk]
     exact hNo k hkNo
 
-theorem AntitoneSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) : Antitone fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by
-  intro  i j hij
-  have  hr : ∀d : ℕ, ∑ k ∈ range (2 * i), (-1)^k*a k ≤ ∑ k ∈ range (2*(i+d)), (-1)^k*a k := by
-    intro d
-    induction d with
-    | zero =>  bound
-    | succ d  hd =>
-theorem BddSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k ≤ a 0 := by sorry
-theorem BddSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : 0 ≤ ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by sorry
-theorem DiffGoesToZero {a} (aLim : SeqLim a 0) : SeqLim (fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k - ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k) 0 := by sorry
-theorem MonotoneSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) : Monotone fun n => ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k := by sorry
+theorem AntitoneSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (_ : ∀ n, 0 ≤ a n) : Antitone fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by
+  apply antitone_nat_of_succ_le
+  intro n
+  rewrite[sum_range_succ]
+  nth_rewrite 1 [show 2*(n+1) = 2*n+1+1 by omega]
+  rewrite[sum_range_succ]
+-- 这里 hodd 和 heven 的证明可以这么简洁，同时又略有不同，其实只要unfold Odd和Even就能理解了
+  have hodd : Odd (2 * n + 1) := ⟨n, rfl⟩
+  have heven : Even (2 * (n+1)) := ⟨n+1, by bound⟩
+  rewrite[Odd.neg_one_pow hodd, Even.neg_one_pow heven]
+  have hmono : a (2*(n+1)) ≤ a (2*n+1) := by bound
+  bound
+
+theorem BddSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k ≤ a 0 := by
+  have hstep : ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k
+      ≤ ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by
+    rw [Finset.sum_range_succ]
+    have heven : Even (2 * n) := ⟨n, by ring⟩
+    have h2n : (0:ℝ) ≤ (-1) ^ (2 * n) * a (2 * n) := by
+      rw [Even.neg_one_pow heven]
+      bound
+    bound
+  have hodd : ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k
+      ≤ ∑ k ∈ Finset.range (2 * 0 + 1), (-1) ^ k * a k :=
+    (AntitoneSeriesOdd ha apos) (by bound)
+  simp at hodd
+  bound
+
+theorem BddSeriesOdd {a : ℕ → ℝ} (ha : Antitone a) (apos : ∀ n, 0 ≤ a n) (n : ℕ) : 0 ≤ ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k := by
+  have h2n : 0 ≤ ∑ k ∈ range (2*n), (-1)^k * a k := by
+    induction n with
+    | zero => bound
+    | succ n hn =>
+    rewrite[show 2*(n+1)=2*n+1+1 by bound, sum_range_succ, sum_range_succ]
+    have heven : Even (2*n) := ⟨n, by bound⟩
+    have hodd : Odd (2*n+1) := ⟨n, rfl⟩
+    rewrite[Even.neg_one_pow heven, Odd.neg_one_pow hodd]
+
+    have _h1 : a (2*n) ≥ a (2*n+1) := ha (show 2*n ≤ 2*n+1 by bound)
+    have _h2 : 1*a (2*n) - (-1)*a (2*n+1) ≥ 0 := by bound
+    linarith
+  rewrite[sum_range_succ]
+  have heven : Even (2*n) := ⟨n, by bound⟩
+  rewrite[Even.neg_one_pow heven]
+  bound
+
+theorem DiffGoesToZero {a} (aLim : SeqLim a 0) : SeqLim (fun n => ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k - ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k) 0 := by
+  have hd : ∀ n, ∑ k ∈ Finset.range (2 * n + 1), (-1) ^ k * a k - ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k = (-1)^(2*n)* a (2*n) := by
+    intro n
+    rewrite[sum_range_succ]
+    bound
+  intro ε hε
+  rcases aLim ε hε with ⟨N, hN⟩
+  refine ⟨N, fun n hn => ?_⟩
+  norm_num
+  rewrite[hd n]
+  norm_num
+  have _h1 : 2*n ≥ N := by bound
+  have _h2 := hN (2*n) (by bound)
+  norm_num at _h2
+  exact _h2
+
+theorem MonotoneSeriesEven {a : ℕ → ℝ} (ha : Antitone a) (_ : ∀ n, 0 ≤ a n) : Monotone fun n => ∑ k ∈ Finset.range (2 * n), (-1) ^ k * a k := by
+  apply monotone_nat_of_le_succ
+  intro n
+  rewrite[show 2*(n+1) = 2*n+1+1 by omega]
+  rewrite[sum_range_succ, sum_range_succ]
+  have heven : Even (2*n) := ⟨n, by bound⟩
+  have hodd : Odd (2*n+1) := ⟨n, rfl⟩
+  rewrite[Odd.neg_one_pow hodd, Even.neg_one_pow heven]
+  have hanti : a (2*n+1) ≤ a (2*n) := by bound
+  bound
 
 theorem AlternatingSeriesTest {a : ℕ → ℝ} (ha : Antitone a) (aLim : SeqLim a 0) : SeriesConv (fun n ↦ (-1)^n * a n) := by
   let oddSeries : ℕ → ℝ := fun n => ∑ k ∈ Finset.range (2*n+1), (-1)^k*a k
