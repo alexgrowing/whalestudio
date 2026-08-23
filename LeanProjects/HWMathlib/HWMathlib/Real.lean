@@ -1762,6 +1762,16 @@ theorem Series_image (a : ℕ → ℝ) (σ : ℕ → ℕ) (hσ : Function.Inject
   (Finset.sum_image (fun _ _ _ _ hxy => hσ hxy)).symm
 
 theorem RearrangementThm {a : ℕ → ℝ} (ha : AbsSeriesConv a) : ∃ L, ∀ (σ : ℕ → ℕ) (_ : Rearrangement σ), SeriesLim (a ∘ σ) L := by
+  rcases Conv_of_AbsSeriesConv ha with ⟨L, hL⟩
+  refine ⟨L, fun σ hσ => fun ε hε => ?_⟩
+
+  rcases StrongCauchy_of_AbsSeriesConv ha (show ε/2 > 0 by positivity) with ⟨N1, hN1⟩
+  rcases hL (ε/2) (by bound) with ⟨N2, hN2⟩
+
+  set N3 := N1 + N2 with hN3def
+  rcases EventuallyCovers_of_Rearrangement hσ N3 with ⟨N4, hN4⟩
+
+  refine ⟨N4, fun n hn => ?_⟩
 
 
 
