@@ -1771,6 +1771,43 @@ theorem RearrangementThm {a : ℕ → ℝ} (ha : AbsSeriesConv a) : ∃ L, ∀ (
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --   rcases (Conv_of_AbsSeriesConv ha) with ⟨L, hL⟩
 -- -- 居然还能这么写
 --   refine ⟨L, fun σ hσ => fun ε hε => ?_⟩
