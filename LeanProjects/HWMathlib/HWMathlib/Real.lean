@@ -1660,3 +1660,117 @@ theorem AlternatingSeriesTest {a : ℕ → ℝ} (ha : Antitone a) (aLim : SeqLim
   rewrite[hLSame] at hLodd
 
   exact ⟨Leven, SeqEvenOdd hLeven hLodd⟩
+
+theorem Monotone_of_NonNegSeries {a : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) : Monotone (Series a) := by
+  apply monotone_nat_of_le_succ
+  intro n
+  unfold Series
+  rewrite[sum_range_succ]
+  bound
+
+theorem MonotoneLimitBound {a : ℕ → ℝ} (amono : Monotone a) {L : ℝ} (ha : SeqLim a L) : ∀ n, a n ≤ L := by
+  by_contra hc
+  push Not at hc
+  rcases hc with ⟨N, hN⟩
+  rcases ha (a N - L) (by bound) with ⟨M, hM⟩
+  have hMax := hM (M + N) (by bound)
+  have hMaxGeN := amono (show N ≤ M + N by bound)
+  have hMaxGeL : a (M + N) > L := by bound
+  have hAbs : |a (M + N) - L| = a (M + N) - L := by apply abs_of_nonneg (le_of_lt (show a (M + N) - L > 0 by bound))
+  rewrite[hAbs] at hMax
+  bound
+
+theorem ComparisonTest {a b : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hab : ∀ n, a n ≤ b n) (hb : SeriesConv b) : SeriesConv a := by
+  have hs : ∀ n, Series a n ≤ Series b n := SeriesOrderThm hab
+  have hmonoa : Monotone (Series a) := by
+    apply monotone_nat_of_le_succ
+    intro n
+    unfold Series
+    rewrite[sum_range_succ]
+    norm_num
+    exact ha n
+
+  have hmonob : Monotone (Series b) := by
+    apply monotone_nat_of_le_succ
+    intro n
+    unfold Series
+    rewrite[sum_range_succ]
+    simp
+    linarith[ha n, hab n]
+
+  rcases hb with ⟨L, hL⟩
+  have hsb : ∀ n : ℕ, Series b n ≤ L := MonotoneLimitBound hmonob hL
+
+  apply SeqConv_of_MonotoneBdd (Series a) L ?_ hmonoa
+  intro n
+  linarith[hsb n, hs n]
+
+theorem StrongCauchy_of_AbsSeriesConv {a : ℕ → ℝ} (ha : AbsSeriesConv a) {ε : ℝ} (hε : ε > 0) : ∃ N, ∀ (S : Finset ℕ), (∀ k ∈ S, k ≥ N) → ∑ k ∈ S, |a k| < ε := by
+  rcases ha with ⟨L, hL⟩
+  rcases hL (ε/2) (by bound) with ⟨N, hN⟩
+  refine ⟨N, fun S hS => ?_⟩
+  rcases S.eq_empty_or_nonempty with hSe | hSne
+  · bound
+  · rcases hSne with ⟨k0, hk0⟩
+    set M := S.sup id + 1 with hMdef
+    have hM : ∀ k ∈ S, k < M := by
+      intro k hk
+      have := Finset.le_sup (f := id) hk
+      rewrite[id_eq] at this
+      bound
+    have hNM : N ≤ M := le_trans (hS k0 hk0) (le_of_lt (hM k0 hk0))
+    have hSsub : S ⊆ Finset.Ico N M := by
+      intro k hk
+      apply Finset.mem_Ico.mpr ⟨(hS k hk), (hM k hk)⟩
+    have hIco : ∑ k ∈ S, |a k| ≤ ∑ k ∈ Finset.Ico N M, |a k| := by
+      apply Finset.sum_le_sum_of_subset_of_nonneg hSsub
+      intro i _ _
+      apply abs_nonneg
+    have hIcoSeries : Series (fun n => |a n|) M - Series (fun n => |a n|) N = ∑ k ∈ Finset.Ico N M, |a k| := DiffOfSeries (fun n => |a n|) hNM
+    rewrite[← hIcoSeries] at hIco
+    have htri : Series (fun n => |a n|) M - Series (fun n => |a n|) N
+    ≤ |Series (fun n => |a n|) M - L| + |Series (fun n => |a n|) N - L| := by
+      calc
+        Series (fun n => |a n|) M - Series (fun n => |a n|) N ≤ |Series (fun n => |a n|) M - Series (fun n => |a n|) N| := le_abs_self _
+        _ ≤ |Series (fun n => |a n|) M - L| + |L - Series (fun n => |a n|) N| := abs_sub_le _ _ _
+-- 没想到 rewrite 和 rw 还有些区别，rw = rewrite + rfl
+        _ = |Series (fun n => |a n|) M - L| + |Series (fun n => |a n|) N - L| := by rw[abs_sub_comm L];
+    have h1 : |Series (fun n => |a n|) M - L| < ε/2 := hN M hNM
+    have h2 : |Series (fun n => |a n|) N - L| < ε/2 := hN N le_rfl
+
+    bound
+
+-- def Injective (f : X → Y) := ∀ i j : X, f i = f j → i = j
+-- def Surjective (f : X → Y) := ∀ y : Y, ∃ x : X, f x = y
+def Rearrangement (f : X → Y) := Function.Injective f ∧ Function.Surjective f
+
+theorem EventuallyCovers_of_Rearrangement {σ : ℕ → ℕ} (hσ : Rearrangement σ) (M : ℕ) : ∃ N, ∀ n ≥ N, (range M) ⊆ image σ (range n) := by
+  choose σᵥ hσᵥ using hσ.2
+  set N := (image σᵥ (range M)).sup id + 1 with hNdef
+  refine ⟨N, fun n hn m hm => ?_⟩
+  simp only [mem_range, mem_image] at hm ⊢
+  refine ⟨σᵥ m, ⟨?_, (by bound)⟩⟩
+  have hle : σᵥ m ≤ (image σᵥ (range M)).sup id := by
+    apply Finset.le_sup (f := id)
+    apply Finset.mem_image_of_mem
+    apply Finset.mem_range.mpr hm
+-- -- 可以直接合并成下面一句
+--     -- Finset.le_sup (f := id) (Finset.mem_image_of_mem f (Finset.mem_range.mpr hm))
+  bound
+
+theorem abs_sum_le_sum_abs {ι} {G} [AddCommGroup G] [LinearOrder G] [IsOrderedAddMonoid G] (f : ι → G) (s : Finset ι) : |∑ i ∈ s, f i| ≤ ∑ i ∈ s, |f i| := by sorry
+theorem Series_image (a : ℕ → ℝ) (σ : ℕ → ℕ) (hσ : Function.Injective σ) (n : ℕ) : Series (a ∘ σ) n = ∑ k ∈ Finset.image σ (Finset.range n), a k := by sorry
+theorem sum_sdiff {ι} {M} {s₁ s₂} [AddCommMonoid M] {f : ι → M} [DecidableEq ι] (h : s₁ ⊆ s₂) : ∑ x ∈ s₂ \ s₁, f x + ∑ x ∈ s₁, f x = ∑ x ∈ s₂, f x := by sorry
+
+theorem RearrangementThm {a : ℕ → ℝ} (ha : AbsSeriesConv a) : ∃ L, ∀ (σ : ℕ → ℕ) (_ : Rearrangement σ), SeriesLim (a ∘ σ) L := by
+  rcases (Conv_of_AbsSeriesConv ha) with ⟨L, hL⟩
+  refine ⟨L, fun σ hσ => ?_⟩
+  intro ε hε
+  rcases hL (ε/2) (by bound) with ⟨N, hN⟩
+  rcases EventuallyCovers_of_Rearrangement hσ N with ⟨M1, hM1⟩
+  rcases StrongCauchy_of_AbsSeriesConv ha (show ε/2 > 0 by positivity) with ⟨M2, hM2⟩
+
+  set M := M1 + M2 with hMdef
+  refine ⟨M, fun n hnM => ?_⟩
+  calc
+    |Series (a ∘ σ) n - L| = |Series (a ∘ σ) n - Series a N + Series a N - L| := by bound
