@@ -1807,6 +1807,8 @@ def FunLimAt (f : ℝ → ℝ) (L c : ℝ) := ∀ ε > 0, ∃ δ > 0, ∀ x ≠ 
 example : ∃ L, FunLimAt (fun x ↦ (x^2 - 1)/(x - 1)) L 1 := by
   refine ⟨2, fun ε hε => ?_⟩
   set δ := 1 + ε with hδdef
-  have hδ : δ > 0 := by bound
   use δ
+  split_ands
+  · by bound
+  · intro x hx1 hx2
   -- refine ⟨hδ, fun x hx1 hx2 => ?_⟩
