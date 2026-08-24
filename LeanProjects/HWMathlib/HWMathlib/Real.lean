@@ -1800,4 +1800,8 @@ theorem RearrangementThm {a : ℕ → ℝ} (ha : AbsSeriesConv a) : ∃ L, ∀ (
     _ = ε := by bound
 
 
-example {a : ℕ → ℝ} (ha1 : SeriesConv a) (ha2 : ¬ AbsSeriesConv a) : ∀ L, ∃ (σ : ℕ → ℕ) (hσ : Rearrangement σ), SeriesLim (a ∘ σ) L := by
+example {a : ℕ → ℝ} (ha1 : SeriesConv a) (ha2 : ¬ AbsSeriesConv a) : ∀ L, ∃ (σ : ℕ → ℕ) (hσ : Rearrangement σ), SeriesLim (a ∘ σ) L := by sorry
+
+def FunLimAt (c L : ℝ) (f : ℝ → ℝ) := ∀ ε > 0, ∃ δ > 0, ∀ x ≠ c, |x - c| < δ → |f x - L| < ε
+
+example : ∃ L, FunLimAt (fun x ↦ (x^2 - 1)/(x - 1)) L 1 := by sorry
