@@ -1763,6 +1763,7 @@ theorem Series_image (a : ℕ → ℝ) (σ : ℕ → ℕ) (hσ : Function.Inject
 
 theorem RearrangementThm {a : ℕ → ℝ} (ha : AbsSeriesConv a) : ∃ L, ∀ (σ : ℕ → ℕ) (_ : Rearrangement σ), SeriesLim (a ∘ σ) L := by
   rcases Conv_of_AbsSeriesConv ha with ⟨L, hL⟩
+-- 居然还能这么写
   refine ⟨L, fun σ hσ => fun ε hε => ?_⟩
 
   rcases StrongCauchy_of_AbsSeriesConv ha (show ε/2 > 0 by positivity) with ⟨N1, hN1⟩
@@ -1772,91 +1773,31 @@ theorem RearrangementThm {a : ℕ → ℝ} (ha : AbsSeriesConv a) : ∃ L, ∀ (
   rcases EventuallyCovers_of_Rearrangement hσ N3 with ⟨N4, hN4⟩
 
   refine ⟨N4, fun n hn => ?_⟩
+  set T := image σ (range n) \ range N3  with hTdef
+  have hSplit : Series (a ∘ σ) n = (∑ k ∈ T, a k) + Series a N3 := by
+    rewrite[Series_image a σ hσ.1]
+    have hs : ∑ k ∈ image σ (range n), a k = ∑ k ∈ T, a k  + ∑ k ∈ range N3, a k :=  by
+-- 加了symm就是等号左右两边换个位置
+      apply (sum_sdiff (hN4 n hn)).symm
+    rewrite[hs]
+    bound
+  have hN3 : |Series a N3 - L| < ε/2 := hN2 N3 (by bound)
+  have hAbs : |∑ k ∈ T, a k| < ε/2 :=  by
+    have _h1 : |∑ k ∈ T, a k| ≤ ∑ k ∈ T, |a k| := abs_sum_le_sum_abs a T
+    have hT : ∑ k ∈ T, |a k|  < ε/2  := by
+      apply hN1 T
+      intro k hk
+      rewrite[hTdef] at hk
+      rewrite[mem_sdiff] at hk
+      rewrite[mem_range] at hk
+      bound
+    bound
+  calc
+    |Series (a ∘ σ)  n -  L| = |((∑ k ∈ T, a k) + Series a N3  - L)| := by rw[hSplit]
+    _ = |((∑ k ∈ T, a k) + (Series a N3  - L))| := by ring_nf
+    _ ≤ |∑ k ∈ T, a k| + |Series a N3 - L| := by apply abs_add_le
+    _ < ε/2 + ε/2 := by bound
+    _ = ε := by bound
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---   rcases (Conv_of_AbsSeriesConv ha) with ⟨L, hL⟩
--- -- 居然还能这么写
---   refine ⟨L, fun σ hσ => fun ε hε => ?_⟩
-
---   rcases hL (ε/2) (by bound) with ⟨M1, hM1⟩
---   rcases StrongCauchy_of_AbsSeriesConv ha (show ε/2 > 0 by positivity) with ⟨M2, hM2⟩
---   set M3 := M1+M2 with hM3def
---   rcases EventuallyCovers_of_Rearrangement hσ M3 with ⟨M4, hM4⟩
-
---   refine ⟨M4, fun n hnM4 => ?_⟩
-
---   have hcover : Finset.range M3 ⊆ Finset.image σ (Finset.range n) := hM4 n hnM4
---   -- 把 ∑(a∘σ) 重新索引成 ∑ over image
---   have hsum_eq : Series (a ∘ σ) n = ∑ k ∈ Finset.image σ (Finset.range n), a k := Series_image a σ hσ.1 n
---   -- 把 image 拆成 range N3 和"多出来的部分" T
---   set T := Finset.image σ (Finset.range n) \ Finset.range M3 with hTdef
---   -- 加了symm就是等号左右两边换个位置
---   have hsplit2 : ∑ k ∈ Finset.image σ (Finset.range n), a k = ∑ k ∈ T, a k + ∑ k ∈ Finset.range M3, a k := (sum_sdiff hcover).symm
---   have hfinal : Series (a ∘ σ) n = ∑ j ∈ T, a j + Series a M3 := by
---     -- show ∑ j ∈ Finset.range n, (a ∘ σ) j = ∑ j ∈ T, a j + ∑ j ∈ Finset.range N3, a j
---     rw [hsum_eq, hsplit2]
---     rfl
---     -- T 里所有下标都 ≥ N3 ≥ N2,可以用强 Cauchy 性质控制
---   have hTge2 : ∀ j ∈ T, j ≥ M2 := by
---     intro j hj
---     rewrite[hTdef] at hj
---     rewrite[Finset.mem_sdiff] at hj
---     rewrite[Finset.mem_range] at hj
---     have : j ≥ M3 := by omega
---     bound
---   have hTbound : |∑ j ∈ T, a j| ≤ ∑ j ∈ T, |a j| := Finset.abs_sum_le_sum_abs _ _
---   have hTsmall : ∑ j ∈ T, |a j| < ε / 2 := hM2 T hTge2
---   have hLbound : |Series a M3 - L| < ε / 2 := hM1 M3 (by bound)
---   -- 合并三角不等式
---   rw [hfinal]
---   have heq2 : ∑ j ∈ T, a j + Series a M3 - L = ∑ j ∈ T, a j + (Series a M3 - L) := by ring
---   rw [heq2]
---   calc |∑ j ∈ T, a j + (Series a M3 - L)|
---       ≤ |∑ j ∈ T, a j| + |Series a M3 - L| := abs_add_le _ _
---     _ ≤ (∑ j ∈ T, |a j|) + |Series a M3 - L| := by linarith [hTbound]
---     _ < ε / 2 + ε / 2 := by linarith [hTsmall, hLbound]
---     _ = ε := by ring
+example {a : ℕ → ℝ} (ha1 : SeriesConv a) (ha2 : ¬ AbsSeriesConv a) : ∀ L, ∃ (σ : ℕ → ℕ) (hσ : Rearrangement σ), SeriesLim (a ∘ σ) L := by
