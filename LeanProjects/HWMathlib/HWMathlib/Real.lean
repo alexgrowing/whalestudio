@@ -1808,4 +1808,5 @@ example : ∃ L, FunLimAt (fun x ↦ (x^2 - 1)/(x - 1)) L 1 := by
   refine ⟨2, fun ε hε => ?_⟩
   set δ := 1 + ε with hδdef
   have hδ : δ > 0 := by bound
-  refine ⟨hδ, fun x hx1 hx2 => ?_⟩
+  use δ
+  -- refine ⟨hδ, fun x hx1 hx2 => ?_⟩
