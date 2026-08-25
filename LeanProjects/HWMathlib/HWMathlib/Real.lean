@@ -1805,10 +1805,210 @@ example {a : ℕ → ℝ} (ha1 : SeriesConv a) (ha2 : ¬ AbsSeriesConv a) : ∀ 
 def FunLimAt (f : ℝ → ℝ) (L c : ℝ) := ∀ ε > 0, ∃ δ > 0, ∀ x ≠ c, |x - c| < δ → |f x - L| < ε
 
 example : ∃ L, FunLimAt (fun x ↦ (x^2 - 1)/(x - 1)) L 1 := by
-  refine ⟨2, fun ε hε => ?_⟩
-  set δ := 1 + ε with hδdef
-  use δ
-  split_ands
-  · by bound
-  · intro x hx1 hx2
-  -- refine ⟨hδ, fun x hx1 hx2 => ?_⟩
+  use 2
+  intro ε hε
+-- 像 ∃δ > 0 这个结论，refine 的时候，既要给出 δ 也要给出 δ > 0
+  refine ⟨ε, hε, fun x hx hxδ => ?_⟩
+  have hsimp : (x^2 - 1) / (x - 1) = x + 1 := by
+    field_simp
+    -- have hx1 : x - 1 ≠ 0 := sub_ne_zero.mpr hx
+    -- rw [div_eq_iff hx1]
+    ring_nf
+
+  simp only
+  rw [hsimp]
+  have heq : x + 1 - 2 = x - 1 := by ring
+  rw [heq]
+  exact hxδ
+
+def FunContAt (f : ℝ → ℝ) (c : ℝ) := ∀ ε > 0, ∃ δ > 0, ∀ x, |x - c| < δ → |f x - f c| < ε
+
+example : FunContAt (fun x ↦ x^2 - 1) 2 := by
+  intro ε hε
+  set δ := min 1 (ε/5) with hδdef
+  have hδ : δ > 0 := by bound
+  refine ⟨δ, hδ, fun x hx => ?_⟩
+  simp only
+  norm_num
+  have heq : |x^2 - 1 - 3| = |x + 2| * |x -2| := by
+    calc
+      |x^2 - 1 - 3| = |(x+2) * (x-2)| := by ring_nf
+      _ = |x + 2| * |x - 2| := by apply abs_mul
+  rewrite[heq]
+  have hδLt1 : δ ≤ 1 := by bound
+  have hx1 : |x - 2| < 1 := by bound
+  have hx2 : |x + 2| < 5 := by
+    calc
+      |x + 2| = |x - 2 + 4| := by ring_nf
+      _ ≤ |x - 2| + |4| := by apply abs_add_le
+      _ < 1 + |4| := by bound
+      _ = 1 + 4 := by bound
+      _ = 5 := by ring_nf
+  have hδLtε : δ ≤ ε/5 := by bound
+  have hx3 : |x - 2| < ε/5 := by bound
+  calc
+    |x + 2| * |x - 2| < 5 * (ε/5):= by
+      apply mul_lt_mul' (le_of_lt hx2) hx3 (abs_nonneg _) (by bound)
+    _ = ε := by ring_nf
+
+theorem FunContAtAdd {f g : ℝ → ℝ} {c : ℝ} (hf : FunContAt f c) (hg : FunContAt g c) : FunContAt (fun x ↦ f x + g x) c := by
+  intro ε hε
+  rcases hf (ε/2) (by positivity) with ⟨δ1, ⟨hδ11, hδ12⟩⟩
+  rcases hg (ε/2) (by positivity) with ⟨δ2, ⟨hδ21, hδ22⟩⟩
+  set δ := min δ1 δ2 with hδdef
+  have hδ : δ > 0 := by bound
+  refine ⟨δ, hδ, fun x hx => ?_⟩
+  have hfxc : |f x - f c| < ε/2 := by
+    have : δ ≤ δ1 := by bound
+    have : |x - c| < δ1 := by bound
+    bound
+  have hgxc : |g x - g c| < ε/2 := by
+    have : δ ≤ δ2 := by bound
+    have : |x - c| < δ2 := by bound
+    bound
+  simp only
+  calc
+    |f x + g x - (f c + g c)| = |f x - f c + (g x - g c)| := by ring_nf
+    _ ≤ |f x - f c| + |g x - g c| := by apply abs_add_le
+    _ < (ε/2) + (ε/2) := by bound
+    _ = ε := by bound
+
+theorem SeqLim_of_FunLimAt {f : ℝ → ℝ} {L c : ℝ} (hf : FunLimAt f L c) : ∀ x : ℕ → ℝ, (∀ n, x n ≠ c) → SeqLim x c → SeqLim (fun n ↦ f (x n)) L := by
+  intro x hxn hxc ε hε
+  rcases hf ε hε with ⟨δ, ⟨hδ, hfδ⟩⟩
+  rcases hxc δ hδ with ⟨N, hN⟩
+  refine ⟨N, fun n hn => ?_⟩
+  -- simp only
+  exact hfδ (x n) (hxn n) (hN n hn)
+
+example (f : ℝ → ℝ) (c : ℝ) (hf : FunContAt f c) : FunLimAt f (f c) c := by
+  intro ε hε
+  rcases hf ε hε with ⟨δ, ⟨hδ, hfδ⟩⟩
+  refine ⟨δ, hδ, fun x hx1 hx2 => ?_⟩
+  exact hfδ x hx2
+
+example (f : ℝ → ℝ) (c : ℝ) (hf : FunLimAt f (f c) c) : FunContAt f c := by
+  intro ε hε
+  rcases hf ε hε with ⟨δ, ⟨hδ, hfδ⟩⟩
+  refine ⟨δ, hδ, fun x hx => ?_⟩
+-- 有点笨了，既然 x 可以取到 c ，那么分类讨论就可以了，居然还在那里找 x ≠ c 的条件
+  by_cases hxc : x = c
+  · rewrite[hxc]
+    -- simp[hε]
+    norm_num[hε]
+  · exact hfδ x hxc hx
+
+theorem ConstTimesLimAt (f : ℝ → ℝ) (c L k : ℝ) (hf : FunLimAt f L c) : FunLimAt (fun x ↦ k * f x) (k * L) c := by
+  intro ε hε
+  by_cases hk : k = 0
+  · rewrite[hk]
+    simp only
+    norm_num
+    use 1
+    bound
+  · have hεk : ε/|k| > 0 := by positivity
+    rcases hf (ε/|k|) hεk with ⟨δ, ⟨hδ, hfδ⟩⟩
+    refine ⟨δ, hδ, fun x hx1 hx2 => ?_⟩
+    simp only
+    have heq : |k * f x - k * L| = |k| * |f x - L| := by
+      calc
+        |k * f x - k * L| = |k * (f x - L)| := by ring_nf
+        _ = |k| * |f x - L| := by apply abs_mul
+    rewrite[heq]
+    have hfxL : |f x - L| < ε/|k| := hfδ x hx1 hx2
+    field_simp at hfxL
+    bound
+
+theorem Bdd_of_LimAt (f : ℝ → ℝ) (c L : ℝ) (hf : FunLimAt f L c) : ∃ M > 0, ∃ δ > 0, ∀ x ≠ c, |x - c| < δ → |f x| < M := by
+  rcases hf 1 (by bound) with ⟨δ, ⟨hδ, hfδ⟩⟩
+  refine ⟨|L| + 2, (by positivity), δ, hδ, fun x hx1 hx2 => ?_⟩
+  have fxL : |f x - L| < 1 := hfδ x hx1 hx2
+  calc
+    |f x| = |f x - L + L| := by ring_nf
+    _ ≤ |f x - L| + |L| := by apply abs_add_le
+    _ < 1 + |L| := by bound
+    _ < |L| + 2 := by bound
+
+theorem FunLim_of_SeqLim {f : ℝ → ℝ} {L c : ℝ} (h : ∀ x : ℕ → ℝ, (∀ n, x n ≠ c) → SeqLim x c → SeqLim (fun n ↦ f (x n)) L) : FunLimAt f L c := by
+  by_contra hcon
+  unfold FunLimAt at hcon
+  push Not at hcon
+  rcases hcon with ⟨ε, ⟨hε, hδ⟩⟩
+-- 原来是通过这种方式构建数列的呀
+  have hchoice : ∀ n : ℕ, ∃ x, x ≠ c ∧ |x - c| < 1 / (n + 1) ∧ ε ≤ |f x - L| := fun n => hδ (1/(n+1)) (by positivity)
+  choose xs hxs1 hxs2 hxs3 using hchoice
+  have hxsc : SeqLim xs c := by
+    intro ε' hε'
+    -- obtain ⟨N, hN⟩ := exists_nat_gt (1 / ε')
+    rcases ArchProp hε' with ⟨N, hN⟩
+    refine ⟨N, fun n hn => ?_⟩
+    have _h1 : |xs n - c| < 1/(n+1) := hxs2 n
+    have _h2 : (1:ℝ)/(n+1) ≤ 1/(N + 1) := by
+      have : 0 < 1/ε' := by field_simp; bound
+      apply one_div_le_one_div_of_le (by linarith)
+      have : N + 1 ≤ n + 1 := by bound
+      exact_mod_cast this
+    have _h3 : (1:ℝ)/(N+1) < ε' := by
+      field_simp
+      field_simp at hN
+      linarith
+    linarith
+
+  rcases h xs hxs1 hxsc ε hε with ⟨N, hN⟩
+  have h1 := hN N (by bound)
+  have h2 := hxs3 N
+  bound
+
+def FunDerivAt (f : ℝ → ℝ) (L c : ℝ) := FunLimAt (fun h ↦ (f (c + h) - f c) / h) L 0
+
+example : FunDerivAt (fun x ↦ x^2 - 1) 4 2 := by
+  intro ε hε
+  refine ⟨ε, hε, fun x hx1 hx2 => ?_⟩
+  simp only
+  have heq : (x^2 + 4 * x)/x = x+4 := by field_simp
+  ring_nf at hx2
+  calc
+  |((2 + x) ^ 2 - 1 - (2 ^ 2 - 1)) / x - 4| = |(x^2 + 4*x)/x - 4| := by ring_nf
+  _ = |(x + 4) - 4| := by rw[heq]
+  _ = |x| := by bound
+  _ < ε := by bound
+
+def FunDeriv (f : ℝ → ℝ) (g : ℝ → ℝ) := ∀ x, FunDerivAt f (g x) x
+
+example (f g : ℝ → ℝ) (hf : ∀ x, f x = x ^ 2 - 1) (hg : ∀ x, g x = 2 * x) : FunDeriv f g := by
+  intro x ε hε
+  refine ⟨ε, hε, fun y hy1 hy2 => ?_⟩
+  ring_nf at hy2
+  simp only
+  rewrite[hf x, hf (x + y), hg x]
+  have heq : (y^2+2*x*y)/y = y + 2*x := by field_simp
+  calc
+  |((x + y) ^ 2 - 1 - (x ^ 2 - 1)) / y - 2 * x| = |(y^2 + 2 * x * y)/y - 2 * x| := by ring_nf
+  _ = |y+2*x - 2 * x| := by rw[heq]
+  _ = |y| := by bound
+  _ < ε := by bound
+
+def FunCont (f : ℝ → ℝ) := ∀ x, FunContAt f x
+
+example : FunCont (fun x ↦ x^2 - 1) := by
+  intro c ε hε
+-- 因为 c 有可能是 0 ，所以需要 +1
+  set δ := min 1 (ε/(2*|c| + 1)) with hδdef
+  have hδ : δ > 0 := by positivity
+  refine ⟨δ, hδ, fun x hx => ?_⟩
+  simp only
+  ring_nf
+  have hxpc : |x + c| < |2*c| + 1 := by
+    have : δ ≤ 1 := by bound
+    calc
+    |x + c| = |x - c + 2 * c| := by ring_nf
+    _ ≤ |x - c| + |2 * c| := by apply abs_add_le
+    _ < δ + |2*c| := by bound
+    _ ≤ 1 + |2*c| := by bound
+    _ = |2*c| + 1 := by bound
+  have hδLe : δ ≤ (ε/(2*|c|+1)) := by bound
+  calc
+  |x ^ 2 - c^2| = |(x +c)*(x -c)| := by ring_nf
+  _ = |x + c| * |x - c| := by apply abs_mul
+  _ < (|2*c|+1) * δ := by
+    apply mul_lt_mul hxpc (le_of_lt hx) ()
