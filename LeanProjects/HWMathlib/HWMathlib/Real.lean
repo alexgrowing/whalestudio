@@ -2049,3 +2049,9 @@ theorem Cont_of_UnifConv (f : ℕ → ℝ → ℝ) (hf : ∀ n, FunCont (f n)) (
   _ ≤ |f N x - F x| + |f N x - f N c| + |f N c - F c| := by linarith
   _ = ε/3 + ε/3 + ε/3 := by linarith
   _ = ε := by bound
+
+def RiemannSum (f : ℝ → ℝ) (a b : ℝ) (N : ℕ) := (b - a) / N * ∑ i ∈ range N, f (a + (i + 1) * (b - a) / N)
+def HasIntegral (f : ℝ → ℝ) (a b : ℝ) (I : ℝ) := SeqLim (fun N ↦ RiemannSum f a b N) I
+def IntegrableOn (f : ℝ → ℝ) (a b : ℝ) := ∃ I, HasIntegral f a b I
+
+example {a b : ℝ} (hab : a < b) : IntegrableOn (fun x ↦ x) a b := by
