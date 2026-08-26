@@ -1998,17 +1998,54 @@ example : FunCont (fun x ↦ x^2 - 1) := by
   refine ⟨δ, hδ, fun x hx => ?_⟩
   simp only
   ring_nf
-  have hxpc : |x + c| < |2*c| + 1 := by
-    have : δ ≤ 1 := by bound
+  by_cases hxc : x = c
+  · rewrite[hxc]
+    norm_num
+    bound
+  · have hxpc : |x + c| < 2*|c| + 1 := by
+      have : δ ≤ 1 := by bound
+      calc
+      |x + c| = |x - c + 2 * c| := by ring_nf
+      _ ≤ |x - c| + |2 * c| := by apply abs_add_le
+      _ < δ + |2*c| := by bound
+      _ ≤ 1 + |2*c| := by bound
+      _ = |2*c| + 1 := by bound
+      _ = 2*|c| + 1 := by bound
+    have hδLe1 : δ ≤ (ε/(2*|c|+1)) := by bound
+    have hδLe2 : |x - c| < (ε/(2*|c|+1)) := by bound
+    have hxc0 : |x - c| > 0 := by
+      have : x - c ≠ 0 := by bound
+      apply abs_pos.mpr this
     calc
-    |x + c| = |x - c + 2 * c| := by ring_nf
-    _ ≤ |x - c| + |2 * c| := by apply abs_add_le
-    _ < δ + |2*c| := by bound
-    _ ≤ 1 + |2*c| := by bound
-    _ = |2*c| + 1 := by bound
-  have hδLe : δ ≤ (ε/(2*|c|+1)) := by bound
+    |x ^ 2 - c^2| = |(x +c)*(x -c)| := by ring_nf
+    _ = |x + c| * |x - c| := by apply abs_mul
+    _ < (2*|c| + 1) * (ε/(2*|c|+1)) := by
+      apply mul_lt_mul hxpc (le_of_lt hδLe2) hxc0 (by bound)
+    _ = ε := by field_simp
+
+theorem Cont_Comp (f g : ℝ → ℝ) (hf : FunCont f) (hg : FunCont g) : FunCont (f ∘ g) := by
+  intro c ε hε
+  rcases hf (g c) ε hε with ⟨δf, hδf1, hδf2⟩
+  rcases hg c δf hδf1 with ⟨δg, hδg1, hδg2⟩
+  refine ⟨δg, hδg1, fun x hx => ?_⟩
+  specialize hδg2 x hx
+  specialize hδf2 (g x) hδg2
+  bound
+
+def UnifConv (f : ℕ → ℝ → ℝ) (F : ℝ → ℝ) := ∀ ε > 0, ∃ N, ∀ n ≥ N, ∀ x, |f n x - F x| < ε
+
+theorem Cont_of_UnifConv (f : ℕ → ℝ → ℝ) (hf : ∀ n, FunCont (f n)) (F : ℝ → ℝ) (hfF : UnifConv f F) : FunCont F := by
+  intro c ε hε
+  rcases hfF (ε/3) (by positivity) with ⟨N, hN⟩
+  rcases (hf N c) (ε/3) (by positivity) with ⟨δ, hδ1, hδf⟩
+  refine ⟨δ, hδ1, fun x hx => ?_⟩
+  have hfNx := hN N (by bound) x
+  have hfNc := hN N (by bound) c
+  specialize hδf x hx
+  have htri : |f N  x -  F c| ≤ |f N x - f N c| + |f N c - F c| := abs_sub_le _ _ _
   calc
-  |x ^ 2 - c^2| = |(x +c)*(x -c)| := by ring_nf
-  _ = |x + c| * |x - c| := by apply abs_mul
-  _ < (|2*c|+1) * δ := by
-    apply mul_lt_mul hxpc (le_of_lt hx) ()
+  |F x - F c| ≤ |F x - f N x| + |f N x - F c| := abs_sub_le _ _ _
+  _ = |f N x - F x| + |f N x - F c| := by rw[abs_sub_comm (F x)]
+  _ ≤ |f N x - F x| + |f N x - f N c| + |f N c - F c| := by linarith
+  _ = ε/3 + ε/3 + ε/3 := by linarith
+  _ = ε := by bound
