@@ -1976,16 +1976,16 @@ example : FunDerivAt (fun x ↦ x^2 - 1) 4 2 := by
 def FunDeriv (f : ℝ → ℝ) (g : ℝ → ℝ) := ∀ x, FunDerivAt f (g x) x
 
 example (f g : ℝ → ℝ) (hf : ∀ x, f x = x ^ 2 - 1) (hg : ∀ x, g x = 2 * x) : FunDeriv f g := by
-  intro x ε hε
-  refine ⟨ε, hε, fun y hy1 hy2 => ?_⟩
-  ring_nf at hy2
+  intro c ε hε
+  refine ⟨ε, hε, fun x hx1 hx2 => ?_⟩
+  ring_nf at hx2
   simp only
-  rewrite[hf x, hf (x + y), hg x]
-  have heq : (y^2+2*x*y)/y = y + 2*x := by field_simp
+  rewrite[hf c, hf (c + x), hg c]
+  have heq : (x^2+2*c*x)/x = x + 2*c := by field_simp
   calc
-  |((x + y) ^ 2 - 1 - (x ^ 2 - 1)) / y - 2 * x| = |(y^2 + 2 * x * y)/y - 2 * x| := by ring_nf
-  _ = |y+2*x - 2 * x| := by rw[heq]
-  _ = |y| := by bound
+  |((c + x) ^ 2 - 1 - (c ^ 2 - 1)) / x - 2 * c| = |(x^2 + 2 * c * x)/x - 2 * c| := by ring_nf
+  _ = |x+2*c - 2 * c| := by rw[heq]
+  _ = |x| := by bound
   _ < ε := by bound
 
 def FunCont (f : ℝ → ℝ) := ∀ x, FunContAt f x
@@ -2047,11 +2047,304 @@ theorem Cont_of_UnifConv (f : ℕ → ℝ → ℝ) (hf : ∀ n, FunCont (f n)) (
   |F x - F c| ≤ |F x - f N x| + |f N x - F c| := abs_sub_le _ _ _
   _ = |f N x - F x| + |f N x - F c| := by rw[abs_sub_comm (F x)]
   _ ≤ |f N x - F x| + |f N x - f N c| + |f N c - F c| := by linarith
-  _ = ε/3 + ε/3 + ε/3 := by linarith
+  _ < ε/3 + ε/3 + ε/3 := by linarith
   _ = ε := by bound
 
-def RiemannSum (f : ℝ → ℝ) (a b : ℝ) (N : ℕ) := (b - a) / N * ∑ i ∈ range N, f (a + (i + 1) * (b - a) / N)
+noncomputable def RiemannSum (f : ℝ → ℝ) (a b : ℝ) (N : ℕ) := (b - a) / N * ∑ i ∈ range N, f (a + (i + 1) * (b - a) / N)
 def HasIntegral (f : ℝ → ℝ) (a b : ℝ) (I : ℝ) := SeqLim (fun N ↦ RiemannSum f a b N) I
 def IntegrableOn (f : ℝ → ℝ) (a b : ℝ) := ∃ I, HasIntegral f a b I
 
+-- theorem card_range (n : ℕ) : (Finset.range n).card = n := by sorry
+-- theorem sum_add_distrib {ι} {M} {s : Finset ι} [AddCommMonoid M] {f g : ι → M} : ∑ x ∈ s, (f x + g x) = ∑ x ∈ s, f x + ∑ x ∈ s, g x := by sorry
+-- theorem sum_const {ι} {M} {s : Finset ι} [AddCommMonoid M] (b : ℝ) : ∑ _x ∈ s, b = s.card * b := by sorry
+-- theorem sum_div {ι} {K} [DivisionSemiring K] (s : Finset ι) (f : ι → K) (a : K) : (∑ i ∈ s, f i) / a = ∑ i ∈ s, f i / a := by sorry
+-- theorem sum_mul {ι} {R} [NonUnitalNonAssocSemiring R] (s : Finset ι) (f : ι → R) (a : R) : (∑ i ∈ s, f i) * a = ∑ i ∈ s, f i * a := by sorry
+theorem sum_range_add_one (n : ℕ) : ∑ i ∈ Finset.range n, ((i:ℝ) + 1) = n * (n + 1) / 2 := by
+  induction n with
+  | zero => bound
+  | succ n hn =>
+    rewrite[sum_range_succ, hn]
+    field_simp
+    norm_num
+    bound
+
+
+
 example {a b : ℝ} (hab : a < b) : IntegrableOn (fun x ↦ x) a b := by
+  set L := (b^2-a^2)/2 with hLdef
+  refine ⟨L, fun ε hε => ?_⟩
+  rcases exists_nat_gt ((a-b)^2/(2*ε)) with ⟨K, hK⟩
+  refine ⟨max 1 K, fun n hn => ?_⟩
+  unfold RiemannSum
+  simp only
+
+  have hngt0 : n > 0 := by omega
+  have hsplit : ∑ i ∈ Finset.range n, (a + ((i:ℝ) + 1) * (b - a) / n)
+        = (n : ℝ) * a + (b - a) * ((n + 1) / 2) := by
+    rw [Finset.sum_add_distrib, Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+    -- congr
+    rw[← Finset.sum_div]
+    rw[← Finset.sum_mul]
+    rw[sum_range_add_one]
+    field_simp
+  rewrite[hsplit]
+  have heq : (b - a) / (n:ℝ) * ((n:ℝ) * a + (b - a) * ((n + 1) / 2)) - (b^2-a^2)/2 = (a-b)^2/(2*n) := by field_simp;ring_nf
+  rewrite[heq]
+  have hpos : (a-b)^2/(2*(n:ℝ)) > 0 := by
+    have : a - b ≠ 0 := by bound
+    have : (a-b)^2 > 0 := by positivity
+    bound
+  rewrite[abs_of_pos hpos]
+
+  have hngeK : n ≥ K := by omega
+  have hRngeK : (n:ℝ) ≥ (K:ℝ) := by exact_mod_cast hngeK
+  have hngtε : n > (a-b)^2/(2*ε) := by bound
+  field_simp at hngtε
+  field_simp
+  rewrite[mul_assoc, mul_comm (n:ℝ), ← mul_assoc]
+  bound
+
+example (f : ℕ → ℝ → ℝ) (F : ℝ → ℝ) (hfF : UnifConv f F) : ∀ x, SeqLim (fun n ↦ f n x) (F x) := by
+  intro x ε hε
+  rcases hfF ε hε with ⟨N, hN⟩
+  refine ⟨N, (by bound)⟩
+
+example : FunCont (fun x ↦ x ^ 3) := by
+  intro c ε hε
+  simp only
+-- x^3 - c^3 = (x-c)(x^2+xc+c^2) < ε
+-- 也先 δ ≤ 1 粗略地把 x 限制在 c 的附近，那么就有（只需要粗略放大就可以了）
+-- x^2 ≤ (|c| + 1)^2
+-- xc ≤ (|c| + 1)^2
+-- c^2 ≤ (|c| + 1)^2
+-- 也即 x^3-c^3 ≤ (x-c)(3 * (|c|+1)^2)
+-- 那么要求 x^3-c^3 < ε ，只需要 (x-c)(3 * (|c|+1)^2) < ε，也即 x-c < ε/(3 * (|c|+1)^2)，即
+-- 取 δ = ε/(3 * (|c|+1)^2)
+  set B := 3 * (|c|+1)^2
+  set δ := min 1 ε/B with hδdef
+  have hδ : δ > 0 := by positivity
+  refine ⟨δ, hδ, fun x hx => ?_⟩
+  have hδ1 : δ ≤ 1 := by bound
+  have hxc :|x| ≤ |c| + 1 := by
+    calc
+      |x| = |x - c + c| := by bound
+      _ ≤ |x - c| + |c| := abs_add_le _ _
+      _ ≤ 1 + |c| := by bound
+      _ = |c| + 1 := by bound
+  have hs1 : |x^2| ≤ (|c| + 1)^2 := by
+    have : |x|^2 ≤ (|c| + 1)^2 := by bound
+    rewrite[show |x^2| = |x|^2 by bound]
+    bound
+  have hs2 : |x * c| ≤ (|c| + 1)^2 := by
+    calc
+    |x * c| = |x| * |c| := by apply abs_mul
+    _ ≤ (|c| + 1) * (|c| + 1) := by bound
+    _ = (|c| + 1)^2 := by bound
+  have hs3 : |c^2| < (|c| + 1)^2 := by
+    calc
+    |c^2| = |c|^2 := by bound
+    _ < (|c| + 1)^2 := by bound
+  have hs : |x^2 + x*c + c^2| < B := by
+    calc
+    |x^2 + x*c + c^2| ≤ |x^2 + x*c| + |c^2| := abs_add_le _ _
+    _ ≤ |x^2| + |x*c| + |c^2| := by
+      have : |x^2 + x*c| ≤ |x^2| + |x*c| := abs_add_le _ _
+      bound
+    _ < (|c|+1)^2 + (|c|+1)^2 + (|c|+1)^2 := by bound
+    _ = B := by bound
+  calc
+  |x^3 - c^3| = |(x-c) * (x^2 + x*c + c^2)| := by ring_nf
+  _ = |x - c| * |x^2 + x*c + c^2| := abs_mul _ _
+  _ < (ε/B) * B := by
+    have : δ ≤ ε/B := by bound
+    have hxcεB: |x - c| < ε/B := by bound
+    apply mul_lt_mul'' hxcεB hs (by positivity) (by positivity)
+  _ = ε := by
+    have : B > 0 := by positivity
+    field_simp
+
+example : ∃ g : ℝ → ℝ, FunDeriv (fun x ↦ x ^ 3) g := by
+  set g : ℝ → ℝ := fun x => 3*x^2 with hgdef
+  refine ⟨g, fun c ε hε => ?_⟩
+-- 经过可知不等号左边等于 |dx^2 + 3 * dx * c| = |dx|*|dx+3c|
+-- 还是先用 δ ≤ 1，把 x 控制在 c 的附近，即
+-- dx ≤ 1
+-- |dx + 3c| < 3*|c| + 1
+-- 则要想 |dx| * |dx+3c| < ε，只需要 |dx| * (3*|c| + 1)< ε，也即 δ < ε/(3*|c|+1)
+  set B := ε/(3*|c|+1)
+  refine ⟨min 1 B, (by positivity), fun dx hdx1 hdx2 => ?_⟩
+  simp only
+  norm_num at hdx2
+  calc
+  |((c + dx) ^ 3 - c ^ 3) / dx - g c| = |((c + dx) ^ 3 - c ^ 3) / dx - 3*c^2| := by bound
+  _ = |dx^2 + 3*dx*c| := by
+    have : (c+dx)^3 - c^3 = dx*(dx^2+3*dx*c+3*c^2) := by ring_nf
+    rewrite[this]
+    have : (dx*(dx^2+3*dx*c+3*c^2))/dx = dx^2+3*dx*c+3*c^2 := by field_simp
+    rewrite[this]
+    bound
+  _ = |dx*(dx+3*c)| := by ring_nf
+  _ = |dx| * |dx+3*c| := abs_mul _ _
+  _ < B * (3*|c| + 1) := by
+    have : |dx| < 1 := by bound
+    have : |dx + 3*c| ≤ |dx| + |3*c| := abs_add_le _ _
+    have : |3*c| = 3*|c| := by bound
+    have : |dx| + |3*c| < 1 + 3*|c| := by bound
+    apply mul_lt_mul'' (by bound) (by bound) (by positivity) (by positivity)
+  _ = ε/(3*|c|+1) * (3*|c|+1) := by bound
+  _ = ε := by field_simp
+
+
+theorem sum_of_squares (n : ℕ) : ∑ i ∈ Finset.range n, ((i : ℝ) + 1) ^ 2 = ((n : ℝ) * (n + 1) * (2 * n + 1)) / 6 := by
+  induction n with
+  | zero => bound
+  | succ n hn =>
+  rewrite[sum_range_succ, hn]
+  push_cast
+  have h3 : ((n+1):ℝ) * (((n):ℝ)+1+1) * (2*((n:ℝ)+1)+1) = 2*n^3+9*n^2+13*n+6 := by ring_nf
+  rewrite[h3]
+  ring_nf
+
+theorem RiemannSumRefinement (f : ℝ → ℝ) {a b : ℝ} (hab : a < b) {n k : ℕ} (hn : n ≠ 0) (hk : k ≠ 0) {ε δ : ℝ} (hε : ε > 0) (hδ : δ > 0)
+(hunif : ∀ x ∈ Set.Icc a b, ∀ y ∈ Set.Icc a b, |y - x| < δ → |f y - f x| < ε) (hfine : 2 * (b - a) / n < δ) :
+|RiemannSum f a b (n * k) - RiemannSum f a b n| < (b - a) * ε := by
+  set h := (b-a)/n with hhdef
+  have hhpos : h > 0 := by positivity
+  have hreindex : ∀ g : ℕ → ℝ,
+      ∑ m ∈ Finset.range (n * k), g m
+        = ∑ i ∈ Finset.range n, ∑ j ∈ Finset.range k, g (i * k + j) := by sorry
+  have hfinesum : RiemannSum f a b (n*k) = ∑ i ∈ range n, (h/k) * ∑ j ∈ range k, f (a + i * h + (j + 1) * h / k) := by
+    unfold RiemannSum
+    rewrite[hreindex]
+    rewrite[mul_sum]
+    apply sum_congr rfl
+    intro i _
+    rewrite[mul_sum, mul_sum]
+    apply sum_congr rfl
+    intro j _
+    congr 1
+    · field_simp at hhdef
+      rewrite[← hhdef]
+      field_simp
+      push_cast
+      bound
+    · congr 1
+      push_cast
+      rewrite[hhdef]
+      field_simp
+      ring_nf
+  have hcoarsesum : RiemannSum f a b n
+      = ∑ i ∈ Finset.range n, (h / k) * ∑ _j ∈ Finset.range k, f (a + (i + 1) * h) := by
+    unfold RiemannSum
+    rewrite [mul_sum]
+    apply Finset.sum_congr rfl
+    intro i _
+    rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+    have heq : a + (↑i + 1) * (b - a) / ↑n = a + (i + 1) * h := by rw [hhdef]; ring_nf
+    rw [heq]
+    field_simp
+    field_simp at hhdef
+    rewrite[← hhdef]
+    bound
+  have hdiff : RiemannSum f a b (n * k) - RiemannSum f a b n = ∑ i ∈ Finset.range n, (h / k) * ∑ j ∈ Finset.range k,
+          (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h)) := by
+    rewrite[hfinesum, hcoarsesum]
+    rewrite[← sum_sub_distrib]
+    apply Finset.sum_congr rfl
+    intro i _
+    rw [← mul_sub, ← Finset.sum_sub_distrib]
+  rewrite[hdiff]
+
+  have hterm_bound : ∀ i ∈ Finset.range n,
+      (h / k) * ∑ j ∈ Finset.range k,
+        (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
+      ≤ (h / k) * (k * ε) := by
+    intro i hi
+    simp only [Finset.mem_range] at hi
+    apply mul_le_mul_of_nonneg_left _ (by positivity)
+    have hjne : (Finset.range k).Nonempty := Finset.nonempty_range_iff.mpr hk
+    have : ∑ j ∈ Finset.range k, (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
+        < ∑ _ ∈ Finset.range k, ε := by
+      apply Finset.sum_lt_sum_of_nonempty hjne
+      intro j hj
+      simp only [Finset.mem_range] at hj
+      have hx : a + i * h + (j + 1) * h / k ∈ Set.Icc a b := by
+        constructor
+        · have : (i:ℝ)*h ≥ 0 := by bound
+          have : ((j:ℝ)+1)*h/(k:ℝ) ≥ 0 := by bound
+          bound
+        -- · nlinarith [hhpos.le, (j:ℝ).cast_nonneg]
+        · have hib : (i : ℝ) ≤ n - 1 := by
+            have : (i : ℝ) + 1 ≤ n := by exact_mod_cast hi
+            linarith
+          have hjk : ((j : ℝ) + 1) / k ≤ 1 := by
+            rw [div_le_one (by positivity)]
+            have : (j : ℝ) + 1 ≤ k := by exact_mod_cast hj
+            linarith
+          have expand : a + i * h + (j + 1) * h / k ≤ a + i * h + h := by
+            have _h1: ((j:ℝ) + 1) / k * h ≤ h := by nlinarith
+            have _h2: ((j:ℝ) + 1) / k * h = ((j:ℝ) + 1) * h / k := by field_simp
+            have _h3: ((j:ℝ) + 1) * h / k ≤ h := by rw[_h2] at _h1;exact _h1
+            bound
+          have : a + i * h + h ≤ a + n * h := by nlinarith
+          rw [hhdef] at this ⊢
+          have hnh : (n : ℝ) * ((b - a) / n) = b - a := by field_simp
+          nlinarith [hnh]
+      have hy : a + (i + 1) * h ∈ Set.Icc a b := by
+        constructor
+        · have : ((i:ℝ) + 1) * h ≥ 0 := by bound
+          bound
+        · have : (i : ℝ) + 1 ≤ n := by exact_mod_cast hi
+          have hnh : (n : ℝ) * h = b - a := by rw [hhdef]; field_simp
+          nlinarith
+      have hclose : |a + (i + 1) * h - (a + i * h + (j + 1) * h / k)| < δ := by
+        have heq2 : a + (i + 1) * h - (a + i * h + (j + 1) * h / k)
+            = h * (1 - (j + 1) / k) := by ring
+        rw [heq2]
+        have hlt1 : (j + 1 : ℝ) / k ≤ 1 := by
+          rw [div_le_one (by positivity)]
+          have : (j : ℝ) + 1 ≤ k := by exact_mod_cast hj
+          linarith
+        by_cases hcase : (j + 1 : ℝ) / k = 1
+        · have : 1 - (j+1:ℝ)/k = 0 := by bound
+          rewrite[this]
+          norm_num
+          bound
+        · rw[abs_of_pos]
+          · have _h1 : 1-(j+1:ℝ)/k < 2 := by
+              have : (j+1:ℝ)/k > 0 := by positivity
+              bound
+            have _h2 : h * (1-(j+1:ℝ)/k) < h * 2 := by bound
+            have _h3 : h * 2 = 2 * (b-a)/n := by rewrite[hhdef];field_simp
+            rewrite[_h3] at _h2
+            exact lt_trans _h2 hfine
+          · have : (j + 1 : ℝ) / k < 1 := by
+              by_contra _hc
+              push Not at _hc
+              bound
+            bound
+
+      have := hunif _ hx _ hy hclose
+      linarith [abs_lt.mp this]
+    rewrite[sum_const, card_range, nsmul_eq_mul] at this
+    exact le_of_lt this
+
+  have hsum_bound : ∑ i ∈ Finset.range n, (h / k) * ∑ j ∈ Finset.range k,
+      (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
+      ≤ ∑ _i ∈ Finset.range n, (h / k) * (k * ε) :=
+    Finset.sum_le_sum hterm_bound
+  have hcollapse : ∑ _i ∈ Finset.range n, (h / k) * (k * ε) = (b - a) * ε := by
+    rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+    rw [hhdef]
+    field_simp
+  rw [abs_lt]
+  constructor
+  · calc -((b - a) * ε) < 0 := by nlinarith
+    _ ≤ _ := by
+        apply Finset.sum_nonneg
+        intro i _
+        apply mul_nonneg (by positivity)
+        apply Finset.sum_nonneg
+        intro j hj
+        sorry -- 需要下界 f x - f y ≥ -ε,与上面上界证明同理,用另一半 abs_lt
+  · linarith [hsum_bound, hcollapse]
