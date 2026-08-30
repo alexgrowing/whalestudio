@@ -2208,143 +2208,171 @@ theorem sum_of_squares (n : ℕ) : ∑ i ∈ Finset.range n, ((i : ℝ) + 1) ^ 2
 theorem RiemannSumRefinement (f : ℝ → ℝ) {a b : ℝ} (hab : a < b) {n k : ℕ} (hn : n ≠ 0) (hk : k ≠ 0) {ε δ : ℝ} (hε : ε > 0) (hδ : δ > 0)
 (hunif : ∀ x ∈ Set.Icc a b, ∀ y ∈ Set.Icc a b, |y - x| < δ → |f y - f x| < ε) (hfine : 2 * (b - a) / n < δ) :
 |RiemannSum f a b (n * k) - RiemannSum f a b n| < (b - a) * ε := by
-  set h := (b-a)/n with hhdef
-  have hhpos : h > 0 := by positivity
+  set D := (b-a)/n with hDdef
+  have hDpos : D > 0 := by positivity
+  unfold RiemannSum
   have hreindex : ∀ g : ℕ → ℝ,
       ∑ m ∈ Finset.range (n * k), g m
         = ∑ i ∈ Finset.range n, ∑ j ∈ Finset.range k, g (i * k + j) := by sorry
-  have hfinesum : RiemannSum f a b (n*k) = ∑ i ∈ range n, (h/k) * ∑ j ∈ range k, f (a + i * h + (j + 1) * h / k) := by
-    unfold RiemannSum
-    rewrite[hreindex]
-    rewrite[mul_sum]
-    apply sum_congr rfl
-    intro i _
-    rewrite[mul_sum, mul_sum]
-    apply sum_congr rfl
-    intro j _
-    congr 1
-    · field_simp at hhdef
-      rewrite[← hhdef]
-      field_simp
-      push_cast
-      bound
-    · congr 1
-      push_cast
-      rewrite[hhdef]
-      field_simp
-      ring_nf
-  have hcoarsesum : RiemannSum f a b n
-      = ∑ i ∈ Finset.range n, (h / k) * ∑ _j ∈ Finset.range k, f (a + (i + 1) * h) := by
-    unfold RiemannSum
-    rewrite [mul_sum]
-    apply Finset.sum_congr rfl
-    intro i _
-    rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
-    have heq : a + (↑i + 1) * (b - a) / ↑n = a + (i + 1) * h := by rw [hhdef]; ring_nf
-    rw [heq]
-    field_simp
-    field_simp at hhdef
-    rewrite[← hhdef]
+  rewrite[hreindex]
+  have hDba : b - a = D * n := by field_simp at hDdef; bound
+  have hDk : (b-a)/(n*k) = D/k := by field_simp; bound
+  push_cast
+  rewrite[hDk, hDba]
+  rewrite[mul_sum, mul_sum, ← sum_sub_distrib]
+  have hDnε : D * (n:ℝ) * ε = ∑ _ ∈ range n, D * ε := by
+    rewrite[sum_const, card_range, nsmul_eq_mul]
     bound
-  have hdiff : RiemannSum f a b (n * k) - RiemannSum f a b n = ∑ i ∈ Finset.range n, (h / k) * ∑ j ∈ Finset.range k,
-          (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h)) := by
-    rewrite[hfinesum, hcoarsesum]
-    rewrite[← sum_sub_distrib]
-    apply Finset.sum_congr rfl
-    intro i _
-    rw [← mul_sub, ← Finset.sum_sub_distrib]
-  rewrite[hdiff]
-
-  have hterm_bound : ∀ i ∈ Finset.range n,
-      (h / k) * ∑ j ∈ Finset.range k,
-        (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
-      ≤ (h / k) * (k * ε) := by
-    intro i hi
-    simp only [Finset.mem_range] at hi
-    apply mul_le_mul_of_nonneg_left _ (by positivity)
-    have hjne : (Finset.range k).Nonempty := Finset.nonempty_range_iff.mpr hk
-    have : ∑ j ∈ Finset.range k, (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
-        < ∑ _ ∈ Finset.range k, ε := by
-      apply Finset.sum_lt_sum_of_nonempty hjne
-      intro j hj
-      simp only [Finset.mem_range] at hj
-      have hx : a + i * h + (j + 1) * h / k ∈ Set.Icc a b := by
-        constructor
-        · have : (i:ℝ)*h ≥ 0 := by bound
-          have : ((j:ℝ)+1)*h/(k:ℝ) ≥ 0 := by bound
-          bound
-        -- · nlinarith [hhpos.le, (j:ℝ).cast_nonneg]
-        · have hib : (i : ℝ) ≤ n - 1 := by
-            have : (i : ℝ) + 1 ≤ n := by exact_mod_cast hi
-            linarith
-          have hjk : ((j : ℝ) + 1) / k ≤ 1 := by
-            rw [div_le_one (by positivity)]
-            have : (j : ℝ) + 1 ≤ k := by exact_mod_cast hj
-            linarith
-          have expand : a + i * h + (j + 1) * h / k ≤ a + i * h + h := by
-            have _h1: ((j:ℝ) + 1) / k * h ≤ h := by nlinarith
-            have _h2: ((j:ℝ) + 1) / k * h = ((j:ℝ) + 1) * h / k := by field_simp
-            have _h3: ((j:ℝ) + 1) * h / k ≤ h := by rw[_h2] at _h1;exact _h1
-            bound
-          have : a + i * h + h ≤ a + n * h := by nlinarith
-          rw [hhdef] at this ⊢
-          have hnh : (n : ℝ) * ((b - a) / n) = b - a := by field_simp
-          nlinarith [hnh]
-      have hy : a + (i + 1) * h ∈ Set.Icc a b := by
-        constructor
-        · have : ((i:ℝ) + 1) * h ≥ 0 := by bound
-          bound
-        · have : (i : ℝ) + 1 ≤ n := by exact_mod_cast hi
-          have hnh : (n : ℝ) * h = b - a := by rw [hhdef]; field_simp
-          nlinarith
-      have hclose : |a + (i + 1) * h - (a + i * h + (j + 1) * h / k)| < δ := by
-        have heq2 : a + (i + 1) * h - (a + i * h + (j + 1) * h / k)
-            = h * (1 - (j + 1) / k) := by ring
-        rw [heq2]
-        have hlt1 : (j + 1 : ℝ) / k ≤ 1 := by
-          rw [div_le_one (by positivity)]
-          have : (j : ℝ) + 1 ≤ k := by exact_mod_cast hj
-          linarith
-        by_cases hcase : (j + 1 : ℝ) / k = 1
-        · have : 1 - (j+1:ℝ)/k = 0 := by bound
-          rewrite[this]
-          norm_num
-          bound
-        · rw[abs_of_pos]
-          · have _h1 : 1-(j+1:ℝ)/k < 2 := by
-              have : (j+1:ℝ)/k > 0 := by positivity
-              bound
-            have _h2 : h * (1-(j+1:ℝ)/k) < h * 2 := by bound
-            have _h3 : h * 2 = 2 * (b-a)/n := by rewrite[hhdef];field_simp
-            rewrite[_h3] at _h2
-            exact lt_trans _h2 hfine
-          · have : (j + 1 : ℝ) / k < 1 := by
-              by_contra _hc
-              push Not at _hc
-              bound
-            bound
-
-      have := hunif _ hx _ hy hclose
-      linarith [abs_lt.mp this]
-    rewrite[sum_const, card_range, nsmul_eq_mul] at this
-    exact le_of_lt this
-
-  have hsum_bound : ∑ i ∈ Finset.range n, (h / k) * ∑ j ∈ Finset.range k,
-      (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
-      ≤ ∑ _i ∈ Finset.range n, (h / k) * (k * ε) :=
-    Finset.sum_le_sum hterm_bound
-  have hcollapse : ∑ _i ∈ Finset.range n, (h / k) * (k * ε) = (b - a) * ε := by
-    rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
-    rw [hhdef]
-    field_simp
-  rw [abs_lt]
+  rewrite[hDnε]
+  have hinside : ∀ x, D / (k:ℝ) * ∑ j ∈ range k, f (a + ((x:ℝ) * (k:ℝ) + (j:ℝ) + 1) * (D * (n:ℝ)) / ((n:ℝ) * (k:ℝ))) -
+        D * (n:ℝ) / (n:ℝ) * f (a + ((x:ℝ) + 1) * (D * (n:ℝ)) / (n:ℝ)) = D / (k:ℝ) * ∑ j ∈ range k, f (a + ((x:ℝ) * (k:ℝ) + (j:ℝ) + 1) * D / (k:ℝ)) -
+        D * f (a + ((x:ℝ) + 1) * D) := by sorry
+  rewrite[abs_lt]
   constructor
-  · calc -((b - a) * ε) < 0 := by nlinarith
-    _ ≤ _ := by
-        apply Finset.sum_nonneg
-        intro i _
-        apply mul_nonneg (by positivity)
-        apply Finset.sum_nonneg
-        intro j hj
-        sorry -- 需要下界 f x - f y ≥ -ε,与上面上界证明同理,用另一半 abs_lt
-  · linarith [hsum_bound, hcollapse]
+  · sorry
+  · have hnne : (range n).Nonempty := nonempty_range_iff.mp hn
+    apply sum_lt_sum_of_nonempty hnne
+    intro i hi
+    field_simp
+
+
+
+
+
+  -- set h := (b-a)/n with hhdef
+  -- have hhpos : h > 0 := by positivity
+  -- have hfinesum : RiemannSum f a b (n*k) = ∑ i ∈ range n, (h/k) * ∑ j ∈ range k, f (a + i * h + (j + 1) * h / k) := by
+  --   unfold RiemannSum
+  --   rewrite[hreindex]
+  --   rewrite[mul_sum]
+  --   apply sum_congr rfl
+  --   intro i _
+  --   rewrite[mul_sum, mul_sum]
+  --   apply sum_congr rfl
+  --   intro j _
+  --   congr 1
+  --   · field_simp at hhdef
+  --     rewrite[← hhdef]
+  --     field_simp
+  --     push_cast
+  --     bound
+  --   · congr 1
+  --     push_cast
+  --     rewrite[hhdef]
+  --     field_simp
+  --     ring_nf
+  -- have hcoarsesum : RiemannSum f a b n
+  --     = ∑ i ∈ Finset.range n, (h / k) * ∑ _j ∈ Finset.range k, f (a + (i + 1) * h) := by
+  --   unfold RiemannSum
+  --   rewrite [mul_sum]
+  --   apply Finset.sum_congr rfl
+  --   intro i _
+  --   rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+  --   have heq : a + (↑i + 1) * (b - a) / ↑n = a + (i + 1) * h := by rw [hhdef]; ring_nf
+  --   rw [heq]
+  --   field_simp
+  --   field_simp at hhdef
+  --   rewrite[← hhdef]
+  --   bound
+  -- have hdiff : RiemannSum f a b (n * k) - RiemannSum f a b n = ∑ i ∈ Finset.range n, (h / k) * ∑ j ∈ Finset.range k,
+  --         (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h)) := by
+  --   rewrite[hfinesum, hcoarsesum]
+  --   rewrite[← sum_sub_distrib]
+  --   apply Finset.sum_congr rfl
+  --   intro i _
+  --   rw [← mul_sub, ← Finset.sum_sub_distrib]
+  -- rewrite[hdiff]
+
+  -- have hterm_bound : ∀ i ∈ Finset.range n,
+  --     (h / k) * ∑ j ∈ Finset.range k,
+  --       (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
+  --     ≤ (h / k) * (k * ε) := by
+  --   intro i hi
+  --   simp only [Finset.mem_range] at hi
+  --   apply mul_le_mul_of_nonneg_left _ (by positivity)
+  --   have hjne : (Finset.range k).Nonempty := Finset.nonempty_range_iff.mpr hk
+  --   have : ∑ j ∈ Finset.range k, (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
+  --       < ∑ _ ∈ Finset.range k, ε := by
+  --     apply Finset.sum_lt_sum_of_nonempty hjne
+  --     intro j hj
+  --     simp only [Finset.mem_range] at hj
+  --     have hx : a + i * h + (j + 1) * h / k ∈ Set.Icc a b := by
+  --       constructor
+  --       · have : (i:ℝ)*h ≥ 0 := by bound
+  --         have : ((j:ℝ)+1)*h/(k:ℝ) ≥ 0 := by bound
+  --         bound
+  --       -- · nlinarith [hhpos.le, (j:ℝ).cast_nonneg]
+  --       · have hib : (i : ℝ) ≤ n - 1 := by
+  --           have : (i : ℝ) + 1 ≤ n := by exact_mod_cast hi
+  --           linarith
+  --         have hjk : ((j : ℝ) + 1) / k ≤ 1 := by
+  --           rw [div_le_one (by positivity)]
+  --           have : (j : ℝ) + 1 ≤ k := by exact_mod_cast hj
+  --           linarith
+  --         have expand : a + i * h + (j + 1) * h / k ≤ a + i * h + h := by
+  --           have _h1: ((j:ℝ) + 1) / k * h ≤ h := by nlinarith
+  --           have _h2: ((j:ℝ) + 1) / k * h = ((j:ℝ) + 1) * h / k := by field_simp
+  --           have _h3: ((j:ℝ) + 1) * h / k ≤ h := by rw[_h2] at _h1;exact _h1
+  --           bound
+  --         have : a + i * h + h ≤ a + n * h := by nlinarith
+  --         rw [hhdef] at this ⊢
+  --         have hnh : (n : ℝ) * ((b - a) / n) = b - a := by field_simp
+  --         nlinarith [hnh]
+  --     have hy : a + (i + 1) * h ∈ Set.Icc a b := by
+  --       constructor
+  --       · have : ((i:ℝ) + 1) * h ≥ 0 := by bound
+  --         bound
+  --       · have : (i : ℝ) + 1 ≤ n := by exact_mod_cast hi
+  --         have hnh : (n : ℝ) * h = b - a := by rw [hhdef]; field_simp
+  --         nlinarith
+  --     have hclose : |a + (i + 1) * h - (a + i * h + (j + 1) * h / k)| < δ := by
+  --       have heq2 : a + (i + 1) * h - (a + i * h + (j + 1) * h / k)
+  --           = h * (1 - (j + 1) / k) := by ring
+  --       rw [heq2]
+  --       have hlt1 : (j + 1 : ℝ) / k ≤ 1 := by
+  --         rw [div_le_one (by positivity)]
+  --         have : (j : ℝ) + 1 ≤ k := by exact_mod_cast hj
+  --         linarith
+  --       by_cases hcase : (j + 1 : ℝ) / k = 1
+  --       · have : 1 - (j+1:ℝ)/k = 0 := by bound
+  --         rewrite[this]
+  --         norm_num
+  --         bound
+  --       · rw[abs_of_pos]
+  --         · have _h1 : 1-(j+1:ℝ)/k < 2 := by
+  --             have : (j+1:ℝ)/k > 0 := by positivity
+  --             bound
+  --           have _h2 : h * (1-(j+1:ℝ)/k) < h * 2 := by bound
+  --           have _h3 : h * 2 = 2 * (b-a)/n := by rewrite[hhdef];field_simp
+  --           rewrite[_h3] at _h2
+  --           exact lt_trans _h2 hfine
+  --         · have : (j + 1 : ℝ) / k < 1 := by
+  --             by_contra _hc
+  --             push Not at _hc
+  --             bound
+  --           bound
+
+  --     have := hunif _ hx _ hy hclose
+  --     linarith [abs_lt.mp this]
+  --   rewrite[sum_const, card_range, nsmul_eq_mul] at this
+  --   exact le_of_lt this
+
+  -- have hsum_bound : ∑ i ∈ Finset.range n, (h / k) * ∑ j ∈ Finset.range k,
+  --     (f (a + i * h + (j + 1) * h / k) - f (a + (i + 1) * h))
+  --     ≤ ∑ _i ∈ Finset.range n, (h / k) * (k * ε) :=
+  --   Finset.sum_le_sum hterm_bound
+  -- have hcollapse : ∑ _i ∈ Finset.range n, (h / k) * (k * ε) = (b - a) * ε := by
+  --   rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+  --   rw [hhdef]
+  --   field_simp
+  -- rw [abs_lt]
+  -- constructor
+  -- · calc -((b - a) * ε) < 0 := by nlinarith
+  --   _ ≤ _ := by
+  --       apply Finset.sum_nonneg
+  --       intro i _
+  --       apply mul_nonneg (by positivity)
+  --       apply Finset.sum_nonneg
+  --       intro j hj
+  --       sorry -- 需要下界 f x - f y ≥ -ε,与上面上界证明同理,用另一半 abs_lt
+  -- · linarith [hsum_bound, hcollapse]
