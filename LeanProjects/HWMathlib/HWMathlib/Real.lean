@@ -2230,10 +2230,16 @@ theorem RiemannSumRefinement (f : ℝ → ℝ) {a b : ℝ} (hab : a < b) {n k : 
   rewrite[abs_lt]
   constructor
   · sorry
-  · have hnne : (range n).Nonempty := nonempty_range_iff.mp hn
-    apply sum_lt_sum_of_nonempty hnne
+  · apply sum_lt_sum_of_nonempty (nonempty_range_iff.mpr hn)
     intro i hi
     field_simp
+    rewrite[show (k:ℝ)*ε = ∑ x ∈ range k, ε by rw[sum_const, card_range, nsmul_eq_mul]]
+    rewrite[show (k:ℝ) * f (a + D * ((i:ℝ) + 1)) = ∑ x ∈ range k, f (a + D * ((i:ℝ) + 1)) by rw[sum_const, card_range, nsmul_eq_mul]]
+    rewrite[← sum_sub_distrib]
+    apply sum_lt_sum_of_nonempty (nonempty_range_iff.mpr hk)
+    intro j hj
+
+
 
 
 
