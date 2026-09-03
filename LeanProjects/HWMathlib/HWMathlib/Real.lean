@@ -2366,3 +2366,42 @@ theorem RiemannSumRefinement (f : ℝ → ℝ) {a b : ℝ} (hab : a < b) {n k : 
 def UnifContOn (f : ℝ → ℝ) (S : Set ℝ) := ∀ ε > 0, ∃ δ > 0, ∀ x ∈ S, ∀ y ∈ S, |y - x| < δ → |f y - f x| < ε
 
 theorem HasIntegral_of_UnifContOn (f : ℝ → ℝ) (a b : ℝ) (hab : a < b) (hf : UnifContOn f (Set.Icc a b)) : IntegrableOn f a b := by
+  unfold IntegrableOn HasIntegral
+  apply SeqConv_of_IsCauchy
+  intro ε hε
+  have hba : b - a > 0 := by bound
+  have hεba : ε/(2*(b-a)) > 0 := by positivity
+  rcases hf (ε/(2*(b-a))) hεba with ⟨δ, hδ, hfδ⟩
+  rcases exists_nat_gt (2*(b-a)/δ) with ⟨N, hN⟩
+  refine ⟨N +  1, fun n hn m hm => ?_⟩
+  have hnne0 : n ≠ 0 := by bound
+  have hmne0 : m ≠ 0 := by bound
+  have hfine : 2*(b-a)/n < δ := by
+    have : (N:ℝ) < n := by exact_mod_cast (show N < n by bound)
+    have : 2*(b-a)/δ  < n := by bound
+    field_simp at this
+    nth_rewrite 2 [mul_comm] at this
+    field_simp
+    exact this
+  have hfime : 2*(b-a)/m < δ := by
+    have : (N:ℝ) < m := by exact_mod_cast (show N < m by bound)
+    have : 2*(b-a)/δ  < m := by bound
+    field_simp at this
+    nth_rewrite 2 [mul_comm] at this
+    field_simp
+    exact this
+
+  have h1 := RiemannSumRefinement f hab hnne0 hmne0 hεba hδ hfδ hfine
+  have h2 := RiemannSumRefinement f hab hmne0 hnne0 hεba hδ hfδ hfime
+  have heq : (b-a)*(ε/(2*(b-a))) = ε/2 := by
+    field_simp
+    field_simp
+    bound
+  rewrite[heq] at h1 h2
+  rewrite[mul_comm] at h1
+  rewrite[abs_sub_comm] at h2
+  simp only
+  calc
+  _ ≤ |RiemannSum f a b m - RiemannSum f a b (m*n)| + |RiemannSum f a b (m*n) - RiemannSum f a b n| := abs_sub_le _ _ _
+  _ < ε/2  + ε/2 := by bound
+  _ = ε := by bound
