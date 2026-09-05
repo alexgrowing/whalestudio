@@ -2393,10 +2393,7 @@ theorem HasIntegral_of_UnifContOn (f : ℝ → ℝ) (a b : ℝ) (hab : a < b) (h
 
   have h1 := RiemannSumRefinement f hab hnne0 hmne0 hεba hδ hfδ hfine
   have h2 := RiemannSumRefinement f hab hmne0 hnne0 hεba hδ hfδ hfime
-  have heq : (b-a)*(ε/(2*(b-a))) = ε/2 := by
-    field_simp
-    field_simp
-    bound
+  have heq : (b-a)*(ε/(2*(b-a))) = ε/2 := by field_simp
   rewrite[heq] at h1 h2
   rewrite[mul_comm] at h1
   rewrite[abs_sub_comm] at h2
@@ -2405,3 +2402,113 @@ theorem HasIntegral_of_UnifContOn (f : ℝ → ℝ) (a b : ℝ) (hab : a < b) (h
   _ ≤ |RiemannSum f a b m - RiemannSum f a b (m*n)| + |RiemannSum f a b (m*n) - RiemannSum f a b n| := abs_sub_le _ _ _
   _ < ε/2  + ε/2 := by bound
   _ = ε := by bound
+
+
+def Ball (x : ℝ) (r : ℝ) : Set ℝ := Set.Ioo (x - r) (x + r)
+def IsCompactMine (S : Set ℝ) : Prop := ∀ (ι : Type) (xs : ι → ℝ) (δs : ι → ℝ), (∀ i, 0 < δs i)
+ → (S ⊆ ⋃ i, Ball (xs i) (δs i))
+ → ∃ (V : Finset ι), S ⊆ ⋃ i ∈ V, Ball (xs i) (δs i)
+
+theorem FinMinPos (ι : Type) (V : Finset ι) (δs : ι → ℝ) (hδs : ∀ i, δs i > 0) : ∃ δ > 0, ∀ i ∈ V, δ ≤ δs i := by sorry
+
+-- TODO 这个证明要好好温习一下
+theorem UnifContOn_of_Compact (f : ℝ → ℝ) (hf : FunCont f) (S : Set ℝ) (hS : IsCompactMine S) : UnifContOn f S := by
+  intro ε hε
+  choose δ hδpos hδ using (fun x : ℝ => hf x (ε/2) (by bound))
+  have hcover : S ⊆ ⋃ x : ℝ, Ball x ((δ x)/2) := by
+    intro s _
+    simp only[Set.mem_iUnion]
+    refine ⟨s, ?_⟩
+    simp only[Ball, Set.mem_Ioo]
+-- TODO 居然还能这么一次性完成constructor的证明
+    constructor <;> linarith[hδpos s]
+  -- 抽取有限子覆盖
+  rcases hS ℝ id (fun x => δ x / 2) (by bound) hcover with ⟨V, hV⟩
+  rcases FinMinPos ℝ V (fun x => δ x /2) (by bound) with ⟨minδ, hminδpos, hfminδ⟩
+  refine ⟨minδ, hminδpos, fun x hx y hy hyx => ?_⟩
+  -- x 被某个球心 i 覆盖
+  have hxmem := hV hx
+  simp only [Set.mem_iUnion] at hxmem
+  rcases hxmem with ⟨i, hiV, hxi⟩
+  simp only [Ball, Set.mem_Ioo, id] at hxi
+  have hxi' : |x - i| < δ i / 2 := by rw[abs_lt];constructor <;> linarith
+  have hyi' : |y - i| < δ i := by
+    have := abs_sub_le y x i
+    have := hfminδ i hiV
+    bound
+  have h1 := hδ i x (by bound)
+  have h2 := hδ i y hyi'
+  rewrite[abs_sub_comm] at h1
+  calc
+  _ ≤ |f y - f i| + |f i - f x| := abs_sub_le _ _ _
+  _ < ε/2 + ε/2 := by bound
+  _ = ε := by bound
+
+theorem FinMax (ι : Type) (V : Finset ι) (δs : ι → ℝ) : ∃ δ, ∀ i ∈ V, δs i ≤ δ := by sorry
+
+theorem Bdd_of_Compact (S : Set ℝ) (hcomp : IsCompactMine S) : ∃ M, ∀ s ∈ S, |s| < M := by
+  have hcover : S ⊆ ⋃ i : ℕ, Ball 0 ((i:ℝ) + 1) := by
+    intro s _
+    rcases exists_nat_gt |s| with ⟨i, hi⟩
+    simp only [Set.mem_iUnion]
+    refine⟨i, ?_⟩
+    simp only [Ball, Set.mem_Ioo, zero_sub, zero_add]
+    rewrite[abs_lt] at hi
+    bound
+  have hpos : ∀ i : ℕ, (i:ℝ) + 1 > 0 := by
+    intro i
+    positivity
+  rcases hcomp ℕ (fun x => 0) (fun x => x + 1) hpos hcover with ⟨V, hV⟩
+  rcases FinMax ℕ V (fun x => x + 1) with ⟨δ, hfδ⟩
+  refine ⟨δ, fun s hs => ?_⟩
+  have hsV := hV hs
+  simp only [Set.mem_iUnion] at hsV
+  rcases hsV with ⟨bi, hbi, hfbi⟩
+  simp only [Ball, Set.mem_Ioo] at hfbi
+  have : |s| < bi + 1 := by rw[abs_lt]; bound
+  have : bi + 1 ≤ δ := hfδ bi hbi
+  bound
+
+def IsOpenMine (S : Set ℝ) : Prop := ∀ x ∈ S, ∃ r > 0, Ball x r ⊆ S
+def IsClosedMine (S : Set ℝ) : Prop := IsOpenMine Sᶜ
+
+theorem IsClosed_of_Compact (S : Set ℝ) (hcomp : IsCompactMine S) : IsClosedMine S := by
+  -- unfold IsClosedMine IsOpenMine
+  intro y hy
+-- 这里的hspos 和 hcover 命题中的 x 都是 x : S，不是单纯的 x : ℝ，还是很有区别的
+  have hspos : ∀ x : S, |y - x| / 2 > 0 := by
+    intro x
+    have : y ≠ x := by bound
+    have : y - x ≠ 0 := by bound
+    have : |y - x| > 0 := abs_pos.mpr this
+    bound
+  have hcover : S ⊆ ⋃ x : S, Ball (x:S) (|y-x|/2) := by
+    intro s hs
+    simp only [Set.mem_iUnion, Ball, Set.mem_Ioo]
+    refine⟨⟨s, hs⟩ ,?_⟩
+    have : |y-s|/2 > 0 := hspos ⟨s, hs⟩
+    bound
+  rcases hcomp S (fun x => x) (fun x => |y-x|/2) hspos hcover with ⟨V, hV⟩
+  rcases FinMinPos S V (fun x => |y - x| / 2) hspos with ⟨minr, hminrpos, hfminr⟩
+  refine⟨minr, hminrpos, ?_⟩
+  intro x hx
+  simp only [Ball, Set.mem_Ioo] at hx
+  have hyx : |y - x| < minr := by rw[abs_lt];bound
+
+  intro hc
+  have hxV := hV hc
+  simp only [Set.mem_iUnion] at hxV
+  rcases hxV with ⟨z, hz, hfz⟩
+  simp only [Ball, Set.mem_Ioo] at hfz
+  have hzx : |z - x| < |y - z| / 2 := by rw[abs_lt];bound
+  have hyx' : |y - x| < |y - z| / 2 := by
+    have := hfminr z hz
+    bound
+  have hyz : |y - z| ≤ |y - x| + |x - z| := abs_sub_le _ _ _
+  rewrite[abs_sub_comm x z] at hyz
+  bound
+
+def IsUBMine (S : Set ℝ) (M : ℝ) : Prop := ∀ s ∈ S, s ≤ M
+def IsLUBMine (S : Set ℝ) (L : ℝ) : Prop := IsUBMine S L ∧ ∀ M, IsUBMine S M → L ≤ M
+
+theorem HasLUB_of_BddNonempty {S : Set ℝ} (hS : S.Nonempty) {M : ℝ} (hM : IsUBMine S M) : ∃ L, IsLUBMine S L := by
