@@ -2512,3 +2512,136 @@ def IsUBMine (S : Set ℝ) (M : ℝ) : Prop := ∀ s ∈ S, s ≤ M
 def IsLUBMine (S : Set ℝ) (L : ℝ) : Prop := IsUBMine S L ∧ ∀ M, IsUBMine S M → L ≤ M
 
 theorem HasLUB_of_BddNonempty {S : Set ℝ} (hS : S.Nonempty) {M : ℝ} (hM : IsUBMine S M) : ∃ L, IsLUBMine S L := by
+  classical
+  obtain ⟨s0, hs0⟩ := hS
+  have hs0M : s0 - 1 < M := by
+    have := hM s0 hs0
+    bound
+  let step : ℝ × ℝ → ℝ × ℝ := fun p =>
+    if IsUBMine S ((p.1+p.2)/2) then (p.1, (p.1+p.2)/2) else ((p.1+p.2)/2, p.2)
+  let ab : ℕ → ℝ × ℝ := fun n =>
+    Nat.rec (s0-1, M) (fun _ p => step p) n
+  have hab0 : ab 0 = (s0 - 1, M) := by bound
+  have habsucc : ∀ n : ℕ, ab (n + 1) = step (ab n) := by bound
+  have hpcore : ∀ p : ℝ × ℝ, p.1 ≤ p.2 → (step p).1 ≥ p.1 ∧ (step p).2 ≤ p.2 ∧ (step p).1 ≤ (step p).2 := by
+    intro p hp
+    unfold step
+    split_ifs with h <;> bound
+  have hab_le : ∀ n, (ab n).1 ≤ (ab n).2 := by
+    intro n
+    induction n with
+    | zero => rewrite[hab0]; bound
+    | succ n hn =>
+      rw [habsucc]; exact (hpcore (ab n) hn).2.2
+  have habcore : ∀ n : ℕ, (ab (n+1)).1 ≥ (ab n).1 ∧ (ab (n+1)).2 ≤ (ab n).2 := by
+    intro n
+    rw[habsucc]
+    have h := hpcore (ab n) (hab_le n)
+    exact ⟨h.1, h.2.1⟩
+  have habgap : ∀ n : ℕ, (ab n).2 - (ab n).1 = (M - (s0 - 1))/2^n := by
+    intro n
+    induction n with
+    | zero => rw[hab0];bound
+    | succ n hn =>
+      rw[habsucc]
+      have heq : ((ab n).2 - (ab n).1) / 2 = (M - (s0 - 1)) / 2 ^ (n + 1) := by rw[hn, pow_succ]; field_simp
+      unfold step
+      split_ifs with h
+      · simp only; bound
+      · simp only; bound
+  set a : ℕ → ℝ := fun n => (ab n).1 with hadef
+  set b : ℕ → ℝ := fun n => (ab n).2 with hbdef
+  have hamono : Monotone a := monotone_nat_of_le_succ (fun n => (habcore n).1)
+  have hbanti : Antitone b := antitone_nat_of_succ_le (fun n => (habcore n).2)
+  have habdd : ∀ n, a n ≤ M := by
+    intro n
+    have _h1 : a n ≤ b n := hab_le n
+    have _h2 : b n ≤ b 0 := hbanti (Nat.zero_le n)
+    have _h3 : b 0 = M := by bound
+    bound
+  obtain ⟨L, haLimL⟩ := SeqConv_of_MonotoneBdd a M habdd hamono
+  have hbLimL : SeqLim b L := by
+    intro ε hε
+    obtain ⟨N1, hN1⟩ := haLimL (ε/2) (by bound)
+    obtain ⟨N2, hN2⟩ := exists_nat_gt ((M-(s0-1))/(ε/2))
+    set N := N1 + N2 with hNdef
+    refine ⟨N, fun n hn => ?_⟩
+    have htri1 := hN1 n (by bound)
+    have htri2 : |b n - a n| < ε/2 := by
+      have N2pos : 0 < (N2:ℝ) := by
+        have _N2h1 : M - (s0-1) > 0 := by bound
+        have _N2h2 : 0 < (M - (s0-1))/(ε/2) := by bound
+        apply lt_trans _N2h2 hN2
+      have _h1 := habgap n
+      have _h2 : (M-(s0-1))/N2 < ε/2 := by
+        rw[div_lt_iff₀ N2pos]
+        rw[div_lt_iff₀ (by positivity)] at hN2
+        bound
+      have _h3 : N2 ≤ (n:ℝ) := by exact_mod_cast (show n ≥ N2 by bound)
+      have _h4 : (n:ℝ) ≤ 2^n := by exact_mod_cast (Nat.lt_two_pow_self).le
+      have _h5 : 1/2^n ≤ 1/(N2:ℝ) := one_div_le_one_div_of_le N2pos (le_trans _h3 _h4)
+      have _h6 : (M-(s0-1))/2^n ≤ (M-(s0-1))/N2 := by bound
+      have _h7 : b n - a n < ε/2 := by bound
+      have _h8 : b n - a n ≥ 0 := by bound
+      have _h9 : |b n - a n| = b n - a n := abs_of_nonneg _h8
+      bound
+    calc
+    _ ≤ |b n - a n| + |a n - L| := abs_sub_le _ _ _
+    _ < ε/2 + ε/2 := by bound
+    _ = ε := by bound
+  refine ⟨L, ?_⟩
+  constructor
+  · have hbnUB : ∀ n, IsUBMine S (b n) := by
+      intro n s hs
+      induction n with
+      | zero => bound
+      | succ n hn =>
+        rw[show b (n+1) = (ab (n+1)).2 by bound]
+        rw[habsucc]
+        unfold step
+        split_ifs with hif <;> bound
+    intro s hs
+    by_contra hcon
+    push Not at hcon
+    obtain ⟨N, hN⟩ := hbLimL (s-L) (by bound)
+    have hdiff1 := hbnUB N s hs
+    have hdiff2 := hN N (by bound)
+    rw[abs_lt] at hdiff2
+    bound
+  · have hanNotUB : ∀ n, ¬IsUBMine S (a n) := by
+      intro n
+      simp only [IsUBMine]
+      push Not
+      induction n with
+      | zero =>
+        refine ⟨s0, ⟨hs0, ?_⟩⟩;
+        rw[show a 0 = (ab 0).1 by bound]
+        rw[hab0]
+        bound
+      | succ n hn =>
+        rw[show a (n+1) = (ab (n+1)).1 by bound]
+        rw[habsucc]
+        unfold step
+        split_ifs with hif
+        · simp only
+          rw[show (ab n).1 = a n by bound]
+          exact hn
+        · simp only
+          simp only [IsUBMine] at hif
+          push Not at hif
+          exact hif
+    intro M' hM'
+    by_contra hcon
+    push Not at hcon
+    obtain ⟨N, hN⟩ := haLimL (L-M') (by bound)
+    have hdiff1 := hN N (by bound)
+    rw[abs_lt] at hdiff1
+    have haNNotUB := hanNotUB N
+    simp only [IsUBMine] at haNNotUB
+    push Not at haNNotUB
+    obtain ⟨s, hs1, hs2⟩ := haNNotUB
+    have hdiff2 := hM' s hs1
+    bound
+
+
+theorem IsCompact_of_ClosedInterval {a b : ℝ} (hab : a < b) : IsCompactMine (Set.Icc a b) := by
