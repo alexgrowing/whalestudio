@@ -2646,90 +2646,132 @@ theorem HasLUB_of_BddNonempty {S : Set ℝ} (hS : S.Nonempty) {M : ℝ} (hM : Is
 
 theorem IsCompact_of_ClosedInterval {a b : ℝ} (hab : a < b) : IsCompactMine (Set.Icc a b) := by
   simp only [IsCompactMine]
-  intro T xs δs hδsi hcover
--- 这个自定义集合的语法，跟数学上基本一致
-  set S : Set ℝ := { t | t ∈ Set.Icc a b ∧ ∃ V : Finset T, Set.Icc a t ⊆ ⋃ i ∈ V, Ball (xs i) (δs i)}
+  intro T xs δs hδspos hcover
+-- 定义集合 S = { x | x ∈ [a, b] ∧ [a x] 存在有限覆盖}
+  set S := { x | x ∈ Set.Icc a b ∧ ∃ V : Finset T, Set.Icc a x ⊆ ⋃ i ∈ V, Ball (xs i) (δs i)}
+-- 因为 a ∈ S，所以 S 非空
   have haS : a ∈ S := by
-    have ha_mem : a ∈ Set.Icc a b := ⟨le_refl a, hab.le⟩
-    obtain ⟨t, ht⟩ := Set.mem_iUnion.mp (hcover ha_mem)
-    rw[Set.mem_setOf]
-    refine ⟨ha_mem, {t}, fun y hy => ?_⟩
-    have hy' : y = a := le_antisymm hy.2 hy.1
-    apply Set.mem_biUnion (Finset.mem_singleton_self t)
-    rw[hy']
-    exact ht
-    -- exact Set.mem_biUnion (Finset.mem_singleton_self t) (hy' ▸ ht)
-    -- hy' ▸ ht 等价于 rw[hy'] exact ht
+    have : a ∈ Set.Icc a b := ⟨(le_self _, le_of_lt hab)⟩
+-- 同时因为 S 有上界 b，因此 S 存在上确界，假设上确界是 L
+-- 先证明 L ∈ S
+---- 取覆盖了 点 L 的球 B，必定存在(L - δ, L + δ) ⊆ B
+---- 由于 L 是上确界，因此 L - δ ∈ S，因此[a, L-δ]存在有限覆盖 V
+---- 因此 V + B 就是[a, L]的有限覆盖，因此 L ∈ S
+-- 再证明 L = b
+---- 因为 L 是 S 的上确界且 b 是 S 的上界，因此 L ≤ b
+---- 假设 L < b，由于 [a, b] 的开覆盖中必定存在一个球 B 覆盖点 L，必定存在(L - δ, L + δ) ⊆ B
+---- 由于 L 是 S 的上确界，因此 L - δ ∈ S，因此 [a, L-δ]存在有限覆盖 V
+---- 因此 V + B 就是[a, L+δ/2]的有限覆盖，这与 L 是 S 的上确界矛盾了
 
-  have hM : IsUBMine S b := by
-    intro s hs
-    rw[Set.mem_setOf] at hs
-    exact hs.1.2
 
-  obtain ⟨L, hLub, hLleast⟩ := HasLUB_of_BddNonempty ⟨a, haS⟩ hM
-  have hLmem : L ∈ Set.Icc a b := ⟨hLub a haS, hLleast b hM⟩
-  obtain ⟨i0, hi0⟩ := Set.mem_iUnion.mp (hcover hLmem)
-  simp only [Ball, Set.mem_Ioo] at hi0
-  set ε : ℝ := min (L - (xs i0 - δs i0)) ((xs i0 + δs i0) - L) with hεdef
-  have hεpos : ε > 0 := by bound
-  have hεle1 : ε ≤ L - (xs i0 - δs i0) := by bound
-  have hεle2 : ε ≤ (xs i0 + δs i0) - L := by bound
-  have hex : ∃ x ∈ S, L - ε < x := by
-    by_contra hcon
-    push Not at hcon
-    have hf := hLleast (L-ε) hcon
-    bound
-  obtain ⟨x, hxS, hxL⟩ := hex
-  obtain ⟨hx_mem, V, hV⟩ := hxS
-  have hballcover : ∀ y, L - ε < y → y ≤ L → y ∈ Ball (xs i0) (δs i0) := by
-    intro y hy1 hy2
-    simp only [Ball, Set.mem_Ioo]
-    refine ⟨by linarith, by linarith[hi0.2]⟩
-  have hLS : L ∈ S := by
-    classical
-    rewrite[Set.mem_setOf]
-    set V' : Finset T := insert i0 V with hdefV'
-    refine ⟨hLmem, V', fun y hy => ?_⟩
-    simp only [Set.mem_Icc] at hy
-    by_cases hyx : y ≤ x
-    · have _h1 : y ∈ Set.Icc a x := ⟨hy.1, hyx⟩
-      have _h2 := hV _h1
-      -- Set.mem_iUnion₂ 和 Set.mem_iUnion 略有区别吧
-      rewrite[Set.mem_iUnion₂] at _h2
-      obtain ⟨j, hjV, hj⟩ := _h2
-      -- obtain ⟨j ,hjV, hj⟩ := Set.mem_iUnion₂.mp (hV ⟨hy.1, hyx⟩)
-      have hjV': j ∈ V' := Finset.mem_insert_of_mem hjV
-      rewrite[Set.mem_iUnion₂]
-      exact ⟨j, hjV', hj⟩
-      -- exact Set.mem_biUnion (Finset.mem_insert_of_mem hjV) hj
-    · push Not at hyx
-      rewrite[Set.mem_iUnion₂]
-      refine ⟨i0, (Finset.mem_insert_self _ _), (hballcover y (by bound) hy.2)⟩
-      -- exact Set.mem_biUnion (Finset.mem_insert_self _ _) (hballcover y (by linarith) hy.2)
--- 证明 L = b
-  rcases eq_or_lt_of_le hLmem.2 with hLeq | hLlt
-  · rw [← hLeq]; exact hLS.2
-  · exfalso
-    set y' := min b (L + ε / 2) with hy'def
-    have hy'gt : L < y' := lt_min hLlt (by linarith)
-    have hy'le : y' ≤ b := min_le_left _ _
-    have hy'le2 : y' ≤ L + ε / 2 := min_le_right _ _
-    have hy'mem : y' ∈ Set.Icc a b := ⟨le_trans hLmem.1 hy'gt.le, hy'le⟩
-    have hy'S : y' ∈ S := by
-      classical
-      refine ⟨hy'mem, insert i0 V, fun z hz => ?_⟩
-      simp only [Set.mem_Icc] at hz
-      by_cases hzx : z ≤ x
-      · have _h1 := hV ⟨hz.1, hzx⟩
-        have _h2 := Set.mem_iUnion₂.mp _h1
-        obtain ⟨j, hjV, hj⟩ := _h2
-        -- obtain ⟨j, hjV, hj⟩ := Set.mem_iUnion₂.mp (hV ⟨hz.1, hzx⟩)
-        exact Set.mem_biUnion (Finset.mem_insert_of_mem hjV) hj
-      · push Not at hzx
-        refine Set.mem_biUnion (Finset.mem_insert_self _ _) ⟨?_, ?_⟩
-        · linarith
-        · linarith
-    linarith [hLub y' hy'S]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--   simp only [IsCompactMine]
+--   intro T xs δs hδsi hcover
+-- -- 这个自定义集合的语法，跟数学上基本一致
+--   set S : Set ℝ := { t | t ∈ Set.Icc a b ∧ ∃ V : Finset T, Set.Icc a t ⊆ ⋃ i ∈ V, Ball (xs i) (δs i)}
+--   have haS : a ∈ S := by
+--     have ha_mem : a ∈ Set.Icc a b := ⟨le_refl a, hab.le⟩
+--     obtain ⟨t, ht⟩ := Set.mem_iUnion.mp (hcover ha_mem)
+--     rw[Set.mem_setOf]
+--     refine ⟨ha_mem, {t}, fun y hy => ?_⟩
+--     have hy' : y = a := le_antisymm hy.2 hy.1
+--     apply Set.mem_biUnion (Finset.mem_singleton_self t)
+--     rw[hy']
+--     exact ht
+--     -- exact Set.mem_biUnion (Finset.mem_singleton_self t) (hy' ▸ ht)
+--     -- hy' ▸ ht 等价于 rw[hy'] exact ht
+
+--   have hM : IsUBMine S b := by
+--     intro s hs
+--     rw[Set.mem_setOf] at hs
+--     exact hs.1.2
+
+--   obtain ⟨L, hLub, hLleast⟩ := HasLUB_of_BddNonempty ⟨a, haS⟩ hM
+--   have hLmem : L ∈ Set.Icc a b := ⟨hLub a haS, hLleast b hM⟩
+--   obtain ⟨i0, hi0⟩ := Set.mem_iUnion.mp (hcover hLmem)
+--   simp only [Ball, Set.mem_Ioo] at hi0
+--   set ε : ℝ := min (L - (xs i0 - δs i0)) ((xs i0 + δs i0) - L) with hεdef
+--   have hεpos : ε > 0 := by bound
+--   have hεle1 : ε ≤ L - (xs i0 - δs i0) := by bound
+--   have hεle2 : ε ≤ (xs i0 + δs i0) - L := by bound
+--   have hex : ∃ x ∈ S, L - ε < x := by
+--     by_contra hcon
+--     push Not at hcon
+--     have hf := hLleast (L-ε) hcon
+--     bound
+--   obtain ⟨x, hxS, hxL⟩ := hex
+--   obtain ⟨hx_mem, V, hV⟩ := hxS
+--   have hballcover : ∀ y, L - ε < y → y ≤ L → y ∈ Ball (xs i0) (δs i0) := by
+--     intro y hy1 hy2
+--     simp only [Ball, Set.mem_Ioo]
+--     refine ⟨by linarith, by linarith[hi0.2]⟩
+--   have hLS : L ∈ S := by
+--     classical
+--     rewrite[Set.mem_setOf]
+--     set V' : Finset T := insert i0 V with hdefV'
+--     refine ⟨hLmem, V', fun y hy => ?_⟩
+--     simp only [Set.mem_Icc] at hy
+--     by_cases hyx : y ≤ x
+--     · have _h1 : y ∈ Set.Icc a x := ⟨hy.1, hyx⟩
+--       have _h2 := hV _h1
+--       -- Set.mem_iUnion₂ 和 Set.mem_iUnion 略有区别吧
+--       rewrite[Set.mem_iUnion₂] at _h2
+--       obtain ⟨j, hjV, hj⟩ := _h2
+--       -- obtain ⟨j ,hjV, hj⟩ := Set.mem_iUnion₂.mp (hV ⟨hy.1, hyx⟩)
+--       have hjV': j ∈ V' := Finset.mem_insert_of_mem hjV
+--       rewrite[Set.mem_iUnion₂]
+--       exact ⟨j, hjV', hj⟩
+--       -- exact Set.mem_biUnion (Finset.mem_insert_of_mem hjV) hj
+--     · push Not at hyx
+--       rewrite[Set.mem_iUnion₂]
+--       refine ⟨i0, (Finset.mem_insert_self _ _), (hballcover y (by bound) hy.2)⟩
+--       -- exact Set.mem_biUnion (Finset.mem_insert_self _ _) (hballcover y (by linarith) hy.2)
+-- -- 证明 L = b
+--   rcases eq_or_lt_of_le hLmem.2 with hLeq | hLlt
+--   · rw [← hLeq]; exact hLS.2
+--   · exfalso
+--     set y' := min b (L + ε / 2) with hy'def
+--     have hy'gt : L < y' := lt_min hLlt (by linarith)
+--     have hy'le : y' ≤ b := min_le_left _ _
+--     have hy'le2 : y' ≤ L + ε / 2 := min_le_right _ _
+--     have hy'mem : y' ∈ Set.Icc a b := ⟨le_trans hLmem.1 hy'gt.le, hy'le⟩
+--     have hy'S : y' ∈ S := by
+--       classical
+--       refine ⟨hy'mem, insert i0 V, fun z hz => ?_⟩
+--       simp only [Set.mem_Icc] at hz
+--       by_cases hzx : z ≤ x
+--       · have _h1 := hV ⟨hz.1, hzx⟩
+--         have _h2 := Set.mem_iUnion₂.mp _h1
+--         obtain ⟨j, hjV, hj⟩ := _h2
+--         -- obtain ⟨j, hjV, hj⟩ := Set.mem_iUnion₂.mp (hV ⟨hz.1, hzx⟩)
+--         exact Set.mem_biUnion (Finset.mem_insert_of_mem hjV) hj
+--       · push Not at hzx
+--         refine Set.mem_biUnion (Finset.mem_insert_self _ _) ⟨?_, ?_⟩
+--         · linarith
+--         · linarith
+--     linarith [hLub y' hy'S]
 
 
 theorem IsCompact_of_ClosedSubset {S T : Set ℝ} (hST : S ⊆ T) (hT : IsCompact T) (hS : IsClosed S) : IsCompact S := by sorry
