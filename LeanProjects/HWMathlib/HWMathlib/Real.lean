@@ -2643,6 +2643,28 @@ theorem HasLUB_of_BddNonempty {S : Set ℝ} (hS : S.Nonempty) {M : ℝ} (hM : Is
     have hdiff2 := hM' s hs1
     bound
 
+-- lemma xyz {T : Type} (S : Set ℝ) (L : ℝ) (hL : L ∈ Set.Icc a b) (xs δs : T → ℝ) (hcover : Set.Icc a b ⊆ ⋃ i, Ball (xs i) (δs i))
+--   (hLUBL : IsLUBMine S L)
+--   : x > 1:= by
+
+--   obtain ⟨L0, hL0⟩ := Set.mem_iUnion.mp (hcover hL)
+--   set δ := min (L - (xs L0 - δs L0)) ((xs L0 + δs L0) - L)
+--   have hδpos : δ > 0 := by
+--     simp only [Ball, Set.mem_Ioo] at hL0
+--     bound
+
+-- ---- 取覆盖了 点 L 的球 B，必定存在(L - δ, L + δ) ⊆ B
+-- ---- 由于 L 是上确界，因此必定存在 x ∈ S ∧ x > L - δ，因此[a, x]存在有限覆盖 V
+-- ---- 此处没有用 [a, L - δ] 存在有限覆盖，是因为可能 L - δ < a，如果只是文字证明，就会漏掉这一点
+--   have hxins : ∃ x ∈ S, x > L - δ := by
+--     by_contra hcon
+--     push Not at hcon
+--     have hf := hLUBL.2 (L-δ) hcon
+--     bound
+--   obtain ⟨x, hx⟩ := hxins
+--   obtain ⟨VLx, hVLx⟩ := hx.1.2
+-- ---- 因此 V + B 就是[a, L]的有限覆盖，因此 L ∈ S
+--   set V : Finset T := insert L0 VLx
 
 theorem IsCompact_of_ClosedInterval {a b : ℝ} (hab : a < b) : IsCompactMine (Set.Icc a b) := by
   simp only [IsCompactMine]
@@ -2651,17 +2673,104 @@ theorem IsCompact_of_ClosedInterval {a b : ℝ} (hab : a < b) : IsCompactMine (S
   set S := { x | x ∈ Set.Icc a b ∧ ∃ V : Finset T, Set.Icc a x ⊆ ⋃ i ∈ V, Ball (xs i) (δs i)}
 -- 因为 a ∈ S，所以 S 非空
   have haS : a ∈ S := by
-    have : a ∈ Set.Icc a b := ⟨(le_self _, le_of_lt hab)⟩
+    rewrite[Set.mem_setOf]
+    have hainab: a ∈ Set.Icc a b := ⟨(by bound), (le_of_lt hab)⟩
+    obtain⟨a0, ha0⟩ := Set.mem_iUnion.mp (hcover hainab)
+    constructor
+    · exact hainab
+    · simp
+      set V : Finset T := { a0 }
+      have ha0inV : a0 ∈ V := Finset.mem_singleton_self a0
+      exact ⟨V, a0, ha0inV, ha0⟩
 -- 同时因为 S 有上界 b，因此 S 存在上确界，假设上确界是 L
+  have hSUB : IsUBMine S b := by
+    intro s hs
+    rewrite[Set.mem_setOf] at hs
+    exact hs.1.2
+
+  obtain ⟨L, hLUBL⟩ := HasLUB_of_BddNonempty ⟨a, haS⟩ hSUB
 -- 先证明 L ∈ S
+  have hLinS : L ∈ S := by
+    classical
+    have hLleb := hLUBL.2 b hSUB
+    have hLgea := hLUBL.1 a haS
+    obtain ⟨L0, hL0⟩ := Set.mem_iUnion.mp (hcover (⟨hLgea, hLleb⟩))
+    set δ := min (L - (xs L0 - δs L0)) ((xs L0 + δs L0) - L)
+    have hδpos : δ > 0 := by
+      simp only [Ball, Set.mem_Ioo] at hL0
+      bound
+
 ---- 取覆盖了 点 L 的球 B，必定存在(L - δ, L + δ) ⊆ B
----- 由于 L 是上确界，因此 L - δ ∈ S，因此[a, L-δ]存在有限覆盖 V
+---- 由于 L 是上确界，因此必定存在 x ∈ S ∧ x > L - δ，因此[a, x]存在有限覆盖 V
+---- 此处没有用 [a, L - δ] 存在有限覆盖，是因为可能 L - δ < a，如果只是文字证明，就会漏掉这一点
+    have hxins : ∃ x ∈ S, x > L - δ := by
+      by_contra hcon
+      push Not at hcon
+      have hf := hLUBL.2 (L-δ) hcon
+      bound
+    obtain ⟨x, hx⟩ := hxins
+    obtain ⟨VLx, hVLx⟩ := hx.1.2
 ---- 因此 V + B 就是[a, L]的有限覆盖，因此 L ∈ S
+    set V : Finset T := insert L0 VLx
+---- 虽然文字描述就一句话，挺简单的，但是证明还是挺啰嗦的
+---- 要证明 S 中每个元素都被 V 覆盖，就要分两种情况 [a, x] 之间被 VLx 覆盖；[x, L] 之间的被 L0覆盖
+    rewrite[Set.mem_setOf]
+    constructor
+    · exact ⟨hLgea, hLleb⟩
+    · refine ⟨V, ?_⟩
+      intro y hy
+      by_cases hcase : y ≤ x
+      · have _h1 := hVLx (⟨hy.1, hcase⟩)
+        simp only [Set.mem_iUnion] at _h1
+        obtain ⟨bi, hbi, hybi⟩ := _h1
+        have hbiV : bi ∈ V := Finset.mem_insert_of_mem hbi
+        simp only [Set.mem_iUnion]
+        exact ⟨bi, hbiV, hybi⟩
+      · have _h1 : y ∈ Ball (xs L0) (δs L0) := by
+          simp only [Ball, Set.mem_Ioo]
+          simp only [Set.mem_Icc] at hy
+          simp only [Ball, Set.mem_Ioo] at hL0
+          push Not at hcase
+          constructor
+          · have hδ1 : δ ≤ L - (xs L0 - δs L0) := by bound
+            bound
+          · bound
+        have _h2 : L0 ∈ V := Finset.mem_insert_self _ _
+        simp only [Set.mem_iUnion]
+        exact ⟨L0, _h2, _h1⟩
 -- 再证明 L = b
+  have hLb : L = b := by
+    have hLleb : L ≤ b := hLUBL.2 b hSUB
 ---- 因为 L 是 S 的上确界且 b 是 S 的上界，因此 L ≤ b
+    rcases eq_or_lt_of_le hLleb with hLeq | hLle
+    · bound
+    · classical
 ---- 假设 L < b，由于 [a, b] 的开覆盖中必定存在一个球 B 覆盖点 L，必定存在(L - δ, L + δ) ⊆ B
----- 由于 L 是 S 的上确界，因此 L - δ ∈ S，因此 [a, L-δ]存在有限覆盖 V
+      obtain ⟨L0, hL0⟩ := Set.mem_iUnion.mp (hcover (⟨hLUBL.1 a haS, hLleb⟩))
+      set δ := min (L-(xs L0 - δs L0)) (xs L0 + δs L0 - L)
+      have hδpos : δ > 0 := by
+        simp only [Ball, Set.mem_Ioo] at hL0
+        bound
+---- 由于 L 是 S 的上确界，因此必定存在 x ∈ S ∧ x > L - δ，因此[a, x]存在有限覆盖 V
+      have hxins : ∃ x ∈ S, x > L - δ := by
+        by_contra hcon
+        push Not at hcon
+        have hf := hLUBL.2 (L-δ) hcon
+        bound
+      obtain ⟨x, hx⟩ := hxins
+      obtain ⟨VLx, hVLx⟩ := hx.1.2
+      set V : Finset T := insert L0 VLx
+      have hdiff : (L + δ/2) ∈ S := by
+        rewrite[Set.mem_setOf]
+        constructor
+        · simp only [Set.mem_Icc]
+          have hδ1 : δ ≤ L - (xs L0 - δs L0) := by bound
+          constructor
+          · bound
+          · bound
 ---- 因此 V + B 就是[a, L+δ/2]的有限覆盖，这与 L 是 S 的上确界矛盾了
+      have hfalse := hLUBL.1 (L+δ/2) hdiff
+      bound
 
 
 
