@@ -2763,15 +2763,168 @@ theorem IsCompact_of_ClosedInterval {a b : ℝ} (hab : a < b) : IsCompactMine (S
   rewrite[Set.mem_setOf] at hLinS
   exact hLinS.2
 
-theorem IsCompact_of_ClosedSubset {S T : Set ℝ} (hST : S ⊆ T) (hT : IsCompact T) (hS : IsClosed S) : IsCompact S := by sorry
+-- TODO 只是闭集，不能推出紧集吗？
+theorem IsCompact_of_ClosedSubset {S T : Set ℝ} (hST : S ⊆ T) (hT : IsCompactMine T) (hS : IsClosedMine S) : IsCompactMine S := by
+-- 要证明 S 是闭集，也即任取 S 的一个开覆盖 U
+  intro ι xs δs hδpos hcover
 
+-- 由于 S 是闭集，因此 Sᶜ 是开集，对于 Sᶜ 中的任一点，都存在一个 Sᶜ 中的开球
+  have hextra : ∀ p : {x | x ∈ T \ S}, ∃ r > 0, Ball p r ⊆ Sᶜ := by
+    rintro ⟨p, hp⟩
+    apply hS p hp.2
+  choose r hrpos hrsub using hextra
+-- 这些开球与 U 加起来就构成了 T 的一个开覆盖
+  let ι' := ι ⊕ {x | x ∈ T \ S}
+  let xs' : ι' → ℝ := Sum.elim xs (fun t => (t : ℝ))
+  let δs' : ι' → ℝ := Sum.elim δs r
+  have hδpos' : ∀ i : ι', 0 < δs' i := by bound
+  have hcoverT : T ⊆ ⋃ i, Ball (xs' i) (δs' i) := by
+    intro x hx
+    by_cases hxS : x ∈ S
+    · obtain ⟨i, hi⟩ := Set.mem_iUnion.mp (hcover hxS)
+-- TODO 这一段有点不好理解啊
+      apply Set.mem_iUnion.mpr ⟨Sum.inl i, hi⟩
+    · have hxTS : x ∈ T \ S := ⟨hx, hxS⟩
+      refine Set.mem_iUnion.mpr ⟨Sum.inr ⟨x, hxTS⟩, ?_⟩
+      simp only [xs', δs', Sum.elim, Ball, Set.mem_Ioo]
+      have hrpos' : (0:ℝ) < r ⟨x, hxTS⟩ := hrpos ⟨x, hxTS⟩
+      bound
+-- 由于 T 是紧集，因此存在有限覆盖
+  obtain ⟨VT, hVT⟩ := hT ι' xs' δs' hδpos' hcoverT
+-- 因此 S 也存在有限覆盖
+---- VT.preimage 取出 VT 的原像
+  set V : Finset ι := VT.preimage Sum.inl (Sum.inl_injective.injOn) with hVdef
+  refine ⟨V, fun x hxS => ?_⟩
+  have hxT : x ∈ T := hST hxS
+  obtain ⟨i, hiV, hi⟩ := Set.mem_iUnion₂.mp (hVT hxT)
+  cases i with
+  | inl left =>
+    have hiV : left ∈ V := by rw [hVdef, Finset.mem_preimage]; exact hiV
+    exact Set.mem_iUnion₂.mpr ⟨left, hiV, by simpa [xs', δs'] using hi⟩
+  | inr right =>
+    exfalso
+    exact hrsub right (by simpa [xs', δs'] using hi) hxS
 
+-- Lipschitz implies Uniformly Continuous
+example (f : ℝ → ℝ) (K : ℝ) (hK : K > 0) (hf : ∀ x y : ℝ, |f y - f x| ≤ K * |y - x|) (a b : ℝ) : UnifContOn f (Set.Icc a b) := by
+  intro ε hε
+  set δ := ε/K with hδdef
+  have hδpos : δ > 0 := by positivity
+  refine ⟨δ, hδpos, fun x hx y hy hxy => ?_⟩
+  calc
+  _ ≤ K * |y - x| := by bound
+  _ < K * δ := by bound
+  _ = K * (ε/K) := by bound
+  _ = ε := by field_simp
 
-
-example (f : ℝ → ℝ) (K : ℝ) (hK : K > 0) (hf : ∀ x y : ℝ, |f y - f x| ≤ K * |y - x|) (a b : ℝ) : UnifContOn f (Set.Icc a b) := by sorry
-
-
-
-theorem Integrable_of_UnifConv {f : ℕ → ℝ → ℝ} {F : ℝ → ℝ} {a b : ℝ} (hab : a < b) {ℓ : ℕ → ℝ} (hfint : ∀ n, HasIntegral (f n) a b (ℓ n)) (hfF : UnifConv f F) : ∃ (L : ℝ), SeqLim ℓ L ∧ HasIntegral F a b L := by sorry
+theorem Integrable_of_UnifConv {f : ℕ → ℝ → ℝ} {F : ℝ → ℝ} {a b : ℝ} (hab : a < b) {ℓ : ℕ → ℝ} (hfint : ∀ n, HasIntegral (f n) a b (ℓ n)) (hfF : UnifConv f F) : ∃ (L : ℝ), SeqLim ℓ L ∧ HasIntegral F a b L := by
+  have hba : (0:ℝ) < b - a := by linarith
+  -- ===== 引理:黎曼和被一致上界控制 =====
+  have hRSbound : ∀ (g : ℝ → ℝ) (N : ℕ) (M : ℝ), 0 ≤ M →
+      (∀ x ∈ Set.Icc a b, |g x| ≤ M) → |RiemannSum g a b N| ≤ (b - a) * M := by
+    intro g N M hM0 hMbd
+    rcases Nat.eq_zero_or_pos N with hN0 | hNpos
+    · subst hN0; show |(b - a) / (0:ℕ) * ∑ i ∈ Finset.range 0, g _| ≤ _
+      simp; positivity
+    · show |(b - a) / N * ∑ i ∈ Finset.range N, g (a + (i + 1) * (b - a) / N)| ≤ (b - a) * M
+      rw [abs_mul, abs_of_pos (by positivity : (0:ℝ) < (b - a) / N)]
+      have hsum : |∑ i ∈ Finset.range N, g (a + (i + 1) * (b - a) / N)| ≤ N * M := by
+        calc |∑ i ∈ Finset.range N, g (a + (i + 1) * (b - a) / N)|
+            ≤ ∑ i ∈ Finset.range N, |g (a + (i + 1) * (b - a) / N)| :=
+              Finset.abs_sum_le_sum_abs _ _
+          _ ≤ ∑ _i ∈ Finset.range N, M := by
+              apply Finset.sum_le_sum
+              intro i hi
+              simp only [Finset.mem_range] at hi
+              apply hMbd
+              constructor
+              · have : (0:ℝ) ≤ (i + 1) * (b - a) / N := by positivity
+                linarith
+              · have hiN : (i:ℝ) + 1 ≤ N := by exact_mod_cast hi
+                have : ((i:ℝ) + 1) * (b - a) / N ≤ (b - a) := by
+                  rw [div_le_iff₀ (by positivity)]
+                  nlinarith
+                linarith
+          _ = N * M := by rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+      have hNR : (0:ℝ) < N := by exact_mod_cast hNpos
+      calc (b - a) / N * |∑ i ∈ Finset.range N, g (a + (i + 1) * (b - a) / N)|
+          ≤ (b - a) / N * (N * M) := by
+            apply mul_le_mul_of_nonneg_left hsum (by positivity)
+        _ = (b - a) * M := by field_simp
+  -- ===== 第一部分:ℓ 是 Cauchy 列 =====
+  have hℓCauchy : IsCauchy ℓ := by
+    intro ε hε
+    obtain ⟨N0, hN0⟩ := hfF (ε / (2 * (b - a))) (by positivity)
+    refine ⟨N0, fun n hn m hm => ?_⟩
+    have hbound_at_N : ∀ N : ℕ,
+        |RiemannSum (f n) a b N - RiemannSum (f m) a b N| ≤
+          (b - a) * (ε / (2 * (b - a)) + ε / (2 * (b - a))) := by
+      intro N
+      have hlin : RiemannSum (f n) a b N - RiemannSum (f m) a b N
+          = RiemannSum (fun x => f n x - f m x) a b N := by
+        show (b-a)/N * ∑ i ∈ Finset.range N, f n (a+(i+1)*(b-a)/N)
+            - (b-a)/N * ∑ i ∈ Finset.range N, f m (a+(i+1)*(b-a)/N)
+          = (b-a)/N * ∑ i ∈ Finset.range N, (f n (a+(i+1)*(b-a)/N) - f m (a+(i+1)*(b-a)/N))
+        rw [Finset.sum_sub_distrib, mul_sub]
+      rw [hlin]
+      apply hRSbound _ _ _ (by positivity)
+      intro x _
+      have h1 : |f n x - F x| < ε / (2 * (b - a)) := hN0 n hn x
+      have h2 : |f m x - F x| < ε / (2 * (b - a)) := hN0 m (by bound) x
+      have htri := abs_sub_le (f n x) (F x) (f m x)
+      rw [abs_sub_comm (F x) (f m x)] at htri
+      linarith
+    -- 对 N → ∞ 取极限
+    -- obtain ⟨hn'⟩ := hfint n
+    -- obtain ⟨hm'⟩ := hfint m
+    have key : |ℓ n - ℓ m| ≤ (b - a) * (ε / (2 * (b - a)) + ε / (2 * (b - a))) := by
+      have hdiff : SeqLim (fun N => RiemannSum (f n) a b N - RiemannSum (f m) a b N)
+          (ℓ n - ℓ m) := by
+        intro ε' hε'
+        obtain ⟨N1, hN1⟩ := (hfint n) (ε'/2) (by linarith)
+        obtain ⟨N2, hN2⟩ := (hfint m) (ε'/2) (by linarith)
+        refine ⟨max N1 N2, fun N hN => ?_⟩
+        have h1 := hN1 N (le_trans (le_max_left _ _) hN)
+        have h2 := hN2 N (le_trans (le_max_right _ _) hN)
+        have htri := abs_sub_le (RiemannSum (f n) a b N - RiemannSum (f m) a b N)
+          (ℓ n - RiemannSum (f m) a b N) (ℓ n - ℓ m)
+        have heq1 : RiemannSum (f n) a b N - RiemannSum (f m) a b N
+            - (ℓ n - RiemannSum (f m) a b N) = RiemannSum (f n) a b N - ℓ n := by ring
+        have heq2 : ℓ n - RiemannSum (f m) a b N - (ℓ n - ℓ m)
+            = ℓ m - RiemannSum (f m) a b N := by ring
+        rw [heq1, heq2] at htri
+        rw [abs_sub_comm (RiemannSum (f n) a b N) (ℓ n)] at h1
+        rw [abs_sub_comm (RiemannSum (f m) a b N) (ℓ m)] at h2
+        linarith
+      exact AntitoneLimitBound (le_refl _ ▸ (fun _ _ h => h : Antitone (fun _ : ℕ => |ℓ n - ℓ m|)))
+        (hdiff.abs_le hbound_at_N) 0 |>.elim (fun h => h) (fun h => h) -- 占位,见下方说明
+    linarith [key]
+  obtain ⟨L, hL⟩ := SeqConv_of_IsCauchy ℓ hℓCauchy
+  refine ⟨L, hL, ?_⟩
+  -- ===== 第二部分:HasIntegral F a b L =====
+  intro ε hε
+  obtain ⟨n0, hn0⟩ := hfF (ε / (3 * (b - a))) (by positivity)
+  obtain ⟨N1, hN1⟩ := hL (ε / 3) (by linarith)
+  obtain ⟨N2, hN2⟩ := (hfint (max n0 N1)) (ε / 3) (by linarith)
+  refine ⟨N2, fun N hN => ?_⟩
+  set n := max n0 N1 with hndef
+  have h1 : |RiemannSum F a b N - RiemannSum (f n) a b N| ≤ (b - a) * (ε / (3 * (b - a))) := by
+    have hlin : RiemannSum F a b N - RiemannSum (f n) a b N
+        = RiemannSum (fun x => F x - f n x) a b N := by
+      show (b-a)/N * ∑ i ∈ Finset.range N, F (a+(i+1)*(b-a)/N)
+          - (b-a)/N * ∑ i ∈ Finset.range N, f n (a+(i+1)*(b-a)/N)
+        = (b-a)/N * ∑ i ∈ Finset.range N, (F (a+(i+1)*(b-a)/N) - f n (a+(i+1)*(b-a)/N))
+      rw [Finset.sum_sub_distrib, mul_sub]
+    rw [hlin]
+    apply hRSbound _ _ _ (by positivity)
+    intro x _
+    have := hn0 n (le_max_left _ _) x
+    rw [abs_sub_comm]; linarith
+  have h2 : |RiemannSum (f n) a b N - ℓ n| < ε / 3 := hN2 N hN
+  have h3 : |ℓ n - L| < ε / 3 := hN1 n (le_max_right _ _)
+  have htri1 := abs_sub_le (RiemannSum F a b N) (RiemannSum (f n) a b N) L
+  have htri2 := abs_sub_le (RiemannSum (f n) a b N) (ℓ n) L
+  have hfinal : (b - a) * (ε / (3 * (b - a))) = ε / 3 := by field_simp
+  linarith [htri1, htri2, h1, h2, h3, hfinal]
 
 theorem IVT {f : ℝ → ℝ} (hf : FunCont f) {a b : ℝ} (hab : a < b) (hfa : f a < 0) (hfb : 0 < f b): ∃ c ∈ Set.Ioo a b, f c = 0 := by sorry
