@@ -1,0 +1,18 @@
+import Mathlib
+import Formalism.PeriodIntegrals.ScMuExists
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.InstDecomp
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.InstLeftInvMuInf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.GenericWeilRepresentation
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.HaarSub
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.GenSemiOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.ModOne
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.ContinuousUMatApply
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.Proper
+
+namespace PI.ScMuExists.UnitaryGroupMassFormula
+
+theorem target_of_instDecomp (hd : InstDecomp) : PI.ScMuExists.Target :=
+  target_of_steps generic_haar_subgroup (genSemi_of generic_haar_subgroup) generic_weil_representation measure_subFacts
+    (genModOne_of generic_haar_subgroup) hd proper_action_instance
+
+end PI.ScMuExists.UnitaryGroupMassFormula

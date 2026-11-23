@@ -1,0 +1,15 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeComparisonRootMetrics
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
+import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+import Development.AbelianVarietyTheory.Definitions.Divisors.ChernOn
+import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
+open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.BasicNotions.TH Formalism.L2.Theta ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.Mean4 GlobalTheory.Mean4O
+open scoped ENNReal Classical
+open MvPolynomial Formalism.DegreeFormula Formalism.BasicNotions.DV Formalism.MainNotions.WeightThresholdDefs Filter Topology ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M GlobalTheory.FlagPoly GlobalTheory.FlagAr
+open GlobalTheory.ShFam GlobalTheory.ShFam.Pad GlobalTheory.TrueGeo AlgebraicGeometry CategoryTheory
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.ArInt GlobalTheory.Cartier GlobalTheory.CxPts
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.degree_comparison_root_metrics : Hypotheses2 → HypothesesH → ∀ (D : D7) (O : Setup D), O.Core → ∀ (A : SlopeTestRemainingChoices O.Y) (T : Real0 O.Y) (H : Ht O.Y) (h : O.Reads A T H) (B : ℝ), 2 ≤ B → ∀ R : ℝ, Real.exp 2 ≤ R → ∀ (c : O.s.Comp) (u : D.what₂.Tau → Fin O.N → ℝ) (M : GlobalTheory.TrueGeo.Model (O.var c)) (L : D.what₂.Tau × Fin O.N → GlobalTheory.HermLB M.p) (m : ℕ+) (Ψ : MvPolynomial (D.what₂.Tau × Fin O.N) ℝ →ₗ[ℝ] ℝ), (∀ x, (adlOf (O.Φ.C c) (O.met.hm c) (rootSym O.S.Dw (ArIn.ind (GlobalTheory.FlagAr.setB O.Y B)) (some R) (DV.tauEmb D x.1) x.2)).Induced M (L x) m 0) → (haveI := M.ar.isIntegral; IsArFun L (O.var c).dim Ψ) → ∀ (ε : (𝓞 D.what₂.LL →+* ℂ) → Fin ((T.M c).n + 1)) (π : ∀ σ, GlobalTheory.CxPts (h.mdl (GlobalTheory.FlagAr.setB O.Y B) c).V.p σ → (T.M c).X (ε σ)), (h.mdl (GlobalTheory.FlagAr.setB O.Y B) c).V.IsDown (h.man c) ε π → ∀ (hu : ∀ σ y, GlobalTheory.CxPts.CInfAt ((T.M c).pull ε π ((2 : ℝ) • (T.F c).phR R u) σ) y) (hc : ∀ σ σ', (GlobalTheory.Weight.ofFun ((T.M c).pull ε π ((2 : ℝ) • (T.F c).phR R u) σ)).IsConj (GlobalTheory.Weight.ofFun ((T.M c).pull ε π ((2 : ℝ) • (T.F c).phR R u) σ'))) (Φ : MvPolynomial (Option (Option (D.what₂.Tau × Fin O.N))) ℝ →ₗ[ℝ] ℝ), IsArFun (fun o => o.elim (fnB ((T.M c).pull ε π ((2 : ℝ) • (T.F c).phR R u)) hu hc) ((h.mdl (GlobalTheory.FlagAr.setB O.Y B) c).gens (GlobalTheory.FlagAr.setB O.Y B))) (dimY O.Y) Φ → Ψ (linRoot u ^ (dimY O.Y + 1)) / (((m : ℕ) : ℝ) ^ (dimY O.Y + 1) * (Module.finrank ℚ D.what₂.LL : ℝ)) = Φ (lin (fun o => o.elim 1 fun o' => o'.elim 0 fun x => u x.1 x.2) ^ (dimY O.Y + 1)) / (h.mdl (GlobalTheory.FlagAr.setB O.Y B) c).V.ν := by
+  first | exact @GlobalTheory.RadicalRootComparison.compare_main | exact GlobalTheory.RadicalRootComparison.compare_main | (intros; apply GlobalTheory.RadicalRootComparison.compare_main <;> assumption)

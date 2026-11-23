@@ -1,0 +1,97 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["dae360eb5eff4a52.olean"],
+  "m": false,
+  "i": "31db74af3a8ae995.ilean",
+  "c": "c5755969a4e604ea.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:85:12: This simp argument is unused:\n  Fin.exists_fin_two\n\nHint: Omit it from the simp argument list.\n  [apply] simp [vx, eq_comm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:85:32: This simp argument is unused:\n  eq_comm\n\nHint: Omit it from the simp argument list.\n  [apply] simp [vx, Fin.exists_fin_two]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:93:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:101:53: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead\n\nNote: The updated constant has a different type:\n  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]\n    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),\n    ‖PiLp.single p i b‖ = ‖b‖\ninstead of\n  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),\n    ‖EuclideanSpace.single i a‖ = ‖a‖\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:101:53: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead\n\nNote: The updated constant has a different type:\n  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]\n    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),\n    ‖PiLp.single p i b‖ = ‖b‖\ninstead of\n  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),\n    ‖EuclideanSpace.single i a‖ = ‖a‖\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:101:53: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead\n\nNote: The updated constant has a different type:\n  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]\n    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),\n    ‖PiLp.single p i b‖ = ‖b‖\ninstead of\n  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),\n    ‖EuclideanSpace.single i a‖ = ‖a‖\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:101:53: `EuclideanSpace.norm_single` has been deprecated: Use `PiLp.norm_single` instead\n\nNote: The updated constant has a different type:\n  ∀ (p : ENNReal) {ι : Type u_2} (β : ι → Type u_4) [hp : Fact (1 ≤ p)] [inst : Fintype ι]\n    [inst_1 : (i : ι) → SeminormedAddCommGroup (β i)] [inst_2 : DecidableEq ι] (i : ι) (b : β i),\n    ‖PiLp.single p i b‖ = ‖b‖\ninstead of\n  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] [inst_2 : Fintype ι] (i : ι) (a : 𝕜),\n    ‖EuclideanSpace.single i a‖ = ‖a‖\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.norm_single` to `PiLp.norm_single x`).",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:101:53: This simp argument is unused:\n  EuclideanSpace.norm_single\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Matrix.gram_apply, hb, vx, e₀, e₁, inner_smul_left, inner_smul_right, EuclideanSpace.inner_single_left,\n    norm_smul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:101:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:145:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:146:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:147:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:203:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:210:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean:311:4: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.HarderNarasimhan.DegSupermodZ transitive imports (legacy)",
+       "d50fd71491a67820"],
+      ["Formalism.HarderNarasimhan.DegSupermodZ:importAllArts",
+       "57d68a09e3c709d8"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic transitive imports (legacy)",
+       "f0500e038e20b3c5"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic:importAllArts",
+       "fbcfb8278396f5d1"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes transitive imports (legacy)",
+       "fecf99ba62962eb2"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes:importAllArts",
+       "4e13c344d9394a99"],
+      ["Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax transitive imports (legacy)",
+       "820885b294d82148"],
+      ["Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax:importAllArts",
+       "13b088bfd8574947"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/Example.lean",
+   "16460becf00a5226"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HarderNarasimhan.HarderNarasimhanProofs.Example",
+   "7c6e190f99a64ce6"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "5d067f7c60d92f44"}

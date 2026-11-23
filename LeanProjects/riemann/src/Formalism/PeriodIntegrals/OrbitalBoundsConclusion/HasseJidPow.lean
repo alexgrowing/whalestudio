@@ -1,0 +1,5 @@
+import Formalism.PeriodIntegrals.HasseJidPow
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseJacobsonPowers.SfrMulMemJHfr
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HassePresH
+
+theorem hasse_jid_power : PI.HasseJidPow := PI.HJP.hasseJidPow_of hasse_presentation

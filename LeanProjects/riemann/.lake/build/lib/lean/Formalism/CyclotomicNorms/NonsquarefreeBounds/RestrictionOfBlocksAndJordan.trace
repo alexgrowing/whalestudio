@@ -1,0 +1,71 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["5738c8cbc8b8feee.olean"],
+  "m": false,
+  "i": "525ddd4dfaa1dcf9.ilean",
+  "c": "984548b4adc5f9a2.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:208:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:224:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:416:4: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:358:12: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hjj, Ne.symm hjj] at h2\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:358:34: This simp argument is unused:\n  hjj\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, Ne.symm hjj] at h2\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:359:44: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:420:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:359:44: Unused tactic linter: `exact h2` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean:420:8: Unused tactic linter: `exact (MonoidHom.mem_ker).mpr (hker1 x hx)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.CyclotomicNorms.StatementI transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.CyclotomicNorms.StatementI:importAllArts",
+       "acfe58ab95fcc8d8"],
+      ["Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.PowerPCycle transitive imports (legacy)",
+       "595b275369d98b87"],
+      ["Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.PowerPCycle:importAllArts",
+       "ab106265eae6250e"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/CyclotomicNorms/NonsquarefreeBounds/RestrictionOfBlocksAndJordan.lean",
+   "03dbeaf78d60c2a0"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.CyclotomicNorms.NonsquarefreeBounds.RestrictionOfBlocksAndJordan",
+   "41aa32fa0b70c943"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "8eef6103ff110d19"}

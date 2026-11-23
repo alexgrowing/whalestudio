@@ -1,0 +1,7 @@
+import Mathlib
+import Formalism.PeriodIntegrals.FglGram
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramSubstitutionIntegral.Assemble
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramSubstitutionIntegral.Expand
+
+theorem phase_gram' : PI.FglGram.PhGram :=
+  PI.UnitaryGroupMassFormula.PhGram.phGram_of_steps PI.UnitaryGroupMassFormula.PhGram.gram_bilinear_expansion PI.UnitaryGroupMassFormula.PhGram.gram_sum_first_variable

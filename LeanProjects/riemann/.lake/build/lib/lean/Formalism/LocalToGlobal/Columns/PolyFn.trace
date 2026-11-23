@@ -1,0 +1,98 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["6595b22832b8a796.olean"],
+  "m": false,
+  "i": "42566b0d4fc2ce69.ilean",
+  "c": "5620b11056b8337c.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/PolyFn.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/PolyFn.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/PolyFn.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/PolyFn.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/PolyFn.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:31:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.stdFr_isON`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:38:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.mulU_isON`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:50:94: Variable name `P` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _P\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:50:96: Variable name `Q` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _Q\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:61:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:58:75: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:61:4: Unused tactic linter: `simp [evFr, fnOf, mapS, MvPolynomial.eval_map]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:66:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.isUnit_det_fr`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:68:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.norm_deFr`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:90:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:90:6: Unused tactic linter: `exact\n  (Matrix.mulVec_injective_iff_isUnit).2 ((Matrix.isUnit_iff_isUnit_det X).2 hX)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:153:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:175:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.eval_udv_eq_zero`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:231:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:266:34: Variable name `o` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _o\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:276:52: This simp argument is unused:\n  Pi.zero_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [fnOf, LinearMap.coe_mk, AddHom.coe_mk, hMz] at h1\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/PolyFn.lean:314:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.stdFrC_isON`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.HermitianForms.IsLocBasis transitive imports (legacy)",
+       "3c6fd2732bc988d8"],
+      ["Formalism.LocalToGlobal.HermitianForms.IsLocBasis:importAllArts",
+       "907da944a67d4f58"],
+      ["Formalism.LocalToGlobal.Divisibility.CoefMod transitive imports (legacy)",
+       "46ce943ef50f7af4"],
+      ["Formalism.LocalToGlobal.Divisibility.CoefMod:importAllArts",
+       "89bf519cc3ac7a29"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf transitive imports (legacy)",
+       "69ccb438e1378f7a"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf:importAllArts",
+       "af1f7f5c7f5722f3"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/PolyFn.lean",
+   "1da056a97fb8200f"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Columns.PolyFn", "1287a4b42d10bce7"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "976ae644f4a16638"}

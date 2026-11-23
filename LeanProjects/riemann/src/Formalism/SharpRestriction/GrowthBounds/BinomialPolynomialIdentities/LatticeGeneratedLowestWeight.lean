@@ -1,0 +1,15 @@
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.NablaDualLatticeOfIrreducibleLowestGenerated
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.DividedPowerReverseDividedPowerEqSelf
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.HighestWeightSpaceEqSpanHighestWeightVector
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.ContragredientLatticeFGOfIrreducible
+
+namespace Formalism.MainNotions.G.ColumnFamilies
+
+theorem lattice_generated_lowest_weight (D : Formalism.BasicNotions.D7) : DeltaGeneratedByLowestWeightVector := deltaGenerated_of_extremalVector_of_dualInjective lowest_weight_extremal_vector (dualFunctional_lowestWeight_injective D)
+
+theorem lattice_nabla_eq (D : Formalism.BasicNotions.D7) : NablaContragredientEqDualLatticeDelta := nablaDualLattice_of_irreducible_lowest_generated (contragredientIrreducible_generated D) (dualFunctional_lowestWeight_injective D) (lattice_generated_lowest_weight D)
+
+theorem admissible_lattice_biduality (D : Formalism.BasicNotions.D7) : Formalism.MainNotions.CovariantDegrees.WeylDualityLattice D :=
+  weylDualityLattice_of_nabla_fg_bidual D (lattice_nabla_eq D) (contragredientLatticeFG_of_irreducible (contragredientIrreducible_generated D)) integral_lattice_bidual
+
+end Formalism.MainNotions.G.ColumnFamilies

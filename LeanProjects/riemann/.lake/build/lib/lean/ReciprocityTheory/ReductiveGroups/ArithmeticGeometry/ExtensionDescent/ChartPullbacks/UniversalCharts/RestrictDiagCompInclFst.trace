@@ -1,0 +1,59 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["5e2d82ed58c4ded9.olean"],
+  "m": false,
+  "i": "c0a05b061cd69848.ilean",
+  "c": "0674e5f05311d974.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean:36:58: This simp argument is unused:\n  Algebra.algebraMap_self\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [LinearMap.toSpanSingleton_apply, Algebra.smul_def, MulOpposite.smul_eq_mul_unop,\n    MulOpposite.unop_op, map_mul, Algebra.ofId_apply, RingHom.id_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean:36:83: This simp argument is unused:\n  RingHom.id_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [LinearMap.toSpanSingleton_apply, Algebra.smul_def, MulOpposite.smul_eq_mul_unop,\n    MulOpposite.unop_op, map_mul, Algebra.ofId_apply, Algebra.algebraMap_self]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean:43:6: `ext` did not consume the patterns `a`\n\nNote: This linter can be disabled with `set_option linter.unusedRCasesPattern false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean:58:9: Variable name `i` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _i\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean:141:36: This simp argument is unused:\n  LinearMap.snd_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [LinearMap.fst_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean:145:15: This simp argument is unused:\n  LinearMap.fst_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [LinearMap.snd_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/ReciprocityTheory:extraDep",
+     [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.DualLiftInjective transitive imports (legacy)",
+       "b112580ba7fcdeee"],
+      ["ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.DualLiftInjective:importAllArts",
+       "58607cb4985574ed"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ExtensionDescent/ChartPullbacks/UniversalCharts/RestrictDiagCompInclFst.lean",
+   "0238a7330ff4a349"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.RestrictDiagCompInclFst",
+   "419f4be96e9bf81e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "1a3da9e37812044a"}

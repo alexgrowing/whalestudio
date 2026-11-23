@@ -1,0 +1,138 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubSelf
+import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExists
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConstOfPolConst
+
+open NumberField IsDedekindDomain
+open scoped Matrix
+open Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
+
+noncomputable section
+
+namespace GlobalTheory.HoweNonsplitKer
+
+theorem det_ne_of_hasSig {n r s : ℕ} {M : Matrix (Fin n) (Fin n) ℂ} (h : HasSig M r s) : M.det ≠ 0 := by
+  obtain ⟨hrs, A, hA⟩ := h
+  let e : Fin r ⊕ Fin s ≃ Fin n := finSumFinEquiv.trans (finCongr hrs)
+  let A' : Matrix (Fin n) (Fin n) ℂ := A.submatrix id e.symm
+  have h1 : A'ᵀ * M * A'.map star = (Matrix.fromBlocks (1 : Matrix (Fin r) (Fin r) ℂ) 0 0 (-1)).submatrix e.symm e.symm := by
+    rw [← hA]; ext i j; simp [A', Matrix.mul_apply, Matrix.submatrix_apply, Matrix.transpose_apply, Matrix.map_apply]
+  have h2 : (A'ᵀ * M * A'.map star).det ≠ 0 := by
+    rw [h1, Matrix.det_submatrix_equiv_self, Matrix.det_fromBlocks_zero₂₁]
+    simp [Matrix.det_neg]
+  intro h0
+  apply h2
+  rw [Matrix.det_mul, Matrix.det_mul, h0]; simp
+
+theorem det_ne_of_sig {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] {n r s : ℕ}
+    (B : Base F E) (J : Matrix (Fin n) (Fin n) E) (h : ∀ w, HasSig (J.map (B.emb w).1) r s) : J.det ≠ 0 := by
+  obtain ⟨w⟩ := (inferInstance : Nonempty (InfinitePlace F))
+  have := det_ne_of_hasSig (h w)
+  intro h0; apply this
+  have e := RingHom.map_det (B.emb w).1 J
+  rw [RingHom.mapMatrix_apply] at e
+  rw [← e, h0, map_zero]
+
+theorem det_ne_of_sig' {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] {n r s : ℕ}
+    (B : Base F E) (J : Matrix (Fin n) (Fin n) E) (h : ∀ w, HasSig (Complex.I • J.map (B.emb w).1) r s) : J.det ≠ 0 := by
+  obtain ⟨w⟩ := (inferInstance : Nonempty (InfinitePlace F))
+  have := det_ne_of_hasSig (h w)
+  intro h0; apply this
+  have e := RingHom.map_det (B.emb w).1 J
+  rw [RingHom.mapMatrix_apply] at e
+  rw [Matrix.det_smul, ← e, h0, map_zero, mul_zero]
+
+theorem howe_nonsplit_ker : GlobalTheory.Published.HoweDualityFinite → ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E)
+    (Bs : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Base F E) (a a' : ℕ) (G : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Geo σ a a') (Xc : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Chars F E)
+    (om : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Rep σ G.V G.W) (om' : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Rep σ G.V' G.W)
+    (R : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.RealMaps F a a') (Rf : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.FinMaps F a a'),
+    GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsMatched Bs G Xc om om' R Rf →
+    ∀ v : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Pl F, IsEmpty (E →ₐ[F] Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Fv F v) →
+      (∃ L : ℕ, ∀ (m : ℕ) (N : Fin m → Submodule ℂ ((Fin a × Fin (a + a') → Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Fv F v) → ℂ)),
+        StrictMono N → (∀ i, GlobalTheory.Published.ThetaSub om v (N i)) → m ≤ L) ∧
+      ∀ N : Submodule ℂ ((Fin a × Fin (a + a') → Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.Fv F v) → ℂ), GlobalTheory.Published.ThetaSub om v N →
+        N ≠ GlobalTheory.WeilM.SB _ → ∀ φ ∈ N, Rf.p v φ = 0 := by
+  intro hHD F E _ _ _ _ _ σ Bs a a' G Xc om om' R Rf hM v hv
+  have hT := hM.triple
+  have P := GlobalTheory.ThKConst.isPair_big hT
+  obtain ⟨hbdd, hsum⟩ := hHD F E σ P.base.cm a (a + a') G.V G.W G.M Bs.ψ Xc.β (Xc.β / Xc.α) om P.base.std
+    P.herm.herm (det_ne_of_sig Bs G.V.J P.herm.sig) P.skew.skew (det_ne_of_sig' Bs G.W.J P.skew.sig)
+    P.resX P.resW P.hX P.hW P.weil v hv
+  refine ⟨hbdd, ?_⟩
+  intro N hN hNe φ hφ
+  have h1 : (1 : UA σ G.V.J) ∈ UAt σ G.V (evFin F v) := by
+    intro u _
+    show u • (mat (1 : UA σ G.V.J) - 1) = 0
+    have : mat (1 : UA σ G.V.J) = 1 := rfl
+    rw [this, sub_self, smul_zero]
+  have hex : ∀ h ∈ UAt σ G.W (evFin F v), ∀ ψ ∈ SB (Fin a × Fin (a + a') → Fv F v),
+      ∃ ψ₁ ∈ SB (Fin a × Fin (a + a') → Fv F v), Acts (evFin F v) (om (1, h)) ψ ψ₁ :=
+    fun h hh ψ hψ => GlobalTheory.ThK.LocalOps.acts_exists P v (1, h) h1 hh ψ hψ
+  set K : Submodule ℂ ((Fin a × Fin (a + a') → Fv F v) → ℂ) :=
+    LinearMap.ker (Rf.p v) ⊓ SB (Fin a × Fin (a + a') → Fv F v) with hKdef
+  have haugSB : augAt om v ≤ SB (Fin a × Fin (a + a') → Fv F v) := by
+    refine Submodule.span_le.2 ?_
+    rintro z ⟨g, -, ψ, hψ, ψ₁, hψ₁, -, rfl⟩
+    exact sub_mem hψ₁ hψ
+  have hK : GlobalTheory.Published.ThetaSub om v K := by
+    refine ⟨le_inf (hM.fin.inv v) haugSB, inf_le_right, ?_⟩
+    intro h hh ψ hψ ψ₁ hψ₁ hact
+    have hψ' := Submodule.mem_inf.1 hψ
+    have h0 : Acts (evFin F v) (om' (1, h)) (0 : (Fin a' × Fin (a + a') → Fv F v) → ℂ) 0 := by
+      intro r _
+      have e : tens (evFin F v) (0 : (Fin a' × Fin (a + a') → Fv F v) → ℂ) r = 0 := by
+        funext x; simp [tens]
+      rw [e, map_zero]
+    have hp := hM.fin.equiv v h hh ψ hψ'.2 0 (zero_mem _) ψ₁ hψ₁ 0 (zero_mem _) hact h0
+      (by rw [map_zero]; exact LinearMap.mem_ker.1 hψ'.1)
+    rw [map_zero] at hp
+    exact Submodule.mem_inf.2 ⟨LinearMap.mem_ker.2 hp, hψ₁⟩
+  have hKne : K ≠ SB (Fin a × Fin (a + a') → Fv F v) := by
+    intro hKe
+    have hbot : (SB (Fin a × Fin (a + a') → Fv F v)).map (Rf.p v) = ⊥ := by
+      rw [Submodule.eq_bot_iff]
+      rintro _ ⟨ψ, hψ, rfl⟩
+      rw [← hKe] at hψ
+      exact LinearMap.mem_ker.1 (Submodule.mem_inf.1 hψ).1
+    rw [hM.fin.onto v] at hbot
+    haveI := hM.fin.nontriv v
+    exact top_ne_bot hbot
+  have hNK : N ⊔ K ≠ SB (Fin a × Fin (a + a') → Fv F v) := hsum N K hN hK hNe hKne
+  rcases hM.fin.irred v (N.map (Rf.p v)) (by
+    intro h hh ψ hψ ψ₁ hψ₁ hact hpm
+    obtain ⟨n, hn, hpn⟩ := Submodule.mem_map.1 hpm
+    have hnSB : n ∈ SB (Fin a × Fin (a + a') → Fv F v) := hN.2.1 hn
+    have hkSB : ψ - n ∈ SB (Fin a × Fin (a + a') → Fv F v) := sub_mem hψ hnSB
+    have hk : ψ - n ∈ K := Submodule.mem_inf.2 ⟨LinearMap.mem_ker.2 (by rw [map_sub, hpn, sub_self]), hkSB⟩
+    obtain ⟨n₁, hn₁, hactn⟩ := hex h hh n hnSB
+    obtain ⟨k₁, hk₁, hactk⟩ := hex h hh (ψ - n) hkSB
+    have hlin := GlobalTheory.ThK.LocalOps.acts_lin v (om (1, h)) (hex h hh) hnSB hkSB hactn hactk 1 1
+    simp only [one_smul, add_sub_cancel] at hlin
+    have he : ψ₁ = n₁ + k₁ := GlobalTheory.ThK.LocalOps.acts_unique v _ hψ hact hlin
+    have hn₁N : n₁ ∈ N := hN.2.2 h hh n hn n₁ hn₁ hactn
+    have hk₁K : k₁ ∈ K := hK.2.2 h hh (ψ - n) hk k₁ hk₁ hactk
+    have hpk : Rf.p v k₁ = 0 := LinearMap.mem_ker.1 (Submodule.mem_inf.1 hk₁K).1
+    rw [he, map_add, hpk, add_zero]
+    exact Submodule.mem_map_of_mem hn₁N) with h0 | htop
+  · have hmem : Rf.p v φ ∈ N.map (Rf.p v) := Submodule.mem_map_of_mem hφ
+    rw [h0] at hmem
+    exact (Submodule.mem_bot ℂ).1 hmem
+  · exfalso
+    apply hNK
+    refine le_antisymm (sup_le hN.2.1 inf_le_right) ?_
+    intro ψ hψ
+    have hm : Rf.p v ψ ∈ N.map (Rf.p v) := by rw [htop]; exact Submodule.mem_top
+    obtain ⟨n, hn, hpn⟩ := Submodule.mem_map.1 hm
+    have hk : ψ - n ∈ K :=
+      Submodule.mem_inf.2 ⟨LinearMap.mem_ker.2 (by rw [map_sub, hpn, sub_self]), sub_mem hψ (hN.2.1 hn)⟩
+    have := Submodule.add_mem_sup hn hk
+    rwa [add_sub_cancel] at this
+
+end GlobalTheory.HoweNonsplitKer
+
+end

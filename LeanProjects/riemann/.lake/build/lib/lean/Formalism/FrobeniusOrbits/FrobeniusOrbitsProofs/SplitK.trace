@@ -1,0 +1,484 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["e52487a161574b09.olean"],
+  "m": false,
+  "i": "49161ab42fc81228.ilean",
+  "c": "7fcbc920e6264901.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:22:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:23:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:22:4: Unused tactic linter: `(apply Subtype.ext; simp [bK, hb])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:23:4: Unused tactic linter: `(apply Subtype.ext; push_cast [bK]; exact hb)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:38:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:38:4: Unused tactic linter: `exact Algebra.IsIntegral.isIntegral b` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:44:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:44:4: Unused tactic linter: `(rw [map_add, map_pow, Polynomial.aeval_X, Polynomial.aeval_C, hb]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:52:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:57:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:62:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:52:6: Unused tactic linter: `monicity!` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:57:6: Unused tactic linter: `exact h1.trans (by compute_degree)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:62:6: Unused tactic linter: `(\n  have h2 : Module.finrank ℚ ℚ⟮b⟯ = 1 := by rw [IntermediateField.adjoin.finrank hint, h1]\n  exact\n    b_not_rat hd hb\n      (IntermediateField.adjoin_simple_eq_bot_iff.mp (IntermediateField.finrank_eq_one_iff.mp h2)))` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:74:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:75:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:76:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:74:4: Unused tactic linter: `exact { finrank_eq_two' := finrank_K hd hb }` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:75:4: Unused tactic linter: `exact { toFree := inferInstance, finrank_eq_two' := finrank_K hd hb }` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:76:4: Unused tactic linter: `(constructor <;>\n    first\n    | exact finrank_K hd hb\n    | exact inferInstance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:84:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:85:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:84:6: Unused tactic linter: `(rw [IntermediateField.adjoin.powerBasis_gen]; exact h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:85:6: Unused tactic linter: `(simp only [IntermediateField.adjoin.powerBasis_gen, AlgEquiv.coe_algHom]; exact h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:92:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:93:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:92:4: Unused tactic linter: `simpa using h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:93:4: Unused tactic linter: `(rw [AlgEquiv.one_apply]; exact h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:100:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:100:6: Unused tactic linter: `(rw [← map_pow, bK_sq hb]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:114:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:128:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:129:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:114:6: Unused tactic linter: `monicity!` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:128:6: Unused tactic linter: `exact Polynomial.eq_one_of_monic_natDegree_zero hrm hr0d` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:129:6: Unused tactic linter: `(rw [Polynomial.eq_C_of_natDegree_eq_zero hr0d]; have h5 := hrm.leadingCoeff;\n  rw [Polynomial.leadingCoeff, hr0d] at h5; rw [h5, map_one])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:149:56: This simp argument is unused:\n  Polynomial.aeval_C\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_add, map_pow, Polynomial.aeval_X, map_natCast]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:139:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:143:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:144:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:145:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:150:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:151:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:152:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:156:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:164:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:139:6: Unused tactic linter: `(rw [hpb, IntermediateField.adjoin.powerBasis_gen]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:143:6: Unused tactic linter: `exact IntermediateField.minpoly_eq pb.gen` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:144:6: Unused tactic linter: `(rw [hpb, IntermediateField.adjoin.powerBasis_gen];\n  exact IntermediateField.minpoly_gen b)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:145:6: Unused tactic linter: `(rw [hpb, IntermediateField.adjoin.powerBasis_gen];\n  exact IntermediateField.minpoly_gen ℚ b)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:150:6: Unused tactic linter: `(simp; linear_combination bK_sq hb)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:151:6: Unused tactic linter: `(simp; rw [neg_sq, bK_sq hb]; ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:152:6: Unused tactic linter: `(simp only [map_add, map_pow, Polynomial.aeval_X, Polynomial.aeval_C]; rw [neg_sq, bK_sq hb];\n  simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:156:6: Unused tactic linter: `exact\n  ⟨(pb.lift (-pb.gen) hroot).toRingHom.injective,\n    LinearMap.injective_iff_surjective.mp (pb.lift (-pb.gen) hroot).toRingHom.injective⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:164:4: Unused tactic linter: `(rw [AlgEquiv.ofBijective_apply]; exact hl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:171:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:171:6: Unused tactic linter: `simpa [bK] using congrArg Subtype.val h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:188:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:194:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:193:23: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:201:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:202:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:203:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:193:23: Unused tactic linter: `simpa using hτ` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:201:10: Unused tactic linter: `(rw [← Set.ncard_pair hne]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:202:10: Unused tactic linter: `(rw [← Set.ncard_pair hne, Set.ncard_def]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:203:10: Unused tactic linter: `(rw [← Set.ncard_pair hne];\n  exact (Set.ncard_eq_toFinset_card' _).symm.trans (by simp))` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:210:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:211:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:210:4: Unused tactic linter: `(push_cast; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:211:4: Unused tactic linter: `norm_num` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:222:21: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:222:21: Unused tactic linter: `simpa using hτ` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:224:24: Variable name `hd0` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hd0\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:238:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:239:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:238:4: Unused tactic linter: `exact (Int.ideal_span_isMaximal_of_prime p).isPrime` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:239:4: Unused tactic linter: `exact inferInstance` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:245:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:245:4: Unused tactic linter: `(haveI := quad_K hd hb; exact inferInstance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:250:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:255:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:256:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:257:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:253:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:254:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:253:6: Unused tactic linter: `exact NumberField.mk` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:254:6: Unused tactic linter: `exact ⟨⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:268:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:273:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:274:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:275:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:286:7: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:286:22: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:271:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:272:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:279:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:280:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:285:128: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:271:6: Unused tactic linter: `exact NumberField.mk` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:272:6: Unused tactic linter: `exact ⟨⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:279:6: Unused tactic linter: `exact ⟨‹_›, ‹_›⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:280:6: Unused tactic linter: `(simp only [Ideal.primesOver, Set.mem_setOf_eq];\n  exact ⟨inferInstance, inferInstance⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:285:128: Unused tactic linter: `exact ⟨σ, congrArg Subtype.val hσ⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:295:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:300:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:301:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:302:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:298:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:299:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:306:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:307:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:298:6: Unused tactic linter: `exact NumberField.mk` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:299:6: Unused tactic linter: `exact ⟨⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:306:6: Unused tactic linter: `exact ⟨‹_›, ‹_›⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:307:6: Unused tactic linter: `(simp only [Ideal.primesOver, Set.mem_setOf_eq];\n  exact ⟨inferInstance, inferInstance⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:329:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:330:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:329:4: Unused tactic linter: `(rw [← h]; exact Ideal.smul_mem_pointwise_smul σ y P hy)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:330:4: Unused tactic linter: `(rw [← h]; exact Ideal.mem_map_of_mem _ hy)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:335:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:336:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:335:4: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:336:4: Unused tactic linter: `(rw [← MulSemiringAction.toRingHom_apply, map_intCast])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:490:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:493:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:494:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:497:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:498:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:493:6: Unused tactic linter: `exact (span_prime p).isMaximal (by simp [hp.out.ne_zero])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:494:6: Unused tactic linter: `exact Ideal.IsPrime.isMaximal (span_prime p) (by simp [hp.out.ne_zero])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:497:4: Unused tactic linter: `(obtain ⟨P, hP, hPl⟩ :=\n    Ideal.exists_ideal_liesOver_maximal_of_isIntegral (span {(p : ℤ)}) (𝓞 (Kd b));\n  exact ⟨P, hP.isPrime, hPl⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:498:4: Unused tactic linter: `(obtain ⟨Q, hQ, hQc⟩ :=\n    Ideal.exists_ideal_over_maximal_of_isIntegral (S := 𝓞 (Kd b)) (span {(p : ℤ)})\n      (by rw [(RingHom.injective_iff_ker_eq_bot _).mp (algebraMap ℤ (𝓞 (Kd b))).injective_int]; exact bot_le);\n  exact ⟨Q, hQ.isPrime, ⟨hQc.symm⟩⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:503:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:505:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:506:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:516:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:516:10: Unused tactic linter: `(rw [jacobiSym.eq_zero_iff_not_coprime]; simp [Int.gcd_neg, Int.gcd_self];\n  exact hp.one_lt.ne')` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:529:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:531:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:532:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:566:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:571:20: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:566:18: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean:571:20: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.FrobeniusOrbits.Statement transitive imports (legacy)",
+       "3fd2e173ac7af9d0"],
+      ["Formalism.FrobeniusOrbits.Statement:importAllArts", "75bc8850cb74280b"],
+      ["Formalism.TameInertiaTowers.CentralOrderTwo.OddEqOneOfSubOneMem transitive imports (legacy)",
+       "4af7eee643cbb9bd"],
+      ["Formalism.TameInertiaTowers.CentralOrderTwo.OddEqOneOfSubOneMem:importAllArts",
+       "48cd401193d1ea0a"],
+      ["Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex transitive imports (legacy)",
+       "cdaea7c48875f592"],
+      ["Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex:importAllArts",
+       "26dd29b13ba2658a"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/SplitK.lean",
+   "8ee4a53bec2367a3"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK",
+   "68d91e8386ed660e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "2072fb5259c83910"}

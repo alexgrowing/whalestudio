@@ -1,0 +1,159 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["4fa005380f91aaf3.olean"],
+  "m": false,
+  "i": "ac82e117d29171d6.ilean",
+  "c": "5d9347fb722e28b7.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:186:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.BlockDat.lf_card_inv_ne`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:229:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.BlockDat.lf_cutLat_mul`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:318:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lf_exists_unif`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:393:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:393:4: Unused tactic linter: `(simp only [Basis.equivFun_apply, BlockDat.opMat];\n  exact (LinearMap.toMatrix_mulVec_repr _ _ _ _).symm)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:422:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.Divisibility.LiftLatLemmas.0.Formalism.L2.DIV.CyclotomicLifting.hform_eq_star_dotProduct_mulVec`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:424:88: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hform, Matrix.toLinearMapₛₗ₂'_apply, dotProduct, Matrix.mulVec, Finset.mul_sum]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:465:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:465:4: Unused tactic linter: `(simp only [Basis.equivFun_apply];\n  exact (LinearMap.toMatrix_mulVec_repr _ _ g f).symm)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:737:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:737:4: Unused tactic linter: `(\n  have h' := congrArg (fun x : ℚ => (x : ℝ)) h\n  push_cast at h' ⊢\n  exact h')` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:770:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:771:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:770:6: Unused tactic linter: `(simp [revAt, revAtFun, not_le.mpr hi]; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:771:6: Unused tactic linter: `(simp only [revAt, revAtFun, Function.Embedding.coeFn_mk];\n  rw [if_neg (not_le.mpr hi)])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:834:9: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:836:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:836:4: Unused tactic linter: `(\n  simp only [Col.heckePoly, Col.heckePolyOf, eval_finset_sum, eval_mul, eval_C, eval_pow, eval_X]\n  rw [Finset.sum_range_succ']\n  simp [h1])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:932:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:933:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:932:4: Unused tactic linter: `(intro σ; simp [eq_ratCast σ])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:933:4: Unused tactic linter: `(intro σ; rw [star_trivial, eq_ratCast σ]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:966:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:967:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:966:4: Unused tactic linter: `exact Commute.smul_left (Commute.one_left g) a` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:967:4: Unused tactic linter: `(\n  show a • (1 : Module.End ℚ V) * g = g * (a • 1)\n  ext x\n  simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean:1145:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.LiftTest.reg_mem_nab`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalToGlobal.Divisibility.LiftLat transitive imports (legacy)",
+       "503ea230b608a912"],
+      ["Formalism.LocalToGlobal.Divisibility.LiftLat:importAllArts",
+       "ab3fc221aa65d479"],
+      ["Formalism.LocalToGlobal.Divisibility.RowLatLemmas transitive imports (legacy)",
+       "4c8fa2b2d24c415f"],
+      ["Formalism.LocalToGlobal.Divisibility.RowLatLemmas:importAllArts",
+       "7a36cc3549be3676"],
+      ["Formalism.LocalToGlobal.Divisibility.ProjLemmas transitive imports (legacy)",
+       "58391cece439c0ed"],
+      ["Formalism.LocalToGlobal.Divisibility.ProjLemmas:importAllArts",
+       "39a29ff82f69874c"],
+      ["Formalism.LocalToGlobal.Divisibility.FramesLemmas transitive imports (legacy)",
+       "ebdc03566ba7aa56"],
+      ["Formalism.LocalToGlobal.Divisibility.FramesLemmas:importAllArts",
+       "78b15745cfd011ab"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral transitive imports (legacy)",
+       "1a41aaca01fdee07"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral:importAllArts",
+       "9d6600df0e9dc886"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.CommutingTwist transitive imports (legacy)",
+       "bed8215b69d103df"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.CommutingTwist:importAllArts",
+       "b42467a7cab86f6f"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily transitive imports (legacy)",
+       "19aab2e23cbc5fa7"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily:importAllArts",
+       "eb251ba2569709b0"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic transitive imports (legacy)",
+       "95f6b22aa062df47"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic:importAllArts",
+       "c0bc8490ac5fad7d"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice transitive imports (legacy)",
+       "cab6056af1cf63d8"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice:importAllArts",
+       "1bc758d93e05fc0b"],
+      ["Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic transitive imports (legacy)",
+       "c8f7e7ed287a4890"],
+      ["Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic:importAllArts",
+       "76fba6155a0dabfe"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Divisibility/LiftLatLemmas.lean",
+   "9fff7f3475a1a21e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Divisibility.LiftLatLemmas",
+   "63bc50472715e672"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "82c56c8609eb40b8"}

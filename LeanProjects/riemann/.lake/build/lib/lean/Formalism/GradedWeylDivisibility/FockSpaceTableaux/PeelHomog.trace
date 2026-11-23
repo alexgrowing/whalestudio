@@ -1,0 +1,67 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["613d54231a0b5034.olean"],
+  "m": false,
+  "i": "769def29d67388ef.ilean",
+  "c": "c49ea04e30bbff55.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:27:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:27:6: Unused tactic linter: `simp [Finsupp.weight_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:42:14: This simp argument is unused:\n  hl\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Ne.symm hl]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:87:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:87:8: Unused tactic linter: `(\n  ext y\n  simp only [Finsupp.add_apply, Finsupp.smul_apply, Finsupp.single_apply, smul_eq_mul]\n  split_ifs <;> ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:103:16: This simp argument is unused:\n  Finsupp.erase_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hlj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:103:53: This simp argument is unused:\n  Finsupp.erase_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:108:20: This simp argument is unused:\n  Finsupp.erase_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hlj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean:108:56: This simp argument is unused:\n  Finsupp.erase_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpeelLemmas transitive imports (legacy)",
+       "19de8c9e37115784"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpeelLemmas:importAllArts",
+       "dc68de37f4789fce"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelHomog.lean",
+   "c841e486eba6f458"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelHomog",
+   "6052319188303f1e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "95f98158f3ce778e"}

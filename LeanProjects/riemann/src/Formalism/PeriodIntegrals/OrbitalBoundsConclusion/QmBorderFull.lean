@@ -1,0 +1,8 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BorderMinorRotation.QmBorderFullOf
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmBorderES
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmColExp
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmRowExp
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmSkip
+
+theorem quantum_minor_border_full : PI.QmBorderFull :=
+  PI.qmBorderFull_of quantum_minor_border_es quantum_minor_column_expansion quantum_minor_row_expansion quantum_minor_skip

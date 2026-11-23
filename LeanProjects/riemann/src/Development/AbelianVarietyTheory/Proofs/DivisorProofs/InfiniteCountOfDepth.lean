@@ -1,0 +1,18 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfCountAtOf
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumCountBoundLargeDataStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosineCountOfPublishedInputsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorCountBoundOfCosetDepthBound
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
+
+open GlobalTheory.SumSize GlobalTheory.RowClaim
+
+namespace GlobalTheory.SumCount
+
+theorem infCountK : GlobalTheory.FunPr.Hypotheses₂ → DepthK → InfCountK := fun hP hD =>
+  infCountK_of GlobalTheory.T.datumCountBound_largeData (GlobalTheory.T.cosine_count_of_hypotheses hP) (GlobalTheory.T.pureTensorCountBound_of_cosetDepthBound hD)
+
+end GlobalTheory.SumCount

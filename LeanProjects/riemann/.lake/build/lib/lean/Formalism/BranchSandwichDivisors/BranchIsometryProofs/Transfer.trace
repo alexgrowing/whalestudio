@@ -1,0 +1,99 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["f01012dc1ecf65ec.olean"],
+  "m": false,
+  "i": "e1d39ed981857c67.ilean",
+  "c": "38ef42bcf3040761.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:24:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.natCast_smul_eq`:\n  [NumberField K]\n  [StarRing K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:98:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.sigma_norm_sq`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:124:14: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((Matrix.toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (Matrix.toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:158:10: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((Matrix.toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (Matrix.toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:191:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.mul_blockDiag_apply`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:201:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.blockDiag_mul_apply`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:228:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.rowMap_apply`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:232:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.colMap_apply`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:295:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.htMap_le`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:349:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.pow_smul_eq`:\n  [NumberField K]\n  [StarRing K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:352:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.pow_ne_zero'`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:354:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.pi_ne_bot`:\n  [NumberField K]\n  [StarRing K]\n  [Module K V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Module K V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:365:12: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hi]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:369:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.colMap_injOn`:\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean:391:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.PrismTransfer.rowMap_injOn`:\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.BranchSandwichDivisors.StatementL transitive imports (legacy)",
+       "b499f1a1ea86212e"],
+      ["Formalism.BranchSandwichDivisors.StatementL:importAllArts",
+       "0423444e2f815f65"],
+      ["Formalism.BranchSandwichDivisors.BranchIsometryProofs.TransferMean transitive imports (legacy)",
+       "aac87c281c09b678"],
+      ["Formalism.BranchSandwichDivisors.BranchIsometryProofs.TransferMean:importAllArts",
+       "76c087b90ae0a404"],
+      ["Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut transitive imports (legacy)",
+       "709119bd3ff147c2"],
+      ["Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut:importAllArts",
+       "09f36e74ad6cfce7"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance transitive imports (legacy)",
+       "a0179aad2094a559"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance:importAllArts",
+       "c7eaa9e918a2599c"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/Transfer.lean",
+   "850539e571e55ca4"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.BranchSandwichDivisors.BranchIsometryProofs.Transfer",
+   "650fee96585fa336"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "0218bad5edfb29b3"}

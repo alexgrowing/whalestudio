@@ -1,0 +1,10 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PseudocoefficientSeparationOfHarishChandra
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PseudoCoefficientSeparation
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.pseudocoefficient_separation_of_harish_chandra : GlobalTheory.Published.HarishChandraAnalyticity → GlobalTheory.Published.PseudoCoefficientUpq → GlobalTheory.Published.HarishChandraCharacters → GlobalTheory.Published.LanglandsClassification → GlobalTheory.IndefiniteRowSideFullHecke.PseudoCoefficientSeparation.PseudoCoeffSeparation := by
+  first | exact @GlobalTheory.SepPseudo.pseudoCoeffSeparation | exact GlobalTheory.SepPseudo.pseudoCoeffSeparation | (intros; apply GlobalTheory.SepPseudo.pseudoCoeffSeparation <;> assumption)

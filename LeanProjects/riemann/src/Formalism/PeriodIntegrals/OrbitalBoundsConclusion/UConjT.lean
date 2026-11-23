@@ -1,0 +1,9 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UMultOne
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryConjugation.ConjTransposeOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryConjugation.ExistsUnitReal
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryConjugation.Transfer
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryConjugation.SubmatrixMemUnitaryGroup
+
+theorem unitary_conj_transpose : PI.UMultOne.ConjTranspose :=
+  PI.UConjT.conjTranspose_of PI.UConjT.onbReal PI.UConjT.transferStep PI.UConjT.blockStep

@@ -1,0 +1,15 @@
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GaussianTailBound
+import Formalism.FilteredPoleLength.LocalDescentLevels.IntegralMulExpNegSq
+import Formalism.FilteredPoleLength.LocalDescentLevels.ExistsSumOfMemSpanImage
+import Formalism.FilteredPoleLength.LocalDescentLevels.MinimumChainBounds
+import Formalism.FilteredPoleLength.LocalDescentLevels.DetMulEqSumPrincipal
+import Formalism.FilteredPoleLength.LocalDescentLevels.GAdjugateNormBound
+
+namespace ReciprocityTheory.ChartRestriction.G.I2.Ext
+
+theorem all : All :=
+  ⟨Formalism.LatticeBaseChangeAlt.packingCount, Formalism.LatticeBaseChangeAlt.gaussian_tail_bound, Formalism.LatticeBaseChangeAlt.ballVolume, Formalism.LatticeBaseChangeAlt.gHadamard,
+    Formalism.LatticeBaseChangeAlt.nearestPlane, Formalism.LatticeBaseChangeAlt.cauchyBinetMax, Formalism.LatticeBaseChangeAlt.detPerturbation,
+    Formalism.LatticeBaseChangeAlt.detPerturbNumeric, Formalism.LatticeBaseChangeAlt.detProductRest⟩
+
+end ReciprocityTheory.ChartRestriction.G.I2.Ext

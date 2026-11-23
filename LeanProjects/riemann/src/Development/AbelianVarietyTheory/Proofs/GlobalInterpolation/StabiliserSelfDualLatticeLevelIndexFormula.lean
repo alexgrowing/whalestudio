@@ -1,0 +1,15 @@
+import Mathlib
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeIndex
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SelfDualLatticeLevel
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LocalLevelRelIndexAtLevelPrimeSelfDual
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OverLatticeIffSelfDualOverBase
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemLocLatOverLat
+
+namespace GlobalTheory.LevelIndex
+
+theorem selfDualLatticeIndex_stabiliserLevelIndexFormula : GlobalTheory.IndefiniteRowSideFullHecke.SelfDualLatticeIndex.StabiliserLevelIndexFormula :=
+  GlobalTheory.IndefiniteRowSideFullHecke.SelfDualLatticeLevel.indexKU_iff.mp
+    (GlobalTheory.LevelIndex.indexKU_of_selfDualOverBase
+      (GlobalTheory.OverCompare.overLattice_iff_selfDualOverBase.mp GlobalTheory.OverLat.overLattice))
+
+end GlobalTheory.LevelIndex

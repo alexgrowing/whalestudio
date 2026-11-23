@@ -1,0 +1,7 @@
+import Development.EtaleCohomology.TateTwists.EtaleTateTwistSectionsFlatOfQuotientIso
+
+namespace LateralTheory.Fin.EtaleTateTwistSheafFlat
+theorem etale_roots_of_unity_twist_flat_of_local_free : LateralTheory.EtaleFoundations.EtaleTateTwistSheafFlat := by
+  apply LateralTheory.EtaleFoundations.etale_tate_twist_sections_flat_of_quotient_iso
+theorem intersectionNumber_baseChange : LateralTheory.EtaleFoundations.EtaleTateTwistSheafFlat := etale_roots_of_unity_twist_flat_of_local_free
+end LateralTheory.Fin.EtaleTateTwistSheafFlat

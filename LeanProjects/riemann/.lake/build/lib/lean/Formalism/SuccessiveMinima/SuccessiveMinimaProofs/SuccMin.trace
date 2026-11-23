@@ -1,0 +1,73 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a85f7769da17420d.olean"],
+  "m": false,
+  "i": "5ad0a0c6d3f14b6c.ilean",
+  "c": "3b6729535ae3b55b.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:12:0: automatically included section variable(s) unused in theorem `Formalism.FN.SuccessiveMinima.mem_smul_iff_gauge`:\n  [FiniteDimensional ℝ E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [FiniteDimensional ℝ E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:35:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:40:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:40:8: Unused tactic linter: `exact isDiscrete_iff_discreteTopology.mpr ‹DiscreteTopology L›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:82:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:145:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:161:8: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:166:28: `linearIndependent_fin_snoc` has been deprecated: Use `linearIndependent_finSnoc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:170:38: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:192:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean:223:10: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SuccessiveMinima.DefsMink transitive imports (legacy)",
+       "1d9bf80acd8414ac"],
+      ["Formalism.SuccessiveMinima.DefsMink:importAllArts",
+       "a1f75377b5c4413d"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SuccessiveMinima/SuccessiveMinimaProofs/SuccMin.lean",
+   "309e305aba8bfbb8"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SuccessiveMinima.SuccessiveMinimaProofs.SuccMin",
+   "18beaccd945e0294"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "20eadb22a50fa08a"}

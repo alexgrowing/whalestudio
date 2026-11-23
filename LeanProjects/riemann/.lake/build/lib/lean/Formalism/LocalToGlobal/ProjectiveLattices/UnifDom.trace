@@ -1,0 +1,79 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["bebf80e1a65716d8.olean"],
+  "m": false,
+  "i": "6771b366f572f33c.ilean",
+  "c": "23fbc024ecf8821a.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:12:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.gram_eq`:\n  [NumberField E]\n  [IsCMField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [IsCMField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:29:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:43:31: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:43:54: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:47:31: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:47:54: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:68:35: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:68:58: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:69:6: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:70:6: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:75:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.bor_upper`:\n  [NumberField E]\n  [IsCMField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [IsCMField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:82:27: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean:125:27: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature:importAllArts",
+       "5fbf4c979c471168"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/ProjectiveLattices/UnifDom.lean",
+   "64b9334352e7915f"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.ProjectiveLattices.UnifDom",
+   "3d75bb20ed308769"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "64d604c86ecd3bbf"}

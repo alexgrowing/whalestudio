@@ -1,0 +1,7 @@
+import Development.EtaleCohomology.KummerTheory.SHenCutPf
+
+namespace LateralTheory.Fin.StrictHenselization
+theorem etale_strict_henselization_cohomology_stalk_in_local_homotopy_assembly : LateralTheory.KummerTheory.StrictHenselization := by
+  apply LateralTheory.KummerTheory.SHenCut.shen
+theorem intersectionNumber_baseChange : LateralTheory.KummerTheory.StrictHenselization := etale_strict_henselization_cohomology_stalk_in_local_homotopy_assembly
+end LateralTheory.Fin.StrictHenselization

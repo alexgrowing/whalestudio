@@ -1,0 +1,69 @@
+// Lean compiler output
+// Module: Formalism.FormalGroupWitt.WeightInvariance
+// Imports: public import Init public meta import Init public import Formalism.FormalGroupWitt.FormalGroupWittProofs.AdditiveLawExample public import Formalism.FormalGroupWitt.FormalGroupWittProofs.GroupV public import Formalism.FormalGroupWitt.FormalGroupWittProofs.FunctionalEquationHomVector public import Formalism.FormalGroupWitt.FormalGroupWittProofs.CongrV public import Formalism.FormalGroupWitt.FormalGroupWittProofs.ShiftFE public import Formalism.FormalGroupWitt.FormalGroupWittProofs.ShiftAsm public import Formalism.FormalGroupWitt.FormalGroupWittProofs.HeightV public import Formalism.FormalGroupWitt.FormalGroupWittProofs.WittTeichmullerRoot public import Formalism.FormalGroupWitt.FormalGroupWittProofs.GaussV
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_AdditiveLawExample(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_GroupV(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_FunctionalEquationHomVector(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_CongrV(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_ShiftFE(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_ShiftAsm(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_HeightV(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_WittTeichmullerRoot(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_GaussV(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_Formalism_FormalGroupWitt_WeightInvariance(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_AdditiveLawExample(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_GroupV(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_FunctionalEquationHomVector(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_CongrV(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_ShiftFE(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_ShiftAsm(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_HeightV(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_WittTeichmullerRoot(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FormalGroupWitt_FormalGroupWittProofs_GaussV(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

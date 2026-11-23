@@ -1,0 +1,9 @@
+import Formalism.FlagUnipotentLattices.LatticeDeterminantIndexSq
+import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.IntegerGroupLocalParametrization
+
+namespace Formalism.HermitianLatticeCounting.Final.LocalIntegralStructure
+
+theorem unitsSquareIndex : Formalism.HermitianLatticeCounting.LocalIntegralStructure.UnitsSquareIndex := Formalism.HermitianLatticeCounting.P.units_square_index
+theorem classNumberBound : Formalism.HermitianLatticeCounting.LocalIntegralStructure.ClassNumberBound := Formalism.HermitianLatticeCounting.P.class_number_bound
+
+end Formalism.HermitianLatticeCounting.Final.LocalIntegralStructure

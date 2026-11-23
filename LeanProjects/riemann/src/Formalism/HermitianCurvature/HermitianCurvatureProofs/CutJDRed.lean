@@ -1,0 +1,12 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatBdd
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BoundedOperatorsSquareIntegrable
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferSquareIntegrableHolds
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDCCLower
+
+namespace Formalism.FourierDecayAlt.P.CutMP
+
+theorem jDecayTr_of_open (h2 : JDHatOp) (h3 : JDJComm) : JDecayTr :=
+  jDecayTr_of_leaves hat_bounded_decay_holds h2 h3 class_lower_decay_holds transfer_square_integrable_holds bounded_operators_square_integrable
+
+end Formalism.FourierDecayAlt.P.CutMP

@@ -1,0 +1,9 @@
+import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.PolynomialDerivatives.SymmetricFiltrationIffSupported
+import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.PolynomialDerivatives.MapDomainInlInr
+import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.PolynomialDerivatives.TransvectionInv
+
+namespace PositivityTheory.Rg.Sw.LC
+
+theorem invOp : InvOp := B3.invOp_of compSt fftSym
+
+end PositivityTheory.Rg.Sw.LC

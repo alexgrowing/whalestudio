@@ -1,0 +1,85 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["140f847cc4a4a4eb.olean"],
+  "m": false,
+  "i": "c73049073a0f3c49.ilean",
+  "c": "a983e6a2291d263f.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:20:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:20:8: Unused tactic linter: `exact pow_le_one q (norm_nonneg a) ha` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:33:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:33:6: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:52:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:52:8: Unused tactic linter: `exact (div_le_one (norm_pos_iff.mpr hp0)).mpr hx` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:91:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:92:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:94:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:103:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:107:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:129:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:103:8: Unused tactic linter: `rw [Ideal.Quotient.mk_eq_mk_iff_sub_mem]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:107:8: Unused tactic linter: `(push_cast; exact hσ c.1 c.2)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean:129:8: Unused tactic linter: `(simp only [MvPowerSeries.coeff_map]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.TorsionNormIteration.InvIntegralOfClass transitive imports (legacy)",
+       "a02d50aee5d4d900"],
+      ["Formalism.TorsionNormIteration.InvIntegralOfClass:importAllArts",
+       "ec1910cc83b5222d"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/TorsionNormIteration/InverseIntegralClasses/MemSpanOfNormLe.lean",
+   "f79ee451b8154eab"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe",
+   "159b088ce6b9208d"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "62d6cb348b89b17d"}

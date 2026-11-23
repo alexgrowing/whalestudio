@@ -1,0 +1,15 @@
+import Development.EtaleCohomology.EtaleSheaves.ChernClassEvaluation
+import Development.EtaleCohomology.EtaleSheaves.ChernClassValueFirst
+import Development.EtaleCohomology.TateTwists.ExistsNaturalEtaleKummerDegreeTwoValueOfRootsKum
+
+noncomputable section
+open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComplex.HomComplex GlobalTheory.EtC
+
+namespace LateralTheory.E.ChernClassTriangleValuesFromKummerTorsor
+
+theorem etale_kummer_chern_triangle_values_exist_of_local_roots_and_kummer_tor (hr : LateralTheory.E.ChernClassRootLocalization.LeafRootLoc) (hk : LateralTheory.E.CupProductRingLaws.LeafKumTExists) :
+    LateralTheory.E.ChernClassExistence.EtaleKummerChernTriangleValuesExistNatural :=
+  LateralTheory.EtaleFoundations.exists_natural_etale_kummer_degree_two_value_of_roots_kummer_gluing (LateralTheory.E.ChernClassEdgeValuesFromKummerTorsor.prim_loc_of hr) (LateralTheory.E.ChernClassEdgeValuesFromKummerTorsor.kumT_ex_of hk)
+    LateralTheory.EtaleFoundations.etale_sheaf_sections_glue_of_forget_isSheaf
+
+end LateralTheory.E.ChernClassTriangleValuesFromKummerTorsor

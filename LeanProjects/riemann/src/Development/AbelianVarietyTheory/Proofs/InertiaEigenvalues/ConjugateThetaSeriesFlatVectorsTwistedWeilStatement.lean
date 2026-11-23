@@ -1,0 +1,13 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateThetaSeriesFlatVectorsTwistedWeil
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ToUnitsCompToCircle
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.FWT Formalism.L2.Pj
+open scoped TensorProduct
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+open GlobalTheory.ExportSeries GlobalTheory.ConjTwist
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.conjugate_thetaSeries_flatVectors_twistedWeil : Formalism.MainNotions.ModuliIntegralCharts.H1.ChartIndepSt2 → ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 : Type) (A : FamIn D.what₂.LL G Pl0 T0 D.R.m) (T : CoreJ D) [Algebra T.Q.c.F D.what₂.LL] (R : RealDat D A T.Q.c.F) (F : Face D A) (κw : ∀ i : Fin D.R.m, WeightFamilies.Wt D ((i : ℕ) + 1)) (v₀ : ∀ (i : Fin D.R.m) (σ : D.what₂.LL →+* ℂ), (R.MW i σ).Vec) (O : ∀ i, OMDat T.toCore R i Unit (fun _ => A.μ0)) (ph : Fin D.R.m → ℂ), 8 * D.R.f * D.R.r + 4 ≤ D.R.nV → GlobalTheory.Hk3.Core R F → Finite T0 → Nonempty (FWTie T R κw v₀) → IoExt R → QGuard R → ∀ i : Fin D.R.m, OMPins T R κw v₀ O i → PhaseTie T R κw v₀ O ph i → ∀ (c : VsV D i ℂ →ₗ[ℂ] (R.cV i).W), ExtC R i (inC (O i).c') (O i).c0' c → ∀ u : (∀ ρ, lowT (R.MW i (sg0 D A)) ρ), (∀ ρ, (u ρ : (R.MW i (sg0 D A)).sm ρ) = v₀ i (sg0 D A) ρ) → ∀ (B : Base (Vc D i) (Wc D i)), B.Good → BaseOf R i B → ∀ τ : ℂ ≃+* ℂ, FixBase T R i τ → FixDat B τ → ∀ (ω ω' : PairRep (Vc D i) (Wc D i)) (ψ ψ' : Twist D Circle) (t t' : T0), B.IsWeil ψ.chi ω → B.IsWeil ψ'.chi ω' → ψ.Good → ψ'.Good → B.admitted ψ.Q → IsTupOf R B ψ t → IsTupOf R B ψ' t' → ConjChar τ ψ ψ' → ∃ ζ : ℂ, IsRoot1 ζ ∧ ∀ h ∈ GfC (Vc D i), ∀ x x' : VsV D i ℂ, ConjVec i τ x x' → ConjFun (O i) (κw i) τ ζ (ph i • series B.F ω (B.vecFlat ψ) h (R.ioP i (PiTensorProduct.tprod ℂ u) (c x))) (ph i • series B.F ω' (B.vecFlat ψ') h (R.ioP i (PiTensorProduct.tprod ℂ u) (c x'))) := by
+  first | exact @GlobalTheory.TwistSeriesConj.conj_series_twisted | exact GlobalTheory.TwistSeriesConj.conj_series_twisted | (intros; apply GlobalTheory.TwistSeriesConj.conj_series_twisted <;> assumption)

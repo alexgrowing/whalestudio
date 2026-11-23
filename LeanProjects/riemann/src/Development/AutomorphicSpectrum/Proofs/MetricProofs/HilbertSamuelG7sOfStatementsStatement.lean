@@ -1,0 +1,17 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.HilbertSamuelG7sOfStatements
+import Mathlib
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPieceDegree
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+import GroundTheory.HeightsAndTheta.Heights.Intersections.Statements
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPushDown
+open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.ArakelovGeometry Filter Topology NumberField
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.hilbert_samuel_G7s_of_statements : ReciprocityTheory.ChartRestriction.G.Geo.ArithIntersectionSystemStatement → ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiHSStatement → ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKStatement → ArithmeticHilbertSamuelUpperBoundNumberField := by
+  first | exact @GlobalTheory.CompanionTheory.Ar.Giv.smallSections_upper_of_moriwaki | exact GlobalTheory.CompanionTheory.Ar.Giv.smallSections_upper_of_moriwaki | (intros; apply GlobalTheory.CompanionTheory.Ar.Giv.smallSections_upper_of_moriwaki <;> assumption)

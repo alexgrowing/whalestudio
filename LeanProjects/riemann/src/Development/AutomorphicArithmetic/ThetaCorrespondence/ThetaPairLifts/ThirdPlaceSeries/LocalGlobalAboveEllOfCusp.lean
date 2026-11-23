@@ -1,0 +1,17 @@
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalAboveLOfRowPublished
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ThetaLocalInputs
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.WeightsConj
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SPairs
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.AlLocalGlobalAboveLregAlg
+
+set_option synthInstance.maxHeartbeats 200000
+
+section
+section
+namespace GlobalTheory.GalOfCusp
+theorem local_global_above_ell_of_cusp_alt : _root_.GlobalTheory.NRows.ThetaLocalInputsAlt → _root_.UpperTheory.GalS.CarUAlt :=
+  fun H => H.car.regAlg H.clo
+end GlobalTheory.GalOfCusp
+end
+end

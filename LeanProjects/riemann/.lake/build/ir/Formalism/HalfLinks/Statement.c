@@ -1,0 +1,933 @@
+// Lean compiler output
+// Module: Formalism.HalfLinks.Statement
+// Imports: public import Init public meta import Init public import Formalism.ZetaNonvanishingChebyshevWeights public import Formalism.StatementCM public import Formalism.ProductFormula.StatementOCCM
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* lean_nat_mod(lean_object*, lean_object*);
+lean_object* l_Int_instDecidableEq___boxed(lean_object*, lean_object*);
+uint8_t lp_mathlib_Units_instDecidableEq___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* l_List_finRange(lean_object*);
+uint8_t lp_mathlib_Fintype_decidablePiFintype___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* lp_mathlib_Multiset_map___redArg(lean_object*, lean_object*);
+lean_object* lean_array_mk(lean_object*);
+lean_object* lean_array_get_size(lean_object*);
+uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
+size_t lean_usize_of_nat(lean_object*);
+uint8_t lean_usize_dec_eq(size_t, size_t);
+size_t lean_usize_sub(size_t, size_t);
+lean_object* lean_array_uget_borrowed(lean_object*, size_t);
+uint8_t l_List_decidableBAll___redArg(lean_object*, lean_object*);
+lean_object* lean_nat_to_int(lean_object*);
+lean_object* lean_int_neg(lean_object*);
+lean_object* l_Fin_cases___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* l_Int_mul___boxed(lean_object*, lean_object*);
+lean_object* l_List_foldrTR___redArg(lean_object*, lean_object*, lean_object*);
+lean_object* lean_int_mul(lean_object*, lean_object*);
+lean_object* lean_mk_empty_array_with_capacity(lean_object*);
+lean_object* lean_array_push(lean_object*, lean_object*);
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_cc___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_cc___closed__0;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_cc___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_cc___closed__1;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_cc___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_cc___closed__2;
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_cc(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_cc___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__0(lean_object*, lean_object*);
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___closed__0;
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___boxed(lean_object*);
+static lean_once_cell_t lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0;
+LEAN_EXPORT uint8_t lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1(lean_object*, lean_object*, uint8_t, lean_object*);
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT uint8_t lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__0___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_closure_object lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__0___boxed, .m_arity = 3, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___closed__0 = (const lean_object*)&lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___closed__0_value;
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11(lean_object*, size_t, size_t, lean_object*);
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1_spec__4(lean_object*, size_t, size_t, lean_object*);
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1_spec__4___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT uint8_t lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___lam__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___lam__0___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_closure_object lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___lam__0___boxed, .m_arity = 3, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___closed__0 = (const lean_object*)&lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___closed__0_value;
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+static const lean_array_object lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
+static const lean_object* lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0___closed__0 = (const lean_object*)&lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0___closed__0_value;
+LEAN_EXPORT lean_object* lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0(lean_object*, lean_object*);
+LEAN_EXPORT uint8_t lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2(lean_object*, lean_object*);
+static const lean_closure_object lp_tree_Formalism_CMTypeGaloisData_oppType___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_Formalism_CMTypeGaloisData_oppType___lam__0, .m_arity = 2, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___closed__0 = (const lean_object*)&lp_tree_Formalism_CMTypeGaloisData_oppType___closed__0_value;
+static const lean_closure_object lp_tree_Formalism_CMTypeGaloisData_oppType___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___closed__1 = (const lean_object*)&lp_tree_Formalism_CMTypeGaloisData_oppType___closed__1_value;
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__0(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__0___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__1___boxed(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_closure_object lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__0___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__0 = (const lean_object*)&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__0_value;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__1;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__2;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__3;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__4;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__5;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__6;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__7;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__8;
+static lean_once_cell_t lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__9_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__9;
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddChar___lam__0(lean_object*, lean_object*);
+static const lean_closure_object lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)l_Int_mul___boxed, .m_arity = 2, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0___closed__0 = (const lean_object*)&lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0___closed__0_value;
+LEAN_EXPORT lean_object* lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddChar(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddChar___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0(lean_object*, lean_object*, lean_object*);
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__0(void){
+_start:
+{
+lean_object* v___x_1_; lean_object* v___x_2_; 
+v___x_1_ = lean_unsigned_to_nat(1u);
+v___x_2_ = lean_nat_to_int(v___x_1_);
+return v___x_2_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__1(void){
+_start:
+{
+lean_object* v___x_3_; lean_object* v___x_4_; 
+v___x_3_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_cc___closed__0, &lp_tree_Formalism_CMTypeGaloisData_cc___closed__0_once, _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__0);
+v___x_4_ = lean_int_neg(v___x_3_);
+return v___x_4_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__2(void){
+_start:
+{
+lean_object* v___x_5_; lean_object* v___x_6_; 
+v___x_5_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_cc___closed__1, &lp_tree_Formalism_CMTypeGaloisData_cc___closed__1_once, _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__1);
+v___x_6_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_6_, 0, v___x_5_);
+lean_ctor_set(v___x_6_, 1, v___x_5_);
+return v___x_6_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_cc(lean_object* v_x_7_){
+_start:
+{
+lean_object* v___x_8_; 
+v___x_8_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_cc___closed__2, &lp_tree_Formalism_CMTypeGaloisData_cc___closed__2_once, _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__2);
+return v___x_8_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_cc___boxed(lean_object* v_x_9_){
+_start:
+{
+lean_object* v_res_10_; 
+v_res_10_ = lp_tree_Formalism_CMTypeGaloisData_cc(v_x_9_);
+lean_dec(v_x_9_);
+return v_res_10_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__0(lean_object* v_s_11_, lean_object* v___y_12_){
+_start:
+{
+lean_object* v___x_13_; lean_object* v_val_14_; lean_object* v_inv_15_; lean_object* v___x_16_; lean_object* v_val_17_; lean_object* v_inv_18_; lean_object* v___x_20_; uint8_t v_isShared_21_; uint8_t v_isSharedCheck_27_; 
+v___x_13_ = lp_tree_Formalism_CMTypeGaloisData_cc(v___y_12_);
+v_val_14_ = lean_ctor_get(v___x_13_, 0);
+lean_inc(v_val_14_);
+v_inv_15_ = lean_ctor_get(v___x_13_, 1);
+lean_inc(v_inv_15_);
+lean_dec_ref(v___x_13_);
+v___x_16_ = lean_apply_1(v_s_11_, v___y_12_);
+v_val_17_ = lean_ctor_get(v___x_16_, 0);
+v_inv_18_ = lean_ctor_get(v___x_16_, 1);
+v_isSharedCheck_27_ = !lean_is_exclusive(v___x_16_);
+if (v_isSharedCheck_27_ == 0)
+{
+v___x_20_ = v___x_16_;
+v_isShared_21_ = v_isSharedCheck_27_;
+goto v_resetjp_19_;
+}
+else
+{
+lean_inc(v_inv_18_);
+lean_inc(v_val_17_);
+lean_dec(v___x_16_);
+v___x_20_ = lean_box(0);
+v_isShared_21_ = v_isSharedCheck_27_;
+goto v_resetjp_19_;
+}
+v_resetjp_19_:
+{
+lean_object* v___x_22_; lean_object* v___x_23_; lean_object* v___x_25_; 
+v___x_22_ = lean_int_mul(v_val_14_, v_val_17_);
+lean_dec(v_val_17_);
+lean_dec(v_val_14_);
+v___x_23_ = lean_int_mul(v_inv_18_, v_inv_15_);
+lean_dec(v_inv_15_);
+lean_dec(v_inv_18_);
+if (v_isShared_21_ == 0)
+{
+lean_ctor_set(v___x_20_, 1, v___x_23_);
+lean_ctor_set(v___x_20_, 0, v___x_22_);
+v___x_25_ = v___x_20_;
+goto v_reusejp_24_;
+}
+else
+{
+lean_object* v_reuseFailAlloc_26_; 
+v_reuseFailAlloc_26_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v_reuseFailAlloc_26_, 0, v___x_22_);
+lean_ctor_set(v_reuseFailAlloc_26_, 1, v___x_23_);
+v___x_25_ = v_reuseFailAlloc_26_;
+goto v_reusejp_24_;
+}
+v_reusejp_24_:
+{
+return v___x_25_;
+}
+}
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___closed__0(void){
+_start:
+{
+lean_object* v___x_28_; lean_object* v___x_29_; 
+v___x_28_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_cc___closed__0, &lp_tree_Formalism_CMTypeGaloisData_cc___closed__0_once, _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__0);
+v___x_29_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_29_, 0, v___x_28_);
+lean_ctor_set(v___x_29_, 1, v___x_28_);
+return v___x_29_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1(lean_object* v_x_30_){
+_start:
+{
+lean_object* v___x_31_; 
+v___x_31_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___closed__0, &lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___closed__0_once, _init_lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___closed__0);
+return v___x_31_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1___boxed(lean_object* v_x_32_){
+_start:
+{
+lean_object* v_res_33_; 
+v_res_33_ = lp_tree_Formalism_CMTypeGaloisData_oppType___lam__1(v_x_32_);
+lean_dec(v_x_32_);
+return v_res_33_;
+}
+}
+static lean_object* _init_lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0(void){
+_start:
+{
+lean_object* v___x_34_; lean_object* v___x_35_; 
+v___x_34_ = lean_unsigned_to_nat(3u);
+v___x_35_ = l_List_finRange(v___x_34_);
+return v___x_35_;
+}
+}
+LEAN_EXPORT uint8_t lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1(lean_object* v___f_36_, lean_object* v___x_37_, uint8_t v___x_38_, lean_object* v___y_39_){
+_start:
+{
+lean_object* v___x_40_; uint8_t v___x_41_; 
+v___x_40_ = lean_obj_once(&lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0, &lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0_once, _init_lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0);
+v___x_41_ = lp_mathlib_Fintype_decidablePiFintype___redArg(v___f_36_, v___x_40_, v___x_37_, v___y_39_);
+if (v___x_41_ == 0)
+{
+uint8_t v___x_42_; 
+v___x_42_ = 1;
+return v___x_42_;
+}
+else
+{
+return v___x_38_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___boxed(lean_object* v___f_43_, lean_object* v___x_44_, lean_object* v___x_45_, lean_object* v___y_46_){
+_start:
+{
+uint8_t v___x_806__boxed_47_; uint8_t v_res_48_; lean_object* v_r_49_; 
+v___x_806__boxed_47_ = lean_unbox(v___x_45_);
+v_res_48_ = lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1(v___f_43_, v___x_44_, v___x_806__boxed_47_, v___y_46_);
+v_r_49_ = lean_box(v_res_48_);
+return v_r_49_;
+}
+}
+LEAN_EXPORT uint8_t lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__0(lean_object* v_a_50_, lean_object* v_a_51_, lean_object* v_b_52_){
+_start:
+{
+lean_object* v___x_53_; uint8_t v___x_54_; 
+v___x_53_ = lean_alloc_closure((void*)(l_Int_instDecidableEq___boxed), 2, 0);
+v___x_54_ = lp_mathlib_Units_instDecidableEq___redArg(v___x_53_, v_a_51_, v_b_52_);
+return v___x_54_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__0___boxed(lean_object* v_a_55_, lean_object* v_a_56_, lean_object* v_b_57_){
+_start:
+{
+uint8_t v_res_58_; lean_object* v_r_59_; 
+v_res_58_ = lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__0(v_a_55_, v_a_56_, v_b_57_);
+lean_dec(v_a_55_);
+v_r_59_ = lean_box(v_res_58_);
+return v_r_59_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11(lean_object* v_as_61_, size_t v_i_62_, size_t v_stop_63_, lean_object* v_b_64_){
+_start:
+{
+uint8_t v___x_65_; 
+v___x_65_ = lean_usize_dec_eq(v_i_62_, v_stop_63_);
+if (v___x_65_ == 0)
+{
+lean_object* v___f_66_; size_t v___x_67_; size_t v___x_68_; lean_object* v___x_69_; lean_object* v___x_70_; lean_object* v___f_71_; uint8_t v___x_72_; 
+v___f_66_ = ((lean_object*)(lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___closed__0));
+v___x_67_ = ((size_t)1ULL);
+v___x_68_ = lean_usize_sub(v_i_62_, v___x_67_);
+v___x_69_ = lean_array_uget_borrowed(v_as_61_, v___x_68_);
+v___x_70_ = lean_box(v___x_65_);
+lean_inc(v___x_69_);
+v___f_71_ = lean_alloc_closure((void*)(lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___boxed), 4, 3);
+lean_closure_set(v___f_71_, 0, v___f_66_);
+lean_closure_set(v___f_71_, 1, v___x_69_);
+lean_closure_set(v___f_71_, 2, v___x_70_);
+lean_inc(v_b_64_);
+v___x_72_ = l_List_decidableBAll___redArg(v___f_71_, v_b_64_);
+if (v___x_72_ == 0)
+{
+v_i_62_ = v___x_68_;
+goto _start;
+}
+else
+{
+lean_object* v___x_74_; 
+lean_inc(v___x_69_);
+v___x_74_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_74_, 0, v___x_69_);
+lean_ctor_set(v___x_74_, 1, v_b_64_);
+v_i_62_ = v___x_68_;
+v_b_64_ = v___x_74_;
+goto _start;
+}
+}
+else
+{
+return v_b_64_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___boxed(lean_object* v_as_76_, lean_object* v_i_77_, lean_object* v_stop_78_, lean_object* v_b_79_){
+_start:
+{
+size_t v_i_boxed_80_; size_t v_stop_boxed_81_; lean_object* v_res_82_; 
+v_i_boxed_80_ = lean_unbox_usize(v_i_77_);
+lean_dec(v_i_77_);
+v_stop_boxed_81_ = lean_unbox_usize(v_stop_78_);
+lean_dec(v_stop_78_);
+v_res_82_ = lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11(v_as_76_, v_i_boxed_80_, v_stop_boxed_81_, v_b_79_);
+lean_dec_ref(v_as_76_);
+return v_res_82_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10(lean_object* v_init_83_, lean_object* v_l_84_){
+_start:
+{
+lean_object* v___x_85_; lean_object* v___x_86_; lean_object* v___x_87_; uint8_t v___x_88_; 
+v___x_85_ = lean_array_mk(v_l_84_);
+v___x_86_ = lean_array_get_size(v___x_85_);
+v___x_87_ = lean_unsigned_to_nat(0u);
+v___x_88_ = lean_nat_dec_lt(v___x_87_, v___x_86_);
+if (v___x_88_ == 0)
+{
+lean_dec_ref(v___x_85_);
+return v_init_83_;
+}
+else
+{
+size_t v___x_89_; size_t v___x_90_; lean_object* v___x_91_; 
+v___x_89_ = lean_usize_of_nat(v___x_86_);
+v___x_90_ = ((size_t)0ULL);
+v___x_91_ = lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11(v___x_85_, v___x_89_, v___x_90_, v_init_83_);
+lean_dec_ref(v___x_85_);
+return v___x_91_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(lean_object* v_l_92_){
+_start:
+{
+lean_object* v___x_93_; lean_object* v___x_94_; 
+v___x_93_ = lean_box(0);
+v___x_94_ = lp_tree_List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10(v___x_93_, v_l_92_);
+return v___x_94_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4(lean_object* v_s_95_){
+_start:
+{
+lean_object* v___x_96_; 
+v___x_96_ = lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(v_s_95_);
+return v___x_96_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2(lean_object* v_s_97_){
+_start:
+{
+lean_object* v___x_98_; 
+v___x_98_ = lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(v_s_97_);
+return v___x_98_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1___redArg(lean_object* v_f_99_, lean_object* v_s_100_){
+_start:
+{
+lean_object* v___x_101_; lean_object* v___x_102_; 
+v___x_101_ = lp_mathlib_Multiset_map___redArg(v_f_99_, v_s_100_);
+v___x_102_ = lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(v___x_101_);
+return v___x_102_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1_spec__4(lean_object* v_as_103_, size_t v_i_104_, size_t v_stop_105_, lean_object* v_b_106_){
+_start:
+{
+uint8_t v___x_107_; 
+v___x_107_ = lean_usize_dec_eq(v_i_104_, v_stop_105_);
+if (v___x_107_ == 0)
+{
+size_t v___x_108_; size_t v___x_109_; lean_object* v___x_110_; lean_object* v___x_111_; 
+v___x_108_ = ((size_t)1ULL);
+v___x_109_ = lean_usize_sub(v_i_104_, v___x_108_);
+v___x_110_ = lean_array_uget_borrowed(v_as_103_, v___x_109_);
+lean_inc(v___x_110_);
+v___x_111_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_111_, 0, v___x_110_);
+lean_ctor_set(v___x_111_, 1, v_b_106_);
+v_i_104_ = v___x_109_;
+v_b_106_ = v___x_111_;
+goto _start;
+}
+else
+{
+return v_b_106_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1_spec__4___boxed(lean_object* v_as_113_, lean_object* v_i_114_, lean_object* v_stop_115_, lean_object* v_b_116_){
+_start:
+{
+size_t v_i_boxed_117_; size_t v_stop_boxed_118_; lean_object* v_res_119_; 
+v_i_boxed_117_ = lean_unbox_usize(v_i_114_);
+lean_dec(v_i_114_);
+v_stop_boxed_118_ = lean_unbox_usize(v_stop_115_);
+lean_dec(v_stop_115_);
+v_res_119_ = lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1_spec__4(v_as_113_, v_i_boxed_117_, v_stop_boxed_118_, v_b_116_);
+lean_dec_ref(v_as_113_);
+return v_res_119_;
+}
+}
+LEAN_EXPORT uint8_t lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___lam__0(lean_object* v_a_120_, lean_object* v_a_121_, lean_object* v_b_122_){
+_start:
+{
+lean_object* v___x_123_; uint8_t v___x_124_; 
+v___x_123_ = lean_alloc_closure((void*)(l_Int_instDecidableEq___boxed), 2, 0);
+v___x_124_ = lp_mathlib_Units_instDecidableEq___redArg(v___x_123_, v_a_121_, v_b_122_);
+return v___x_124_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___lam__0___boxed(lean_object* v_a_125_, lean_object* v_a_126_, lean_object* v_b_127_){
+_start:
+{
+uint8_t v_res_128_; lean_object* v_r_129_; 
+v_res_128_ = lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___lam__0(v_a_125_, v_a_126_, v_b_127_);
+lean_dec(v_a_125_);
+v_r_129_ = lean_box(v_res_128_);
+return v_r_129_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1(lean_object* v_l_131_, lean_object* v_a_132_, lean_object* v_a_133_, lean_object* v_a_134_){
+_start:
+{
+if (lean_obj_tag(v_a_133_) == 0)
+{
+lean_dec_ref(v_a_134_);
+lean_dec_ref(v_a_132_);
+lean_inc(v_l_131_);
+return v_l_131_;
+}
+else
+{
+lean_object* v_head_135_; lean_object* v_tail_136_; lean_object* v___f_137_; lean_object* v___x_138_; uint8_t v___x_139_; 
+v_head_135_ = lean_ctor_get(v_a_133_, 0);
+lean_inc_n(v_head_135_, 2);
+v_tail_136_ = lean_ctor_get(v_a_133_, 1);
+lean_inc(v_tail_136_);
+lean_dec_ref_known(v_a_133_, 2);
+v___f_137_ = ((lean_object*)(lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___closed__0));
+v___x_138_ = lean_obj_once(&lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0, &lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0_once, _init_lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0);
+lean_inc_ref(v_a_132_);
+v___x_139_ = lp_mathlib_Fintype_decidablePiFintype___redArg(v___f_137_, v___x_138_, v_head_135_, v_a_132_);
+if (v___x_139_ == 0)
+{
+lean_object* v___x_140_; 
+v___x_140_ = lean_array_push(v_a_134_, v_head_135_);
+v_a_133_ = v_tail_136_;
+v_a_134_ = v___x_140_;
+goto _start;
+}
+else
+{
+lean_object* v___x_142_; lean_object* v___x_143_; uint8_t v___x_144_; 
+lean_dec(v_head_135_);
+lean_dec_ref(v_a_132_);
+v___x_142_ = lean_array_get_size(v_a_134_);
+v___x_143_ = lean_unsigned_to_nat(0u);
+v___x_144_ = lean_nat_dec_lt(v___x_143_, v___x_142_);
+if (v___x_144_ == 0)
+{
+lean_dec_ref(v_a_134_);
+return v_tail_136_;
+}
+else
+{
+size_t v___x_145_; size_t v___x_146_; lean_object* v___x_147_; 
+v___x_145_ = lean_usize_of_nat(v___x_142_);
+v___x_146_ = ((size_t)0ULL);
+v___x_147_ = lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00__private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1_spec__4(v_a_134_, v___x_145_, v___x_146_, v_tail_136_);
+lean_dec_ref(v_a_134_);
+return v___x_147_;
+}
+}
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___boxed(lean_object* v_l_148_, lean_object* v_a_149_, lean_object* v_a_150_, lean_object* v_a_151_){
+_start:
+{
+lean_object* v_res_152_; 
+v_res_152_ = lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1(v_l_148_, v_a_149_, v_a_150_, v_a_151_);
+lean_dec(v_l_148_);
+return v_res_152_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0(lean_object* v_s_155_, lean_object* v_a_156_){
+_start:
+{
+lean_object* v___x_157_; lean_object* v___x_158_; 
+v___x_157_ = ((lean_object*)(lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0___closed__0));
+lean_inc(v_s_155_);
+v___x_158_ = lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1(v_s_155_, v_a_156_, v_s_155_, v___x_157_);
+lean_dec(v_s_155_);
+return v___x_158_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0(lean_object* v_s_159_, lean_object* v_a_160_){
+_start:
+{
+lean_object* v___x_161_; 
+v___x_161_ = lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0(v_s_159_, v_a_160_);
+return v___x_161_;
+}
+}
+LEAN_EXPORT uint8_t lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4(lean_object* v_a_162_, lean_object* v_x_163_){
+_start:
+{
+if (lean_obj_tag(v_x_163_) == 0)
+{
+uint8_t v___x_164_; 
+lean_dec_ref(v_a_162_);
+v___x_164_ = 0;
+return v___x_164_;
+}
+else
+{
+lean_object* v_head_165_; lean_object* v_tail_166_; lean_object* v___f_167_; lean_object* v___x_168_; uint8_t v___x_169_; 
+v_head_165_ = lean_ctor_get(v_x_163_, 0);
+lean_inc(v_head_165_);
+v_tail_166_ = lean_ctor_get(v_x_163_, 1);
+lean_inc(v_tail_166_);
+lean_dec_ref_known(v_x_163_, 2);
+v___f_167_ = ((lean_object*)(lp_tree___private_Init_Data_List_Impl_0__List_eraseTR_go___at___00Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0_spec__1___closed__0));
+v___x_168_ = lean_obj_once(&lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0, &lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0_once, _init_lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0);
+lean_inc_ref(v_a_162_);
+v___x_169_ = lp_mathlib_Fintype_decidablePiFintype___redArg(v___f_167_, v___x_168_, v_a_162_, v_head_165_);
+if (v___x_169_ == 0)
+{
+v_x_163_ = v_tail_166_;
+goto _start;
+}
+else
+{
+lean_dec(v_tail_166_);
+lean_dec_ref(v_a_162_);
+return v___x_169_;
+}
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4___boxed(lean_object* v_a_171_, lean_object* v_x_172_){
+_start:
+{
+uint8_t v_res_173_; lean_object* v_r_174_; 
+v_res_173_ = lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4(v_a_171_, v_x_172_);
+v_r_174_ = lean_box(v_res_173_);
+return v_r_174_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2(lean_object* v_a_175_, lean_object* v_s_176_){
+_start:
+{
+uint8_t v___x_177_; 
+lean_inc(v_s_176_);
+lean_inc_ref(v_a_175_);
+v___x_177_ = lp_tree_List_elem___at___00Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2_spec__4(v_a_175_, v_s_176_);
+if (v___x_177_ == 0)
+{
+lean_object* v___x_178_; 
+v___x_178_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_178_, 0, v_a_175_);
+lean_ctor_set(v___x_178_, 1, v_s_176_);
+return v___x_178_;
+}
+else
+{
+lean_dec_ref(v_a_175_);
+return v_s_176_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oppType(lean_object* v_00_u03a6_181_){
+_start:
+{
+lean_object* v___f_182_; lean_object* v___f_183_; lean_object* v___x_184_; lean_object* v___x_185_; lean_object* v___x_186_; 
+v___f_182_ = ((lean_object*)(lp_tree_Formalism_CMTypeGaloisData_oppType___closed__0));
+v___f_183_ = ((lean_object*)(lp_tree_Formalism_CMTypeGaloisData_oppType___closed__1));
+v___x_184_ = lp_tree_Multiset_erase___at___00Finset_erase___at___00Formalism_CMTypeGaloisData_oppType_spec__0_spec__0(v_00_u03a6_181_, v___f_183_);
+v___x_185_ = lp_tree_Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1___redArg(v___f_182_, v___x_184_);
+v___x_186_ = lp_tree_Multiset_ndinsert___at___00Formalism_CMTypeGaloisData_oppType_spec__2(v___f_183_, v___x_185_);
+return v___x_186_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1(lean_object* v_00_u03b1_187_, lean_object* v_f_188_, lean_object* v_s_189_){
+_start:
+{
+lean_object* v___x_190_; 
+v___x_190_ = lp_tree_Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1___redArg(v_f_188_, v_s_189_);
+return v___x_190_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7(lean_object* v_l_191_){
+_start:
+{
+lean_object* v___x_192_; 
+v___x_192_ = lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(v_l_191_);
+return v___x_192_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9(lean_object* v_R_193_, lean_object* v_l_194_){
+_start:
+{
+lean_object* v___x_195_; 
+v___x_195_ = lp_tree_List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9___redArg(v_l_194_);
+return v___x_195_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__0(lean_object* v___y_196_){
+_start:
+{
+lean_internal_panic_unreachable();
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__0___boxed(lean_object* v___y_197_){
+_start:
+{
+lean_object* v_res_198_; 
+v_res_198_ = lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__0(v___y_197_);
+lean_dec(v___y_197_);
+return v_res_198_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__1(lean_object* v___x_199_, lean_object* v___f_200_, lean_object* v___y_201_){
+_start:
+{
+lean_object* v___x_202_; 
+v___x_202_ = l_Fin_cases___redArg(v___x_199_, v___f_200_, v___y_201_);
+return v___x_202_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__1___boxed(lean_object* v___x_203_, lean_object* v___f_204_, lean_object* v___y_205_){
+_start:
+{
+lean_object* v_res_206_; 
+v_res_206_ = lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__1(v___x_203_, v___f_204_, v___y_205_);
+lean_dec(v___y_205_);
+lean_dec(v___x_203_);
+return v_res_206_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2(lean_object* v___x_207_, lean_object* v___f_208_, lean_object* v___y_209_){
+_start:
+{
+lean_object* v___x_210_; 
+v___x_210_ = l_Fin_cases___redArg(v___x_207_, v___f_208_, v___y_209_);
+return v___x_210_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2___boxed(lean_object* v___x_211_, lean_object* v___f_212_, lean_object* v___y_213_){
+_start:
+{
+lean_object* v_res_214_; 
+v_res_214_ = lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2(v___x_211_, v___f_212_, v___y_213_);
+lean_dec(v___y_213_);
+lean_dec(v___x_211_);
+return v_res_214_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__1(void){
+_start:
+{
+lean_object* v___x_216_; lean_object* v___x_217_; lean_object* v___x_218_; 
+v___x_216_ = lean_unsigned_to_nat(3u);
+v___x_217_ = lean_unsigned_to_nat(0u);
+v___x_218_ = lean_nat_mod(v___x_217_, v___x_216_);
+return v___x_218_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__2(void){
+_start:
+{
+lean_object* v___x_219_; lean_object* v___x_220_; lean_object* v___x_221_; 
+v___x_219_ = lean_box(0);
+v___x_220_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__1, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__1_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__1);
+v___x_221_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_221_, 0, v___x_220_);
+lean_ctor_set(v___x_221_, 1, v___x_219_);
+return v___x_221_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__3(void){
+_start:
+{
+lean_object* v___x_222_; lean_object* v___x_223_; lean_object* v___x_224_; 
+v___x_222_ = lean_unsigned_to_nat(3u);
+v___x_223_ = lean_unsigned_to_nat(1u);
+v___x_224_ = lean_nat_mod(v___x_223_, v___x_222_);
+return v___x_224_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__4(void){
+_start:
+{
+lean_object* v___x_225_; lean_object* v___x_226_; lean_object* v___x_227_; 
+v___x_225_ = lean_box(0);
+v___x_226_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__3, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__3_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__3);
+v___x_227_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_227_, 0, v___x_226_);
+lean_ctor_set(v___x_227_, 1, v___x_225_);
+return v___x_227_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__5(void){
+_start:
+{
+lean_object* v___x_228_; lean_object* v___x_229_; lean_object* v___x_230_; 
+v___x_228_ = lean_unsigned_to_nat(3u);
+v___x_229_ = lean_unsigned_to_nat(2u);
+v___x_230_ = lean_nat_mod(v___x_229_, v___x_228_);
+return v___x_230_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__6(void){
+_start:
+{
+lean_object* v___x_231_; lean_object* v___x_232_; lean_object* v___x_233_; 
+v___x_231_ = lean_box(0);
+v___x_232_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__5, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__5_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__5);
+v___x_233_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_233_, 0, v___x_232_);
+lean_ctor_set(v___x_233_, 1, v___x_231_);
+return v___x_233_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__7(void){
+_start:
+{
+lean_object* v___f_234_; lean_object* v___x_235_; lean_object* v___f_236_; 
+v___f_234_ = ((lean_object*)(lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__0));
+v___x_235_ = lean_obj_once(&lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0, &lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0_once, _init_lp_tree___private_Init_Data_Array_Basic_0__Array_foldrMUnsafe_fold___at___00List_foldrTR___at___00List_pwFilter___at___00List_dedup___at___00Multiset_dedup___at___00Multiset_toFinset___at___00Finset_image___at___00Formalism_CMTypeGaloisData_oppType_spec__1_spec__2_spec__4_spec__7_spec__9_spec__10_spec__11___lam__1___closed__0);
+v___f_236_ = lean_alloc_closure((void*)(lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__1___boxed), 3, 2);
+lean_closure_set(v___f_236_, 0, v___x_235_);
+lean_closure_set(v___f_236_, 1, v___f_234_);
+return v___f_236_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__8(void){
+_start:
+{
+lean_object* v___f_237_; lean_object* v___x_238_; lean_object* v___f_239_; 
+v___f_237_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__7, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__7_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__7);
+v___x_238_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__6, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__6_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__6);
+v___f_239_ = lean_alloc_closure((void*)(lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2___boxed), 3, 2);
+lean_closure_set(v___f_239_, 0, v___x_238_);
+lean_closure_set(v___f_239_, 1, v___f_237_);
+return v___f_239_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__9(void){
+_start:
+{
+lean_object* v___f_240_; lean_object* v___x_241_; lean_object* v___f_242_; 
+v___f_240_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__8, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__8_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__8);
+v___x_241_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__4, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__4_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__4);
+v___f_242_ = lean_alloc_closure((void*)(lp_tree_Formalism_CMTypeGaloisData_oddSet___lam__2___boxed), 3, 2);
+lean_closure_set(v___f_242_, 0, v___x_241_);
+lean_closure_set(v___f_242_, 1, v___f_240_);
+return v___f_242_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet(lean_object* v_a_243_){
+_start:
+{
+lean_object* v___x_244_; lean_object* v___f_245_; lean_object* v___x_246_; 
+v___x_244_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__2, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__2_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__2);
+v___f_245_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__9, &lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__9_once, _init_lp_tree_Formalism_CMTypeGaloisData_oddSet___closed__9);
+v___x_246_ = l_Fin_cases___redArg(v___x_244_, v___f_245_, v_a_243_);
+return v___x_246_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddSet___boxed(lean_object* v_a_247_){
+_start:
+{
+lean_object* v_res_248_; 
+v_res_248_ = lp_tree_Formalism_CMTypeGaloisData_oddSet(v_a_247_);
+lean_dec(v_a_247_);
+return v_res_248_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddChar___lam__0(lean_object* v_g_249_, lean_object* v_j_250_){
+_start:
+{
+lean_object* v___x_251_; lean_object* v_val_252_; 
+v___x_251_ = lean_apply_1(v_g_249_, v_j_250_);
+v_val_252_ = lean_ctor_get(v___x_251_, 0);
+lean_inc(v_val_252_);
+lean_dec_ref(v___x_251_);
+return v_val_252_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0(lean_object* v_s_254_){
+_start:
+{
+lean_object* v___f_255_; lean_object* v___x_256_; lean_object* v___x_257_; 
+v___f_255_ = ((lean_object*)(lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0___closed__0));
+v___x_256_ = lean_obj_once(&lp_tree_Formalism_CMTypeGaloisData_cc___closed__0, &lp_tree_Formalism_CMTypeGaloisData_cc___closed__0_once, _init_lp_tree_Formalism_CMTypeGaloisData_cc___closed__0);
+v___x_257_ = l_List_foldrTR___redArg(v___f_255_, v___x_256_, v_s_254_);
+return v___x_257_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0___redArg(lean_object* v_s_258_, lean_object* v_f_259_){
+_start:
+{
+lean_object* v___x_260_; lean_object* v___x_261_; 
+v___x_260_ = lp_mathlib_Multiset_map___redArg(v_f_259_, v_s_258_);
+v___x_261_ = lp_tree_Multiset_prod___at___00Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0_spec__0(v___x_260_);
+return v___x_261_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddChar(lean_object* v_i_262_, lean_object* v_g_263_){
+_start:
+{
+lean_object* v___f_264_; lean_object* v___x_265_; lean_object* v___x_266_; 
+v___f_264_ = lean_alloc_closure((void*)(lp_tree_Formalism_CMTypeGaloisData_oddChar___lam__0), 2, 1);
+lean_closure_set(v___f_264_, 0, v_g_263_);
+v___x_265_ = lp_tree_Formalism_CMTypeGaloisData_oddSet(v_i_262_);
+v___x_266_ = lp_tree_Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0___redArg(v___x_265_, v___f_264_);
+return v___x_266_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_CMTypeGaloisData_oddChar___boxed(lean_object* v_i_267_, lean_object* v_g_268_){
+_start:
+{
+lean_object* v_res_269_; 
+v_res_269_ = lp_tree_Formalism_CMTypeGaloisData_oddChar(v_i_267_, v_g_268_);
+lean_dec(v_i_267_);
+return v_res_269_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0(lean_object* v_00_u03b9_270_, lean_object* v_s_271_, lean_object* v_f_272_){
+_start:
+{
+lean_object* v___x_273_; 
+v___x_273_ = lp_tree_Finset_prod___at___00Formalism_CMTypeGaloisData_oddChar_spec__0___redArg(v_s_271_, v_f_272_);
+return v___x_273_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_tree_Formalism_ZetaNonvanishingChebyshevWeights(uint8_t builtin);
+lean_object* initialize_tree_Formalism_StatementCM(uint8_t builtin);
+lean_object* initialize_tree_Formalism_ProductFormula_StatementOCCM(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_Formalism_HalfLinks_Statement(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_ZetaNonvanishingChebyshevWeights(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_StatementCM(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_ProductFormula_StatementOCCM(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

@@ -1,0 +1,64 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
+import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CuspDiscreteDecompositionOfTraceClass
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsFactorisationCuspidal
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LabesseWaldspurger
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticTraceOfInputsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceInputsImplyCuspidalTraceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalSpectrumFinitenessOfDecayHarishChandraStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricExpansionOfPartsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicTermsVanishStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealStableOfCharactersStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSeparationOfIwahoriTraceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PseudoCoefficientSeparationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceEqualityOfGeomExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PseudocoefficientSeparationOfHarishChandraStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonFieldTypeVanishingStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LengthFilterFinRange
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IwahoriEigenvalues
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriTraceOfBorelCasselman
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleUnitaryGroupConcreteStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicAndConstantTermStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentConstantTermVanishStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalOperatorsVanishingRadicalIntegralsUnitarStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EllipticPartStatement
+open MeasureTheory Set Filter NumberField IsDedekindDomain
+open GlobalTheory.AdelicU GlobalTheory.OpTrace GlobalTheory.Orb GlobalTheory.AutomorphicL2Unitary GlobalTheory.AutMult Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
+open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta Formalism.IndefR.Mult
+open GlobalTheory.IndefiniteRowSideFullHecke.PlusPolynomialRoots (IsTestData PPol Tor Phi PhiOK PhiReal ellKernel Gap NoFixed IsLatticeConj GeomExpansion EllipticPart TraceEq)
+open GlobalTheory.PRep (IsAdmissible)
+open GlobalTheory.TrMult
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+
+namespace GlobalTheory.EqualMultAssembly
+
+theorem trCusp_of_classicalTheorems :
+    GlobalTheory.Published.HarishChandraAnalyticity → GlobalTheory.Published.DiscreteSeriesClassification →
+    GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspTraceClass →
+    GlobalTheory.Published.DixmierMalliavinFactorisation → GlobalTheory.Published.FlathFactorisation →
+    GlobalTheory.Published.PseudoCoefficientUpq → GlobalTheory.Published.HarishChandraCharacters →
+    GlobalTheory.Published.LanglandsClassification → GlobalTheory.Published.LabesseWaldspurger →
+    GlobalTheory.Published.ZelevinskyPolynomialRing → GlobalTheory.Published.GeometricLemma → TRCusp := by
+  intro an ds rd hf tc dm fl ps hc lc lw ze gl
+  have co := GlobalTheory.T.cuspidalOperators_vanishingRadicalIntegrals_unitaryGroup tc
+  have asep := GlobalTheory.T.pseudocoefficient_separation_of_harish_chandra an ps hc lc
+  have hyp := GlobalTheory.T.hyperbolic_terms_vanish lw GlobalTheory.T.parabolic_and_constant_term GlobalTheory.T.typeIdempotent_constantTerm_vanish GlobalTheory.T.regularSemisimple_unitaryGroup_concrete
+  have ell := GlobalTheory.T.elliptic_trace_of_inputs lw co GlobalTheory.T.parabolic_and_constant_term GlobalTheory.IwahoriEigenObj.iwahoriEigenvalues
+    GlobalTheory.T.regularSemisimple_unitaryGroup_concrete GlobalTheory.T.non_field_type_vanishing hyp
+  exact GlobalTheory.T.trace_inputs_imply_cuspidal_trace ps (GlobalTheory.T.cuspidal_spectrum_finiteness_of_decay_harishChandra rd hf dm)
+    (GlobalTheory.T.pseudo_coefficient_separation ds rd hf dm fl hc co GlobalTheory.T.parabolic_and_constant_term asep)
+    (GlobalTheory.T.trace_separation_of_iwahori_trace GlobalTheory.IwahoriTraceProof.iwahoriTrace
+      (GlobalTheory.SmGL.Exponents.exponentsSeparate gl ze))
+    (GlobalTheory.T.trace_equality_of_geom_expansion (GlobalTheory.T.geometric_expansion_of_parts ell GlobalTheory.T.elliptic_part (GlobalTheory.T.real_stable_of_characters hc)))
+
+end GlobalTheory.EqualMultAssembly

@@ -1,0 +1,23 @@
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitFin
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.ExistsUpperProjectionInverseTranspose
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.UpperProjectionInverseTransposeRightInverse
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InducedVanishOfVanishOnIntegral
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitCharacterFacts
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.ValuationIntegersEqCompletion
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
+import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.PfDict
+
+namespace PositivityTheory.ThK.SplitAsm
+
+open PositivityTheory.ThK.SplitLoc PositivityTheory.ThK.SplitDict
+
+theorem finite_ramified_of_bernstein (hB : GlobalTheory.Published.BernsteinUnitaryProductIrreducible) : PositivityTheory.ThK.FinRam :=
+  finRam_of (ramMaps_of (indIrred_of hB)) ramified_map_ne_zero (indIrred_of hB) split_place_dictionary PositivityTheory.KCo.action_uniqueness
+    split_character_facts
+
+theorem finite_split_holds (hB : GlobalTheory.Published.BernsteinUnitaryProductIrreducible) : PositivityTheory.ThK.FinSplit :=
+  finSplit_of (unrMaps_of (indIrred_of hB)) (indIrred_of hB) induced_vanish_of_vanish_on_integral split_place_dictionary PositivityTheory.KCo.action_uniqueness
+    split_character_facts
+    valuation_integers_eq_completion
+
+end PositivityTheory.ThK.SplitAsm

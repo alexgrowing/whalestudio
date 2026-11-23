@@ -1,0 +1,12 @@
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.ModelExistenceOfSiegel
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.SiegelP
+
+noncomputable section
+
+namespace PositivityTheory.SiegelWeilFormula.Ald
+
+theorem modelEx : ModelEx := model_existence_of_siegel (siegelSmall_of_slice sliceFacts)
+
+end PositivityTheory.SiegelWeilFormula.Ald
+
+end

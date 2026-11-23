@@ -1,0 +1,77 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["64ad0e017d50f11d.olean"],
+  "m": false,
+  "i": "6604c508935260ea.ilean",
+  "c": "691225ae8f53f1d5.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:21:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplitC_apply`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:30:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplit_smul_map`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:47:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplit_one_map`:\n  [Fintype n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:54:10: This simp argument is unused:\n  Matrix.one_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h1]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:55:10: This simp argument is unused:\n  Matrix.one_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:62:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplitC_decomp`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:69:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplitC_prV`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:76:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplitC_prV_ne`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:88:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplitC_cT`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:95:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.afsplitC_J`:\n  [Fintype n]\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype n] [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean:126:69: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB transitive imports (legacy)",
+       "c0d1737b3c1a656d"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB:importAllArts",
+       "5ee1aa938cd668e6"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd transitive imports (legacy)",
+       "bc52339ce04850ea"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd:importAllArts",
+       "41f6b0ee41917bc4"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/AfsplitC.lean",
+   "0e44ed4f237da53d"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitC",
+   "d4e61eb995f07723"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "420756c4756a2dcc"}

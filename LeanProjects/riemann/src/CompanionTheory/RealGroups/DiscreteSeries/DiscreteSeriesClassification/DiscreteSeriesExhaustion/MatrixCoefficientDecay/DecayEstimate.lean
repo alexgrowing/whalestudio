@@ -1,0 +1,11 @@
+import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.DecayOf
+import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.LineFormulas.ExhaustionStart
+import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.InfinitesimalCharacterPaths.ExhaustionLabels
+import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.HilbertSchmidtDecay.BackwardOfLineFormula
+
+namespace CompanionTheory.RgExh.Dec
+
+theorem decay_estimate : CompanionTheory.RgExh.StepChar → CompanionTheory.RgExh.Decay :=
+  decay_of N.S.exhaustion_start J.exhaustion_labels L.backward_of_line_formula
+
+end CompanionTheory.RgExh.Dec

@@ -1,0 +1,124 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["81584e794d3252a1.olean"],
+  "m": false,
+  "i": "587e15fb05d998ef.ilean",
+  "c": "e3bea2f7a0c02726.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:42:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:45:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:42:6: Unused tactic linter: `simp [bord_mul, bord_one]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:45:6: Unused tactic linter: `simp [bord_mul, bord_one]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:54:33: This simp argument is unused:\n  h0\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Matrix.diagonal_apply, h0']\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:54:37: This simp argument is unused:\n  h0'\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Matrix.diagonal_apply, h0]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:79:44: This simp argument is unused:\n  Fin.sum_univ_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp [S, T, S', T', Matrix.mul_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:123:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:127:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:123:6: Unused tactic linter: `simp [← PEquiv.toMatrix_trans, ← Equiv.toPEquiv_trans]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:127:6: Unused tactic linter: `simp [← PEquiv.toMatrix_trans, ← Equiv.toPEquiv_trans]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:164:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:170:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:175:40: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:177:58: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:179:63: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:183:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:174:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:176:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:178:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:180:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:164:6: Unused tactic linter: `exact IsUnit.of_mul_eq_one _ h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:170:6: Unused tactic linter: `exact IsUnit.of_mul_eq_one _ h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:175:40: Unused tactic linter: `linear_combination (-1 : R) * hb` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:177:58: Unused tactic linter: `linear_combination (A 0 j.succ) * hb` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:179:63: Unused tactic linter: `linear_combination (A i.succ 0 * b) * hb'` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:183:10: Unused tactic linter: `linear_combination (-(A i.succ 0 * b * A 0 j.succ)) * hb'` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean:212:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaloisIrreducibility.Statement transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.GaloisIrreducibility.Statement:importAllArts",
+       "aa4761c401a6ecc9"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/OneNonUnit.lean",
+   "5f05d598d41fe1e5"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.OneNonUnit",
+   "8b51bdc9c120ea21"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "3c66b1a86c4d3bc3"}

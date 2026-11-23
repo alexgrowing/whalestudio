@@ -1,0 +1,173 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["f531eb2e78710058.olean"],
+  "m": false,
+  "i": "8f2bda40df38dae8.ilean",
+  "c": "a11ac23a96845600.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:98: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:164: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:223: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:290: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:349: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:479: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:568: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:654: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:738: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:818: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:894: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:966: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1034: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1098: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1158: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1214: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1266: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1314: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1360: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:55: Unused tactic linter: `apply Bl.general_b_fact_second''.goal1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:98: Unused tactic linter: `assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:113: Unused tactic linter: `intros` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:121: Unused tactic linter: `(apply Bl.general_b_fact_second''.goal1) <;> assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:179: Unused tactic linter: `apply @Bl.general_b_fact_second''.goal1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:223: Unused tactic linter: `assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:238: Unused tactic linter: `intros` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:246: Unused tactic linter: `(apply @Bl.general_b_fact_second''.goal1) <;> assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:305: Unused tactic linter: `apply @Bl.general_b_fact_second''.goal1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:349: Unused tactic linter: `first\n| assumption\n| infer_instance` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:479: Unused tactic linter: `exact\n  @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› B hB` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:568: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› B` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:654: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:738: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:818: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:894: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:966: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1034: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1098: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1158: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1214: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1266: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K X` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1314: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean:83:1360: Unused tactic linter: `exact @Bl.general_b_fact_second''.goal1 O` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LogFactorialIndices.StatementIdx transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.LogFactorialIndices.StatementIdx:importAllArts",
+       "2f304e5e7f53e8f8"],
+      ["Lemmata.GeneralBFactSecondFurther.Imports transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.GeneralBFactSecondFurther.Imports:importAllArts",
+       "545a1f7329392191"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LogFactorialIndices/SignedSubspaceIndex/IdxBase.lean",
+   "53b76b67d6136acc"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxBase",
+   "d9d6f6c19e8bbf83"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "28aaea96e849ca7c"}

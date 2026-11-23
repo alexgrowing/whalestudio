@@ -1,0 +1,13 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolydiscUniformHermitianBound
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCochFrame
+import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+open AlgebraicGeometry CategoryTheory Limits NumberField MonoidalCategory CartesianMonoidalCategory MonObj Matrix Topology
+open Formalism.BasicNotions ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.PullbackSections ReciprocityTheory.ChartRestriction.G.Pdiv ReciprocityTheory.GeometryOfNumbersTheory
+open scoped CategoryTheory.Obj ComplexOrder
+open GlobalTheory GlobalTheory.CubeFib GlobalTheory.LieMet GlobalTheory.LieHt GlobalTheory.LocM.Frm GlobalTheory.ShFam GlobalTheory.ShFam.Pad GlobalTheory.ShFam.Hor GlobalTheory.ShFam.Hor.LogCh GlobalTheory.Toroidal GlobalTheory.HeightParts GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.BdFib
+attribute [local instance] Over.cartesianMonoidalCategory
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.polydisc_uniform_hermitian_bound : ∀ (n a g rk : ℕ) (ha : a ≤ n) (τ₀ : (Fin n → ℂ) → Matrix (Fin g) (Fin g) ℂ) (B : Fin a → Matrix (Fin g) (Fin g) ℤ) (d : ℝ) (Dn : ℕ), GlobalTheory.IndefiniteRowSideFullHecke.HodgePeriodGram.IsPeriodChart rk τ₀ B → 0 < d → 0 < Dn → ∃ ρ C : ℝ, 0 < ρ ∧ ρ ≤ 1 ∧ 0 ≤ C ∧ ∀ z₀ ∈ GlobalTheory.IndefiniteRowSideFullHecke.HodgePeriodGram.polydisc n ρ, ∀ (Λ : Set (Fin g → ℂ)) (g' : ℕ) (π : (Fin g → ℂ) →ₗ[ℂ] (Fin g' → ℂ)) (H' : Matrix (Fin g') (Fin g') ℂ), H'.IsHermitian → (∀ w : Fin g' → ℂ, w ≠ 0 → 0 < (hermForm H' w w).re) → Submodule.span ℝ (π '' Λ) = ⊤ → Module.finrank ℝ (Submodule.span ℝ Λ) + Module.finrank ℂ (LinearMap.ker π) ≤ 2 * g → (∀ v ∈ Λ, ∀ w ∈ Λ, ∃ ζ ζ' : (Fin n → ℂ) → Fin g → ℂ, ContinuousAt ζ z₀ ∧ ContinuousAt ζ' z₀ ∧ ζ z₀ = v ∧ ζ' z₀ = w ∧ ∀ᶠ z in 𝓝 z₀, (∀ i : Fin a, z (Fin.castLE ha i) ≠ 0) → (hermForm (((d : ℝ) : ℂ) • (GlobalTheory.IndefiniteRowSideFullHecke.HodgePeriodGram.hodgeGram ha τ₀ B z)⁻¹) (ζ z) (ζ' z)).im = (hermForm H' (π v) (π w)).im) → (∃ large₂ : Fin a → ℂ, (∀ i, z₀ (Fin.castLE ha i) ≠ 0 → Complex.exp (large₂ i) = z₀ (Fin.castLE ha i)) ∧ ∀ m m' : Fin g → ℤ, (∀ i, z₀ (Fin.castLE ha i) = 0 → B i *ᵥ m' = 0) → (Dn : ℂ) • ((fun i => (m i : ℂ)) + GlobalTheory.IndefiniteRowSideFullHecke.HodgePeriodGram.period τ₀ B z₀ large₂ *ᵥ fun i => (m' i : ℂ)) ∈ Λ) → ∀ v : Fin g → ℂ, (hermForm H' (π v) (π v)).re ≤ C * ‖v‖ ^ 2 := by
+  first | exact @GlobalTheory.PeriodLimit.limit_form_bounded | exact GlobalTheory.PeriodLimit.limit_form_bounded | (intros; apply GlobalTheory.PeriodLimit.limit_form_bounded <;> assumption)

@@ -1,0 +1,25 @@
+import Mathlib
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.EtProps
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.KummerCupProducts.Inputs
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiIsoHypercohomologyBijective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyCoefficientLongExactSequence
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyNegativeVanishingDegreeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyBijectiveOfSupportBijective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupProductGradedCommRingAxiomsHold
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupChernKummerPullbackNaturality
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyCoefficientRingInvariance
+
+set_option backward.isDefEq.respectTransparency false
+
+noncomputable section
+
+open CategoryTheory Limits AlgebraicGeometry TensorProduct
+
+namespace CrystallineSemistableComparison
+
+theorem formalIn : FormalIn :=
+  ⟨GlobalTheory.EtC.quasiIso_hypercohomology_bijective', GlobalTheory.EtC.a6nat_holds, GlobalTheory.EtC.a6ring_holds, GlobalTheory.EtC.coefSeq_exact, GlobalTheory.EtC.a8,
+    GlobalTheory.EtC.etale_cohomology_vanishing_negative_degree_zero, GlobalTheory.EtC.a10,
+    E.etIn⟩
+
+end CrystallineSemistableComparison

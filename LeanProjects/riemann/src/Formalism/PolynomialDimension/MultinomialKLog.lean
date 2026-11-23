@@ -1,0 +1,10 @@
+import Formalism.PolynomialDimension.MultinomialDepth.DvdPowOfNotPowSuccDvd
+import Formalism.PolynomialDimension.MultinomialDepth.FockGaussComparisonHolds
+import Mathlib
+import Formalism.PolynomialDimension.MultinomialDepth.IntervalRoomBound
+
+namespace Formalism.CountingSumsFrames.Top
+
+theorem shareProd : Formalism.CountingSumsFrames.ShareProd := Formalism.CountingSumsFrames.share_product_bound
+
+end Formalism.CountingSumsFrames.Top

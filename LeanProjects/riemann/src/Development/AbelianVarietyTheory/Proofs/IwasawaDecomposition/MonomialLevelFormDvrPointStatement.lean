@@ -1,0 +1,9 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonomialLevelFormDvrPoint
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
+open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R Formalism.L2.Pj
+open GlobalTheory GlobalTheory.Toroidal GlobalTheory.Models GlobalTheory.LN GlobalTheory.ShFam GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.TorRef
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.monomial_level_form_dvr_point : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l) (X : GMod Xo c) (W : Type) [CommRing W] [IsDomain W] [IsLocalRing W], CDvr W → ∀ ϖ : W, Irreducible ϖ → ∀ (y : Sp W ⟶ X.X) (t : SAB H (Sp W)) (_ : SABMap t X.t y) (P : PELUnif (maximalIdeal W) t), Set.range (jK W ≫ y) ⊆ Set.range X.j → ∀ be ∈ levelForms H 1 P.D.toPre.X, IsMonomial P.D.toPre ![ϖ] ![be] → Nontrivial P.D.toPre.X → ∃ (T' : CDVR) (g : W →+* T'.V) (ϖ' : T'.V) (k : ℕ) (b' : 𝓞 c.F →+* T'.V) (a : ArcIn D l (algebraMap (𝓞 c.F) c.F) T'.V b') (e' : a.D₀.X ≃ₗ[𝓞 E] P.D.toPre.X), Function.Injective g ∧ IsLocalHom g ∧ Irreducible ϖ' ∧ 0 < k ∧ Associated (g ϖ) (ϖ' ^ k) ∧ (spMap g ≫ y) ≫ X.s = spMap b' ∧ Set.range (jK T'.V ≫ spMap g ≫ y) ⊆ Set.range X.j ∧ X.HasArcData a (Ideal.span {ϖ'}) (RingHom.id T'.V) ϖ' (spMap g ≫ y) ∧ ∀ u v, a.be u v = (k : ℤ) * be (e' u) (e' v) := by
+  first | exact @GlobalTheory.ArcExtForm.exists_arcData_mul_ram | exact GlobalTheory.ArcExtForm.exists_arcData_mul_ram | (intros; apply GlobalTheory.ArcExtForm.exists_arcData_mul_ram <;> assumption)

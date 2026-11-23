@@ -1,0 +1,8 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFlagFieldChange
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordTieCompEquiv
+open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.FlagBun
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.generic_flag_field_change : ∀ (Ω₀ Ω : Type) [Field Ω₀] [Field Ω] (fn : Ω₀ →+* Ω) (S : Type) (r : S → ℕ) (d : ℕ), 0 < d → (letI := ((algebraMap Ω (GenField Ω r)).comp fn).toAlgebra; Module.finrank (IntermediateField.adjoin Ω₀ (Set.range fun q : GenIx r => algebraMap (MvPolynomial (GenIx r) Ω) (GenField Ω r) (MvPolynomial.X q))) (GenField Ω r) = d) → ∀ (E₀ E' : Type) [AddCommGroup E₀] [Module Ω₀ E₀] [AddCommGroup E'] [Module (GenField Ω r) E'] (j : E₀ →+ E') (V₀ : S → Submodule Ω₀ E₀) (c : ∀ s, Fin (r s) → E₀), (∀ s, LinearIndependent Ω₀ (c s) ∧ Submodule.span Ω₀ (Set.range (c s)) = V₀ s) → (∀ (a : Ω₀) e, j (a • e) = algebraMap Ω (GenField Ω r) (fn a) • j e) → (∀ s, LinearIndependent (GenField Ω r) fun k => j (c s k)) → (∀ s, Submodule.span (GenField Ω r) (Set.range fun k => ∑ l, genU Ω r s l k • j (c s l)) = Submodule.span (GenField Ω r) (Set.range fun k => j (c s k))) ∧ (letI := ((algebraMap Ω (GenField Ω r)).comp fn).toAlgebra; IsGenericFlag (Ω' := GenField Ω r) j V₀ (fun s k => ∑ l, genU Ω r s l k • j (c s l)) d) := by
+  first | exact @GlobalTheory.CompanionTheory.Ar.FlagBun.GenericColumns.isGenericFlag_columns | exact GlobalTheory.CompanionTheory.Ar.FlagBun.GenericColumns.isGenericFlag_columns | (intros; apply GlobalTheory.CompanionTheory.Ar.FlagBun.GenericColumns.isGenericFlag_columns <;> assumption)

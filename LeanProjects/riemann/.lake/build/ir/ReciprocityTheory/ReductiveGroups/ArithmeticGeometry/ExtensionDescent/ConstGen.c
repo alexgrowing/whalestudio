@@ -1,0 +1,484 @@
+// Lean compiler output
+// Module: ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ConstGen
+// Imports: public import Init public meta import Init public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* lp_mathlib_AlgebraicGeometry_PresheafedSpace_id___at___00AlgebraicGeometry_LocallyRingedSpace_id_spec__0(lean_object*);
+lean_object* lp_mathlib_AlgebraicGeometry_Scheme_Opens_00_u03b9(lean_object*, lean_object*);
+lean_object* lp_mathlib_AlgebraicGeometry_Scheme_Opens_toScheme(lean_object*, lean_object*);
+lean_object* lp_mathlib_AlgebraicGeometry_PresheafedSpace_comp___at___00AlgebraicGeometry_LocallyRingedSpace_comp_spec__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* lp_mathlib_CategoryTheory_CostructuredArrow_mk___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___redArg___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0___boxed(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9___boxed(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__0(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__0___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__1___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_closure_object lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__0___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__0 = (const lean_object*)&lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__0_value;
+static const lean_closure_object lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__1___boxed, .m_arity = 3, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__1 = (const lean_object*)&lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__1_value;
+static const lean_ctor_object lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__0_value),((lean_object*)&lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__1_value)}};
+static const lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__2 = (const lean_object*)&lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__2_value;
+LEAN_EXPORT const lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0 = (const lean_object*)&lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___closed__2_value;
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__0(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__1(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__1___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__2(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__2___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__3(lean_object*);
+static const lean_closure_object lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__0___boxed, .m_arity = 4, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__0 = (const lean_object*)&lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__0_value;
+static const lean_closure_object lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__3, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__1 = (const lean_object*)&lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__1_value;
+static const lean_ctor_object lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__1_value),((lean_object*)&lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__0_value)}};
+static const lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__2 = (const lean_object*)&lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__2_value;
+LEAN_EXPORT const lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2 = (const lean_object*)&lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___closed__2_value;
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0___lam__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0___boxed(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes___redArg(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___redArg___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes(lean_object* v_S_1_, lean_object* v_T_2_, lean_object* v_V_3_){
+_start:
+{
+lean_object* v_left_4_; lean_object* v_hom_5_; lean_object* v___x_6_; lean_object* v___x_7_; lean_object* v___x_8_; lean_object* v___x_9_; 
+v_left_4_ = lean_ctor_get(v_T_2_, 0);
+lean_inc_n(v_left_4_, 3);
+v_hom_5_ = lean_ctor_get(v_T_2_, 2);
+lean_inc(v_hom_5_);
+lean_dec_ref(v_T_2_);
+v___x_6_ = lp_mathlib_AlgebraicGeometry_Scheme_Opens_toScheme(v_left_4_, v_V_3_);
+v___x_7_ = lp_mathlib_AlgebraicGeometry_Scheme_Opens_00_u03b9(v_left_4_, v_V_3_);
+lean_inc_ref(v___x_6_);
+v___x_8_ = lp_mathlib_AlgebraicGeometry_PresheafedSpace_comp___at___00AlgebraicGeometry_LocallyRingedSpace_comp_spec__0(v___x_6_, v_left_4_, v_S_1_, v___x_7_, v_hom_5_);
+v___x_9_ = lp_mathlib_CategoryTheory_CostructuredArrow_mk___redArg(v___x_6_, v___x_8_);
+return v___x_9_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___redArg(lean_object* v_g_10_){
+_start:
+{
+lean_object* v___x_11_; 
+v___x_11_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_11_, 0, v_g_10_);
+lean_ctor_set(v___x_11_, 1, lean_box(0));
+return v___x_11_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___redArg(lean_object* v_X_12_, lean_object* v_U_13_, lean_object* v_V_14_, lean_object* v_f_15_){
+_start:
+{
+lean_object* v___x_16_; 
+v___x_16_ = lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___redArg(v_f_15_);
+return v___x_16_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___redArg___boxed(lean_object* v_X_17_, lean_object* v_U_18_, lean_object* v_V_19_, lean_object* v_f_20_){
+_start:
+{
+lean_object* v_res_21_; 
+v_res_21_ = lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___redArg(v_X_17_, v_U_18_, v_V_19_, v_f_20_);
+lean_dec_ref(v_V_19_);
+lean_dec_ref(v_U_18_);
+lean_dec_ref(v_X_17_);
+return v_res_21_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1___redArg(lean_object* v_Y_22_, lean_object* v_f_23_){
+_start:
+{
+lean_object* v___x_24_; lean_object* v___x_25_; 
+v___x_24_ = lean_box(0);
+v___x_25_ = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(v___x_25_, 0, v_Y_22_);
+lean_ctor_set(v___x_25_, 1, v___x_24_);
+lean_ctor_set(v___x_25_, 2, v_f_23_);
+return v___x_25_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0(lean_object* v_X_26_, lean_object* v_Y_27_, lean_object* v_f_28_){
+_start:
+{
+lean_object* v___x_29_; 
+v___x_29_ = lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1___redArg(v_Y_27_, v_f_28_);
+return v___x_29_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0___boxed(lean_object* v_X_30_, lean_object* v_Y_31_, lean_object* v_f_32_){
+_start:
+{
+lean_object* v_res_33_; 
+v_res_33_ = lp_tree_CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0(v_X_30_, v_Y_31_, v_f_32_);
+lean_dec_ref(v_X_30_);
+return v_res_33_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9(lean_object* v_S_34_, lean_object* v_T_35_, lean_object* v_V_36_){
+_start:
+{
+lean_object* v_left_37_; lean_object* v___x_38_; lean_object* v___x_39_; 
+v_left_37_ = lean_ctor_get(v_T_35_, 0);
+lean_inc(v_left_37_);
+lean_dec_ref(v_T_35_);
+v___x_38_ = lp_mathlib_AlgebraicGeometry_Scheme_Opens_00_u03b9(v_left_37_, v_V_36_);
+v___x_39_ = lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___redArg(v___x_38_);
+return v___x_39_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9___boxed(lean_object* v_S_40_, lean_object* v_T_41_, lean_object* v_V_42_){
+_start:
+{
+lean_object* v_res_43_; 
+v_res_43_ = lp_tree_ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9(v_S_40_, v_T_41_, v_V_42_);
+lean_dec_ref(v_S_40_);
+return v_res_43_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__0(lean_object* v_X_44_){
+_start:
+{
+lean_inc_ref(v_X_44_);
+return v_X_44_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__0___boxed(lean_object* v_X_45_){
+_start:
+{
+lean_object* v_res_46_; 
+v_res_46_ = lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__0(v_X_45_);
+lean_dec_ref(v_X_45_);
+return v_res_46_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__1(lean_object* v_X_47_, lean_object* v_Y_48_, lean_object* v_f_49_){
+_start:
+{
+lean_inc(v_f_49_);
+return v_f_49_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__1___boxed(lean_object* v_X_50_, lean_object* v_Y_51_, lean_object* v_f_52_){
+_start:
+{
+lean_object* v_res_53_; 
+v_res_53_ = lp_tree_CategoryTheory_Functor_id___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__0___lam__1(v_X_50_, v_Y_51_, v_f_52_);
+lean_dec(v_f_52_);
+lean_dec_ref(v_Y_51_);
+lean_dec_ref(v_X_50_);
+return v_res_53_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1(lean_object* v_X_60_, lean_object* v_U_61_, lean_object* v_V_62_, lean_object* v_f_63_, lean_object* v_w_64_){
+_start:
+{
+lean_object* v___x_65_; 
+v___x_65_ = lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___redArg(v_f_63_);
+return v___x_65_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1___boxed(lean_object* v_X_66_, lean_object* v_U_67_, lean_object* v_V_68_, lean_object* v_f_69_, lean_object* v_w_70_){
+_start:
+{
+lean_object* v_res_71_; 
+v_res_71_ = lp_tree_CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1(v_X_66_, v_U_67_, v_V_68_, v_f_69_, v_w_70_);
+lean_dec_ref(v_V_68_);
+lean_dec_ref(v_U_67_);
+lean_dec_ref(v_X_66_);
+return v_res_71_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__0(lean_object* v_X_72_, lean_object* v_Y_73_, lean_object* v_f_74_, lean_object* v___y_75_){
+_start:
+{
+lean_inc(v_f_74_);
+return v_f_74_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__0___boxed(lean_object* v_X_76_, lean_object* v_Y_77_, lean_object* v_f_78_, lean_object* v___y_79_){
+_start:
+{
+lean_object* v_res_80_; 
+v_res_80_ = lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__0(v_X_76_, v_Y_77_, v_f_78_, v___y_79_);
+lean_dec(v_f_78_);
+lean_dec_ref(v_Y_77_);
+lean_dec_ref(v_X_76_);
+return v_res_80_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__1(lean_object* v_X_81_, lean_object* v_x_82_){
+_start:
+{
+lean_inc_ref(v_X_81_);
+return v_X_81_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__1___boxed(lean_object* v_X_83_, lean_object* v_x_84_){
+_start:
+{
+lean_object* v_res_85_; 
+v_res_85_ = lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__1(v_X_83_, v_x_84_);
+lean_dec_ref(v_X_83_);
+return v_res_85_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__2(lean_object* v_X_86_, lean_object* v_X_87_, lean_object* v_Y_88_, lean_object* v_x_89_){
+_start:
+{
+lean_object* v___x_90_; 
+v___x_90_ = lp_mathlib_AlgebraicGeometry_PresheafedSpace_id___at___00AlgebraicGeometry_LocallyRingedSpace_id_spec__0(v_X_86_);
+return v___x_90_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__2___boxed(lean_object* v_X_91_, lean_object* v_X_92_, lean_object* v_Y_93_, lean_object* v_x_94_){
+_start:
+{
+lean_object* v_res_95_; 
+v_res_95_ = lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__2(v_X_91_, v_X_92_, v_Y_93_, v_x_94_);
+lean_dec(v_x_94_);
+lean_dec_ref(v_X_91_);
+return v_res_95_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__3(lean_object* v_X_96_){
+_start:
+{
+lean_object* v___f_97_; lean_object* v___f_98_; lean_object* v___x_99_; 
+lean_inc_ref(v_X_96_);
+v___f_97_ = lean_alloc_closure((void*)(lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__1___boxed), 2, 1);
+lean_closure_set(v___f_97_, 0, v_X_96_);
+v___f_98_ = lean_alloc_closure((void*)(lp_tree_CategoryTheory_Functor_const___at___00CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1_spec__2___lam__2___boxed), 4, 1);
+lean_closure_set(v___f_98_, 0, v_X_96_);
+v___x_99_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_99_, 0, v___f_97_);
+lean_ctor_set(v___x_99_, 1, v___f_98_);
+return v___x_99_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1(lean_object* v_T_106_, lean_object* v_Y_107_, lean_object* v_S_108_, lean_object* v_f_109_){
+_start:
+{
+lean_object* v___x_110_; 
+v___x_110_ = lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1___redArg(v_Y_107_, v_f_109_);
+return v___x_110_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1___boxed(lean_object* v_T_111_, lean_object* v_Y_112_, lean_object* v_S_113_, lean_object* v_f_114_){
+_start:
+{
+lean_object* v_res_115_; 
+v_res_115_ = lp_tree_CategoryTheory_CostructuredArrow_mk___at___00CategoryTheory_Over_mk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__0_spec__1(v_T_111_, v_Y_112_, v_S_113_, v_f_114_);
+lean_dec_ref(v_S_113_);
+lean_dec_ref(v_T_111_);
+return v_res_115_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3(lean_object* v_T_116_, lean_object* v_S_117_, lean_object* v_f_118_, lean_object* v_f_x27_119_, lean_object* v_g_120_, lean_object* v_w_121_){
+_start:
+{
+lean_object* v___x_122_; 
+v___x_122_ = lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___redArg(v_g_120_);
+return v___x_122_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3___boxed(lean_object* v_T_123_, lean_object* v_S_124_, lean_object* v_f_125_, lean_object* v_f_x27_126_, lean_object* v_g_127_, lean_object* v_w_128_){
+_start:
+{
+lean_object* v_res_129_; 
+v_res_129_ = lp_tree_CategoryTheory_CostructuredArrow_homMk___at___00CategoryTheory_Over_homMk___at___00ReciprocityTheory_ChartRestriction_G_Out_overRes_u03b9_spec__1_spec__3(v_T_123_, v_S_124_, v_f_125_, v_f_x27_126_, v_g_127_, v_w_128_);
+lean_dec_ref(v_f_x27_126_);
+lean_dec_ref(v_f_125_);
+lean_dec_ref(v_S_124_);
+lean_dec_ref(v_T_123_);
+return v_res_129_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0___lam__0(lean_object* v_f_130_, lean_object* v_u_131_){
+_start:
+{
+lean_object* v_val_132_; lean_object* v_inv_133_; lean_object* v___x_135_; uint8_t v_isShared_136_; uint8_t v_isSharedCheck_142_; 
+v_val_132_ = lean_ctor_get(v_u_131_, 0);
+v_inv_133_ = lean_ctor_get(v_u_131_, 1);
+v_isSharedCheck_142_ = !lean_is_exclusive(v_u_131_);
+if (v_isSharedCheck_142_ == 0)
+{
+v___x_135_ = v_u_131_;
+v_isShared_136_ = v_isSharedCheck_142_;
+goto v_resetjp_134_;
+}
+else
+{
+lean_inc(v_inv_133_);
+lean_inc(v_val_132_);
+lean_dec(v_u_131_);
+v___x_135_ = lean_box(0);
+v_isShared_136_ = v_isSharedCheck_142_;
+goto v_resetjp_134_;
+}
+v_resetjp_134_:
+{
+lean_object* v___x_137_; lean_object* v___x_138_; lean_object* v___x_140_; 
+lean_inc(v_f_130_);
+v___x_137_ = lean_apply_1(v_f_130_, v_val_132_);
+v___x_138_ = lean_apply_1(v_f_130_, v_inv_133_);
+if (v_isShared_136_ == 0)
+{
+lean_ctor_set(v___x_135_, 1, v___x_138_);
+lean_ctor_set(v___x_135_, 0, v___x_137_);
+v___x_140_ = v___x_135_;
+goto v_reusejp_139_;
+}
+else
+{
+lean_object* v_reuseFailAlloc_141_; 
+v_reuseFailAlloc_141_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v_reuseFailAlloc_141_, 0, v___x_137_);
+lean_ctor_set(v_reuseFailAlloc_141_, 1, v___x_138_);
+v___x_140_ = v_reuseFailAlloc_141_;
+goto v_reusejp_139_;
+}
+v_reusejp_139_:
+{
+return v___x_140_;
+}
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0(lean_object* v___x_143_, lean_object* v___x_144_, lean_object* v_f_145_){
+_start:
+{
+lean_object* v___f_146_; 
+v___f_146_ = lean_alloc_closure((void*)(lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0___lam__0), 2, 1);
+lean_closure_set(v___f_146_, 0, v_f_145_);
+return v___f_146_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0___boxed(lean_object* v___x_147_, lean_object* v___x_148_, lean_object* v_f_149_){
+_start:
+{
+lean_object* v_res_150_; 
+v_res_150_ = lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0(v___x_147_, v___x_148_, v_f_149_);
+lean_dec_ref(v___x_148_);
+lean_dec_ref(v___x_147_);
+return v_res_150_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes___redArg(lean_object* v_T_151_, lean_object* v_V_152_, lean_object* v_c_153_){
+_start:
+{
+lean_object* v_left_154_; lean_object* v___x_155_; lean_object* v___x_156_; lean_object* v_c_157_; lean_object* v___x_158_; lean_object* v___x_159_; 
+v_left_154_ = lean_ctor_get(v_T_151_, 0);
+lean_inc(v_left_154_);
+lean_dec_ref(v_T_151_);
+v___x_155_ = lean_box(0);
+v___x_156_ = lp_mathlib_AlgebraicGeometry_Scheme_Opens_00_u03b9(v_left_154_, v_V_152_);
+v_c_157_ = lean_ctor_get(v___x_156_, 1);
+lean_inc(v_c_157_);
+lean_dec_ref(v___x_156_);
+v___x_158_ = lean_apply_1(v_c_157_, v___x_155_);
+v___x_159_ = lp_tree_Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0___lam__0(v___x_158_, v_c_153_);
+return v___x_159_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes(lean_object* v_S_160_, lean_object* v_T_161_, lean_object* v_V_162_, lean_object* v_c_163_){
+_start:
+{
+lean_object* v___x_164_; 
+v___x_164_ = lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes___redArg(v_T_161_, v_V_162_, v_c_163_);
+return v___x_164_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes___boxed(lean_object* v_S_165_, lean_object* v_T_166_, lean_object* v_V_167_, lean_object* v_c_168_){
+_start:
+{
+lean_object* v_res_169_; 
+v_res_169_ = lp_tree_ReciprocityTheory_ChartRestriction_G_Out_unitRes(v_S_165_, v_T_166_, v_V_167_, v_c_168_);
+lean_dec_ref(v_S_165_);
+return v_res_169_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___redArg(lean_object* v_f_170_){
+_start:
+{
+lean_inc_ref(v_f_170_);
+return v_f_170_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___redArg___boxed(lean_object* v_f_171_){
+_start:
+{
+lean_object* v_res_172_; 
+v_res_172_ = lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___redArg(v_f_171_);
+lean_dec_ref(v_f_171_);
+return v_res_172_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0(lean_object* v___x_173_, lean_object* v___x_174_, lean_object* v_f_175_, lean_object* v_map__mul_176_){
+_start:
+{
+lean_inc_ref(v_f_175_);
+return v_f_175_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0___boxed(lean_object* v___x_177_, lean_object* v___x_178_, lean_object* v_f_179_, lean_object* v_map__mul_180_){
+_start:
+{
+lean_object* v_res_181_; 
+v_res_181_ = lp_tree_MonoidHom_mk_x27___at___00Units_map___at___00ReciprocityTheory_ChartRestriction_G_Out_unitRes_spec__0_spec__0(v___x_177_, v___x_178_, v_f_179_, v_map__mul_180_);
+lean_dec_ref(v_f_179_);
+lean_dec_ref(v___x_178_);
+lean_dec_ref(v___x_177_);
+return v_res_181_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_tree_ReciprocityTheory_ReductiveGroups_ArithmeticGeometry_ExtensionDescent_NonzeroLocus(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_ReciprocityTheory_ReductiveGroups_ArithmeticGeometry_ExtensionDescent_ConstGen(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_ReciprocityTheory_ReductiveGroups_ArithmeticGeometry_ExtensionDescent_NonzeroLocus(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

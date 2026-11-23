@@ -1,0 +1,37 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibilityStatement
+import Development.WeilBound.ThetaLifts.LeviDeterminants.ThetaSumInvariantRationalUnitary
+import Development.WeilBound.ThetaLifts.LeviDeterminants.ThetaGrow
+
+noncomputable section
+open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
+open GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK
+open scoped TensorProduct NNReal Matrix
+
+namespace PositivityTheory.ThKF0
+
+theorem thetaBasic_of (harch : ArchBd) : GlobalTheory.ThK.ThetaBasic := by
+  intro F E _ _ _ _ _ σ B n d X W M χX χW om r s r' s' hP
+  have hS := hP.weil.isUSplitting
+  obtain ⟨l, hl, hlt⟩ := (GlobalTheory.T.theta_distribution_nonzero_admissible F (Fin n × Fin d)).2.1
+  refine ⟨fun Φ hΦ => ⟨?_, ?_, theta_moderate_growth_of_decay harch F E σ B n d X W M χX χW om r s r' s' hP Φ hΦ⟩, ?_⟩
+  · refine (hS.cont l hl Φ hΦ).congr fun x => ?_
+    simp only [theta]
+    exact hlt _ (hS.pres _ _ hΦ)
+  · intro γ hγ γ' hγ' g h
+    simp only [theta]
+    have e : om (γ * g, γ' * h) Φ = om (γ, γ') (om (g, h) Φ) := by
+      rw [← Module.End.mul_apply, ← map_mul]; rfl
+    rw [e]
+    exact theta_sum_rational_invariance F E σ B n d X W M χX χW om r s r' s' hP γ hγ γ' hγ' _ (hS.pres _ _ hΦ)
+  · intro φ hφ g h
+    obtain ⟨T, hT⟩ := hS.adm (g, h) l hl φ hφ
+    refine T.continuous.congr fun f => ?_
+    simp only [theta]
+    have hm : pureA F (f : (Fin n × Fin d → mixedEmbedding.mixedSpace F) → ℂ) φ ∈ schA F (Fin n × Fin d) :=
+      Submodule.subset_span ⟨f, φ, hφ, rfl⟩
+    rw [← hlt _ (hS.pres _ _ hm)]
+    exact (hT f).symm
+
+end PositivityTheory.ThKF0

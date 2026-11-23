@@ -1,0 +1,17 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCModelLocal
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCRadSpSmooth
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCGenToQQ
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCFamLocal
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCSecMove
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheSectionStab
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGQLFam
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGRawSmooth
+
+namespace Formalism.FourierDecayAlt.P.CutMP.Gauge.GC
+
+theorem gCore_of_genTransfer (hGT : GenTransfer) : GCore :=
+  gauge_construction_of_truncation gauge_section_exists section_move_holds family_locality_holds hGT generator_to_quadratic_form model_locality_holds
+    radial_space_smoothness Formalism.FourierDecayAlt.P.CutMP.Gauge.raw_gauge_smoothness_holds Formalism.FourierDecayAlt.P.CutMP.Gauge.quadratic_local_family_holds assumption_on_sections_holds
+
+end Formalism.FourierDecayAlt.P.CutMP.Gauge.GC

@@ -1,0 +1,11 @@
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.PNTFinal
+import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqFinal
+import Formalism.GL3MeanSquares.PrimePairOfPrimeNumberTheoremInProgressions
+
+namespace Formalism.HermitianLattices.Ext.PrimesInProgressions
+
+theorem pnt_progressions_relative_iff : Formalism.HermitianLattices.Ext.LogarithmicIntegralBounds.PNTAPRelW ↔ Formalism.HermitianLattices.PrimeNumberTheoremConsequences.PNTAPRelW := Iff.rfl
+
+theorem pnt_progressions_relative_weak : Formalism.HermitianLattices.PrimeNumberTheoremConsequences.PNTAPRelW := pnt_progressions_relative_iff.1 pnt_progressions_relative_weak_holds
+
+end Formalism.HermitianLattices.Ext.PrimesInProgressions

@@ -1,0 +1,172 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["2b00195921ff104d.olean"],
+  "m": false,
+  "i": "a6086b4decd6b874.ilean",
+  "c": "75ed62f9ab769395.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:247:16: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hpn, Ne.symm hpn] at this\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:247:43: This simp argument is unused:\n  Ne.symm hpn\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, hpn] at this\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:239:95: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:264:13: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:288:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:288:6: Unused tactic linter: `simp [tens, alg, MvPowerSeries.algebraMap_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:313:113: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:320:51: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:329:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:344:12: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:386:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:386:6: Unused tactic linter: `exact Finset.noncommProd_insert_of_not_mem _ _ _ _ ha` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:396:10: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:403:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:404:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:408:40: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:403:10: Unused tactic linter: `(rw [LinearMap.pow_apply]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:404:10: Unused tactic linter: `(induction n generalizing y with\n  | zero => rfl\n  | succ n ih2 => rw [pow_succ, Function.iterate_succ_apply, ← ih2]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:408:40: Unused tactic linter: `rw [LinearMap.mul_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:420:8: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:421:57: This simp argument is unused:\n  Finset.sum_ite_eq\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finsupp.single_apply, Finset.sum_ite_eq']\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:461:59: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:461:59: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:476:59: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:476:59: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:488:57: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:488:57: Unused tactic linter: `exact (IsScalarTower.algebraMap_apply _ _ _ _).symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:522:59: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:522:59: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:573:103: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:634:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:635:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:640:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:641:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:642:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:634:8: Unused tactic linter: `(show k • ((1 : Kp X la N) ⊗ₜ[X.Kl la] v) = _;\n  rw [TensorProduct.smul_tmul', smul_eq_mul, mul_one])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:635:8: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:640:6: Unused tactic linter: `(show _ = hasseKp X la N β k • ((1 : Kp X la N) ⊗ₜ[X.Kl la] v);\n  rw [TensorProduct.smul_tmul', smul_eq_mul, mul_one])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:641:6: Unused tactic linter: `exact e.symm.trans rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:642:6: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:649:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:649:6: Unused tactic linter: `(\n  show\n    hasseRp X la N β (k ⊗ₜ[X.Kl la] (1 : X.Vl la) : Kp X la N ⊗[X.Kl la] X.Vl la) =\n      (hasseKp X la N β k ⊗ₜ[X.Kl la] (1 : X.Vl la) : Kp X la N ⊗[X.Kl la] X.Vl la)\n  exact hasseRp_tmul X la β k 1)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:855:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean:871:31: This simp argument is unused:\n  Submonoid.coe_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_mul, map_sub]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.AlgebraMapOlInjective transitive imports (legacy)",
+       "7dfdd6d3b9310691"],
+      ["Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.AlgebraMapOlInjective:importAllArts",
+       "5e429144f0f778d9"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/GenusPolyhedralBounds/RelativeIndexClassSets/HasseKpAlgebraMapKl.lean",
+   "70ee4f20665e8ab9"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.HasseKpAlgebraMapKl",
+   "7d5fb08613677d2b"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "9121f194eafa6f15"}

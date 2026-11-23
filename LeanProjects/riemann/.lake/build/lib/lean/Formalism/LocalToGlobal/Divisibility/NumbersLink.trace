@@ -1,0 +1,263 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["c5b2e424e874b025.olean"],
+  "m": false,
+  "i": "6cc9a32a9dc90d66.ilean",
+  "c": "671a0acfbf24e911.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Divisibility/NumbersLink.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Divisibility/NumbersLink.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Divisibility/NumbersLink.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Divisibility/NumbersLink.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:97:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:97:4: Unused tactic linter: `(induction n with\n  | zero => rfl\n  | succ n ih => simp [Fin.univ_val_map, List.ofFn_succ', Multiset.range_succ])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:216:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:216:4: Unused tactic linter: `(\n  simp only [Formalism.HC.HostRaw.rd]\n  apply Real.one_le_rpow _ (by positivity)\n  have h := NumberField.discr_ne_zero N.H.E\n  have : (1 : ℤ) ≤ |NumberField.discr N.H.E| := Int.one_le_abs h\n  exact_mod_cast this)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:266:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:267:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:266:6: Unused tactic linter: `(unfold Ranks.r; omega)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:267:6: Unused tactic linter: `(simp only [Ranks.r]; omega)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:286:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:286:8: Unused tactic linter: `(obtain ⟨a, ha⟩ := (N.hc z).e_int ⟨j - 1, by omega⟩; exact ⟨a, ha⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:299:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:299:4: Unused tactic linter: `exact N.toNat_floor_cast (N.nu_int δ j h1 h2 z i hi) h0` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:312:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:313:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:312:6: Unused tactic linter: `(unfold Formalism.LatticeIndexTer.ph; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:313:6: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:347:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:348:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:347:6: Unused tactic linter: `(unfold Formalism.LatticeIndexTer.ph; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:348:6: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:384:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:384:6: Unused tactic linter: `(unfold Ranks.sigW; simp; omega)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:712:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:713:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:712:4: Unused tactic linter: `(simp only [FoOf, hF])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:713:4: Unused tactic linter: `(unfold FoOf; simp [hF])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:827:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:827:31: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:827:18: Unused tactic linter: `simp [hc0]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:827:31: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:836:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:836:31: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:836:18: Unused tactic linter: `simp [hc0]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:836:31: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:872:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:872:4: Unused tactic linter: `simp [numBig]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:878:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:878:4: Unused tactic linter: `simp [numBig, h]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:895:5: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:896:5: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:900:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:894:5: Unused tactic linter: `have := Real.pow_div_factorial_le_exp hy 3` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:895:5: Unused tactic linter: `norm_num [Nat.factorial] at this` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:896:5: Unused tactic linter: `linarith` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:900:4: Unused tactic linter: `(\n  have h := Real.sum_le_exp_of_nonneg hy 4\n  simp [Finset.sum_range_succ, Nat.factorial] at h\n  nlinarith [sq_nonneg y, pow_nonneg hy 3])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:945:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:946:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:945:6: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:946:6: Unused tactic linter: `simp [Ranks.n]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:984:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:984:4: Unused tactic linter: `(rw [le_div_iff h4]; linarith [big_bX])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1022:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1022:43: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1022:18: Unused tactic linter: `(rw [big_hc_top]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1022:43: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1030:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1030:43: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1030:18: Unused tactic linter: `(rw [big_hc_top]; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1030:43: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1038:37: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1038:50: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1038:37: Unused tactic linter: `simp [hcE]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1038:50: Unused tactic linter: `norm_num [hcE]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1054:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1054:4: Unused tactic linter: `(fin_cases l <;> simp [hcV])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1191:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1195:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1191:18: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1195:18: Unused tactic linter: `decide` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1258:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean:1258:4: Unused tactic linter: `exact Real.log_le_log_of_le hpos hle` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundStatement transitive imports (legacy)",
+       "8c2254f08b2b81b3"],
+      ["Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundStatement:importAllArts",
+       "c2690110b06cbc1d"],
+      ["Formalism.LocalToGlobal.Divisibility.NumbersLemmas transitive imports (legacy)",
+       "4029935995ab9c5d"],
+      ["Formalism.LocalToGlobal.Divisibility.NumbersLemmas:importAllArts",
+       "473a741e0bf200dd"],
+      ["Formalism.QuotientMetricDivisors.FinalW transitive imports (legacy)",
+       "bf5005678ca6a2bd"],
+      ["Formalism.QuotientMetricDivisors.FinalW:importAllArts",
+       "c7b89299dea17eca"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Divisibility/NumbersLink.lean",
+   "c42b95f2567b465b"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Divisibility.NumbersLink",
+   "5b6db64a3fe80ca9"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "e43537ee14bd204e"}

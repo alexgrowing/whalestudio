@@ -1,0 +1,27 @@
+import Mathlib
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.GeoOneOfParts
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.StepsMain
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.RepMain
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.CovLink
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.PrimeLevelLocalization.SpecTopHolds
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.TraceSplitHolds
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CrystallineTowers.ClosedHT
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CrystallineTowers.Closed
+import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SmoothModelCrystalline
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.FibrePowerTowerAdmissibleLevel
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.KsGoodHolds
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IsogenyEtaleTranslation.TrFEtHolds
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LefschetzSigmaSums.KsHodgeOfGeo
+
+namespace UpperTheory.Gal.Int.Geo
+
+theorem jumpStep_holds : JumpStep := G3.jumpStep_of Seam.HT.htSpecGood Seam.crysStep_holds repEx_holds
+
+theorem steps_holds : Steps := steps_of Seam.crysStep_holds jumpStep_holds UpperTheory.Ru.crystallineComparison.phiStep
+
+theorem kodaira_spencer_of_weight_one (hW : LocalSmoothExtension.HolomorphicLefschetzFormula) : KSAll :=
+  ⟨CovMain.stdEx_holds, G3.kSEx_holds, G3.kSNice_holds, FiniteEtaleModels.ksGood_holds, CovMain.ksCong_holds, LocalSmoothExtension.ksHodge_of_geo hW FixZ.FixK_holds⟩
+
+theorem geometric_realization_of_weight_one (hW : LocalSmoothExtension.HolomorphicLefschetzFormula) : GeoOne := geoOne_of_parts steps_holds (kodaira_spencer_of_weight_one hW) Pl.planEx_holds
+
+end UpperTheory.Gal.Int.Geo

@@ -1,0 +1,159 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["e87759a26a3e5c4e.olean"],
+  "m": false,
+  "i": "bac92ab80c07a84c.ilean",
+  "c": "59ee439c4a581c09.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:26:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.sl_lattice`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:36:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.std_ratHerm`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:45:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.locB`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:53:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.matLat_one`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:58:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.idx_std`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:62:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.gramR_one`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:72:17: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hab, Ne.symm hab]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:81:14: This simp argument is unused:\n  Matrix.one_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hij, Ne.symm hij]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:85:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.one_posDef`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:90:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.one_quot`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:94:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.indep_unit`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:122:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.pairC_std`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:132:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.scale_inv_one`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:142:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.maj_scale`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:160:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.maj_smul`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:177:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.smul_one_mulVec`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:190:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.bij_one'`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:195:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.scal_comap`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:206:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.map_top_of_bij`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:375:31: This simp argument is unused:\n  dat\n\nHint: Omit it from the simp argument list.\n  [apply] simp at hw\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:375:64: This simp argument is unused:\n  dat\n\nHint: Omit it from the simp argument list.\n  [apply] simp at hw\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:376:8: This simp argument is unused:\n  dat\n\nHint: Omit it from the simp argument list.\n  [apply] simp [num]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:376:13: This simp argument is unused:\n  num\n\nHint: Omit it from the simp argument list.\n  [apply] simp [dat]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:413:34: This simp argument is unused:\n  cd\n\nHint: Omit it from the simp argument list.\n  [apply] simp [dc, dat, df]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:536:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.Examples₂.two.fr_unit`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:569:16: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:570:16: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:569:6: Unused tactic linter: `all_goals push_cast` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:570:6: Unused tactic linter: `all_goals ring` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:596:68: This simp argument is unused:\n  dat\n\nHint: Omit it from the simp argument list.\n  [apply] simp [num]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:596:73: This simp argument is unused:\n  num\n\nHint: Omit it from the simp argument list.\n  [apply] simp [dat]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:616:18: This simp argument is unused:\n  num\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [dat, hμ, hw', if_true, Fintype.sum_unique]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:616:23: This simp argument is unused:\n  hμ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [dat, num, hw', if_true, Fintype.sum_unique]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:693:10: This simp argument is unused:\n  num\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hw']\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean:726:52: This simp argument is unused:\n  smul_one_mulVec\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalToGlobal.IndefiniteForms.IndefSide transitive imports (legacy)",
+       "4fd21fe0c789b638"],
+      ["Formalism.LocalToGlobal.IndefiniteForms.IndefSide:importAllArts",
+       "08fb6106a8afe36d"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral transitive imports (legacy)",
+       "1a41aaca01fdee07"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral:importAllArts",
+       "9d6600df0e9dc886"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.KappaNormalise transitive imports (legacy)",
+       "39dd9aa4b7094923"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.KappaNormalise:importAllArts",
+       "5a9bf49c9c31594e"],
+      ["Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic transitive imports (legacy)",
+       "c8f7e7ed287a4890"],
+      ["Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic:importAllArts",
+       "76fba6155a0dabfe"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/IndefiniteForms/IndefExample.lean",
+   "0bc94f0c04e277e0"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.IndefiniteForms.IndefExample",
+   "65b2c2ccc8f6fa33"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "88d2c6e8233d63f4"}

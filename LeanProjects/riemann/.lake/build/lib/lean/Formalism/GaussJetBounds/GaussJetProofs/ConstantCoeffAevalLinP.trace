@@ -1,0 +1,88 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["814754ae235a32ae.olean"],
+  "m": false,
+  "i": "16ac9ea4e0ab03bb.ilean",
+  "c": "25f1ff8cf930c4af.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:133:0: automatically included section variable(s) unused in theorem `Formalism.DworkPowerSeriesWeights.pderiv_linP`:\n  [Fintype ι']\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι'] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:170:0: automatically included section variable(s) unused in theorem `Formalism.DworkPowerSeriesWeights.constantCoeff_aeval_linP`:\n  [Fintype ι']\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι'] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:204:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:204:6: Unused tactic linter: `simpa [MvPolynomial.constantCoeff_eq] using h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:225:0: automatically included section variable(s) unused in theorem `Formalism.DworkPowerSeriesWeights.jetPair_monomial_right`:\n  [Fintype ι']\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι'] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:230:10: This simp argument is unused:\n  MvPolynomial.coeff_coe\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:298:6: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:299:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:300:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:299:6: Unused tactic linter: `(rw [← MvPowerSeries.coe_substAlgHom ha];\n  simpa using (MvPowerSeries.substAlgHom ha).commutes c)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:300:6: Unused tactic linter: `(\n  rw [← MvPowerSeries.coe_substAlgHom ha]\n  exact (MvPowerSeries.substAlgHom ha).commutes c)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:345:29: This simp argument is unused:\n  eq_self_iff_true\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [frameM, genA, and_self, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:365:36: This simp argument is unused:\n  eq_self_iff_true\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [genA, rowOp, effMat, and_self, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:447:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean:447:6: Unused tactic linter: `(rw [← MvPowerSeries.coeff_zero_eq_constantCoeff_apply, MvPowerSeries.coeff_smul,\n    MvPowerSeries.coeff_zero_eq_constantCoeff_apply, hB];\n  simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaussJetBounds.StatementJ transitive imports (legacy)",
+       "66dd55ecae53b82a"],
+      ["Formalism.GaussJetBounds.StatementJ:importAllArts", "7853891f4866eff2"],
+      ["Formalism.GaussJetBounds.GaussJetProofs.ThmAOp transitive imports (legacy)",
+       "870bb87f3c473313"],
+      ["Formalism.GaussJetBounds.GaussJetProofs.ThmAOp:importAllArts",
+       "02afb136b2710d1b"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/ConstantCoeffAevalLinP.lean",
+   "08834f4c38039845"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP",
+   "83074ed08942f81a"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "42b6b29a7742da95"}

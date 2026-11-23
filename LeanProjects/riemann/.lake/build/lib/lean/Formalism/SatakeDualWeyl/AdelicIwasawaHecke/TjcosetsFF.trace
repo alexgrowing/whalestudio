@@ -1,0 +1,67 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a5bade8c1ce420f4.olean"],
+  "m": false,
+  "i": "e4421bf7c3e40c01.ilean",
+  "c": "01adfbebc63f9d83.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:95:17: `Fin.coe_cast` has been deprecated: Use `Fin.val_cast` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:95:31: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:83:4: Unused tactic linter: `congr 1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:134:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:168:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:201:11: Variable name `x` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _x\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:201:13: Variable name `y` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _y\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:202:12: Variable name `c` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean:202:14: Variable name `x` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _x\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SatakeDualWeyl.StatementE transitive imports (legacy)",
+       "bc52339ce04850ea"],
+      ["Formalism.SatakeDualWeyl.StatementE:importAllArts",
+       "95c5cb7cb05dd786"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/TjcosetsFF.lean",
+   "aee61af76b2909e0"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SatakeDualWeyl.AdelicIwasawaHecke.TjcosetsFF",
+   "691fc8b505edb8c3"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "c47c00bbb0b60ba8"}

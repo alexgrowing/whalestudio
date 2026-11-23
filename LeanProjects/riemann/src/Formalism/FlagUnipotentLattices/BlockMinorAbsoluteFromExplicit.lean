@@ -1,0 +1,8 @@
+import Formalism.FlagUnipotentLattices.StabiliserComplementDecomposition
+import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.BlockMinorAbsoluteOfExplicit
+
+namespace Formalism.HermitianLatticeCounting.Final.ExpansionTerms
+
+theorem n3cModel : Formalism.HermitianLatticeCounting.ExpansionTerms.DualVectorNormOnGroup := Formalism.HermitianLatticeCounting.P.dual_vector_norm_on_group
+
+end Formalism.HermitianLatticeCounting.Final.ExpansionTerms

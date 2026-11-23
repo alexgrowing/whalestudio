@@ -1,0 +1,5 @@
+import Development.EtaleCohomology.CohomologicalPurity.LeafAWCut
+import Development.EtaleCohomology.CohomologicalPurity.LeafAWCutTw
+
+theorem LateralTheory.CohomologicalPurity.LeafAWCut.LeafAW_of : LateralTheory.CohomologicalPurity.LeafAW :=
+  LateralTheory.CohomologicalPurity.LeafAWCut.goal_of LateralTheory.CohomologicalPurity.LeafAWCutTw.twSec

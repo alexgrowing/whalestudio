@@ -1,0 +1,11 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleLocalSymmetry
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMaxThOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemFinPt
+open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.matched_triple_local_symmetry : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E) (B : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Base F E) (a a' : ℕ) (G : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Geo σ a a') (X : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Chars F E) (om : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Rep σ G.V G.W) (om' : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Rep σ G.V' G.W) (R : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.RealMaps F a a') (Rf : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.FinMaps F a a'), GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsMatched B G X om om' R Rf → ∀ Φ ∈ (GlobalTheory.ThK.PolData B G.M' ⊓ G.M'.So B.ψ B.τ₁), ∃ L : Subgroup (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.UA σ G.W.J), GlobalTheory.ThKAdm.IsLevel G.W L ∧ (∀ l ∈ L, om' (1, l) Φ = Φ) ∧ ∀ Ψ ∈ (GlobalTheory.ThK.PolData B G.M' ⊓ G.M'.So B.ψ B.τ₁), ∃ s : Finset (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.UA σ G.W.J), (∀ g ∈ s, g ∈ Subgroup.closure (⋃ v : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Pl F, GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.UAt σ G.W (GlobalTheory.AdelicU.evFin F v))) ∧ ∀ l ∈ L, ∃ g ∈ s, om' (1, l) Ψ = om' (1, g) Ψ := by
+  first | exact @GlobalTheory.ThKLevelEx.levelEx | exact GlobalTheory.ThKLevelEx.levelEx | (intros; apply GlobalTheory.ThKLevelEx.levelEx <;> assumption)

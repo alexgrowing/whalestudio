@@ -1,0 +1,10 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteUnitaryStabilizerSubspaceProd
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
+open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory
+open scoped ENNReal Classical
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.definite_unitary_stabilizer_subspace_prod : ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [Module K V] [FiniteDimensional K V] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] (h : V →ₗ⋆[K] V →ₗ[K] K), IsCMUnram K → h.IsSymm → PD h → ∀ U : Submodule K V, ∃ φ : MulAction.stabilizer (isom h) U ≃* isom (hRes h U) × isom (hRes h (perp h U)), ∀ (γ : MulAction.stabilizer (isom h) U) (L : Submodule (𝓞 K) V), latIn U (γ • L) = (φ γ).1 • latIn U L ∧ latIn (perp h U) (γ • L) = (φ γ).2 • latIn (perp h U) L := by
+  first | exact @GlobalTheory.Mass.StabSplit.main | exact GlobalTheory.Mass.StabSplit.main | (intros; apply GlobalTheory.Mass.StabSplit.main <;> assumption)

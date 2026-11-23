@@ -1,0 +1,74 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1f00caeb564422b5.olean"],
+  "m": false,
+  "i": "17d2ab7d9cddeab9.ilean",
+  "c": "3533c89ddc611cd7.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:97:46: `ENat.coe_lt_coe` has been deprecated: Use `ENat.natCast_lt_natCast` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:101:43: `ENat.coe_lt_coe` has been deprecated: Use `ENat.natCast_lt_natCast` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:104:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:109:48: `ENat.top_ne_coe` has been deprecated: Use `ENat.top_ne_natCast` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:111:70: `ENat.coe_lt_top` has been deprecated: Use `ENat.natCast_lt_top` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:118:39: `ENat.coe_lt_coe` has been deprecated: Use `ENat.natCast_lt_natCast` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:193:10: `ENat.coe_sInf` has been deprecated: Use `ENat.natCast_sInf` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:200:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean:206:20: `ENat.top_ne_coe` has been deprecated: Use `ENat.top_ne_natCast` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaussJetBounds.GenLogInverse transitive imports (legacy)",
+       "ab41110378089501"],
+      ["Formalism.GaussJetBounds.GenLogInverse:importAllArts",
+       "a589a7f366373073"],
+      ["Formalism.GaussJetBounds.StatementA transitive imports (legacy)",
+       "ab41110378089501"],
+      ["Formalism.GaussJetBounds.StatementA:importAllArts", "342f1cf94b2130cc"],
+      ["Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd transitive imports (legacy)",
+       "a75bcaef75936898"],
+      ["Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd:importAllArts",
+       "6aec23fdecf8cc97"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/CapacityLeReachCapacity.lean",
+   "841e4e1d1d8d7d33"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaussJetBounds.GaussJetProofs.CapacityLeReachCapacity",
+   "a8e663e02a550f64"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "b4c2e9e5253deef1"}

@@ -1,0 +1,9 @@
+import Mathlib
+import Formalism.DivisorInequality.DivisorInequalityProofs.BaseLevelBoundsWithCovolumeHolds
+import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.YoungDiagramTopExact
+
+namespace Formalism.DivisorInequality
+
+theorem boundsMu : BoundsMu := slope_bounds
+
+end Formalism.DivisorInequality

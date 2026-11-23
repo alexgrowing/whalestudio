@@ -1,0 +1,8 @@
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.LsDatumACut
+
+namespace Formalism.L2.SG.LocalCountModules.LocCnt0G
+
+def LocCnt0G : Prop :=
+  Formalism.MainNotions.ThinScalesBound.AllLoc (fun M => ∀ r n : ℕ, Formalism.L2.SG.LsDatumA.ModSide0 M r n true)
+
+end Formalism.L2.SG.LocalCountModules.LocCnt0G

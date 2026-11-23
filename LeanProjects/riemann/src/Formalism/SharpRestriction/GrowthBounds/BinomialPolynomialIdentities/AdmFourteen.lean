@@ -1,0 +1,10 @@
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.FormalSeriesConditionsB1ToB4
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.SubProjectorProductMemStrict
+import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.LiePolarizationDerEqZeroOfDisjoint
+
+namespace Formalism.MainNotions.G.ColumnFamilies
+
+theorem adm_fourteen (D : Formalism.BasicNotions.D7) : Formalism.MainNotions.CovariantDegrees.JointComponentsPaths D :=
+  joint_components_paths_of_joint_dimension D (isotypic_projections_commute_holds D) (lower_set_types_span D) restJointDim
+
+end Formalism.MainNotions.G.ColumnFamilies

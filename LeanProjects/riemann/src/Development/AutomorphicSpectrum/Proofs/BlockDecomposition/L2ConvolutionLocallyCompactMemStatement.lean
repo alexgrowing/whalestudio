@@ -1,0 +1,7 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2ConvolutionLocallyCompactMem
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
+open MeasureTheory GlobalTheory.AutomorphicL2Unitary GlobalTheory.OpTrace
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.l2_convolution_locally_compact_mem : ∀ {G L : Type} [Group G] [TopologicalSpace G] [IsTopologicalGroup G] [SecondCountableTopology G] [T2Space G] [LocallyCompactSpace G] [MeasurableSpace G] [BorelSpace G] (Γ : Subgroup G) [DiscreteTopology Γ] (μ : Measure G) [μ.IsMulLeftInvariant] [μ.IsMulRightInvariant] [IsFiniteMeasureOnCompacts μ] [Group L] [TopologicalSpace L] [IsTopologicalGroup L] [SecondCountableTopology L] [T2Space L] [LocallyCompactSpace L] [MeasurableSpace L] [BorelSpace L] (ν : Measure L) [IsFiniteMeasureOnCompacts ν] (j : L →* G), Continuous j → ∀ D : L → ℂ, Continuous D → HasCompactSupport D → ∀ φ ψ : G → ℂ, Continuous φ → ∀ h : MemL2Quotient Γ μ φ, (∀ g, ψ g = ∫ y, φ (g * j y) * D y ∂ν) → ∃ h' : MemL2Quotient Γ μ ψ, ∀ W : Submodule ℂ (L2 Γ μ), IsSubrep (R Γ μ) W → h.toL2 ∈ W → h'.toL2 ∈ W := by
+  first | exact @GlobalTheory.CompanionTheory.AutomorphicL2Convolution.memL2_convolution_mem | exact GlobalTheory.CompanionTheory.AutomorphicL2Convolution.memL2_convolution_mem | (intros; apply GlobalTheory.CompanionTheory.AutomorphicL2Convolution.memL2_convolution_mem <;> assumption)

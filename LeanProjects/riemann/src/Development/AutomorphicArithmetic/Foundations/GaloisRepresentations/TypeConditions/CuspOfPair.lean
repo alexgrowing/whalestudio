@@ -1,0 +1,16 @@
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.WeightsConj
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspContragredientIsCMConjTwistOfPairedInvTranspStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalGlobalOfGelfandKazhdan
+import Development.WeilBound.CoreStatements.PublishedTheorems.PolarizedGaloisRepresentations.GaloisRepOfPolarizedPairLit
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GaloisRepOfPolarizedPairOfHyps
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopStd
+
+open NumberField GlobalTheory.CuspRep GlobalTheory.ContraPair
+
+namespace UpperTheory.GalS
+
+theorem carId (H : CarU) : CarU := H
+
+end UpperTheory.GalS

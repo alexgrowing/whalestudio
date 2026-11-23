@@ -1,0 +1,92 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["792c3cbcff8d48a7.olean"],
+  "m": false,
+  "i": "8db56dbebe72f12c.ilean",
+  "c": "7eb850b70c221540.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:17:0: automatically included section variable(s) unused in theorem `Formalism.H.torusProj_isOpenQuotientMap`:\n  [Fintype ι]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:20:0: automatically included section variable(s) unused in theorem `Formalism.H.torusProj_surjective`:\n  [Fintype ι]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:25:0: automatically included section variable(s) unused in theorem `Formalism.H.torusProj_eq`:\n  [Fintype ι]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:37:0: automatically included section variable(s) unused in theorem `Formalism.H.equivFunL_symm_eq`:\n  [FiniteDimensional ℝ V]\n  [MeasurableSpace V]\n  [BorelSpace V]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [FiniteDimensional ℝ V] [MeasurableSpace V] [BorelSpace V] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:41:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:41:4: Unused tactic linter: `simp [Module.Basis.equivFunL, Module.Basis.equivFun_symm_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:97:0: automatically included section variable(s) unused in theorem `Formalism.H.boxIoc_ae_eq`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:103:10: This simp argument is unused:\n  Set.mem_univ_pi\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:149:2: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:116:10: This simp argument is unused:\n  Set.mem_univ_pi\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:126:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:127:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:150:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:126:8: Unused tactic linter: `(simp [AddCircle.volume_eq_smul_haarAddCircle])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:127:8: Unused tactic linter: `(rw [AddCircle.volume_eq_smul_haarAddCircle]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean:150:2: Unused tactic linter: `all_goals\n  first\n  | infer_instance\n  | assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis transitive imports (legacy)",
+       "ab929f5ccd0824ab"],
+      ["Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis:importAllArts",
+       "a868b0d980416ea9"],
+      ["Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage transitive imports (legacy)",
+       "ab929f5ccd0824ab"],
+      ["Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage:importAllArts",
+       "231184253d7d8b1d"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeTheta/LatticeThetaProofs/TorusProjIsOpenQuotientMap.lean",
+   "069139331b36ddba"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LatticeTheta.LatticeThetaProofs.TorusProjIsOpenQuotientMap",
+   "eda7cf0ca4fd17da"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a225063819b23209"}

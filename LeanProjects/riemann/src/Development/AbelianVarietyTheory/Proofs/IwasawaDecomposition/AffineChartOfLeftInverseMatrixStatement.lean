@@ -1,0 +1,8 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AffineChartOfLeftInverseMatrix
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
+open AlgebraicGeometry CategoryTheory Limits ReciprocityTheory.ChartRestriction.G.Geo.Tor
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.affine_chart_of_left_inverse_matrix : ∀ (O : Type) [CommRing O] (Z P : Scheme.{0}) (s : Z ⟶ Sp O) (N r : ℕ) (p₁ : P ⟶ Z) (p₂ : P ⟶ PSpace O N), IsPullback p₁ p₂ s (PSpace.str O N) → ∀ (R : Type) [CommRing R] (χ : Sp R ⟶ Z) (g : O →+* R) (Q : Matrix (Fin (N + 1)) (Fin (r + 1)) R) (Q' : Matrix (Fin (r + 1)) (Fin (N + 1)) R) (i : Fin (r + 1) → (Sp (MvPolynomial (Fin r) R) ⟶ P)), IsOpenImmersion χ → χ ≫ s = spMap g → Q' * Q = 1 → (∀ c, i c ≫ p₁ = spMap (MvPolynomial.C : R →+* MvPolynomial (Fin r) R) ≫ χ) → (∀ c, ∃ hv, i c ≫ p₂ = GlobalTheory.ProjSpace.pt ((MvPolynomial.C : R →+* MvPolynomial (Fin r) R).comp g) ((Q.map (MvPolynomial.C : R →+* MvPolynomial (Fin r) R)).mulVec (Fin.insertNth (α := fun _ => MvPolynomial (Fin r) R) c 1 MvPolynomial.X)) hv) → (∀ c, IsImmersion (i c)) ∧ (∀ c, ∃ U : P.Opens, Set.range (i c) = (⋃ c', Set.range (i c')) ∩ (U : Set P)) ∧ ∃ T : Set P, IsClosed T ∧ ⋃ c, Set.range (i c) = T ∩ p₁ ⁻¹' Set.range χ := by
+  first | exact @GlobalTheory.SplitCells.cells_locallyClosed | exact GlobalTheory.SplitCells.cells_locallyClosed | (intros; apply GlobalTheory.SplitCells.cells_locallyClosed <;> assumption)

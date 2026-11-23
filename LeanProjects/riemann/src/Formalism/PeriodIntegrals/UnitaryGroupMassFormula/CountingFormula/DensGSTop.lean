@@ -1,0 +1,11 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensGSB
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensGSO
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DoubleSumEqDotProduct
+
+namespace PI.UnitaryGroupMassFormula.CntFormula
+
+theorem local_density_split : LocDensSplit :=
+  locDensSplit_of' integral_split_count adapted_coords_self_dual count_bijection
+
+end PI.UnitaryGroupMassFormula.CntFormula

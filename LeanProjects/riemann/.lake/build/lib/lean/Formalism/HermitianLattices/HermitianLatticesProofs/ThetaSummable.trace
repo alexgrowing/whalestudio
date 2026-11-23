@@ -1,0 +1,87 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a87b83070c23c550.olean"],
+  "m": false,
+  "i": "df6b658af220e093.ilean",
+  "c": "4b4a04fe4248c276.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:57:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.thetaSummable_parallelogram`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:104:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.thetaSummable_sq_le`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:142:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:142:6: Unused tactic linter: `exact continuous_id.dotProduct (continuous_const.matrix_mulVec continuous_id)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:252:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:223:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.thetaSummable_ratpos`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:255:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.thetaSummable_castform`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:294:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.isAddTorsionFree_ringOfIntegers_submodule`:\n  [StarRing K]\n  [IsScalarTower (NumberField.RingOfIntegers K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] [IsScalarTower (NumberField.RingOfIntegers K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:314:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:316:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:317:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:318:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:332:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:321:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean:321:6: Unused tactic linter: `(\n  constructor\n  intro r hr a b hab\n  have hr0 : r ≠ 0 := hr.ne_zero\n  apply Subtype.ext\n  have hab' : r • (a : V) = r • (b : V) :=\n    by\n    have := congrArg (fun y : L => (y : V)) hab\n    simpa using this\n  have h1 : (r : K) • ((a : V) - (b : V)) = 0 := by\n    rw [smul_sub, Int.cast_smul_eq_zsmul K, Int.cast_smul_eq_zsmul K, hab', sub_self]\n  have hrK : (r : K) ≠ 0 := Int.cast_ne_zero.mpr hr0\n  exact sub_eq_zero.mp ((smul_eq_zero.mp h1).resolve_left hrK))` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.HermitianLattices.StatementTheta transitive imports (legacy)",
+       "f15fa5a31e7c01f5"],
+      ["Formalism.HermitianLattices.StatementTheta:importAllArts",
+       "ef3c4717869b4326"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/ThetaSummable.lean",
+   "2f4d289340212da4"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HermitianLattices.HermitianLatticesProofs.ThetaSummable",
+   "ddb0858a441bcbb7"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a138476379887ec1"}

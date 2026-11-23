@@ -1,0 +1,6 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBasisChangeDeterminant
+import Mathlib
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.integral_basis_change_determinant : ∀ (O k V K : Type) [CommRing O] [IsDomain O] [IsPrincipalIdealRing O] [Field k] [Algebra O k] [IsFractionRing O k] [CommRing V] [Field K] [Algebra V K] [IsFractionRing V K] (f : O →+* V) (em : k →+* K), (∀ a, algebraMap V K (f a) = em (algebraMap O k a)) → ∀ (m n : ℕ) (P : Matrix (Fin m) (Fin n) k) (M : Matrix (Fin m) (Fin m) k) (C : Matrix (Fin m) (Fin m) K), (∀ c, Matrix.vecMul c P = 0 → c = 0) → M.det ≠ 0 → (∀ c : Fin m → k, (∃ a : Fin n → O, Matrix.vecMul c P = fun j => algebraMap O k (a j)) ↔ ∃ b : Fin m → O, c = Matrix.vecMul (fun i => algebraMap O k (b i)) M) → (∀ c : Fin m → K, (∃ a : Fin n → V, Matrix.vecMul c (P.map em) = fun j => algebraMap V K (a j)) ↔ ∃ b : Fin m → V, c = Matrix.vecMul (fun i => algebraMap V K (b i)) C) → ∃ u : Vˣ, C.det = algebraMap V K u * em M.det := by
+  first | exact @GlobalTheory.det_saturated_lattice_baseChange | exact GlobalTheory.det_saturated_lattice_baseChange | (intros; apply GlobalTheory.det_saturated_lattice_baseChange <;> assumption)

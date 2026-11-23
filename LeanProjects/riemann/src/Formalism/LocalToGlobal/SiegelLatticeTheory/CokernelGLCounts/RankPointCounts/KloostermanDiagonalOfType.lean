@@ -1,0 +1,17 @@
+import Mathlib
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.KloostermanDiagonalOfConditions
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.CovolumeSpans
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.RelevantSetZeroGNotIdentity
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.IsIdentityOfEqualFlags
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.MainEqHolds
+import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements.FullExistsTiedHolds
+
+noncomputable section
+
+namespace Formalism.L2.SG.KappaOffDiagonal
+
+theorem kloostermanDiagonal_of_type (hTy : TypeC) : Formalism.L2.SG.RowsConc.KppDiagC :=
+  kloostermanDiagonal_of_typeCond Formalism.L2.SG.Closed.FoldOKC_outright Formalism.L2.SG.Closed.OOIntAllC_outright IrrVecC_holds JPosC_holds hTy
+    DelC_holds Formalism.L2.SG.Pf.normExpDegC_holds
+
+end Formalism.L2.SG.KappaOffDiagonal

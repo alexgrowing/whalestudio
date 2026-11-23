@@ -1,0 +1,11 @@
+import Mathlib
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDensityEuler
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MultipliableEulerFac
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CmLocalDensitiesProductFormulaStatement
+
+namespace GlobalTheory.DensityProductClosed
+
+theorem eulerProductOfDensities : GlobalTheory.IndefiniteRowSideFullHecke.LocalAdditiveCharacterDual.EulerProductOfDensities :=
+  GlobalTheory.DensityProductCompare.densityProduct_iff.1 GlobalTheory.T.cm_localDensities_productFormula
+
+end GlobalTheory.DensityProductClosed

@@ -1,0 +1,10 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxSymplecticWeilAction
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocFieldLP
+import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+open NumberField IsDedekindDomain MeasureTheory Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK.LiftPair
+open scoped Matrix TensorProduct
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.darboux_symplectic_weil_action : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), GlobalTheory.ThK.KP → ∀ (hcm : IsCMExt F E σ) (ψ : AddChar (AF F) ℂ), IsStd ψ → ∀ (n m : ℕ) (JX : Matrix (Fin n) (Fin n) E) (JY : Matrix (Fin m) (Fin m) E), (∀ i j, σ (JX j i) = JX i j) → JX.det ≠ 0 → ∀ (hY : ∀ i j, σ (JY j i) = -JY i j) (hYd : JY.det ≠ 0) (co : Darboux (symp (R := AF F) (cA σ) (-1) (incM F JX) (incM F JY)) (Fin n × Fin m)), (∀ x : Matrix (Fin n) (Fin m) E, ∃ y z : Fin n × Fin m → F, co.e (incM F x) = (fun k => algebraMap F (AF F) (y k), fun k => algebraMap F (AF F) (z k))) → ∀ χX χY : Chr F E, IsHecke F E χX → IsHecke F E χY → ∀ om : UA σ JX × UA σ JY →* Module.End ℂ ((Fin n × Fin m → AF F) → ℂ), IsUWeilPair (cA σ) (adeleClass F) ψ (-1) (incM F JX) (incM F JY) co χX χY om → ∀ (v : Pl F) (τ : E →ₐ[F] Fv F v), ∃ ι : ((Fin n × Fin m → Fv F v) → ℂ) →ₗ[ℂ] (Matrix (Fin n) (Fin m) (Fv F v) → ℂ), Set.BijOn ι (SB (Fin n × Fin m → Fv F v) : Set _) (GlobalTheory.SplitWeil.SB (Matrix (Fin n) (Fin m) (Fv F v)) : Set _) ∧ ∀ (h : GL (Fin m) (Fv F v)), ∀ φ ∈ SB (Fin n × Fin m → Fv F v), ∃ φ₁ ∈ SB (Fin n × Fin m → Fv F v), ι φ₁ = modelA (chrW χX τ) n h (ι φ) ∧ Acts (evFin F v) (om (1, liftSk hcm τ JY hY hYd h)) φ φ₁ := by
+  first | exact @GlobalTheory.SplitScalRight.linModel | exact GlobalTheory.SplitScalRight.linModel | (intros; apply GlobalTheory.SplitScalRight.linModel <;> assumption)

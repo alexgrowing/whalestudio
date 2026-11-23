@@ -1,0 +1,28 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialIdentityOfQuadratic
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.SiteZeroMatrixEntry
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDStartCoord
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDWaveRad
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDResRad
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDWaveFF
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDOpFF
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDGqRes
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDJNice
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialWaveOrbital
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialOperatorLocality
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJALocToolsTheta
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAFFStableAdjComm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermMulVecMulVec
+
+namespace Formalism.FourierDecayAlt.P.CutSE
+
+theorem radial_identity_of_spectral_data : RDRadIdOfSpec :=
+  rDRadIdOfSpec_of_grpId_theta
+    (rDGrpIdOfSpec_of_radIdAlg (rDRadIdAlg_of_collapse_gauge_rearr radial_collapse radial_gauge_identity radial_rearrangement)
+      radial_start_coordinates radial_wave_radial Formalism.FourierDecayAlt.P5.waveCExists radial_residue_formula radial_wave_function_field radial_operator_function_field radial_group_residue)
+    (Formalism.FourierDecayAlt.P.CutMP.JA.LT.thetaJ_of_adjComm Formalism.FourierDecayAlt.P.CutMP.JA.FFS.adjoint_commutation_holds)
+    radial_orbital_niceness radial_wave_orbital radial_operator_locality
+
+theorem radDecay_of_spec (h : RDIdentSpec) : RadDecay :=
+  radDecay_of_ABQ (rDIdentABQ_of_spec h radial_identity_of_spectral_data)
+
+end Formalism.FourierDecayAlt.P.CutSE

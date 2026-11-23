@@ -1,0 +1,11 @@
+import Mathlib
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.SplitPlaceGeneratorPowers
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingWordOf
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedMatrixIntegralCompLinearEquivDetStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchLMWordSOf
+
+namespace GlobalTheory.CompanionTheory.LeviMatchingWords
+
+theorem matchLMWordSOf : PositivityTheory.Rg.BcB.F.MLM.MatchLMWordSOf := GlobalTheory.CompanionTheory.MatchWordS.matchLMWordSOf
+
+end GlobalTheory.CompanionTheory.LeviMatchingWords

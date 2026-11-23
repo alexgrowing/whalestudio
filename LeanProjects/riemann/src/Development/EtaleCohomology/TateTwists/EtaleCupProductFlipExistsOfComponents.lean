@@ -1,0 +1,7 @@
+import Development.EtaleCohomology.TateTwists.IsTensorFlip
+
+namespace LateralTheory.Fin.EtaleComplexPairingFlipExists
+theorem etale_cup_product_flip_exists_of_components : LateralTheory.EtaleFoundations.EtaleComplexPairingFlipExists := by
+  apply LateralTheory.EtaleFoundations.etale_complex_pairing_flip_exists
+theorem intersectionNumber_baseChange : LateralTheory.EtaleFoundations.EtaleComplexPairingFlipExists := etale_cup_product_flip_exists_of_components
+end LateralTheory.Fin.EtaleComplexPairingFlipExists

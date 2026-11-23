@@ -1,0 +1,15 @@
+import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.CayleyTransform.RdEx
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.IsLatRepL
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilDatumProperties
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKrdRDSt
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKrdRDFr
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilKrdRDIota
+
+set_option synthInstance.maxHeartbeats 200000
+
+section
+namespace PositivityTheory.SiegelWeilFormula.Krd
+theorem rdEx_k : _root_.PositivityTheory.SiegelWeilFormula.RDEx_k := _root_.PositivityTheory.SiegelWeilFormula.Krd.rdEx_of_k _root_.PositivityTheory.SiegelWeilFormula.Krd.epsEx_k _root_.PositivityTheory.SiegelWeilFormula.Krd.frEx_k _root_.PositivityTheory.SiegelWeilFormula.Krd.iotaEx_k
+end PositivityTheory.SiegelWeilFormula.Krd
+end

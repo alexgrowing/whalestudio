@@ -1,0 +1,61 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["22ebf0f4957fe7aa.olean"],
+  "m": false,
+  "i": "fa0588b75640d5ad.ilean",
+  "c": "918da82b11ddbdf8.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:11:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.fSatake_borel_iff`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:21:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:25:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.fSatake_diag_mul`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:54:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.fSatake_cTJ`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:75:19: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:87:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.fSatake_diag_exists`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean:103:16: This simp argument is unused:\n  Matrix.diagonal_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [cT, h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeA transitive imports (legacy)",
+       "85ffc25a63ce849e"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeA:importAllArts",
+       "8722ca017cdd3568"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FSatakeB.lean",
+   "f628fe876728ad27"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeB",
+   "afa6e83e4c490b0f"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "6da5110976a0fbf4"}

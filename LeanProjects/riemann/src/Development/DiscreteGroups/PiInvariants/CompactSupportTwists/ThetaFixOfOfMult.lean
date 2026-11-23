@@ -1,0 +1,17 @@
+import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.ThetaAMulPhiU
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MultiplicityOneRigidity.GelfandKazhdanDualOfRigidity
+import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.JacquetShalikaRigidity
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.CuspRapidDecayGL.CuspRapidDecaySiegelGL
+import Development.WeilBound.CoreStatements.PublishedTheorems.FiniteGLInvariants.AffineLieInvariants.Imports
+import Development.WeilBound.CoreStatements.PublishedTheorems.CuspidalMultiplicityOne.Bridge
+
+namespace DiscreteGroups.T1.G
+
+theorem thetaFixOf_of_mult (hM : GlobalTheory.Published.CuspidalMultiplicityOne) : PositivityTheory.Rg.BcB.Desc.ThetaFixOf :=
+  thetaFixOf_of (PositivityTheory.JMult1.gelfandKazhdanDual_of_rigidity PositivityTheory.AdelicQuotientData.jacquetShalikaRigidity
+    PositivityTheory.S2.CuspBdd.cuspFormsBoundedGL) CuspFormAutomorphicBounds.automorphicFormsFiniteGL hM
+
+theorem thetaFixOf_of_lit (h : PositivityTheory.Lit1.CuspidalMultiplicityOneLit) : PositivityTheory.Rg.BcB.Desc.ThetaFixOf :=
+  thetaFixOf_of_mult (PositivityTheory.Lit1.cuspidalMultiplicityOne_of_lit h)
+
+end DiscreteGroups.T1.G

@@ -1,0 +1,12 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineDeRhamAbelianStructureOfStatements
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.AbelianHodgeDeRham.Bridge
+
+namespace AbelianDeRhamStructureFromPages.Adrs
+
+theorem abelianDeRhamStructure_of_page (P : FubiniStudyChowHeightFormula₂.Hdr.AbelianDeRhamPage) : GlobalTheory.Published.AbelianDeRhamStructure :=
+  (GlobalTheory.Published.abelianDeRhamStructure_crystallineDeRham_of_hypotheses GlobalTheory.SmoothLift.crystallineSmoothLift_of_relations
+    (FubiniStudyChowHeightFormula₂.Hdr.abelianHodgeDeRham_of_page P)).1
+
+end AbelianDeRhamStructureFromPages.Adrs

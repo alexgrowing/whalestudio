@@ -1,0 +1,19 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DiscreteSeriesDetSqrtCoverOfUnitaryClassificatioStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HarishChandraAnalyticityStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedMatrixSubgroupTheorem
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlueSmoothOfCompactSupportStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PseudoCoefficientUnitaryPqStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HarishChandraCharactersOfInputsStatement
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalDegreeOfParameter
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DiscreteSeriesWithDegree
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlathFactorisationOfTensorProduct
+
+namespace PositivityTheory.Prw
+
+theorem flathFactorisation_of (h₁ : GlobalTheory.Published.FlathTensorProduct) (h₂ : GlobalTheory.Published.UnitaryIrreducibleAdmissible) :
+    GlobalTheory.Published.FlathFactorisation :=
+  GlobalTheory.flathFactorisation_of_tensorProduct h₁ h₂
+
+end PositivityTheory.Prw

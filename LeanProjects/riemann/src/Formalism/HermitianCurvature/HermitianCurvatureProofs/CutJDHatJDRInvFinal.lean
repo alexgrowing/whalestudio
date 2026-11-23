@@ -1,0 +1,13 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRInvMain
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRInvEigAP
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRInvCB
+
+namespace Formalism.FourierDecayAlt.P.CutMP
+
+theorem inverse_function_positive_holds : JDRInvFn :=
+  jDRInvFn_of inverse_alpha_positive_holds inverse_beta_positive_holds inverse_beta_left_positive
+
+theorem inverse_function_minus_holds : JDRInvFnM :=
+  jDRInvFnM_of inverse_alpha_minus_holds inverse_alpha_left_minus inverse_beta_minus_holds
+
+end Formalism.FourierDecayAlt.P.CutMP

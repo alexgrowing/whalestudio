@@ -1,0 +1,23 @@
+import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.DzNarrow
+import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.DepthZeroInertiaBigOfNarrowBig
+import Development.WeilBound.CoreStatements.StandardPublishedResults.StandardTheoremStatements.GlobalArtinReciprocity
+import Mathlib
+import Development.DiscreteGroups.GlobalIrreducibility.SerLocOfTiesLe
+import Development.DiscreteGroups.GlobalIrreducibility.ActKEEqSelfLe
+import Development.DiscreteGroups.GlobalIrreducibility.RegularLocalOfDepthZero
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodFiberTypesAll
+import Development.DiscreteGroups.GlobalIrreducibility.TameUniformizerPower
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameUniformizerPowerStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelTameCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RegularLocalOfDepthZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRepresentationComponentStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CentralOfTameCoupledStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowTruthOfLabelTieStatement
+
+namespace UpperTheory.Lit.Dz
+
+theorem big (hL : GlobalTheory.Published.LocalLanglandsGL) : DiscreteGroups.sglob.DzType.DepthZeroInertiaBig :=
+  depthZeroInertiaBig_of_narrowBig (narrowBig PositivityTheory.Stage1.PM.globalArtinReciprocity hL)
+    PositivityTheory.Stage1.PM.globalArtinReciprocity hL
+
+end UpperTheory.Lit.Dz

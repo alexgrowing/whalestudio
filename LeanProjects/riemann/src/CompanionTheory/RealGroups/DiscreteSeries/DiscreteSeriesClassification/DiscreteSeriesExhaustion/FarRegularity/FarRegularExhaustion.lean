@@ -1,0 +1,20 @@
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.NumKG
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.VanKGOf
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InjROfVanKG
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InjUOfInjR
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.EvaluationLiftDegreeZero
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SubChar
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasApplyOfScalChar
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.TotalBound
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DominantOfKHighest
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.VNormSqRenum
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FarRegOfLktUnitIneqFarNum
+
+namespace CompanionTheory.RgExh.U
+
+theorem far_regular_exhaustion : CompanionTheory.RgExh.FarReg :=
+  GlobalTheory.CompanionTheory.FarRegularityLevels.farReg_of_lkt_unitIneq_farNum GlobalTheory.CompanionTheory.RgExhFarReg.lktExists GlobalTheory.CompanionTheory.RgFarRen.renumber GlobalTheory.CompanionTheory.RgExhUnit.unitIneq
+    (GlobalTheory.CompanionTheory.RgCOBlock.coBlock (GlobalTheory.CompanionTheory.RgExh.injU_of_injR (GlobalTheory.CompanionTheory.RgExhInjR.injR_of_vanKG
+      (GlobalTheory.CompanionTheory.RgExhVanKG.vanKG_of GlobalTheory.CompanionTheory.ClusterNum.numKG))) GlobalTheory.CompanionTheory.GenCOUP.genCOU) GlobalTheory.CompanionTheory.RgExhFar.farNum
+
+end CompanionTheory.RgExh.U

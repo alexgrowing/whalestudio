@@ -1,0 +1,79 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["ec84e7e53d97a016.olean"],
+  "m": false,
+  "i": "dd9b43e80dabaaaa.ilean",
+  "c": "841be36b535934cc.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:71:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:136:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:137:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:151:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:177:17: This simp argument is unused:\n  ha\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hak, hj, Ne.symm hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:231:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:261:8: automatically included section variable(s) unused in theorem `_private.Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal.0.Formalism.UG.P.mul_mul_mul_eq_one_of_inverses`:\n  [IsLocalRing R]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsLocalRing R] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:522:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:522:10: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:546:4: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:555:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean:555:8: Unused tactic linter: `simp [Units.coe_map_inv, RingHom.mapMatrix_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SatakeDualWeyl.StatementW transitive imports (legacy)",
+       "b239ecdb6ab07e61"],
+      ["Formalism.SatakeDualWeyl.StatementW:importAllArts", "4163d248fe14551f"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf transitive imports (legacy)",
+       "69ccb438e1378f7a"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf:importAllArts",
+       "af1f7f5c7f5722f3"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Wlocal.lean",
+   "ddfdb53b3a1a0df4"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal",
+   "fb0226ff7598c9fe"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "6aec47d5dee03088"}

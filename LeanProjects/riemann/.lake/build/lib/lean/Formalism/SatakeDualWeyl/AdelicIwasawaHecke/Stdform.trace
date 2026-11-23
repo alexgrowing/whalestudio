@@ -1,0 +1,89 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1de1d4dd0e419522.olean"],
+  "m": false,
+  "i": "0a10bd64837fe7a8.ilean",
+  "c": "f3b59720960a4d80.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:22:36: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:22:71: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:20:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.stdform_continuous_Q`:\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:25:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.stdform_Q_dot`:\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:31:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.stdform_Q_reindex`:\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:39:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.stdform_Q_real`:\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:91:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:120:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:121:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:141:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.stdform_hform_map`:\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:147:0: automatically included section variable(s) unused in theorem `Formalism.UG.P.stdform_hform_fixed`:\n  [DecidableEq n]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq n] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:201:91: This simp argument is unused:\n  stdform_normSq\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Jpq, dotProduct, Matrix.fromBlocks_mulVec, Fintype.sum_sum_type, Complex.re_sum,\n    re_conj_mul_self_eq_normSq, sub_eq_add_neg, Matrix.neg_mulVec, Matrix.one_mulVec, Complex.normSq_apply,\n    Complex.neg_re, Complex.neg_im, mul_neg, Finset.sum_neg_distrib]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:202:6: This simp argument is unused:\n  re_conj_mul_self_eq_normSq\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Jpq, dotProduct, Matrix.fromBlocks_mulVec, Fintype.sum_sum_type, Complex.re_sum, stdform_normSq,\n    sub_eq_add_neg, Matrix.neg_mulVec, Matrix.one_mulVec, Complex.normSq_apply, Complex.neg_re, Complex.neg_im, mul_neg,\n    Finset.sum_neg_distrib]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean:203:22: This simp argument is unused:\n  Complex.neg_im\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Jpq, dotProduct, Matrix.fromBlocks_mulVec, Fintype.sum_sum_type, Complex.re_sum, stdform_normSq,\n    re_conj_mul_self_eq_normSq, sub_eq_add_neg, Matrix.neg_mulVec, Matrix.one_mulVec, Complex.normSq_apply,\n    Complex.neg_re, mul_neg, Finset.sum_neg_distrib]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SatakeDualWeyl.StatementC transitive imports (legacy)",
+       "bc52339ce04850ea"],
+      ["Formalism.SatakeDualWeyl.StatementC:importAllArts", "b443cc2c231b742f"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists transitive imports (legacy)",
+       "bc52339ce04850ea"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists:importAllArts",
+       "92cad58bdafd122c"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant transitive imports (legacy)",
+       "bc52339ce04850ea"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant:importAllArts",
+       "976badaa1e8f48d3"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Stdform.lean",
+   "75fd990e1d1d6347"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform",
+   "9077a297ddd9bb75"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a895ba1988bde32f"}

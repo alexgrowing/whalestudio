@@ -1,0 +1,85 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SemiAbelianHomExtension
+import Development.WeilBound.CoreStatements.RegularisedThetaMirabolic.CuspidalMirabolic.CuspidalMirabolic
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsPrimeMemAsIdeal
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DualityForAbsGal
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CardH1EqCardH0MulCardH2
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ComplexMultiplicationJacquetShalika
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IdealInvariantsOneOrbit
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.KFiniteVectorsIrreducibleUnitaryUnitaryGroupPQ
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.OneLeNormOneSub
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DiscreteSeriesHermitianUnique
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DiscreteSeriesLowestKType
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.InfinitesimalEquivalenceUnitaryGroupPQ
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.UnramifiedOrthogonality
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialZetaFunctionalEquation
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HilbertClassFieldJ
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MoyPrasadJacquetIso
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplZeta
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DigammaBoundVerticalStrip
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IntegralLeftVerticalLineBound
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitFormulaClosed
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DiagonalMulMemCongruenceSubgroup
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.EllipticMainTheoremCM
+import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DixmierMalliavin.DixmierMalliavinFactorisationHolds
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplChi
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DirichletLogDerivBoundLeftHalfPlane
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleUnitaryIrreducibleRep
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleOfLinearReductive
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaOfLinearReductive
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsAvoidOne
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarMeasureIwasawaQuotient
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarSubgroupBiInvariant
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRiemannianHaarOnSubgroupMapMulRightUnitary
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaIntegrationFormulaUpToConstant
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicStabilizerHomeomorph
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetBlockChangeOfBasisViaTwoFamiliesImplicit
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspDiscreteDecompositionGL
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ImportsBis
+
+namespace PositivityTheory.Prw
+
+theorem semiAbelianHomExtension_holds : GlobalTheory.Published.SemiAbelianHomExtension :=
+  GlobalTheory.CompanionTheory.SAH.semiAbelianHomExtension
+
+theorem cuspidalMirabolic_holds : GlobalTheory.Published.CuspidalMirabolic :=
+  PositivityTheory.Mirab.cuspidalMirabolic
+
+theorem idealInvariantsOneOrbitSt_holds : GlobalTheory.Published.IdealInvariantsOneOrbitSt :=
+  GlobalTheory.CompanionTheory.CM.idealInvariantsOneOrbit
+
+theorem logDerOne_holds : GlobalTheory.Mem.An.LogDerOne :=
+  GlobalTheory.CompanionTheory.An.logDerOne_holds
+
+theorem discreteSeriesHermitianUnique_holds : GlobalTheory.Published.DiscreteSeriesHermitianUnique :=
+  GlobalTheory.CompanionTheory.Front.discreteSeriesHermitianUnique
+
+theorem discreteSeriesLowestKType_holds : GlobalTheory.Published.DiscreteSeriesLowestKType :=
+  GlobalTheory.CompanionTheory.Glob.discreteSeriesLowestKType
+
+theorem bernsteinZelevinskyFiniteness_holds : GlobalTheory.Published.BernsteinZelevinskyFiniteness :=
+  GlobalTheory.CompanionTheory.Published.bernsteinZelevinskyFiniteness
+
+theorem unramifiedOrthogonality_holds : ReciprocityTheory.Gal.UnramifiedOrthogonality :=
+  GlobalTheory.CompanionTheory.Hypotheses₂.unramifiedOrthogonality
+
+theorem partialZetaFunctionalEquation_holds : GlobalTheory.Published.PartialZetaFunctionalEquation :=
+  GlobalTheory.CompanionTheory.Hypotheses₂.partialZetaFunctionalEquation
+
+theorem moyPrasadJacquetIso_holds : GlobalTheory.Published.MoyPrasadJacquetIso :=
+  GlobalTheory.CompanionTheory.MoyPrasadTop.moyPrasadJacquetIso
+
+theorem weberRayFieldSt_holds : GlobalTheory.Published.WeberRayFieldSt :=
+  GlobalTheory.CompanionTheory.WeberRay.weberRayField
+
+theorem ellipticMainTheoremCM_holds : GlobalTheory.Published.EllipticMainTheoremCM :=
+  GlobalTheory.CompanionTheory.Hypotheses₂.ellipticMainTheoremCM
+
+theorem dixmierMalliavinFactorisation_holds : GlobalTheory.Published.DixmierMalliavinFactorisation :=
+  PositivityTheory.DM.dixmierMalliavinFactorisation_holds
+
+theorem siegelKlingen_holds : GlobalTheory.Published.SiegelKlingen :=
+  GlobalTheory.CompanionTheory.Hypotheses₂.siegelKlingen
+
+end PositivityTheory.Prw

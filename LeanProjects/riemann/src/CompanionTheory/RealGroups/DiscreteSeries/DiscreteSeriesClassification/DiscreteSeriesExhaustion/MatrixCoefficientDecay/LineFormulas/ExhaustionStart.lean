@@ -1,0 +1,15 @@
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FlagFactsStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ParabolicSubgroupEqualityStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LineFactsStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SlabStatementStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.MaximalCompactStatementStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InitialStatementStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FubiniParabolicMultipleStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FubiniOfParabolicHaarMultipleStatement
+
+namespace CompanionTheory.RgExh.Dec.N.S
+
+theorem exhaustion_start : CompanionTheory.RgExh.Dec.Start :=
+  GlobalTheory.T.InitialStatement GlobalTheory.T.rgExh_flagFacts GlobalTheory.T.ParabolicSubgroupEquality GlobalTheory.T.rgExh_lineFacts GlobalTheory.T.SlabStatement (GlobalTheory.T.fubini_of_parabolic_haar_multiple GlobalTheory.T.FubiniParabolicMultiple) GlobalTheory.T.MaximalCompactStatement
+
+end CompanionTheory.RgExh.Dec.N.S

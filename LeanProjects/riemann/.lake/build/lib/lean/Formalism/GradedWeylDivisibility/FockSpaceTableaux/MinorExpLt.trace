@@ -1,0 +1,139 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["910a999ef172c8bb.olean"],
+  "m": false,
+  "i": "d417608a4ed8fd6d.ilean",
+  "c": "ad4a78c8c2b4bcec.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:15:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:17:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:18:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:15:4: Unused tactic linter: `(simp only [cmIdx, Equiv.trans_apply, Equiv.prodComm_apply, Prod.fst_swap, Prod.snd_swap,\n    finProdFinEquiv_apply_val];\n  done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:17:4: Unused tactic linter: `(simp [cmIdx, finProdFinEquiv_apply_val, Nat.mul_comm, Nat.add_comm]; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:18:4: Unused tactic linter: `(simp [cmIdx]; ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:37:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:38:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:42:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:37:8: Unused tactic linter: `exact Nat.mul_le_mul_left h1 r` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:38:8: Unused tactic linter: `exact Nat.mul_le_mul (le_refl r) h1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:42:6: Unused tactic linter: `linarith` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:48:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:49:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:47:66: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:48:4: Unused tactic linter: `(rw [Finsupp.domCongr_apply, Finsupp.equivMapDomain_apply, Equiv.symm_apply_apply])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:49:4: Unused tactic linter: `(simp; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:54:6: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:62:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:63:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:62:12: Unused tactic linter: `exact Prod.ext_iff.2 ⟨hb, Fin.ext rfl⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:63:12: Unused tactic linter: `(subst hb; rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:92:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:93:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:94:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:95:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:92:4: Unused tactic linter: `exact Finsupp.Lex.lt_of_forall_lt_of_lt _ _ i h1 h2` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:93:4: Unused tactic linter: `(show Finsupp.Lex (· < ·) (· < ·) x y; exact ⟨i, h1, h2⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:94:4: Unused tactic linter: `(show Pi.Lex (· < ·) (· < ·) x y; exact ⟨i, h1, h2⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:95:4: Unused tactic linter: `(rw [Finsupp.lex_def]; exact ⟨i, h1, h2⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:106:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:111:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean:111:6: Unused tactic linter: `simp [h x]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GradedWeylDivisibility.StatementC transitive imports (legacy)",
+       "608ecceea0d53778"],
+      ["Formalism.GradedWeylDivisibility.StatementC:importAllArts",
+       "5ef2b98eb2f060e1"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/MinorExpLt.lean",
+   "878cf4b2406778f7"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GradedWeylDivisibility.FockSpaceTableaux.MinorExpLt",
+   "a4c5f85cfdc8c463"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "d32f6f5091c6c2bc"}

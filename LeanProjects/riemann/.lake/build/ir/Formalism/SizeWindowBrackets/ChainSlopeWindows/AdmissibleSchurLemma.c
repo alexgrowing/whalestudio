@@ -1,0 +1,53 @@
+// Lean compiler output
+// Module: Formalism.SizeWindowBrackets.ChainSlopeWindows.AdmissibleSchurLemma
+// Imports: public import Init public meta import Init public import Formalism.SizeWindowBrackets.SecondKindBucket public import Formalism.LogFactorialBounds.LogFactorialProofs.PrimeSum public import Formalism.RankGapBounds.RankGapProofs.RankGapDecayHypothesis public import Formalism.RankGapBounds.RankGapProofs.PmModulusFacts public import Formalism.RankGapBounds.RankGapProofs.FourNotDvdOddSqAddOne
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_tree_Formalism_SizeWindowBrackets_SecondKindBucket(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LogFactorialBounds_LogFactorialProofs_PrimeSum(uint8_t builtin);
+lean_object* initialize_tree_Formalism_RankGapBounds_RankGapProofs_RankGapDecayHypothesis(uint8_t builtin);
+lean_object* initialize_tree_Formalism_RankGapBounds_RankGapProofs_PmModulusFacts(uint8_t builtin);
+lean_object* initialize_tree_Formalism_RankGapBounds_RankGapProofs_FourNotDvdOddSqAddOne(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_Formalism_SizeWindowBrackets_ChainSlopeWindows_AdmissibleSchurLemma(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_SizeWindowBrackets_SecondKindBucket(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LogFactorialBounds_LogFactorialProofs_PrimeSum(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_RankGapBounds_RankGapProofs_RankGapDecayHypothesis(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_RankGapBounds_RankGapProofs_PmModulusFacts(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_RankGapBounds_RankGapProofs_FourNotDvdOddSqAddOne(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

@@ -1,0 +1,14 @@
+import Mathlib
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.DualExponentDensity
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsSelfDualLatticeIff
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LocalDensityOfSelfDualLatticeLemmas
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SelfDualLatticesUnramifiedPlaceNoHypothesis
+
+namespace GlobalTheory.LatticeDensityClosed
+
+theorem selfDualLatticeDensity : GlobalTheory.IndefiniteRowSideFullHecke.PlaceSplittingTypes.SelfDualLatticeDensity :=
+  GlobalTheory.LocalDensityCompare.localDensity_iff.1
+    (GlobalTheory.LatticeDensity.localDensity_of_selfDualLatticeLemmas
+      GlobalTheory.UnramSelfDualClosed.selfDualLatticeLemmas)
+
+end GlobalTheory.LatticeDensityClosed

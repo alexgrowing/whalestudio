@@ -1,0 +1,19 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTripleLocalPartCaseBFourth
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeLin
+open scoped TensorProduct NNReal Matrix
+open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
+open GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK GlobalTheory.ThK.LemF
+open GlobalTheory.Doubling (absE)
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.theta_triple_local_part_case_b_fourth : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E) (B : Base F E) (a b : ℕ)
+    (G : Geo σ a (b + 2)) (G₁ : Geo σ a b) (H : Plane E (b + 2) b) (H' : Plane E (a + (b + 2)) (a + b)), CfgB B G G₁ H H' →
+    ∀ e', IsEv B G.M' G₁.M' H.ι H'.ι (isoB H H') e' → ∀ ei' ev', IsLocPart G.M' G₁.M' e' ei' ev' →
+    ∀ X om om' om₁ om₁', IsTriple B G X om om' → IsTriple B G₁ X om₁ om₁' →
+    ∀ (v : Pl F) (μ : Measure (idelesAt E (evFin F v))), μ.IsHaarMeasure → ∀ l : ((Fin b × Fin (a + b) → Fv F v) → ℂ) →ₗ[ℂ] ℂ,
+      (∀ g₀ ∈ UAt σ G₁.V' (evFin F v), ∀ ψ ∈ SB (Fin b × Fin (a + b) → Fv F v), l (locOp v (om₁' (g₀, 1)) ψ) = l ψ) →
+      ∀ φ ∈ SB (Fin (b + 2) × Fin (a + (b + 2)) → Fv F v), ∀ t g₀ m, IsLevi H t g₀ m → m ∈ UAt σ G.V' (evFin F v) →
+        g₀ ∈ UAt σ G₁.V' (evFin F v) → ∀ g ∈ UAt σ G.V' (evFin F v),
+          coneLin B G.M' om' v (ev' v) μ (shiftB σ H H') X.ν ((a - (b + 2)) / 2 + 1) l φ (m * g) = ((absE F E t : ℝ) : ℂ) ^ (b + 1) * coneLin B G.M' om' v (ev' v) μ (shiftB σ H H') X.ν ((a - (b + 2)) / 2 + 1) l φ g := by
+  first | exact @GlobalTheory.ThK.ConeLinLevi.coneLin_levi | exact GlobalTheory.ThK.ConeLinLevi.coneLin_levi | (intros; apply GlobalTheory.ThK.ConeLinLevi.coneLin_levi <;> assumption)

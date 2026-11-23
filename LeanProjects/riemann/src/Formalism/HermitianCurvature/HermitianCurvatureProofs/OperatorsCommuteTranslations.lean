@@ -1,0 +1,10 @@
+import Formalism.HermitianCurvature.OperatorsCommuteTranslations
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AAInvTrans
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IsotropicNormalFormPartial
+
+namespace Formalism.FourierDecayAlt.P
+
+theorem operators_commute_translations' : Formalism.FourierDecayAlt.C3.OperatorsCommuteTranslations := operators_commute_translations
+theorem isotropicNormalFormPartial_statement : Formalism.FourierDecayAlt.C3.IsotropicNormalFormPartial := isotropic_normal_form_partial
+
+end Formalism.FourierDecayAlt.P

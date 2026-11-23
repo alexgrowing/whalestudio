@@ -1,0 +1,79 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["dee5b4599c26c8f9.olean"],
+  "m": false,
+  "i": "8f54f1eb53659a7d.ilean",
+  "c": "87f756dea75f627e.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:15:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:15:4: Unused tactic linter: `exact ⟨i, h1, h2⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:22:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:23:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:21:66: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:22:4: Unused tactic linter: `(simp [Finsupp.domCongr_apply]; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:23:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:30:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:30:4: Unused tactic linter: `(unfold MonomialOrder.degree; rw [AddEquiv.apply_symm_apply];\n  exact Finset.le_sup hd)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:79:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:80:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:79:8: Unused tactic linter: `exact add_le_add_left hle _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean:80:8: Unused tactic linter: `gcongr` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpleadLemmas transitive imports (legacy)",
+       "19de8c9e37115784"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpleadLemmas:importAllArts",
+       "1ca2638faea28674"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/PeelLead.lean",
+   "970a6eee0bad827e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelLead",
+   "5ed7a4ac34afb07d"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "e32f12c6122122de"}

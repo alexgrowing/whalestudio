@@ -1,0 +1,5 @@
+import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.LowRankSiegelDensities.ChapterA
+import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.UnramifiedSchwartzDensity.SchTop
+
+theorem PositivityTheory.PfSWUS.HMass.siegelDensitiesLowA : PositivityTheory.PfSWUS.HMass.SiegelDensitiesLowA :=
+  PositivityTheory.PfSWUS.HMass.siegelDensitiesLowA_of_sch PositivityTheory.PfSWUS.SchInf.schwartzDensInf

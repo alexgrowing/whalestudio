@@ -1,0 +1,24 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyAllIff
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedTwistAbsPow
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatakeOfIsLocComp
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsUnitaryOfCharIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHasSatGLLocRep
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyMemFixed
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousChiDet
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFiniteMeasureQuotMeasure
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
+import Formalism.LocalToGlobal.UnitaryNorms.CharTransport
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousSplitCentre
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MapSingleAtEmb
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnitaryAdmissibleMatrixCoefficient
+import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AssocFin
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.column_twisted_args_second : ∀ hL : GlobalTheory.Published.LocalLanglandsGL, GlobalTheory.Published.AutomorphicFormsFiniteGL → GlobalTheory.Published.JacquetShalikaRigidity → GlobalTheory.Published.CuspidalSpectrumGL → GlobalTheory.HeightCounting.CgCmp hL := by
+  intro _ _ _ _ _ _ _
+  exact ⟨⟨⟩⟩

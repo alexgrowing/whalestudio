@@ -1,0 +1,10 @@
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.TensorOperatorTrees.TrStable
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.TensorOperatorTrees.TwShift
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.TensorOperatorTrees.TensOpMaps
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.TensorOperatorTrees.InfTree
+
+namespace PositivityTheory.Rg.BcB.SpectralAccumulation.Trees
+
+theorem treeLemmas : TrStable ∧ TwShift ∧ Graft ∧ InfTree := ⟨trStable, twShift, graft, infTree⟩
+
+end PositivityTheory.Rg.BcB.SpectralAccumulation.Trees

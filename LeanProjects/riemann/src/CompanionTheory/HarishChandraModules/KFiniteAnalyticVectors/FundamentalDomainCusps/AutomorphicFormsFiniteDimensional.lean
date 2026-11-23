@@ -1,0 +1,29 @@
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.RowsFinDimOf
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.FiniteDimensionalFromLinearForms
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.ParabolicSubgroupDecomposition
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.PBAdel
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.CuspidalAtInfinityOf
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.SecondOrderExpAtInfinitePlace
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.LocalPointData
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.LogBallEstimates
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.RealParabolicDecomposition
+
+namespace CompanionTheory.D.gk.RF
+
+theorem gamSub : GamSub := by
+  exact arithmetic_subgroup_of_transport transport_to_standard_form
+
+theorem geoInf : GeoInf := by
+  have hT : Transp := transport_to_standard_form
+  have hG : GamSub := arithmetic_subgroup_of_transport hT
+  exact reduction_geometry_at_infinity successive_minima_gap (short_isotropic_vector_of hT) covolume_span (covolume_orthogonal_complement hT)
+    (mahler_compactness_of hT hG) (nilpotent_cover_of hT hG nilpotent_lie_algebra nilpotent_subgroup_representation)
+
+theorem cuspInf : CuspInf :=
+  cuspidal_at_infinity_of selP (averaging_of_fundamental_domain fundamental_domain_inclusion) unipotent_radical_subgroup real_parabolic_decomposition parabolic_subgroup_decomposition transport_to_standard_form gamSub geoInf
+
+theorem automorphic_forms_finite_dimensional : Formalism.L2.SG.RowsDef.RowsFinDim := by
+  exact rowsFinDim_of discrete_series_bound_of_inputs finite_dimensional_from_linear_forms (adelic_cusp_of_infinite_cusp cuspInf congruence_subgroup_compact_open)
+    (fundamental_domain_discrete_of gamSub) level_structure_of convolution_operator_representation representation_of_convolution
+
+end CompanionTheory.D.gk.RF

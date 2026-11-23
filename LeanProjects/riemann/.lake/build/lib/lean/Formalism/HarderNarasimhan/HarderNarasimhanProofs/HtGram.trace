@@ -1,0 +1,121 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["24c8d2e04d7deca1.olean"],
+  "m": false,
+  "i": "f56ab6b640b666cd.ilean",
+  "c": "33918322751dc1ef.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:24:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:24:4: Unused tactic linter: `simp [Formalism.HermitianLatticesTheory.realize,\n  Formalism.HermitianLatticesTheory.realizeRaw]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:31:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:31:4: Unused tactic linter: `simp [Formalism.HermitianLatticesTheory.realize,\n  Formalism.HermitianLatticesTheory.realizeRaw]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:55:0: automatically included section variable(s) unused in theorem `Formalism.HN.HeightGram.fcoord_smul`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:109:6: This simp argument is unused:\n  Matrix.zero_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [U, D, Matrix.fromBlocks_multiply, Matrix.mul_one, Matrix.one_mul, Matrix.mul_zero, Matrix.mul_smul,\n    Matrix.smul_mul, add_zero, zero_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:161:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:161:22: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:161:8: Unused tactic linter: `split_ifs` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:161:22: Unused tactic linter: `simp_all` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:165:0: automatically included section variable(s) unused in theorem `Formalism.HN.HeightGram.gmat_eq`:\n  [Fintype S]\n  [DecidableEq S]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype S] [DecidableEq S] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:180:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:180:4: Unused tactic linter: `(\n  simp only [Complex.mul_re, Complex.mul_im, Complex.star_def, Complex.conj_re, Complex.conj_im,\n    ← Finset.sum_sub_distrib, ← Finset.sum_add_distrib]\n  refine Finset.sum_congr rfl fun v _ => ?_\n  ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:205:0: automatically included section variable(s) unused in theorem `Formalism.HN.HeightGram.isEmpty_real`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:273:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:273:6: Unused tactic linter: `simp [zl]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:277:0: automatically included section variable(s) unused in theorem `Formalism.HN.HeightGram.linIndep_int`:\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:285:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:285:6: Unused tactic linter: `exact (integralBasis K).linearIndependent.restrict_scalars'` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:291:0: automatically included section variable(s) unused in theorem `Formalism.HN.HeightGram.zl_mono`:\n  [NumberField K]\n  [Module K V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [Module K V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:298:0: automatically included section variable(s) unused in theorem `Formalism.HN.HeightGram.rkK_span`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:350:4: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean:396:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.HarderNarasimhan.StatementPl transitive imports (legacy)",
+       "61e48d5daba2c8bd"],
+      ["Formalism.HarderNarasimhan.StatementPl:importAllArts",
+       "73dc7530810fad3c"],
+      ["Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax transitive imports (legacy)",
+       "820885b294d82148"],
+      ["Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax:importAllArts",
+       "13b088bfd8574947"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermodZ transitive imports (legacy)",
+       "fbea00821aea83b7"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermodZ:importAllArts",
+       "7096ee98a197dd3c"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep transitive imports (legacy)",
+       "c7a1b49ea58658fd"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep:importAllArts",
+       "582fe6bca5f3db35"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+   "16dd245f01e1a346"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram",
+   "aaa1a3f51c32c0be"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "b53a73c44c14bb06"}

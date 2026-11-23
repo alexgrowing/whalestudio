@@ -1,0 +1,10 @@
+import Mathlib
+import Formalism.PeriodIntegrals.DSInfCharCap
+import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.DiscreteSeriesInfinitesimalCharacter
+
+namespace GlobalTheory
+
+theorem capelliDiscreteSeriesInfChar : PI.DSInfCharCap.DSInfCharCap :=
+  CompanionTheory.D.DSIC.discrete_series_infinitesimal_character
+
+end GlobalTheory

@@ -1,0 +1,24 @@
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.HcMultDSOfAll
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.KavgFixRange
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.HasDerivAtDS
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.GenApplyEqZero
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.ImInnerSelf
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.SgCases
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.OneParamHasDerivAt
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.GenApplyZero
+import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.SmoothGeneratorAverages.IntegralSumCoef
+
+set_option autoImplicit false
+
+namespace Formalism.L2.SG.Pf.admitted
+
+theorem hcMultDS : Formalism.MainNotions.BridgeCPX.HCMultDS :=
+  hcMultDS_of_all c0 c1 c2 c3 c4 c5 c6 c7
+
+theorem hcAdmDS : Formalism.MainNotions.BridgeCPX.HCAdmDS := hcAdmDS_of hcMultDS
+
+theorem kFinSmooth : Formalism.MainNotions.LowestKTypeMultiplicity.KFinSmooth := kFinSmooth_of hcMultDS
+
+theorem kFinSmooth' : Formalism.MainNotions.DiscreteSeriesInnerProducts.KFinSmooth := kFinSmooth_of' hcMultDS
+
+end Formalism.L2.SG.Pf.admitted

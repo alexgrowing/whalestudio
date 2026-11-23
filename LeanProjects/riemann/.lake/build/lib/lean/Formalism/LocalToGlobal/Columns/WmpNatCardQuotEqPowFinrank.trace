@@ -1,0 +1,123 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["be7487685ffa9bc5.olean"],
+  "m": false,
+  "i": "13b47862fdc31381.ilean",
+  "c": "a13257731fdd131a.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.wmp_dual_toAddSubgroup`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:42:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.wmp_card_quot`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:68:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.wmp_quot_equiv_of_card`:\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:111:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.wmp_hStd_osmul_right`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:56: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:116: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:184: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:245: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:314: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:400: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:460: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:518: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:572: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:622: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:56: Unused tactic linter: `(apply Bl.general_b_fact_right_more.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:116: Unused tactic linter: `(intros; apply Bl.general_b_fact_right_more.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:184: Unused tactic linter: `(apply @Bl.general_b_fact_right_more.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:245: Unused tactic linter: `(intros; apply @Bl.general_b_fact_right_more.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:314: Unused tactic linter: `(apply @Bl.general_b_fact_right_more.goal1 <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:400: Unused tactic linter: `exact @Bl.general_b_fact_right_more.goal1 E ‹_› ‹_› ‹_› P` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:460: Unused tactic linter: `exact @Bl.general_b_fact_right_more.goal1 E ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:518: Unused tactic linter: `exact @Bl.general_b_fact_right_more.goal1 E ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:572: Unused tactic linter: `exact @Bl.general_b_fact_right_more.goal1 E ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:129:622: Unused tactic linter: `exact @Bl.general_b_fact_right_more.goal1 E` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean:161:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.card_wmpToK`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.Columns.WmLemmas transitive imports (legacy)",
+       "5f78461e3787bd30"],
+      ["Formalism.LocalToGlobal.Columns.WmLemmas:importAllArts",
+       "f148636a3cd035e3"],
+      ["Formalism.FlagUnipotentLattices.IdealCountLeWAsm transitive imports (legacy)",
+       "a8b29e85d2c13558"],
+      ["Formalism.FlagUnipotentLattices.IdealCountLeWAsm:importAllArts",
+       "0b55257b207b633b"],
+      ["Lemmata.GeneralBFactRightMore.Imports transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.GeneralBFactRightMore.Imports:importAllArts",
+       "08aae8ea230429b2"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/WmpNatCardQuotEqPowFinrank.lean",
+   "606282b5535f3b28"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Columns.WmpNatCardQuotEqPowFinrank",
+   "69e55aea2f31a0ea"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "ece892831c57c432"}

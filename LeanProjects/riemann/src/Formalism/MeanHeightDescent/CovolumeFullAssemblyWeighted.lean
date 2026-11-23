@@ -1,0 +1,10 @@
+import Formalism.MeanHeightDescent.DivisionInequalityWithCovolume
+import Formalism.MeanHeightDescent.AverageDegreeBounds.GlobalBoundRefinements
+
+namespace Formalism.ExtensionFiltration
+
+theorem periodBound : PeriodBound := period_bound'
+theorem covolume_assembly_weighted : CovolumeEstimateAnchoredWeights := covolume_assembly_weighted_holds
+theorem covolume_full_assembly_weighted : CovolumeEstimateOfAverageDegreeWeighted := covolume_full_assembly_weighted_holds
+
+end Formalism.ExtensionFiltration

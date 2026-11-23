@@ -1,0 +1,14 @@
+import Mathlib
+import Formalism.PeriodIntegrals.ProdFormulaE
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.ProdFormulaEOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.NormSt
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.SumLocalTrace
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.NormTraceLeOne
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.ResChar
+
+namespace PI.ProdFormulaE.Assemble
+
+theorem prodFormulaE_of_haar (hH : St.HaarAlg) : PI.ProdFormulaE.ProdFormulaE :=
+  Top.prodFormulaE_of hH modulus_eq_finitePlace Tr.sumLocalTrace TrIntP.norm_trace_le_one ResCharP.eq_iff_mem_asIdeal
+
+end PI.ProdFormulaE.Assemble

@@ -1,0 +1,12 @@
+import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.KleimanFibreHilbertFlat
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PInjectiveHolomorphicDerivNeZero
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPuncturedBranchInOneBranch
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPuncturedCurveDiscInverse
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceReducedAway
+set_option maxSynthPendingDepth 1
+
+theorem GroundTheory.Heights₂.Heights.AutoClose.PuncturedBranchInOneBranch : GroundTheory.Heights₂.Heights.PuncturedBranchInOneBranch.Statement :=
+  @GroundTheory.Heights₂.Heights.PuncturedBranchInOneBranch.proof GroundTheory.Heights₂.Heights.AutoClose.BranchImageNhdOffCentre
+
+theorem GroundTheory.Heights₂.Heights.AutoClose.PuncturedCurveDiscInverse : GroundTheory.Heights₂.Heights.PuncturedCurveDiscInverse.Statement :=
+  @GroundTheory.Heights₂.Heights.PuncturedCurveDiscInverse.proof GroundTheory.Heights₂.Heights.AutoClose.CurveCoordinateGraph GroundTheory.Heights₂.Heights.InjectiveHolomorphicDerivNeZero.proof

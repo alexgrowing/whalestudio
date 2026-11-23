@@ -1,0 +1,9 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnimodularLocalStandard.RepKeyRam
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnimodularLocalStandard.RepRamAsm
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnimodularLocalStandard.UnitVecRam
+
+namespace PI.UnitaryGroupMassFormula.UnimodLocStd
+
+theorem keyRep : KeyRep := keyRep_of_ram (keyStartRam_of_unit unitVecRam)
+
+end PI.UnitaryGroupMassFormula.UnimodLocStd

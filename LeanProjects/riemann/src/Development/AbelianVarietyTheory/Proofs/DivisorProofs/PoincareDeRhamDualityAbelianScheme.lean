@@ -1,0 +1,12 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PoincareDeRhamDuality
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualAbelianSchemeExistsBidualityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeDeRhamLocallyFreeHodgeDegeneratesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoincareDeRhamDualityOfHodgeDeRhamDualStatement
+
+namespace GlobalTheory
+
+theorem poincareDeRhamDuality : GlobalTheory.Published.PoincareDeRhamDuality :=
+  GlobalTheory.T.poincareDeRhamDuality_of_hodgeDeRham_dual GlobalTheory.T.abelianScheme_deRham_locallyFree_hodgeDegenerates GlobalTheory.T.dualAbelianScheme_exists_biduality
+
+end GlobalTheory

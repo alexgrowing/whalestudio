@@ -1,0 +1,25 @@
+import Mathlib
+import Formalism.PeriodIntegrals.Residue
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.ResidueBoundOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.HeckeLowerOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.BClass
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.BUnfold
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.NormAtPlacePosOfNormPos
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.RealHitIneq
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.DvdSpanOfIdealSet
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.IdealEquiv
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.BoxEqConvexBodyLT
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.MemSmulNormLeOne
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.UnitMulDetNeZero
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.NnrealOfEnnreal
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.SumRangeLe
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.ThirdLeLog
+
+open PI.Residue in
+theorem dedekind_residue_bound : PI.ResidueBound :=
+  residueBound_of zetaLePow zetaRLe
+    (heckeLower_of
+      (classLower_of (countIntegral_of boxVolume) shellVolume (unfold_of unitPreserving)
+        (hitBound_of boxVolume) idealSetSum)
+      classSum)
+    optimise

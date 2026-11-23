@@ -1,0 +1,105 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["2da8cb9b5df12a2f.olean"],
+  "m": false,
+  "i": "d74f0018f1f48c54.ilean",
+  "c": "cf9260af52499a4a.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:108:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:115:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:116:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:123:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:140:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:141:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:126:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:123:6: Unused tactic linter: `exact LinearIndependent.iff_fractionRing.1 hliO` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:140:6: Unused tactic linter: `exact Equiv.range_comp e σ.symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:141:6: Unused tactic linter: `rw [Set.range_comp, σ.symm.range_eq_univ, Set.image_univ]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:167:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:168:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:167:6: Unused tactic linter: `exact ha.to_subtype_range` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:168:6: Unused tactic linter: `exact (linearIndependent_subtype_range ha.injective).2 ha` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:199:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:246:14: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:229:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:199:6: Unused tactic linter: `exact Submodule.mem_span_range_iff_exists_fun.1 (hmem i)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean:246:4: Unused tactic linter: `all_goals rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity transitive imports (legacy)",
+       "a2d360316fa34cf7"],
+      ["Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity:importAllArts",
+       "9b1338099cdfb84d"],
+      ["Formalism.LogFactorialIndices.LogProductFormula transitive imports (legacy)",
+       "31bafdb4ef830c84"],
+      ["Formalism.LogFactorialIndices.LogProductFormula:importAllArts",
+       "b6432d3b2b834f52"],
+      ["Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndexSigned transitive imports (legacy)",
+       "0f227a55f95a45cb"],
+      ["Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndexSigned:importAllArts",
+       "efef2528ef329d36"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FilteredPoleLength/LocalDescentLevels/LatticeIndexBis.lean",
+   "abdb77d4f385017a"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FilteredPoleLength.LocalDescentLevels.LatticeIndexBis",
+   "a6257a52f1e767ad"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "0e51897bb9aec8c3"}

@@ -1,0 +1,83 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["b2d27e46096bffee.olean"],
+  "m": false,
+  "i": "650ec3da0feb529b.ilean",
+  "c": "c98ebc483656dc1e.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:18:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.htI2et_of_pt`:\n  [Fintype ι]\n  [(c : ι) → Algebra (Ω c) (A c)]\n  [(c : ι) → Algebra K (A c)]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] [(c : ι) → Algebra (Ω c) (A c)] [(c : ι) → Algebra K (A c)] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:24:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:24:6: Unused tactic linter: `(\n  haveI : Nonempty (K →+* ℂ) := ⟨(IsAlgClosed.lift : K →ₐ[ℚ] ℂ).toRingHom⟩\n  exact_mod_cast Fintype.card_pos)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:60:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.supN_dataOf_nonneg`:\n  [Fintype (Comp Xo c)]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype (Comp Xo c)] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:79:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:79:4: Unused tactic linter: `exact (rfl : (0 : ℕ) = 0)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:175:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.htI2be_of_etArch`:\n  [IsCMField D.host.E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsCMField D.host.E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:194:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:195:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:196:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:194:4: Unused tactic linter: `(unfold EtArch at harch; exact harch)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:195:4: Unused tactic linter: `(intro σ hσ k x hx; exact harch σ hσ k x hx)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean:196:4: Unused tactic linter: `(unfold EtArch at harch; exact (harch : (0 : ℕ) = 0))` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.ProjectiveLattices.CompHt transitive imports (legacy)",
+       "7689c24fbfd19219"],
+      ["Formalism.LocalToGlobal.ProjectiveLattices.CompHt:importAllArts",
+       "39aedf2729f4477e"],
+      ["Formalism.LocalToGlobal.ProjectiveLattices.EtArch transitive imports (legacy)",
+       "a6d05327f3cb0e78"],
+      ["Formalism.LocalToGlobal.ProjectiveLattices.EtArch:importAllArts",
+       "bc72ab8e59bd1204"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/ProjectiveLattices/SupNDataOfNonneg.lean",
+   "d2a676778cdac2c1"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg",
+   "17d23c57b46c4059"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "cd1df1ef59ce7f1d"}

@@ -1,0 +1,64 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["15ecf1096cf99f26.olean"],
+  "m": false,
+  "i": "8acb428a7562e9be.ilean",
+  "c": "bb42b31018ea6847.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:17:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:18:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:87:41: `EuclideanSpace.single_apply` has been deprecated: Use `PiLp.single_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2} [inst : DecidableEq ι] [inst_1 : Zero 𝕜] (i : ι) (a : 𝕜) (j : ι),\n    (PiLp.single p i a).ofLp j = if j = i then a else 0\ninstead of\n  ∀ {ι : Type u_1} {𝕜 : Type u_3} [inst : RCLike 𝕜] [inst_1 : DecidableEq ι] (i : ι) (a : 𝕜) (j : ι),\n    (EuclideanSpace.single i a).ofLp j = if j = i then a else 0\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.single_apply` to `PiLp.single_apply x`).",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:87:41: This simp argument is unused:\n  EuclideanSpace.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [EuclideanSpace.basisFun_apply, ite_smul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:137:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:148:50: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:151:51: `Submodule.orthogonalProjection` has been deprecated: Use `Submodule.orthogonalProjectionOnto` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean:152:6: `Submodule.orthogonalProjection_mem_subspace_eq_self` has been deprecated: Use `Submodule.orthogonalProjectionOnto_mem_subspace_eq_self` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LatticeSlopes.Statement transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.LatticeSlopes.Statement:importAllArts",
+       "46fde8de86ff25ed"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeSlopes/LatticeSlopesProofs/GramDetLe.lean",
+   "030ff0a8c5214335"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LatticeSlopes.LatticeSlopesProofs.GramDetLe",
+   "c402196741c36c57"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "3f823ad59505cdc5"}

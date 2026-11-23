@@ -1,0 +1,7 @@
+import Development.EtaleCohomology.KummerTheory.FixStalk
+
+namespace LateralTheory.Fin.Stalk
+theorem etale_cohomology_stalk_compatibility_finite_coefficients_holds : LateralTheory.KummerTheory.Stalk := by
+  apply LateralTheory.Fix.Stalk.intersectionNumber_baseChange
+theorem intersectionNumber_baseChange : LateralTheory.KummerTheory.Stalk := etale_cohomology_stalk_compatibility_finite_coefficients_holds
+end LateralTheory.Fin.Stalk

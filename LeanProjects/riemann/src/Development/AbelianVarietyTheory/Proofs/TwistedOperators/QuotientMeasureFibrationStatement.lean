@@ -1,0 +1,7 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QuotientMeasureFibration
+import Development.AbelianVarietyTheory.Definitions.Foundations.MeasurePreservingRmulQuotMeas
+open MeasureTheory Set GlobalTheory.Orb GlobalTheory.AutomorphicL2Unitary
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.quotient_measure_fibration : ∀ (A : Type) [Group A] [TopologicalSpace A] [IsTopologicalGroup A] [SecondCountableTopology A] [LocallyCompactSpace A] [T2Space A] [MeasurableSpace A] [BorelSpace A] (B : Type) [Group B] [TopologicalSpace B] [IsTopologicalGroup B] [SecondCountableTopology B] [LocallyCompactSpace B] [T2Space B] [MeasurableSpace B] [BorelSpace B] (H : Type) [Group H] [TopologicalSpace H] [IsTopologicalGroup H] [SecondCountableTopology H] [LocallyCompactSpace H] [T2Space H] [MeasurableSpace H] [BorelSpace H] (e : A × B ≃ₜ* H) (TA : Subgroup A) (TB : Subgroup B) (T : Subgroup H), (∀ a b, e (a, b) ∈ T ↔ a ∈ TA ∧ b ∈ TB) → IsClosed (T : Set H) → IsMulCommutative T → ∀ (dh : Measure H) [dh.IsHaarMeasure] (dt : Measure T) [dt.IsHaarMeasure] (da : Measure A) [da.IsHaarMeasure] (ds : Measure TA) [ds.IsHaarMeasure] (φ : H → ℂ), LeftInv T φ → Integrable (descend T φ) (quotMeas T dt dh) → (∀ b, quotInt TA ds da (fun a => φ (e (a, b))) = 0) → quotInt T dt dh φ = 0 := by
+  first | exact @GlobalTheory.Orb.FubiniQuot.quotInt_eq_zero_of_fiber | exact GlobalTheory.Orb.FubiniQuot.quotInt_eq_zero_of_fiber | (intros; apply GlobalTheory.Orb.FubiniQuot.quotInt_eq_zero_of_fiber <;> assumption)

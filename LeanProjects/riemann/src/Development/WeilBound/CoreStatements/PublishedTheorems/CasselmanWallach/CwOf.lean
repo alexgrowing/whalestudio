@@ -1,0 +1,40 @@
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasselmanWallachAdmissible
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.DerivativeRepresentation
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasimirNonnegative
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.MatrixActionAdditive
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.HighestWeightKernel
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.C3B
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.C3C
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.KTypesFiniteOfHighestWeight
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.DerivativeContinuity
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.Imports
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ZeroOnDense
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.C7
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ExistsNormingFunctional
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SlopeLimitConstant
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.PageTheorem
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ZetaClassicalZeroFreeRegion
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.TendstoPiZero
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.D5
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ExistsFunctional
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ExponentialKSet
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.BilinearFormCasimir
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EigenOrthogonalForm
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SeminormApproximation
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasimirNonnegativeSymmetric
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.MatrixActionLinear
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.HilbertSchmidtSqEq
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EigenspacesOrthogonal
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.E3D
+
+namespace PositivityTheory.CW
+
+theorem lift_of (hM : MaxPr) : GlobalTheory.Published.CasselmanWallachLift := by
+  have hmodel := model_of c1 c2a c2b c3a c3b (k_types_finite_of_highest_weight c3c)
+  exact lift_of_steps hM hmodel c4 c5 c6 c7 d0 d1b d2 d3 d4b d5
+
+theorem cw_of (hM : MaxPr) : GlobalTheory.Published.CasselmanWallach := by
+  have hmodel := model_of c1 c2a c2b c3a c3b (k_types_finite_of_highest_weight c3c)
+  exact cw_of_steps hM hmodel c5 d0 (lift_of hM) e1a e1b e2a e2b e2c e2d e3a e3b e3c e3d
+
+end PositivityTheory.CW

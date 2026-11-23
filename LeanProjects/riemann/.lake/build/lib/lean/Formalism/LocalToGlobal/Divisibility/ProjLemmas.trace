@@ -1,0 +1,263 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["6ff9ced568076fe6.olean"],
+  "m": false,
+  "i": "de15744d6047ac04.ilean",
+  "c": "6373c275c2ee55c5.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Divisibility/ProjLemmas.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Divisibility/ProjLemmas.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Divisibility/ProjLemmas.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Divisibility/ProjLemmas.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:59:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:60:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:61:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:62:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:59:6: Unused tactic linter: `(unfold subBasis; exact dif_pos h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:60:6: Unused tactic linter: `(rw [subBasis, dif_pos h])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:61:6: Unused tactic linter: `(simp only [subBasis, h, dite_true])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:62:6: Unused tactic linter: `(unfold subBasis; simp [h])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:81:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.CSD.I_actMat`:\n  [Fintype G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:128:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:129:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:128:4: Unused tactic linter: `(unfold valLatF; simp [Submodule.mem_pi])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:129:4: Unused tactic linter: `(simp only [valLatF, Submodule.mem_comap, Submodule.mem_pi, Set.mem_univ, forall_const,\n    LinearMap.restrictScalars_apply])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:163:79: This simp argument is unused:\n  map_smul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_sum, map_smulₛₗ, LinearMap.sum_apply, LinearMap.smul_apply, smul_eq_mul, starRingEnd_apply,\n    RingHom.id_apply, Finset.mul_sum]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:197:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.CSD.actMat_mul_inv`:\n  [Fintype G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:251:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:251:4: Unused tactic linter: `rw [MonoidAlgebra.smul_single, smul_eq_mul]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:354:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.eq_sum_single`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:430:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:430:8: Unused tactic linter: `rw [MonoidAlgebra.smul_single, smul_eq_mul, mul_one]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:474:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:475:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:474:6: Unused tactic linter: `(rw [mul_comm, Complex.mul_conj, hnorm]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:475:6: Unused tactic linter: `(rw [Complex.conj_mul', hnorm]; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:478:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.star_of_pow_eq_one`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:491:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.exists_int_of_pow_eq_one`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:497:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:498:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:497:4: Unused tactic linter: `exact ⟨⟨u, (mem_integralClosure_iff ℤ K).mpr hint⟩, rfl⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:498:4: Unused tactic linter: `exact ⟨NumberField.RingOfIntegers.mk u hint, rfl⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:502:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.psi_pow`:\n  [NumberField K]\n  [StarRing K]\n  [Fintype G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Fintype G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:506:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:507:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:506:6: Unused tactic linter: `exact pow_natCard_eq_one` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:507:6: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:519:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:520:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:524:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:519:6: Unused tactic linter: `exact b.2` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:520:6: Unused tactic linter: `exact (mem_integralClosure_iff ℤ K).mp b.2` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:524:6: Unused tactic linter: `exact ⟨⟨x, (mem_integralClosure_iff ℤ K).mpr h⟩, rfl⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:583:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:584:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:583:6: Unused tactic linter: `exact IsIntegral.sum fun s _ => key s` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:584:6: Unused tactic linter: `exact (integralClosure ℤ K).sum_mem fun s _ => key s` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:606:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.IsAbsIrrChar.conj`:\n  [Fintype G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:692:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:693:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:692:4: Unused tactic linter: `exact IsIntegral.sum key` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:693:4: Unused tactic linter: `exact (integralClosure ℤ K).sum_mem key` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:771:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.IsAbsIrrChar.star_eq`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1003:14: This simp argument is unused:\n  Matrix.mulVecLin_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Matrix.mulVec, dotProduct, Pi.single_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1057:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1057:4: Unused tactic linter: `exact Matrix.PosDef.smul hP hc` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1169:4: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [dotProduct, Matrix.mulVec, Finset.mul_sum, Pi.star_apply, starRingEnd_apply, RingHom.id_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1273:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1276:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1273:6: Unused tactic linter: `(ext x; exact Iff.rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1276:6: Unused tactic linter: `(ext x; exact Iff.rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1321:8: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.stdPair_apply`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1334:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.mem_regForms`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1353:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.reg_wt`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1355:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.reg_csum`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1372:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.isAbsIrrChar_one`:\n  [NumberField K]\n  [StarRing K]\n  [Fintype G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Fintype G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1388:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.idemOf_one_coeff`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1393:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.lvlIdem_bot`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1471:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.reg_good`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1540:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.aug_eq_sum`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1552:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.Test.aug_lvlIdem_one`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1587:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean:1587:6: Unused tactic linter: `exact Classical.choice inferInstance` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec transitive imports (legacy)",
+       "c22491cdc57f4e1d"],
+      ["Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec:importAllArts",
+       "c69594b97841d6fd"],
+      ["Formalism.LocalToGlobal.Divisibility.ClassSumLemmas transitive imports (legacy)",
+       "73075cf1f60f8ffd"],
+      ["Formalism.LocalToGlobal.Divisibility.ClassSumLemmas:importAllArts",
+       "2bd10994bb238ab6"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily transitive imports (legacy)",
+       "19aab2e23cbc5fa7"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily:importAllArts",
+       "eb251ba2569709b0"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Divisibility/ProjLemmas.lean",
+   "c90027ad4af71859"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Divisibility.ProjLemmas",
+   "cdbaaaca6e671f5b"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "28b4ddf86cae9744"}

@@ -1,0 +1,16 @@
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.GoodTowerAntisymmetryOf
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SmoothComb
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.IsMultiHomogRenameBaseInc
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.EmbImmersion
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.StFormB
+import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.HtCancel
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.ExistsBase
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.PolySmulOfSameSing
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.AntisymmetryTranspositionFactor
+
+namespace SquareStatements
+
+theorem antisymmetry_of_singular_statement (hSing : StSing) : GoodTowerAntisymmetry :=
+  good_tower_antisymmetry_of stXB (alg_of stEmb stFormB) HeightCancellation.stHt hSing stBase stCmp antisymmetry_transposition_factor
+
+end SquareStatements

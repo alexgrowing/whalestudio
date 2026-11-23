@@ -1,0 +1,18 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BranchProperAtPointHolds
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BranchIntDecompose
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SliceBranchInt
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLelongLimitAtBranches
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLelongLimitAtBranches
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPolydiscLelongLimit
+set_option maxSynthPendingDepth 1
+
+namespace GlobalTheory.CompanionTheory.Ar.Lelong
+
+open GroundTheory.Heights₂.Heights
+
+theorem lelongLimitAtBranches : LelongLimitAtBranches.Statement :=
+  LelongLimitAtBranches.proof GlobalTheory.CompanionTheory.Ar.branchIntDecompose GlobalTheory.CompanionTheory.Ar.SliceBranch.sliceBranchInt
+    PolydiscLelongLimit.proof GlobalTheory.CompanionTheory.Ar.Branch.branchProperAtPoint
+
+end GlobalTheory.CompanionTheory.Ar.Lelong

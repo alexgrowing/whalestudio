@@ -1,0 +1,61 @@
+// Lean compiler output
+// Module: Formalism.LatticeSlopes.LatticeSlopesProofs.FiniteSaturated
+// Imports: public import Init public meta import Init public import Formalism.LatticeSlopes.Statement public import Formalism.LatticeSlopes.CovolAntiSameRank public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos public import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot public import Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties public import Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxAttained
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_Statement(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_CovolAntiSameRank(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_DiscreteTopologyOfLe(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_CovolPos(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_DegQuot(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_SaturationProperties(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_MuMaxAttained(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_FiniteSaturated(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_Statement(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_CovolAntiSameRank(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_DiscreteTopologyOfLe(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_CovolPos(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_DegQuot(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_SaturationProperties(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LatticeSlopes_LatticeSlopesProofs_MuMaxAttained(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

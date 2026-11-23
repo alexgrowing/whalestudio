@@ -1,0 +1,14 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.HookBoundOfSteps
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.ProdFactorialLe
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.DeterminantAdjugate
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.HighestWeightLastZero
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.DetShift
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.HookNorm
+
+namespace PI.HookSteps
+
+theorem hookBound_of (hD : DetDetId) : PI.HookBound :=
+  hookBound_of_steps hook_bound hook_norm determinant_shift_norm rename_isomorphism
+    highest_weight_det_mul highest_weight_last_zero determinant_adjugate hD polynomial_eq_divisibility
+
+end PI.HookSteps

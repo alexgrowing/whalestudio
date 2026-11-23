@@ -1,0 +1,4 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinorSmoothness.SecondCapelliMinorContinuousLinear
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnTInv
+
+theorem qnTPres : Formalism.FourierDecayAlt.Q.TPreservesFF := Formalism.FourierDecayAlt.Q.TPresMain.qnTPres_of qnTInv

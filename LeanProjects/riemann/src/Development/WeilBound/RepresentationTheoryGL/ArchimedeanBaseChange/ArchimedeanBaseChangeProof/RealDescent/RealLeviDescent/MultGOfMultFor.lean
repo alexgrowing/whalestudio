@@ -1,0 +1,19 @@
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.DiracOfDiracZeroModule
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealCompressionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealFirstNilpotentStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeNoSecondWeightsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealModelExistsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealKTypesInConeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestTermLemmaRealStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.N2TopRealStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormSqLeDominantRearrangement
+
+namespace PositivityTheory.RgBcC.RealD
+
+theorem adm_least_holds : AdmLeast :=
+  adm_least_of_zero_module (adm_least_zero_of_dirac GlobalTheory.T.n2_top_real GlobalTheory.CompanionTheory.DiracKType0.dirac_inequality_k_types GlobalTheory.T.highest_term_lemma_real)
+
+theorem multG_of_multFor (hM : MultFor) : MultG :=
+  multG_of GlobalTheory.T.real_compression hM adm_least_holds GlobalTheory.T.real_first_nilpotent GlobalTheory.T.cone_no_second_weights GlobalTheory.T.real_model_exists GlobalTheory.T.real_k_types_in_cone
+
+end PositivityTheory.RgBcC.RealD

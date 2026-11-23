@@ -1,0 +1,1 @@
+import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec

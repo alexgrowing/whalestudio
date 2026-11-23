@@ -1,0 +1,26 @@
+import Formalism.UnipotentAdelicQuotients.EllRegStep
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.SmoothOfLocallySmooth
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.IteratedPartialFourierChar
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.PairingLocal
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.BaseLevel
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.WeightedNormFinite
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.Moments
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.ConvolutionBound
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.WeightDiff
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.SymbLower
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.PairingFourier
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.WeakFourier
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.Decompose
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.ExistsSmoothExt
+import Formalism.UnipotentAdelicQuotients.EllipticRegularity.StepCore
+
+namespace ZetaZeros.D.EllReg
+
+theorem elliptic_regularity_of_parts : Internal := by
+  have hSP : StepOfParts :=
+    stepOfParts_of frozenDecompositionOfParts weightedNormFinite weightedNormLimit regularity_inductive_step
+  exact internal_of_all smoothOfSobolevAll existsBump cutoffContinuous smoothOfLocallySmooth
+    sobolevOfCompactSupport symbolLowerBound sobolevWeightLipschitz convolution_bound frozenKernelSmall
+    adjointPairingFourier iteratedPartialFourierChar integralFourierChar adjointPairingLocal weakEquationFourier hSP
+
+end ZetaZeros.D.EllReg

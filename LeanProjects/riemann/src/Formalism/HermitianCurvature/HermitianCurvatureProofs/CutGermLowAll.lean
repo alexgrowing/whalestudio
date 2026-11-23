@@ -1,0 +1,12 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermLowAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermLowGram
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermLowFibre
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermLowCont
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermLowGerm
+
+namespace Formalism.FourierDecayAlt.P.CutBP
+
+theorem germ_data_low_levels : GermDataLowAll :=
+  germDataLowAll_of_parts low_level_gram low_level_fibre low_level_continuity low_level_germ
+
+end Formalism.FourierDecayAlt.P.CutBP

@@ -1,0 +1,69 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["bf9b82ecba7680be.olean"],
+  "m": false,
+  "i": "a7e2709047e9ac14.ilean",
+  "c": "92958baf415ef4cc.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:97:0: automatically included section variable(s) unused in theorem `Formalism.IncomingBounds.FlowLoadBounds.isCompact_box`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:101:0: automatically included section variable(s) unused in theorem `Formalism.IncomingBounds.FlowLoadBounds.mem_box`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:104:8: automatically included section variable(s) unused in theorem `_private.Formalism.IncomingBounds.FlowDegreeBounds.MaxFlowValueAttained.0.Formalism.IncomingBounds.FlowLoadBounds.isFlow_zero_of_nonneg`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:272:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:284:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:294:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:338:0: automatically included section variable(s) unused in theorem `Formalism.IncomingBounds.FlowLoadBounds.clip_dual`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:364:48: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean:359:0: automatically included section variable(s) unused in theorem `Formalism.IncomingBounds.FlowLoadBounds.isCompact_dual`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.IncomingBounds.IncomingBound transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.IncomingBounds.IncomingBound:importAllArts",
+       "59ce72bd8516c4eb"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/IncomingBounds/FlowDegreeBounds/MaxFlowValueAttained.lean",
+   "d8f7efc2bc421e2e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.IncomingBounds.FlowDegreeBounds.MaxFlowValueAttained",
+   "6dc58f4e72cfa26b"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "c61aad64173f6265"}

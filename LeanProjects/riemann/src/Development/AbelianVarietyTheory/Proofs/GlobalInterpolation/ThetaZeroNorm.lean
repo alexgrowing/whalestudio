@@ -1,0 +1,12 @@
+import Mathlib
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JacobiThetaHalfCharacteristic
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ThetaCharacteristicZeroNorm
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MeanSquareNormalizedThetaTwoTorsion
+
+noncomputable section
+
+namespace GlobalTheory.Proof.ThetaZeroNormGlobalInterpolation
+
+theorem normTheta0 : GlobalTheory.IndefiniteRowSideFullHecke.JacobiThetaHalfCharacteristic.NormTheta0 := GlobalTheory.ThetaNullNormSquares.normTheta0
+
+end GlobalTheory.Proof.ThetaZeroNormGlobalInterpolation

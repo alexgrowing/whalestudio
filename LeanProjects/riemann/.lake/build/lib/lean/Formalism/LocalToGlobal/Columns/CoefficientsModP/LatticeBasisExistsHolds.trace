@@ -1,0 +1,99 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1e52e19e0b22a3ca.olean"],
+  "m": false,
+  "i": "33a4bc3f6ec1a26e.ilean",
+  "c": "be86d9a045724611.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:18:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_mem_locP`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:21:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_one_notMem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:24:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_mul_notMem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:27:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_ne_zero_of_notMem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:89:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_atW_span`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:171:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_mem_one_iff`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:204:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_mem_gLat`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:217:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.lc_col_mem_colLat`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:124: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:196: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:261: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:334: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:106: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:124: Unused tactic linter: `(intros; apply Bl.general_b_fact_second''''''''.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:196: Unused tactic linter: `(apply @Bl.general_b_fact_second''''''''.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:261: Unused tactic linter: `(intros; apply @Bl.general_b_fact_second''''''''.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean:226:334: Unused tactic linter: `(apply @Bl.general_b_fact_second''''''''.goal1 <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.Divisibility.CoefModLemmas transitive imports (legacy)",
+       "e9a8a22a216b88b5"],
+      ["Formalism.LocalToGlobal.Divisibility.CoefModLemmas:importAllArts",
+       "5ade8f1f1c7c2a92"],
+      ["Formalism.LocalToGlobal.Columns.LocWLemmas transitive imports (legacy)",
+       "a38644f35ebbd61c"],
+      ["Formalism.LocalToGlobal.Columns.LocWLemmas:importAllArts",
+       "cabd14a62089ac09"],
+      ["Lemmata.GeneralBFactSecondBisAlt.Imports transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.GeneralBFactSecondBisAlt.Imports:importAllArts",
+       "c0e2e1c7f90aa22f"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/CoefficientsModP/LatticeBasisExistsHolds.lean",
+   "e54a1fd6794aca00"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds",
+   "0eafa89550f461fa"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "30544b24a2082495"}

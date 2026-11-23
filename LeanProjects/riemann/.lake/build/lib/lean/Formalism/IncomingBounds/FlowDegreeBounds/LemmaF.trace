@@ -1,0 +1,62 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["d2a7a4517823de89.olean"],
+  "m": false,
+  "i": "9172ca65ca5f5318.ilean",
+  "c": "bca8774b1559a638.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean:46:8: automatically included section variable(s) unused in theorem `_private.Formalism.IncomingBounds.FlowDegreeBounds.LemmaF.0.Formalism.IncomingBounds.isDual_const`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean:59:8: automatically included section variable(s) unused in theorem `_private.Formalism.IncomingBounds.FlowDegreeBounds.LemmaF.0.Formalism.IncomingBounds.flow_out_le`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean:118:8: automatically included section variable(s) unused in theorem `_private.Formalism.IncomingBounds.FlowDegreeBounds.LemmaF.0.Formalism.IncomingBounds.altNum_rec`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean:181:8: automatically included section variable(s) unused in theorem `_private.Formalism.IncomingBounds.FlowDegreeBounds.LemmaF.0.Formalism.IncomingBounds.altNum_nonneg`:\n  [NeZero d]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NeZero d] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean:208:20: Variable name `hF` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hF\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean:236:20: Variable name `hF` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hF\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.IncomingBounds.IncomingBound transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.IncomingBounds.IncomingBound:importAllArts",
+       "59ce72bd8516c4eb"],
+      ["Formalism.IncomingBounds.LevelTail transitive imports (legacy)",
+       "3a8048a3e47a62bd"],
+      ["Formalism.IncomingBounds.LevelTail:importAllArts",
+       "fbbfb6fe2b65432f"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/IncomingBounds/FlowDegreeBounds/LemmaF.lean",
+   "618dc3e416a8ec14"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.IncomingBounds.FlowDegreeBounds.LemmaF",
+   "aad2fbd20f31ae0e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "299771c8d5cdd10f"}

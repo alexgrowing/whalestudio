@@ -1,0 +1,143 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["5c67668c53a8f285.olean"],
+  "m": false,
+  "i": "d5be4625bbb5990b.ilean",
+  "c": "02684781a7233ff7.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:560:5: Variable name `h1` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h1\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:562:5: Variable name `h2` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h2\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:563:5: Variable name `h3` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h3\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:564:5: Variable name `h4` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h4\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:565:5: Variable name `h5` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h5\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:565:26: Variable name `h6` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h6\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:565:51: Variable name `hf` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hf\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:565:64: Variable name `hm` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hm\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:565:77: Variable name `hL` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hL\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:565:90: Variable name `hLa` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hLa\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:566:5: Variable name `c1` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c1\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:566:19: Variable name `c2` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c2\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:566:33: Variable name `c3` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c3\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:566:47: Variable name `c4` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _c4\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:574:5: Variable name `hq` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hq\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:575:5: Variable name `hp` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hp\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:575:30: Variable name `hm` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hm\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:575:55: Variable name `hn` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hn\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:575:69: Variable name `hL` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hL\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:575:83: Variable name `hf` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hf\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:575:96: Variable name `hC` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hC\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:576:5: Variable name `hJ` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hJ\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean:577:5: Variable name `hml` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hml\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.QuotientMetricDivisors.StatementK transitive imports (legacy)",
+       "243d14edeb2c7a22"],
+      ["Formalism.QuotientMetricDivisors.StatementK:importAllArts",
+       "f732b02c8f44f605"],
+      ["Formalism.QuotientMetricDivisors.RatHermLcvTwist transitive imports (legacy)",
+       "7e3d5d396f6b97ff"],
+      ["Formalism.QuotientMetricDivisors.RatHermLcvTwist:importAllArts",
+       "9fbd20d7c30a0f0b"],
+      ["Formalism.QuotientMetricDivisors.EigenRatHermLcv transitive imports (legacy)",
+       "ed7bb73128e87525"],
+      ["Formalism.QuotientMetricDivisors.EigenRatHermLcv:importAllArts",
+       "26250dfbeb5d5f7f"],
+      ["Formalism.QuotientMetricDivisors.ClassSumDualLe transitive imports (legacy)",
+       "2efe0248054a3d4c"],
+      ["Formalism.QuotientMetricDivisors.ClassSumDualLe:importAllArts",
+       "74e40104559259f2"],
+      ["Formalism.QuotientMetricDivisors.ClassSumDualGeF transitive imports (legacy)",
+       "8f6ee03070219b30"],
+      ["Formalism.QuotientMetricDivisors.ClassSumDualGeF:importAllArts",
+       "ebc689039c65cca5"],
+      ["Formalism.QuotientMetricDivisors.UntwistedChoice transitive imports (legacy)",
+       "cb5cd203642795c3"],
+      ["Formalism.QuotientMetricDivisors.UntwistedChoice:importAllArts",
+       "bc1b1b68a953e15a"],
+      ["Formalism.QuotientMetricDivisors.HeightBoundExactNorms transitive imports (legacy)",
+       "5a77a8170399752e"],
+      ["Formalism.QuotientMetricDivisors.HeightBoundExactNorms:importAllArts",
+       "04f32785d5978b1a"],
+      ["Formalism.QuotientMetricDivisors.Complement2Normaliser transitive imports (legacy)",
+       "291ef00f72983487"],
+      ["Formalism.QuotientMetricDivisors.Complement2Normaliser:importAllArts",
+       "0487deccf7a2d46b"],
+      ["Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundRows transitive imports (legacy)",
+       "0a3006cb3fe6c7f4"],
+      ["Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundRows:importAllArts",
+       "6a0b195e86abebc9"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/ScalarLiftLowerBoundFull.lean",
+   "0a2c849aba71ea91"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundFull",
+   "8de45b0a5b2863f0"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "bbe88a2f8b6f5b97"}

@@ -1,0 +1,92 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["f432aa9aa1b9a800.olean"],
+  "m": false,
+  "i": "5433fbe54ff0fec5.ilean",
+  "c": "a870159ec00715ad.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:22:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_tauLat_eq`:\n  [NumberField E]\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:28:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_f_zero`:\n  [NumberField E]\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:31:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_f_smul`:\n  [NumberField E]\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:34:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_f_osmul`:\n  [NumberField E]\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:40:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_f_mem`:\n  [NumberField E]\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:93:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_col_mem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:96:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_row_colLat`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:203:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_expand_left`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:213:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_expand_right`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:224:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_smul_of_mem_one`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:267:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_map_mem_one`:\n  [NumberField K]\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:309:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_mem_gLat`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:329:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_gLat_lattice`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:347:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_transpose_dot`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:400:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_tl_comp`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean:406:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.du_hform`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.Divisibility.CoefModLemmas transitive imports (legacy)",
+       "e9a8a22a216b88b5"],
+      ["Formalism.LocalToGlobal.Divisibility.CoefModLemmas:importAllArts",
+       "5ade8f1f1c7c2a92"],
+      ["Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds transitive imports (legacy)",
+       "188f2ec49e5928de"],
+      ["Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds:importAllArts",
+       "66105136f0a7f43a"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/CoefficientsModP/TauLatticeLatticeHolds.lean",
+   "b2d903a4b8b59894"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Columns.CoefficientsModP.TauLatticeLatticeHolds",
+   "ed8faa353b0a2054"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "0dfd1d124db89daa"}

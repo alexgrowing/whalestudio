@@ -1,0 +1,52 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["2a3e94cbbd906e94.olean"],
+  "m": false,
+  "i": "d53bf16380a772f7.ilean",
+  "c": "18fd340deccbf875.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean:20:8: automatically included section variable(s) unused in theorem `_private.Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaC.0.Formalism.UG.P.antiJ_apply_adelic_iwasawa_hecke`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean:55:8: automatically included section variable(s) unused in theorem `_private.Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaC.0.Formalism.UG.P.cT_apply_eq_sigma_transpose`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean:58:8: automatically included section variable(s) unused in theorem `_private.Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaC.0.Formalism.UG.P.cT_mul_reverse`:\n  [Valued L (WithZero (Multiplicative ℤ))]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Valued L (WithZero (Multiplicative ℤ))] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean:108:10: `zero_le'` has been deprecated: Use `zero_le` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaB transitive imports (legacy)",
+       "aada0b5f6b8e171f"],
+      ["Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaB:importAllArts",
+       "c1f145086788c35c"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/FIwasawaC.lean",
+   "c8ac35780f6217e8"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaC",
+   "a340d546755712ea"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "14e0566985b527d5"}

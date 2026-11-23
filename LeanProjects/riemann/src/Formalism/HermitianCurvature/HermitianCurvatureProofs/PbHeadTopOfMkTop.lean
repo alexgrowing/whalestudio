@@ -1,0 +1,29 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXHeadFam
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXMkCpt
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXPbEquiv2
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXPbRight2
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXPbSmooth
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXPbSupp2
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXRadSliceTop
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXSliceTop
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXTopPt
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEX_UwTop
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopUnipotentIntegralPositive
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeadGermSmoothExtension
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstBasisVectorIsRadialSlice
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameParameterRegularity
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.PbHeadTopOf
+
+namespace Formalism.FourierDecayAlt.P
+
+theorem pb_exhPic_of_mkTop (hMk : CutEX.MkTop) : PBI.ExhPic :=
+  CutEX.exhPic_of_leaves CutEX.exceptional_assumption_holds unipotent_weight_top slice_top_exhaustion pullback_smooth
+    pullback_right_action pullback_support pullback_equivalence hMk compact_truncation_construction top_point_existence
+    determinant_exceptional_holds head_family_exhaustion radial_slice_top radial_of_function_exceptional radial_extension_exceptional
+    residue_top_exceptional_level frame_parameter_regularity (pb_radWordSliceOfHeadPic head_picture) level_zero_picture_of_slice
+
+theorem pb_headTop_of_mkTop (hMk : CutEX.MkTop) : KB.HeadTop :=
+  pb_headTop_of top_unipotent_integral (pb_exhPic_of_mkTop hMk)
+
+end Formalism.FourierDecayAlt.P

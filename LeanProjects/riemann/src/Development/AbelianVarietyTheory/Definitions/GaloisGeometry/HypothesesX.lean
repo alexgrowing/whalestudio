@@ -1,0 +1,42 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HtCard
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CuspDiscreteDecompositionOfTraceClass
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsFactorisationCuspidal
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LabesseWaldspurger
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeilSiegelFormulaUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RegularisedSiegelWeilFirstTerm
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.EisRegularAtOfEisPoleLE
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
+
+namespace GlobalTheory.NRows
+
+structure HypothesesX : Prop where
+  weil : GlobalTheory.Published.WeilRepresentationUnitaryPair
+  ds : GlobalTheory.Published.DiscreteSeriesExists
+  ana : GlobalTheory.Published.HarishChandraAnalyticity
+  dsc : GlobalTheory.Published.DiscreteSeriesClassification
+  trc : GlobalTheory.Published.CuspTraceClass
+  dm : GlobalTheory.Published.DixmierMalliavinFactorisation
+  flath : GlobalTheory.Published.FlathFactorisation
+  pc : GlobalTheory.Published.PseudoCoefficientUpq
+  hcc : GlobalTheory.Published.HarishChandraCharacters
+  lc : GlobalTheory.Published.LanglandsClassification
+  lw : GlobalTheory.Published.LabesseWaldspurger
+  sw : GlobalTheory.Published.WeilSiegelFormulaUnitary
+  ft : GlobalTheory.Published.RegularisedSiegelWeilFirstTerm
+  dbl : GlobalTheory.Published.DoublingMethod
+  udbl : GlobalTheory.Published.UnramifiedDoublingGL
+  hl : GlobalTheory.Published.HeckeLPartialContinuation
+  ht : GlobalTheory.HeightCounting.HtCard
+
+end GlobalTheory.NRows

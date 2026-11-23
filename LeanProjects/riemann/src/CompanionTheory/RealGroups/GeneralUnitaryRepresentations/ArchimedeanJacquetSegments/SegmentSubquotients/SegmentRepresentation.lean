@@ -1,0 +1,14 @@
+import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.SegmentSubquotients.StageC
+import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.SegmentSubquotients.RhoNuRhoReducibleC
+import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.LocalGeometry.Imports
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltration
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.GlobalTheory.BernsteinZelevinskyFiniteness
+
+namespace CompanionTheory.RgGu
+
+theorem segmentRepresentation : GlobalTheory.Published.SegmentRepresentation :=
+  have hG : GlobalTheory.Published.GeometricLemma :=
+    GlobalTheory.geometricLemma_of_filtration GlobalTheory.CompanionTheory.Published.bernsteinZelevinskyFiniteness CompanionTheory.Geo.geometricLemmaFiltration
+  SRC.segRep_of SRC.stageP hG (SRC.segTwo_of hG NR.rhoNuRhoReducibleC)
+
+end CompanionTheory.RgGu

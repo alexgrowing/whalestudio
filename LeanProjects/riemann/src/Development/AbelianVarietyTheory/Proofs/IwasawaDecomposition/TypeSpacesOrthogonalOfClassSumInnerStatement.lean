@@ -1,0 +1,7 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TypeSpacesOrthogonalOfClassSumInner
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.ConjugateSelfDual ReciprocityTheory.Gal ReciprocityTheory.Aut Formalism.AUTREP Formalism.L2 Formalism.L2.Host Formalism.L2.NT Formalism.IndefR.NX GlobalTheory.HeightCounting NumberField IsDedekindDomain Polynomial
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.typeSpaces_orthogonal_of_classSum_inner : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (n : ℕ) (a : NG.AlgWt L n) (J : Subgroup (GAf L n)) (χ : J →* ℂˣ), (∃ N : ℕ, 0 < N ∧ ∀ κ, NG.Cong L n N κ → ∃ h : κ ∈ J, χ ⟨κ, h⟩ = 1) → FiniteDimensional ℂ (NG.TypeSp a.ρ J χ) ∧ ∃ (ι : Type) (_ : Finite ι) (S : ι → Submodule ℂ (GAf L n → a.W)), (∀ i, NG.IsIrrRep a.ρ (S i)) ∧ (∀ i i', NG.IsoRep (S i) (S i') → i = i') ∧ (∀ S', NG.IsIrrRep a.ρ S' → NG.isoTyp a.ρ S' ⊓ NG.TypeSp a.ρ J χ ≠ ⊥ → ∃ i, NG.IsoRep (S i) S') ∧ (∀ i, NG.isoTyp a.ρ (S i) ⊓ NG.TypeSp a.ρ J χ ≠ ⊥) ∧ iSupIndep (fun i => NG.isoTyp a.ρ (S i)) ∧ ⨆ i, NG.isoTyp a.ρ (S i) ⊓ NG.TypeSp a.ρ J χ = NG.TypeSp a.ρ J χ := by
+  first | exact @GlobalTheory.CompRed.typeSp_decomp | exact GlobalTheory.CompRed.typeSp_decomp | (intros; apply GlobalTheory.CompRed.typeSp_decomp <;> assumption)

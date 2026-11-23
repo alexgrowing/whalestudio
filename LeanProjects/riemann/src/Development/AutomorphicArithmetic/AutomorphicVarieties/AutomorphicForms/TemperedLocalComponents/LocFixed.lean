@@ -1,0 +1,89 @@
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Hypotheses2
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LocIsotypic
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IrreducibleConstituentOfLevelWeilDeligneEqCharac
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.InertiaFixesRootsOfUnityOfArtinCongruence
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.JacquetBorelNontrivialOfCharacterSupport
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.JacquetBorelExistsTorusCongruenceFixed
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FixedCongruenceNeBotOfJacquetTorusFixed
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HasFixedOfAlgNormFixedNeBot
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MemMaximalCompactAndCongruentOfMemPrincipalCongr
+import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.InertiaFixesRootsOfUnityPrimeToResidueChar
+
+open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.MainNotions.N ValuativeRel
+open GlobalTheory.WeilDeligne GlobalTheory.LocLanglands GlobalTheory.LocGL GlobalTheory.GalOfCusp
+
+attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
+
+private theorem UpperTheory.V.Af.val_lt_one {F : Type} [Field F] [NumberField F] (w : HeightOneSpectrum (𝓞 F)) {M : ℕ}
+    (hw : (M : 𝓞 F) ∈ w.asIdeal) : valuation (w.adicCompletion F) (M : w.adicCompletion F) < 1 := by
+  have : (Valued.v : Valuation (w.adicCompletion F) (WithZero (Multiplicative ℤ))).Compatible :=
+    Valuation.Compatible.ofValuation _
+  rw [(isEquiv (valuation (w.adicCompletion F))
+    (Valued.v : Valuation (w.adicCompletion F) (WithZero (Multiplicative ℤ)))).lt_one_iff_lt_one]
+  have h : Valued.v (((algebraMap (𝓞 F) F (M : 𝓞 F) : F)) : w.adicCompletion F) =
+      w.valuation F (algebraMap (𝓞 F) F (M : 𝓞 F)) := HeightOneSpectrum.valuedAdicCompletion_eq_valuation' w _
+  have h2 : w.valuation F (algebraMap (𝓞 F) F (M : 𝓞 F)) < 1 := (HeightOneSpectrum.valuation_lt_one_iff_mem w _).mpr hw
+  rw [← h] at h2
+  have e : (((algebraMap (𝓞 F) F (M : 𝓞 F) : F)) : w.adicCompletion F) = ((M : ℕ) : w.adicCompletion F) := by
+    rw [map_natCast]
+    exact map_natCast (algebraMap F (w.adicCompletion F)) M
+  rwa [e] at h2
+
+theorem UpperTheory.V.Af.locFixed :
+    UpperTheory.V.Af.Hypotheses₂ → UpperTheory.V.Af.LocFixed := by
+  intro P F Ω _ _ _ _ _ n M hM w A h rc hrc σ hL
+  obtain ⟨a, ha, ε, -, H⟩ := hrc
+  by_cases hw : (M : 𝓞 F) ∈ w.asIdeal
+  · have hv : valuation (w.adicCompletion F) (M : w.adicCompletion F) < 1 := UpperTheory.V.Af.val_lt_one w hw
+    have hM0 : (M : w.adicCompletion F) ≠ 0 := by
+      rw [← map_natCast (algebraMap F (w.adicCompletion F)), map_ne_zero]
+      exact Nat.cast_ne_zero.2 (by omega)
+    have hu0 : uniformizer (w.adicCompletion F) ≠ 0 := by simp
+    have hv0 : valuation (w.adicCompletion F) (M : w.adicCompletion F) ≠ 0 := by simpa using hM0
+    let γ : (ValueGroupWithZero (w.adicCompletion F))ˣ :=
+      Units.mk0 (valuation _ (M : w.adicCompletion F) / uniformizer (w.adicCompletion F)) (div_ne_zero hv0 hu0)
+    have hlt : ∀ x : ValueGroupWithZero (w.adicCompletion F),
+        x < γ ↔ x ≤ valuation _ (M : w.adicCompletion F) := fun x => by
+      show x < _ / _ ↔ _
+      rw [lt_div_iff₀ (zero_lt_iff.2 hu0)]
+      refine ⟨fun h1 => not_lt.1 fun h2 => h1.not_ge ?_, fun h1 => (mul_le_mul_left h1 _).trans_lt
+        (mul_lt_of_lt_one_right (zero_lt_iff.2 hv0) uniformizer_lt_one)⟩
+      have hx : 0 < x := (zero_lt_iff.2 hv0).trans h2
+      rwa [← div_le_iff₀' hx, le_uniformizer_iff, div_lt_one₀ hx]
+    have hγ : γ ≤ 1 := by
+      show _ / _ ≤ (1 : ValueGroupWithZero (w.adicCompletion F))
+      rw [div_le_one₀ (zero_lt_iff.2 hu0), le_uniformizer_iff]
+      exact hv
+    obtain ⟨s, hs⟩ := GlobalTheory.LocGL.SupportRing.exists_hasSupport P.litN.loc.zel (algNorm σ)
+    have hch : ∀ y ∈ s, ∃ χ hχ, y = IrrGL.ofChar χ hχ ∧ ∀ u : (w.adicCompletion F)ˣ,
+        valuation (w.adicCompletion F) ((u : w.adicCompletion F) - 1) < γ → χ u = 1 := fun y hy => by
+      obtain ⟨ξ, hξ, e, hξ1⟩ := UpperTheory.irreducible_constituent_of_level_weilDeligne_eq_character F Ω w A h M n hM _ (rc y) hL ((H.cusp y).1 (hs.isCusp hy)) fun τ => by
+        rw [H.supp _ s hs τ]
+        exact Multiset.dvd_prod (Multiset.mem_map_of_mem (fun y => (rc y).charPol τ) hy)
+      obtain ⟨χ, hχ, rfl⟩ := ha.factor ξ hξ
+      refine ⟨χ, hχ, H.bij.1 (e.trans (H.one χ hχ).symm), fun u hu => ?_⟩
+      obtain ⟨τ, rfl⟩ := ha.surj u
+      have h1 : valuation (w.adicCompletion F) (a τ : w.adicCompletion F) = 1 := by
+        have := (valuation (w.adicCompletion F)).map_one_add_of_lt (hu.trans_le (Units.val_le_val.2 hγ))
+        simpa using this
+      obtain ⟨h2, h3⟩ := UpperTheory.inertia_fixes_roots_of_unity_of_artin_congruence P.litN.aut.art F Ω w A h a ha M hM τ h1 ((hlt _).1 hu)
+      exact hξ1 ⟨τ, h2⟩ h3
+    have hne := UpperTheory.jacquet_borel_nontrivial_of_character_support P.litN.loc.geo P.litN.loc.zel _ _ _ (algNorm σ).rep s hs fun y hy => by
+      obtain ⟨χ, hχ, rfl, -⟩ := hch y hy
+      rfl
+    obtain ⟨y, hy0, hy⟩ := UpperTheory.jacquet_borel_exists_torus_congruence_fixed P.litN.loc.geo P.litN.loc.zel _ _ _ (algNorm σ).rep s γ hγ hs hch hne
+    have hf := UpperTheory.fixed_congruence_ne_bot_of_jacquet_torus_fixed _ _ _ (algNorm σ).rep γ hγ
+      ((P.litN.loc.bz _).1 _ _ _ (algNorm σ).2.rep.smooth (algNorm σ).2.rep.irr) y hy0 hy
+    refine UpperTheory.hasFixed_of_algNorm_fixed_ne_bot F w n σ _ (fun g hg => (UpperTheory.mem_maximalCompact_and_congruent_of_mem_principalCongruence F w n M g hg).1) ?_
+    obtain ⟨v, hv, hv0⟩ := (Submodule.ne_bot_iff _).1 hf
+    exact (Submodule.ne_bot_iff _).2 ⟨v, fun g => hv ⟨g.1, fun i j => (hlt _).2 ((UpperTheory.mem_maximalCompact_and_congruent_of_mem_principalCongruence F w n M g.1 g.2).2 i j)⟩, hv0⟩
+  · obtain ⟨χ, b, hχ, e, hN, hb⟩ := hL
+    have hu : (rc (algNorm σ)).unr := by
+      rw [← e, WD.unr_mk]
+      refine ⟨hN, fun s => ?_⟩
+      rw [hb s]
+      simp [fun i => hχ i s (UpperTheory.inertia_fixes_roots_of_unity_prime_to_residue_char F Ω w A h M hw s s.2), Module.End.one_eq_id]
+    obtain ⟨v, hv, hv0⟩ := (Submodule.ne_bot_iff _).1 ((H.sph _).2 hu)
+    refine UpperTheory.hasFixed_of_algNorm_fixed_ne_bot F w n σ _ (fun g hg => (UpperTheory.mem_maximalCompact_and_congruent_of_mem_principalCongruence F w n M g hg).1) ?_
+    exact (Submodule.ne_bot_iff _).2 ⟨v, fun g => hv ⟨g.1, (UpperTheory.mem_maximalCompact_and_congruent_of_mem_principalCongruence F w n M g.1 g.2).1⟩, hv0⟩

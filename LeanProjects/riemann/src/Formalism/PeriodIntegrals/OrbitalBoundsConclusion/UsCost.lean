@@ -1,0 +1,16 @@
+import Mathlib
+import Formalism.HermitianCurvature.StatementU
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.UnitarySumCostOfParts
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.ContinuousBlockDiagEmbedRingHom
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.Letters
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.EntryLeLsz
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.RightRegularActionListDLREqAppend
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.ContinuousBlockMatrixThree
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.Smooth
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.ZDeriv
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.ZCostOf
+
+theorem operator_word_cost : Formalism.FourierDecayAlt.U.DerivativeCostFromComponents :=
+  PI.UnitaryGroupMassFormula.UsCost.unitarySum_cost_of_parts PI.UnitaryGroupMassFormula.UsCost.wordsId PI.UnitaryGroupMassFormula.UsCost.letterSize PI.UnitaryGroupMassFormula.UsCost.starScale
+    PI.UnitaryGroupMassFormula.UsCost.commLR PI.UnitaryGroupMassFormula.UsCost.offK PI.UnitaryGroupMassFormula.UsCost.zSmooth
+    (PI.UnitaryGroupMassFormula.UsCost.zCost_of PI.UnitaryGroupMassFormula.UsCost.zSmooth PI.UnitaryGroupMassFormula.UsCost.zDeriv PI.UnitaryGroupMassFormula.UsCost.dirSize)

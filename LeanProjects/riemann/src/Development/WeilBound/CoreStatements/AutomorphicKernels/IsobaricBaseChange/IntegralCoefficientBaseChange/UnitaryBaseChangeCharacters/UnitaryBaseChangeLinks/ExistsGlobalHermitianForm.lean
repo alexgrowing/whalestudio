@@ -1,0 +1,8 @@
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalHermitianForm
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CTUnitsLeft
+open NumberField IsDedekindDomain Matrix Polynomial Filter GlobalTheory.CuspRep GlobalTheory.PRep Formalism.UG Formalism.BasicNotions GlobalTheory.UnitaryBC Formalism.L2.Host GlobalTheory.BCT GlobalTheory.UnitaryClasses
+open scoped Classical TensorProduct
+attribute [local instance] GlobalTheory.LocalData.complRel GlobalTheory.LocalData.isLocalField
+theorem _root_.GlobalTheory.T.exists_global_hermitian_form : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (n : ℕ) (γ₀ : GL (Fin n) E), γ₀.val.charpoly ∈ Ell E n → ∃ H₀ : Matrix (Fin n) (Fin n) E, IsHerm (IsCMField.complexConj E).toRingEquiv.toRingHom H₀ ∧ H₀.det ≠ 0 ∧ cT (IsCMField.complexConj E).toRingEquiv.toRingHom γ₀.val * H₀ * γ₀.val = H₀ ∧ (∀ τ : E →+* ℂ, ∃ Q : Matrix (Fin n) (Fin n) ℂ, Q.det ≠ 0 ∧ H₀.map τ = cT (starRingEnd ℂ) Q * Q) := by
+  first | exact @GlobalTheory.RefForm.cT_mul | exact @GlobalTheory.RefForm.cT_cT_conj | exact @GlobalTheory.RefForm.det_cT_conj | exact @GlobalTheory.RefForm.cT_diag_mul_diag | exact @GlobalTheory.RefForm.assemble | exact @GlobalTheory.RefForm.exists_roots_enum | exact @GlobalTheory.RefForm.powBasis_apply | exact @GlobalTheory.RefForm.vandermonde_mul_compMat | exact @GlobalTheory.RefForm.charpoly_compMat | exact @GlobalTheory.RefForm.trace_semiconj | exact @GlobalTheory.RefForm.exists_model | exact @GlobalTheory.RefForm.map_cT_complexConj | exact @GlobalTheory.RefForm.exists_refForm | (intros; apply GlobalTheory.RefForm.exists_refForm <;> assumption)

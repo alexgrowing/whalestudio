@@ -1,0 +1,14 @@
+import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.StageC
+import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.RhoNuRhoReducibleC
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GeometricSplitting.Imports
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltration
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
+
+namespace PositivityTheory.RgGu
+
+theorem segmentRepresentation : GlobalTheory.Published.SegmentRepresentation :=
+  have hG : GlobalTheory.Published.GeometricLemma :=
+    GlobalTheory.geometricLemma_of_filtration GlobalTheory.CompanionTheory.Published.bernsteinZelevinskyFiniteness PositivityTheory.Geo.geometricLemmaFiltration
+  SRC.segRep_of SRC.stageP hG (SRC.segTwo_of hG NR.rhoNuRhoReducibleC)
+
+end PositivityTheory.RgGu

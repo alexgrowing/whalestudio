@@ -1,0 +1,9 @@
+import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.DetInvNe
+import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.JacobiBlocks
+import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.ValDetFac
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.IsValueAtValAtOfRegAt
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.BlockDiagMinorNeZero
+import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SameOrbitTrans
+
+theorem HeightCancellation.stSing : SquareStatements.StSing :=
+  SquareStatements.Sing.stSing_of SquareStatements.Sing.c0 HeightCancellation.G.c1 HeightCancellation.c2 SquareStatements.Sing.c5 HeightCancellation.G.c3w HeightCancellation.G.c3o HeightCancellation.c4

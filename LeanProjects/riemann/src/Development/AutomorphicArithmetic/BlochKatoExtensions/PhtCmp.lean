@@ -1,0 +1,21 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyAllIff
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfForallMemFilV
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxUnramifiedSubfieldConjIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalAdjoinRange
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormEqOneOfVEqZero
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPotCrysAtOfMono0
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsContinuousLadicGalRepModelFiniteExtHost
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysInclusion
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDeRhamFiltrationQuotientInvariants
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComponentsCrystallineLettersFinrank
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSumOfIsCrys
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodRingsRegularPhiSurjectiveFil
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSpanningFamily
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDeRhamFilGradedSymbolToTateTwist
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankIInfKerOfIsBaseChange
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.RkMultVOfNotJump
+import Development.AutomorphicArithmetic.BlochKatoExtensions.CardJumps
+
+theorem GlobalTheory.PhtCompare.phtCmp : GlobalTheory.HeightCounting.PhtCmp := fun D _ T Wd =>
+  ⟨fun l _ ι a r τ w hr hτ hd => UpperTheory.Prune.card_jumps D T Wd l ι a r τ w hr hτ hd⟩

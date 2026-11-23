@@ -1,0 +1,25 @@
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.ExpForm
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.CprsMulRight
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.FixFAnti
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.EvalPowE
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.KillEx
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.HomogMonomial
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.TruncSpecAlt
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.SepPoly
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.OneSide
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.TrOnBot
+import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.EvExSub
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ParEx
+import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.CuspidalMultiplicityOneTotallyComplex
+import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Imports
+import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.TwInt
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.PolyBdAll
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SmoothDecay
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClass
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.CuspTrBand
+
+open UpperTheory.ConvolutionTheory UpperTheory.ConvolutionTheory.Ci in
+
+theorem UpperTheory.ConvolutionTheory.ci : UpperTheory.ConvolutionTheory.CI :=
+  ciOf (trExp expForm) (evVal evEx Dp.parEx) valBc (killEx Dp.parEx) kfBc truncSpec sepPoly
+    (oneSide K.kern2 C.polyBdAll C.smoothDecay C.decayTraceClass C.cuspTrBand Dp.multiplicity_one_cuspidal_spectrum_normOneGL evEx) evEx kill

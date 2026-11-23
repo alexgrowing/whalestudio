@@ -1,0 +1,17 @@
+import Formalism.HermitianCurvature.BlockKernelPropertiesOfSteps
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.TripleForm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.ColumnOperationTripleForm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.KernelQuotientFinite
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.KernelNonzeroModulusDeterminantEq
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstKernelPropertiesOfHypotheses
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.LatticeAverageIdentity
+
+namespace Formalism.FourierDecayAlt.P
+
+theorem second_gram_and_vanishing : Formalism.FourierDecayAlt.A5.A2 :=
+  second_gram_vanishing_of_parts kernel_gram_property modulus_positive_multiplicative tripleForm
+    lattice_average_identity triple_form_end_identity
+
+theorem second_vanishing_off_ring : Formalism.FourierDecayAlt.A5.BlockKernelSupport := second_gram_and_vanishing.2
+
+end Formalism.FourierDecayAlt.P

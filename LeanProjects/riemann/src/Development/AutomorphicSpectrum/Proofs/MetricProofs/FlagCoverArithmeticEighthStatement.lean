@@ -1,0 +1,11 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticEighth
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsImg
+import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOverPt
+open MvPolynomial MeasureTheory Filter Topology Matrix ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M ReciprocityTheory.AnForm.P ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I2 ReciprocityTheory.ChartRestriction.G.AI.I4 GlobalTheory.CompanionTheory.Ar.PB GroundTheory.Heights₂.Heights GroundTheory.Heights₂.Heights.LowerBoundFree
+open scoped ComplexOrder Classical
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.flag_cover_arithmetic_eighth : ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι k)] (Φ : Type) [Field Φ] (y : (Σ k, ι k) → Φ) (Ψ : Type) [Fintype Ψ] [DecidableEq Ψ] (N j : ℕ) (M : FlagModel y Ψ N j) (K' : Type) [Fintype K'] (ι' : K' → Type) [∀ k, Fintype (ι' k)] (Φ' : Type) [Field Φ'] (y' : (Σ k, ι' k) → Φ') (M' : FlagModel y' Ψ N j) (Cv : FlagCover M' M) (d : ℕ), IsArithVar (mCoordIdeal y) (d + 2) → IsArithVar (mCoordIdeal y') (d + 2) → ∀ z ∈ mcPts (mCoordIdeal y'), ∀ w₀ ∈ mcPts (mCoordIdeal y), CovMap.IsImg Cv z w₀ → ∀ (V : Set ((Σ k, baseIdx ι M.blk k) → ℂ)) (V' : Set ((Σ k, baseIdx ι' M'.blk k) → ℂ)) (s : ((Σ k, baseIdx ι M.blk k) → ℂ) → (Σ k, baseIdx ι' M'.blk k) → ℂ), IsOpen V → basePart M.blk w₀ ∈ V → IsOpen V' → basePart M'.blk z ∈ V' → AnalyticOnNhd ℂ s V → (∀ b'' ∈ V' ∩ mcPts (mCoordIdeal M'.x), ∀ w' ∈ V, SameOrbit w' (b'' ∘ Cv.v) → SameOrbit (s w') b'') → ∃ (U : Set ((Σ k, ι k) → ℂ)) (U' : Set ((Σ k, ι' k) → ℂ)) (f : ((Σ k, ι k) → ℂ) → (Σ k, ι' k) → ℂ), IsOpen U ∧ w₀ ∈ U ∧ IsOpen U' ∧ z ∈ U' ∧ AnalyticOnNhd ℂ f U ∧ ∀ z'' ∈ U' ∩ mcPts (mCoordIdeal y'), ∀ w ∈ U ∩ mcPts (mCoordIdeal y), CovMap.IsImg Cv z'' w → SameOrbit (f w) z'' := by
+  first | exact @GlobalTheory.CompanionTheory.Ar.PB.CovLift.lift_inverse | exact GlobalTheory.CompanionTheory.Ar.PB.CovLift.lift_inverse | (intros; apply GlobalTheory.CompanionTheory.Ar.PB.CovLift.lift_inverse <;> assumption)

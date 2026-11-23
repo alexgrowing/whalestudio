@@ -1,0 +1,20 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiAbelianStatementHolds
+import Mathlib
+import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
+import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpPair
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
+import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.QuotientByFiniteFlatStatement
+import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.ZarhinStatement
+import Development.AutomorphicSpectrum.Statements.AlgebraStatements.OrdinaryCurveStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
+open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.semi_abelian_statement_holds : ReciprocityTheory.ChartRestriction.G.SA.SAStatement := by
+  first | exact @GlobalTheory.CompanionTheory.Ar.Link.saStatement_holds | exact GlobalTheory.CompanionTheory.Ar.Link.saStatement_holds | (intros; apply GlobalTheory.CompanionTheory.Ar.Link.saStatement_holds <;> assumption)

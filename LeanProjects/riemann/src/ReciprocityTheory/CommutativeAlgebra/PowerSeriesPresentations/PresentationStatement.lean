@@ -1,0 +1,77 @@
+import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
+
+namespace ReciprocityTheory.CA.PS
+
+open IsLocalRing MvPowerSeries
+
+universe u v
+
+structure IsCNL (A : Type*) [CommRing A] : Prop where
+  noeth : IsNoetherianRing A
+  loc : IsLocalRing A
+  complete : IsAdicComplete (maximalIdeal A) A
+
+def MaxIdealStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsLocalRing O] (a : ℕ),
+    maximalIdeal (MvPowerSeries (Fin a) O) =
+      (maximalIdeal O).map (C : O →+* MvPowerSeries (Fin a) O) ⊔ Ideal.span (Set.range X)
+
+def CompleteStatement : Prop :=
+  ∀ (O : Type u) [CommRing O], IsCNL O → ∀ a : ℕ, IsCNL (MvPowerSeries (Fin a) O)
+
+def DimStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O] (a : ℕ),
+    ringKrullDim (MvPowerSeries (Fin a) O) = ringKrullDim O + a
+
+def RegularStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsRegularLocalRing O] (a : ℕ),
+    IsRegularLocalRing (MvPowerSeries (Fin a) O)
+
+def CMStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsLocalRing O], IsCM O → ∀ a : ℕ, IsCM (MvPowerSeries (Fin a) O)
+
+def EvalStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsLocalRing O] (A : Type v) [CommRing A] [IsLocalRing A] [Algebra O A]
+    [IsLocalHom (algebraMap O A)], IsAdicComplete (maximalIdeal A) A →
+    ∀ (a : ℕ) (t : Fin a → A), (∀ i, t i ∈ maximalIdeal A) →
+      ∃! φ : MvPowerSeries (Fin a) O →ₐ[O] A, ∀ i, φ (X i) = t i
+
+def SurjStatement : Prop :=
+  ∀ (O : Type u) [CommRing O], IsCNL O → ∀ [IsLocalRing O] (A : Type v) [CommRing A] [IsLocalRing A]
+    [Algebra O A] [IsLocalHom (algebraMap O A)], IsHausdorff (maximalIdeal A) A →
+    Function.Surjective (ResidueField.map (algebraMap O A)) →
+    ∀ (a : ℕ) (φ : MvPowerSeries (Fin a) O →ₐ[O] A),
+      maximalIdeal A = (maximalIdeal O).map (algebraMap O A) ⊔ Ideal.span (Set.range fun i => φ (X i)) →
+      Function.Surjective φ
+
+noncomputable def relEmbDim (O : Type*) [CommRing O] [IsLocalRing O] (A : Type*) [CommRing A]
+    [IsLocalRing A] [Algebra O A] : ℕ :=
+  ((maximalIdeal A).map
+    (Ideal.Quotient.mk ((maximalIdeal O).map (algebraMap O A)))).spanFinrank
+
+abbrev RelCotangent (O : Type*) [CommRing O] [IsLocalRing O] (A : Type*) [CommRing A]
+    [IsLocalRing A] [Algebra O A] : Type _ :=
+  (maximalIdeal A) ⧸ (Submodule.comap (maximalIdeal A).subtype
+    ((maximalIdeal A) ^ 2 ⊔ (maximalIdeal O).map (algebraMap O A)))
+
+def RelCotangentStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsLocalRing O] (A : Type v) [CommRing A] [IsLocalRing A]
+    [IsNoetherianRing A] [Algebra O A] [IsLocalHom (algebraMap O A)],
+    Module.length A (RelCotangent O A) = (relEmbDim O A : ℕ∞)
+
+def PresentationStatement : Prop :=
+  ∀ (O : Type u) [CommRing O], IsCNL O → ∀ [IsLocalRing O] (A : Type v) [CommRing A], IsCNL A →
+    ∀ [IsLocalRing A] [Algebra O A] [IsLocalHom (algebraMap O A)],
+    Function.Surjective (ResidueField.map (algebraMap O A)) →
+    (∃ φ : MvPowerSeries (Fin (relEmbDim O A)) O →ₐ[O] A, Function.Surjective φ) ∧
+    ∀ (a : ℕ) (φ : MvPowerSeries (Fin a) O →ₐ[O] A), Function.Surjective φ → relEmbDim O A ≤ a
+
+def QuotientStatement : Prop :=
+  ∀ (A : Type u) [CommRing A], IsCNL A → ∀ I : Ideal A, I ≠ ⊤ → IsCNL (A ⧸ I)
+
+def DimBoundStatement : Prop :=
+  ∀ (O : Type u) [CommRing O] [IsLocalRing O], IsCM O → ∀ (a : ℕ) (s : Finset (MvPowerSeries (Fin a) O)),
+    ∀ p ∈ (Ideal.span (s : Set (MvPowerSeries (Fin a) O))).minimalPrimes,
+      ringKrullDim O + a ≤ ringKrullDim (MvPowerSeries (Fin a) O ⧸ p) + s.card
+
+end ReciprocityTheory.CA.PS

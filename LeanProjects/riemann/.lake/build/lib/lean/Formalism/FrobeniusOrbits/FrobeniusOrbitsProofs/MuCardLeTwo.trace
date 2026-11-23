@@ -1,0 +1,131 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["41776f7e0f249f72.olean"],
+  "m": false,
+  "i": "d991e46b1fae1211.ilean",
+  "c": "af06d46a1bc973c8.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:41:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:42:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:41:6: Unused tactic linter: `exact (multiplicity_finite_of_not_isUnit hQ hne).le_multiplicity_of_pow_dvd hdvd` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:42:6: Unused tactic linter: `exact\n  ((pow_dvd_iff_le_multiplicity (FiniteMultiplicity.of_not_isUnit hQ hne)).mp hdvd)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:82:4: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:44:0: automatically included section variable(s) unused in theorem `Formalism.FrobeniusOrbits.Mu.mu_mem_pow`:\n  [NumberField L]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField L] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:54:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:76:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:77:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:54:8: Unused tactic linter: `exact NumberField.RingOfIntegers.coe_injective` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:76:8: Unused tactic linter: `exact (Ideal.IsPrime.prod_mem_iff_exists_mem ‹Q.IsPrime›).mp hmemQ` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:77:8: Unused tactic linter: `exact (Ideal.IsPrime.prod_mem_iff ‹Q.IsPrime›).1 hmemQ` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:100:75: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:100:75: Unused tactic linter: `exact Set.Nat.card_coe_set_eq _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:109:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:127:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:127:10: Unused tactic linter: `exact mul_left_eq_self.mp h3` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:165:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:166:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:169:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:170:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:211:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:195:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:205:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:195:10: Unused tactic linter: `exact hζ.autToPow_spec (Galois.tau0 hqd h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean:205:10: Unused tactic linter: `exact (ZMod.natCast_self_eq_zero_iff _ _).mp hz` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.FrobeniusOrbits.Statement transitive imports (legacy)",
+       "3fd2e173ac7af9d0"],
+      ["Formalism.FrobeniusOrbits.Statement:importAllArts", "75bc8850cb74280b"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois transitive imports (legacy)",
+       "07fbb2d8003d84d8"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois:importAllArts",
+       "017c2f32ae3c7d95"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia transitive imports (legacy)",
+       "07fbb2d8003d84d8"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia:importAllArts",
+       "92ac5a5069b73718"],
+      ["Formalism.TameInertiaTowers.TowerFieldFoundations transitive imports (legacy)",
+       "0c8992e7f266aeb8"],
+      ["Formalism.TameInertiaTowers.TowerFieldFoundations:importAllArts",
+       "73f3072172c358ef"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/MuCardLeTwo.lean",
+   "6c9f1de217b0b214"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo",
+   "17ce5bd6a93ccbcd"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "854589d7511a5f80"}

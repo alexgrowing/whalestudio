@@ -1,0 +1,10 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelSectionsCompatible
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.FaithfulSMulAlgClosure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRingOver
+open CategoryTheory Limits AlgebraicGeometry IsLocalRing TensorProduct
+open GlobalTheory GlobalTheory.QCoh GlobalTheory.Vert GlobalTheory.MixedLocalChains GlobalTheory.PerfdLat GlobalTheory.Published GlobalTheory.GroupBplus GlobalTheory.BplusDescent
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.normal_model_sections_compatible : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] (p : ℕ) [Fact p.Prime] [CharZero O] (B B' : GlobalTheory.Vert.Model O) (f : GlobalTheory.Vert.Model.Hom B' B) (K' : IntermediateField B.X.functionField (Kbar B.X)) (γ : ∀ U : AffOp B.X, Γ(B'.X, f.f ⁻¹ᵁ U.1) →+* U.Bp), IsFinite f.f → (∀ U, Function.Injective (γ U)) → (∀ (U : AffOp B.X) (a : Γ(B.X, U.1)), γ U ((f.f.app U.1).hom a) = algebraMap Γ(B.X, U.1) U.Bp a) → (∀ (U U' : AffOp B.X) (hle : U'.1 ≤ U.1) (a : Γ(B'.X, f.f ⁻¹ᵁ U.1)), γ U' ((B'.X.presheaf.map (homOfLE (f.f.preimage_mono hle)).op).hom a) = AffOp.res hle (γ U a)) → (∀ U, (γ U).range = ringOver K' U) → ∀ (J : Type) [Finite J] (h : ℕ) (L : J → ∀ U : AffOp B.X, Submodule U.Bp (Fin h → U.Bp)), (∀ j U, IsDescended K' U (L j U) ∧ ∀ x : Fin h → U.Bp, (p : U.Bp) • x ∈ L j U) → (∀ j (U U' : AffOp B.X) (hle : U'.1 ≤ U.1), L j U' = Submodule.span U'.Bp (piMap (AffOp.res hle) (Fin h) '' (L j U : Set (Fin h → U.Bp)))) → ∃ (E : J → B'.X.Modules) (ι : ∀ j, E j ⟶ freeModule B'.X (Fin h)), ∀ j, GlobalTheory.VB.IsVB (E j) h ∧ Mono (ι j) ∧ ∀ U : AffOp B.X, L j U = Submodule.span U.Bp {x | ∃ s : Γ(E j, f.f ⁻¹ᵁ U.1), ∀ i, x i = γ U (((GlobalTheory.VB.isFrame_freeFrame B'.X (Fin h)).basis le_top).repr ((ι j).app _ s) i)} := by
+  first | exact @GlobalTheory.LatGlue.glue_descended_lattices | exact GlobalTheory.LatGlue.glue_descended_lattices | (intros; apply GlobalTheory.LatGlue.glue_descended_lattices <;> assumption)

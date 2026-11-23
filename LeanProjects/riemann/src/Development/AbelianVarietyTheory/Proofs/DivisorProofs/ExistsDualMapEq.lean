@@ -1,0 +1,59 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.TateHonda
+import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPadicIntOfCompatibleZmodPow
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CohomZeroEquivContinuous
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsSepClosedResidueFieldPowerSeriesComplex
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeSheafCechDegreeTwoExactForall
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PreservesFiniteLimitsTensorLeftSheafify
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingSieveMemEtaleTopologyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointsPullbackAbelianScheme
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveActionThickeningEndosCompletePoint
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NonemptyEquivEllAdicCohomology
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ReduceToAffineSource
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocModuleUnit
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BcDatumNatural
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullbackOfIsPullbackOnOpenCoverTarget
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEtaleSurjectiveProjStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftOfEtaleSurjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenConnectedComponentOfIsLocallyNoetherian
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReducedSpecialFibreGlobalField
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SteinFactorisationConnectedFibres
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoOfFiniteEtaleOfExistsUniqueLift
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeSpecFieldSmoothOfRelativeDimensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndCharpolyTateDetDegreeTraceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemisimpleEndomorphismsConjOfCharpoly
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateHomSurjectiveOfProduct
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndIsogenyAlgebraFiniteFinrankLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndIsogenyAlgebraInjectiveClearDenom
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdjointUpToIntegerStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointUniqueAdditiveScalar
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointCancelNonzeroMultiple
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateHomQTmul
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisEquivariantIffFrobeniusCommute
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateModuleFreeFinrankTwoMulDim
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobOverPtOver
+open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.Et
+open scoped TensorProduct DirectSum
+open ReciprocityTheory.ChartRestriction.G.Semi
+
+noncomputable section
+
+namespace GlobalTheory.TateHondaBridge
+
+open MonoidalCategory CartesianMonoidalCategory MonObj
+open scoped CategoryTheory.Obj CategoryTheory.MonObj
+attribute [local instance] Over.cartesianMonoidalCategory
+
+open GlobalTheory.AV GlobalTheory.AV.AbVar ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Published.AbVarRed
+
+def toAbVar {k : Type} [Field k] (A : Over (Spec (CommRingCat.of k))) [GrpObj A] (hA : IsAbelianScheme A) :
+    AbVar k where
+  X := A
+  ab := hA
+  dim := (GlobalTheory.T.abelianScheme_specField_smoothOfRelativeDimension k A hA).choose
+  smooth := (GlobalTheory.T.abelianScheme_specField_smoothOfRelativeDimension k A hA).choose_spec
+
+end GlobalTheory.TateHondaBridge
+
+end

@@ -1,0 +1,85 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["bf306a7c66cd72b6.olean"],
+  "m": false,
+  "i": "300dc3af074caf1c.ilean",
+  "c": "87c60c6147a134c1.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:49:38: This simp argument is unused:\n  hM\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Matrix.conjTranspose_sub, Matrix.conjTranspose_mul, sub_mul, mul_sub, Matrix.mul_assoc, A, B, MM,\n    EM, hc]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:54:38: This simp argument is unused:\n  hM\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Matrix.conjTranspose_sub, Matrix.conjTranspose_mul, sub_mul, mul_sub, Matrix.mul_assoc, A, B, MM,\n    EM, hc]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:54:42: This simp argument is unused:\n  hc\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Matrix.conjTranspose_sub, Matrix.conjTranspose_mul, sub_mul, mul_sub, Matrix.mul_assoc, A, B, MM,\n    EM, hM]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:71:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:74:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:255:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.FinitelyNonzeroLinear.posDef_all`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:269:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.FinitelyNonzeroLinear.herm_of_pos`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:276:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.FinitelyNonzeroLinear.isUnit_of_pos`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:369:8: automatically included section variable(s) unused in theorem `_private.Formalism.QuotientMetricDivisors.HermitianTwistDivisors.CommutingTwist.0.Formalism.DivisionValues.FinitelyNonzeroLinear.hform_eq_lemma`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:386:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.FinitelyNonzeroLinear.comm_of_stable`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:443:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.FinitelyNonzeroLinear.map_conjTranspose_twist`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:449:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.FinitelyNonzeroLinear.map_twist_of_mem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean:680:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.QuotientMetricDivisors.EigenRatHermLcv transitive imports (legacy)",
+       "ed7bb73128e87525"],
+      ["Formalism.QuotientMetricDivisors.EigenRatHermLcv:importAllArts",
+       "26250dfbeb5d5f7f"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral transitive imports (legacy)",
+       "1a41aaca01fdee07"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral:importAllArts",
+       "9d6600df0e9dc886"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/CommutingTwist.lean",
+   "4764aef55f02e975"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.QuotientMetricDivisors.HermitianTwistDivisors.CommutingTwist",
+   "2528230b07e7a68c"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "95b777e04b4f586d"}

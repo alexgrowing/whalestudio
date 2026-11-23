@@ -1,0 +1,28 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaCoefficientOfConvergenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingHoldsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateOfWhittakerStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerNondegenerateOfIwasawaStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockSplittingMaximalCompactStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerAdditivityStatement
+import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.SphericalBigCell.IfrBAddOfWeilThetaConvergence
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingMonomialStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DictionaryMaximalCompactPartsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnisotropyOfRangeStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerMaximalCompactGeneralStatement
+import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.VanishTop2
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaAutomorphicOfConvergenceStatement
+
+noncomputable section
+
+namespace PositivityTheory.PfSWUS
+
+open PositivityTheory.Rg.Sw.Glob
+
+theorem coefND_of (hW : GlobalTheory.Published.WeilThetaConvergence) (hG : PositivityTheory.SiegelWeilFormula.Gen.WhitGenLt) : CoefND :=
+  GlobalTheory.T.nondegenerate_of_whittaker GlobalTheory.T.unfolding_holds (GlobalTheory.T.theta_coefficient_of_convergence hW)
+    (GlobalTheory.T.whittaker_nondegenerate_of_iwasawa (GlobalTheory.T.whittaker_maximal_compact_general hG (GlobalTheory.T.dictionary_maximal_compact_parts GlobalTheory.T.fock_splitting_maximal_compact GlobalTheory.T.whittaker_additivity (PositivityTheory.PfSWUS.HandIAdd.ifrBAdd_of_weilThetaConvergence hW) GlobalTheory.T.matching_monomial) GlobalTheory.T.anisotropy_of_range))
+
+end PositivityTheory.PfSWUS
+
+end

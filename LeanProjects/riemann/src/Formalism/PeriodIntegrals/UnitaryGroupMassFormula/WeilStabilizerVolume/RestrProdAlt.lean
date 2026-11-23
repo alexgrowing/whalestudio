@@ -1,0 +1,15 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RestrProdSt
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RestrProdA
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RestrProdG
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.FiniteOnCompacts
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RPGlue
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RpAbsHolds
+
+namespace PI.VolStabW
+
+theorem restrProd_holds : RestrProd :=
+  restrProd_of rpAbs_holds rpFib_holds rpGlue_holds RestrProdG.rpGram_holds
+    RestrProdA.rpTail_holds RestrProdA.latCofin_holds
+
+end PI.VolStabW

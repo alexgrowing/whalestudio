@@ -1,0 +1,119 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["2b64fb8f3ad56745.olean"],
+  "m": false,
+  "i": "12dab4edf7632bf2.ilean",
+  "c": "75b1729664a059d3.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:32:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.map_isLattice`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:71:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.hstar`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:76:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.herm_entry'`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:82:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.herm_cut`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:86:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.orth_eq`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:109:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.E_inj`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:117:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.Pr_surj`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:124:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.isOrthProj_formula`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:131:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.isOrthProj_unique`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:173:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.sm_surj`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:181:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.mem_smLat`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:299:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.mem_cutLat`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:302:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.mem_matLat`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:306:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.mulVec_osmul`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:335:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.coe_natCast`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:451:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.tr_inv`:\n  [NumberField K]\n  [StarRing K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:468:0: automatically included section variable(s) unused in theorem `Formalism.DivisionValues.exponent_index_lattice.card_ne`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:547:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean:547:10: Unused tactic linter: `exact (Matrix.posDef_iff_dotProduct_mulVec.mp hPD).2 _ hne` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.QuotientMetricDivisors.ClassSumDualLe transitive imports (legacy)",
+       "2efe0248054a3d4c"],
+      ["Formalism.QuotientMetricDivisors.ClassSumDualLe:importAllArts",
+       "74e40104559259f2"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm transitive imports (legacy)",
+       "1f57fe8d4db2d41f"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm:importAllArts",
+       "acbd553b817025a8"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange transitive imports (legacy)",
+       "2b05310f1c85601f"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange:importAllArts",
+       "d046dc9c6be1e62e"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis transitive imports (legacy)",
+       "7e3d5d396f6b97ff"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis:importAllArts",
+       "49afaa08bc364333"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst transitive imports (legacy)",
+       "66d0920ac20522ab"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst:importAllArts",
+       "5967cbf7944b5cb6"],
+      ["Lemmata.HermitianVanishing.KeyZero transitive imports (legacy)",
+       "a3352e075f3a62dc"],
+      ["Lemmata.HermitianVanishing.KeyZero:importAllArts",
+       "1b6564d0cb766270"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/AuxStatement14.lean",
+   "88edc4ab85db51bd"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.QuotientMetricDivisors.HermitianTwistDivisors.AuxStatement14",
+   "ef545b0755cdabe8"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "838095cb93af13c0"}

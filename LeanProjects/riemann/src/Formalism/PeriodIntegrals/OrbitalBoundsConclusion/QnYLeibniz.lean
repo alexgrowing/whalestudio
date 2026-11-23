@@ -1,0 +1,3 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ConjugateTransposeLeibniz.YOperatorLeibnizRule
+
+theorem qnYLeibniz : Formalism.FourierDecayAlt.Q.YLeibniz := QnYLeibnizW.y_operator_leibniz_rule

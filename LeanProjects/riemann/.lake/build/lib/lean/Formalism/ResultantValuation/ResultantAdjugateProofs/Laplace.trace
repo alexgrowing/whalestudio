@@ -1,0 +1,58 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["f17272d81266e1d3.olean"],
+  "m": false,
+  "i": "d546d2dcea7d0038.ilean",
+  "c": "9a4e666db3277d92.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:90:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:90:2: Unused tactic linter: `all_goals rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:103:57: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:103:80: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:104:4: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean:104:87: This simp argument is unused:\n  mul_one\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Fin.prod_univ_add, Finset.prod_mul_distrib, Fin.lt_iff_val_lt_val, Fin.coe_castAdd, Fin.coe_natAdd,\n    add_lt_add_iff_left, hlt, hnlt, ↓reduceIte, Finset.prod_const_one, one_mul, mul_assoc]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.ResultantValuation.ResultantConjugate transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.ResultantValuation.ResultantConjugate:importAllArts",
+       "ceed3e531378ee7b"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/ResultantValuation/ResultantAdjugateProofs/Laplace.lean",
+   "e9da133424376047"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.ResultantValuation.ResultantAdjugateProofs.Laplace",
+   "b122632904ce1b82"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "c2202f01c627110c"}

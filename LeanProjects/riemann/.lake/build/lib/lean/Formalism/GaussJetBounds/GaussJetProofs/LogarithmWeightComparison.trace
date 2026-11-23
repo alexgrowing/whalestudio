@@ -1,0 +1,88 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["5380c986eb513d7b.olean"],
+  "m": false,
+  "i": "ad9fc75bb19a6f3a.ilean",
+  "c": "a6226adc891c4b28.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:79:0: automatically included section variable(s) unused in theorem `Formalism.DworkPowerSeriesWeights.subst_genLogTrunc`:\n  [DecidableEq τ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq τ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:113:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:113:8: Unused tactic linter: `exact\n  HasSubst.of_constantCoeff_nilpotent (fun s => by rw [hg0 s]; exact IsNilpotent.zero)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:229:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:237:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:238:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:242:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:243:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:237:8: Unused tactic linter: `exact HasSubst.of_constantCoeff_zero' hg0` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:238:8: Unused tactic linter: `exact\n  HasSubst.of_constantCoeff_nilpotent (fun s => by rw [hg0 s]; exact IsNilpotent.zero)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:242:8: Unused tactic linter: `exact HasSubst.of_constantCoeff_zero' hf.1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean:243:8: Unused tactic linter: `exact\n  HasSubst.of_constantCoeff_nilpotent (fun s => by rw [hf.1 s]; exact IsNilpotent.zero)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound transitive imports (legacy)",
+       "524b4eae524a0226"],
+      ["Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound:importAllArts",
+       "2c06ebd72ca01a09"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV transitive imports (legacy)",
+       "f89f0f8de3e7f9c1"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV:importAllArts",
+       "0438ba6b8a70225d"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne transitive imports (legacy)",
+       "f89f0f8de3e7f9c1"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne:importAllArts",
+       "6dbd367b4f7b68b4"],
+      ["Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd transitive imports (legacy)",
+       "a75bcaef75936898"],
+      ["Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd:importAllArts",
+       "6aec23fdecf8cc97"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/LogarithmWeightComparison.lean",
+   "857a0d541fe0de19"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaussJetBounds.GaussJetProofs.LogarithmWeightComparison",
+   "de622557249c0446"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "1213b83895efbc21"}

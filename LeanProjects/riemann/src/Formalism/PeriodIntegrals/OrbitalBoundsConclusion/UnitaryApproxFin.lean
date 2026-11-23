@@ -1,0 +1,16 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UnitaryApprox
+import Formalism.PeriodIntegrals.UnitaryApproxFin
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.TopStep
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.Assembly
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.ApproxE
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.WeakApproximationFiniteUnitary
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.BoundedRationalUnitary
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.UnitaryScalars
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.EigenvalueAvoidance
+
+theorem unitary_approximation_finite : PI.UnitaryApproxFin.UnitaryApproxFin :=
+  PI.UnitaryApproxFinWork.unitaryApproxFin_of PI.UnitaryApproxFinWork.topStep
+    PI.UnitaryApproxFinWork.cayleyStep PI.UnitaryApproxFinWork.approxEStep
+    PI.UnitaryApproxFinWork.weak_approximation_finite_unitary PI.UnitaryApproxFinWork.bounded_rational_unitary
+    PI.UnitaryApproxFinWork.unitary_scalars PI.UnitaryApproxFinWork.eigenvalue_avoidance

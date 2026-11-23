@@ -1,0 +1,19 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactification
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithIntersectionCalculusOfFormMixedProjectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDeRhamOfHyp
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodChernWeilOfGoodTopChernForm
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeAtOfPrismaticDieudonneAt
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCobOneOfIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NefNumericsOfRiemannRoch
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectionFormulaAndChernDegreeOfHeightProjectioStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsFourierExpansionHolomorphicTube
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDualCrystalOfHyp
+
+namespace PositivityTheory.Prw
+
+theorem arDegree_of (h₁ : GlobalTheory.Published.HeightProjection) (h₂ : GlobalTheory.Published.ChernDegreeComplex) : GlobalTheory.Published.ArDegree :=
+  GlobalTheory.T.projectionFormulaAndChernDegree_of_heightProjection h₁ h₂
+
+end PositivityTheory.Prw

@@ -1,0 +1,440 @@
+// Lean compiler output
+// Module: Formalism.TameInertiaTowers.CentralOrderTwo.OrderOfThreeUnitsTwoPow
+// Imports: public import Init public meta import Init public import Mathlib public import Formalism.TameInertiaTowers.StatementGroup public import Formalism.TameInertiaTowers.CentralOrderTwo.TwoAdic
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
+lean_object* lp_mathlib_ZMod_commRing(lean_object*);
+lean_object* lp_mathlib_Ring_toAddGroupWithOne___redArg(lean_object*);
+lean_object* lean_nat_sub(lean_object*, lean_object*);
+lean_object* lean_nat_add(lean_object*, lean_object*);
+lean_object* lp_mathlib_ZMod_val(lean_object*, lean_object*);
+lean_object* lean_nat_pow(lean_object*, lean_object*);
+lean_object* lp_mathlib_OneHom_comp___redArg___lam__0(lean_object*, lean_object*, lean_object*);
+lean_object* lp_mathlib_Nat_cast___at___00qrSign_spec__0(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___lam__0(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___lam__0___boxed(lean_object*);
+static const lean_closure_object lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___lam__0___boxed, .m_arity = 1, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___closed__0 = (const lean_object*)&lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___closed__0_value;
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___boxed(lean_object*);
+static lean_once_cell_t lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__0;
+static lean_once_cell_t lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__1;
+LEAN_EXPORT lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___redArg___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_once_cell_t lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__0;
+static lean_once_cell_t lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1;
+LEAN_EXPORT lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Nat_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__2(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___redArg___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___lam__0(lean_object* v_self_1_){
+_start:
+{
+lean_object* v_val_2_; 
+v_val_2_ = lean_ctor_get(v_self_1_, 0);
+lean_inc(v_val_2_);
+return v_val_2_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___lam__0___boxed(lean_object* v_self_3_){
+_start:
+{
+lean_object* v_res_4_; 
+v_res_4_ = lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___lam__0(v_self_3_);
+lean_dec_ref(v_self_3_);
+return v_res_4_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1(lean_object* v___x_6_){
+_start:
+{
+lean_object* v___f_7_; 
+v___f_7_ = ((lean_object*)(lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___closed__0));
+return v___f_7_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___boxed(lean_object* v___x_8_){
+_start:
+{
+lean_object* v_res_9_; 
+v_res_9_ = lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1(v___x_8_);
+lean_dec(v___x_8_);
+return v_res_9_;
+}
+}
+static lean_object* _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__0(void){
+_start:
+{
+lean_object* v___x_10_; lean_object* v___x_11_; 
+v___x_10_ = lean_unsigned_to_nat(4u);
+v___x_11_ = lp_mathlib_ZMod_commRing(v___x_10_);
+return v___x_11_;
+}
+}
+static lean_object* _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__1(void){
+_start:
+{
+lean_object* v___x_12_; lean_object* v___x_13_; 
+v___x_12_ = lean_obj_once(&lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__0, &lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__0_once, _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__0);
+v___x_13_ = lp_mathlib_Ring_toAddGroupWithOne___redArg(v___x_12_);
+return v___x_13_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2(lean_object* v_a_14_){
+_start:
+{
+lean_object* v___x_15_; lean_object* v_toIntCast_16_; lean_object* v___x_17_; 
+v___x_15_ = lean_obj_once(&lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__1, &lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__1_once, _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2___closed__1);
+v_toIntCast_16_ = lean_ctor_get(v___x_15_, 0);
+lean_inc(v_toIntCast_16_);
+v___x_17_ = lean_apply_1(v_toIntCast_16_, v_a_14_);
+return v___x_17_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0(lean_object* v_x_18_, lean_object* v_a_19_){
+_start:
+{
+lean_object* v_zero_20_; uint8_t v_isZero_21_; 
+v_zero_20_ = lean_unsigned_to_nat(0u);
+v_isZero_21_ = lean_nat_dec_eq(v_x_18_, v_zero_20_);
+if (v_isZero_21_ == 1)
+{
+lean_object* v___x_22_; 
+v___x_22_ = lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0_spec__2(v_a_19_);
+return v___x_22_;
+}
+else
+{
+lean_object* v_one_23_; lean_object* v_n_24_; lean_object* v___x_25_; lean_object* v___x_26_; lean_object* v___x_27_; 
+v_one_23_ = lean_unsigned_to_nat(1u);
+v_n_24_ = lean_nat_sub(v_x_18_, v_one_23_);
+v___x_25_ = lean_nat_add(v_n_24_, v_one_23_);
+lean_dec(v_n_24_);
+v___x_26_ = lp_mathlib_ZMod_val(v___x_25_, v_a_19_);
+lean_dec(v_a_19_);
+lean_dec(v___x_25_);
+v___x_27_ = lp_mathlib_Nat_cast___at___00qrSign_spec__0(v___x_26_);
+return v___x_27_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0___boxed(lean_object* v_x_28_, lean_object* v_a_29_){
+_start:
+{
+lean_object* v_res_30_; 
+v_res_30_ = lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0(v_x_28_, v_a_29_);
+lean_dec(v_x_28_);
+return v_res_30_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0(lean_object* v_n_31_, lean_object* v___y_32_){
+_start:
+{
+lean_object* v___x_33_; 
+v___x_33_ = lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0_spec__0(v_n_31_, v___y_32_);
+return v___x_33_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0___boxed(lean_object* v_n_34_, lean_object* v___y_35_){
+_start:
+{
+lean_object* v_res_36_; 
+v_res_36_ = lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0(v_n_34_, v___y_35_);
+lean_dec(v_n_34_);
+return v_res_36_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg(lean_object* v_n_37_){
+_start:
+{
+lean_object* v___f_38_; 
+v___f_38_ = lean_alloc_closure((void*)(lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_38_, 0, v_n_37_);
+return v___f_38_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___redArg(lean_object* v_N_39_){
+_start:
+{
+lean_object* v___x_40_; lean_object* v___x_41_; lean_object* v___f_42_; lean_object* v___f_43_; lean_object* v___f_44_; 
+v___x_40_ = lean_unsigned_to_nat(2u);
+v___x_41_ = lean_nat_pow(v___x_40_, v_N_39_);
+v___f_42_ = lean_alloc_closure((void*)(lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_42_, 0, v___x_41_);
+v___f_43_ = ((lean_object*)(lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___closed__0));
+v___f_44_ = lean_alloc_closure((void*)(lp_mathlib_OneHom_comp___redArg___lam__0), 3, 2);
+lean_closure_set(v___f_44_, 0, v___f_43_);
+lean_closure_set(v___f_44_, 1, v___f_42_);
+return v___f_44_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___redArg___boxed(lean_object* v_N_45_){
+_start:
+{
+lean_object* v_res_46_; 
+v_res_46_ = lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___redArg(v_N_45_);
+lean_dec(v_N_45_);
+return v_res_46_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4(lean_object* v_N_47_, lean_object* v_h_48_){
+_start:
+{
+lean_object* v___x_49_; 
+v___x_49_ = lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___redArg(v_N_47_);
+return v___x_49_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4___boxed(lean_object* v_N_50_, lean_object* v_h_51_){
+_start:
+{
+lean_object* v_res_52_; 
+v_res_52_ = lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4(v_N_50_, v_h_51_);
+lean_dec(v_N_50_);
+return v_res_52_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0(lean_object* v_n_53_, lean_object* v_m_54_, lean_object* v_h_55_, lean_object* v_inst_56_){
+_start:
+{
+lean_object* v___f_57_; 
+v___f_57_ = lean_alloc_closure((void*)(lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___redArg___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_57_, 0, v_n_53_);
+return v___f_57_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0___boxed(lean_object* v_n_58_, lean_object* v_m_59_, lean_object* v_h_60_, lean_object* v_inst_61_){
+_start:
+{
+lean_object* v_res_62_; 
+v_res_62_ = lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__0(v_n_58_, v_m_59_, v_h_60_, v_inst_61_);
+lean_dec(v_m_59_);
+return v_res_62_;
+}
+}
+static lean_object* _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__0(void){
+_start:
+{
+lean_object* v___x_63_; lean_object* v___x_64_; 
+v___x_63_ = lean_unsigned_to_nat(8u);
+v___x_64_ = lp_mathlib_ZMod_commRing(v___x_63_);
+return v___x_64_;
+}
+}
+static lean_object* _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1(void){
+_start:
+{
+lean_object* v___x_65_; lean_object* v___x_66_; 
+v___x_65_ = lean_obj_once(&lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__0, &lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__0_once, _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__0);
+v___x_66_ = lp_mathlib_Ring_toAddGroupWithOne___redArg(v___x_65_);
+return v___x_66_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1(lean_object* v_a_67_){
+_start:
+{
+lean_object* v___x_68_; lean_object* v_toIntCast_69_; lean_object* v___x_70_; 
+v___x_68_ = lean_obj_once(&lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1, &lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1_once, _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1);
+v_toIntCast_69_ = lean_ctor_get(v___x_68_, 0);
+lean_inc(v_toIntCast_69_);
+v___x_70_ = lean_apply_1(v_toIntCast_69_, v_a_67_);
+return v___x_70_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Nat_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__2(lean_object* v_a_71_){
+_start:
+{
+lean_object* v___x_72_; lean_object* v_toAddMonoidWithOne_73_; lean_object* v_toNatCast_74_; lean_object* v___x_75_; 
+v___x_72_ = lean_obj_once(&lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1, &lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1_once, _init_lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1___closed__1);
+v_toAddMonoidWithOne_73_ = lean_ctor_get(v___x_72_, 1);
+v_toNatCast_74_ = lean_ctor_get(v_toAddMonoidWithOne_73_, 0);
+lean_inc(v_toNatCast_74_);
+v___x_75_ = lean_apply_1(v_toNatCast_74_, v_a_71_);
+return v___x_75_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0(lean_object* v_x_76_, lean_object* v_a_77_){
+_start:
+{
+lean_object* v_zero_78_; uint8_t v_isZero_79_; 
+v_zero_78_ = lean_unsigned_to_nat(0u);
+v_isZero_79_ = lean_nat_dec_eq(v_x_76_, v_zero_78_);
+if (v_isZero_79_ == 1)
+{
+lean_object* v___x_80_; 
+v___x_80_ = lp_tree_Int_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__1(v_a_77_);
+return v___x_80_;
+}
+else
+{
+lean_object* v_one_81_; lean_object* v_n_82_; lean_object* v___x_83_; lean_object* v___x_84_; lean_object* v___x_85_; 
+v_one_81_ = lean_unsigned_to_nat(1u);
+v_n_82_ = lean_nat_sub(v_x_76_, v_one_81_);
+v___x_83_ = lean_nat_add(v_n_82_, v_one_81_);
+lean_dec(v_n_82_);
+v___x_84_ = lp_mathlib_ZMod_val(v___x_83_, v_a_77_);
+lean_dec(v_a_77_);
+lean_dec(v___x_83_);
+v___x_85_ = lp_tree_Nat_cast___at___00ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0_spec__2(v___x_84_);
+return v___x_85_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0___boxed(lean_object* v_x_86_, lean_object* v_a_87_){
+_start:
+{
+lean_object* v_res_88_; 
+v_res_88_ = lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0(v_x_86_, v_a_87_);
+lean_dec(v_x_86_);
+return v_res_88_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0(lean_object* v_n_89_, lean_object* v___y_90_){
+_start:
+{
+lean_object* v___x_91_; 
+v___x_91_ = lp_tree_ZMod_cast___at___00ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0_spec__0(v_n_89_, v___y_90_);
+return v___x_91_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0___boxed(lean_object* v_n_92_, lean_object* v___y_93_){
+_start:
+{
+lean_object* v_res_94_; 
+v_res_94_ = lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0(v_n_92_, v___y_93_);
+lean_dec(v_n_92_);
+return v_res_94_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg(lean_object* v_n_95_){
+_start:
+{
+lean_object* v___f_96_; 
+v___f_96_ = lean_alloc_closure((void*)(lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_96_, 0, v_n_95_);
+return v___f_96_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___redArg(lean_object* v_N_97_){
+_start:
+{
+lean_object* v___x_98_; lean_object* v___x_99_; lean_object* v___f_100_; lean_object* v___f_101_; lean_object* v___f_102_; 
+v___x_98_ = lean_unsigned_to_nat(2u);
+v___x_99_ = lean_nat_pow(v___x_98_, v_N_97_);
+v___f_100_ = lean_alloc_closure((void*)(lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_100_, 0, v___x_99_);
+v___f_101_ = ((lean_object*)(lp_tree_Units_coeHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r4_spec__1___closed__0));
+v___f_102_ = lean_alloc_closure((void*)(lp_mathlib_OneHom_comp___redArg___lam__0), 3, 2);
+lean_closure_set(v___f_102_, 0, v___f_101_);
+lean_closure_set(v___f_102_, 1, v___f_100_);
+return v___f_102_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___redArg___boxed(lean_object* v_N_103_){
+_start:
+{
+lean_object* v_res_104_; 
+v_res_104_ = lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___redArg(v_N_103_);
+lean_dec(v_N_103_);
+return v_res_104_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8(lean_object* v_N_105_, lean_object* v_h_106_){
+_start:
+{
+lean_object* v___x_107_; 
+v___x_107_ = lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___redArg(v_N_105_);
+return v___x_107_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8___boxed(lean_object* v_N_108_, lean_object* v_h_109_){
+_start:
+{
+lean_object* v_res_110_; 
+v_res_110_ = lp_tree_Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8(v_N_108_, v_h_109_);
+lean_dec(v_N_108_);
+return v_res_110_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0(lean_object* v_n_111_, lean_object* v_m_112_, lean_object* v_h_113_, lean_object* v_inst_114_){
+_start:
+{
+lean_object* v___f_115_; 
+v___f_115_ = lean_alloc_closure((void*)(lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___redArg___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_115_, 0, v_n_111_);
+return v___f_115_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0___boxed(lean_object* v_n_116_, lean_object* v_m_117_, lean_object* v_h_118_, lean_object* v_inst_119_){
+_start:
+{
+lean_object* v_res_120_; 
+v_res_120_ = lp_tree_ZMod_castHom___at___00Formalism_TwoAdicCyclotomicDecomposition_AdmissibleUnits_r8_spec__0(v_n_116_, v_m_117_, v_h_118_, v_inst_119_);
+lean_dec(v_m_117_);
+return v_res_120_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_mathlib_Mathlib(uint8_t builtin);
+lean_object* initialize_tree_Formalism_TameInertiaTowers_StatementGroup(uint8_t builtin);
+lean_object* initialize_tree_Formalism_TameInertiaTowers_CentralOrderTwo_TwoAdic(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_Formalism_TameInertiaTowers_CentralOrderTwo_OrderOfThreeUnitsTwoPow(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_mathlib_Mathlib(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_TameInertiaTowers_StatementGroup(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_TameInertiaTowers_CentralOrderTwo_TwoAdic(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

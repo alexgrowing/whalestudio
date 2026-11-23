@@ -1,0 +1,8 @@
+import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.RealMetaplecticRepresentationHolds
+
+namespace PositivityTheory.Stage1.PM
+
+theorem realMetaplecticRepresentation : GlobalTheory.Published.RealMetaplecticRepresentation :=
+  PositivityTheory.ThKR.realMetaplecticRepresentation_holds
+
+end PositivityTheory.Stage1.PM

@@ -1,0 +1,14 @@
+import Mathlib
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.WickOperatorVanishing
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GEWick
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonGaugeOfLog
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.PderivSecondEvFirstPointEqZero
+open MvPowerSeries ReciprocityTheory.ChartRestriction.G.Geo.Tor.Germ ReciprocityTheory.ChartRestriction.G.TB
+
+namespace GlobalTheory
+
+theorem canonGauge_exists : CanonGaugeSt :=
+  canonGauge_of_log FormalLog.logSt_and_logDerivSt.1
+
+end GlobalTheory

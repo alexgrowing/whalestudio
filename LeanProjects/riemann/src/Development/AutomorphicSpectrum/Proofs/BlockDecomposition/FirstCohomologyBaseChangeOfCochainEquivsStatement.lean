@@ -1,0 +1,8 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FirstCohomologyBaseChangeOfCochainEquivs
+import Mathlib
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
+open CategoryTheory AlgebraicGeometry TensorProduct Opposite MonoidalCategory CartesianMonoidalCategory MonObj ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CatCoh GlobalTheory.Cris GlobalTheory.CechDR MainStatements.Hodge
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.first_cohomology_base_change_of_cochain_equivs : ∀ (R R' C : Type) [CommRing R] [CommRing R'] [Algebra R R'] [Category.{0} C] (F : C ⥤ CommAlgCat.{0} R) (F' : C ⥤ CommAlgCat.{0} R') (m : BC F F') (E₀ : R' ⊗[R] C0 F ≃ₗ[R'] C0 F') (E₁ : R' ⊗[R] C1 F ≃ₗ[R'] C1 F') (E₂ : R' ⊗[R] C2 F ≃ₗ[R'] C2 F'), (∀ c, E₁ (1 ⊗ₜ c) = fun T T' φ ↦ m.α T' (c T T' φ)) → (∀ x, E₁ ((d0 F).baseChange R' x) = d0 F' (E₀ x)) → (∀ x, E₂ ((d1 F).baseChange R' x) = d1 F' (E₁ x)) → (∀ x : R' ⊗[R] C1 F, (d1 F).lTensor R' x = 0 → ∃ (t : R' ⊗[R] Z1 F) (y : R' ⊗[R] C0 F), (Z1 F).subtype.lTensor R' t + (d0 F).lTensor R' y = x) → (∀ (t : R' ⊗[R] Z1 F) (y : R' ⊗[R] C0 F), (Z1 F).subtype.lTensor R' t = (d0 F).lTensor R' y → ∃ y' : R' ⊗[R] C0 F, ((d0 F).codRestrict (Z1 F) (commAlgFunctorCoboundaryZero_mem_cocyclesOne F)).lTensor R' y' = t) → ∃ e : R' ⊗[R] H1 F ≃ₗ[R'] H1 F', ∀ c, e (1 ⊗ₜ c) = m.coef.pull1 c := by
+  first | exact @GlobalTheory.CompanionTheory.PerfectFirstCohomologyBaseChange.h1_baseChange | exact GlobalTheory.CompanionTheory.PerfectFirstCohomologyBaseChange.h1_baseChange | (intros; apply GlobalTheory.CompanionTheory.PerfectFirstCohomologyBaseChange.h1_baseChange <;> assumption)

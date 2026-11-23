@@ -1,0 +1,11 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCLRadTAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCLRadTJet
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCLRadTJetRad
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCLRadTTaylor
+
+namespace Formalism.FourierDecayAlt.P.CutMP.Gauge.GC
+
+theorem radial_torus_local_holds : GTCLRadT :=
+  radial_torus_of_jets_taylor jet_finite_order_along_level jet_radial_holds taylor_expansion_holds
+
+end Formalism.FourierDecayAlt.P.CutMP.Gauge.GC

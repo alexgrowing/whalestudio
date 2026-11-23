@@ -1,0 +1,4 @@
+import Formalism.PeriodIntegrals.CubicExponentialFactor
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CubicExponentialFactor.ExpMvAddC
+
+theorem thetaCube_triple_relation : PI.CubicExponentialFactor.Lemma := PI.CubicExponentialFactor.Wk.main

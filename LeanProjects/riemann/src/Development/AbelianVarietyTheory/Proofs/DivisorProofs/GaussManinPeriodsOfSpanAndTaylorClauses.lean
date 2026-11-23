@@ -1,0 +1,19 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsPeriodHom
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.FamUnif
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussManinPeriodsOfParts
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FamUnifHolds
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodsExistAffineZeroSectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegrationOverCyclesHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PchernOfStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodHomPushEndStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibrePeriodEqFamilyPeriodValueStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrationOverCyclesLiftsLieLatticeStatement
+
+namespace GlobalTheory.AnPer
+
+theorem gaussManinPeriods_of_span_taylor : PSpan → PTaylor → GlobalTheory.Published.GaussManinPeriods :=
+  fun HS HT ↦ gaussManinPeriods_of_parts (-1) GlobalTheory.PeriodFamily.famUnif_holds GlobalTheory.T.periods_exist_affine_zero_section GlobalTheory.T.exists_integrationOverCyclesHom HS
+    GlobalTheory.T.integrationOverCycles_lifts_lieLattice GlobalTheory.T.periodHom_push_end' GlobalTheory.T.pChern_neg_one GlobalTheory.T.fibrePeriod_eq_familyPeriod_value HT
+
+end GlobalTheory.AnPer

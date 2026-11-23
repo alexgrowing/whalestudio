@@ -1,0 +1,17 @@
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PFrobTors
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PFrobQ
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PBaseFacts
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PDenseGen
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.FrEx
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PCorrPull
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PCorrComm
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PEsGen
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PCorrOpEq
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.CycAllHolds
+
+namespace UpperTheory.Gal.Mod
+
+theorem esGen_holds (h : GlobalTheory.EtC.SpecGood) : ESGen :=
+  esGen h esPt_holds nwtOne (frobQ frobTors) baseFacts denseGen frEx @corrPull @corrComm
+
+end UpperTheory.Gal.Mod

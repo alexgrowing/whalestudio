@@ -1,0 +1,11 @@
+import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.HeckeDuality.HasCharOfEquiv
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantTauStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CayleyHamiltonStatementStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InfinitesimalCharacterStatementStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HeckeNonVanishingStatement
+
+namespace CompanionTheory.RgExh.Hk
+
+theorem dual_module_facts : DualFacts := dualfacts_of GlobalTheory.T.QuantumDeterminantTau GlobalTheory.T.CayleyHamiltonHk GlobalTheory.T.InfinitesimalCharacterStatement GlobalTheory.T.HeckeNonVanishing
+
+end CompanionTheory.RgExh.Hk

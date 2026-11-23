@@ -1,0 +1,117 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["156c0991ff942333.olean"],
+  "m": false,
+  "i": "61eab60a5fdc758b.ilean",
+  "c": "8231dda1e25b8e3f.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:23:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:23:4: Unused tactic linter: `(unfold KinE; exact IntermediateField.mem_adjoin_simple_self ℚ _)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:30:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:30:6: Unused tactic linter: `simpa using σ.commutes ⟨bE ζ a b, bE_mem_KinE ζ a b⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:110:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:110:4: Unused tactic linter: `simpa using h1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:129:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:130:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:138:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:139:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:138:8: Unused tactic linter: `exact Algebra.trace_eq_sum_automorphisms w` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:139:8: Unused tactic linter: `exact IsGalois.trace_eq_sum_automorphisms w` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:197:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:198:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:197:4: Unused tactic linter: `rw [coeIdeal_differentIdeal (𝓞 (KinE ζ a b)) (KinE ζ a b)]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:198:4: Unused tactic linter: `rw [coeIdeal_differentIdeal]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:210:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:210:4: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:268:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:268:6: Unused tactic linter: `exact (hprime P' hP').map_mulEquiv f` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean:338:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.FrobeniusOrbits.HostDiffSupport transitive imports (legacy)",
+       "46720592f4ccda7c"],
+      ["Formalism.FrobeniusOrbits.HostDiffSupport:importAllArts",
+       "4955d90c7084ce3f"],
+      ["Formalism.FrobeniusOrbits.RealSubfieldLeCompositum transitive imports (legacy)",
+       "c4bfed6159e74a92"],
+      ["Formalism.FrobeniusOrbits.RealSubfieldLeCompositum:importAllArts",
+       "f894c23679ee17c4"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia transitive imports (legacy)",
+       "660d43686fbd7266"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia:importAllArts",
+       "253f5bae9dc47bf2"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp transitive imports (legacy)",
+       "aabaada0edb79565"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp:importAllArts",
+       "37611667a3e44768"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/Principal.lean",
+   "002dabe8d429d9f1"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Principal",
+   "68753a5693d88491"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "688a43dddf9bfadd"}

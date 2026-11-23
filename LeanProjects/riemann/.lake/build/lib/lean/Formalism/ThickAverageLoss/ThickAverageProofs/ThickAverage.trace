@@ -1,0 +1,164 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a1fecae22d9b9d41.olean"],
+  "m": false,
+  "i": "04552e634c72be2a.ilean",
+  "c": "5ce5221059552157.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:18:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:18:6: Unused tactic linter: `(fin_cases x <;> simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:33:14: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [sgn2]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:39:0: automatically included section variable(s) unused in theorem `Formalism.D5.phiSet_card`:\n  [AddCommGroup H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [AddCommGroup H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:47:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:47:8: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:59:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:53:0: automatically included section variable(s) unused in theorem `Formalism.D5.sum_H`:\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:67:16: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:67:6: Unused tactic linter: `all_goals (ext <;> simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:74:0: automatically included section variable(s) unused in theorem `Formalism.D5.trivH_formula`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:83:10: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:87:10: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:92:10: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:94:0: automatically included section variable(s) unused in theorem `Formalism.D5.sq_one_of_order2`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:97:0: automatically included section variable(s) unused in theorem `Formalism.D5.firstBasis_add_self`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:99:35: This simp argument is unused:\n  h2\n\nHint: Omit it from the simp argument list.\n  [apply] simp [e10, zmod_two_one_add_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:101:0: automatically included section variable(s) unused in theorem `Formalism.D5.secondBasis_add_self`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:103:35: This simp argument is unused:\n  h2\n\nHint: Omit it from the simp argument list.\n  [apply] simp [e01, zmod_two_one_add_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:121:92: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [signZModTwo_zero, signZModTwo_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:125:92: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [signZModTwo_zero, signZModTwo_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:130:47: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [signZModTwo_zero, signZModTwo_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:133:44: This simp argument is unused:\n  signZModTwo_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Hs.chC_apply, e10, signZModTwo_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:135:27: This simp argument is unused:\n  signZModTwo_one\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Hs.psC_apply, e10, signZModTwo_zero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:139:27: This simp argument is unused:\n  signZModTwo_one\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Hs.chC_apply, e01, signZModTwo_zero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:141:44: This simp argument is unused:\n  signZModTwo_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Hs.psC_apply, e01, signZModTwo_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:145:0: automatically included section variable(s) unused in theorem `Formalism.D5.trivH_zero`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:162:0: automatically included section variable(s) unused in theorem `Formalism.D5.ne_of_val`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:209:73: This simp argument is unused:\n  zmod_two_one_ne_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [InPhi, IsThickAt, topPl, cconj, thickPl, zmod_two_one_add_one, zmod_two_one_ne_zero.symm, h2,\n    sub_eq_iff_eq_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:210:33: This simp argument is unused:\n  h2\n\nHint: Omit it from the simp argument list.\n  [apply] simp [InPhi, IsThickAt, topPl, cconj, thickPl, zmod_two_one_add_one, zmod_two_one_ne_zero,\n    zmod_two_one_ne_zero.symm, sub_eq_iff_eq_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:212:0: automatically included section variable(s) unused in theorem `Formalism.D5.thick_inj`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:217:0: automatically included section variable(s) unused in theorem `Formalism.D5.rho_thick`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:220:53: This simp argument is unused:\n  h2\n\nHint: Omit it from the simp argument list.\n  [apply] simp [cconj, topPl, thickPl, zmod_two_one_add_one]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:242:58: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:242:58: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:266:0: automatically included section variable(s) unused in theorem `Formalism.D5.sum_character_shift_eq`:\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:277:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:280:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:277:8: Unused tactic linter: `(simp [e10, zmod_two_neg_one]; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean:280:8: Unused tactic linter: `(simp [e10]; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.ThickAverageLoss.ParametersAveragedDifferenceBound transitive imports (legacy)",
+       "406544ee6c40a1bd"],
+      ["Formalism.ThickAverageLoss.ParametersAveragedDifferenceBound:importAllArts",
+       "edd23a4e47df4377"],
+      ["Formalism.ThickAverageLoss.PartnersToFactorsAt transitive imports (legacy)",
+       "15e7a592e4f3ffb6"],
+      ["Formalism.ThickAverageLoss.PartnersToFactorsAt:importAllArts",
+       "4c23ddd0bc92a79b"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/ThickAverageLoss/ThickAverageProofs/ThickAverage.lean",
+   "5bc1c1be8b84717a"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.ThickAverageLoss.ThickAverageProofs.ThickAverage",
+   "8ca9b4b91bf1183d"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "add02e964d3800a6"}

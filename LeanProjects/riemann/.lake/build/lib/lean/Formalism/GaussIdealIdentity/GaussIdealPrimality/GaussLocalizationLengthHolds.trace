@@ -1,0 +1,106 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["8747315e01cde680.olean"],
+  "m": false,
+  "i": "1acbb7c498026afa.ilean",
+  "c": "02e27bb8041191b6.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:11:0: automatically included section variable(s) unused in theorem `Formalism.DV.GaussP.gaussIdeal_isPrime`:\n  [Fintype σ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype σ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:22:0: automatically included section variable(s) unused in theorem `Formalism.DV.GaussP.maximalIdeal_eq`:\n  [Fintype σ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype σ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:28:0: automatically included section variable(s) unused in theorem `Formalism.DV.GaussP.algebraMap_injective`:\n  [Fintype σ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype σ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:109:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:114:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:115:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:119:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:120:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:124:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:125:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:126:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:152:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:109:12: Unused tactic linter: `exact Submodule.Quotient.mk_surjective K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:114:12: Unused tactic linter: `exact Module.Flat.lTensor_preserves_injective_linearMap (M := A) _ hf` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:115:12: Unused tactic linter: `(rw [LinearMap.baseChange_eq_ltensor];\n  exact Module.Flat.lTensor_preserves_injective_linearMap _ hf)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:119:12: Unused tactic linter: `exact LinearMap.lTensor_surjective _ hg` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:120:12: Unused tactic linter: `(rw [LinearMap.baseChange_eq_ltensor]; exact LinearMap.lTensor_surjective A hg)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:124:12: Unused tactic linter: `exact lTensor_exact (Q := A) hfg hg` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:125:12: Unused tactic linter: `exact lTensor_exact hfg hg` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:126:12: Unused tactic linter: `(rw [LinearMap.baseChange_eq_ltensor, LinearMap.baseChange_eq_ltensor];\n  exact lTensor_exact A hfg hg)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:152:10: Unused tactic linter: `simp [← LinearMap.comp_apply, ← LinearMap.baseChange_comp, hz]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean:172:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaussIdealIdentity.StatementLA transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.GaussIdealIdentity.StatementLA:importAllArts",
+       "4f2d776ed62f6587"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussIdealIdentity/GaussIdealPrimality/GaussLocalizationLengthHolds.lean",
+   "9c2b2ab3993252e1"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaussIdealIdentity.GaussIdealPrimality.GaussLocalizationLengthHolds",
+   "d32383590e450f4d"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "8fe4f671b11159d6"}

@@ -1,0 +1,221 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["ecd9d6f83033e74e.olean"],
+  "m": false,
+  "i": "93b61825061fcd6e.ilean",
+  "c": "815f84554a68f150.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:90: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:184: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:286: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:381: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:484: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:604: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:694: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:782: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:866: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:90: Unused tactic linter: `(apply UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common <;>\n    assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:184: Unused tactic linter: `(intros;\n  apply UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:286: Unused tactic linter: `(apply @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common <;>\n    assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:381: Unused tactic linter: `(intros;\n  apply @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:484: Unused tactic linter: `(apply @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:604: Unused tactic linter: `exact\n  @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common K ‹_› ‹_› t` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:694: Unused tactic linter: `exact\n  @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common K ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:782: Unused tactic linter: `exact @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common K ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:19:866: Unused tactic linter: `exact @UpperTheory.Reformulated.B.CommonMajorizingLattice.majLattice_common K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:55:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majLattice_T_injective`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:74:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majLattice_finrank`:\n  [StarRing K]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:118: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:187: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:249: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:319: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:406: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:494: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:580: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:663: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:744: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:821: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:894: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:963: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1028: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1089: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1146: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1199: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1248: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:100: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:118: Unused tactic linter: `(intros; apply Bl.general_b_fact_second_rest.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:187: Unused tactic linter: `(apply @Bl.general_b_fact_second_rest.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:249: Unused tactic linter: `(intros; apply @Bl.general_b_fact_second_rest.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:319: Unused tactic linter: `(apply @Bl.general_b_fact_second_rest.goal1 <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:406: Unused tactic linter: `exact\n  @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› L hL y` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:494: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› L hL` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:580: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› L` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:663: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:744: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:821: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:894: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:963: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1028: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1089: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1146: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1199: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K V` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:128:1248: Unused tactic linter: `exact @Bl.general_b_fact_second_rest.goal1 K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:130:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majLattice_exists_d`:\n  [IsTotallyComplex K]\n  [StarRing K]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [StarRing K] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean:154:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majLattice_mem_zmap`:\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.HermitianLattices.StatementMaj transitive imports (legacy)",
+       "eef7bb56945c2abe"],
+      ["Formalism.HermitianLattices.StatementMaj:importAllArts",
+       "5c9a32117c157378"],
+      ["Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CommonMajorizingLattice transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CommonMajorizingLattice:importAllArts",
+       "694a089783495118"],
+      ["Lemmata.GeneralBFactSecondRest.Imports transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.GeneralBFactSecondRest.Imports:importAllArts",
+       "f4fcfcb3834e8617"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/MajLattice.lean",
+   "ca59487d33f98a47"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HermitianLattices.HermitianLatticesProofs.MajLattice",
+   "42838c9c5ce1bac7"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "d38f7016bdc01edb"}

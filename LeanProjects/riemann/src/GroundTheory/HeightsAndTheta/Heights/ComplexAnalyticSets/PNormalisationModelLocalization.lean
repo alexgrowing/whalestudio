@@ -1,0 +1,11 @@
+import Mathlib
+import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalisationModelLocalization
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PNormalisationModelLocalizationX
+set_option maxSynthPendingDepth 1
+
+namespace GroundTheory.Heights₂.Heights
+
+theorem NormalisationModelLocalization.full : NormalisationModelLocalization.Statement :=
+  NormalisationModelLocalization.proof
+
+end GroundTheory.Heights₂.Heights

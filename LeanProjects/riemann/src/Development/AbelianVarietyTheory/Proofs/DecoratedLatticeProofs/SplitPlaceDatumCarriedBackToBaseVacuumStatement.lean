@@ -1,0 +1,8 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceDatumCarriedBackToBaseVacuum
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
+open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR.Datum Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.FinPl GlobalTheory.MixPer GlobalTheory.MixModel GlobalTheory.Unf GlobalTheory.LatPair GlobalTheory.SplitWeil GlobalTheory.SeeSaw ValuativeRel IsLocalRing
+open GlobalTheory.IndefiniteRowSideFullHecke.AppendedVectorData (lastKer lastPair)
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.splitPlaceDatum_carried_back_to_baseVacuum : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (p : SplitPt D k) (n n' : Type) [Fintype n] [DecidableEq n] [Fintype n'] [DecidableEq n'] (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D ψ (-1) → p.UnitAA → ∀ (S T : HSp D) (α : Frame p S n') (β : Frame p T n) (LS : Lat S) (LT : Lat T), IsSelfDualC S LS → IsSelfDualC T LT → ∀ (Ψ : Matrix n n' k → ℂ) (c : WO S T →₀ ℂ), CombAt (· = p.v) c → (∀ f₀, Vac ψ S T LS LT (· = p.v) f₀ → Over ψ α β LS LT f₀ Ψ (comb ψ S T c f₀)) → ∃ e : WO S T →₀ ℂ, CombAt (· = p.v) e ∧ ∀ g f, Over ψ α β LS LT g Ψ f → Vac ψ S T LS LT (· = p.v) (comb ψ S T e f) ∧ comb ψ S T c (comb ψ S T e f) = f := by
+  first | exact @GlobalTheory.FinPl.DatumBack.datumBack | exact GlobalTheory.FinPl.DatumBack.datumBack | (intros; apply GlobalTheory.FinPl.DatumBack.datumBack <;> assumption)

@@ -1,0 +1,16 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSETopR
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSOpRGrpFinal
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSOpX
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSRhR
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDSRhvR
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.SpectralCompositionZero
+
+namespace Formalism.FourierDecayAlt.P.CutSE
+
+theorem spectral_operator_R : RDSOpR := rDSOpR_of_parts spectral_right_group_action spectral_operator_X spectral_right_rho_action spectral_composition_zero
+
+theorem spectral_operator_R_adjoint : RDSOpRv := rDSOpRv_of_parts spectral_adjoint_right_group spectral_operator_X spectral_adjoint_rho_action spectral_composition_zero
+
+theorem actual_compact_theorem : Formalism.FourierDecayAlt.P5.ThmPActualCpt := thmPActualCpt_of_R spectral_operator_R spectral_operator_R_adjoint
+
+end Formalism.FourierDecayAlt.P.CutSE

@@ -1,0 +1,9 @@
+import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.ConvergenceEntriesGeneralLinearHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.MinusculeCentralEigen
+import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.SatakeEigenvalues
+
+namespace PositivityTheory.jumpWindows
+
+theorem cuspidalMultiplicityOne : GlobalTheory.Published.CuspidalMultiplicityOne := cuspidal_multiplicity_one PositivityTheory.JacquetShalikaLocal.minuscule_eigenvalue PositivityTheory.JacquetShalikaLocal.satake_eigenvalue_formula
+
+end PositivityTheory.jumpWindows

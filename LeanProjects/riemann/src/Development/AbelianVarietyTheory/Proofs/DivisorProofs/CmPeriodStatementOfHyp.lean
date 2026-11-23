@@ -1,0 +1,86 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GaussManinPeriods
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PeriodComparison
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TateUnramifiedOfTorsionUnramified
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PartialZetaFunctionalEquation
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsEqOfNatCastMulMem
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeTateFunctionalEquationCM
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeFunctionalEquationAbs
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
+import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormDifferentEqProd
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFactorialInvLe
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialZetaDenominatorsCMFieldOfSiegelKlingenDelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeWeightTwoContinuationOfFunctionalEquationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricDenominatorOfZetaDenominatorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationDualStatementStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoissonStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationModuleStatementStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmLatticeDerivClassInvarianceOfHeckeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QexpansionOnAllComponentsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHeckeLBoundedInVerticalStripsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedTransportOfLatClaims
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertClassFieldLatticeTransportStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmPeriodConstantEqOfCardCmType
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordInEqOfJet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodExistenceCmStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeValueIntegralityRamifiedOfExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeValueIntegralityUnramifiedOfJetIntegralitStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatCastMemBelow
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareBottomHalfRankDiffLeHalfRank
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReflectionOfFunctionalEquationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetAnalyticOfPeriodsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetBaseChangeOfDeformationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReprAlgebraMap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinExpansionOfLipschitzHeckeZetaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsumNatCastEq
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDualIffLatM
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinRuleOfQExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicValNonneg
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetLiftOfDeformationDeRhamStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicModelOfDeRhamStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateModelOfDeRhamStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelOfAlgebraicModelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpowMemPow
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusFormStatementHoldsStatement
+
+namespace GlobalTheory.JoinFun
+
+theorem denominators_transport_reflection : GlobalTheory.Published.HilbertBlumenthal → GlobalTheory.Published.GrothendieckDeformation → GlobalTheory.Published.AbelianDeRham → GlobalTheory.Published.AbelianDualCrystal → GlobalTheory.Published.PeriodComparison → GlobalTheory.Published.GaussManinPeriods → GlobalTheory.Published.SerreTateGoodReductionSt → GlobalTheory.Published.EllipticMainTheoremCM → GlobalTheory.Published.HilbertClassFieldJ → GlobalTheory.Published.SiegelKlingenDeligneRibet → GlobalTheory.Published.PartialZetaFunctionalEquation → GlobalTheory.Published.HeckeTateFunctionalEquation → GlobalTheory.IndefiniteRowSideFullHecke.ClassZetaValuationBounds.ToricDenominator ∧ GlobalTheory.IndefiniteRowSideFullHecke.LatticeNormTransport.Transport ∧ GlobalTheory.ToricTransport.TwistedTransport ∧ GlobalTheory.IndefiniteRowSideFullHecke.ZetaValueIdeals.ZetaDenominators ∧ GlobalTheory.SqTop.Refl := by
+  intro hHB hGD hADR hADC hPC hGM hST hEM hHCF hSKDR hPZ hHT
+  have hDP : GlobalTheory.Published.DelignePappasModel := hHB.1
+  have hHQ : GlobalTheory.Published.HilbertQExpansion := hHB.2.1
+  have hQAll := GlobalTheory.T.qexpansion_on_all_components hDP hHQ
+  have hW2 := GlobalTheory.T.heckeWeightTwoContinuation_of_functionalEquation hPZ
+  have hLip := GlobalTheory.T.lipschitz_formula_totally_real_poisson
+  have hS44 := GlobalTheory.T.cmLattice_derivClassInvariance_of_hecke hW2
+  have hZD := GlobalTheory.T.partialZetaDenominatorsCMField_of_siegelKlingenDeligneRibet hSKDR
+  have hEisExp := GlobalTheory.T.hilbertEisensteinExpansion_of_lipschitz_hecke_zeta hLip hW2 hPZ
+  have hEisRule := GlobalTheory.T.eisenstein_rule_of_q_expansion hQAll hEisExp GlobalTheory.EisModular.eisMod GlobalTheory.PairFourier.eisFourier GlobalTheory.T.torus_form_statement_holds
+  have hJetAn := GlobalTheory.T.jet_analytic_of_periods hGM hPC hHB hGD hADR hADC hS44
+  have hJetBC := GlobalTheory.T.jet_base_change_of_deformation hGD hADR
+  have hJetLift := GlobalTheory.T.jet_lift_of_deformation_de_rham hGD hADR hADC
+  have hJetCore := GlobalTheory.LatJet.jetCore_of GlobalTheory.DivPowTrunc.jetRingEx hJetLift hJetBC hJetAn
+  have hMAlg := GlobalTheory.T.algebraic_model_of_de_rham hPC hADR hADC
+  have hMConj := GlobalTheory.T.conjugate_model_of_de_rham hPC hADR hADC
+  have hMInt := GlobalTheory.T.integral_model_of_algebraic_model hPC hST hADR hADC GlobalTheory.T.polarisation_module_statement GlobalTheory.T.polarisation_dual_statement hMAlg
+  have hJetInt := GlobalTheory.JetIntegral.jetInt hEisRule hJetCore hMInt
+  have hExp := GlobalTheory.JetExp.expansion_of_jetInt hJetInt
+  have hRam := GlobalTheory.T.latticeValueIntegrality_ramified_of_expansion hS44 hExp
+  have hUnr := GlobalTheory.T.latticeValueIntegrality_unramified_of_jetIntegrality hS44 hJetInt
+  have hLatAlg := GlobalTheory.LatAlgebraic.latAlg hZD hS44 hEisRule hJetCore hMAlg
+  have hLatConj := GlobalTheory.LatConjOne.latConj hZD hS44 hEisRule hJetCore hMAlg hMConj
+  have hField := GlobalTheory.SqTop.fieldDat
+  have hAbs := GlobalTheory.Published.HeckeTateFunctionalEquation.abs hHT
+  have hLNe := GlobalTheory.SqTop.lNe_of_functionalEquation hAbs GlobalTheory.T.completedHeckeL_bounded_in_vertical_strips hField
+  exact ⟨GlobalTheory.T.toric_denominator_of_zeta_denominators hZD hRam hUnr, GlobalTheory.T.hilbert_class_field_lattice_transport hHCF hLatAlg hLatConj,
+    GlobalTheory.TwistedTransportProof.main (GlobalTheory.T.period_existence_cm hEM) hLatAlg hLatConj, hZD, GlobalTheory.T.reflection_of_functional_equation hHT hField hLNe⟩
+
+end GlobalTheory.JoinFun

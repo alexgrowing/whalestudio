@@ -1,0 +1,22 @@
+import Development.EtaleCohomology.DivisorCycles.Imports
+import Development.EtaleCohomology.DivisorCycles.FinSpecLie
+import Development.EtaleCohomology.DivisorCycles.FinDegAll
+import Development.EtaleCohomology.DivisorCycles.FinStruct
+import Development.EtaleCohomology.DivisorCycles.FinKey
+import Development.EtaleCohomology.DivisorCycles.FinBigCorner
+import Development.EtaleCohomology.DivisorCycles.FinSemis
+import Development.EtaleCohomology.DivisorCycles.FinMatUnits
+import Development.EtaleCohomology.DivisorCycles.FinRep
+import Development.EtaleCohomology.DivisorCycles.FinDenseAlg
+import Development.EtaleCohomology.DivisorCycles.FinFinSub
+import Development.EtaleCohomology.DivisorCycles.FinFinDense
+import Development.EtaleCohomology.DivisorCycles.FinFinPoly
+import Development.EtaleCohomology.DivisorCycles.FinFinEmbed
+
+open Matrix PositivityTheory.AutomorphicGaloisHodgeTate.Div
+namespace LateralTheory.DivDb
+
+theorem goal_holds : DivWCoreLac :=
+  goal_of LateralTheory.Fin.SpecLie.intersectionNumber_baseChange LateralTheory.Fin.DegAll.intersectionNumber_baseChange LateralTheory.Fin.Struct.intersectionNumber_baseChange LateralTheory.Fin.Key.intersectionNumber_baseChange LateralTheory.Fin.BigCorner.intersectionNumber_baseChange LateralTheory.Fin.Semis.intersectionNumber_baseChange LateralTheory.Fin.MatrixUnits₂.intersectionNumber_baseChange LateralTheory.Fin.Rep.intersectionNumber_baseChange LateralTheory.Fin.DenseAlg.intersectionNumber_baseChange LateralTheory.Fin.FinSub.intersectionNumber_baseChange LateralTheory.Fin.FinDense.intersectionNumber_baseChange LateralTheory.Fin.FinPoly.intersectionNumber_baseChange LateralTheory.Fin.FinEmbed.intersectionNumber_baseChange
+
+end LateralTheory.DivDb

@@ -1,0 +1,118 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["93b2abc01b4810b6.olean"],
+  "m": false,
+  "i": "0e568983091dfbe6.ilean",
+  "c": "344dc3d769a116db.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:23:34: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:27:34: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:31:34: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:23:52: This simp argument is unused:\n  Finset.mem_coe\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.coe_filter, Set.mem_setOf_eq, Finset.mem_filter, Finset.mem_product,\n    Finset.mem_range] at hp ⊢\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:23:68: This simp argument is unused:\n  Finset.mem_filter\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.coe_filter, Set.mem_setOf_eq, Finset.mem_coe, Finset.mem_product, Finset.mem_range] at hp ⊢\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:27:52: This simp argument is unused:\n  Finset.mem_coe\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.coe_filter, Set.mem_setOf_eq, Finset.mem_filter, Finset.mem_product,\n    Finset.mem_range] at hp ⊢\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:27:68: This simp argument is unused:\n  Finset.mem_filter\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.coe_filter, Set.mem_setOf_eq, Finset.mem_coe, Finset.mem_product, Finset.mem_range] at hp ⊢\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:31:52: This simp argument is unused:\n  Finset.mem_coe\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.coe_filter, Set.mem_setOf_eq, Finset.mem_filter, Finset.mem_product, Finset.mem_range] at hp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:31:68: This simp argument is unused:\n  Finset.mem_filter\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.coe_filter, Set.mem_setOf_eq, Finset.mem_coe, Finset.mem_product, Finset.mem_range] at hp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:56:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:57:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:56:8: Unused tactic linter: `exact Finset.card_filter_add_card_filter_neg _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:57:8: Unused tactic linter: `(rw [← Finset.card_union_of_disjoint (Finset.disjoint_filter_filter_neg _ _ _),\n    Finset.filter_union_filter_neg_eq])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:96:13: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:96:36: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:101:13: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:101:36: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:101:53: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:107:13: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:107:36: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:107:53: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:112:13: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:112:36: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:121:27: This simp argument is unused:\n  mul_one\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Fin.prod_univ_add, Fin.append_left, Fin.append_right, castAdd_lt_castAdd_iff', castAdd_lt_natAdd',\n    not_natAdd_lt_castAdd', natAdd_lt_natAdd_iff', if_true, if_false, Finset.prod_const_one, one_mul, sub_neg_eq_add,\n    neg_sub_neg, neg_add_eq_sub, Finset.prod_mul_distrib]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:121:61: This simp argument is unused:\n  neg_sub_neg\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Fin.prod_univ_add, Fin.append_left, Fin.append_right, castAdd_lt_castAdd_iff', castAdd_lt_natAdd',\n    not_natAdd_lt_castAdd', natAdd_lt_natAdd_iff', if_true, if_false, Finset.prod_const_one, mul_one, one_mul,\n    sub_neg_eq_add, neg_add_eq_sub, Finset.prod_mul_distrib]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean:152:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LogVandermondeBounds.LogVandermondeVariationUnbounded transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.LogVandermondeBounds.LogVandermondeVariationUnbounded:importAllArts",
+       "2817a6a90705d4ff"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LogVandermondeBounds/LogVandermondeProofs/BlockDimensionIdentities.lean",
+   "6dada3ac93c6e65f"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LogVandermondeBounds.LogVandermondeProofs.BlockDimensionIdentities",
+   "dc74d5cfbde0da54"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "7068178708ea3a68"}

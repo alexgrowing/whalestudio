@@ -1,0 +1,20 @@
+import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.InfinitesimalCharacterPaths.HasCharPath
+import Mathlib
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.JacquetTensorDecomposition
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FamilyFiltration
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FamilyInduction
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.BaseFamilyAlt
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LabelTracking
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.JacquetDegree
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.JacquetInitial
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.JacquetLocallyFinite
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.JacquetTransport
+
+namespace CompanionTheory.RgExh.Dec.J
+
+theorem exhaustion_labels : CompanionTheory.RgExh.Dec.Labels := by
+  exact labels_of GlobalTheory.CompanionTheory.LocFinFilt.locFin GlobalTheory.CompanionTheory.TensStep.tensDecomp GlobalTheory.CompanionTheory.RgTransport.transport
+    GlobalTheory.CompanionTheory.CoefFilt.famFilt GlobalTheory.CompanionTheory.RgStepFam.stepFam GlobalTheory.CompanionTheory.BaseFamily.baseFam GlobalTheory.CompanionTheory.RgStartOne.start1
+    GlobalTheory.CompanionTheory.RgExhDec.DegreeP.degree GlobalTheory.CompanionTheory.GradEig.basis GlobalTheory.CompanionTheory.Labels.labelTrack
+
+end CompanionTheory.RgExh.Dec.J

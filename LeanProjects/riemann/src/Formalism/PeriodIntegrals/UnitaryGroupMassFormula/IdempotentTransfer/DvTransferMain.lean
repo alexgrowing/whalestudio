@@ -1,0 +1,16 @@
+import Mathlib
+import Formalism.PeriodIntegrals.DivisionRowsRationalLattice
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.TraceFormulaOfRankDegree
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.CharacteristicPolynomialCompatibility
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.NormAtAddLe
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.DegTop
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.RankIdentity
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.PerSLat
+
+namespace PI.Dv.Tr
+
+theorem degPart : DegPart := degPart_of splitBound perSBound
+
+theorem dvTransfer_main : PI.Dv.Conclusion4a := trace_formula_of_rank_degree rankPart degPart muPart
+
+end PI.Dv.Tr

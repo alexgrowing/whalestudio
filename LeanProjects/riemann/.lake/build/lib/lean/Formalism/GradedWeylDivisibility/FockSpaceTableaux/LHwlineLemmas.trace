@@ -1,0 +1,120 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["fa3f7a64cd00e0a4.olean"],
+  "m": false,
+  "i": "36de85d8836557d5.ilean",
+  "c": "79a4fe4e517c1c54.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:35:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:46:24: This simp argument is unused:\n  hp\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_mul, colAdd, aeval_X, lhwline_colOp]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:46:45: This simp argument is unused:\n  lhwline_colOp\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_mul, hp, colAdd, aeval_X]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:127:47: This simp argument is unused:\n  hpS\n\nHint: Omit it from the simp argument list.\n  [apply] simp [lhwline_mrow, lhwline_rowOp, hv]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:145:47: This simp argument is unused:\n  hqS\n\nHint: Omit it from the simp argument list.\n  [apply] simp [lhwline_mcol, lhwline_colOp, hv]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:198:25: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Fin.lt_def] at haj hak ⊢\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:201:64: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:205:15: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only at haj hak ⊢\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:207:60: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:216:60: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:238:25: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:238:41: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:239:22: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:267:12: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:276:10: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:250:17: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only at this\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:307:12: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:316:10: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:290:17: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only at this\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:296:45: This simp argument is unused:\n  Pi.add_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [RingHom.mapMatrix_apply, Matrix.map_apply, Matrix.of_apply, MvPolynomial.eval_X,\n    Matrix.updateCol_apply, lhwline_colOp, Pi.smul_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:296:59: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [RingHom.mapMatrix_apply, Matrix.map_apply, Matrix.of_apply, MvPolynomial.eval_X,\n    Matrix.updateCol_apply, lhwline_colOp, Pi.add_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:428:26: `Finsupp.coe_finset_sum` has been deprecated: Use `Finsupp.coe_finsetSum` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:431:52: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean:436:34: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GradedWeylDivisibility.StatementB transitive imports (legacy)",
+       "608ecceea0d53778"],
+      ["Formalism.GradedWeylDivisibility.StatementB:importAllArts",
+       "17f4daaade7fd6e0"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf transitive imports (legacy)",
+       "69ccb438e1378f7a"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf:importAllArts",
+       "af1f7f5c7f5722f3"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas transitive imports (legacy)",
+       "608ecceea0d53778"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas:importAllArts",
+       "470ba2da60ba1261"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GradedWeylDivisibility/FockSpaceTableaux/LHwlineLemmas.lean",
+   "d55afbc1dd0148ec"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwlineLemmas",
+   "f874608e8bdc8049"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "f0f5a0f328dbdfcf"}

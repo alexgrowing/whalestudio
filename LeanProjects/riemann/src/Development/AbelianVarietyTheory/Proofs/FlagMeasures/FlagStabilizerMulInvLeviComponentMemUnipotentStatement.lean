@@ -1,0 +1,7 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagStabilizerMulInvLeviComponentMemUnipotent
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SigmaFiniteOfRealSmul
+open MeasureTheory NumberField Matrix Finset Formalism.MainNotions.S GlobalTheory.Count GlobalTheory.FlagMeas GlobalTheory.FlagBase GlobalTheory.LeviIso
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.flagStabilizer_mul_inv_leviComponent_mem_unipotent : ∀ (n n₀ a : ℕ) (j : Fin a → ℕ) (ε : Fin n → Bool) (ε₀ : Fin n₀ → Bool) (B : ∀ i, Matrix (Fin n) (Fin (j i)) ℂ) (B₀ : Matrix (Fin n) (Fin n₀) ℂ), IsFrame ε ε₀ B B₀ → ∀ (W : Fin (a + 1) → Submodule ℂ (Fin n → ℂ)) (A : ∀ i, Matrix (Fin n) (Fin (j i)) ℂ) (A₀ : Matrix (Fin n) (Fin n₀) ℂ) (p : ∀ k i, Matrix (Fin (j k)) (Fin (j i)) ℂ) (d : ∀ k, Matrix (Fin (j k)) (Fin n₀) ℂ) (s h : Formalism.REAL.UJ ε₀) (y : ∀ i, Matrix (Fin (j i)) (Fin (j i)) ℂ) (g m : Formalism.REAL.UJ ε), SpansFlag A W → SpansFlag B W → (∀ k i, i < k → p k i = 0) → (∀ i, (p i i).det ≠ 0) → (∀ i, A i = ∑ k, B k * p k i) → A₀ = B₀ * uMat s + ∑ k, B k * d k → (∀ i, (y i).det ≠ 0) → (∀ i, uMat g * A i = A i * y i) → uMat g * A₀ = A₀ * uMat h → uMat m = lev ε B B₀ (fun i => p i i * y i * (p i i)⁻¹) (uMat (s * h * s⁻¹)) → g * m⁻¹ ∈ flagN ε W := by
+  first | exact @GlobalTheory.LeviUnip.mul_inv_mem_flagN | exact GlobalTheory.LeviUnip.mul_inv_mem_flagN | (intros; apply GlobalTheory.LeviUnip.mul_inv_mem_flagN <;> assumption)

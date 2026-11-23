@@ -1,0 +1,81 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["2d6eeff9fca2c98c.olean"],
+  "m": false,
+  "i": "3c0e41e5fee4e739.ilean",
+  "c": "9c9909b661b000f9.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:18:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.deg_bot`:\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:29:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.rkK_bot`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:32:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.eq_bot_of_rkK`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:39:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.finrank_pos'`:\n  [StarRing K]\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:60:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.orth_inner`:\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:150:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.blockInv`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:158:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.fcoord_pi`:\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:182:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.majAt_zero_left`:\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:186:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.majAt_zero_right`:\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:203:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.rkK_map`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean:215:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.OrthogonalSumAlt.muMax_mono`:\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.BranchSandwichDivisors.StatementL transitive imports (legacy)",
+       "b499f1a1ea86212e"],
+      ["Formalism.BranchSandwichDivisors.StatementL:importAllArts",
+       "0423444e2f815f65"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance transitive imports (legacy)",
+       "a0179aad2094a559"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance:importAllArts",
+       "c7eaa9e918a2599c"],
+      ["Formalism.BranchSandwichDivisors.BranchIsometryProofs.MapScale transitive imports (legacy)",
+       "503b6f2d20dc8595"],
+      ["Formalism.BranchSandwichDivisors.BranchIsometryProofs.MapScale:importAllArts",
+       "8b313cfa3e1f1f13"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/OrthSum.lean",
+   "9f85590b93e0daa9"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.BranchSandwichDivisors.BranchIsometryProofs.OrthSum",
+   "ddf63225f38ca4fd"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "f84dc88257c659c2"}

@@ -1,0 +1,31 @@
+import Mathlib
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.WickOperatorVanishing
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GEWick
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalSeriesSubstPointsStandardThree
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonGaugeOfSteps
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGaugeFirstLaw
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.GermEvGermEvThreePoints
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsActionGauge
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGaugeOfSymmetry
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.DerivationInnerOfSeparabilityElement
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalCompApplyEqMvPowerSeriesSubst
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.EqZeroOfAdditiveOfPderiv
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.GermEvRegaugedSecondLawFamily
+import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormallyUnramifiedOfIsReduced
+open MvPowerSeries ReciprocityTheory.ChartRestriction.G.Geo.Tor.Germ ReciprocityTheory.ChartRestriction.G.TB
+
+namespace GlobalTheory
+
+theorem canonGauge_of_log : LogSt → CanonGaugeSt := fun hlog =>
+  have hcob := FormalCocycle.exists_coboundary_of_symm_cocycle hlog ChartInv.exists_isInvPair
+  have huniq := AdditiveSeries.eq_zero_of_additive_of_pderiv
+  canonGauge_of_steps exists_formalBiext_map exists_regauge
+    (GaugeFirstLaw.exists_gauge_first_law hcob huniq)
+    (SecondLawGauge.exists_gauge_second_law hcob huniq)
+    (ActionGauge.exists_action_gauge
+      (derivation_inner_of_reduced_order SepIdem.exists_separability_element))
+    SymGauge.exists_gauge_of_symmetry
+
+end GlobalTheory

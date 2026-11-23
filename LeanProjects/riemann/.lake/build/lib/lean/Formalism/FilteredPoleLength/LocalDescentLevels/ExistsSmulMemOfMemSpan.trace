@@ -1,0 +1,176 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["4aa1e9b480af8cbc.olean"],
+  "m": false,
+  "i": "342a5556503e9614.ilean",
+  "c": "6bbffa9354af6752.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:86: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:146: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:199: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:260: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:313: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:437: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:519: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:599: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:677: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:751: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:821: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:887: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:949: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1007: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1061: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1111: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1157: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1199: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1239: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:49: Unused tactic linter: `apply Bl.SecondBlockLemmaP.goal1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:86: Unused tactic linter: `assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:101: Unused tactic linter: `intros` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:109: Unused tactic linter: `(apply Bl.SecondBlockLemmaP.goal1) <;> assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:161: Unused tactic linter: `apply @Bl.SecondBlockLemmaP.goal1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:199: Unused tactic linter: `assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:214: Unused tactic linter: `intros` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:222: Unused tactic linter: `(apply @Bl.SecondBlockLemmaP.goal1) <;> assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:275: Unused tactic linter: `apply @Bl.SecondBlockLemmaP.goal1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:313: Unused tactic linter: `first\n| assumption\n| infer_instance` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:437: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› M v` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:519: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› M` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:599: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:677: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:751: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:821: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:887: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:949: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1007: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1061: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1111: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1157: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K V` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1199: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean:16:1239: Unused tactic linter: `exact @Bl.SecondBlockLemmaP.goal1 O` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity transitive imports (legacy)",
+       "a2d360316fa34cf7"],
+      ["Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity:importAllArts",
+       "9b1338099cdfb84d"],
+      ["Formalism.LogFactorialIndices.LogProductFormula transitive imports (legacy)",
+       "31bafdb4ef830c84"],
+      ["Formalism.LogFactorialIndices.LogProductFormula:importAllArts",
+       "b6432d3b2b834f52"],
+      ["Lemmata.MiscLemmasO.Imports transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.MiscLemmasO.Imports:importAllArts", "fafb44fe553f2cea"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FilteredPoleLength/LocalDescentLevels/ExistsSmulMemOfMemSpan.lean",
+   "beef020ad7876be7"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FilteredPoleLength.LocalDescentLevels.ExistsSmulMemOfMemSpan",
+   "bcfb105580851b09"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "7e578c8d8290a326"}

@@ -1,0 +1,67 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["11aa9bcc58414390.olean"],
+  "m": false,
+  "i": "02f443314160be5c.ilean",
+  "c": "2c8235482e535eae.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:24:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CentralScalarSequence.ins_agree`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:50:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:61:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:63:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CentralScalarSequence.seq_d`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:65:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CentralScalarSequence.seq_e`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:68:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:70:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CentralScalarSequence.seq_f`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:72:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CentralScalarSequence.seq_g`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean:177:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CentralScalarSequence.prism_continuous`:\n  [Group G]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Group G] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.CyclotomicNorms.StatementA transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.CyclotomicNorms.StatementA:importAllArts",
+       "b7115f71f01d097b"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/CyclotomicNorms/NonsquarefreeBounds/Central.lean",
+   "2d4fbf55dc8552a3"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.CyclotomicNorms.NonsquarefreeBounds.Central",
+   "67f630a04357ef24"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "35459e41f49aecb6"}

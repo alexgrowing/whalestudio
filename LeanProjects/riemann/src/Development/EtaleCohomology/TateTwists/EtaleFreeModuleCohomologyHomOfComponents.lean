@@ -1,0 +1,7 @@
+import Development.EtaleCohomology.TateTwists.EtaleFreeSheafHomUniversalPropertyHolds
+
+namespace LateralTheory.Fin.EtaleFreeSheafUniversalProperty
+theorem etale_free_module_cohomology_hom_of_components : LateralTheory.EtaleFoundations.EtaleFreeSheafUniversalProperty := by
+  apply LateralTheory.EtaleFoundations.etale_free_sheaf_hom_universal_property_holds
+theorem intersectionNumber_baseChange : LateralTheory.EtaleFoundations.EtaleFreeSheafUniversalProperty := etale_free_module_cohomology_hom_of_components
+end LateralTheory.Fin.EtaleFreeSheafUniversalProperty

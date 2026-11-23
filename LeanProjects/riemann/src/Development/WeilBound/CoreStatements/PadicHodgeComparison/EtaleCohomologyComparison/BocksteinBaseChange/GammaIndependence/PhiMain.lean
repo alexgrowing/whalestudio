@@ -1,0 +1,11 @@
+import Mathlib
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.PeriodMapZEqCast
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.Imports
+
+set_option backward.isDefEq.respectTransparency false
+
+namespace CrystallineSemistableComparison
+
+theorem phi : FrobeniusComparison := phi_of inj
+
+end CrystallineSemistableComparison

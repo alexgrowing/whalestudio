@@ -1,0 +1,83 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a11bb3ff25f5879b.olean"],
+  "m": false,
+  "i": "687414f58724a54f.ilean",
+  "c": "e2e7e58ec7a29a11.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:106:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.pet_self`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:109:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.pet_add_left`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:110:22: This simp argument is unused:\n  inner_add_right\n\nHint: Omit it from the simp argument list.\n  [apply] simp [pet, map_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:112:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.pet_smul_left`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:113:25: This simp argument is unused:\n  inner_smul_right\n\nHint: Omit it from the simp argument list.\n  [apply] simp [pet, map_smulₛₗ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:115:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.pet_conj_symm`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:121:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.gramC_eq_transpose`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:137:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.mem_MK`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL WL] [Module (𝓞 LL) WL] [IsScalarTower (𝓞 LL) LL WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:139:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.MK_le_WK`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL WL] [Module (𝓞 LL) WL] [IsScalarTower (𝓞 LL) LL WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:141:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.mem_typeP`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:144:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.eOp_apply`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL) WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:148:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.Mj_le_Mall`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField LL] [IsScalarTower Ks LL WL] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:151:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.Mj_sub_Wgood`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField LL] [IsScalarTower Ks LL WL] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:155:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.mem_Mcoord`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField LL] [IsScalarTower Ks LL WL] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean:159:0: automatically included section variable(s) unused in theorem `Formalism.IndefR.Arith.FormsL.gramV_pos`:\n  [NumberField LL]\n  [IsScalarTower Ks LL WL]\n  [Module (𝓞 LL) WL]\n  [IsScalarTower (𝓞 LL) LL WL]\n  [Module (𝓞 Ks) WL]\n  [IsScalarTower (𝓞 Ks) Ks WL]\n  [Fintype G0]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  LL] [IsScalarTower Ks LL\n  WL] [Module (𝓞 LL)\n  WL] [IsScalarTower (𝓞 LL) LL WL] [Module (𝓞 Ks) WL] [IsScalarTower (𝓞 Ks) Ks WL] [Fintype G0] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/IndefiniteReal/GramCEqTranspose.lean",
+   "535083c80623974d"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose",
+   "b67f01eba550947a"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "708e3357283b7650"}

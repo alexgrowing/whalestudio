@@ -1,0 +1,97 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["556244f8f9ea202a.olean"],
+  "m": false,
+  "i": "1c1c2762c03a4f2e.ilean",
+  "c": "672a4f60cd6ec288.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:41:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDual_herm`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:45:77: This simp argument is unused:\n  map_smul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_sum, map_smulₛₗ, LinearMap.sum_apply, LinearMap.smul_apply, smul_eq_mul, map_mul,\n    starRingEnd_apply, hst, RingHom.id_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:67:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDual_jW_apply`:\n  [NumberField K]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:71:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDual_sgn`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:118:76: This simp argument is unused:\n  eq_self_iff_true\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [PiLp.inner_apply, RCLike.inner_apply, conj_trivial, Fintype.sum_prod_type, Fin.sum_univ_two,\n    majDual_jW_apply, majDual_realize_apply, Fin.isValue, if_true, one_ne_zero, if_false, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:119:4: This simp argument is unused:\n  if_true\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [PiLp.inner_apply, RCLike.inner_apply, conj_trivial, Fintype.sum_prod_type, Fin.sum_univ_two,\n    majDual_jW_apply, majDual_realize_apply, Fin.isValue, eq_self_iff_true, one_ne_zero, if_false, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:119:26: This simp argument is unused:\n  if_false\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [PiLp.inner_apply, RCLike.inner_apply, conj_trivial, Fintype.sum_prod_type, Fin.sum_univ_two,\n    majDual_jW_apply, majDual_realize_apply, Fin.isValue, eq_self_iff_true, if_true, one_ne_zero, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:129:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDual_star_int`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:134:36: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:156:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDual_memI`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:212:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:202:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:202:6: Unused tactic linter: `exact FractionalIdeal.dual_ne_zero h10` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:304:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDualJ_apply`:\n  [NumberField K]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:317:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.majDual_zdual`:\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:339:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean:364:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.HermitianLattices.StatementMaj transitive imports (legacy)",
+       "eef7bb56945c2abe"],
+      ["Formalism.HermitianLattices.StatementMaj:importAllArts",
+       "5c9a32117c157378"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.MajLattice transitive imports (legacy)",
+       "c39cea031377bb76"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.MajLattice:importAllArts",
+       "0d14a7dc67d0d06f"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/MajDual.lean",
+   "822798b08fa33ea3"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HermitianLattices.HermitianLatticesProofs.MajDual",
+   "2cb5b9d9eb820ff2"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "3594f0e5e747516b"}

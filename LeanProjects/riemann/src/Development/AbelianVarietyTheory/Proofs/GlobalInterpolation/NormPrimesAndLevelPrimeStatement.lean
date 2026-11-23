@@ -1,0 +1,24 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormPrimesAndLevelPrime
+import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplZeta
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplChi
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LogDerOne
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ZeroCount
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Jutila
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.PageThm
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.IsExcRat
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.QuadraticHeckeZeroEstimates
+import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
+import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.Inhab Formalism.L2.GlobalTheoryTheory GlobalTheory.EX NumberField
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.norm_primes_and_level_prime : GlobalTheory.Mem.An.QuadraticHeckeZeroEstimates → NormPrimes ∧ LevelPrime := by
+  first | exact @GlobalTheory.EX.normPrimes_and_levelPrime | exact GlobalTheory.EX.normPrimes_and_levelPrime | (intros; apply GlobalTheory.EX.normPrimes_and_levelPrime <;> assumption)

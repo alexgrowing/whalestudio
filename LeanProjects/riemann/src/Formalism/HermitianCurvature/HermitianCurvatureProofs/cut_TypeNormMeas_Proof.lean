@@ -1,0 +1,10 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutTypeNormMeasMain
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.cut_TypeNormMeas_TC
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutTypeNormMeasHM
+
+namespace Formalism.FourierDecayAlt.P.CutBP
+
+theorem type_norm_measurability_holds : TDM.TypeNormMeas :=
+  TNM.typeNormMeas_of_typeComm_houseMeas TNM.type_commutation_holds TNM.HM.householder_measurability_holds
+
+end Formalism.FourierDecayAlt.P.CutBP

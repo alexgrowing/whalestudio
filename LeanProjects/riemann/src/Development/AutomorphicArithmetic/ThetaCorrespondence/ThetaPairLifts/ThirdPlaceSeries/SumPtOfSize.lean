@@ -1,0 +1,16 @@
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPointOfSize
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LiftLambdaBound
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RefTheta
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SumPtOfSizesStatement
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.WtPtOfSizeStatement
+import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.NumPtOfSizeStatement
+
+set_option synthInstance.maxHeartbeats 200000
+
+section
+open GlobalTheory.RefSum GlobalTheory.CovTop GlobalTheory.BigTop
+namespace GlobalTheory.RefSum
+theorem sumPt_of_size_alt : _root_.GlobalTheory.CovTop.SizeCondition → _root_.GlobalTheory.RefSum.SumPtAlt := fun h => _root_.GlobalTheory.T.sum_pt_of_wt_pt_num_pt (_root_.GlobalTheory.T.weight_pt_of_size h) (_root_.GlobalTheory.T.numerical_point_statement_of_size h)
+end GlobalTheory.RefSum
+end

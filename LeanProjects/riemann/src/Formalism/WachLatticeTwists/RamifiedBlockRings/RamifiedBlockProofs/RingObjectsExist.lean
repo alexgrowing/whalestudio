@@ -1,0 +1,12 @@
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.RingObjectsOfMatrixData
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.IdemFactor
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.SplitPts
+import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.IdemKO
+import Formalism.WachLatticeTwists.RamifiedBlockRings.LocalToDisplayFree
+import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.TheoremNFiveTopHolds
+
+namespace Formalism.RepresentationBoundsCohomology.ringDataObjects
+
+theorem ring_objects_exist : RingObjectsExist := ring_objects_of_matrix_data eMat splitPts idemKO
+
+end Formalism.RepresentationBoundsCohomology.ringDataObjects

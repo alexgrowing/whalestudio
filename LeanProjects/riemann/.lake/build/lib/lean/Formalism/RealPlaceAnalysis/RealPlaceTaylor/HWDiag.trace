@@ -1,0 +1,112 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["7e8fa387e4ded38b.olean"],
+  "m": false,
+  "i": "8a7e39f727fb9d06.ilean",
+  "c": "ddc5684e55ae50b0.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:11:16: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:11:16: Unused tactic linter: `simp [epow]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:15:16: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:15:16: Unused tactic linter: `simp [epow]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:48:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:55:32: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:55:32: Unused tactic linter: `(split_ifs <;> simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:72:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:73:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:72:4: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:73:4: Unused tactic linter: `(classical\n    induction s using Finset.induction_on with\n  | empty => simp\n  | insert x s hx ih => rw [Finset.sum_insert hx, Finset.sum_insert hx, LinearMap.add_apply, ih])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:104:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:104:4: Unused tactic linter: `(\n  have hmap : (univ.filter fun b : Fin n => a < b).map Fin.valEmbedding = Finset.Ico ((a : ℕ) + 1) n :=\n    by\n    ext x\n    simp only [Finset.mem_map, Finset.mem_filter, Finset.mem_univ, true_and, Fin.valEmbedding_apply, Finset.mem_Ico]\n    constructor\n    · rintro ⟨b, hb, rfl⟩\n      exact ⟨Nat.succ_le_of_lt hb, b.isLt⟩\n    · rintro ⟨h1, h2⟩\n      exact ⟨⟨x, h2⟩, Fin.lt_def.mpr (by simpa using h1), rfl⟩\n  rw [← Finset.card_map Fin.valEmbedding, hmap, Nat.card_Ico]\n  omega)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:124:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:124:6: Unused tactic linter: `(\n  have h' := congrArg (Nat.cast : ℕ → ℂ) hN\n  push_cast at h'\n  exact h')` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:156:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:157:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:156:6: Unused tactic linter: `exact nsmul_eq_smul_cast ℂ _ _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:157:6: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:174:9: `Matrix.charpoly_of_upperTriangular` has been deprecated: Use `Matrix.charpoly_of_isUpperTriangular` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:176:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:176:4: Unused tactic linter: `(\n  rw [Matrix.charpoly, Matrix.det_of_upperTriangular]\n  · refine Finset.prod_congr rfl fun s _ => ?_\n    simp [Matrix.charmatrix_apply_eq, Amat]\n  · intro i j hij\n    have h : j < i := hij\n    first\n    | simp [Matrix.charmatrix_apply_ne _ _ _ h.ne', Amat, h.ne', not_lt.mpr h.le]\n    | simp [Matrix.charmatrix_apply, Amat, h.ne', not_lt.mpr h.le])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:210:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean:210:6: Unused tactic linter: `(rw [h V n E ν v hE hv k b, hM]; simp only [sum_Amat_smul_eq_smul_sub_sum_gt])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.RealPlaceAnalysis.StatementB transitive imports (legacy)",
+       "f96666a679e89cf2"],
+      ["Formalism.RealPlaceAnalysis.StatementB:importAllArts",
+       "302fc50e8b869fd4"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/RealPlaceAnalysis/RealPlaceTaylor/HWDiag.lean",
+   "f410904d49c87f42"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.RealPlaceAnalysis.RealPlaceTaylor.HWDiag",
+   "df09487d4e0b8e60"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a8c1d796b465a25c"}

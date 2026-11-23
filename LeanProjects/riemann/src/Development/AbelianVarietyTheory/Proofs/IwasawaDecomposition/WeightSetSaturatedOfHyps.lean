@@ -1,0 +1,29 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MultW
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnlocalizedSaturatedState
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.IsPrincipalMapOfAlgHom
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+import Development.AbelianVarietyTheory.PublishedTheorems.WeberRayClassFields.WeberRayFieldSt
+import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionMv
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotGeoClFalse
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.UpLReStage
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDataExtendLargerFieldsOfPublishedStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StartStateUntwistedEmptyLocalStatement
+
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.Inhab Formalism.L2.Host GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Col2 GlobalTheory.Mem.Top GlobalTheory.Mem.Top.GroupRetwisting GlobalTheory.Mem.Top.Bl NumberField IsDedekindDomain
+attribute [local instance] Formalism.BasicNotions.Host.cmStar
+open GlobalTheory.HeightCounting.Up GlobalTheory.Mem.SRe GlobalTheory.Mem.R3.Rw
+
+noncomputable section
+
+namespace GlobalTheory.HeightCounting.Up
+
+theorem w1Sat_of_hyps : HypA → HypH → ExistsUnlocalizedSaturatedState := fun hA hH =>
+  GlobalTheory.T.start_state_untwisted_empty_local hA hH (GlobalTheory.T.adelicData_extend_largerFields_of_hypotheses hH.cover hA.a5 hA.a6 hA.a7 hA.a8 hA.a9 hA.a10)
+
+end GlobalTheory.HeightCounting.Up
+
+end

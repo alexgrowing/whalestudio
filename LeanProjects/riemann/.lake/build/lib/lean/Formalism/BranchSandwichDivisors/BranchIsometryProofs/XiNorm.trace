@@ -1,0 +1,195 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["0282270aabf2d9d4.olean"],
+  "m": false,
+  "i": "bd6a77812f801aff.ilean",
+  "c": "abdc360dcb6630b7.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:27:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:28:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:27:4: Unused tactic linter: `exact Subalgebra.intCast_mem _ _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:28:4: Unused tactic linter: `(rw [← map_intCast (algebraMap ℂ (MvPolynomial σ ℂ))];\n  exact Subalgebra.algebraMap_mem _ _)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:35:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:35:4: Unused tactic linter: `exact MvPolynomial.pderiv_eq_zero_of_not_mem_vars fun hv' => hv (hf hv')` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:40:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:50:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.xn_lap`:\n  [Fintype κ]\n  [DecidableEq κ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype κ] [DecidableEq κ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:60:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.xn_cof_last`:\n  [Fintype κ]\n  [DecidableEq κ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype κ] [DecidableEq κ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:70:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.xn_cof_supported`:\n  [Fintype κ]\n  [DecidableEq κ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype κ] [DecidableEq κ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:77:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:77:4: Unused tactic linter: `exact MvPolynomial.X_mem_supported.mpr ⟨i, rfl⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:102:12: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Fin.ext_iff, hjv]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:123:17: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:184:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.xn_minor_sum`:\n  [Fintype κ]\n  [DecidableEq κ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype κ] [DecidableEq κ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:192:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.xn_minor_perm`:\n  [Fintype κ]\n  [DecidableEq κ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype κ] [DecidableEq κ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:197:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:197:4: Unused tactic linter: `(\n  rw [map_intCast]\n  exact\n    Matrix.det_permute π\n      (Matrix.of fun x y : Fin p => (X ((ι ∘ a) x, Fin.castLE hp y) : MvPolynomial (Fin r × Fin n) ℂ)))` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:222:80: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Ne.symm hkv, hkm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:229:10: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Ne.symm hkv]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:420:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:420:6: Unused tactic linter: `(\n  rw [Complex.star_def, Complex.mul_conj, ← Complex.ofReal_natCast, ← Complex.ofReal_mul, Complex.ofReal_re]\n  exact mul_nonneg (Complex.normSq_nonneg _) hN)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:434:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:434:4: Unused tactic linter: `rw [Finsupp.support_smul_eq hc]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:453:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:454:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:453:4: Unused tactic linter: `(simp [Complex.mul_re])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:454:4: Unused tactic linter: `(simp [Complex.mul_re]; ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:543:13: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:564:55: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Derivation.leibniz, MvPolynomial.pderiv_X, hεX]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:565:35: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [MvPolynomial.pderiv_X]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:622:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:632:59: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:720:18: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:760:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:810:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:810:6: Unused tactic linter: `exact\n  MvPolynomial.X_mem_supported.mpr (show (Fin.castLE hkr i).val < k from i.isLt)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:860:32: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Fin.val_last] at h'\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:862:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:862:6: Unused tactic linter: `omega` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:868:19: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:921:8: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_insert, Fin.ext_iff]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean:928:34: This simp argument is unused:\n  Fin.val_mk\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [xnLam, nuNext]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.BranchSandwichDivisors.StatementW transitive imports (legacy)",
+       "1be57ef07b8e8f6b"],
+      ["Formalism.BranchSandwichDivisors.StatementW:importAllArts",
+       "2f3129684b6b904f"],
+      ["Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle transitive imports (legacy)",
+       "c0862cf9994dfacd"],
+      ["Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle:importAllArts",
+       "177d270e2bd9e069"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas transitive imports (legacy)",
+       "4b786a07bf3adb69"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas:importAllArts",
+       "b7f6bb16726d664a"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockbLemmas transitive imports (legacy)",
+       "4b786a07bf3adb69"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockbLemmas:importAllArts",
+       "bb3b4721bfd3c323"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetMinor transitive imports (legacy)",
+       "c053a9dfbf3ee0cb"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetMinor:importAllArts",
+       "dd49f76462d001ff"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas transitive imports (legacy)",
+       "608ecceea0d53778"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas:importAllArts",
+       "db54ff42be92fde8"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylNonDom transitive imports (legacy)",
+       "0018e0bcb4da2795"],
+      ["Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylNonDom:importAllArts",
+       "86ae015d85b48e52"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/XiNorm.lean",
+   "43ef23c5f2aa1755"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.BranchSandwichDivisors.BranchIsometryProofs.XiNorm",
+   "27fa187a87ca67e9"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "7210825e4db81c5a"}

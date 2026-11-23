@@ -1,0 +1,8 @@
+import Development.WeilBound.CoreStatements.BranchingTraces.BranchingComatrices.OneLeDiff
+import Development.WeilBound.CoreStatements.OrbitDecayEstimates.CurveDerivativeDecay.KFiniteWordBoundIndefUnitary
+
+namespace PositivityTheory.UnitaryDecomposition.Com
+
+theorem comatrix_word_bound : Comat := comat_of CompanionTheory.Lime.T3.kFiniteWordBound_indefUnitary
+
+end PositivityTheory.UnitaryDecomposition.Com

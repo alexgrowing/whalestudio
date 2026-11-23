@@ -1,0 +1,69 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["71fc096b59542077.olean"],
+  "m": false,
+  "i": "2847433c5eb641c4.ilean",
+  "c": "3c142051f7759a42.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:231:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.finrank_ker_dual_composition`:\n  [Fintype F]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype F] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:295:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.sum_char_linear_functional`:\n  [Fintype F]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype F] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:411:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.pair_smul_left_hook_formula_torsion`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:414:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.pair_smul_right'`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:418:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.pair_add_left'`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:421:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.pairing_sub_right`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:424:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.pair_zero_right'`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:427:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.pairing_single_left`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean:437:8: automatically included section variable(s) unused in theorem `_private.Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional.0.Formalism.HermitianLattices.LocalLatticeBases.unit_smul_equiv_apply`:\n  [Fintype k]\n  [DecidableEq k]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype k] [DecidableEq k] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.GL3MeanSquares.FourierTransformKernelSurjective transitive imports (legacy)",
+       "aff5c91d39d60592"],
+      ["Formalism.GL3MeanSquares.FourierTransformKernelSurjective:importAllArts",
+       "e956ae14f439c542"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GL3MeanSquares/HookFormulaTorsion/ConditionIffDualEqFunctional.lean",
+   "3e65ec0a7d6f96f4"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GL3MeanSquares.HookFormulaTorsion.ConditionIffDualEqFunctional",
+   "9e75e873cbd97623"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "46bf8098046da63b"}

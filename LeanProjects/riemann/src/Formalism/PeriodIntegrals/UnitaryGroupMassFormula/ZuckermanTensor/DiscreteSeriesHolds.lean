@@ -1,0 +1,19 @@
+import Mathlib
+import Formalism.PeriodIntegrals.ZuckTensor
+import Formalism.PeriodIntegrals.DSExist
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.ZuckDualOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.DualDefs
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.DualChoice
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.DualTop
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.RevNum
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.ConjRep
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.SquareIntegrableConj
+
+namespace PI.ZuckTensorWork
+open PI.ZuckTensor
+
+theorem discrete_series_holds : DSConj :=
+  dsConj_of unitary_representation_holds irreducible_conjecture_holds square_integrable_conj (kTypeConj_of compact_dominant_holds) (kTypeConjInv_of compact_dominant_holds)
+    lowest_k_type_holds vector_norm_holds
+
+end PI.ZuckTensorWork

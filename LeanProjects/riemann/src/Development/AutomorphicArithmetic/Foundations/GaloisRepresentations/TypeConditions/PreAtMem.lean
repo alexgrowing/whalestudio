@@ -1,0 +1,54 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ResidualIrreducibilityFormsEquivalent
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HtCard
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroWild
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroSupport
+import ReciprocityTheory.Hypotheses.GalCoh
+import Formalism.SharpRestriction.LevelLetterCocycles.ResidualIrreducibleOfTheoremThreePrime
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCanonicalModuleSuccessor
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PartsGiveDimensionStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsBisTer
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowsOfInputsAndJumpsStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ResidualRankPartExistsOfJointConditionStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightParameterStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrredOfCharpolyEq
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReducedFormOfLocalInputsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TotallyComplexHostE
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsBisSide
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DepthZeroOfPrintsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfOverTwo
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HypothesesX
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodReductionCondition
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionMv
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MultW
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InputsJumpsAtMem
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BuiltLaws
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TriplesGood
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SameTwistAt
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodFiniteTypesAllStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FactsAtMembership
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.HeckeGaloisCriteria.RhoBar
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.L2 Formalism.L2.Host NumberField IsDedekindDomain ReciprocityTheory.Gal GlobalTheory.HeightCounting GlobalTheory.HeightCounting.Up GlobalTheory.NPin GlobalTheory.NFacts
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N NumberField ReciprocityTheory.Gal GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.HeightCounting GlobalTheory.HeightCounting.Up GlobalTheory.Fc GlobalTheory.NFacts
+
+noncomputable section
+
+namespace UpperTheory.GalS
+
+structure Core0 (D : D7) : Prop where
+  what₂ : GlobalTheory.NRows.Rows D
+  adm : SumRepresentations.admitted D
+  Conclusion1 : SumRepresentations.Conclusion1 D
+  z : SumRepresentations.ConclusionZ D
+  rhoBar : ResidualIrreducibleRankR D
+  g3p : AdmissibleThreePrime.LabelDegreeHypotheses D
+  weight : GlobalTheory.IndefiniteRowSideFullHecke.JumpDictionary.WeightParam D
+  block : GlobalTheory.IndefiniteRowSideFullHecke.JumpDictionary.BlockCharParam D
+  muUnr : GlobalTheory.HubX.MuUnr D
+  depthG : GlobalTheory.HubX.DepthZeroG D
+  bc : SphericalInertData.Conclusion1 D
+  lam : GlobalTheory.NRows.LamUsed D
+
+end UpperTheory.GalS

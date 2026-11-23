@@ -1,0 +1,19 @@
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreDescOf
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.AbsLast
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PullBack
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.UnitTrace
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.OneTerm
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SideSum
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PickS
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PickInf
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.TyEx
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.FdFixed
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.GoodEx
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
+import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OccursBasics
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic
+
+open UpperTheory.ConvolutionTheory UpperTheory.ConvolutionTheory.T in
+theorem UpperTheory.ConvolutionTheory.T.coreDesc :
+    UpperTheory.ConvolutionTheory.CI → UpperTheory.ConvolutionTheory.GM.GM → UpperTheory.ConvolutionTheory.T.CoreDesc :=
+  coreDesc_of absLast pullBack unitTrace oneTerm sideSum pickS pickInf tyEx termE goodEx places C.occursBasics L1.eigBasic

@@ -1,0 +1,10 @@
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.GLMatrixDerivatives.ChainOfFinal
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthFunctionFactsHoldStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeneralLinearGroupUnimodularStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightDerivativeCalculusHoldsStatement
+
+namespace PositivityTheory.RgBcC.LfSt
+
+theorem chainOf'_holds : PositivityTheory.RgBcC.ChainOf' := ChainPf.chain_identity_multiplier_kernels GlobalTheory.T.general_linear_group_unimodular GlobalTheory.T.right_derivative_calculus_holds GlobalTheory.T.length_function_facts_hold
+
+end PositivityTheory.RgBcC.LfSt

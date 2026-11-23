@@ -1,0 +1,26 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IrreducibleUnitaryAdmissible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.KFiniteCoefficientsAnalytic
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CharacterRegularityFiniteLength
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacterSUTrivialTwo
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeylIntegrationSum
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.InducedCharacterVanishing
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.InducedAdmissibleFiniteLength
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesSUIff
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InducedCharacterSupportOfVanishing
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSeriesClassification
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesCharacterOfParameter
+
+namespace GlobalTheory.HarishChandraCharacterSU
+
+theorem harishChandraCharacters_SU_of_hypotheses :
+    GlobalTheory.Published.IrreducibleUnitaryAdmissible → GlobalTheory.Published.KFiniteCoefficientsAnalytic →
+    GlobalTheory.Published.DiscreteSeriesSU → GlobalTheory.Published.CharacterRegularityFiniteLength →
+    GlobalTheory.Published.DiscreteSeriesCharacterSU → GlobalTheory.Published.WeylIntegrationSum →
+    GlobalTheory.Published.InducedCharacterVanishing → GlobalTheory.Published.InducedAdmissibleFiniteLength →
+    GlobalTheory.Published.HarishChandraCharacters :=
+  fun h1 h2 h3 h4 h5 h6 h7 h8 =>
+    GlobalTheory.HCChar.harishChandraCharacters_of_clauses h1 h2 (GlobalTheory.DSSU.FromSU.discreteSeriesClassification_of_SU h3) h4 (GlobalTheory.DSUFromSU.discreteSeriesCharacterOfParameter h5) h6 h7 h8
+
+end GlobalTheory.HarishChandraCharacterSU

@@ -1,0 +1,20 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPol
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CoefficientFieldIntegersDedekindFractionField
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMapHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialStableOfMapStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialTransitionOfMapStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialSupportHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialArcHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HorizontalHoldsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialDescentOfMapStatement
+
+open GlobalTheory.ShFam GlobalTheory.TorRef
+
+namespace GlobalTheory.TorRef
+
+theorem sysEx_of_polEx : PolExSt → SysExSt :=
+  sysEx_of_pol (fun E _ _ _ H l c => (GlobalTheory.CoeffRings.coeff_isDedFrac E H l c).1) (GlobalTheory.T.polynomial_stable_of_map GlobalTheory.T.polynomial_map_holds)
+    (GlobalTheory.T.polynomial_transition_of_map GlobalTheory.T.polynomial_map_holds) GlobalTheory.T.polynomial_support_holds GlobalTheory.T.polynomial_arc_holds GlobalTheory.T.horizontal_holds (GlobalTheory.T.polynomial_descent_of_map GlobalTheory.T.polynomial_map_holds)
+
+end GlobalTheory.TorRef

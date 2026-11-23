@@ -1,0 +1,15 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.BesselIntegrals.ExistsLinearIndependentNormLe
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.SummableLatticeExpNegPiMulNormSqDiv
+import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.HarishChandraModulesIndefiniteUnitaryGroup
+import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.GreenCuspLabels.GreenCuspidal
+
+namespace PositivityTheory.Stage1.PM
+
+theorem harishChandraModules : GlobalTheory.Published.HarishChandraModules :=
+  CompanionTheory.D.gk.HC.print_harishChandraModules
+
+theorem greenCuspidal : GlobalTheory.Published.GreenCuspidal :=
+  PositivityTheory.GreenCharacters.greenCuspidal
+
+end PositivityTheory.Stage1.PM

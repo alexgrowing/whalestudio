@@ -1,0 +1,49 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["81b591ea5cc0a1a5.olean"],
+  "m": false,
+  "i": "23bf34326df74d4a.ilean",
+  "c": "12421a61bffae052.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Lemmata/SecondBlockLemmaA/Imports.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Lemmata/SecondBlockLemmaA/Imports.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Lemmata/SecondBlockLemmaA/Imports.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Lemmata/SecondBlockLemmaA/Imports.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Lemmata/SecondBlockLemmaA/Imports.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Lemmata/SecondBlockLemmaA/Imports.lean:8:20: Variable name `inst` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _inst\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Lemmata/SecondBlockLemmaA/Imports.lean:8:46: Variable name `inst_1` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _inst_1\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Lemmata/SecondBlockLemmaA/Imports.lean:8:74: Variable name `inst_2` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _inst_2\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Lemmata/SecondBlockLemmaA/Imports.lean:7:8: Overlapping instance parameters in `goal1`:\n\n⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.\n💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.\n\nNote: This linter can be disabled with `set_option linter.overlappingInstances false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Lemmata:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Lemmata/SecondBlockLemmaA/Imports.lean",
+   "3d883f72ba22199e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Lemmata.SecondBlockLemmaA.Imports", "172db23322b697f8"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "68702bdc69ae6fa5"}

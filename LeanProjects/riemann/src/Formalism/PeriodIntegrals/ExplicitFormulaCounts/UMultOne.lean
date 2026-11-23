@@ -1,0 +1,12 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitarySecondCountable.Assembly
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGelfandAverage.GelfCptOf
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GelfSpan
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GelfConv
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UConjT
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CommMult
+
+theorem gelfCpt_closed : PI.UMultOne.GelfandCompact :=
+  PI.UnitaryGroupMassFormula.GelfCpt.gelfCpt_of gelfand_integral_span gelfand_convolution_comm
+
+theorem uMultOne_closed : PI.UMultOne.MultOne :=
+  PI.UMultOne.UnitaryGroupMassFormula.uMultOne_of unitary_conj_transpose gelfCpt_closed commutant_multiplicity_one

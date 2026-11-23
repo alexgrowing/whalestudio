@@ -1,0 +1,162 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["e10a36d6bd89633b.olean"],
+  "m": false,
+  "i": "584b6574e97c19f1.ilean",
+  "c": "9a50a05bad449b28.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:108: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:172: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:229: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:294: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:376: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:451: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:522: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:590: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:655: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:718: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:779: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:838: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:894: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:948: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:1000: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:1050: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:1096: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:108: Unused tactic linter: `(intros; apply Bl.ProductIntegralBounds.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:172: Unused tactic linter: `(apply @Bl.ProductIntegralBounds.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:229: Unused tactic linter: `(intros; apply @Bl.ProductIntegralBounds.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:294: Unused tactic linter: `(apply @Bl.ProductIntegralBounds.goal1 <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:376: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC X Y s hX hY hXY` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:451: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC X Y s hX hY` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:522: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC X Y s hX` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:590: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC X Y s` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:655: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC X Y` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:718: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC X` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:779: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C hC` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:838: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι C` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:894: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ ι` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:948: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_› τ` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:1000: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:1050: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean:58:1096: Unused tactic linter: `exact @Bl.ProductIntegralBounds.goal1 K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector transitive imports (legacy)",
+       "f89f0f8de3e7f9c1"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector:importAllArts",
+       "2f4bbc8cc8780b2f"],
+      ["Formalism.TorsionNormIteration.InverseIntegralClasses.SigmaNormLeOne transitive imports (legacy)",
+       "653a99435f438a37"],
+      ["Formalism.TorsionNormIteration.InverseIntegralClasses.SigmaNormLeOne:importAllArts",
+       "f3a032fe2fe793e9"],
+      ["Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe transitive imports (legacy)",
+       "653a99435f438a37"],
+      ["Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe:importAllArts",
+       "c5e1b763420419b0"],
+      ["Formalism.TorsionNormIteration.InverseIntegralClasses.NormSigmaLeOne transitive imports (legacy)",
+       "653a99435f438a37"],
+      ["Formalism.TorsionNormIteration.InverseIntegralClasses.NormSigmaLeOne:importAllArts",
+       "e59a36470989bcdd"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffV transitive imports (legacy)",
+       "f89f0f8de3e7f9c1"],
+      ["Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffV:importAllArts",
+       "5052238a489a378a"],
+      ["Lemmata.MultivariateIntegrals.IntegralMv transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.MultivariateIntegrals.IntegralMv:importAllArts",
+       "4a026134c08ada3f"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FormalGroupWitt/FormalGroupWittProofs/FunctionalEquationSubstVector.lean",
+   "44cd87c4c271463e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FormalGroupWitt.FormalGroupWittProofs.FunctionalEquationSubstVector",
+   "2d96b83c72b91f7d"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "01ba5e6140d373c2"}

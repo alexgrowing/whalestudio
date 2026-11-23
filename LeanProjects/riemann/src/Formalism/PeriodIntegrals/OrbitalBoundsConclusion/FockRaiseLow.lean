@@ -1,0 +1,14 @@
+import Mathlib
+import Formalism.PeriodIntegrals.JointBlockShapes.MinusPart
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockRaisingLowering.GradedOscillatorPropertyOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockRaisingLowering.KroneckerMapOneRightNeZero
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockRaisingLowering.BlockDiagonalPreservesDegree
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockRaisingLowering.FockInnerEqSumRight
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockRaisingLowering.RaisingLoweringSplit
+
+theorem gradedOscillatorProperty : FockH1Action.H1 :=
+  FockRL.gradedOscillatorProperty_of FockRL.blockDiagonalPreservesDegree
+    (FockRL.pcStep_of FockRaiseLowGrade.raisingLoweringSplit)
+    (FockRL.adjStep_of FockRaiseLowGrade.raisingLoweringSplit FockRaiseLowInner.fischerConjLinearLeft
+      FockRaiseLowInner.fischerLinearRight FockRaiseLowInner.fischerXAdjoint)
+    FockRL.kroneckerProperties

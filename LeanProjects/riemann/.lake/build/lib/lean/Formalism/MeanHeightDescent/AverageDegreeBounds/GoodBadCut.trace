@@ -1,0 +1,97 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["0fcef0e21bf6b61e.olean"],
+  "m": false,
+  "i": "6550550248fe5b53.ilean",
+  "c": "7268426001817181.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:20:54: `Matrix.isHermitian_iff_isSymmetric` has been deprecated: use isSymmetric_toEuclideanLin_iff.symm",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:23:8: `Matrix.toEuclideanLin_eq_toLin` has been deprecated: Use `Matrix.toLpLin_eq_toLin` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) [inst_3 : Finite m], Matrix.toLpLin p q = Matrix.toLin (PiLp.basisFun p R n) (PiLp.basisFun q R m)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    [inst_3 : Finite m], Matrix.toEuclideanLin = Matrix.toLin (PiLp.basisFun 2 𝕜 n) (PiLp.basisFun 2 𝕜 m)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:39:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.frameMat_herm`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:54:14: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Pi.single_apply, h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:54:36: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:54:56: This simp argument is unused:\n  Ne.symm h\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, Pi.single_apply, h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:95:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.frameMat_idem`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:149:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.natCast_smul_mem`:\n  [NumberField K]\n  [StarRing K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:154:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.idem_apply`:\n  [NumberField K]\n  [StarRing K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:169:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:165:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.rk_add`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:270:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.smul_mem_map_cut`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:301:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:299:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.rkK_ne_zero`:\n  [NumberField K]\n  [StarRing K]\n  [DecidableEq ι]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [DecidableEq ι] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:312:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.rkK_bot`:\n  [NumberField K]\n  [StarRing K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:316:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.nPl_ne_zero`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean:320:0: automatically included section variable(s) unused in theorem `Formalism.ExtensionFiltration.HermitianIdempotentFrameLemmas.disc_pos`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.MeanHeightDescent.MuMaxMinkowski transitive imports (legacy)",
+       "09c49de854b4fea0"],
+      ["Formalism.MeanHeightDescent.MuMaxMinkowski:importAllArts",
+       "d1fd2007249a7c95"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance transitive imports (legacy)",
+       "a0179aad2094a559"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance:importAllArts",
+       "c7eaa9e918a2599c"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/MeanHeightDescent/AverageDegreeBounds/GoodBadCut.lean",
+   "92fc3f0c0fef65da"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut",
+   "943883fa968bde01"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "7c86000b5a068e60"}

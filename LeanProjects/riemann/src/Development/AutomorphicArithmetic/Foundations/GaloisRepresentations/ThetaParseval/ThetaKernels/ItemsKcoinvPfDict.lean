@@ -1,0 +1,12 @@
+import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.IsLatRepL
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.DictXOfK
+
+set_option synthInstance.maxHeartbeats 200000
+
+section
+namespace PositivityTheory.KCo
+theorem dictX_proof_k : _root_.PositivityTheory.KCo.DictX_k := _root_.PositivityTheory.KCo.dictX_of_k model_existence cyclicity adjoint_statement section_statement action_uniqueness
+end PositivityTheory.KCo
+end

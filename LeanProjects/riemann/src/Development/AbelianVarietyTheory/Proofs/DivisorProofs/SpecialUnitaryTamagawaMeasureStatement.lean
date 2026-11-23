@@ -1,0 +1,10 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialUnitaryTamagawaMeasure
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsTamagawa
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
+open Formalism.BasicNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix Filter Topology
+open scoped TensorProduct ENNReal
+open GlobalTheory.TamSU GlobalTheory.SUVol GlobalTheory.UCls GlobalTheory.AdLat GlobalTheory.Published
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.special_unitary_tamagawa_measure : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : ℕ) (G : Matrix (Fin r) (Fin r) E) (Λ : Submodule (𝓞 E) (Fin r → E)) (Ψ : Finset (E →+* ℂ)) [MeasurableSpace (realSU Ψ G)] [BorelSpace (realSU Ψ G)] (θ : Ψ → (Ainf (maximalRealSubfield E) ⊗[maximalRealSubfield E] E →+* ℂ)) (ν : Measure (Ψ → Fin r → Fin r → ℂ)) (μ₀ : Measure (realSU Ψ G)) (J : Type) (s : J → Matrix (Fin r) (Fin r) (RA (maximalRealSubfield E) E)) (c : ℝ≥0∞), SelfDualLat G Λ → (∀ τ : E →+* ℂ, τ ∈ Ψ ↔ ComplexEmbedding.conjugate τ ∉ Ψ) → (∀ ρ : Ψ, IsInfEmb ρ.1 (θ ρ)) → μ₀.IsHaarMeasure → HasDensityOne (realSU Ψ G) μ₀ ν → IsSReps G (Λ : Set (Fin r → E)) 1 s → c ≠ 0 → c ≠ ⊤ → ∃ (μ : Measure (SUAdelic (IsCMField.complexConj E).toAlgHom Gᵀ)) (𝓕 : Set (SUAdelic (IsCMField.complexConj E).toAlgHom Gᵀ)), μ.IsHaarMeasure ∧ Tendsto (fun ε : ℝ => μ {h | h ∈ stabSet (IsCMField.complexConj E).toAlgHom Gᵀ Λ ∧ ∀ ρ a b, ‖infMat (IsCMField.complexConj E).toAlgHom Gᵀ (θ ρ) h.1 a b - (1 : Matrix (Fin r) (Fin r) ℂ) a b‖ < ε} / ν (tanBall Ψ r ε)) (𝓝[>] 0) (𝓝 c) ∧ IsFundamentalDomain ((SURat (IsCMField.complexConj E).toAlgHom Gᵀ).subgroupOf (SUAdelic (IsCMField.complexConj E).toAlgHom Gᵀ)) 𝓕 μ ∧ μ 𝓕 = (∑' j, covolume (inReal Ψ G (ratStab G (Λ : Set (Fin r → E)) (s j))) (realSU Ψ G) μ₀) * c := by
+  first | exact @GlobalTheory.TamUnf.tam_unfold | exact GlobalTheory.TamUnf.tam_unfold | (intros; apply GlobalTheory.TamUnf.tam_unfold <;> assumption)

@@ -1,0 +1,97 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["ff0f75f79d3e7693.olean"],
+  "m": false,
+  "i": "4ce901064321b527.ilean",
+  "c": "73103ad6fd3e8282.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:431:0: automatically included section variable(s) unused in theorem `Formalism.MainNotions.PrimeDegreeVariant.Ten.tens_coeff`:\n  [(i : ι) → Group (G i)]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [(i : ι) → Group (G i)] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:686:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:886:94: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1169:4: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1447:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1450:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1451:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1455:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1485:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1491:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1498:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1499:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean:1528:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalRingCardinality.PrincipalHermitianLattice transitive imports (legacy)",
+       "c78f2ff010c3dd71"],
+      ["Formalism.LocalRingCardinality.PrincipalHermitianLattice:importAllArts",
+       "e7755569b6524b6f"],
+      ["Formalism.LocalRingCardinality.DataKap transitive imports (legacy)",
+       "e7b99a49ccefb92f"],
+      ["Formalism.LocalRingCardinality.DataKap:importAllArts",
+       "4ef17f23ce17e8f1"],
+      ["Formalism.SharpRestriction.ParConsts transitive imports (legacy)",
+       "dca116d8c5b0f134"],
+      ["Formalism.SharpRestriction.ParConsts:importAllArts",
+       "694d70a55903f24f"],
+      ["Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders transitive imports (legacy)",
+       "cf1ca650c0c51ad3"],
+      ["Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders:importAllArts",
+       "2640aa11da8ddd24"],
+      ["Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds transitive imports (legacy)",
+       "b173b10050e12fd6"],
+      ["Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds:importAllArts",
+       "d60d38516b8339b5"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/Divisibility/PrimeDegreeVariant.lean",
+   "64b15cc98fc95ff3"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant",
+   "eda5fa7eea19ac02"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "78f4f58929c8d68a"}

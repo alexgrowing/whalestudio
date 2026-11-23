@@ -1,0 +1,23 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalMatchingAssembly
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SizeAt
+import Development.AbelianVarietyTheory.Definitions.Divisors.TieTest
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
+import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
+import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.StepUnfold
+import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeFunctionalEquationAbs
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelPlusSubgroup
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.local_matching_assembly : GlobalTheory.FunPr.Hypotheses₂ → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching → GlobalTheory.SquareSt.WeilConvergence → GlobalTheory.SquareSt.LocalMatching → GlobalTheory.SquareSt.ThetaIntegralsAgree → GlobalTheory.RowClaim.SumOKK ∧ GlobalTheory.RowClaim.ConstK ∧ GlobalTheory.RowClaim.LinK ∧ GlobalTheory.RowClaim.Formula2K ∧ GlobalTheory.RowClaim.SumRatK := by
+  first | exact @GlobalTheory.RowClaim.Join.fiveClaims | exact GlobalTheory.RowClaim.Join.fiveClaims | (intros; apply GlobalTheory.RowClaim.Join.fiveClaims <;> assumption)

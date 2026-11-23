@@ -1,0 +1,3 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormFormOneUnitary.HermitianOrthogonalProjectionVector
+
+theorem isotropic_normal_form_partial : Formalism.FourierDecayAlt.C3.IsotropicNormalFormPartial := NFOne.normFormOne

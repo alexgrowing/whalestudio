@@ -1,0 +1,82 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a3b095aca3793d73.olean"],
+  "m": false,
+  "i": "bf08d1d7c6cae38b.ilean",
+  "c": "e6a99b69a7d638b1.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:17:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:18:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:30:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:31:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:42:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.dualLattice_basis`:\n  [IsDedekindDomain R]\n  [Algebra R K]\n  [IsFractionRing R K]\n  [IsScalarTower R K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsDedekindDomain R] [Algebra R K] [IsFractionRing R K] [IsScalarTower R K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:80:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:108:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.dualLattice_repr`:\n  [IsDedekindDomain R]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsDedekindDomain R] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:122:22: This simp argument is unused:\n  LinearMap.map_smulₛₗ₂\n\nHint: Omit it from the simp argument list.\n  [apply] simp [w, map_sum, hsym, starRingEnd_apply, star_star, Algebra.smul_def]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:200:17: This simp argument is unused:\n  LinearMap.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [starRingEnd_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:225:19: This simp argument is unused:\n  LinearMap.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [starRingEnd_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:279:17: This simp argument is unused:\n  LinearMap.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [starRingEnd_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean:287:17: This simp argument is unused:\n  LinearMap.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [starRingEnd_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.HermitianLattices.StatementLat transitive imports (legacy)",
+       "eb6e50ff393ef7f8"],
+      ["Formalism.HermitianLattices.StatementLat:importAllArts",
+       "da699c6e91636dda"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic transitive imports (legacy)",
+       "537e6fe099443260"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic:importAllArts",
+       "016dd1bfc4121670"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/DualLattice.lean",
+   "6384bd5e328aecdc"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice",
+   "0924b9c93f121320"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "216d135306cafcc0"}

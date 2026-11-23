@@ -1,0 +1,12 @@
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicOutsideLine
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.CoefficientPositivity
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.UnipotentLatticeLift
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientsOfVectorGroup
+
+namespace ReciprocityTheory.ChartRestriction.G.FD
+
+variable {E : Type} [Field E] [NumberField E] [NumberField.IsCMField E]
+
+theorem nonvanishing_coefficient_positivity : NonvanishingCoefficientPositivity (E := E) := CoefficientPositivity.nonvanishing_coefficient_positivity_of unipotent_lattice_lift fourier_coefficients_holds
+
+end ReciprocityTheory.ChartRestriction.G.FD

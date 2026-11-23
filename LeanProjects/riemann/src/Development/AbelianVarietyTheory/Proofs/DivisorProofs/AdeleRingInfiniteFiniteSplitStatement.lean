@@ -1,0 +1,9 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleRingInfiniteFiniteSplit
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombineApply
+open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK
+open scoped Matrix TensorProduct
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.adele_ring_infinite_finite_split : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E) (B : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Base F E), IsCMExt F E σ → ∃ Φ : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.AE F E ≃+* (InfinitePlace F → ℂ) × (E ⊗[F] Formalism.MainNotions.S.Af F), (∀ x : E, Φ (inclR (F := F) (AF F) x) = (fun w => (B.emb w).1 x, Formalism.UG.inclE (F := F) (Formalism.MainNotions.S.Af F) x)) ∧ (∀ z w, (Φ z).1 w = GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.piInf (B.emb w) z) ∧ (∀ z, Φ (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.cA σ z) = (fun w => star ((Φ z).1 w), Formalism.UG.sigR σ (Formalism.MainNotions.S.Af F) (Φ z).2)) ∧ (∀ (u : AF F) z, GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.evI F u = 0 → (Φ z).2 = 0 → u • z = 0) ∧ (∀ (u : AF F) z, u.2 = 0 → (Φ z).1 = 0 → u • z = 0) ∧ Continuous (fun c : InfinitePlace F → ℂ => Φ.symm (c, 0)) ∧ ∀ U ∈ nhds (0 : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.AE F E), ∃ N : ℕ, 1 ≤ N ∧ ∀ y ∈ Formalism.MainNotions.S.IntAf F E, Φ.symm (0, (N : E ⊗[F] Formalism.MainNotions.S.Af F) * y) ∈ U := by
+  first | exact @GlobalTheory.ArchFinSplit.exists_cm_adele_split | exact GlobalTheory.ArchFinSplit.exists_cm_adele_split | (intros; apply GlobalTheory.ArchFinSplit.exists_cm_adele_split <;> assumption)

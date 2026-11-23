@@ -1,0 +1,140 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["dfa7a2a8d23b0a83.olean"],
+  "m": false,
+  "i": "44e41f1304b59353.ilean",
+  "c": "85867e57828271a0.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:130: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:205: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:273: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:349: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:442: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:524: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:604: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:682: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:757: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:830: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:901: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:970: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1036: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1099: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1158: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1215: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:130: Unused tactic linter: `(intros; apply UpperTheory.Reformulated.B.Qk29.wtGe_prod <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:205: Unused tactic linter: `(apply @UpperTheory.Reformulated.B.Qk29.wtGe_prod <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:273: Unused tactic linter: `(intros; apply @UpperTheory.Reformulated.B.Qk29.wtGe_prod <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:349: Unused tactic linter: `(apply @UpperTheory.Reformulated.B.Qk29.wtGe_prod <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:442: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0 r α s wt F h` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:524: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0 r α s wt F` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:604: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0 r α s wt` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:682: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0 r α s` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:757: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0 r α` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:830: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0 r` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:901: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi h0` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:970: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_› pi` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1036: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1099: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_› ι` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1158: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean:79:1215: Unused tactic linter: `exact @UpperTheory.Reformulated.B.Qk29.wtGe_prod K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaussJetBounds.GenLogInverse transitive imports (legacy)",
+       "ab41110378089501"],
+      ["Formalism.GaussJetBounds.GenLogInverse:importAllArts",
+       "a589a7f366373073"],
+      ["Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WtGeProd transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WtGeProd:importAllArts",
+       "5219879f68f29078"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaussJetBounds/GaussJetProofs/SubstitutionWeightBound.lean",
+   "79f1a6bd902d4c88"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound",
+   "c873f9a37265908c"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "afb74f748585714e"}

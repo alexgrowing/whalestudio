@@ -1,0 +1,9 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.RowSurjOfGenus
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.UnimodularOneGenus
+
+namespace PI.UnitaryGroupMassFormula.CntFormula.RowsMassW
+
+theorem row_surjective : RowSurj := rowSurj_of_genus PI.UnitaryGroupMassFormula.CntFormula.UG.unimodular_one_genus
+
+end PI.UnitaryGroupMassFormula.CntFormula.RowsMassW

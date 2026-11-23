@@ -1,0 +1,11 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCut
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCoef
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVGrpAll
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCrd
+
+namespace Formalism.FourierDecayAlt.P.CutMP
+
+theorem jda_capelli_toda_mirror_proof : JDACapTodaV :=
+  jDACapTodaV_of_parts toda_coefficient_holds TVG.toda_group_action_holds toda_coordinate_holds
+
+end Formalism.FourierDecayAlt.P.CutMP

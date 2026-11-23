@@ -1,0 +1,31 @@
+import Mathlib
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PFibreNormDehomRoots
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PCharpolyRootLift
+import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PFibreNormPullbackX
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullRatiosAlgebraic
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullConeNull
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullConeDegree
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullGradedAlgebraic
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullFormsGeneric
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullSectionIntegral
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreNormDehomCharpoly
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PDehomCharpolyForms
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreNormDehomIntegral
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreNormBadPrimesFinite
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreNormGoodPrimeIntegral
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreNormPrimeBound
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullConeDegreeInt
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullSectionIntegralInt
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PDehomNormPIntegral
+import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartPrimePowerInverse
+set_option maxSynthPendingDepth 1
+
+namespace GroundTheory.Heights₂.Heights.HilbertSamuel
+
+theorem FibreNormDehomRoots.full : FibreNormDehomRoots.Statement :=
+  FibreNormDehomRoots.proof
+    (PullFormsGeneric.proof
+      (PullRatiosAlgebraic.proof PullConeNull.proof PullConeDegree.proof PullGradedAlgebraic.proof))
+    PullSectionIntegral.proof CharpolyRootLift.proof
+
+end GroundTheory.Heights₂.Heights.HilbertSamuel

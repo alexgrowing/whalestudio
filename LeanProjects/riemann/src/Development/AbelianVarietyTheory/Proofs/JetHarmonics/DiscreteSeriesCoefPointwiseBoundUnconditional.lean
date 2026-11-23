@@ -1,0 +1,14 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointwiseBoundDiscreteSeriesCoefficientsStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselXiIntegrableHolds
+import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ActualClassesCompactSupport
+
+open BpJoin
+
+namespace GlobalTheory
+
+theorem discreteSeriesCoef_pointwiseBound : ThmBpDS :=
+  GlobalTheory.T.pointwiseBound_discreteSeries_coefficients GlobalTheory.besselXiIntegrable_holds GlobalTheory.actualClasses_compactSupport
+
+end GlobalTheory

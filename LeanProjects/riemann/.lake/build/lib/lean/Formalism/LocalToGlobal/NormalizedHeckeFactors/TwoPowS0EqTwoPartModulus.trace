@@ -1,0 +1,65 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["06bb4f8c34514933.olean"],
+  "m": false,
+  "i": "aaab50dbe73ca928.ilean",
+  "c": "ffdb195e882350af.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:17:8: automatically included section variable(s) unused in theorem `Formalism.L2.evPt_apply`:\n  [IsDomain O]\n  [Fintype X]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsDomain O] [Fintype X] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.L2.evPt_injective`:\n  [IsDomain O]\n  [Fintype X]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsDomain O] [Fintype X] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:39:15: `SubmonoidClass.coe_finset_prod` has been deprecated: Use `SubmonoidClass.coe_finsetProd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:45:15: `SubmonoidClass.coe_finset_prod` has been deprecated: Use `SubmonoidClass.coe_finsetProd` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:61:15: `AddSubmonoidClass.coe_finset_sum` has been deprecated: Use `AddSubmonoidClass.coe_finsetSum` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:67:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean:260:6: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow transitive imports (legacy)",
+       "54b3a8eb8bcde914"],
+      ["Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow:importAllArts",
+       "f10d37f00d0e0c61"],
+      ["Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke transitive imports (legacy)",
+       "7fd04b86a2812838"],
+      ["Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke:importAllArts",
+       "ae69e3820ea1d5b5"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/NormalizedHeckeFactors/TwoPowS0EqTwoPartModulus.lean",
+   "018bf1e761145828"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.NormalizedHeckeFactors.TwoPowS0EqTwoPartModulus",
+   "19f2b9a4361c71e4"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a4d5a54ebc6ee4cc"}

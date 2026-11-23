@@ -1,0 +1,224 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["eed6df9d3cb63fc2.olean"],
+  "m": false,
+  "i": "4a873d447398cc5a.ilean",
+  "c": "948ec4f565a33714.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:24:53: This simp argument is unused:\n  norm_star\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Formalism.HermitianLatticesTheory.cnorm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:25:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:25:6: Unused tactic linter: `simp [Formalism.HermitianLatticesTheory.cnorm, Complex.norm_conj]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:32:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:32:8: Unused tactic linter: `simpa [Matrix.dotProduct, norm_mul] using\n  norm_sum_le Finset.univ fun i => y i * w i` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:43:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:47:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:48:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:43:6: Unused tactic linter: `simp only [Matrix.dotProduct, Pi.star_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:47:6: Unused tactic linter: `exact_mod_cast Complex.conj_mul' (w i)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:48:6: Unused tactic linter: `exact RCLike.conj_mul (w i)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:59:10: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((Matrix.toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (Matrix.toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:59:10: This simp argument is unused:\n  Matrix.toEuclideanLin_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:91:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:91:6: Unused tactic linter: `simp only [pairC, pmat, Matrix.dotProduct, Matrix.mulVec, Matrix.of_apply,\n  Finset.mul_sum]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:169:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:170:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:171:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:172:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:169:18: Unused tactic linter: `simp [chainFun]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:170:18: Unused tactic linter: `simp [chainFun]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:171:18: Unused tactic linter: `simp [chainMat]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:172:18: Unused tactic linter: `simp [chainMat]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:181:4: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:181:40: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:193:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:193:13: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:193:6: Unused tactic linter: `ext i` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:193:13: Unused tactic linter: `simp [Fin.castSucc_lt_last]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:199:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:199:13: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:199:6: Unused tactic linter: `ext i` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:199:13: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:212:56: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:216:22: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:212:56: Unused tactic linter: `simp [chainFun]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:216:22: Unused tactic linter: `simp [chainFun]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:249:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:249:8: Unused tactic linter: `exact Real.log_prod _ _ fun j _ => (hlam j p).ne'` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:282:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:289:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:282:10: Unused tactic linter: `simp [Matrix.dotProduct, mul_comm]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:289:8: Unused tactic linter: `rw [Matrix.add_dotProduct, Matrix.dotProduct_add, Matrix.dotProduct_add, h, h2]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:447:10: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((Matrix.toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (Matrix.toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:544:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:544:6: Unused tactic linter: `simp [Matrix.mulVec, Matrix.dotProduct, map_sum, map_mul]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:784:12: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((Matrix.toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (Matrix.toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:554:36: Variable name `hP` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hP\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:637:12: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:668:58: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:699:14: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:784:12: This simp argument is unused:\n  Matrix.toEuclideanLin_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:812:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:812:8: Unused tactic linter: `exact (le_div_iff hr).mpr h7` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:889:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:906:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:889:10: Unused tactic linter: `nlinarith [Finset.prod_nonneg fun j (_ : j ∈ Finset.univ) => hkUnn j]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean:906:10: Unused tactic linter: `exact Real.log_prod _ _ fun j _ => (pow_pos (hkUpos j) 2).ne'` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.QuotientMetricDivisors.HeightBoundExactNorms transitive imports (legacy)",
+       "5a77a8170399752e"],
+      ["Formalism.QuotientMetricDivisors.HeightBoundExactNorms:importAllArts",
+       "04f32785d5978b1a"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionThirdStepMean transitive imports (legacy)",
+       "d4c27d06c042693b"],
+      ["Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionThirdStepMean:importAllArts",
+       "efacf68be220a1ca"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean transitive imports (legacy)",
+       "174b5a6b20b4fe62"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean:importAllArts",
+       "19150181e64baa21"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DescendedNorm.lean",
+   "e48e665d3df09098"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DescendedNorm",
+   "ef86ac22189911e3"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "49fa93f1e023cff5"}

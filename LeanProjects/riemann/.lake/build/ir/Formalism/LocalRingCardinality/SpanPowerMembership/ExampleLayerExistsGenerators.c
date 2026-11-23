@@ -1,0 +1,274 @@
+// Lean compiler output
+// Module: Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
+// Imports: public import Init public meta import Init public import Formalism.LocalRingCardinality.DataHost public import Formalism.LocalRingCardinality.SpanPowerMembership.Primes public import Formalism.LocalRingCardinality.DataSpaces public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement public import Formalism.FrobeniusOrbits.HostCorollaries public import Formalism.TameInertiaTowers.TowerFieldFoundations public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.NonemptyFieldAxiomsCyclicPow
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* lp_tree_Formalism_HC_HostRaw_conj(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_NumberField_maximalRealSubfield___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__1(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_NumberField_maximalRealSubfield___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__1___boxed(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_conjF(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_conjF___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___redArg___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___boxed(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___boxed(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___redArg___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___boxed(lean_object*, lean_object*, lean_object*);
+static lean_once_cell_t lp_tree_Formalism_BasicNotions_Examples_u2082_T0___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_T0___closed__0;
+LEAN_EXPORT lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_T0;
+static lean_once_cell_t lp_tree_Formalism_BasicNotions_Examples_u2082_e0___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_e0___closed__0;
+LEAN_EXPORT lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_e0;
+LEAN_EXPORT lean_object* lp_tree_NumberField_maximalRealSubfield___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__1(lean_object* v___x_1_){
+_start:
+{
+lean_object* v___x_2_; 
+v___x_2_ = lean_box(0);
+return v___x_2_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_NumberField_maximalRealSubfield___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__1___boxed(lean_object* v___x_3_){
+_start:
+{
+lean_object* v_res_4_; 
+v_res_4_ = lp_tree_NumberField_maximalRealSubfield___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__1(v___x_3_);
+lean_dec_ref(v___x_3_);
+return v_res_4_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0(lean_object* v_f_5_, lean_object* v___y_6_){
+_start:
+{
+lean_object* v_toFun_7_; lean_object* v___x_8_; 
+v_toFun_7_ = lean_ctor_get(v_f_5_, 0);
+lean_inc(v_toFun_7_);
+lean_dec_ref(v_f_5_);
+v___x_8_ = lean_apply_1(v_toFun_7_, v___y_6_);
+return v___x_8_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg(lean_object* v_f_9_){
+_start:
+{
+lean_object* v___f_10_; 
+v___f_10_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_10_, 0, v_f_9_);
+return v___f_10_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_conjF(lean_object* v_R_11_, lean_object* v_H_12_){
+_start:
+{
+lean_object* v_toHostAx_13_; lean_object* v_toFrame_14_; lean_object* v___x_15_; lean_object* v___f_16_; 
+v_toHostAx_13_ = lean_ctor_get(v_H_12_, 0);
+lean_inc_ref(v_toHostAx_13_);
+lean_dec_ref(v_H_12_);
+v_toFrame_14_ = lean_ctor_get(v_R_11_, 0);
+v___x_15_ = lp_tree_Formalism_HC_HostRaw_conj(v_toFrame_14_, v_toHostAx_13_);
+v___f_16_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_16_, 0, v___x_15_);
+return v___f_16_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_Formalism_BasicNotions_Examples_u2082_conjF___boxed(lean_object* v_R_17_, lean_object* v_H_18_){
+_start:
+{
+lean_object* v_res_19_; 
+v_res_19_ = lp_tree_Formalism_BasicNotions_Examples_u2082_conjF(v_R_17_, v_H_18_);
+lean_dec_ref(v_R_17_);
+return v_res_19_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___redArg(lean_object* v___x_20_, lean_object* v_f_21_){
+_start:
+{
+lean_object* v___f_22_; 
+v___f_22_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_22_, 0, v_f_21_);
+return v___f_22_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___redArg___boxed(lean_object* v___x_23_, lean_object* v_f_24_){
+_start:
+{
+lean_object* v_res_25_; 
+v_res_25_ = lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___redArg(v___x_23_, v_f_24_);
+lean_dec_ref(v___x_23_);
+return v_res_25_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0(lean_object* v___x_26_, lean_object* v_inst_27_, lean_object* v_f_28_){
+_start:
+{
+lean_object* v___f_29_; 
+v___f_29_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_29_, 0, v_f_28_);
+return v___f_29_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0___boxed(lean_object* v___x_30_, lean_object* v_inst_31_, lean_object* v_f_32_){
+_start:
+{
+lean_object* v_res_33_; 
+v_res_33_ = lp_tree_RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0(v___x_30_, v_inst_31_, v_f_32_);
+lean_dec_ref(v___x_30_);
+return v_res_33_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2(lean_object* v___x_34_, lean_object* v_inst_35_, lean_object* v_f_36_){
+_start:
+{
+lean_object* v___f_37_; 
+v___f_37_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_37_, 0, v_f_36_);
+return v___f_37_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___boxed(lean_object* v___x_38_, lean_object* v_inst_39_, lean_object* v_f_40_){
+_start:
+{
+lean_object* v_res_41_; 
+v_res_41_ = lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2(v___x_38_, v_inst_39_, v_f_40_);
+lean_dec_ref(v___x_38_);
+return v_res_41_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___redArg(lean_object* v___x_42_, lean_object* v_f_43_){
+_start:
+{
+lean_object* v___f_44_; 
+v___f_44_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_44_, 0, v_f_43_);
+return v___f_44_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___redArg___boxed(lean_object* v___x_45_, lean_object* v_f_46_){
+_start:
+{
+lean_object* v_res_47_; 
+v_res_47_ = lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___redArg(v___x_45_, v_f_46_);
+lean_dec_ref(v___x_45_);
+return v_res_47_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0(lean_object* v___x_48_, lean_object* v_inst_49_, lean_object* v_f_50_){
+_start:
+{
+lean_object* v___f_51_; 
+v___f_51_ = lean_alloc_closure((void*)(lp_tree_MulHomClass_toMulHom___at___00MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0_spec__2___redArg___lam__0), 2, 1);
+lean_closure_set(v___f_51_, 0, v_f_50_);
+return v___f_51_;
+}
+}
+LEAN_EXPORT lean_object* lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0___boxed(lean_object* v___x_52_, lean_object* v_inst_53_, lean_object* v_f_54_){
+_start:
+{
+lean_object* v_res_55_; 
+v_res_55_ = lp_tree_MonoidHomClass_toMonoidHom___at___00RingHomClass_toRingHom___at___00Formalism_BasicNotions_Examples_u2082_conjF_spec__0_spec__0(v___x_52_, v_inst_53_, v_f_54_);
+lean_dec_ref(v___x_52_);
+return v_res_55_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_BasicNotions_Examples_u2082_T0___closed__0(void){
+_start:
+{
+lean_object* v___x_56_; 
+v___x_56_ = lean_cstr_to_nat("65794571027774832745588537266486439382601586586498771901135640963549130131839564588689999034983373394040350895271937");
+return v___x_56_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_BasicNotions_Examples_u2082_T0(void){
+_start:
+{
+lean_object* v___x_57_; 
+v___x_57_ = lean_obj_once(&lp_tree_Formalism_BasicNotions_Examples_u2082_T0___closed__0, &lp_tree_Formalism_BasicNotions_Examples_u2082_T0___closed__0_once, _init_lp_tree_Formalism_BasicNotions_Examples_u2082_T0___closed__0);
+return v___x_57_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_BasicNotions_Examples_u2082_e0___closed__0(void){
+_start:
+{
+lean_object* v___x_58_; 
+v___x_58_ = lean_cstr_to_nat("331422217405443852448534754346203940024043203756279465408");
+return v___x_58_;
+}
+}
+static lean_object* _init_lp_tree_Formalism_BasicNotions_Examples_u2082_e0(void){
+_start:
+{
+lean_object* v___x_59_; 
+v___x_59_ = lean_obj_once(&lp_tree_Formalism_BasicNotions_Examples_u2082_e0___closed__0, &lp_tree_Formalism_BasicNotions_Examples_u2082_e0___closed__0_once, _init_lp_tree_Formalism_BasicNotions_Examples_u2082_e0___closed__0);
+return v___x_59_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LocalRingCardinality_DataHost(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LocalRingCardinality_SpanPowerMembership_Primes(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LocalRingCardinality_DataSpaces(uint8_t builtin);
+lean_object* initialize_tree_Formalism_LocalRingCardinality_SpanPowerMembership_ExampleRanksRankComplement(uint8_t builtin);
+lean_object* initialize_tree_Formalism_FrobeniusOrbits_HostCorollaries(uint8_t builtin);
+lean_object* initialize_tree_Formalism_TameInertiaTowers_TowerFieldFoundations(uint8_t builtin);
+lean_object* initialize_tree_Formalism_SharpRestriction_RamificationFrobenius_TotientGaloisClasses_FrameFacts(uint8_t builtin);
+lean_object* initialize_tree_Formalism_SharpRestriction_RamificationFrobenius_TotientGaloisClasses_NonemptyFieldAxiomsCyclicPow(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_tree_Formalism_LocalRingCardinality_SpanPowerMembership_ExampleLayerExistsGenerators(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LocalRingCardinality_DataHost(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LocalRingCardinality_SpanPowerMembership_Primes(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LocalRingCardinality_DataSpaces(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_LocalRingCardinality_SpanPowerMembership_ExampleRanksRankComplement(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_FrobeniusOrbits_HostCorollaries(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_TameInertiaTowers_TowerFieldFoundations(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_SharpRestriction_RamificationFrobenius_TotientGaloisClasses_FrameFacts(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_tree_Formalism_SharpRestriction_RamificationFrobenius_TotientGaloisClasses_NonemptyFieldAxiomsCyclicPow(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+lp_tree_Formalism_BasicNotions_Examples_u2082_T0 = _init_lp_tree_Formalism_BasicNotions_Examples_u2082_T0();
+lean_mark_persistent(lp_tree_Formalism_BasicNotions_Examples_u2082_T0);
+lp_tree_Formalism_BasicNotions_Examples_u2082_e0 = _init_lp_tree_Formalism_BasicNotions_Examples_u2082_e0();
+lean_mark_persistent(lp_tree_Formalism_BasicNotions_Examples_u2082_e0);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

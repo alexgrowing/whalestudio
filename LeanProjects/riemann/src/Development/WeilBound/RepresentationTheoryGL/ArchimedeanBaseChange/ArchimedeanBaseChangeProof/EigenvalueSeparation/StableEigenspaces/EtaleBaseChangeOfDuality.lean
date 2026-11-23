@@ -1,0 +1,8 @@
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.EigenvalueSeparation.StableEigenspaces.FrobeniusUniformizerIdentity
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TendstoExpMulPoly
+
+namespace PositivityTheory.Rg.BcB.E.E3
+
+theorem etale_base_change_of_duality : PositivityTheory.Rg.BcB.E.E3 := frobenius_uniformizer_identity GlobalTheory.CompanionTheory.LocExponent.locNonPosGlue_holds
+
+end PositivityTheory.Rg.BcB.E.E3

@@ -1,0 +1,27 @@
+import Mathlib
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Statements
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.IsSiegelReducedCoordinates
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.IsLatticeBundle
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ExtendedDataRemainder
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.SingleMemIdealLattice
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.RangeInclSaturated
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ExistsSmulEqSmulOfFinrankOne
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ExistsSmulMemOfSpanEqTop
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.RelIndexSplitOfLe
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.DegreeRangeIncl
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ImportsAlt
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.CardQuotientEqGenIndex
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ExistsSmulMemIdealLattice
+import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ReMulOfPos
+set_option maxSynthPendingDepth 1
+
+namespace GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kernels
+
+theorem S6.LatticeAsBundle.full : S6.LatticeAsBundle.Statement :=
+  S6.LatticeAsBundle.proof S6.MatrixSubDegree.proof S6.QuotExtension.proof S6.QuotDegree.proof
+
+theorem S6.BundleCoordinates.full : S6.BundleCoordinates.Statement :=
+  S6.BundleCoordinates.proof S6.LineCoordinates.proof S6.CoordinateDegree.proof
+    S6.QuotientDegreeSplit.proof S6.ExtensionDegree.proof S6.SaturatedSpan.proof
+
+end GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kernels

@@ -1,0 +1,23 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CuspFormBasisSharesDefiniteLiftIndex
+import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
+import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CarchAt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
+import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.InnerEuclideanEmbeddingEqAverage
+import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
+import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
+import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
+import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
+import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
+import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
+import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
+import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
+import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM
+open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.WeightAlgebra Formalism.MainNotions.DIV.Cons Formalism.MainNotions.Gaps Formalism.MainNotions.Gaps.EtaleWeightGaps Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.RunJoin
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.cuspFormBasisShares_definite_liftIndex : SharesDefSt := by
+  first | exact @GlobalTheory.SharesDefinite.sharesDef | exact GlobalTheory.SharesDefinite.sharesDef | (intros; apply GlobalTheory.SharesDefinite.sharesDef <;> assumption)

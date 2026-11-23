@@ -1,0 +1,11 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentCombinationUniqueness
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplitting
+open NumberField MvPolynomial Filter Topology Formalism.BasicNotions Formalism.MainNotions Formalism.DegreeFormula GlobalTheory.FlagPoly GlobalTheory.Mean4 GlobalTheory.Mean4O GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.CovTest GlobalTheory.Published
+open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.ArInt
+open Formalism.BasicNotions.DV Formalism.MainNotions.WeightThresholdDefs GlobalTheory.FlagAr GlobalTheory.ShFam.Pad GlobalTheory.VB GlobalTheory.ShFam GlobalTheory.TrueGeo Formalism.L2.Pj GlobalTheory.Toroidal
+open Formalism.MainNotions.DIV.Cons (intO)
+open GlobalTheory.ArLieBase
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.tangent_combination_uniqueness : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E} {Dw : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Datum H} {l : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Level H} {Xo : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Moduli Dw l} {c : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Coeff l} {Oz : Type} [CommRing Oz] {β : Oz →+* c.F} (Z : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Model Xo c β) {K : Type} [CommRing K] (φ : c.F →+* K) (y : Sp K ⟶ Z.X) (τ : E →+* ℂ) {m : ℕ} (u : Fin m → (Sp (DualNumber K) ⟶ Z.t.G.left)) {s : Set K}, Ideal.span s = ⊤ → (∀ a : s, IsEigBasis Z ((algebraMap K (Localization.Away (a : K))).comp φ) (spMap (algebraMap K (Localization.Away (a : K))) ≫ y) τ (fun i => spMap (Formalism.L2.Pj.dualMap (algebraMap K (Localization.Away (a : K)))) ≫ u i)) → (∀ a b : s, IsEigBasis Z ((algebraMap K (Localization.Away ((a : K) * b))).comp φ) (spMap (algebraMap K (Localization.Away ((a : K) * b))) ≫ y) τ (fun i => spMap (Formalism.L2.Pj.dualMap (algebraMap K (Localization.Away ((a : K) * b)))) ≫ u i)) → IsEigBasis Z φ y τ u := by
+  first | exact @GlobalTheory.EigBasisCover.isEigBasis_of_cover | exact GlobalTheory.EigBasisCover.isEigBasis_of_cover | (intros; apply GlobalTheory.EigBasisCover.isEigBasis_of_cover <;> assumption)

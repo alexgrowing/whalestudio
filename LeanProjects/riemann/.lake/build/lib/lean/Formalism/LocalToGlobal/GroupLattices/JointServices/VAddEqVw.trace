@@ -1,0 +1,62 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["fbc32da75f36ac61.olean"],
+  "m": false,
+  "i": "3b39b49516f5f15a.ilean",
+  "c": "48ef4b0d0e587052.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean:14:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.GroupLattices.JointServices.VAddEqVw.0.Formalism.L2.G.ServJoint.vAdd_mul_of_ne_zero`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean:20:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.GroupLattices.JointServices.VAddEqVw.0.Formalism.L2.G.ServJoint.vw_mul_of_ne_zero`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean:29:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.GroupLattices.JointServices.VAddEqVw.0.Formalism.L2.G.ServJoint.vAdd_algebraMap_eq_vw_of_ne_zero`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean:56:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.ServJoint.VGeq.zero`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean:58:0: automatically included section variable(s) unused in theorem `Formalism.L2.G.ServJoint.VGeq.mono`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean:61:8: automatically included section variable(s) unused in theorem `_private.Formalism.LocalToGlobal.GroupLattices.JointServices.VAddEqVw.0.Formalism.L2.G.ServJoint.vAdd_le_of_valuation_le`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalRingCardinality.DataArith transitive imports (legacy)",
+       "426b99c0e4418750"],
+      ["Formalism.LocalRingCardinality.DataArith:importAllArts",
+       "a2c481c4ef69c25a"],
+      ["Formalism.LocalToGlobal.ExponentGrids.ExponentGridsProofs.NormaliserValuationBound transitive imports (legacy)",
+       "6e1bf70d0a3531ba"],
+      ["Formalism.LocalToGlobal.ExponentGrids.ExponentGridsProofs.NormaliserValuationBound:importAllArts",
+       "02cd3036b0482f6e"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/GroupLattices/JointServices/VAddEqVw.lean",
+   "23c954ced33b0e0f"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.GroupLattices.JointServices.VAddEqVw",
+   "9e4e7e64f5a8e8f6"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "09e1c20508fa3623"}

@@ -1,0 +1,14 @@
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KrullDimQuotientEqOneIffEqBot
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.LengthTwoGeneratorQuotient
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.IntegralMulLogZeroOne
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CardQuotEqNatAbsNorm
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.TsgPolyVolPolyCoeffEven
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaB
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Inhabit
+
+namespace ReciprocityTheory.ChartRestriction.G.AI
+
+theorem len2 : LocalLengthMultiplicativity := length_two_generator_quotient
+theorem fl3Test : FlatnessTestCriterion := fl3Test_thm
+
+end ReciprocityTheory.ChartRestriction.G.AI

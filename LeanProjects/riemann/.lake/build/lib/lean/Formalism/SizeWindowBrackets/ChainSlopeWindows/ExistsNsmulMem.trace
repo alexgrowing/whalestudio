@@ -1,0 +1,112 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["389308530668b275.olean"],
+  "m": false,
+  "i": "9da877e2fe50f52e.ilean",
+  "c": "243eed8dedef6b3b.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:22:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.smul_comm_integers_field`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:26:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.mem_idealSmul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:30:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.idealSmul_le_span`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:37:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.idealSmul_mono_right`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:148:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.rkK_pos`:\n  [NumberField K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:159:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.ne_bot_of_rkK_pos`:\n  [NumberField K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:164:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.fg_of_le`:\n  [Module K V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Module K V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:176:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.ht_pos`:\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:235:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.finrank_pos'`:\n  [StarRing K]\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:303:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.absNorm_pos`:\n  [StarRing K]\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:335:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.muDef_le_muMaxDef`:\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:353:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.muMaxDef_le`:\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:826:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.halfUnit_of_le_one`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:832:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.halfUnit_mul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:979:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.idealSmul_le_span_loc`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean:1042:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.slopeLatticeData.locScal_one`:\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces transitive imports (legacy)",
+       "4c7859748cc872c0"],
+      ["Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces:importAllArts",
+       "84bdb161e04a8e82"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep transitive imports (legacy)",
+       "c7a1b49ea58658fd"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep:importAllArts",
+       "582fe6bca5f3db35"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu transitive imports (legacy)",
+       "1ac070b4d54e95e6"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu:importAllArts",
+       "ca38b7a00e266d00"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram transitive imports (legacy)",
+       "bcb9c02dabb3353d"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram:importAllArts",
+       "c229224f1525b1fc"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar transitive imports (legacy)",
+       "7620e44ea15ce76e"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar:importAllArts",
+       "b9d0e165ab35d735"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl transitive imports (legacy)",
+       "988db06bacff97b9"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl:importAllArts",
+       "12c10c0860d5f907"],
+      ["Formalism.SizeWindowBrackets.ChainSlopeWindows.WeightedMeanLemmaNeedsDegree transitive imports (legacy)",
+       "3f652fca2916cd92"],
+      ["Formalism.SizeWindowBrackets.ChainSlopeWindows.WeightedMeanLemmaNeedsDegree:importAllArts",
+       "b85355964590fc84"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/ExistsNsmulMem.lean",
+   "1eab36fbf069b67f"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem",
+   "62ae9e4a58a06ad8"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "b24eaee353f68d2b"}

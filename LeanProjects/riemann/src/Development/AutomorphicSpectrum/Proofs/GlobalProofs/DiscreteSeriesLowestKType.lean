@@ -1,0 +1,12 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesLowestKTypeOfClassification
+import Development.AutomorphicSpectrum.Proofs.SemilocalMultiplicity.LowKMultOneP
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DiscreteSeriesUpqUnique
+
+namespace GlobalTheory.CompanionTheory.Glob
+
+theorem discreteSeriesLowestKType : GlobalTheory.Published.DiscreteSeriesLowestKType :=
+  GlobalTheory.Published.discreteSeriesLowestKType_iff.2
+    ⟨GlobalTheory.CompanionTheory.TypeCount.LowK.lowKMultOne, GlobalTheory.CompanionTheory.Front.discreteSeriesUpqUnique⟩
+
+end GlobalTheory.CompanionTheory.Glob

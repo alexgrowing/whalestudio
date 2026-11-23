@@ -1,0 +1,172 @@
+import Development.EtaleCohomology.CohomologicalPurity.LeafMonoPf
+import Development.EtaleCohomology.CohomologicalPurity.PresSheafify
+import Development.EtaleCohomology.CohomologicalPurity.LeafGoodPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafDeltaPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafExactPf
+import Development.EtaleCohomology.CohomologicalPurity.FreePMapMk
+import Development.EtaleCohomology.CohomologicalPurity.LeafImgHomPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafImgPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafBdCut
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcIdentPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcDegPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcFormalPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafFreeCokInjPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafFreeCokPfSurj
+import Development.EtaleCohomology.CohomologicalPurity.LeafSurjGeoPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafInjGeoPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcSheafCut
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafGeoPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafActPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafPBMapPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafAffEqvPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafPBPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafHtpyZeroPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafHtpyOnePf
+import Development.EtaleCohomology.CohomologicalPurity.LeafFreeCovPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafHtpyMVPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafHtpyPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafNerveSplitPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafUnitsRepPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTailNervePf
+import Development.EtaleCohomology.CohomologicalPurity.LeafRepPtPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTailRep0OfVec
+import Development.EtaleCohomology.CohomologicalPurity.LeafTailRepPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTailPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTauUPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTauTopPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTauOf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTauNatPf
+import Development.EtaleCohomology.CohomologicalPurity.IsPullbackOfApp
+import Development.EtaleCohomology.CohomologicalPurity.LeafDblCokPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafConeCokPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafHsRelPfSplit
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcSpPfMono
+import Development.EtaleCohomology.CohomologicalPurity.LeafPLocPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafWLocPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafWCovPfB
+import Development.EtaleCohomology.CohomologicalPurity.WeightedVectorLaurentEvalHomTOne
+import Development.EtaleCohomology.CohomologicalPurity.LeafWCechRec
+import Development.EtaleCohomology.CohomologicalPurity.LeafWEqvRPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafWGmPf
+import Development.EtaleCohomology.KummerExtensions.EtaleWeightedBlowupExceptionalChartTorsorOfEquiv
+import Development.EtaleCohomology.CohomologicalPurity.LeafWEqvLPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafChartFactPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafExcPPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafThomCut
+
+namespace LateralTheory.Fin.LeafThom
+theorem etale_boundary_monomorphism_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafMono := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafMono_of
+theorem etale_relative_boundary_pushout_property_holds : LateralTheory.CohomologicalPurity.Bd.LeafPush := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafPush_of
+theorem etale_boundary_good_pair_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafGood := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafGood_of
+theorem etale_boundary_connecting_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafDelta := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafDelta_of
+theorem etale_boundary_exact_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafExact := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafExact_of
+theorem etale_boundary_generator_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafGen := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafGen_of
+theorem etale_boundary_image_hom_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafImgHom := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafImgHom_of <;> first | exact etale_boundary_generator_of_thom_isomorphism
+theorem etale_boundary_image_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Bd.LeafImg := by
+  apply LateralTheory.CohomologicalPurity.Bd.LeafImg_of <;> first | exact etale_boundary_image_hom_of_thom_isomorphism
+theorem etale_boundary_map_of_thom_isomorphism : LateralTheory.CohomologicalPurity.LeafBd := by
+  apply LateralTheory.CohomologicalPurity.Bd.goal_of <;> first | exact etale_boundary_monomorphism_of_thom_isomorphism | exact etale_relative_boundary_pushout_property_holds | exact etale_boundary_good_pair_of_thom_isomorphism | exact etale_boundary_connecting_of_thom_isomorphism | exact etale_boundary_exact_of_thom_isomorphism | exact etale_boundary_generator_of_thom_isomorphism | exact etale_boundary_image_hom_of_thom_isomorphism | exact etale_boundary_image_of_thom_isomorphism
+theorem etale_excision_identification_of_excision : LateralTheory.CohomologicalPurity.LeafExcIdent := by
+  apply LateralTheory.CohomologicalPurity.EtaleExcIdent
+theorem etale_excision_cohomological_degree_of_excision : LateralTheory.CohomologicalPurity.LeafExcDeg := by
+  apply LateralTheory.CohomologicalPurity.LeafExcDeg_of
+theorem etale_excision_formal_reduction_of_excision : LateralTheory.CohomologicalPurity.LeafExcFormal := by
+  apply LateralTheory.CohomologicalPurity.LeafExcFormal_of <;> first | exact etale_excision_identification_of_excision | exact etale_excision_cohomological_degree_of_excision
+theorem etale_excision_free_cokernel_injective_of_excision : LateralTheory.CohomologicalPurity.LeafFreeCokInj := by
+  apply LateralTheory.CohomologicalPurity.LeafFreeCokInj_of
+theorem etale_excision_cokernel_free_of_excision : LateralTheory.CohomologicalPurity.LeafFreeCok := by
+  apply LateralTheory.CohomologicalPurity.LeafFreeCok_of_inj <;> first | exact etale_excision_free_cokernel_injective_of_excision
+theorem etale_excision_surjective_geometric_points_of_excision : LateralTheory.CohomologicalPurity.LeafSurjGeo := by
+  apply LateralTheory.CohomologicalPurity.LeafSurjGeo_of
+theorem etale_excision_injective_geometric_points_of_excision : LateralTheory.CohomologicalPurity.LeafInjGeo := by
+  apply LateralTheory.CohomologicalPurity.LeafInjGeo_of
+theorem etale_excision_sheaf_level_of_excision : LateralTheory.CohomologicalPurity.LeafExcSheaf := by
+  apply LateralTheory.CohomologicalPurity.LeafExcSheaf_of <;> first | exact etale_excision_cokernel_free_of_excision | exact etale_excision_surjective_geometric_points_of_excision | exact etale_excision_injective_geometric_points_of_excision
+theorem etale_excision_isomorphism_of_excision : LateralTheory.CohomologicalPurity.LeafExc := by
+  apply LateralTheory.CohomologicalPurity.LeafExc_of <;> first | exact etale_excision_formal_reduction_of_excision | exact etale_excision_sheaf_level_of_excision
+theorem etale_thom_geometric_fibers_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafGeo := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafGeo_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_group_action_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafAct := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafAct_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_pullback_map_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafPBMap := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafPBMap_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_affine_bundle_equivalence_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafAffEqv := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafAffEqv_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_pullback_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafPB := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafPB_of <;> first | exact etale_thom_pullback_map_of_thom_isomorphism | exact etale_affine_bundle_equivalence_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_affine_line_homotopy_zero_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafHtpyZero := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafHtpyZero_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_affine_line_homotopy_one_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafHtpyOne := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafHtpyOne_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_free_covering_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafFreeCov := by
+  apply LateralTheory.CohomologicalPurity.FreeCovPf.LeafFreeCov_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_homotopy_mayer_vietoris_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafHtpyMV := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafHtpyMV_of <;> first | exact etale_free_covering_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_affine_homotopy_invariance_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafHtpy := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafHtpy_of <;> first | exact etale_affine_line_homotopy_zero_of_thom_isomorphism | exact etale_affine_line_homotopy_one_of_thom_isomorphism | exact etale_homotopy_mayer_vietoris_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_nerve_split_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafNerveSplit := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafNerveSplit_of <;> first | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_units_representable_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafUnitsRep := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafUnitsRep_of <;> first | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_tail_nerve_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTailNerve := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTailNerve_of <;> first | exact etale_nerve_split_of_thom_isomorphism | exact etale_units_representable_of_thom_isomorphism | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_representable_point_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafRepPt := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafRepPt_of <;> first | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_tail_representable_degree_zero_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTailRep0 := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTailRep0_of <;> first | exact etale_thom_representable_point_of_thom_isomorphism | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_tail_representable_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTailRep := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTailRep_of <;> first | exact etale_thom_tail_nerve_of_thom_isomorphism | exact etale_thom_tail_representable_degree_zero_of_thom_isomorphism | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_tail_vanishing_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTail := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTail_of <;> first | exact etale_thom_tail_representable_of_thom_isomorphism | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_class_unit_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTauU := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTauU_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_thom_pullback_of_thom_isomorphism | exact etale_thom_tail_vanishing_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_class_top_degree_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTauTop := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTauTop_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_thom_pullback_of_thom_isomorphism | exact etale_thom_tail_vanishing_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_class_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTau := by
+  apply LateralTheory.CohomologicalPurity.Thom.ThomClassRestriction.LeafTau_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_thom_pullback_of_thom_isomorphism | exact etale_thom_tail_vanishing_of_thom_isomorphism | exact etale_thom_class_unit_of_thom_isomorphism | exact etale_thom_class_top_degree_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_class_natural_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafTauNat := by
+  apply LateralTheory.CohomologicalPurity.Thom.LeafTauNat_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_cokernel_isomorphism_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcSp.LeafCokIso := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcSp.LeafCokIso_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_double_cokernel_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcSp.LeafDblCok := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcSp.leafDblCok_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_mapping_cone_cokernel_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcSp.LeafConeCok := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcSp.leafConeCok_of <;> first | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_relative_homotopy_sequence_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcSp.LeafHsRel := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcSp.etale_relative_cohomology_iso_of_cone_and_double_cokernel_isos <;> first | exact etale_double_cokernel_of_thom_isomorphism | exact etale_mapping_cone_cokernel_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_excision_specialization_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafExcSp := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcSp.etaleSplitExcision_of_cokernel_relative <;> first | exact etale_cokernel_isomorphism_of_thom_isomorphism | exact etale_relative_homotopy_sequence_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_projective_localization_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafPLoc := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafPLoc_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_localization_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWLoc := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWLoc_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_covering_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWCov := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWCov_of' <;> first | exact etale_chart_projective_localization_of_thom_isomorphism | exact etale_chart_localization_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_gluing_data_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWData := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWData_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_cech_descent_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWCech := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWCech_of_data <;> first | exact etale_chart_gluing_data_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_right_equivalence_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWEqvR := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWEqvR_of <;> first | exact etale_chart_cech_descent_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_multiplicative_group_action_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWGm := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWGm_of <;> first | exact etale_chart_right_equivalence_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_torsor_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWTors := by
+  apply WeightedBlowupChartPointUnits.Cb.etale_weighted_blowup_exceptional_chart_torsor_of_equivalence <;> first | exact etale_chart_right_equivalence_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_chart_left_equivalence_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWEqvL := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.Chart.LeafWEqvL_of <;> first | exact etale_chart_multiplicative_group_action_of_thom_isomorphism | exact etale_chart_torsor_of_thom_isomorphism | exact etale_chart_right_equivalence_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_chart_factorization_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.ExcP.LeafChartFact := by
+  apply LateralTheory.CohomologicalPurity.Thom.ExcP.LeafChartFact_of <;> first | exact etale_chart_covering_of_thom_isomorphism | exact etale_chart_right_equivalence_of_thom_isomorphism | exact etale_chart_left_equivalence_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_excision_projective_of_thom_isomorphism : LateralTheory.CohomologicalPurity.Thom.LeafExcP := by
+  apply LateralTheory.CohomologicalPurity.Thom.excision_of_thom_chart_factorization <;> first | exact etale_thom_chart_factorization_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem etale_thom_isomorphism_of_thom_isomorphism : LateralTheory.CohomologicalPurity.LeafThom := by
+  apply LateralTheory.CohomologicalPurity.Thom.goal_of <;> first | exact etale_thom_geometric_fibers_of_thom_isomorphism | exact etale_thom_group_action_of_thom_isomorphism | exact etale_thom_pullback_of_thom_isomorphism | exact etale_affine_homotopy_invariance_of_thom_isomorphism | exact etale_thom_tail_vanishing_of_thom_isomorphism | exact etale_thom_class_of_thom_isomorphism | exact etale_thom_class_natural_of_thom_isomorphism | exact etale_thom_excision_specialization_of_thom_isomorphism | exact etale_thom_excision_projective_of_thom_isomorphism | exact etale_boundary_map_of_thom_isomorphism | exact etale_excision_isomorphism_of_excision
+theorem intersectionNumber_baseChange : LateralTheory.CohomologicalPurity.LeafThom := etale_thom_isomorphism_of_thom_isomorphism
+end LateralTheory.Fin.LeafThom

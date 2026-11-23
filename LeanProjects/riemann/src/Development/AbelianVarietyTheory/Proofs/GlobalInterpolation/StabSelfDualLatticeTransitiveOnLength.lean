@@ -1,0 +1,12 @@
+import Mathlib
+import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StabilizerLattices
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SelfDualStabilizer
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StabTransitiveOfLemmas
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SelfDualLatticesUnramifiedPlaceNoHypothesisStatement
+
+namespace GlobalTheory.StabOrbit
+
+theorem stabTransitive : GlobalTheory.IndefiniteRowSideFullHecke.SelfDualLatticeStabilizers.StabTransitive :=
+  GlobalTheory.Proof.SelfDualStabilizer.stabTransitive_iff.1 (stabTransitive_of_lemmas GlobalTheory.T.selfDual_lattices_unramified_place_no_hypothesis)
+
+end GlobalTheory.StabOrbit

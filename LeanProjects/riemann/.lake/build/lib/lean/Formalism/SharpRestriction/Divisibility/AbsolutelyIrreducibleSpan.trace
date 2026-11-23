@@ -1,0 +1,217 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["55c35ea186b9d8ee.olean"],
+  "m": false,
+  "i": "10115929c25f6fd0.ilean",
+  "c": "65b37b7a76ca221c.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:86:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:87:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:85:79: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:86:4: Unused tactic linter: `(simp only [RowSide.iota, Rows.Data.iota, sharp_downTo]; try rfl; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:87:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:92:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:93:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:91:65: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:92:4: Unused tactic linter: `(simp only [RowSide.Usp, Rows.Data.Usp, sharp_iota]; try rfl; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:93:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:98:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:99:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:97:64: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:98:4: Unused tactic linter: `(simp only [RowSide.Qsp, Rows.Data.Qsp, sharp_Usp]; try rfl; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:99:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:103:61: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:105:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:103:45: Unused tactic linter: `rw [sharp_Qsp]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:103:61: Unused tactic linter: `try rfl; done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:104:71: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:105:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:110:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:111:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:109:83: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:110:4: Unused tactic linter: `(simp only [RowSide.RRset, Rows.Data.RRset, sharp_iota, sharp_LamSet];\n  try rfl; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:111:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:116:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:115:80: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:116:4: Unused tactic linter: `exact Iff.rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:121:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:121:4: Unused tactic linter: `(unfold RowSide.AIntegral Rows.AIntegral; exact Iff.rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:169:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:169:4: Unused tactic linter: `(rw [Nat.pos_iff_ne_zero, Ne, Ideal.absNorm_eq_zero_iff]; exact D.host.ccK_ne_bot)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:201:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:209:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:449:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:448:40: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:449:4: Unused tactic linter: `(unfold unitMetricFrames; rw [h v])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:520:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:520:2: Unused tactic linter: `all_goals norm_num` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean:728:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow transitive imports (legacy)",
+       "54b3a8eb8bcde914"],
+      ["Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow:importAllArts",
+       "f10d37f00d0e0c61"],
+      ["Formalism.LocalRingCardinality.DataParams₂ transitive imports (legacy)",
+       "8e4303569b654151"],
+      ["Formalism.LocalRingCardinality.DataParams₂:importAllArts",
+       "4aaf5906725de512"],
+      ["Formalism.LocalRingCardinality.DataParams transitive imports (legacy)",
+       "0803367e31da2716"],
+      ["Formalism.LocalRingCardinality.DataParams:importAllArts",
+       "ed087a8a614c8134"],
+      ["Formalism.LocalRingCardinality.DataDIV transitive imports (legacy)",
+       "7a0ca25fe0c4e03c"],
+      ["Formalism.LocalRingCardinality.DataDIV:importAllArts",
+       "df3306150d2590b7"],
+      ["Formalism.LocalRingCardinality.DataDIVDefs transitive imports (legacy)",
+       "0469a50d03410827"],
+      ["Formalism.LocalRingCardinality.DataDIVDefs:importAllArts",
+       "fdfc3f714403e130"],
+      ["Formalism.LocalRingCardinality.DataTheta transitive imports (legacy)",
+       "7ba5f453569ed6be"],
+      ["Formalism.LocalRingCardinality.DataTheta:importAllArts",
+       "25f27bab12a1a1f0"],
+      ["Formalism.LocalRingCardinality.PrincipalHermitianLattice transitive imports (legacy)",
+       "c78f2ff010c3dd71"],
+      ["Formalism.LocalRingCardinality.PrincipalHermitianLattice:importAllArts",
+       "e7755569b6524b6f"],
+      ["Formalism.LocalRingCardinality.DataKap transitive imports (legacy)",
+       "e7b99a49ccefb92f"],
+      ["Formalism.LocalRingCardinality.DataKap:importAllArts",
+       "4ef17f23ce17e8f1"],
+      ["Formalism.LocalRingCardinality.DataAmbForm transitive imports (legacy)",
+       "3101cb20dc668937"],
+      ["Formalism.LocalRingCardinality.DataAmbForm:importAllArts",
+       "2e861a0a6805ad2e"],
+      ["Formalism.HarderNarasimhan.StatementPl transitive imports (legacy)",
+       "61e48d5daba2c8bd"],
+      ["Formalism.HarderNarasimhan.StatementPl:importAllArts",
+       "73dc7530810fad3c"],
+      ["Formalism.HermitianLattices.StatementMaj transitive imports (legacy)",
+       "eef7bb56945c2abe"],
+      ["Formalism.HermitianLattices.StatementMaj:importAllArts",
+       "5c9a32117c157378"],
+      ["Formalism.SharpRestriction.Divisibility.SchurIrreducible transitive imports (legacy)",
+       "e14e7f74e9898119"],
+      ["Formalism.SharpRestriction.Divisibility.SchurIrreducible:importAllArts",
+       "27b057bd6f45f57b"],
+      ["Formalism.SharpRestriction.ParConsts transitive imports (legacy)",
+       "dca116d8c5b0f134"],
+      ["Formalism.SharpRestriction.ParConsts:importAllArts",
+       "694d70a55903f24f"],
+      ["Formalism.SharpRestriction.ParamsHeightRankConstant transitive imports (legacy)",
+       "443c67b20178611d"],
+      ["Formalism.SharpRestriction.ParamsHeightRankConstant:importAllArts",
+       "fec53bb8189823c6"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/Divisibility/AbsolutelyIrreducibleSpan.lean",
+   "1cb5ae416985265b"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SharpRestriction.Divisibility.AbsolutelyIrreducibleSpan",
+   "36106c6cdd2c24ec"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "cb43326942be35d1"}

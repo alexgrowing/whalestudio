@@ -1,0 +1,7 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
+open NumberField IsDedekindDomain MeasureTheory ValuativeRel Matrix Formalism.BasicNotions Formalism.HermitianLatticesTheory Formalism.L2.DIV Formalism.L2.Col GlobalTheory.SplitWeil GlobalTheory.RootEx GlobalTheory.StepData GlobalTheory.SymChain GlobalTheory.SymBridge
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.residues_of_completionAtPrimeWithUniformizer : ∀ (E k : Type) [Field E] [NumberField E] [StarRing E] [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (P : HeightOneSpectrum (𝓞 E)) (q : ℕ) (ι : E →+* k) (ϖ : kˣ), IsCompl P q ι ϖ → GlobalTheory.IndefiniteRowSideFullHecke.FramePositiveSum.IsUnif ϖ → (∀ a, valuation k (ι a) < 1 ↔ IntAt P (a / (q : E))) ∧ (∀ a, IntAt P a → (valuation k (ι a) < 1 ↔ redP P a = 0)) ∧ (∀ a, IntAt P a → (valuation k (ι a) = 1 ↔ IsUnit (redP P a))) ∧ (q : E) ≠ 0 ∧ ((q : ℕ) : 𝓞 E) ∈ P.asIdeal ∧ ((q : ℕ) : 𝓞 E) ∉ P.asIdeal ^ 2 ∧ resCard k = q ∧ ∀ (n : ℕ) (x : k), x ∈ 𝒪[k] → ∃! i : ℕ, i < q ^ n ∧ valuation k (x - (i : k)) ≤ valuation k ((ϖ : k) ^ n) := by
+  first | exact @GlobalTheory.SymBridge.ComplRes.residues | exact GlobalTheory.SymBridge.ComplRes.residues | (intros; apply GlobalTheory.SymBridge.ComplRes.residues <;> assumption)

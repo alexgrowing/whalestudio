@@ -1,0 +1,148 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1a4715d4540e563e.olean"],
+  "m": false,
+  "i": "f09d4bb704f4f95b.ilean",
+  "c": "0290fb688f42e70f.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:23:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:23:8: Unused tactic linter: `exact NumberField.IsTotallyComplex.isComplex u` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:44:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:45:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:44:6: Unused tactic linter: `simp [Formalism.HermitianLatticesTheory.realize]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:45:6: Unused tactic linter: `(unfold Formalism.HermitianLatticesTheory.realize; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:47:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.fcoord_smul`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:53:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:54:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:53:8: Unused tactic linter: `(funext i;\n  simp [Formalism.HermitianLatticesTheory.vecAt, Finsupp.smul_apply, map_mul])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:54:8: Unused tactic linter: `(unfold Formalism.HermitianLatticesTheory.vecAt; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:132:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.prj_apply`:\n  [Fintype P]\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype P] [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:135:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.psi_apply`:\n  [Fintype P]\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype P] [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:138:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.psi_injective`:\n  [Fintype P]\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype P] [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:145:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.mem_placePart`:\n  [DecidableEq P]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq P] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:150:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:150:6: Unused tactic linter: `(unfold placePart; simp)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:165:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.sum_prj`:\n  [Fintype ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:181:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.fcoord_osmul`:\n  [IsTotallyComplex K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:187:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.fcoord_lincomb`:\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:206:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.realize_mem`:\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:212:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:213:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:212:6: Unused tactic linter: `exact Submodule.subset_span (AddSubgroup.mem_map.2 ⟨x, hx, rfl⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:213:6: Unused tactic linter: `exact Submodule.subset_span (Set.mem_image_of_mem _ hx)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:229:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.prj_realize`:\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:306:11: `DistribMulAction.toLinearMap` has been deprecated: Use `DistribSMul.toLinearMap` instead\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.toLinearMap` to `DistribSMul.toLinearMap x`).",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:348:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:350:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:335:0: automatically included section variable(s) unused in theorem `Formalism.HN.PlaceDecomposition.finrank_span_complex`:\n  [StarRing K]\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:353:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:413:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:414:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:353:8: Unused tactic linter: `exact @Fintype.ofFinite _ hli.finite` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:413:6: Unused tactic linter: `rw [Subtype.range_val] at h3` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean:414:6: Unused tactic linter: `simp only [Subtype.range_coe_subtype, Set.setOf_mem_eq] at h3` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.HarderNarasimhan.DefsPl transitive imports (legacy)",
+       "d861930b31d7858f"],
+      ["Formalism.HarderNarasimhan.DefsPl:importAllArts",
+       "b31466be3c8de6ff"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/PlaceSplit.lean",
+   "303dd709cb22b8f5"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit",
+   "58b18f6388e7417e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a204e2c35ace37b5"}

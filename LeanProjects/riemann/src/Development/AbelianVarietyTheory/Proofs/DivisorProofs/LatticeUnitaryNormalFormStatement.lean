@@ -1,0 +1,9 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeUnitaryNormalForm
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombineApply
+open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.ThK
+open scoped Matrix TensorProduct
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.lattice_unitary_normal_form : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E) (n : ℕ) (J J' : Matrix (Fin n) (Fin n) E) (Φ : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.AE F E ≃+* (InfinitePlace F → ℂ) × (E ⊗[F] Formalism.MainNotions.S.Af F)) (ε : InfinitePlace F → Fin n → Bool) (P : InfinitePlace F → (Matrix (Fin n) (Fin n) ℂ)ˣ) (L : Submodule (𝓞 E) (Fin n → E)) (hs : Submodule.span E (L : Set (Fin n → E)) = ⊤) (hfg : L.FG) (hU : ∀ x, GlobalTheory.ThKUTr.rawT Φ ε P (Formalism.UG.UPts σ J' (Formalism.MainNotions.S.Af F)) x ∈ UG (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.cA σ) (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.incM F J)), Continuous (fun c : InfinitePlace F → ℂ => Φ.symm (c, 0)) → (∀ U ∈ nhds (0 : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.AE F E), ∃ N : ℕ, 1 ≤ N ∧ ∀ y ∈ Formalism.MainNotions.S.IntAf F E, Φ.symm (0, (N : E ⊗[F] Formalism.MainNotions.S.Af F) * y) ∈ U) → @Continuous _ _ (@instTopologicalSpaceProd _ _ _ (GlobalTheory.AutInhab.adelicBasis L hs hfg (Formalism.UG.UPts σ J' (Formalism.MainNotions.S.Af F))).topology) _ (GlobalTheory.ThKUTr.trHom σ J Φ ε P (Formalism.UG.UPts σ J' (Formalism.MainNotions.S.Af F)) hU) := by
+  first | exact @GlobalTheory.ThKUTrCont.trHom_continuous | exact GlobalTheory.ThKUTrCont.trHom_continuous | (intros; apply GlobalTheory.ThKUTrCont.trHom_continuous <;> assumption)

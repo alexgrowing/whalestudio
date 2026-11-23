@@ -1,0 +1,9 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
+
+namespace GlobalTheory.Closed
+
+theorem heckeLPartialContinuation : GlobalTheory.Published.HeckeLPartialContinuation :=
+  GlobalTheory.Published.HeckeLPartialContinuation_holds
+
+end GlobalTheory.Closed

@@ -1,0 +1,95 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["19e16b5bfce9e974.olean"],
+  "m": false,
+  "i": "a06b6761dce8e9e8.ilean",
+  "c": "9775ae2bbdfe2e55.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:19:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.ms_rkK_bot`:\n  [NumberField K]\n  [StarRing K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:24:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:23:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.ms_rkK_pos`:\n  [NumberField K]\n  [StarRing K]\n  [IsScalarTower (𝓞 K) K V]\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsScalarTower (𝓞 K) K V] [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:32:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.ms_nPl_pos`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:52:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:53:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:52:10: Unused tactic linter: `simp [Submodule.starProjection_top]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:53:10: Unused tactic linter: `exact Submodule.starProjection_top_apply y` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:93:24: `Matrix.toEuclideanLin_apply` has been deprecated: Use `Matrix.toLpLin_apply` instead\n\nNote: The updated constant has a different type:\n  ∀ {m : Type u_1} {n : Type u_2} {R : Type u_4} [inst : Fintype n] [inst_1 : DecidableEq n] [inst_2 : CommRing R]\n    (p q : ENNReal) (M : Matrix m n R) (v : WithLp p (n → R)), ((Matrix.toLpLin p q) M) v = WithLp.toLp q (M *ᵥ v.ofLp)\ninstead of\n  ∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n]\n    (M : Matrix m n 𝕜) (v : EuclideanSpace 𝕜 n), (Matrix.toEuclideanLin M) v = WithLp.toLp 2 (M *ᵥ v.ofLp)",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:80:0: automatically included section variable(s) unused in theorem `Formalism.BranchingDeterminantCap.ms_opNorm_nat`:\n  [NumberField K]\n  [StarRing K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:86:33: This simp argument is unused:\n  LinearMap.toMatrix_id\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Matrix.one_apply, h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:86:56: This simp argument is unused:\n  Matrix.one_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [LinearMap.toMatrix_id, h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:93:24: This simp argument is unused:\n  Matrix.toEuclideanLin_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:94:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:105:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:94:8: Unused tactic linter: `(simp [Matrix.toEuclideanLin, Matrix.toLin'_one])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean:105:8: Unused tactic linter: `(\n  apply ContinuousLinearMap.norm_id_of_nontrivial_seminorm\n  exact ⟨EuclideanSpace.single i 1, by simp⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.BranchSandwichDivisors.StatementL transitive imports (legacy)",
+       "b499f1a1ea86212e"],
+      ["Formalism.BranchSandwichDivisors.StatementL:importAllArts",
+       "0423444e2f815f65"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance transitive imports (legacy)",
+       "a0179aad2094a559"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance:importAllArts",
+       "c7eaa9e918a2599c"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/MapScale.lean",
+   "9bae6fb4a226dd6a"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.BranchSandwichDivisors.BranchIsometryProofs.MapScale",
+   "9d1ff7556f19a383"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "f61b68394a98a13e"}

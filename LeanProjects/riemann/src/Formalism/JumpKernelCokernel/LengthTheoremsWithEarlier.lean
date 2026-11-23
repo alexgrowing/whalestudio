@@ -1,0 +1,44 @@
+import Formalism.JumpKernelCokernel.JumpShiftProofs.DetLen
+import Formalism.JumpKernelCokernel.JumpShiftProofs.RelZero
+import Formalism.JumpKernelCokernel.JumpShiftProofs.ColumnDegreeBound
+import Formalism.JumpKernelCokernel.JumpShiftProofs.RowDegreeBound
+import Formalism.JumpKernelCokernel.JumpShiftProofs.ExpRowD
+import Formalism.JumpKernelCokernel.JumpShiftProofs.InvConst
+import Formalism.JumpKernelCokernel.JumpShiftProofs.KerCoker
+import Formalism.JumpKernelCokernel.JumpShiftProofs.JumpShift
+import Formalism.JumpKernelCokernel.JumpShiftProofs.PowBinom
+import Formalism.JumpKernelCokernel.JumpShiftProofs.HCoefLim
+import Formalism.JumpKernelCokernel.JumpShiftProofs.IdealPowerSumMem
+import Formalism.JumpKernelCokernel.JumpShiftProofs.ColThmC
+import Formalism.JumpKernelCokernel.JumpShiftProofs.FiltrationExponentHolds
+import Formalism.JumpKernelCokernel.JumpShiftProofs.ThickB
+import Formalism.JumpKernelCokernel.JumpShiftProofs.KerCokerEq
+import Formalism.JumpKernelCokernel.JumpShiftProofs.ThickA
+import Formalism.JumpKernelCokernel.JumpShiftProofs.PdFacts
+import Formalism.JumpKernelCokernel.JumpShiftProofs.LenSplit
+import Formalism.JumpKernelCokernel.JumpShiftProofs.TorsKerSum
+import Formalism.JumpKernelCokernel.JumpShiftProofs.TorsKer
+import Formalism.JumpKernelCokernel.JumpShiftProofs.RowDJoint
+import Formalism.JumpKernelCokernel.JumpShiftProofs.LemmaDJoint
+import Formalism.JumpKernelCokernel.JumpShiftProofs.CokerTors
+import Formalism.TruncatedSeriesCounting.EtaDeterminantPolynomialIdentities
+import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.DistinguishedPowMemSpanOfTrichotomy
+import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.PadicValNatFactorialLeReal
+import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.RationalTailBoundCubic
+
+namespace Formalism.KernelCokernelLengths
+
+theorem length_theorems_all_hold : Formalism.KernelCokernelLengths.DetLen ∧ Formalism.KernelCokernelLengths.RelZero ∧ Formalism.KernelCokernelLengths.CDge ∧ Formalism.KernelCokernelLengths.RowD ∧ Formalism.KernelCokernelLengths.ExpRowD ∧ Formalism.KernelCokernelLengths.InvConst ∧ Formalism.KernelCokernelLengths.KerCoker ∧ Formalism.KernelCokernelLengths.JumpShift ∧ Formalism.KernelCokernelLengths.PowBinom ∧ Formalism.KernelCokernelLengths.HCoefLim ∧ Formalism.KernelCokernelLengths.QPow ∧ Formalism.KernelCokernelLengths.ColThmC ∧ Formalism.KernelCokernelLengths.FExp ∧ Formalism.KernelCokernelLengths.ThickB ∧ Formalism.KernelCokernelLengths.KerCokerEq ∧ Formalism.KernelCokernelLengths.CokerSurj ∧ Formalism.KernelCokernelLengths.ThickA ∧ Formalism.KernelCokernelLengths.PdFacts ∧ Formalism.KernelCokernelLengths.LenSplit ∧ Formalism.KernelCokernelLengths.TorsKerSum ∧ Formalism.KernelCokernelLengths.TorsKer ∧ Formalism.KernelCokernelLengths.RowDJoint ∧ Formalism.KernelCokernelLengths.LemmaDJoint ∧ Formalism.KernelCokernelLengths.CokerTors := by
+  exact ⟨determinant_length_formula, relation_vanishes, column_degree_bound, row_degree_bound, row_degree_exponent, exists_fixed_add_of_sub_mem, kernel_cokernel_lengths, jump_shift_holds, power_binomial_bound, coefficient_height_limit, ideal_power_sum_mem, column_theorem_C, filtration_exponent_holds, thickness_second_bound, endKernelCokernelLengthEq, cokernelLengthLeOfSurjective, thickness_first_bound, polynomial_degree_facts, length_splits_additively, torsion_kernel_sum_length, torsion_kernel_length, row_degree_joint_form, lemma_D_joint_form, cokernel_torsion_holds⟩
+
+theorem length_theorems_with_earlier :
+    (Formalism.KernelCokernelLengths.DetLen ∧ Formalism.KernelCokernelLengths.RelZero ∧ Formalism.KernelCokernelLengths.CDge ∧ Formalism.KernelCokernelLengths.RowD ∧ Formalism.KernelCokernelLengths.ExpRowD ∧ Formalism.KernelCokernelLengths.InvConst ∧ Formalism.KernelCokernelLengths.KerCoker ∧ Formalism.KernelCokernelLengths.JumpShift ∧ Formalism.KernelCokernelLengths.PowBinom ∧ Formalism.KernelCokernelLengths.HCoefLim ∧ Formalism.KernelCokernelLengths.QPow ∧ Formalism.KernelCokernelLengths.ColThmC ∧ Formalism.KernelCokernelLengths.FExp ∧ Formalism.KernelCokernelLengths.ThickB ∧ Formalism.KernelCokernelLengths.KerCokerEq ∧ Formalism.KernelCokernelLengths.CokerSurj ∧ Formalism.KernelCokernelLengths.ThickA ∧ Formalism.KernelCokernelLengths.PdFacts ∧ Formalism.KernelCokernelLengths.LenSplit ∧ Formalism.KernelCokernelLengths.TorsKerSum ∧ Formalism.KernelCokernelLengths.TorsKer ∧ Formalism.KernelCokernelLengths.RowDJoint ∧ Formalism.KernelCokernelLengths.LemmaDJoint ∧ Formalism.KernelCokernelLengths.CokerTors) ∧
+    (Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.HCoef ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.ExpBound ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.MaxZeroExponentInequality ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.TwoIntervalValuationSumBound ∧
+      Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.LemmaGVal ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.LemmaGIdeal ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.RamifiedValuationInequality ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.LenPi0 ∧
+      Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.ColChain ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.SubGen ∧ Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.ColAssembly) ∧
+    (Formalism.TruncatedSeriesCounting.R9.LengthQuotientLeOfPowSMul ∧ Formalism.TruncatedSeriesCounting.R9.CancelQ ∧ Formalism.TruncatedSeriesCounting.R9.CancelC ∧ Formalism.TruncatedSeriesCounting.R9.TruncZero) ∧
+    (Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.FirstRelationTorsion ∧ Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.FirstRelationModule ∧ Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.SecondRelationTorsion ∧ Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.GapG ∧
+      Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.RRVal ∧ Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.ExponentChainBound ∧ Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.NumC) := by
+  exact ⟨length_theorems_all_hold, ⟨Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.h_coefficient_bound, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.expBound_statement, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.second_exponent_bound, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.first_sigma_valuation_bound, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.g_coeff_valuation_statement, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.g_ideal_valuation_statement, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.ramified_valuation_inequality, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.length_pi_zero_bound, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.column_chain_bound, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.submodule_generator_count, Formalism.TruncatedSeriesCounting.RamifiedCoefficientChains.column_assembly_bound⟩, ⟨Formalism.TruncatedSeriesCounting.R9.length_quotient_le_of_pow_smul, Formalism.TruncatedSeriesCounting.R9.mem_span_of_X_pow_mul, Formalism.TruncatedSeriesCounting.R9.mem_span_of_C_pow_mul, Formalism.TruncatedSeriesCounting.R9.pow_mem_span_pow_mul⟩, ⟨Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.linearFactorPowMemSpan, Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.linearFactorPowMemSpanXPow, Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.distinguishedPowMemSpan, Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.gapG_proof, Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.rRVal_proof, Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.exponentChainBound, Formalism.ZetaNonvanishing.ZetaNonvanishingCriteria.rationalTailBoundCubic⟩⟩
+
+end Formalism.KernelCokernelLengths

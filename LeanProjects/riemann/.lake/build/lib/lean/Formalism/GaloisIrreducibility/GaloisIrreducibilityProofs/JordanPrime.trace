@@ -1,0 +1,82 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["d90e94002317ce94.olean"],
+  "m": false,
+  "i": "197745e8ce7dc8e0.ilean",
+  "c": "35c56d1c949f942a.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:11:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.conj_pow_eq`:\n  [Fintype α]\n  [DecidableEq α]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype α] [DecidableEq α] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:23:14: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:23:14: Unused tactic linter: `group` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:40:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.conj_key`:\n  [Fintype α]\n  [DecidableEq α]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype α] [DecidableEq α] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:55:20: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:58:20: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:63:20: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:55:20: Unused tactic linter: `simp [mul_assoc]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:58:20: Unused tactic linter: `simp [mul_assoc]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:63:20: Unused tactic linter: `simp only [mul_inv_rev, inv_inv, mul_assoc]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:68:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.eq_zpow_on_support`:\n  [Fintype α]\n  [DecidableEq α]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype α] [DecidableEq α] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:90:0: automatically included section variable(s) unused in theorem `Formalism.GaloisIrreducibility.CycleCommutantPowers.exists_agree`:\n  [Fintype α]\n  [DecidableEq α]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype α] [DecidableEq α] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:107:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean:107:8: Unused tactic linter: `(simp only [Function.Embedding.smul_apply, Subgroup.smul_def, Perm.smul_def] at h;\n  exact h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.GaloisIrreducibility.Statement transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.GaloisIrreducibility.Statement:importAllArts",
+       "aa4761c401a6ecc9"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/GaloisIrreducibility/GaloisIrreducibilityProofs/JordanPrime.lean",
+   "7ecee3dc98391acc"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.JordanPrime",
+   "fb302ed4d4d1ee30"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "319f279ae30f233b"}

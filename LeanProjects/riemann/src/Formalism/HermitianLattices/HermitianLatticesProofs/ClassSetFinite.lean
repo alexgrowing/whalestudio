@@ -1,0 +1,14 @@
+import Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly
+import Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal
+import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound
+import Formalism.HermitianLattices.HermitianLatticesProofs.ShortVectors
+import Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale
+import Formalism.HermitianLattices.HermitianLatticesProofs.FinIntermediate
+import Formalism.HermitianLattices.HermitianLatticesProofs.IsomOfTrace
+
+namespace Formalism.HermitianLatticesTheory
+
+theorem classSetFinite : ClassSetFinite :=
+  classSetFinite_of traceReal genusCovolBound shortVectors genusScale finIntermediate isomOfTrace
+
+end Formalism.HermitianLatticesTheory

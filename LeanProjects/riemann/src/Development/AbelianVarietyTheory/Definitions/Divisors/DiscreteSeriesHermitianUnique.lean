@@ -1,0 +1,193 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilRepresentationExists
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.GreenSeriesSt
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.PrimesInProgressionNonempty
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.ComplexMultiplicationJPremises
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CuspDiscreteDecompositionOfTraceClass
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsFactorisationCuspidal
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeilSiegelFormulaUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SiegelWeilAnisotropicUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LowerLiftsZeroOfWittIdxEqZero
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RegularisedSiegelWeilFirstTerm
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.EisRegularAtOfEisPoleLE
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsOrthonormalOfUnimodular
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LabesseWaldspurger
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BorelCasselman
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SchurOrthogonalitySquareIntegrable
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LogDerOne
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsIrrKSubOfIsKTypeOf
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesLowestKTypeOfClassification
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HolomorphicDiscreteSeries
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsAdmissibleSubOfFiniteDimensional
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsQuotHeightMulExpInfLe
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BesselFormsTrivialNeBot
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IrreducibleDistinctUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.KudlaSplittingSplitUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.MetaplecticRepresentation
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
+import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.ExistsMemIdealInvariants
+import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.HermitianHassePrincipleHolds
+import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.PlaneFormNondegenerate
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqExistsIffDsExists
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
+import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.ThetaRationalInvarianceHolds
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesHermitianUniqueOfClassification
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesCoverExistsIff
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
+
+namespace GlobalTheory.FunPr
+
+structure Hypotheses₂ : Prop where
+
+  greenSeriesSt : GlobalTheory.Published.GreenSeriesSt
+
+  linnik : GlobalTheory.Published.Linnik
+
+  complexMultiplicationJSt : GlobalTheory.Published.ComplexMultiplicationJSt
+
+  cuspidalMirabolic : GlobalTheory.Published.CuspidalMirabolic
+
+  weylBranching : GlobalTheory.Published.WeylBranching
+
+  bernsteinUnitaryProductIrreducible : GlobalTheory.Published.BernsteinUnitaryProductIrreducible
+
+  zelevinskyPolynomialRing : GlobalTheory.Published.ZelevinskyPolynomialRing
+
+  bernsteinZelevinskyFiniteness : GlobalTheory.Published.BernsteinZelevinskyFiniteness
+
+  cuspTraceClass : GlobalTheory.Published.CuspTraceClass
+
+  flathFactorisation : GlobalTheory.Published.FlathFactorisation
+
+  weilSiegelFormulaUnitary : GlobalTheory.Published.WeilSiegelFormulaUnitary
+
+  siegelWeilAnisotropicUnitary : GlobalTheory.Published.SiegelWeilAnisotropicUnitary
+
+  rallisInnerProductConvergent : GlobalTheory.Published.RallisInnerProductConvergent
+
+  regularisedSiegelWeilFirstTerm : GlobalTheory.Published.RegularisedSiegelWeilFirstTerm
+
+  doublingMethod : GlobalTheory.Published.DoublingMethod
+
+  unramifiedDoublingGL : GlobalTheory.Published.UnramifiedDoublingGL
+
+  hermitianLocalGlobal : GlobalTheory.Published.HermitianLocalGlobal
+
+  quadraticClassFieldTheory : GlobalTheory.Published.QuadraticClassFieldTheory
+
+  labesseWaldspurger : GlobalTheory.Published.LabesseWaldspurger
+
+  pseudoCoefficientUpq : GlobalTheory.Published.PseudoCoefficientUpq
+
+  harishChandraCharacters : GlobalTheory.Published.HarishChandraCharacters
+
+  langlandsClassification : GlobalTheory.Published.LanglandsClassification
+
+  borelCasselman : GlobalTheory.Published.BorelCasselman
+
+  radfordShufflePolynomial : GlobalTheory.Published.RadfordShufflePolynomial
+
+  dixmierMalliavinFactorisation : GlobalTheory.Published.DixmierMalliavinFactorisation
+
+  schurOrthogonalitySquareIntegrable : GlobalTheory.Published.SchurOrthogonalitySquareIntegrable
+
+  heckeLPartialContinuation : GlobalTheory.Published.HeckeLPartialContinuation
+
+  logDerOne : GlobalTheory.Mem.An.LogDerOne
+
+  kFiniteVectorsUnitary : GlobalTheory.Published.KFiniteVectorsUnitary
+
+  discreteSeriesLowestKType : GlobalTheory.Published.DiscreteSeriesLowestKType
+
+  holomorphicDiscreteSeries : GlobalTheory.Published.HolomorphicDiscreteSeries
+
+  gKGlobalisation : GlobalTheory.Published.GKGlobalisation
+
+  cuspBounded : GlobalTheory.Published.CuspBounded
+
+  strongApproxSU : GlobalTheory.Published.StrongApproxSU
+
+  heckeLEntireAndNonzeroAtOne : GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne
+
+  realMetaplecticRepresentation : GlobalTheory.Published.RealMetaplecticRepresentation
+
+  cuspDecayBound : GlobalTheory.Published.CuspDecayBound
+
+  besselUniquenessReal : GlobalTheory.Published.BesselUniquenessReal
+
+  gLHoweDuality : GlobalTheory.Published.GLHoweDuality
+
+  kudlaSplittingSplitUnitary : GlobalTheory.Published.KudlaSplittingSplitUnitary
+
+  metaplecticRepresentation : GlobalTheory.Published.MetaplecticRepresentation
+
+  harishChandraModules : GlobalTheory.Published.HarishChandraModules
+
+  discreteSeriesCover : GlobalTheory.Published.DiscreteSeriesCover
+
+  idealInvariantsOneOrbitSt : GlobalTheory.Published.IdealInvariantsOneOrbitSt
+
+  hermitianHassePrinciple : GlobalTheory.Published.HermitianHassePrinciple
+
+  stoneVonNeumann : GlobalTheory.Published.StoneVonNeumann
+
+  discreteSeriesUpqExists : GlobalTheory.Published.DiscreteSeriesUpqExists
+
+  formalDegreeCompactDual : GlobalTheory.Published.FormalDegreeCompactDual
+
+  thetaRationalInvariance : GlobalTheory.Published.ThetaRationalInvariance
+
+  discreteSeriesHermitianUnique : GlobalTheory.Published.DiscreteSeriesHermitianUnique
+
+  discreteSeriesExists : GlobalTheory.Published.DiscreteSeriesExists
+
+  harishChandraFinite : GlobalTheory.Published.HarishChandraFinite
+
+  cuspRapidDecay : GlobalTheory.Published.CuspRapidDecay
+
+  weilRepresentationUnitaryPair : GlobalTheory.Published.WeilRepresentationUnitaryPair
+
+  discreteSeriesCoverExists : GlobalTheory.Published.DiscreteSeriesCoverExists
+
+  cuspDecaySobolev : GlobalTheory.Published.CuspDecaySobolev
+
+  casselmanWallach : GlobalTheory.Published.CasselmanWallach
+
+  howeDualityUnitary : GlobalTheory.Published.HoweDualityUnitary
+
+  howeDualityReal : GlobalTheory.Published.HoweDualityReal
+
+  siegelSetUnitary : GlobalTheory.Published.SiegelSetUnitary
+
+  minguezThetaGL : GlobalTheory.Published.MinguezThetaGL
+
+  weilRepresentationExists : GlobalTheory.Published.WeilRepresentationExists
+
+end GlobalTheory.FunPr

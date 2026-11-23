@@ -1,0 +1,37 @@
+import Mathlib
+
+namespace Formalism.GM
+
+open MvPolynomial Finset
+
+def qch (a j : ℕ) : ℚ := (a.choose j : ℚ)
+
+def LevelSum : Prop :=
+  ∀ (A z l : ℕ), z + l ≤ A →
+    ∑ j ∈ range (l + 1), (-1 : ℚ) ^ j * qch l j * qch (A - z - l) j / qch A j = qch (z + l) l / qch A l
+
+noncomputable def tieE {k σ : Type} [Field k] {r : ℕ} (w e : Fin r → σ) :
+    MvPolynomial σ k →ₗ[k] MvPolynomial σ k :=
+  LinearMap.mulLeft k (∑ c, X (w c) * X (e c))
+
+noncomputable def tieF {k σ : Type} [Field k] {r : ℕ} (w e : Fin r → σ) :
+    MvPolynomial σ k →ₗ[k] MvPolynomial σ k :=
+  ∑ c, (pderiv (w c)).toLinearMap ∘ₗ (pderiv (e c)).toLinearMap
+
+noncomputable def tiePhi {k σ : Type} [Field k] {r : ℕ} (w e : Fin r → σ) (o n z : ℕ) :
+    MvPolynomial σ k →ₗ[k] MvPolynomial σ k :=
+  ∑ j ∈ range (o + 1),
+    (((-1 : k) ^ j) / (((j.factorial : k) ^ 2) * ((o + n + r + z - 1).choose j : k))) •
+      (((tieE w e) ^ j).comp ((tieF w e) ^ j))
+
+def BiHom {k σ : Type} [Field k] {r : ℕ} (w e : Fin r → σ) (a b : ℕ) (u : MvPolynomial σ k) : Prop :=
+  ∀ m ∈ u.support, (∑ c, m (w c)) = a ∧ (∑ c, m (e c)) = b
+
+def LevelAct : Prop :=
+  ∀ (k σ : Type) [Field k] [CharZero k] (r : ℕ) (w e : Fin r → σ), Function.Injective w →
+    Function.Injective e → (∀ c d, w c ≠ e d) → 1 ≤ r →
+    ∀ (o n z l : ℕ) (u : MvPolynomial σ k), l ≤ o → l ≤ n → tieF w e u = 0 → BiHom w e (o - l) (n - l) u →
+      tiePhi w e o n z ((tieE w e ^ l) u) =
+        (((z + l).choose l : k) / ((o + n + r + z - 1).choose l : k)) • ((tieE w e ^ l) u)
+
+end Formalism.GM

@@ -1,0 +1,9 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.TraceOneUnramified
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.RowUnitCondition
+
+namespace PI.UnitaryGroupMassFormula.CntFormula.RowsMassW
+
+theorem row_class_holds : RowClass := rowClass_of_zunit row_unit_condition
+
+end PI.UnitaryGroupMassFormula.CntFormula.RowsMassW

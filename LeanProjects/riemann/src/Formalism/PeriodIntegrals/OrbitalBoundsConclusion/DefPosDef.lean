@@ -1,0 +1,8 @@
+import Mathlib
+import Formalism.PeriodIntegrals.FinOrdAd
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PositiveDefiniteness.Development
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PositiveDefiniteness.SplittingOfExtension
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PositiveDefiniteness.PositiveDefiniteSecond
+
+theorem positive_definite_form : PI.DefPosDef :=
+  PI.DefPosDefWork.defPosDef_of PI.DefPosDefWork.splitting_of_extension PI.DefPosDefWork.positive_definite_second

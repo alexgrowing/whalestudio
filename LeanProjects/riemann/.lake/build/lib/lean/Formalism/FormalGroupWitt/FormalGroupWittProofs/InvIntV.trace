@@ -1,0 +1,275 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["33f9d1368f2abcd9.olean"],
+  "m": false,
+  "i": "a8ad84a40cac6c53.ilean",
+  "c": "f582bd3939d8f932.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:34:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:35:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:41:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:34:8: Unused tactic linter: `exact (_root_.Finset.mem_antidiagonal).mp hp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:35:8: Unused tactic linter: `simpa using hp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:41:8: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:62:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:63:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:67:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:62:8: Unused tactic linter: `exact Finsupp.degree_eq_zero_iff.1 (by omega)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:63:8: Unused tactic linter: `simpa using (show d.degree = 0 by omega)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:67:6: Unused tactic linter: `simpa using hx` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:108:10: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Ne.symm hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:81:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:81:8: Unused tactic linter: `simp [Finsupp.degree]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:120:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:137:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:138:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:157:12: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:120:18: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:137:10: Unused tactic linter: `rw [MvPowerSeries.X_def, MvPowerSeries.coeff_monomial_mul, one_mul]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:138:10: Unused tactic linter: `simp [MvPowerSeries.X, MvPowerSeries.coeff_monomial_mul]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:157:12: Unused tactic linter: `(intro j; by_cases hj : i0 = j; (subst hj; simpa using hd1);\n  simp [Finsupp.single_apply, hj])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:177:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:188:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:189:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:194:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:195:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:199:17: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:201:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:202:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:203:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:204:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:188:10: Unused tactic linter: `exact (congrFun (MvPowerSeries.coe_substAlgHom (R := K) hsa) w).symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:189:10: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:194:10: Unused tactic linter: `exact (congrFun (MvPowerSeries.coe_substAlgHom (R := K) hsb) w).symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:195:10: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:199:11: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:199:17: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:200:50: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:201:10: Unused tactic linter: `(simp [← MvPowerSeries.c_eq_algebraMap]; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:202:10: Unused tactic linter: `(rw [Algebra.algebraMap_eq_smul_one]; simp; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:203:10: Unused tactic linter: `(rw [Algebra.algebraMap_eq_smul_one, MvPowerSeries.constantCoeff_smul]; simp; done)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:204:10: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:217:4: Unused tactic linter: `beta_reduce` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:236:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:242:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:243:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:242:10: Unused tactic linter: `exact (congrFun (MvPowerSeries.coe_substAlgHom (R := K) hsa) w).symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:243:10: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:248:2: Unused tactic linter: `beta_reduce` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:260:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:267:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:268:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:273:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:274:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:267:10: Unused tactic linter: `exact (congrFun (MvPowerSeries.coe_substAlgHom (R := K) hsa) w).symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:268:10: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:273:10: Unused tactic linter: `exact (congrFun (MvPowerSeries.coe_substAlgHom (R := K) hsb) w).symm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:274:10: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:279:2: Unused tactic linter: `beta_reduce` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:320:30: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:324:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:325:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:327:18: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:336:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:338:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:344:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:345:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:320:30: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:324:8: Unused tactic linter: `exact Finsupp.degree_eq_zero_iff.1 he` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:325:8: Unused tactic linter: `simpa using he` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:327:18: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:336:10: Unused tactic linter: `exact\n  MvPowerSeries.HasSubst.of_constantCoeff_nilpotent (fun s => by rw [ha s]; exact IsNilpotent.zero)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:338:10: Unused tactic linter: `exact ⟨fun s => by rw [ha s]; exact IsNilpotent.zero, fun d => Set.toFinite _⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:344:10: Unused tactic linter: `rw [eq_sub_iff_add_eq, ← MvPowerSeries.subst_add hs, sub_add_cancel]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean:345:10: Unused tactic linter: `(rw [← MvPowerSeries.coe_substAlgHom hs]; exact map_sub _ _ _)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.FormalGroupWitt.SubstInjectiveV transitive imports (legacy)",
+       "501b16b69b66f2f9"],
+      ["Formalism.FormalGroupWitt.SubstInjectiveV:importAllArts",
+       "4222cecb57fdf273"],
+      ["Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule:importAllArts",
+       "9fd08fa550babef6"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/FormalGroupWitt/FormalGroupWittProofs/InvIntV.lean",
+   "0c520daad8cee579"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.FormalGroupWitt.FormalGroupWittProofs.InvIntV",
+   "23006501fc02dc2c"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "54320dd7bb165acd"}

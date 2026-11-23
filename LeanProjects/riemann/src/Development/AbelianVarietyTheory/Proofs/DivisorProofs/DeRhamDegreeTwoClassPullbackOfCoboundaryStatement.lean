@@ -1,0 +1,8 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamDegreeTwoClassPullbackOfCoboundary
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JoinedPre
+open CategoryTheory AlgebraicGeometry KaehlerDifferential DividedPowers ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CatCoh GlobalTheory.Cris GlobalTheory.CechDR GlobalTheory.CxCoh GlobalTheory.PDA GlobalTheory.PDForm GlobalTheory.SmoothLift
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.deRham_degree_two_class_pullback_of_coboundary : ∀ (D D' : Data) (Λ : Lift D) (Λ' : Lift D') (σ : D.R →+* D'.R) (φ : D'.X ⟶ D.X) (φ₀ : D'.X₀ ⟶ D.X₀) (hφ : φ ≫ D.s = D'.s ≫ spMap σ) (m : IsMor D.κ D.t D'.κ D'.t σ φ₀) (θ : pairSnd φ ⋙ Λ.L ⟶ (pairB Λ' φ m).G), (∀ (p : (Pair φ)ᵒᵖ) a, (θ.app p).φ (Λ.e (Opposite.op p.unop.1.2) a) = Λ'.e (Opposite.op p.unop.1.1) (GlobalTheory.CechDR.secPull D.s D'.s p.unop a)) → ∀ (k : (KK D.κ D.t).Z2) (k' : (KK D'.κ D'.t).Z2) (w : cechDeRhamTotalCocyclesTwo (OAff D.s)) (w' : cechDeRhamTotalCocyclesTwo (OAff D'.s)), Λ.Res2 (((KK D.κ D.t).resMap Λ.L).p2 k.1) w.1 → Λ'.Res2 (((KK D'.κ D'.t).resMap Λ'.L).p2 k'.1) w'.1 → ∀ g, ((KK D'.κ D'.t).res (pairFst φ ⋙ Λ'.L)).D1 g = ((pairB Λ' φ m).pre θ).p2 k.1 - ((KK D'.κ D'.t).resMap (pairFst φ ⋙ Λ'.L)).p2 k'.1 → IsPull2 hφ (Hyp2.mk _ w) (Hyp2.mk _ w') := by
+  first | exact @GlobalTheory.PDForm.PullTwo.isPull2_of_coboundary | exact GlobalTheory.PDForm.PullTwo.isPull2_of_coboundary | (intros; apply GlobalTheory.PDForm.PullTwo.isPull2_of_coboundary <;> assumption)

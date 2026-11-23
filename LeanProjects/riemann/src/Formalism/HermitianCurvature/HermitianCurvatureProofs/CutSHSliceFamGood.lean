@@ -1,0 +1,14 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSH2
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSFGAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSFGGfStep
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSFGRadProper
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSFGParamSmooth
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSH_SFG_PtSmooth
+
+namespace Formalism.FourierDecayAlt.P
+
+theorem slice_family_good : CutSH.SliceFamGood :=
+  CutSH.cutSH_sliceFamGood_of CutSH.SFG.gram_function_induction CutSH.SFG.radial_proper
+    CutSH.SFG.parameter_smooth CutSH.SFG.point_smooth
+
+end Formalism.FourierDecayAlt.P

@@ -1,0 +1,104 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["ccb1402d9da75ca8.olean"],
+  "m": false,
+  "i": "805057249416df19.ilean",
+  "c": "1c8a110f28d5e725.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:20:0: automatically included section variable(s) unused in theorem `Formalism.HN.QuotientRealization.eq_of_norm_eq`:\n  [InnerProductSpace ℝ E]\n  [FiniteDimensional ℝ E]\n  [InnerProductSpace ℝ F]\n  [FiniteDimensional ℝ F]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [InnerProductSpace ℝ F] [FiniteDimensional ℝ F] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:145:13: This simp argument is unused:\n  LinearIsometryEquiv.norm_map\n\nHint: Omit it from the simp argument list.\n  [apply] simp [f]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:171:8: automatically included section variable(s) unused in theorem `_private.Formalism.HarderNarasimhan.HarderNarasimhanProofs.QuotRealize.0.Formalism.HN.QuotientRealization.fcoord_smul_harder_narasimhan`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:189:0: automatically included section variable(s) unused in theorem `Formalism.HN.QuotientRealization.fcoord_mem_span`:\n  [IsTotallyComplex K]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsTotallyComplex K] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:241:0: automatically included section variable(s) unused in theorem `Formalism.HN.QuotientRealization.pv_top`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:250:53: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Formalism.HermitianLatticesTheory.vecAt, Pi.single_apply, h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:250:75: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Formalism.HermitianLatticesTheory.vecAt, Finsupp.single_apply, h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:250:95: This simp argument is unused:\n  Ne.symm h\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Formalism.HermitianLatticesTheory.vecAt, Finsupp.single_apply, Pi.single_apply, h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:263:37: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Matrix.mulVec, dotProduct, Finset.sum_apply, mul_comm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:330:0: automatically included section variable(s) unused in theorem `Formalism.HN.QuotientRealization.sub_mem_of_lift`:\n  [NumberField K]\n  [StarRing K]\n  [IsTotallyComplex K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\n  [DecidableEq κ]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField\n  K] [StarRing K] [IsTotallyComplex K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] [DecidableEq κ] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:351:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:352:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:353:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:351:8: Unused tactic linter: `exact\n  (Submodule.starProjection_eq_zero_iff _).mpr (Submodule.le_orthogonal_orthogonal _ hm)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:352:8: Unused tactic linter: `simp [Submodule.le_orthogonal_orthogonal _ hm]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean:353:8: Unused tactic linter: `simpa using Submodule.le_orthogonal_orthogonal _ hm` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.HarderNarasimhan.QuotRealize transitive imports (legacy)",
+       "079cc9814d356de7"],
+      ["Formalism.HarderNarasimhan.QuotRealize:importAllArts",
+       "d27cfbfc4c86db60"],
+      ["Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax transitive imports (legacy)",
+       "820885b294d82148"],
+      ["Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax:importAllArts",
+       "13b088bfd8574947"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep transitive imports (legacy)",
+       "c7a1b49ea58658fd"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep:importAllArts",
+       "582fe6bca5f3db35"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit transitive imports (legacy)",
+       "d616edc491056ffc"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit:importAllArts",
+       "1d8c81f1c0e1029f"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean transitive imports (legacy)",
+       "174b5a6b20b4fe62"],
+      ["Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean:importAllArts",
+       "19150181e64baa21"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/QuotRealize.lean",
+   "f081a7e58c40b54b"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HarderNarasimhan.HarderNarasimhanProofs.QuotRealize",
+   "cf4f250c68f44e66"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "99128f77d2b25719"}

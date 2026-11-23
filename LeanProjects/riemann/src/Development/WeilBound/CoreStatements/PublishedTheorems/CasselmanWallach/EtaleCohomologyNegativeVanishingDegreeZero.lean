@@ -1,0 +1,93 @@
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.OrthonormalEigenbasisOfBasic
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.U0Commute
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasimirPowerCommute
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.GelfandCentralHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasimirRealScalar
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasimirRealOfCentral
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.NilpotentOfPowerTraces
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.IdentityFiltrationBound
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CommutatorAdjointHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EnvelopingAlgebraGrowthBound
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SymmetricPowerHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ColumnMomentsOfSymmetric
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.MatrixActionSingle
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.GrowthPolynomialOperator
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.InversePowerBoundHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EigenbasisOfBasic
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.FunctionalCalculusOfBasic
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EigenspacesOrthogonalOfCalculus
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.BasisFormSumOfGain
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.WordFiltrationCommute
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.BasisSumOfOrthogonality
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.GrowthOfBasic
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SecondDerivativeHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CompactGroupFacts
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.GroupFactsHolds
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.MaximumPrincipleOfFacts
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.EigenWeightedSumBound
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.KFiniteInclusion
+import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.PMaxPr
+
+namespace PositivityTheory.CWB
+
+open PositivityTheory.CW
+
+theorem word_filtration_basic : A0 := orthonormal_eigenbasis_of_basic
+
+theorem aux_statement_7 : A1 := word_filtration_of_length
+
+theorem filtration_adjoint_stable : FiltrationAdjointStable := adjoint_stable_filtration
+
+theorem gelfand_invariants_central : A2 := gelfand_central_holds
+
+theorem casimir_eigenvector_exists : A3 := casimir_eigen_exists
+
+theorem casimir_real_scalar : CasimirIsRealScalar := casimir_real_of_central gelfand_invariants_central casimir_eigenvector_exists
+
+theorem power_traces_nilpotent : A4 := nilpotent_of_power_traces
+
+theorem commutator_adjoint_lower_order : CommutatorAdjointModLower := commutator_adjoint_holds aux_statement_7
+
+theorem aux_statement_6 : A5 := normal_nilpotent_of_commutator aux_statement_7 gelfand_invariants_central casimir_eigenvector_exists power_traces_nilpotent commutator_adjoint_lower_order
+
+theorem identity_operator_filtration : A6 := SymmetricPowerMatrix word_filtration_basic aux_statement_7 casimir_real_scalar
+
+theorem matrix_symmetric_power : A7 := symmetric_power_holds
+
+theorem column_moments_bound : ColumnOperatorMoments := column_moments_of_symmetric matrix_symmetric_power
+
+theorem second_moment_bound : A8 := second_moment_of_columns word_filtration_basic aux_statement_7 filtration_adjoint_stable casimir_real_scalar aux_statement_6 identity_operator_filtration column_moments_bound
+
+theorem etale_cohomology_vanishing_negative_degree_zero : A9 := a9_of_a0_a1_eigenbasis_a6 word_filtration_basic aux_statement_7 casimir_real_scalar identity_operator_filtration
+
+theorem inverse_power_square_bound : A10 := inverse_power_bound_holds
+
+theorem orthonormal_eigenbasis_exists : EigenbasisExists := eigenbasis_of_basic word_filtration_basic
+
+theorem functional_calculus : FunctionalCalculusLaws := functional_calculus_of_basic word_filtration_basic
+
+theorem normal_nilpotent_graded_zero : EigenspacesOrthogonalAlt := eigenspaces_orthogonal_of_calculus word_filtration_basic functional_calculus
+
+theorem eigen_gain_high : A12 := eigen_gain_of_moments word_filtration_basic second_moment_bound etale_cohomology_vanishing_negative_degree_zero inverse_power_square_bound functional_calculus
+
+theorem basis_sum_form_values : BasisSumAsFormValues := basis_sum_of_orthogonality word_filtration_basic functional_calculus normal_nilpotent_graded_zero
+
+theorem eigenspace_form_sum : A13 := basis_form_sum_of_gain word_filtration_basic functional_calculus eigen_gain_high basis_sum_form_values
+
+theorem word_length_filtration : B1 := growth_of_basic word_filtration_basic
+
+theorem hilbert_schmidt_growth : B2 := heightFunctionalStatement_of_pairingProperties
+
+theorem tateTwist_local_to_global_strictlyHenselian : B3 := second_derivative_holds
+
+theorem group_facts : UnitaryGroupFacts := group_facts_holds
+
+theorem maximum_principle_one_function : MaximumPrincipleVar := maximum_principle_of_facts hilbert_schmidt_growth tateTwist_local_to_global_strictlyHenselian group_facts
+
+theorem second_derivative_sum_squares : SumSquaresSecondDerivative := second_derivatives_of_growth word_length_filtration group_facts
+
+theorem lieExponentialMajorant_holds : B5 := eigen_weighted_sum_bound word_filtration_basic functional_calculus
+
+theorem maxPr : MaxPr := maxPr_of casimir_real_scalar orthonormal_eigenbasis_exists eigenspace_form_sum group_facts maximum_principle_one_function second_derivative_sum_squares lieExponentialMajorant_holds
+
+end PositivityTheory.CWB

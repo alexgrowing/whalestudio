@@ -1,0 +1,76 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["b3c6013f402a28aa.olean"],
+  "m": false,
+  "i": "98f1e0229711aafc.ilean",
+  "c": "7b71f4ea3a61737e.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:16:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:16:6: Unused tactic linter: `(\n  unfold LinearMap.BilinForm.Nondegenerate\n  intro m hm\n  have h := hm m\n  rw [innerₗ_apply_apply] at h\n  exact inner_self_eq_zero.mp h)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:27:39: This simp argument is unused:\n  RingHom.id_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [innerₗ_apply_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:25:58: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:28:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:29:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:25:8: Unused tactic linter: `simp only [innerₗ_apply_apply, RingHom.id_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:25:58: Unused tactic linter: `exact real_inner_comm _ _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:28:6: Unused tactic linter: `(intro x y; simp only [innerₗ_apply_apply, RingHom.id_apply];\n  exact real_inner_comm _ _)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:29:6: Unused tactic linter: `(constructor; intro x y; simp only [innerₗ_apply_apply, RingHom.id_apply];\n  exact real_inner_comm _ _)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:41:0: automatically included section variable(s) unused in theorem `Formalism.H.isLattice_of_eq_span`:\n  [FiniteDimensional ℝ V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [FiniteDimensional ℝ V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean:49:0: automatically included section variable(s) unused in theorem `Formalism.H.dualLattice_dual_span_eq`:\n  [FiniteDimensional ℝ V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [FiniteDimensional ℝ V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LatticeTheta.Statement transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Formalism.LatticeTheta.Statement:importAllArts",
+       "ce388881520799c7"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeTheta/LatticeThetaProofs/DualLattice.lean",
+   "a292ae47e98f0d6e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LatticeTheta.LatticeThetaProofs.DualLattice",
+   "66959bac72efe80f"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "11e90413da156eb0"}

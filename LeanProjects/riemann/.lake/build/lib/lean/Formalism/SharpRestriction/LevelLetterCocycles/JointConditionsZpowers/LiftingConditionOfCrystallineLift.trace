@@ -1,0 +1,65 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["399d5035853b46cd.olean"],
+  "m": false,
+  "i": "e122999f5cb67bf6.ilean",
+  "c": "03c432e09ea5f2ec.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:47:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:92:50: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:92:89: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:92:128: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:92:50: Unused tactic linter: `exact IsAlgClosed.splits_codomain' _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:92:89: Unused tactic linter: `exact IsAlgClosed.splits_of_splits _` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean:92:128: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory transitive imports (legacy)",
+       "71f9704d38c2f228"],
+      ["Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory:importAllArts",
+       "a6f6bab5ed8e16b9"],
+      ["Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData transitive imports (legacy)",
+       "1ce1f32fbc271e07"],
+      ["Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData:importAllArts",
+       "a0875917d6da47f7"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/LevelLetterCocycles/JointConditionsZpowers/LiftingConditionOfCrystallineLift.lean",
+   "950553c005c12c0a"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.LiftingConditionOfCrystallineLift",
+   "a49a411ad6a4fdac"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "b5bece9cc61f7353"}

@@ -1,0 +1,153 @@
+import Mathlib
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.PrimesInProgressionNonempty
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.ComplexMultiplicationJPremises
+import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LowerLiftsZeroOfWittIdxEqZero
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LogDerOne
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsIrrKSubOfIsKTypeOf
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HolomorphicDiscreteSeries
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsAdmissibleSubOfFiniteDimensional
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.KudlaSplittingSplitUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.MetaplecticRepresentation
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilRepresentationExists
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LanglandsSquareIntegrable
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinIsotropicLine
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ComplementaryThetaInert
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.AutomorphicFormsFiniteUnitaryIff
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsRationalDblCoord
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelWeilAnisotropicHermitian
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelEisensteinDoubled
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviCentreFiniteUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviBlockCentreFinite
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviCentreInducedUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinResidueLine
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RallisTowerUnitary
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ResidueDegreeOfIsClosedImmersion
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SmallSecTensTriv
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.KawamataViehweg
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.L2ExtensionLogCanonical
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactification
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PDivisibleGroupsOverOC
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaNumberSU
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.MumfordProportionality
+import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PointSeparationPair
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FubiniStudyChowHeight
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsThetaMeanSquareNorm
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LogResolutionProjectiveLine
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PointDimensionLtProjectiveLine
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ConjugateFiltration
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HenselianLocalRingOfIsAdicComplete
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.MatrixLemma
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonnePerfd
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsUniquePairsToTower
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesCoefficientsCuspidalIffOneSided
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DiscreteBranchingUpq
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelWeilAnisotropicStd
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DemaillyEstimates
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.NeronLieSeminegative
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.NeronModelExists
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.GoodTopChernForm
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ChernWeilNumbers
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianAmpleAcyclic
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsL2OnDiagonalOfIsL2Metric
+
+namespace GlobalTheory.Fc.S0
+
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
+
+structure PublishedTheoremHypotheses : Prop where
+  linnik : GlobalTheory.Published.Linnik
+  complexMultiplicationJSt : GlobalTheory.Published.ComplexMultiplicationJSt
+  cuspidalMirabolic : GlobalTheory.Published.CuspidalMirabolic
+  rallisInnerProductConvergent : GlobalTheory.Published.RallisInnerProductConvergent
+  logDerOne : GlobalTheory.Mem.An.LogDerOne
+  kFiniteVectorsUnitary : GlobalTheory.Published.KFiniteVectorsUnitary
+  holomorphicDiscreteSeries : GlobalTheory.Published.HolomorphicDiscreteSeries
+  gKGlobalisation : GlobalTheory.Published.GKGlobalisation
+  realMetaplecticRepresentation : GlobalTheory.Published.RealMetaplecticRepresentation
+  kudlaSplittingSplitUnitary : GlobalTheory.Published.KudlaSplittingSplitUnitary
+  metaplecticRepresentation : GlobalTheory.Published.MetaplecticRepresentation
+  howeDualityUnitary : GlobalTheory.Published.HoweDualityUnitary
+  howeDualityReal : GlobalTheory.Published.HoweDualityReal
+  siegelSetUnitary : GlobalTheory.Published.SiegelSetUnitary
+  weilRepresentationExists : GlobalTheory.Published.WeilRepresentationExists
+  automorphicFormsUnitary : GlobalTheory.Published.AutomorphicFormsUnitary
+  eisensteinIsotropicLine : GlobalTheory.Published.EisensteinIsotropicLine
+  complementaryThetaInert : GlobalTheory.Published.ComplementaryThetaInert
+  automorphicFormsFiniteUnitary : GlobalTheory.Published.AutomorphicFormsFiniteUnitary
+  siegelWeilAnisotropicCM : GlobalTheory.Published.SiegelWeilAnisotropicCM
+  siegelWeilAnisotropicHermitian : GlobalTheory.Published.SiegelWeilAnisotropicHermitian
+  siegelEisensteinDoubled : GlobalTheory.Published.SiegelEisensteinDoubled
+  leviCentreFiniteUnitary : GlobalTheory.Published.LeviCentreFiniteUnitary
+  leviBlockCentreFinite : GlobalTheory.Published.LeviBlockCentreFinite
+  leviCentreInducedUnitary : GlobalTheory.Published.LeviCentreInducedUnitary
+  eisensteinResidueLine : GlobalTheory.Published.EisensteinResidueLine
+  rallisTowerUnitary : GlobalTheory.Published.RallisTowerUnitary
+  arFormExists : GlobalTheory.Published.ArFormExists
+  arMix : GlobalTheory.Published.ArMix
+  heightProjection : GlobalTheory.Published.HeightProjection
+  chernDegreeComplex : GlobalTheory.Published.ChernDegreeComplex
+  volGe : GlobalTheory.Published.VolGe
+  arithHilbertSamuel : GlobalTheory.Published.ArithHilbertSamuel
+  kawamataViehweg : GlobalTheory.Published.KawamataViehweg
+  nefProductNonneg : GlobalTheory.Published.NefProductNonneg
+  nefRiemannRoch : GlobalTheory.Published.NefRiemannRoch
+  l2ExtensionLogCanonical : GlobalTheory.Published.L2ExtensionLogCanonical
+  nadelVanishingPair : GlobalTheory.Published.NadelVanishingPair
+  isolatedNonKltDivisor : GlobalTheory.Published.IsolatedNonKltDivisor
+  principalisation : GlobalTheory.Published.Principalisation
+  formalAlgebraisation : GlobalTheory.Published.FormalAlgebraisation
+  deRhamCanonicalExtension : GlobalTheory.Published.DeRhamCanonicalExtension
+  prismaticDieudonneHodge : GlobalTheory.Published.PrismaticDieudonneHodge
+  pDivisibleGroupsOverOC : GlobalTheory.Published.PDivisibleGroupsOverOC
+  tamagawaNumberSU : GlobalTheory.Published.TamagawaNumberSU
+  flagPushForward : GlobalTheory.Published.FlagPushForward
+  semiAbelianHomExtension : GlobalTheory.Published.SemiAbelianHomExtension
+  siegelToroidalIntegral : GlobalTheory.Published.SiegelToroidalIntegral
+  toroidalForFanKS : GlobalTheory.Published.ToroidalForFanKS
+  pointSeparationPair : GlobalTheory.Published.PointSeparationPair
+  fubiniStudyChowHeight : GlobalTheory.Published.FubiniStudyChowHeight
+  moretBaillyModel : GlobalTheory.Published.MoretBaillyModel
+  analyticLogResolution : GlobalTheory.Published.AnalyticLogResolution
+  analyticSetDimension : GlobalTheory.Published.AnalyticSetDimension
+  conjugateFiltration : GlobalTheory.Published.ConjugateFiltration
+  raynaudExtension : GlobalTheory.Published.RaynaudExtension
+  regularAlteration : GlobalTheory.Published.RegularAlteration
+  matrixLemma : GlobalTheory.Published.MatrixLemma
+  absoluteSiegel : GlobalTheory.Published.AbsoluteSiegel
+  prismaticDieudonnePerfd : GlobalTheory.Published.PrismaticDieudonnePerfd
+  barsottiTateDieudonne : GlobalTheory.Published.BarsottiTateDieudonne
+  discreteSeriesCoefficientsCuspidal : GlobalTheory.Published.DiscreteSeriesCoefficientsCuspidal
+  discreteBranchingUpq : GlobalTheory.Published.DiscreteBranchingUpq
+  siegelWeilAnisotropicStd : GlobalTheory.Published.SiegelWeilAnisotropicStd
+  demaillyEstimates : GlobalTheory.Published.DemaillyEstimates
+  neronLieSeminegative : GlobalTheory.Published.NeronLieSeminegative
+  neronModelExists : GlobalTheory.Published.NeronModelExists
+  goodTopChernForm : GlobalTheory.Published.GoodTopChernForm
+  chernWeilNumbers : GlobalTheory.Published.ChernWeilNumbers
+  abelianAmpleAcyclic : GlobalTheory.Published.AbelianAmpleAcyclic
+  bismutKoehlerTorsionWith : GlobalTheory.Published.BismutKoehlerTorsionWith
+  bismutKoehlerGlobal : GlobalTheory.Published.BismutKoehlerGlobal
+  torsionAnomaly : GlobalTheory.Published.TorsionAnomaly
+  gilletRoesslerSoule : GlobalTheory.Published.GilletRoesslerSoule
+
+end GlobalTheory.Fc.S0

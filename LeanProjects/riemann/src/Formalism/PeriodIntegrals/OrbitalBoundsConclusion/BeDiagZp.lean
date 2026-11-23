@@ -1,0 +1,10 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.SimeqCongr
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.CoeffPowMulPowEqZeroOfLt
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.PowerSeriesDiagonalLinear
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.SubstOpsHolds
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.CoeffOneLNeZero
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.ConstantCoeffSubstEqZero
+
+theorem diagonal_zp_identity : PI.BeDiagZp.Target :=
+  PI.BeDiagZp.beDiagZp_of PI.BeDiagZp.simeq_equivalence_additive PI.BeDiagZp.power_series_diagonal_linear PI.BeDiagZp.OpsW.substOps_holds
+    PI.BeDiagZp.IdentW.ident_holds PI.BeDiagZp.cont_holds PI.BeDiagZp.intSubst_holds

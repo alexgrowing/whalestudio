@@ -1,0 +1,11 @@
+import Formalism.FilteredPoleLength.LocalDescentLevels.LatticeDescent
+import Formalism.FilteredPoleLength.LocalDescentLevels.LinearIndependentOfIsBaseChange
+import Formalism.FilteredPoleLength.LocalDescentLevels.ExistsSmulMemOfMemSpan
+import Formalism.FilteredPoleLength.LocalDescentLevels.LatticeIndexBis
+
+namespace Formalism.LatticeBaseChangeAlt
+
+theorem localStepDescent : LocalStepDescent :=
+  localStepDescent_of finrank_span_image_alt inter_baseChange_lattice index_baseChange_lattice
+
+end Formalism.LatticeBaseChangeAlt

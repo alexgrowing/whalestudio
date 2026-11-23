@@ -1,0 +1,64 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["ce150809ce83413e.olean"],
+  "m": false,
+  "i": "8f12eadcf33f1962.ilean",
+  "c": "d4e294a02e915535.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:42:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:20:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:20:6: Unused tactic linter: `rw [← Metric.cobounded_eq_cocompact] at hc` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:62:0: automatically included section variable(s) unused in theorem `Formalism.H.PoissonPeriodization.shift_bound`:\n  [InnerProductSpace ℝ V]\n  [FiniteDimensional ℝ V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:92:15: This simp argument is unused:\n  if_pos rfl\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [ZeroMemClass.coe_zero, norm_zero, add_zero, Real.one_rpow, if_true, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:92:86: This simp argument is unused:\n  if_true\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [if_pos rfl, ZeroMemClass.coe_zero, norm_zero, add_zero, Real.one_rpow, ↓reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:124:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean:124:8: Unused tactic linter: `exact\n  Summable.of_norm_bounded _ (hS.mul_left (C * (1 + ‖x‖) ^ b))\n    (fun l => hbound ‖x‖ (norm_nonneg _) l x le_rfl)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LatticeTheta.LatticeSummableDecay transitive imports (legacy)",
+       "97cae627dd008e8a"],
+      ["Formalism.LatticeTheta.LatticeSummableDecay:importAllArts",
+       "4dd2925f5b600e9b"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LatticeTheta/LatticeThetaProofs/Periodization.lean",
+   "d5cd45ad0cca63a2"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LatticeTheta.LatticeThetaProofs.Periodization",
+   "a6b6b57e580de0f6"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "a7b1579d6e7296ac"}

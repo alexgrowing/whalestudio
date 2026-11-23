@@ -1,0 +1,55 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["b3cb66c55e4b0891.olean"],
+  "m": false,
+  "i": "062ce0c3d7756611.ilean",
+  "c": "8c457999308db0f7.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/ReciprocityTheory/Hypotheses/GalCoh.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/ReciprocityTheory/Hypotheses/GalCoh.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/ReciprocityTheory/Hypotheses/GalCoh.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/ReciprocityTheory/Hypotheses/GalCoh.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/ReciprocityTheory/Hypotheses/GalCoh.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/ReciprocityTheory/Hypotheses/GalCoh.lean:102:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.LocalFinitenessAt.restrict`:\n  [NumberField F]\n  [IsAlgClosure F Ω]\n  [Fact (Nat.Prime l)]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField F] [IsAlgClosure F Ω] [Fact (Nat.Prime l)] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/Hypotheses/GalCoh.lean:107:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.LocalTateDualityAt.restrict`:\n  [NumberField F]\n  [IsAlgClosure F Ω]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField F] [IsAlgClosure F Ω] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/Hypotheses/GalCoh.lean:113:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.UnramifiedOrthogonalityAt.restrict`:\n  [IsAlgClosure F Ω]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsAlgClosure F Ω] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/Hypotheses/GalCoh.lean:119:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.LocalEulerCharAt.restrict`:\n  [NumberField F]\n  [IsAlgClosure F Ω]\n  [Fact (Nat.Prime l)]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField F] [IsAlgClosure F Ω] [Fact (Nat.Prime l)] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/ReciprocityTheory/Hypotheses/GalCoh.lean:137:0: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.continuous_locFam`:\n  [IsAlgClosure F Ω]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsAlgClosure F Ω] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/ReciprocityTheory:extraDep",
+     [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["ReciprocityTheory.Hypotheses.GalCohDefs transitive imports (legacy)",
+       "01af28e81c715b2c"],
+      ["ReciprocityTheory.Hypotheses.GalCohDefs:importAllArts",
+       "2374fe8753fe6e01"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/ReciprocityTheory/Hypotheses/GalCoh.lean",
+   "83cb6b7fc4c6a418"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: ReciprocityTheory.Hypotheses.GalCoh", "49afd8d6dcc5da1a"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "515ee44f3c60c936"}

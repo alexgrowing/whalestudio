@@ -1,0 +1,9 @@
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.BasicIdentityStatement
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.HalfSumNormSubSq
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.HasCompactSupportDTw
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.WIbpLeft
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.ImportsBis
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.ImportsTer
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.HasCompactSupportOfVanish
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.TstarNormSq
+import ReciprocityTheory.L2DbarEstimates.BasicIdentity.Imports

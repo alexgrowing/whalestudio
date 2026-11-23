@@ -1,0 +1,25 @@
+import Mathlib
+import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitChart
+set_option maxSynthPendingDepth 1
+
+namespace GroundTheory.Heights₂.Heights
+
+open MvPolynomial NumberField ReciprocityTheory.ChartRestriction.G
+
+def OrbitChartResidue.Statement : Prop :=
+  ∀ (ι : Type) [Fintype ι] [DecidableEq ι] [Nonempty ι] (n : ι → ℕ)
+    (A : HermLine n) (x : Cone n (AlgebraicClosure ℚ)) (s : MvPolynomial (Coord n) ℤ),
+    BlockNonzero x → Geo.IsSectionOn (orbitIdeal x) A.toGeo s →
+    ∀ V ∈ Geo.divSupp (orbitIdeal x) s, ∀ c : (k : ι) → Fin (n k + 1),
+      (∀ k, (X ⟨k, c k⟩ : MvPolynomial (Coord n) ℤ) ∉ V) →
+        (Geo.geoNum (ι := blockIdx n) 0 V Fin.elim0 : ℝ) * Real.log (Geo.charOf V) =
+          Real.log (Nat.card (chartRing x c ⧸ chartPoint x c V))
+
+example : BlockNonzero samplePoint ∧
+    Geo.IsSectionOn (orbitIdeal samplePoint) (HermLine.standard _).toGeo
+      (chartMonomial (fun _ ↦ 0) 1) ∧ ∀ k, samplePoint k ((fun _ ↦ 0) k) ≠ 0 :=
+  ⟨samplePoint_blockNonzero,
+    isSectionOn_chartMonomial _ _ _ (fun _ ↦ by simp [samplePoint]) 1 (fun _ ↦ rfl),
+    fun _ ↦ by simp [samplePoint]⟩
+
+end GroundTheory.Heights₂.Heights

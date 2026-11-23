@@ -1,0 +1,198 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["e47eb2e32f438b8c.olean"],
+  "m": false,
+  "i": "fc89f26e5b8f682f.ilean",
+  "c": "2ba77ea3a4d11e77.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:92:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_mk'_smul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:68: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:140: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:220: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:293: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:374: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:472: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:562: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:650: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:736: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:818: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:896: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:972: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1044: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1112: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1178: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1240: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:68: Unused tactic linter: `(apply GlobalTheory.LocalSpanCriterion.span_local_iff <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:140: Unused tactic linter: `(intros; apply GlobalTheory.LocalSpanCriterion.span_local_iff <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:220: Unused tactic linter: `(apply @GlobalTheory.LocalSpanCriterion.span_local_iff <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:293: Unused tactic linter: `(intros; apply @GlobalTheory.LocalSpanCriterion.span_local_iff <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:374: Unused tactic linter: `(apply @GlobalTheory.LocalSpanCriterion.span_local_iff <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:472: Unused tactic linter: `exact\n  @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_› ‹_› w ‹_› ‹_› T x` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:562: Unused tactic linter: `exact\n  @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_› ‹_› w ‹_› ‹_› T` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:650: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_› ‹_› w ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:736: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_› ‹_› w ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:818: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_› ‹_› w` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:896: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:972: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1044: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_› V` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1112: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1178: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:100:1240: Unused tactic linter: `exact @GlobalTheory.LocalSpanCriterion.span_local_iff K` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:223:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_osmul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:226:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_wsmul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:230:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_one_smul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:232:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_mul_smul`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:234:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_smul_comm`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:245:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_smul_mem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:289:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_mem_transLat`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:339:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_det_pow_mem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:449:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_VV_eq_bid`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:477:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_common`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:510:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_transLat_eq`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:513:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.nb_mem_at`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean:519:0: automatically included section variable(s) unused in theorem `Formalism.L2.DIV.actP_smul₂`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.Divisibility.CoefModLemmas transitive imports (legacy)",
+       "e9a8a22a216b88b5"],
+      ["Formalism.LocalToGlobal.Divisibility.CoefModLemmas:importAllArts",
+       "5ade8f1f1c7c2a92"],
+      ["Formalism.LocalToGlobal.Columns.PolyFnLemmas transitive imports (legacy)",
+       "79130c4eefbde4cd"],
+      ["Formalism.LocalToGlobal.Columns.PolyFnLemmas:importAllArts",
+       "3358113b7d3a9c3e"],
+      ["Formalism.LocalToGlobal.Columns.LocWLemmas transitive imports (legacy)",
+       "a38644f35ebbd61c"],
+      ["Formalism.LocalToGlobal.Columns.LocWLemmas:importAllArts",
+       "cabd14a62089ac09"],
+      ["Formalism.LocalRingCardinality.RankBoundMonotoneInDimension transitive imports (legacy)",
+       "adb12460047dd80c"],
+      ["Formalism.LocalRingCardinality.RankBoundMonotoneInDimension:importAllArts",
+       "b5da2d339cc1f140"],
+      ["Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds transitive imports (legacy)",
+       "188f2ec49e5928de"],
+      ["Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds:importAllArts",
+       "66105136f0a7f43a"],
+      ["Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLocalIff transitive imports (legacy)",
+       "1b1dd6f9a3587b3c"],
+      ["Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLocalIff:importAllArts",
+       "6fbc73a93a481bc8"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/CoefficientsModP/NablaIndependenceHolds.lean",
+   "ecdbd57baac537bf"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaIndependenceHolds",
+   "4fe97b034ed86947"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "559fc7e64718347d"}

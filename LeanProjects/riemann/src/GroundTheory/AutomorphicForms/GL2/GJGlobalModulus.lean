@@ -1,0 +1,5 @@
+import Mathlib
+import GroundTheory.AutomorphicForms.GL2.IdeleModuleDetOfMemMaxCompact
+import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
+import GroundTheory.AutomorphicForms.GL2.GJGlobalDefs
+import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.GJGlobalModulus

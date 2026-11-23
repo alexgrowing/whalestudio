@@ -1,0 +1,15 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothHermitianRankTwo
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.GeometryEquivarianceFirstVector
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.GeometryEquivarianceEmbedding
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomAtGq
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.EmbeddingMulVecFactorization
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomUBL
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomAssemble
+
+namespace Formalism.FourierDecayAlt.P.CutMP.JA
+
+theorem second_shift_geometry_holds : SSn.SSnGeom :=
+  SSn.Geom.geometry_assembly_holds SSn.Geom.geometry_smoothness_holds SSn.Geom.geometry_equivariance_first_vector SSn.Geom.geometry_equivariance_embedding
+    SSn.Geom.geometry_at_level_function SSn.Geom.geometry_boundedness_at_zero SSn.Geom.geometry_unipotent_bound_holds
+
+end Formalism.FourierDecayAlt.P.CutMP.JA

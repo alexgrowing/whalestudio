@@ -1,0 +1,10 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.KloostermanDensityOfParts
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.SymmetricScalarBlockMatrixOneZero
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockTwoDiagonalZeroSize
+
+namespace Formalism.FourierDecayAlt.P
+
+theorem kloosterman_density : Formalism.FourierDecayAlt.KB.KloostDens :=
+  PBJ.Asm.kloosterman_density_of_parts PBJ.fubini_head_last_part PBJ.freeze_last_entry PBJ.long_orbital_integral_multiple PBJ.block_orbital_integral_multiple
+
+end Formalism.FourierDecayAlt.P

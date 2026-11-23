@@ -1,0 +1,24 @@
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.Assemble
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.SplitEq
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.MuHaar
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.QuotPres
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.CmpEquiv
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.CmpForm
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.RangeLe
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.ContMem
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.AbsCompact
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.AbsIrr
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.KernelIndexFullLatticeNeBot
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.KFinTr
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.KFinMem
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.BrCusp
+import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.BrRepHolds
+
+open UpperTheory.V.KernelIndexFullLattice in
+theorem UpperTheory.V.Af.cuspSpectrumGL :
+    GlobalTheory.Published.CuspidalSpectrumGL :=
+  ⟨partA muHaar_holds quotPres_holds cmpEquiv_holds rangeLe_holds contMem_holds absCompact_holds,
+    partB splitEq_holds muHaar_holds quotPres_holds cmpEquiv_holds cmpForm_holds rangeLe_holds contMem_holds
+      absIrr_holds kernelIndexFullLattice_neBot kFinTr_holds kFinMem_holds brRep_holds,
+    partC splitEq_holds brCusp_holds⟩

@@ -1,0 +1,37 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CommonEigenvectors
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.HighestWeightPolynomials
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliAbstractCharacter
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.StarSumLemmas
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BorderedDeterminants
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.BranchingSystems
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.ClosureOperators
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeightMonotonicity
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.StrictBoxOrder
+
+namespace Formalism.FourierDecayAlt.P
+
+open Formalism.FourierDecayAlt
+
+theorem capelli_singular : Qr.CapSing := qr_capSing_of singular_dominant exists_singular_maximal_vector
+
+theorem top_weight_singular : Qr.TopWeightSing := qr_topWeightSing_of exists_singular_maximal_vector capelli_singular
+
+theorem vector_descent : Qr.VecDown := qr_vecDown_of quantum_minor_polynomial polynomial_vanishing
+
+theorem raising_nonzero : Qr.RaiseNZ := qr_raiseNZ_of covariant_raising
+
+theorem lowering_nonzero : Qr.LowerNZ := qr_lowerNZ_of vector_descent
+
+theorem branching_decomposition : Qr.Decomp :=
+  qr_decomp_of exists_singular_maximal_vector capelli_singular capelli_stabilizer submodule_relations covariant_raising vector_descent
+    raising_nonzero lowering_nonzero
+
+theorem multiplicity_one : Qr.MultOne := qr_multOne_of exists_singular_maximal_vector dual_minor span_singular_vectors
+
+theorem irreducible_capelli_modules : Qr.IrredCap :=
+  qr_irredCap_of exists_singular_maximal_vector capelli_singular capelli_stabilizer submodule_relations top_weight_singular
+    dual_minor span_top_vectors multiplicity_one branching_decomposition capelli_independence
+
+theorem branching_algebraic : Qr.BranchingAlg := qr_branchingAlg_of branching_decomposition capelli_independence irreducible_capelli_modules
+
+end Formalism.FourierDecayAlt.P

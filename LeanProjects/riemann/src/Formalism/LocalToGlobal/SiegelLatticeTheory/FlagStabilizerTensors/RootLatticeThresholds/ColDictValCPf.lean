@@ -1,0 +1,17 @@
+import Mathlib
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.ColDictValC
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.DivClosedOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.IsUnitDetOfUnitary
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.DivisorClosedHolds
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.CayleyIsometry
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.HighExistenceHolds
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.HighestWeightVectorUnique
+
+namespace Formalism.L2.SG.Pf
+
+theorem valuation_character_irreducible : ColDictPf.ValCIrr :=
+  ColDictValCPf.valCIrr_of ColDictValCPf.transfer_holds
+    (ColDictValCPf.divisor_closed_holds ColDictValCPf.density_holds)
+    ColDictValCPf.high_existence_holds ColDictValCPf.highest_weight_vector_unique ColDictValCPf.generation_holds
+
+end Formalism.L2.SG.Pf

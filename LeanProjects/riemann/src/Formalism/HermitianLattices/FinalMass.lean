@@ -1,0 +1,9 @@
+import Formalism.HermitianLattices.FinalNeighbourConstruct
+import Formalism.HermitianLattices.HermitianLatticesProofs.MassBasic
+import Formalism.HermitianLattices.HermitianLatticesProofs.MassTelescope
+
+namespace Formalism.HermitianLatticesTheory
+
+theorem final_massBasic : MassBasic := Formalism.HermitianLatticesTheory.massBasic
+
+end Formalism.HermitianLatticesTheory

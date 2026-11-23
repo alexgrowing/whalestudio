@@ -1,0 +1,161 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["f57b35041bfd1106.olean"],
+  "m": false,
+  "i": "08dae89b1b193acd.ilean",
+  "c": "63550cbae0640f59.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:70:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:139:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:140:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:141:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:181:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:217:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:247:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:317:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:316:19: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:317:6: Unused tactic linter: `(field_simp; ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:394:50: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:590:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:590:4: Unused tactic linter: `simp [Formalism.HC.Frame.iotaInv]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:958:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:959:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:960:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:961:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:958:6: Unused tactic linter: `exact NumberField.IsTotallyComplex.nrRealPlaces_eq_zero (K := K)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:959:6: Unused tactic linter: `exact (NumberField.IsTotallyComplex.nrRealPlaces_eq_zero (K := K)).1` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:960:6: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:961:6: Unused tactic linter: `(\n  simp only [NumberField.InfinitePlace.nrRealPlaces, Fintype.card_eq_zero_iff]\n  exact\n    ⟨fun w =>\n      (NumberField.InfinitePlace.not_isReal_iff_isComplex.mpr (NumberField.IsTotallyComplex.isComplex w.1))\n        w.2⟩)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:1035:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:1038:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.liesOver_of_mem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:1047:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.mem_of_liesOver`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:1116:31: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:1228:8: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:1264:51: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalRingCardinality.DataParams₂ transitive imports (legacy)",
+       "8e4303569b654151"],
+      ["Formalism.LocalRingCardinality.DataParams₂:importAllArts",
+       "4aaf5906725de512"],
+      ["Formalism.ThetaLiftIndependence.FinalThetaLiftAMFKIndep transitive imports (legacy)",
+       "601de57c5dd40dfe"],
+      ["Formalism.ThetaLiftIndependence.FinalThetaLiftAMFKIndep:importAllArts",
+       "bb56db56bf9951df"],
+      ["Formalism.FrobeniusOrbits.HostCorollaries transitive imports (legacy)",
+       "5db5c340802e14b0"],
+      ["Formalism.FrobeniusOrbits.HostCorollaries:importAllArts",
+       "095185796b1702ae"],
+      ["Formalism.LocalRingCardinality.HostCls transitive imports (legacy)",
+       "a22b5d20862876f9"],
+      ["Formalism.LocalRingCardinality.HostCls:importAllArts",
+       "2c359d5b618ef0b1"],
+      ["Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator transitive imports (legacy)",
+       "c978df24a27145e8"],
+      ["Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator:importAllArts",
+       "f451b4c09b0fbfdf"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance transitive imports (legacy)",
+       "a0179aad2094a559"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance:importAllArts",
+       "c7eaa9e918a2599c"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf transitive imports (legacy)",
+       "69ccb438e1378f7a"],
+      ["Formalism.GradedWeylDivisibility.DualWeylDominanceOf:importAllArts",
+       "af1f7f5c7f5722f3"],
+      ["Formalism.GradedWeylDivisibility.FinalB transitive imports (legacy)",
+       "d1d996caa8521b7b"],
+      ["Formalism.GradedWeylDivisibility.FinalB:importAllArts",
+       "0516dafca28a3fcc"],
+      ["Formalism.GradedWeylDivisibility.FinalD transitive imports (legacy)",
+       "847da38c0f1d4bed"],
+      ["Formalism.GradedWeylDivisibility.FinalD:importAllArts",
+       "df114a0f60f70c29"],
+      ["Formalism.GradedWeylDivisibility.StatementE transitive imports (legacy)",
+       "47585861bca701b3"],
+      ["Formalism.GradedWeylDivisibility.StatementE:importAllArts",
+       "c12a8c8baeace349"],
+      ["Formalism.SatakeDualWeyl.KpqSubgroupCompact transitive imports (legacy)",
+       "ff6cfa93a3ac9aea"],
+      ["Formalism.SatakeDualWeyl.KpqSubgroupCompact:importAllArts",
+       "e461b4640fafa029"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean",
+   "462027ae8fc8853a"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalRingCardinality.RankBoundMonotoneInDimension",
+   "02f1052fce5eca4e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "0cf0f074ebab14ac"}

@@ -1,0 +1,24 @@
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PAscAll
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.ContinuousAT
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PExpFin
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PExpTw
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PChord
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.ProjOf
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PStages
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PSliceTens
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.InfInd2Holds
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PInfAsc
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.SqIntCritHolds
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.TopNeg
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.TopGap
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.NormalisedExistence.ExistsNormed
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.CommonEigenvectors.KillPoly
+import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.DiagonalInfinityValues.InfGLValDiag
+
+namespace PositivityTheory.Rg.Rs
+
+theorem ascAll_of_rest (hS : Slice) (hP : Pr) (hI : IndMap) (hT : StringStep) : AscAll :=
+  ascAll_of (dich_of dict_holds finTr_holds killPoly_holds) (expFin_of dict_holds finTr_holds) expNeg_holds hS
+    (chord_of expTw_holds sqIntCrit_holds) (proj_of hP sliceTens_holds hI) infInd2_holds hT (stages_of hI)
+
+end PositivityTheory.Rg.Rs

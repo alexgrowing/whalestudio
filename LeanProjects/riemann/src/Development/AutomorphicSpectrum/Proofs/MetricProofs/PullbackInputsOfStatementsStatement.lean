@@ -1,0 +1,14 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackInputsOfStatements
+import Mathlib
+import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
+import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPushDown
+open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.AI.I1 ReciprocityTheory.ChartRestriction.G.AI.I4
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.pullback_inputs_of_statements : ReciprocityTheory.ChartRestriction.G.Geo.ArithIntersectionSystemStatement → ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiHSStatement → ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement → ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKStatement → GlobalTheory.CompanionTheory.Ar.PB.Inputs := by
+  first | exact @GlobalTheory.CompanionTheory.Ar.Giv.pullbackInputs_of_hypotheses | exact GlobalTheory.CompanionTheory.Ar.Giv.pullbackInputs_of_hypotheses | (intros; apply GlobalTheory.CompanionTheory.Ar.Giv.pullbackInputs_of_hypotheses <;> assumption)

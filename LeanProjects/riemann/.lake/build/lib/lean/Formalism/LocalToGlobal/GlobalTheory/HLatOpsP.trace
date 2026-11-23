@@ -1,0 +1,179 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["4a87d80050aef70f.olean"],
+  "m": false,
+  "i": "284f41b149b170be.ilean",
+  "c": "bb289103fc1443bb.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:20:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.cnorm_sq`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:24:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.cnorm_nonneg`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:28:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.cnorm_eq_zero`:\n  [DecidableEq ι]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq ι] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:36:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.normAt_eq_zero`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:49:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.majAt_self`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:65:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.isSesq_maj`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:89:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:90:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:89:6: Unused tactic linter: `(simp only [RCLike.star_def]; ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:90:6: Unused tactic linter: `ring` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:95:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.sesq_eq_sum`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:128:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.gramOf_maj`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:138:12: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Pi.single_apply, hj, Ne.symm hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:138:34: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, hj, Ne.symm hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:138:55: This simp argument is unused:\n  Ne.symm hj\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, Pi.single_apply, hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:145:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.sesq_ext`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:181:2: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:176:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.exists_im_ne_zero`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:263:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:342:7: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:353:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:354:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:342:7: Unused tactic linter: `exact ⟨B, hB⟩` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:353:6: Unused tactic linter: `exact hG.det_ne_zero` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:354:6: Unused tactic linter: `exact (Matrix.isUnit_iff_isUnit_det G).1 hG.isUnit |>.ne_zero` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:424:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:424:4: Unused tactic linter: `exact Matrix.PosDef.conjTranspose_mul_mul_same hG hinj` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:426:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.isSesq_comp`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:453:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:454:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:453:4: Unused tactic linter: `exact (Matrix.posDef_conjTranspose_mul_self_iff _).2 hinj` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:454:4: Unused tactic linter: `(\n  have h1 := Matrix.PosDef.one.conjTranspose_mul_mul_same hinj\n  simpa using h1)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:477:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.map_comap_eq'`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:485:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:485:4: Unused tactic linter: `(\n  congr 1\n  ext y\n  simp [LinearMap.mem_range])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:489:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.rkK_map`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:601:0: automatically included section variable(s) unused in theorem `Formalism.L2.GlobalTheoryTheory.HLatOps.vecAt_basis`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:609:10: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Pi.single_apply, hj, Ne.symm hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:609:32: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, hj, Ne.symm hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:609:53: This simp argument is unused:\n  Ne.symm hj\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finsupp.single_apply, Pi.single_apply, hj]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean:820:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.GlobalTheory.HLatOps transitive imports (legacy)",
+       "52b61324fcbae39e"],
+      ["Formalism.LocalToGlobal.GlobalTheory.HLatOps:importAllArts",
+       "96e31ecbf9524e22"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance transitive imports (legacy)",
+       "a0179aad2094a559"],
+      ["Formalism.HarderNarasimhan.ShiftInvariance:importAllArts",
+       "c7eaa9e918a2599c"],
+      ["Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem transitive imports (legacy)",
+       "84cf135a2eb251a5"],
+      ["Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem:importAllArts",
+       "b84acf7807079390"],
+      ["Formalism.SizeWindowBrackets.ChainSlopeWindows.TruncatedLatticeHolds transitive imports (legacy)",
+       "00717247fb9e0bde"],
+      ["Formalism.SizeWindowBrackets.ChainSlopeWindows.TruncatedLatticeHolds:importAllArts",
+       "59ecc9f40e086baa"],
+      ["Formalism.LocalRingCardinality.DataDIVDefs transitive imports (legacy)",
+       "0469a50d03410827"],
+      ["Formalism.LocalRingCardinality.DataDIVDefs:importAllArts",
+       "fdfc3f714403e130"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/GlobalTheory/HLatOpsP.lean",
+   "2e6e9ab0713f1a12"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.GlobalTheory.HLatOpsP",
+   "a3125d1538da7032"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "2d15afb9624f7477"}

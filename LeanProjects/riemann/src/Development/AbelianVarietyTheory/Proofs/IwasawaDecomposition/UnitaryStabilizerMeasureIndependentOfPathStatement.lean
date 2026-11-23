@@ -1,0 +1,8 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryStabilizerMeasureIndependentOfPath
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
+open NumberField IsDedekindDomain MeasureTheory Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.GaugeEx
+open scoped TensorProduct NNReal ENNReal
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.unitaryStabilizer_measure_independent_of_path : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), IsCMExt F E σ → ∀ (d : ℕ) (b : Module.Basis (Fin d) F E) (s : StdMeas b) (M : ℕ) (J : Matrix (Fin (M + 1 + 1)) (Fin (M + 1 + 1)) E) (x₁ x₂ : Fin 1 → Fin (M + 1 + 1) → E) (a₁ a₂ : F) (B₁ B₂ : Matrix (Fin (M + 1 + 1)) (Fin (M + 1)) E) (J₁ J₂ : Matrix (Fin (M + 1)) (Fin (M + 1)) E) (y₁ y₂ : Fin 1 → Fin (M + 1) → E) (b₁ b₂ : F) (C₁ C₂ : Matrix (Fin (M + 1)) (Fin M) E) (J₀ : Matrix (Fin M) (Fin M) E) (μ₀ : Measure (HA (AF F) σ J₀)) (μ₁ : Measure (HA (AF F) σ J₁)) (μ₂ : Measure (HA (AF F) σ J₂)) (τ₁ τ₂ : Measure (HA (AF F) σ J)), 2 ≤ M → StepData σ J x₁ a₁ B₁ J₁ → StepData σ J₁ y₁ b₁ C₁ J₀ → StepData σ J x₂ a₂ B₂ J₂ → StepData σ J₂ y₂ b₂ C₂ J₀ → B₁ * C₁ = B₂ * C₂ → μ₀.IsHaarMeasure → StepRel s σ J₁ y₁ b₁ C₁ J₀ μ₁ μ₀ → StepRel s σ J x₁ a₁ B₁ J₁ τ₁ μ₁ → StepRel s σ J₂ y₂ b₂ C₂ J₀ μ₂ μ₀ → StepRel s σ J x₂ a₂ B₂ J₂ τ₂ μ₂ → τ₁ = τ₂ := by
+  first | exact @GlobalTheory.GaugeSquare.square | exact GlobalTheory.GaugeSquare.square | (intros; apply GlobalTheory.GaugeSquare.square <;> assumption)

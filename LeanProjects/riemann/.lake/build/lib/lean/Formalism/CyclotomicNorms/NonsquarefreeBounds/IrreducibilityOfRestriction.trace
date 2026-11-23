@@ -1,0 +1,87 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1c601d60980780c9.olean"],
+  "m": false,
+  "i": "7494c26ba8a1796c.ilean",
+  "c": "edfbc1c0c6e44d50.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:116: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:184: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:245: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:314: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:98: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:116: Unused tactic linter: `(intros; apply Bl.general_b_fact_second_bis.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:184: Unused tactic linter: `(apply @Bl.general_b_fact_second_bis.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:245: Unused tactic linter: `(intros; apply @Bl.general_b_fact_second_bis.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:53:314: Unused tactic linter: `(apply @Bl.general_b_fact_second_bis.goal1 <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:272:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CycleTypeFiniteOrder.iterate_eq`:\n  [Fintype α]\n  [DecidableEq α]\n  [DecidableEq K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype α] [DecidableEq α] [DecidableEq K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:300:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CycleTypeFiniteOrder.blocks_disjoint`:\n  [Monoid K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Monoid K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:311:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CycleTypeFiniteOrder.sum_val_eq_biUnion`:\n  [Monoid K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Monoid K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean:328:0: automatically included section variable(s) unused in theorem `Formalism.CyclotomicNorms.CycleTypeFiniteOrder.biUnion_blocks`:\n  [Monoid K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Monoid K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.CyclotomicNorms.StatementT transitive imports (legacy)",
+       "b173b10050e12fd6"],
+      ["Formalism.CyclotomicNorms.StatementT:importAllArts",
+       "10a7fe755b916042"],
+      ["Formalism.GaloisIrreducibility.NoSolvableTransitive transitive imports (legacy)",
+       "753ad2ca46efa6d5"],
+      ["Formalism.GaloisIrreducibility.NoSolvableTransitive:importAllArts",
+       "29308f495af5c858"],
+      ["Lemmata.GeneralBFactSecondBis.Imports transitive imports (legacy)",
+       "6788bc8930e51f1c"],
+      ["Lemmata.GeneralBFactSecondBis.Imports:importAllArts",
+       "6b777a429d4a890d"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/CyclotomicNorms/NonsquarefreeBounds/IrreducibilityOfRestriction.lean",
+   "0817bb9d9af610fd"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.CyclotomicNorms.NonsquarefreeBounds.IrreducibilityOfRestriction",
+   "321fd7ab1be9d56b"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "094f3b3e551a474a"}

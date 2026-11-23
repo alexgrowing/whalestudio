@@ -1,0 +1,114 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["ac6f55c6d1cbb158.olean"],
+  "m": false,
+  "i": "99acf162a9aefb26.ilean",
+  "c": "7588a3b1a17c8e9f.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/StdLatUnimodular.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/Columns/StdLatUnimodular.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/StdLatUnimodular.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/Columns/StdLatUnimodular.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:186:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.hStd_apply`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:192:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.mem_locP`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:205:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.mem_gmap`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:215:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.equiv_osmul`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:223:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.gmap_lattice`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:232:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.mem_dual`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:300:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.Deco.Ok.dia`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:323:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.Deco.act_one`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:332:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.Deco.act_mul`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:388:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.mk_ne_zero`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:392:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.one_notMem`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:413:24: This simp argument is unused:\n  map_add\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:428:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.reduction_eq_zero_of_not_integral`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:438:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.IntAt.add`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:447:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.IntAt.mul`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:452:22: This simp argument is unused:\n  map_add\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:474:24: This simp argument is unused:\n  map_add\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:493:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.mem_stdLat`:\n  [NumberField E]\n  [StarRing E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] [StarRing E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean:528:0: automatically included section variable(s) unused in theorem `Formalism.L2.Col.star_coe_mem_one`:\n  [NumberField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.HermitianLattices.StatementLat transitive imports (legacy)",
+       "eb6e50ff393ef7f8"],
+      ["Formalism.HermitianLattices.StatementLat:importAllArts",
+       "da699c6e91636dda"],
+      ["Formalism.HermitianLattices.DualOrthSum transitive imports (legacy)",
+       "537e6fe099443260"],
+      ["Formalism.HermitianLattices.DualOrthSum:importAllArts",
+       "e3adc418cf1f46c9"],
+      ["Formalism.HermitianLattices.NeighbourConstruct transitive imports (legacy)",
+       "537e6fe099443260"],
+      ["Formalism.HermitianLattices.NeighbourConstruct:importAllArts",
+       "c7eab3858f00e7da"],
+      ["Formalism.SatakeDualWeyl.StatementB transitive imports (legacy)",
+       "6dc7f91a4243f529"],
+      ["Formalism.SatakeDualWeyl.StatementB:importAllArts", "1af13d3925fa49d7"],
+      ["Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions transitive imports (legacy)",
+       "ff963b82c9872dc9"],
+      ["Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions:importAllArts",
+       "4a7e6f7ca21b65ad"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/Columns/StdLatUnimodular.lean",
+   "7f7e9a89dfc92ef2"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.Columns.StdLatUnimodular",
+   "5c59aa017baeb3d0"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "6359a19d9698813d"}

@@ -1,0 +1,12 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOneCokernelKilled
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
+import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial
+open ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.DV Formalism.DegreeFormula Formalism.MainNotions.LatticeTransfer Formalism.MainNotions.WeightThresholdDefs
+open GlobalTheory GlobalTheory.QCoh GlobalTheory.CechPic GlobalTheory.Vert GlobalTheory.ShFam GlobalTheory.ShFam.Pad GlobalTheory.Mean4O GlobalTheory.MixedLocalChains
+
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.rank_one_cokernel_killed : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] (p : ℕ) [Fact p.Prime] [CharZero O] [CharP (ResidueField O) p] (B : GlobalTheory.Vert.Model O), GlobalTheory.IsNormalScheme B.X → ∀ (E E' : B.X.Modules) (hE : GlobalTheory.VB.IsVB E 1) (hE' : GlobalTheory.VB.IsVB E' 1) (ψ : E' ⟶ E) [IsIso (B.genRes.map ψ)] (g : Γ(B.X, ⊤)), IsRootOfP p g p → Kills g (cokernel ψ) → ∃ (F F' : B.X.Modules) (hF : GlobalTheory.VB.IsVB F 1) (hF' : GlobalTheory.VB.IsVB F' 1) (χ : F' ⟶ F) (_ : IsIso (B.genRes.map χ)), IsFrob p (cokernel ψ) (cokernel χ) ∧ (B.toITh p).c1 (((GlobalTheory.Vert.Model.FlagPair.ofRankOne (GlobalTheory.Vert.Model.GenIso.ofHom χ) hF hF').toFPair p).x 0) = (p : ℚ) • (B.toITh p).c1 (((GlobalTheory.Vert.Model.FlagPair.ofRankOne (GlobalTheory.Vert.Model.GenIso.ofHom ψ) hE hE').toFPair p).x 0) ∧ (B.toITh p).c1 (((GlobalTheory.Vert.Model.FlagPair.ofRankOne (GlobalTheory.Vert.Model.GenIso.ofHom χ) hF hF').toFPair p).x' 0) = (p : ℚ) • (B.toITh p).c1 (((GlobalTheory.Vert.Model.FlagPair.ofRankOne (GlobalTheory.Vert.Model.GenIso.ofHom ψ) hE hE').toFPair p).x' 0) ∧ ((GlobalTheory.Vert.Model.FlagPair.ofRankOne (GlobalTheory.Vert.Model.GenIso.ofHom χ) hF hF').toFPair p).Dv 0 = (p : ℚ) • ((GlobalTheory.Vert.Model.FlagPair.ofRankOne (GlobalTheory.Vert.Model.GenIso.ofHom ψ) hE hE').toFPair p).Dv 0 := by
+  first | exact @GlobalTheory.LinePow.exists_frob_presentation | exact GlobalTheory.LinePow.exists_frob_presentation | (intros; apply GlobalTheory.LinePow.exists_frob_presentation <;> assumption)

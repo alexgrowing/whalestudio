@@ -1,0 +1,10 @@
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ParabolicSubgroupEqualityStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LineFactsStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FubiniParabolicMultipleStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LineFormulaOfFubiniAndParabolicStatement
+
+namespace CompanionTheory.RgExh.Dec.N.S
+
+theorem line_formula : CompanionTheory.RgExh.Dec.L.LineFormula := GlobalTheory.T.line_formula_of_fubini_and_parabolic GlobalTheory.T.FubiniParabolicMultiple GlobalTheory.T.rgExh_lineFacts GlobalTheory.T.ParabolicSubgroupEquality
+
+end CompanionTheory.RgExh.Dec.N.S

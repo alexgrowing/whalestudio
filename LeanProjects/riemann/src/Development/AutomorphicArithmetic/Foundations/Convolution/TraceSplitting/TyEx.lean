@@ -1,0 +1,13 @@
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.TyExOf
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitLev
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStableAlt
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitMatch
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.InertData
+import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.OffStable
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TypedEx
+import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic
+
+open UpperTheory.ConvolutionTheory UpperTheory.ConvolutionTheory.T in
+theorem UpperTheory.ConvolutionTheory.T.tyEx :
+    UpperTheory.ConvolutionTheory.T.TyEx :=
+  tyEx_of splitLev splitStable splitMatch inertData offStable L1.typedEx L1.eigBasic

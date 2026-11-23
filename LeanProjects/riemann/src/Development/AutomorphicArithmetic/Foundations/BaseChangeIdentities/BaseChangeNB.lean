@@ -1,0 +1,9 @@
+import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FillPre
+import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowSwap
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FinalAllB
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.PJEigB
+
+open PositivityTheory.Rg.BcB PositivityTheory.Rg.BcB.F in
+theorem UpperTheory.BaseChangeIdentities.baseChangeNB : PositivityTheory.Rg.BcN.BaseChangeIsobaricN :=
+  Plug2B.bci_of (UpperTheory.HeckeLevelFrameExistence.frameEx_of_fin UpperTheory.BaseChangeIdentities.uSide (FX.candFin_of_jEigFin Tail.JB.jEigFin))
+    UpperTheory.BaseChangeIdentities.FrameWordIdentity.frameBound FinalAllB.frameRead_holdsB

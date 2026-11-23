@@ -1,0 +1,85 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["2958468eb7a8a5ae.olean"],
+  "m": false,
+  "i": "b7a2caea5ace76c1.ilean",
+  "c": "3f28fb38cd45faef.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:308:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.coe_ne_zero_of_not_mem`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:313:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.lidx_congr`:\n  [NumberField K]\n  [Module K V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [Module K V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:366:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.span_latOf`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:456:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.famOf_famOf`:\n  [NumberField K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:464:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.det_ne_zero_of_li`:\n  [NumberField K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:486:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.li_of_semilinear`:\n  [NumberField K]\n  [Module (𝓞 K) V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:514:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.IsStarPl.symm`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:517:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.h_smul_left`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:520:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.h_smul_right`:\n  [NumberField K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:523:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.vAdd_inv`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean:527:0: automatically included section variable(s) unused in theorem `Formalism.BasicNotions.SkeletonIndexLemmas.localization_eq_of_semilocalization_eq`:\n  [NumberField K]\n  [Module K V]\n  [IsScalarTower (𝓞 K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [Module K V] [IsScalarTower (𝓞 K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalRingCardinality.DataKerI transitive imports (legacy)",
+       "e4a9c6adb23ecd9a"],
+      ["Formalism.LocalRingCardinality.DataKerI:importAllArts",
+       "8603146e1c678d63"],
+      ["Formalism.LocalRingCardinality.DataParamsT transitive imports (legacy)",
+       "7dd97281f74fa034"],
+      ["Formalism.LocalRingCardinality.DataParamsT:importAllArts",
+       "23c9bde1b66832df"],
+      ["Formalism.LocalRingCardinality.RankBoundMonotoneInDimension transitive imports (legacy)",
+       "adb12460047dd80c"],
+      ["Formalism.LocalRingCardinality.RankBoundMonotoneInDimension:importAllArts",
+       "b5da2d339cc1f140"],
+      ["Formalism.LocalToGlobal.Columns.LocWLemmas transitive imports (legacy)",
+       "a38644f35ebbd61c"],
+      ["Formalism.LocalToGlobal.Columns.LocWLemmas:importAllArts",
+       "cabd14a62089ac09"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalRingCardinality/CoeNeZeroOfNotMem.lean",
+   "439ef2fcd9ae4a04"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalRingCardinality.CoeNeZeroOfNotMem",
+   "71daa60127129e50"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "0341cc3c592cfdc5"}

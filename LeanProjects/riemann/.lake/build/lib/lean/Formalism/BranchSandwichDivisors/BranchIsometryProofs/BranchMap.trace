@@ -1,0 +1,107 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["557ea0ea2e1adea3.olean"],
+  "m": false,
+  "i": "6f7ed095dac59c39.ilean",
+  "c": "86753eee5f601477.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:292:48: This simp argument is unused:\n  map_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [elemDeriv_X, derivation_apply_ite]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:301:64: This simp argument is unused:\n  map_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [elemDeriv_X, lastRowDeriv_X, derivation_apply_ite, Derivation.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:334:13: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h, Ne.symm h]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:404:75: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [h1, h2]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:484:4: Unused tactic linter: `beta_reduce` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:592:47: This simp argument is unused:\n  add_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [mul_sub, sub_mul, mul_add, mul_one, one_mul, mul_zero, zero_mul, sub_zero, zero_sub, neg_mul,\n    mul_neg]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:592:65: This simp argument is unused:\n  one_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [mul_sub, sub_mul, mul_add, add_mul, mul_one, mul_zero, zero_mul, sub_zero, zero_sub, neg_mul,\n    mul_neg]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:592:74: This simp argument is unused:\n  mul_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [mul_sub, sub_mul, mul_add, add_mul, mul_one, one_mul, zero_mul, sub_zero, zero_sub, neg_mul,\n    mul_neg]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:592:84: This simp argument is unused:\n  zero_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [mul_sub, sub_mul, mul_add, add_mul, mul_one, one_mul, mul_zero, sub_zero, zero_sub, neg_mul,\n    mul_neg]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:924:80: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [colAddGen, ndE, mkDerivation_X, h, hlj, Derivation.leibniz, pderiv_X]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:925:55: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [colAddGen, ndE, mkDerivation_X, h, pderiv_X]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1285:47: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1286:12: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1290:35: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1293:47: `Fin.coe_castSucc` has been deprecated: Use `Fin.val_castSucc` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1294:12: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1298:35: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1794:54: This simp argument is unused:\n  Pi.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hb]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean:1912:15: This simp argument is unused:\n  rename_C\n\nHint: Omit it from the simp argument list.\n  [apply] simp [emb]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.GradedWeylDivisibility.FinalC transitive imports (legacy)",
+       "edb940d0e16d4ab1"],
+      ["Formalism.GradedWeylDivisibility.FinalC:importAllArts",
+       "e1c9deb39bf4b3d7"],
+      ["Formalism.BranchSandwichDivisors.StatementW transitive imports (legacy)",
+       "1be57ef07b8e8f6b"],
+      ["Formalism.BranchSandwichDivisors.StatementW:importAllArts",
+       "2f3129684b6b904f"],
+      ["Formalism.BranchSandwichDivisors.BranchIsometryProofs.MemBranchRangeOfDefectEq transitive imports (legacy)",
+       "aac87c281c09b678"],
+      ["Formalism.BranchSandwichDivisors.BranchIsometryProofs.MemBranchRangeOfDefectEq:importAllArts",
+       "2f54f4e19671c73c"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/BranchSandwichDivisors/BranchIsometryProofs/BranchMap.lean",
+   "5bbf81098939c37a"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.BranchSandwichDivisors.BranchIsometryProofs.BranchMap",
+   "c0883073a5444a3b"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "ab1ef554712b7d7f"}

@@ -1,0 +1,13 @@
+import Mathlib
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMEulerProducts.EulerEqOf
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMEulerProducts.EulerFactorsMultipliable
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMEulerProducts.EulerFactorLocal
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMEulerProducts.Regroup
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMEulerProducts.EulerFactorConjugate
+
+namespace CMEul
+
+theorem eulerEq_of_fib (hF : StepFib) : Formalism.L2.SG.MassRatio.EulerEq :=
+  eulerEq_of hF _root_.euler_factors_multipliable euler_factor_local euler_product_regroup
+
+end CMEul

@@ -1,0 +1,143 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1604e24b55b06dc7.olean"],
+  "m": false,
+  "i": "6f8486cdd370c872.ilean",
+  "c": "d256b3fea2b365d6.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:21:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.characterSumData.PB.inPhi_iff`:\n  [AddCommGroup H]\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [AddCommGroup H] [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:41:8: automatically included section variable(s) unused in theorem `_private.Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible.0.Formalism.LFunctionChainParameters.characterSumData.PB.partner_fst_lemma`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:44:8: automatically included section variable(s) unused in theorem `_private.Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible.0.Formalism.LFunctionChainParameters.characterSumData.PB.sub_fst_lemma_2`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:73:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.characterSumData.PB.conj_eq_neg`:\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:76:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:76:4: Unused tactic linter: `rw [AddChar.map_neg_eq_inv, Complex.inv_eq_conj (AddChar.norm_apply ψ g)]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:85:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.characterSumData.PB.chC_apply'`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:99:8: automatically included section variable(s) unused in theorem `_private.Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible.0.Formalism.LFunctionChainParameters.characterSumData.PB.zero_apply_lemma`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:102:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:103:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:102:4: Unused tactic linter: `rfl` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:103:4: Unused tactic linter: `simp` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:229:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:229:4: Unused tactic linter: `simp [Nat.primeFactors_prime_pow (by omega : i ≠ 0) hp, hp.factorization_pow]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:231:8: automatically included section variable(s) unused in theorem `_private.Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible.0.Formalism.LFunctionChainParameters.characterSumData.sgc0_fst_lemma_3`:\n  [Fintype H]\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [Fintype H] [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:266:0: automatically included section variable(s) unused in theorem `Formalism.LFunctionChainParameters.characterSumData.natCard_eq_filter`:\n  [DecidableEq H]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq H] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:270:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:271:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:270:4: Unused tactic linter: `(rw [Nat.card_eq_fintype_card]; convert Fintype.card_subtype (fun x => x ∈ I))` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:271:4: Unused tactic linter: `simp [Nat.card_eq_fintype_card, Fintype.card_subtype]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:296:33: This simp argument is unused:\n  Finset.sum_ite_eq\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_ite_eq', Finset.mem_filter, Finset.mem_univ, true_and]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:303:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:302:19: Unused tactic linter: `done` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:303:6: Unused tactic linter: `(field_simp; ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:379:8: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:379:8: Unused tactic linter: `exact Nat.lt_pow_self hp.one_lt k` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:412:41: Variable name `hD` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hD\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:464:34: This simp argument is unused:\n  Finset.sum_ite_eq'\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_ite_eq, Finset.mem_filter, Finset.mem_univ, true_and]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:568:6: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:596:35: This simp argument is unused:\n  Finset.sum_ite_eq\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_ite_eq']\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:616:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:616:6: Unused tactic linter: `rw [mul_div_assoc', mul_comm, mul_div_assoc, div_self hw, mul_one]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean:751:35: This simp argument is unused:\n  Finset.sum_ite_eq\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_ite_eq', Finset.mem_univ, if_true]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.SizeWindowBrackets.FirstPrimeNeSecondPrime transitive imports (legacy)",
+       "db8837c554512adf"],
+      ["Formalism.SizeWindowBrackets.FirstPrimeNeSecondPrime:importAllArts",
+       "8fd8463977694512"],
+      ["Formalism.ThickAverageLoss.ThickAverageProofs.Balance transitive imports (legacy)",
+       "32ecfe622ec9511f"],
+      ["Formalism.ThickAverageLoss.ThickAverageProofs.Balance:importAllArts",
+       "ae3dc0b31286ae32"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean",
+   "060ef86c00e16bdd"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible",
+   "20399ccbc0b8c36a"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "92d1b7d51115074a"}

@@ -1,0 +1,14 @@
+import Mathlib
+import Formalism.PeriodIntegrals.FglPhSplit
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.Development
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.AddPreservesExpCongruence
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.OrthogonalSplitPolarizationVanishes
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.ExpCongruenceExtendsToSum
+
+namespace PI.Final.FglPhSplit
+
+theorem norm_units_of_calculation : PI.FglPhSplit.Target :=
+  PI.FglPhSplit.Wk.target_of PI.FglPhSplit.Wk.orthogonalSplitPolarizationVanishes PI.FglPhSplit.Wk.addPreservesExpCongruence
+    PI.FglPhSplit.Wk.expCongruenceExtendsToSum
+
+end PI.Final.FglPhSplit

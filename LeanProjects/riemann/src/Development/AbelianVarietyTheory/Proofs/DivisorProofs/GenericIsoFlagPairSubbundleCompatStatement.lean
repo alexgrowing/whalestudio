@@ -1,0 +1,14 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoFlagPairSubbundleCompat
+import Mathlib
+import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
+import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Adj
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelTrivializingBlowup
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentPullPull
+open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial
+open ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.DV Formalism.DegreeFormula Formalism.MainNotions.LatticeTransfer Formalism.MainNotions.WeightThresholdDefs
+open GlobalTheory GlobalTheory.QCoh GlobalTheory.CechPic GlobalTheory.Vert GlobalTheory.ShFam GlobalTheory.ShFam.Pad GlobalTheory.Mean4O GlobalTheory.MixedLocalChains
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.generic_iso_flag_pair_subbundle_compat : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] (p : ℕ) [Fact p.Prime] [CharZero O] [CharP (ResidueField O) p] (B : GlobalTheory.Vert.Model O), GlobalTheory.IsNormalScheme B.X → ∀ (E E' : B.X.Modules) (φ : B.GenIso E E') (r : ℕ) (P : GlobalTheory.Vert.Model.FlagPair φ r) (n : ℕ) (hn : n + 1 < r) (H H' : B.X.Modules) (κ : H ⟶ E) (κ' : H' ⟶ E') (ψ : B.GenIso H H'), GlobalTheory.VB.IsSubbundle κ → GlobalTheory.VB.IsSubbundle κ' → GlobalTheory.VB.IsVB H (n + 1) → GlobalTheory.VB.IsVB H' (n + 1) → ψ.hom ≫ B.genRes.map κ' = B.genRes.map κ ≫ φ.hom → GlobalTheory.FlagChain.Le κ (P.fl.ι ⟨n + 2, by omega⟩) → GlobalTheory.FlagChain.Le κ' (P.fl'.ι ⟨n + 2, by omega⟩) → ∃ (B₁ : GlobalTheory.Vert.Model O) (f : GlobalTheory.Vert.Model.Hom B₁ B) (K K' : B₁.X.Modules) (μ : K ⟶ (Scheme.Modules.pullback f.f).obj E) (μ' : K' ⟶ (Scheme.Modules.pullback f.f).obj E') (χ : B₁.GenIso K K'), GlobalTheory.IsNormalScheme B₁.X ∧ f.relDim = 0 ∧ GlobalTheory.VB.IsSubbundle μ ∧ GlobalTheory.VB.IsSubbundle μ' ∧ GlobalTheory.VB.IsVB K n ∧ GlobalTheory.VB.IsVB K' n ∧ χ.hom ≫ B₁.genRes.map μ' = B₁.genRes.map μ ≫ (φ.pull f.comp_str).hom ∧ GlobalTheory.FlagChain.Le μ ((Scheme.Modules.pullback f.f).map (P.fl.ι ⟨n + 1, by omega⟩)) ∧ GlobalTheory.FlagChain.Le μ' ((Scheme.Modules.pullback f.f).map (P.fl'.ι ⟨n + 1, by omega⟩)) ∧ GlobalTheory.FlagChain.Le μ ((Scheme.Modules.pullback f.f).map κ) ∧ GlobalTheory.FlagChain.Le μ' ((Scheme.Modules.pullback f.f).map κ') := by
+  first | exact @GlobalTheory.FlagPairCommon.exists_common_pair | exact GlobalTheory.FlagPairCommon.exists_common_pair | (intros; apply GlobalTheory.FlagPairCommon.exists_common_pair <;> assumption)

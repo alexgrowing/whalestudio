@@ -1,0 +1,138 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["187403cca0d4d327.olean"],
+  "m": false,
+  "i": "485e41e305315ae2.ilean",
+  "c": "f8a2106ce2ca6436.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:108: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:122: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:193: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:257: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:329: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:418: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:486: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:550: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:610: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:668: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:723: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:776: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:108: Unused tactic linter: `assumption` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:122: Unused tactic linter: `(intros; apply Bl.general_b_fact_right_variant.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:193: Unused tactic linter: `(apply @Bl.general_b_fact_right_variant.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:257: Unused tactic linter: `(intros; apply @Bl.general_b_fact_right_variant.goal1 <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:329: Unused tactic linter: `(apply @Bl.general_b_fact_right_variant.goal1 <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:418: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R ‹_› P hP n ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:486: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R ‹_› P hP n ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:550: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R ‹_› P hP n` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:610: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R ‹_› P hP` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:668: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R ‹_› P` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:723: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean:274:776: Unused tactic linter: `exact @Bl.general_b_fact_right_variant.goal1 R` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow transitive imports (legacy)",
+       "54b3a8eb8bcde914"],
+      ["Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow:importAllArts",
+       "f10d37f00d0e0c61"],
+      ["Formalism.LocalRingCardinality.DataTheta transitive imports (legacy)",
+       "7ba5f453569ed6be"],
+      ["Formalism.LocalRingCardinality.DataTheta:importAllArts",
+       "25f27bab12a1a1f0"],
+      ["Formalism.SharpRestriction.ParConsts transitive imports (legacy)",
+       "dca116d8c5b0f134"],
+      ["Formalism.SharpRestriction.ParConsts:importAllArts",
+       "694d70a55903f24f"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp transitive imports (legacy)",
+       "aabaada0edb79565"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp:importAllArts",
+       "37611667a3e44768"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscriminantRealSubfield transitive imports (legacy)",
+       "3c2e4c7360709e32"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscriminantRealSubfield:importAllArts",
+       "6848078edbc4bf59"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB transitive imports (legacy)",
+       "da5aaf56ecbb2a29"],
+      ["Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB:importAllArts",
+       "524dbca556b7c471"],
+      ["Lemmata.GeneralBFactRightVariant.Imports transitive imports (legacy)",
+       "26d8ede7088febdb"],
+      ["Lemmata.GeneralBFactRightVariant.Imports:importAllArts",
+       "155d62cc019a85c2"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/SharpRestriction/Divisibility/KudlaSiegelWeil.lean",
+   "c5935db4261a505f"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil",
+   "e4fedda6253e9546"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "ed6be1556b94b7f8"}

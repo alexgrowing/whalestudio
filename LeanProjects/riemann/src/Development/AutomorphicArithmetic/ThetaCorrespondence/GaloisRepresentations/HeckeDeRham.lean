@@ -1,0 +1,3 @@
+import Development.WeilBound.CoreStatements.PublishedTheorems.HeckeLAdicCharacters.Outright
+
+theorem UpperTheory.Lit.heckeLAdicCharacterDeRham : GlobalTheory.Published.HeckeLAdicCharacterDeRham := HodgeLocalDeRhamField.HLdR.field_outright

@@ -1,0 +1,16 @@
+import Mathlib
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.PerFactor
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.LemmaS
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.DimStatement
+import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExtAllInputs
+import Development.AbelianVarietyTheory.Proofs.TorusSplitting.GreedySplittingPrincipalTorusExistsStatement
+
+open ReciprocityTheory.ChartRestriction.G.I2
+
+namespace GlobalTheory
+
+theorem theta_bound_tStatement : TStatement :=
+  tOf ext_all_inputs GlobalTheory.T.greedy_splitting_principal_torus_exists (gSup ext_all_inputs.1) dim
+
+end GlobalTheory

@@ -1,0 +1,10 @@
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IsDerivedOnOfIsKMod
+import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKTypeMultiplicityOneUnconditional
+import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.UniqHpkOf
+import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.OrderedAtRanksOfPositionChange
+
+namespace CompanionTheory.D.LK
+
+theorem discrete_series_unique_of : DSUniqP := GlobalTheory.CompanionTheory.DSUniq.ds_unique hMultAlg hKModExists hOrthCyc
+
+end CompanionTheory.D.LK

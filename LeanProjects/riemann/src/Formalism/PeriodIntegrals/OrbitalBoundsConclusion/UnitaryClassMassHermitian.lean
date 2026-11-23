@@ -1,0 +1,5 @@
+import Formalism.PeriodIntegrals.UJClassMassAlt
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryClassMass.UnitaryClassMass
+
+theorem unitary_class_mass_hermitian : PI.UJClassMass2.UJClassMass :=
+  PI.UnitaryGroupMassFormula.UJClassMass.unitary_class_mass

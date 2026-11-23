@@ -1,0 +1,108 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["16245334e4c4faa9.olean"],
+  "m": false,
+  "i": "d9d799d65c04a4b8.ilean",
+  "c": "25338fe088c314db.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:28:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:29:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:28:4: Unused tactic linter: `exact\n  (Matrix.isUnit_iff_isUnit_det φ).mp (Matrix.mulVec_surjective_iff_isUnit.mp h.2)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:29:4: Unused tactic linter: `(\n  have hb : Function.Bijective (Matrix.toLin' φ) := h\n  have := LinearEquiv.isUnit_det' (LinearEquiv.ofBijective (Matrix.toLin' φ) hb)\n  rwa [LinearEquiv.coe_ofBijective, LinearMap.det_toLin'] at this)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:46:6: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:46:6: Unused tactic linter: `exact DirectSum.isInternal_submodule_of_independent_of_iSup_eq_top hi ht` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:136:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:136:4: Unused tactic linter: `simp at a b` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:207:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.matLat_lattice`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:231:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.vw_one`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:234:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:234:4: Unused tactic linter: `simp [vw]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:391:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.matLat_mul`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:401:4: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:401:4: Unused tactic linter: `(\n  ext x\n  simp [matLat, Submodule.mem_map, Matrix.mulVec_mulVec])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:404:0: automatically included section variable(s) unused in theorem `Formalism.L2.Indef.matLat_one`:\n  [NumberField K]\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:478:10: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean:478:10: Unused tactic linter: `(\n  simp only [RingHom.id_apply]\n  rw [star_smul, map_smulₛₗ, starRingEnd_apply, star_star])` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.LocalToGlobal.IndefiniteForms.IndefSide transitive imports (legacy)",
+       "4fd21fe0c789b638"],
+      ["Formalism.LocalToGlobal.IndefiniteForms.IndefSide:importAllArts",
+       "08fb6106a8afe36d"],
+      ["Formalism.JacquetSubsetSums.SeparationTR transitive imports (legacy)",
+       "3c2c6b84ab8e2821"],
+      ["Formalism.JacquetSubsetSums.SeparationTR:importAllArts",
+       "ae46c5a7cecd09b3"],
+      ["Formalism.DivisorInequality.StatementObj transitive imports (legacy)",
+       "f68a1901ab675a04"],
+      ["Formalism.DivisorInequality.StatementObj:importAllArts",
+       "677fd9fa0fbce56e"],
+      ["Formalism.QuotientMetricDivisors.DivIntoDualShift transitive imports (legacy)",
+       "7e3d5d396f6b97ff"],
+      ["Formalism.QuotientMetricDivisors.DivIntoDualShift:importAllArts",
+       "9d82e1488bb9952f"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean",
+   "a320c910fbe58a97"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.IndefiniteForms.IndefUse",
+   "4c2001dd5a8269f5"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "3573cafc2daf0a4f"}

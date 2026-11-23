@@ -1,0 +1,66 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["cf269c8d2218bb74.olean"],
+  "m": false,
+  "i": "583a6ce660d5bc64.ilean",
+  "c": "d42bfbb4e6aca141.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:62:10: `summable_of_finite_support` has been deprecated: Use `summable_of_hasFiniteSupport` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:57:16: This simp argument is unused:\n  h0\n\nHint: Omit it from the simp argument list.\n  [apply] simp [hz]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:145:18: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:173:36: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:214:36: `continuous_add_right` has been deprecated: Use `continuous_add_const` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:242:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:408:2: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean:409:2: Try this: \n  haveI̵\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.InstIsZLatticeDualLat transitive imports (legacy)",
+       "d5850821b93adfe6"],
+      ["Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.InstIsZLatticeDualLat:importAllArts",
+       "b8b2e67204f8df97"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeTransference/Poisson.lean",
+   "b5cc94f0f9773ae8"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.Poisson",
+   "e42cba5c6a368ddf"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "e48c4d8b600525e4"}

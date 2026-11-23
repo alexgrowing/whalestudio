@@ -1,0 +1,18 @@
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianHaarMeasure.Assemble
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianHaarMeasure.HermitianAlgebraGeneration
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnRdSkew
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmStar
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmMove
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovDet
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovHat
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CovariantHatSqOfLin
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovLin
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnYLeibniz
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnEabGl
+import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnEabPres
+
+theorem qnHermHaar : Formalism.FourierDecayAlt.Q.HermHaar :=
+  PI.QnHermHaar.qnHermHaar_of_alg PI.QnHermHaar.hermitian_algebra_generation qnRdSkew quantum_minor_star
+    (PI.contractionsCovariant_iff.2
+      ⟨covariant_det_of_lin covariant_linear, covariant_hat_of_lin covariant_linear, covariant_hat_sq_of_lin covariant_linear⟩)
+    quantum_minor_move.1 quantum_minor_move.2 qnYLeibniz qnEabGl qnEabPres

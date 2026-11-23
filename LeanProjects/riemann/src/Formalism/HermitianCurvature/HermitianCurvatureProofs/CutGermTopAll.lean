@@ -1,0 +1,13 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermTopA
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermTopB
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermTopC
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermTopD
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermTopFields
+
+namespace Formalism.FourierDecayAlt.P.CutBP
+
+theorem germ_data_top_level : GermDataTopAll :=
+  GT.germDataTopAll_of_parts GT.top_level_gram GT.top_level_germ_leading GT.top_level_fibre GT.top_level_Y_continuity
+    GT.field_mem_unitary GT.field_supremum GT.field_measurability GT.field_locality
+
+end Formalism.FourierDecayAlt.P.CutBP

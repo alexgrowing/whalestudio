@@ -1,0 +1,80 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["9839f7e8772ca93e.olean"],
+  "m": false,
+  "i": "642acc868a0b41e6.ilean",
+  "c": "87ce16677a29e58e.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:28:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.classSetAssembly_ratCast_mul`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:54:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.classSetAssembly_trace_int`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:116:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.classSetAssembly_qindep`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:380:48: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:380:13: Unused tactic linter: `have := Int.ediv_add_emod (c i) e` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:380:48: Unused tactic linter: `linarith` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:494:10: `LinearEquiv.ofLinear` has been deprecated: Use `LinearEquiv.ofLinearMap` instead",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:513:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.classSetAssembly_mem_zmap`:\n  [NumberField K]\n  [StarRing K]\n  [Module K V]\n  [IsScalarTower (NumberField.RingOfIntegers K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField K] [StarRing K] [Module K V] [IsScalarTower (NumberField.RingOfIntegers K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:518:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.classSetAssembly_min`:\n  [IsScalarTower (NumberField.RingOfIntegers K) K V]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsScalarTower (NumberField.RingOfIntegers K) K V] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean:550:0: automatically included section variable(s) unused in theorem `Formalism.HermitianLatticesTheory.classSetAssembly_w_mem`:\n  [StarRing K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [StarRing K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Mathlib transitive imports (legacy)", "842f10f1590e1c9c"],
+      ["Mathlib:importAllArts", "414d8c59726bb571"],
+      ["Formalism.HermitianLattices.GenusCovolBound transitive imports (legacy)",
+       "ad981f4f01619cd6"],
+      ["Formalism.HermitianLattices.GenusCovolBound:importAllArts",
+       "e46a83ab2f27fa5c"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct transitive imports (legacy)",
+       "537e6fe099443260"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct:importAllArts",
+       "d5909b9a9491e7a9"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic transitive imports (legacy)",
+       "387ca6bdd158cdef"],
+      ["Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic:importAllArts",
+       "771820ab82d47f57"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/HermitianLattices/HermitianLatticesProofs/ClassSetAssembly.lean",
+   "edb87ec9a6738c03"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly",
+   "39a3802c3d6165df"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "667a9a1ba601d947"}

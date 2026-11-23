@@ -1,0 +1,3 @@
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PlainTorsionPairs.IrrArithPointsAutomorphicAway
+
+noncomputable abbrev UpperTheory.V.W.UniversalOrdinaryDeterminantRing.arithmeticPointClassicalityDense := @UpperTheory.Gal.projectedFormsSystemPart.IrrArithPointsAutomorphicAway

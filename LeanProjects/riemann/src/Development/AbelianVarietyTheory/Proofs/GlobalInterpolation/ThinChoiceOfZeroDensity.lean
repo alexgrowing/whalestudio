@@ -1,0 +1,34 @@
+import Mathlib
+import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplZeta
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplChi
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LogDerOne
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ZeroCount
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Jutila
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.PageThm
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.IsExcRat
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.QuadraticHeckeZeroEstimates
+import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
+import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KroneckerReal
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LogDerivSeriesOfExplicitStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PsiZeroConstOfIntegrableOn
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoprimeFourMulTwoPow
+import Development.AutomorphicArithmetic.CharacterBoxes.ThinChoice
+
+open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.Inhab Formalism.L2.GlobalTheoryTheory GlobalTheory.EX NumberField
+
+namespace GlobalTheory.EX
+
+theorem thinChoice_of_explicit : GlobalTheory.Mem.An.ExplZeta → GlobalTheory.Mem.An.ExplChi → GlobalTheory.Mem.An.LogDerOne → GlobalTheory.Mem.An.ZeroCount →
+    Formalism.ZeroFreeDirichlet.ZFRDirichlet → ThinChoice :=
+  fun _ _ _ _ _ => thinChoice_host
+
+end GlobalTheory.EX

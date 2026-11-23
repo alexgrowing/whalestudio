@@ -1,0 +1,25 @@
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaloisTwistLevelModel
+import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
+import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.BasicNotions.TH Formalism.L2.Theta ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.Mean4 GlobalTheory.Mean4O
+open scoped ENNReal Classical
+open MvPolynomial Formalism.DegreeFormula Formalism.BasicNotions.DV Formalism.MainNotions.WeightThresholdDefs GlobalTheory.FlagPoly GlobalTheory.FlagAr Filter Topology
+open CategoryTheory
+
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.exists_galois_twist_level_model : Hypotheses2 → HypothesesH → ∀ (D : D7) (O : Setup D), O.Core → ∀ h ∈ D.R.Psi,
+    (∀ g ∈ D.R.Psi,
+      ∃ (σ : 𝓞 D.host.E ≃+* 𝓞 D.host.E) (r : (O.S.Xo O.κ.l).XF O.κ.c ≅ (O.S.Xo O.κ.l).XF O.κ.c),
+        (∀ a : 𝓞 D.host.E, ((σ a : 𝓞 D.host.E) : D.host.E) = D.host.sigmaOf g (a : D.host.E)) ∧
+        σ O.A.H.w0 = O.A.H.w0 ∧ Nonempty (GlobalTheory.ShFam.TwMap σ O.s.T.Z.oF.t O.s.T.Z.oF.t r.hom) ∧
+        r.hom ≫ CategoryTheory.Limits.pullback.snd _ _ = CategoryTheory.Limits.pullback.snd _ _) →
+    ∀ x : GlobalTheory.ShFam.ToroidalCompactificationData O.s, ∃ (x' : GlobalTheory.ShFam.ToroidalCompactificationData O.s) (e : O.s.Comp ≃ O.s.Comp),
+      ∀ (k : O.s.Comp) (R : Option ℝ) (w : GlobalTheory.ShFam.Pad.Sym D.host.E →₀ ℤ),
+        (∀ a ∈ w.support, a.2.2.isLeft = true ∧ a.2.1 = R) →
+        (GlobalTheory.ShFam.Pad.adlOf (O.Φ.C k) (GlobalTheory.ShFam.metsOf x O.Φ k) w).arTop =
+          (GlobalTheory.ShFam.Pad.adlOf (O.Φ.C (e k)) (GlobalTheory.ShFam.metsOf x' O.Φ (e k))
+            (w.mapDomain fun a => (a.1, a.2.1,
+              Sum.map (fun p => (p.1.comp ((D.host.sigmaOf h : D.host.E ≃ₐ[ℚ] D.host.E) : D.host.E →+* D.host.E), p.2)) id
+                a.2.2))).arTop := by
+  first | exact @GlobalTheory.ShFam.GalCarry.carry | exact GlobalTheory.ShFam.GalCarry.carry | (intros; apply GlobalTheory.ShFam.GalCarry.carry <;> assumption)

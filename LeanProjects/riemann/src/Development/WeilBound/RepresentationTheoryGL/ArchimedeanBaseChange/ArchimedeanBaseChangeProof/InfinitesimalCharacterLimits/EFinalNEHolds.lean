@@ -1,0 +1,9 @@
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.EisensteinFinalOfSeparation
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.SeparationHolds
+import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.ExportOf
+
+namespace PositivityTheory.Rg.BcB.SpectralAccumulation
+
+theorem eFinal_holds : EFinal := eisenstein_final_of_separation Cz.separation_holds
+
+end PositivityTheory.Rg.BcB.SpectralAccumulation

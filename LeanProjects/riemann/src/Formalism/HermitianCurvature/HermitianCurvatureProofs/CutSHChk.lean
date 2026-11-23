@@ -1,0 +1,25 @@
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHAsm
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHFamJFOK
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHFamAlg
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHRepLin
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHCellTie
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSliceFamJF
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHOpClosed
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHBTl
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHUUiw
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.PTieAll
+import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSliceFamGood
+
+namespace Formalism.FourierDecayAlt.P
+
+theorem cutSH_sliceStepHer_of_sfg (h7 : CutSH.SliceFamGood) : PTie.SliceStepHer :=
+  CutSH.sliceStepHer_of CutSH.family_orbital_valid CutSH.family_algebraic CutSH.representation_linear
+    cell_compatibility_identity h7 CutSH.slice_family_orbital operator_class_closed boundary_torus_adjoin
+    unipotent_scalar_identity
+
+theorem cutSH_levTransportHer_of_sfg (h7 : CutSH.SliceFamGood) : PTie.LevTransportHer :=
+  ptie_levTransportHer_of_sliceStep (cutSH_sliceStepHer_of_sfg h7)
+
+theorem level_transport_hermitian : PTie.LevTransportHer := cutSH_levTransportHer_of_sfg slice_family_good
+
+end Formalism.FourierDecayAlt.P

@@ -1,0 +1,125 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["b42cae76a8e4adc9.olean"],
+  "m": false,
+  "i": "cb4046ee85629c7e.ilean",
+  "c": "d1594c084f585533.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Cli/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/batteries/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/Qq/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/aesop/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/importGraph/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/plausible/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/packages/mathlib/.lake/build/lib/lean:/Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean /Users/littlesail/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean --tstack=400000 /Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean -o /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.olean -i /Users/littlesail/whale/LeanProjects/riemann/.lake/build/lib/lean/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.ilean -c /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.c --setup /Users/littlesail/whale/LeanProjects/riemann/.lake/build/ir/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:25:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.FJ.trBE_apply`:\n  [IsCMField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsCMField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:42:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.FJ.dualZE_eq`:\n  [IsCMField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsCMField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:112:0: automatically included section variable(s) unused in theorem `Formalism.L2.Pj.FJ.span_rat_smul_mem`:\n  [IsCMField E]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsCMField E] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:79: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:162: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:253: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:337: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:429: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:538: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:625: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:710: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:793: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:874: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:951: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:1024: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:79: Unused tactic linter: `(apply UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:162: Unused tactic linter: `(intros;\n  apply UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:253: Unused tactic linter: `(apply @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:337: Unused tactic linter: `(intros;\n  apply @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem <;> assumption)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:429: Unused tactic linter: `(apply @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem <;>\n    first\n    | assumption\n    | infer_instance)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:538: Unused tactic linter: `exact\n  @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E ‹_› ‹_› ‹_› r X w` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:625: Unused tactic linter: `exact @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E ‹_› ‹_› ‹_› r X` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:710: Unused tactic linter: `exact @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E ‹_› ‹_› ‹_› r` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:793: Unused tactic linter: `exact @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E ‹_› ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:874: Unused tactic linter: `exact @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E ‹_› ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:951: Unused tactic linter: `exact @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E ‹_›` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"},
+  {"message":
+   "src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean:140:1024: Unused tactic linter: `exact @UpperTheory.Reformulated.B.LocalSituation.exists_smul_mem E` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["tree/Formalism:extraDep", [["@tree:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Formalism.LocalToGlobal.ProjectiveLattices.IntegrableOnIntegrand transitive imports (legacy)",
+       "44aed672d73d06f8"],
+      ["Formalism.LocalToGlobal.ProjectiveLattices.IntegrableOnIntegrand:importAllArts",
+       "d8b37d26ace0015c"],
+      ["Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LocalSituation transitive imports (legacy)",
+       "44aed672d73d06f8"],
+      ["Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LocalSituation:importAllArts",
+       "fb729214ad71abbf"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "0051240b7c23c453"],
+  ["/Users/littlesail/whale/LeanProjects/riemann/src/Formalism/LocalToGlobal/ProjectiveLattices/SpanRatSmulMem.lean",
+   "f3815ea1a52b71fc"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-DmaxHeartbeats=4000000", "25921114450be9fb"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Formalism.LocalToGlobal.ProjectiveLattices.SpanRatSmulMem",
+   "6a23b09c1230836e"],
+  ["Package.id?: (some tree)", "846ebb34a1612bca"],
+  ["Module.leanArgs: #[--tstack=400000]", "66252bd877d02963"]],
+ "depHash": "97168116a8d7346a"}

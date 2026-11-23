@@ -1,0 +1,10 @@
+import Development.WeilBound.CoreStatements.HeckeCharacterDeRham.DeRhamHeckeResults.LAdicHeckeDeRham.LAdicHeckeFields.FieldOfLeaves
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrobPowRead
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTatePeriodNotFilteredStatement
+
+namespace HodgeLocalDeRhamField.HLdR
+
+theorem field_outright : GlobalTheory.Published.HeckeLAdicCharacterDeRham :=
+  PositivityTheory.SecR.Hladr2.field_of_leaves @GlobalTheory.CompanionTheory.LTPer.Tilt.tilt_period @GlobalTheory.T.lubin_tate_period_not_filtered
+
+end HodgeLocalDeRhamField.HLdR

@@ -1,0 +1,7 @@
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContractionLoweringDerivationFormula
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Cup1CoboundaryMemBoundaries
+open CategoryTheory AlgebraicGeometry TensorProduct Opposite MonoidalCategory CartesianMonoidalCategory MonObj ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CatCoh GlobalTheory.Cris GlobalTheory.CechDR MainStatements.Hodge GlobalTheory.CompanionTheory.HopfC
+set_option maxHeartbeats 1000000 in
+theorem _root_.GlobalTheory.T.contraction_lowering_derivation_formula : ∀ {R : Type} [CommRing R] (H : ℕ → Type) [∀ n, AddCommGroup (H n)] [∀ n, Module R (H n)] (g : ℕ) (_ : Module.Basis (Fin g) R (H 1)) (one : H 0) (L : ∀ n, H 1 →ₗ[R] H n →ₗ[R] H (n + 1)) (D : ∀ n, Module.Dual R (H 1) → H (n + 1) →ₗ[R] H n) (τ : ∀ n, H n →ₗ[R] H n), (∀ r : R, r • one = 0 → r = 0) → (∀ x, L 0 x one = x) → (∀ l x, D 0 l x = l x • one) → (∀ n l x z, D (n + 1) l (L (n + 1) x z) = l x • τ (n + 1) z - L n x (D n l z)) → (∀ n x z, τ (n + 2) (L (n + 1) x z) = L (n + 1) x (τ (n + 1) z)) → (∀ x, τ 1 x = x) → (∀ y, τ 2 y = y) → Subsingleton (H (g + 2)) → ∃ e : ⋀[R]^2 (H 1) ≃ₗ[R] H 2, ∀ a b, e (exteriorPower.ιMulti R 2 ![a, b]) = L 1 a b := by
+  first | exact @GlobalTheory.CompanionTheory.HopfC.Wedge.exteriorSquare_equiv | exact GlobalTheory.CompanionTheory.HopfC.Wedge.exteriorSquare_equiv | (intros; apply GlobalTheory.CompanionTheory.HopfC.Wedge.exteriorSquare_equiv <;> assumption)
